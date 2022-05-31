@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "momentum-live-b58e2",
+  "private_key_id": "978d74442ecdd79fb31b158ef4c99d40b3a37bc8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCbTZEwsZt1xPq/\nA2LmcY4vCVQI3i2TRrYBidRm9Lw7XL0XOZ5h+OXOvYpS41fd21aZskzgVDBpkdWQ\nz+xJR2tIcGlSOIvdOpOtqGK23+GhJmp9Z624JPlQKx/uC5oXWT65tTkU72uIAKQP\nnVS4dy+DDAXa+SchsO0P7LWKPIhRFUPD5FeYyT3MF6K6JRVdBnZ54COISa+Q4JdU\nB7HdVhFKXWv4SBWpjGuofQNIDjsK3xh5bxNqKh9pxV19lqjhxyfSwsvBpsZvEzib\nqOuJDkP6Futy0PIdqNzj8B28JZVuRF5xsI5UwzVZScn46mzSRrjf0XU1M8IJkFH3\npkRTCRBJAgMBAAECgf96QWPm6iLFmiettsryj5yslSQ1unhtVEQBOSLYPvtgv8Q3\ntg64dPdXM0H/DHjtUO835Dnnl3tMEbNb7+CLQPvlSpi6/YGOyb/bGI+5kT2is+ln\n3WgHaqIRyFLTUes7vUWciCJD3+CU4Xp+Qg4TDGrTcI4rdpQz+JqmA/FzoQiukbFL\n6+Jl7Qh/zEvW31lifTcwshnGlyBPMSa6gGDKQOgKbQ5nnPmOCWDc8tjwCXUibt8C\n8a2W/2/n12BL+4s7s/RqbIhT/xV4mBZRG24yVEfA01IW4+kR/ggn61Scq4BIrwjW\nBj27kYwU7CsLGtjPAJ2ndWQE2ZegURnbwcga60ECgYEAy9jXzFCZlO44dWq361NB\nr5/Zl6k5CJGv8q4cRCZ1vkW5jFlVciK3p2grrMtYQK0TLuB+MoGTCmqN2bTbVjfj\nXb7uxSvfU06KovFj7MTJLb2ytwpCNCpGQ7oi/mTCy/OuhBMVIqv9Hq8rYkign7ec\nAGwjVGuKJl1ROUwi7NRRGWkCgYEAwwlJE6UEhX/WVUGFacp1ksnoHPfpJpPMchQQ\noDDwlqz9qLgaav8tWUkcq7TJPHN1vKSStNQc0SikS+RdGZQ6bLyCHz9TrqkcgArG\n4u2l598IDLbEBikkt9CgAkLiV+qhchwNrzkWm8jADOfeq8xYz9L2uZrQh0XAD3MP\nNsiZg+ECgYEAmClNLF4dxmXsDvmSQD7tkUMpEWRoBlV5mRUOVHDBAz7YukMU3RW9\nMWE4+MrxHZYT87HvgZPnRqczK4ctEra1KY0Ufmm5Ul4WbnrxtBNQeKxZcvhdYsML\noBKZfHuKTOOhKUV1SWRIlVb8c2jzPUW5VTdjR+jePrT5pGOIzm/N+cECgYAgE/fj\n9kEvH96FuTgTNUxvLywxD4lWYfq/TJOLdWEstxklVdpqfLvdsou3pg1vFuJne33x\npe1zbUbQgKfbXCjb14ljUEwYLxJT8PHTQxkFcQZm6OyGwt+aKAMZPBz0LtAM75ZE\nmpQgXT1RIhXalcqJq/4OeusPRKaZI+h9rzKooQKBgER4lxyxBo53RdWCkwiP7j3F\nyOjKzy400hdEOnH2pedUqB4Ls/4Enn6R/n4U1xE1NBUB70cRsZv3Eo9H/P8Qa7j0\nvu74cQFq2LksvZFlW4hb1pMS0Cih257dGd2cfJ3dwyClzsLEutVz8dwSZaKZZ+xP\nTc+WYMd0Qtjs4foO+cmv\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-pkx1f@momentum-live-b58e2.iam.gserviceaccount.com",
+  "client_id": "101935690790934105424",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-pkx1f%40momentum-live-b58e2.iam.gserviceaccount.com"
+}

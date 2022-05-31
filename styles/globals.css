@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heroHeader {
+  background-image: url(https://rvitm.com/ctgzma2021/img/slider1.jpg);
+}
