@@ -125,14 +125,15 @@ function Tech() {
               <p className="text-3xl font-bold sm:text-5xl text-center">
                 Conference Topics{" "}
               </p>
-              {Topics.map((topic) => (
+              {Topics.map((topic, index) => (
                 <div className="mt-8" key={topic.label}>
                   <p className="text-2xl font-medium text-gray-900">
-                    {topic.label}
+                    {index + 1}. {topic.label}
                   </p>
                   <List className="mt-4" type="ordered">
-                    {topic.subTopics.map((subTopic) => (
+                    {topic.subTopics.map((subTopic, index) => (
                       <List.Item className="text-lg font-medium text-gray-500" key={subTopic}>
+                        {index + 1}){" "}
                         {subTopic}
                       </List.Item>
                     ))}
