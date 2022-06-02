@@ -223,23 +223,27 @@ function committee() {
                 <Accordion.Item label={committeeMember.label} opened>
                   {committeeMember.members.map((member, index) => {
                     return (
-                      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-                        {index+1}. <a
-                          className="block mt-2 p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
-                        >
-                          <div className="flex flex-row items-center justify-between">
-                            <div>
-                              <Avatar src={null} alt="no image here" color="indigo" size={200} />
+                      <>
+                        <div className="grid grid-col-3">
+
+                          {index + 1}.
+                          <a
+                            className="block mt-2 p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
+                          >
+                            <div className="flex flex-col items-center justify-between sm:flex-row">
+                              <div>
+                                <Avatar src={null} alt="no image here" color="indigo" size={200} />
+                              </div>
+                              <div>
+                                <h6 className="mt-2 font-bold">{member.name}</h6>
+                                <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
+                                  {member.post}
+                                </p>
+                              </div>
                             </div>
-                            <div>
-                              <h6 className="mt-2 font-bold">{member.name}</h6>
-                              <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
-                                {member.post}
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
+                          </a>
+                        </div>
+                      </>
                     )
                   })}
                 </Accordion.Item>
