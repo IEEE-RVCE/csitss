@@ -3,7 +3,6 @@ import "../styles/globals.css";
 import { MantineProvider, MantineThemeOverride } from "@mantine/core";
 
 import type { AppProps } from "next/app";
-import { AuthProvider } from "../hooks/auth";
 import WrapApp from "../components/NavBar";
 
 const theme: MantineThemeOverride = {
@@ -21,12 +20,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       // Done to avoid Tailwind CSS Class Clashes
       emotionOptions={{ key: "mantinedevcss", prepend: false }}
     >
-      <AuthProvider>
-        <WrapApp>
-          <Component {...pageProps} />
-          <div id="recaptcha-container" />
-        </WrapApp>
-      </AuthProvider>
+      <WrapApp>
+        <Component {...pageProps} />
+        <div id="recaptcha-container" />
+      </WrapApp>
     </MantineProvider>
   );
 }

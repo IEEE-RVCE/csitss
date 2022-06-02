@@ -1,20 +1,11 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Divider, Header, Image, Menu, Tooltip } from "@mantine/core";
+import { AppShell, Header, Image, Menu, Tooltip } from "@mantine/core";
 import { CashIcon, ChatIcon } from "@heroicons/react/solid";
 
 import Link from "next/link";
 import React from "react";
-import { useAuth } from "../hooks/auth";
-import { useRouter } from "next/router";
 
-// const withAuthLinks = [
-//   {
-//     href: "/register",
-//     label: "Register",
-//   }
-// ]
-
-const withOutAuthLinks = [
+const Links = [
   {
     href: "/",
     label: "Home",
@@ -28,8 +19,8 @@ const withOutAuthLinks = [
     label: "Technical Program",
   },
   {
-    href: "/sponsorship",
-    label: "Sponsorship",
+    href: "/registration",
+    label: "Registration",
   },
   {
     href: "/committee",
@@ -42,18 +33,6 @@ const withOutAuthLinks = [
 ]
 
 const NavBar = () => {
-  const { user } = useAuth();
-  const router = useRouter();
-
-  /**
-   * @description Performing Dynamic Imports as it reduces the overhead of the navBar
-   */
-  const handleLogout = () => {
-    import("../lib/firebaseClient").then((pack) => {
-      pack.firebase.auth().signOut();
-    });
-    router.push("/");
-  };
 
   return (
     <header>
@@ -72,59 +51,14 @@ const NavBar = () => {
           </div>
 
           <nav className="hidden space-x-8 text-sm font-medium md:flex">
-            {user ? (
-              <>
-                <Link href={`/view`}>
-                  <a
-                    className="text-gray-500 hover:text-indigo-400"
-                    href="/view"
-                  >
-                    View Your Registration Status
-                  </a>
-                </Link>
-                <Link href="/register">
-                  <a className="text-gray-500" href="/authenticated">
-                    Register for the Event
-                  </a>
-                </Link>
-              </>
-            ) : (
-              <>
-                {withOutAuthLinks.map((link) => (
-                  <Link href={link.href} key={JSON.stringify(link)}>
-                    <a className="text-gray-500 hover:text-indigo-400" href={link.href}>
-                      {link.label}
-                    </a>
-                  </Link>
-                ))}
-              </>
-            )}
+            {Links.map((link) => (
+              <Link href={link.href} key={JSON.stringify(link)}>
+                <a className="text-gray-500 hover:text-indigo-400" href={link.href}>
+                  {link.label}
+                </a>
+              </Link>
+            ))}
           </nav>
-
-          <div className="hidden flex-1 items-center justify-end space-x-4 sm:flex">
-            {!user ? (
-              <>
-                <Link href="/login">
-                  <a className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white">
-                    Login
-                  </a>
-                </Link>
-              </>
-            ) : (
-              <>
-                <span className="rounded-lg bg-indigo-600 px-3 py-2 text-sm font-medium text-white">
-                  Logged as {user.displayName}
-                </span>
-                <button
-                  className="rounded-lg bg-indigo-600 px-3 py-2 text-sm font-medium text-white"
-                  onClick={handleLogout}
-                >
-                  Logout
-                </button>
-              </>
-            )}
-          </div>
-
           <div className="lg:hidden">
             <Menu
               control={
@@ -152,49 +86,16 @@ const NavBar = () => {
                 </button>
               }
             >
-              {user ? (
-                <>
-                  <Menu.Label>Goto</Menu.Label>
-                  <Menu.Item>
-                    <Link href="/register">
-                      <a className="text-gray-500" href="/register">
-                        View Your Registration Status
-                      </a>
-                    </Link>
-                  </Menu.Item>
-                  <Divider />
-                  <Menu.Label>Actions</Menu.Label>
-                  <Menu.Item color="indigo">
-                    <button onClick={handleLogout}>Logout</button>
-                  </Menu.Item>
-                </>
-              ) : (
-                <>
-                  <Menu.Label>Goto</Menu.Label>
-
-                  <Menu.Item>
-                    <Link href="/">
-                      <a className="text-gray-500" href="/">
-                        Home
-                      </a>
-                    </Link>
-                  </Menu.Item>
-                  <Menu.Item>
-                    <Link href="/contact">
-                      <a className="text-gray-500" href="/contact">
-                        Contact
-                      </a>
-                    </Link>
-                  </Menu.Item>
-                  <Divider />
-                  <Menu.Label>Actions</Menu.Label>
-                  <Menu.Item color="indigo">
-                    <Link href="/login">
-                      <a href="/login">Login</a>
-                    </Link>
-                  </Menu.Item>
-                </>
-              )}
+              <Menu.Label>Goto</Menu.Label>
+              {Links.map((link) => (
+                <Menu.Item>
+                  <Link href={link.href}>
+                    <a className="text-gray-500" href="/">
+                      {link.label}
+                    </a>
+                  </Link>
+                </Menu.Item>
+              ))}
             </Menu>
           </div>
         </div>

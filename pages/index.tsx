@@ -2,17 +2,15 @@
 import { Element, Link as ScrollLink } from "react-scroll";
 
 import HeaderImages from "../components/HeaderImages";
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/no-img-element */
-// import { Button } from "@mantine/core";
-// import Link from "next/link";
 import React from "react";
 import Timeline from '../components/TimeLine';
 
-// import { useAuth } from "../hooks/auth";
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/no-img-element */
+
+
 
 export default function Index() {
-  // const { user } = useAuth();
 
   return (
     <>

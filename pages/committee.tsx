@@ -1,3 +1,4 @@
+import { Accordion } from '@mantine/core';
 import { Avatar } from '@mantine/core';
 import React from 'react'
 
@@ -218,43 +219,31 @@ function committee() {
         {committeeMembers.map((committeeMember, index) => {
           return (
             <div key={index}>
-              <details className="group">
-                <summary
-                  className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50"
-                >
-                  <h5 className="font-medium text-gray-900">
-                    {committeeMember.label}
-                  </h5>
-
-                  <svg
-                    className="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </summary>
-                {committeeMember.members.map((member, index) => {
-                  return (
-                    <div key={index} className="flex flex-row">
-                      <div className="p-4">
-                        <Avatar size={250} />
-                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                          <h3>{member.name}</h3>
-                          <p>{member.post}</p>
-                        </p>
+              <Accordion>
+                <Accordion.Item label={committeeMember.label} opened>
+                  {committeeMember.members.map((member, index) => {
+                    return (
+                      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                        {index+1}. <a
+                          className="block mt-2 p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
+                        >
+                          <div className="flex flex-row items-center justify-between">
+                            <div>
+                              <Avatar src={null} alt="no image here" color="indigo" size={200} />
+                            </div>
+                            <div>
+                              <h6 className="mt-2 font-bold">{member.name}</h6>
+                              <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
+                                {member.post}
+                              </p>
+                            </div>
+                          </div>
+                        </a>
                       </div>
-                    </div>
-                  )
-                })}
-              </details>
+                    )
+                  })}
+                </Accordion.Item>
+              </Accordion>
             </div>
           )
         })}

@@ -73,7 +73,9 @@ function about() {
       <section className='max-w-screen-xl px-4 py-4 mx-auto sm:px-6 lg:px-8'>
         <h2 className="text-3xl font-extrabold sm:text-4xl">ABOUT THE CONFERENCE</h2>
         <p className="mt-4 text-gray-600">
-          The 6th International Conference on “Computational Systems and Information Technology for
+          The 6th International Conference on “registration
+          registration
+registrationComputational Systems and Information Technology for
           Sustainable Solutions [CSITSS – 2022] focusses to bring together leading academic scientists,
           researchers, industry representatives, postdoctoral fellows and research scholars around the
           world to share their knowledge and research expertise in SPICCE (Sensors, Processors,
