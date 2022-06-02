@@ -3,32 +3,57 @@ import { Text, Timeline } from '@mantine/core';
 import { AnnotationIcon } from '@heroicons/react/solid';
 
 export default function CustomTimeLine() {
+
+
+  const data = [
+    {
+      label: "Submission of Full-length Manuscript(opens from)",
+      date: "10 June 2022"
+    },
+    {
+      label: "Last date to submit Full-length Manuscript",
+      date: "18 July 2022"
+    },
+    {
+      label: "Notification of Acceptance",
+      date: "12 August 2022 - 7 September 2022"
+    },
+    {
+      label: "Early Bird Registration",
+      date: "16 August 2022-15 September 2022"
+    },
+    {
+      label: "Submission of Camera-ready Manuscript",
+      date: "5 October2022"
+    },
+    {
+      label: "Last Date for Registration",
+      date: "20 November 2022"
+    },
+    {
+      label: "Pre-Conference Tutorial",
+      date: "21 December 2022"
+    },
+    {
+      label: "Conference Dates",
+      date: "21-23 December 2022"
+    }
+  ]
+
+
+
   return (
     <>
-      <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-extrabold text-transparent underline">
-      Important Dates
+      <h1 className="my-4 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-extrabold text-transparent underline">
+        Important Dates
       </h1>
-    <Timeline active={1} bulletSize={24} lineWidth={2}>
-      <Timeline.Item bullet={<AnnotationIcon />} title="New branch">
-        <Text color="dimmed" size="sm">You&apos;ve created new branch <Text variant="link" component="span" inherit>fix-notifications</Text> from master</Text>
-        <Text size="xs" mt={4}>2 hours ago</Text>
-      </Timeline.Item>
-
-      <Timeline.Item bullet={<AnnotationIcon />} title="Commits">
-        <Text color="dimmed" size="sm">You&apos;ve pushed 23 commits to<Text variant="link" component="span" inherit>fix-notifications branch</Text></Text>
-        <Text size="xs" mt={4}>52 minutes ago</Text>
-      </Timeline.Item>
-
-      <Timeline.Item title="Pull request" bullet={<AnnotationIcon />} lineVariant="dashed">
-        <Text color="dimmed" size="sm">You&apos;ve submitted a pull request<Text variant="link" component="span" inherit>Fix incorrect notification message (#187)</Text></Text>
-        <Text size="xs" mt={4}>34 minutes ago</Text>
-      </Timeline.Item>
-
-      <Timeline.Item title="Code review" bullet={<AnnotationIcon />}>
-        <Text color="dimmed" size="sm"><Text variant="link" component="span" inherit>Robert Gluesticker</Text> left a code review on your pull request</Text>
-        <Text size="xs" mt={4}>12 minutes ago</Text>
-      </Timeline.Item>
-    </Timeline>
+      <Timeline active={1} bulletSize={24} lineWidth={3} >
+        {data.map((item, index) => (
+          <Timeline.Item key={index} bullet={<AnnotationIcon />} title={item.label}>
+            <Text size="md" mt={4}>{item.date}</Text>
+          </Timeline.Item>
+        ))}
+      </Timeline>
     </>
   );
 }

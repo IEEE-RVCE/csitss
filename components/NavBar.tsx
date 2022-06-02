@@ -63,7 +63,7 @@ const NavBar = () => {
             <Link href="/">
               <a className="flex items-center" href="/">
                 <Image
-                  src="https://i.ibb.co/dty0MtL/IEEE-RVCE-Computer-Society-Logo.png"
+                  src="https://i.ibb.co/LPGJHks/logo.png"
                   alt="logo"
                   className=" mt-5 h-full w-20"
                 />
@@ -210,7 +210,7 @@ const Footer = () => {
         <Link href="/">
           <a className="flex items-center justify-items-center" href="/">
             <Image
-              src="https://i.ibb.co/dty0MtL/IEEE-RVCE-Computer-Society-Logo.png"
+              src="https://i.ibb.co/LPGJHks/logo.png"
               alt="logo"
               className="m-5 h-full w-20"
             />

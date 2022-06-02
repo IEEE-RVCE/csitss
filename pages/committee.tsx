@@ -1,10 +1,11 @@
+import { Avatar } from '@mantine/core';
 import React from 'react'
 
 type Mem = {
   label: string;
   members: {
     name: string;
-    post: string;
+    post?: string;
   }[];
 }
 
@@ -12,7 +13,7 @@ const committeeMembers: Mem[] = [{
   label: "Chief Patron",
   members: [
     {
-      name: "Dr. M. K Panduranga Setty",
+      name: "Dr. M. P. Shyam",
       post: "President, RSST."
     }
   ]
@@ -36,13 +37,183 @@ const committeeMembers: Mem[] = [{
       post: "Principal, RVCE."
     }
   ]
-}]
+},
+{
+  label: "Advisory Committee",
+  members: [
+    {
+      name: "Dr.Gang Li",
+      post: "Deakin University, Australia"
+    },
+    {
+      name: "Dr. SundaravadivazhaganBalasubaramanian",
+    },
+    {
+      name: "Dr. Uma Mohan",
+      post: "Director - Doctoral programmes,LSC, UK"
+    },
+    {
+      name: "Dr.Devesh Dwivedi",
+      post: "India Site Head, IP Development and Design Centre of Excellence, Global Foundries, India"
+    },
+    {
+      name: "Dr. Amara",
+      post: "USA"
+    }
+  ]
+},
+{
+  label: "Organising Committee",
+  members: [
+    {
+      name: "Dr. Uma B.V.",
+      post: "Dean Student Affairs and Professor, Department. of ECE"
+    },
+    {
+      name: "Dr. H. V. Ravish Aradhya",
+      post: " Assc. Dean and Professor and, Department. of ECE"
+    },
+    {
+      name: "Dr. K. Sreelakshmi",
+      post: "Professor and Head, Department of ETE"
+    },
+    {
+      name: "Dr. C H Renumadhavi",
+      post: "iProfessor and Head, Department of EIE"
+    },
+    {
+      name: "Dr. Ramakanth Kumar P",
+      post: "Professor and Head, Department of CSE"
+    },
+    {
+      name: "Dr. B.M. Sagar",
+      post: "Professor and Head, Department of ISE"
+    },
+    {
+      name: "Dr. Andhe Dharani",
+      post: " Professor and Director, MCA"
+    },
+    {
+      name: "Dr. RudrannaNandihalli",
+      post: "Professor and Head, Department of EEE"
+    }
+  ]
+},
+{
+  label: "IEEE Co-ordinators",
+  members: [
+    {
+      name: "Dr. Prakash Biswagar",
+      post: ",Professor, Department of ECE"
+    },
+    {
+      name: "Dr. Ashok Kumar AR",
+      post: "Associate Professor, Department of CSE"
+    },
+    {
+      name: "Prof. Raghavendra Prasad S G",
+      post: "Assistant Professor, Department of ISE"
+    }
+  ]
+},
+{
+  label: "Genral Chairs",
+  members: [
+    {
+      name: "Dr. Geetha KS",
+      post: "Vice Principal, Professor and Head, Department of Electronics and \nCommunication Engineering, RV College of Engineering, Bengaluru."
+    }
+  ]
+},
+{
+  label: "Program Chair",
+  members: [
+    {
+      name: "Dr. M Uttara Kumari",
+      post: "Professor, Department of ECE, RVCE"
+    },
+    {
+      name: "Dr. K S Shushrutha",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "Technical Chair",
+  members: [
+    {
+      name: "Dr Mahesh A",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "Finance Chair",
+  members: [
+    {
+      name: "Dr Usha Rani K R",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "Publication Chair",
+  members: [
+    {
+      name: "Dr. Kariyappa B.S",
+      post: "Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "SponsorShip Chair",
+  members: [
+    {
+      name: "Dr.Kiran V",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "Publicity Chair",
+  members: [
+    {
+      name: "Dr. Shilpa D.R.",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "Web Chair & Conference Management System",
+  members: [
+    {
+      name: "Dr Veena Devi",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+},
+{
+  label: "Conference Convenors",
+  members: [
+    {
+      name: "Dr. Abhay Deshpande",
+      post: "Associate Professor, Department of ECE, RVCE"
+    },
+    {
+      name: "Dr. Shylashree N",
+      post: "Associate Professor, Department of ECE, RVCE"
+    }
+  ]
+}
+]
 
 
 function committee() {
   return (
     <div>
-      <h1>Committee</h1>
+      <h2 className="text-4xl font-bold sm:text-5xl text-center">
+        Committee
+      </h2>
       <div className="space-y-4">
         {committeeMembers.map((committeeMember, index) => {
           return (
@@ -72,11 +243,14 @@ function committee() {
                 </summary>
                 {committeeMember.members.map((member, index) => {
                   return (
-                    <div key={index}>
-                      <p className="px-4 mt-4 leading-relaxed text-gray-700">
-                        <h3>{member.name}</h3>
-                        <p>{member.post}</p>
-                      </p>
+                    <div key={index} className="flex flex-row">
+                      <div className="p-4">
+                        <Avatar size={250} />
+                        <p className="px-4 mt-4 leading-relaxed text-gray-700">
+                          <h3>{member.name}</h3>
+                          <p>{member.post}</p>
+                        </p>
+                      </div>
                     </div>
                   )
                 })}

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Element, Link as ScrollLink } from "react-scroll";
 
+import HeaderImages from "../components/HeaderImages";
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 // import { Button } from "@mantine/core";
@@ -15,6 +16,7 @@ export default function Index() {
 
   return (
     <>
+      <HeaderImages />
       <section className="body-font text-gray-600">
         <header>
           <div
@@ -24,7 +26,7 @@ export default function Index() {
             <div className="flex h-full w-full items-center justify-center bg-gray-900 bg-opacity-50">
               <div className="text-center font-extrabold">
                 <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent">
-                  WELCOME TO CSITSS-2021
+                  WELCOME TO CSITSS-2022
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
                   <span className="font-semibold">
@@ -33,17 +35,16 @@ export default function Index() {
                   </span>
                 </p>
                 <p className="text-gray-400">
-                  Organized by RV College of Engineering®, Bengaluru Financially
+                  Organized by RV College of Engineering®, Bengaluru Technically
                   Co-Sponsored by IEEE Bangalore Section Technically
-                  Co-Sponsored by Florida International University
                 </p>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 p-4">
                   <button className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
                     Submit Paper
                   </button>
-                  <button className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
-                    Brouchere
-                  </button>
+                  <a className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none" href="brochure.pdf">
+                    Brochure
+                  </a>
                   <button className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
                     Flyer
                   </button>
@@ -66,23 +67,23 @@ export default function Index() {
         <aside className="mt-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 p-12">
           <div>
             <p className="text-lg font-bold text-white sm:text-2xl">
-              The conference emphasizes contemporary research works that enable
-              building sustainable solutions in the domains of Social Networks,
-              Mobile, Analytics, Cloud computing, and Communications (SMACC).
-              The conference has been held successfully for the past four years
-              with participants from all over India and abroad. Quality research
-              papers are accepted and published in IEEE digital library and
-              selected papers in Scopus. The present version of the CSITSS-2021
-              aims to achieve higher standards by attracting original research
-              works in SMACC. International speakers will deliver the keynote
-              talks on the latest happenings in the domains. The CSITSS-2021
-              ensures to provide a platform for researchers around the globe for
-              knowledge exchange and networking.
+              The 6th International Conference on “Computational Systems and Information Technology for
+              Sustainable Solutions [CSITSS – 2022] focusses to bring together leading academic scientists,
+              researchers, industry representatives, postdoctoral fellows and research scholars around the
+              world to share their knowledge and research expertise in SPICCE (Sensors, Processors,
+              Intelligent systems, Computing, Communication and Energy solutions) from 21th to 23rd
+              December 2022.
+              The conference has been held successfully for the past five years with participants from all over
+              India and abroad. All peer reviewed and selected papers of the conference will be submitted for
+              possible inclusion in IEEE digital library Indexed by Scopus. The present version of the
+              CSITSS-2022 aims to achieve higher standards by attracting original research works in SPICCE.
+              International speakers will deliver the keynote talks on the latest happenings in the domains. The
+              CSITSS-2022 ensures to provide a platform for researchers around the globe for knowledge
+              exchange and networking.
             </p>
             <p className="text-base font-bold text-white">
               The event is jointly organized by R V College Of Engineering,
-              Financially Co-Sponsored by IEEE Bangalore Section Technically
-              Co-Sponsored by Florida International University.
+              Technically co-sponsored by IEEE Bangalore Section
             </p>
           </div>
         </aside>
