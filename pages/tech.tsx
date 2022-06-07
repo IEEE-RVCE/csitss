@@ -2,7 +2,7 @@ import { List, Tabs } from "@mantine/core";
 
 import React from "react";
 
-const Topics = [{
+export const Topics = [{
   label: "Sensors: Sensors, Automation and Process control",
   subTopics: [
     "Sensors for Smart Systems (Health Care/IoT systems / Agriculture, etc.) ",
@@ -103,9 +103,13 @@ function Tech() {
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">
                 <a
-                  href="https://easychair.org/cfp/csitss2021"
+                  href=""
                   className="block rounded-lg bg-blue-500 px-5 py-3 font-medium text-white shadow-xl hover:bg-blue-600"
-                  target="_blank">
+                  target="_blank"
+                  onClick={() => {
+                    window.alert("Will be updated soon");
+                  }}
+                >
                   Submit Your Paper
                 </a>
 
@@ -123,7 +127,11 @@ function Tech() {
           <aside className="bg-gray-100 p-12 sm:p-16 lg:p-24">
             <div className="">
               <p className="text-3xl font-bold sm:text-5xl text-center">
-                Conference Topics{" "}
+                Conference Tracks{" "}
+              </p>
+              <p className="text-sm font-bold text-center">
+                Research submissions on all topics related to SPICCE (Sensors, Processors, Intelligent systems,
+                Computing, Communication and Energy solutions), but not limited to the following
               </p>
               {Topics.map((topic, index) => (
                 <div className="mt-8" key={topic.label}>
@@ -141,8 +149,7 @@ function Tech() {
                 </div>
               ))}
             </div>
-            Research submissions on all topics related to SPICCE (Sensors, Processors, Intelligent systems,
-            Computing, Communication and Energy solutions), but not limited to the following:           </aside>
+          </aside>
         </Tabs.Tab>
       </Tabs>
     </div>

@@ -1,4 +1,6 @@
+import { Accordion } from '@mantine/core';
 import React from 'react'
+import { Topics } from './tech'
 
 function about() {
   return (
@@ -75,7 +77,7 @@ function about() {
         <p className="mt-4 text-gray-600">
           The 6th International Conference on “registration
           registration
-registrationComputational Systems and Information Technology for
+          registrationComputational Systems and Information Technology for
           Sustainable Solutions [CSITSS – 2022] focusses to bring together leading academic scientists,
           researchers, industry representatives, postdoctoral fellows and research scholars around the
           world to share their knowledge and research expertise in SPICCE (Sensors, Processors,
@@ -89,6 +91,24 @@ registrationComputational Systems and Information Technology for
           CSITSS-2022 ensures to provide a platform for researchers around the globe for knowledge
           exchange and networking.
         </p>
+      </section>
+      <section>
+        <div className="max-w-screen-xl px-4 py-4 mx-auto sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">CONFERENCE TRACKS</h2>
+          {Topics.map((topic) => (
+            <div className="flex flex-col rounded-lg  overflow-hidden">
+              <Accordion>
+                <Accordion.Item label={topic.label}>
+                  {topic.subTopics.map((subTopic) => (
+                    <ol>
+                      <li>{subTopic}</li>
+                    </ol>
+                  ))}
+                </Accordion.Item>
+              </Accordion>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
     </>

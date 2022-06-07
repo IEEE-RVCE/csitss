@@ -15,6 +15,10 @@ const Links = [
     label: "About",
   },
   {
+    href: "/committee",
+    label: "Committee",
+  },
+  {
     href: "/tech",
     label: "Technical Program",
   },
@@ -22,10 +26,7 @@ const Links = [
     href: "/registration",
     label: "Registration",
   },
-  {
-    href: "/committee",
-    label: "Committee",
-  },
+  
   {
     href: "/contact",
     label: "Contact Us",

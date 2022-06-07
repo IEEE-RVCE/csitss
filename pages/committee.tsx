@@ -62,7 +62,15 @@ const committeeMembers: Mem[] = [{
       post: "USA"
     }
   ]
-},
+  }, {
+    label: "Genral Chairs",
+    members: [
+      {
+        name: "Dr. Geetha KS",
+        post: "Vice Principal, Professor and Head, Department of Electronics and \nCommunication Engineering, RV College of Engineering, Bengaluru."
+      }
+    ]
+  },
 {
   label: "Organising Committee",
   members: [
@@ -97,32 +105,6 @@ const committeeMembers: Mem[] = [{
     {
       name: "Dr. RudrannaNandihalli",
       post: "Professor and Head, Department of EEE"
-    }
-  ]
-},
-{
-  label: "IEEE Co-ordinators",
-  members: [
-    {
-      name: "Dr. Prakash Biswagar",
-      post: ",Professor, Department of ECE"
-    },
-    {
-      name: "Dr. Ashok Kumar AR",
-      post: "Associate Professor, Department of CSE"
-    },
-    {
-      name: "Prof. Raghavendra Prasad S G",
-      post: "Assistant Professor, Department of ISE"
-    }
-  ]
-},
-{
-  label: "Genral Chairs",
-  members: [
-    {
-      name: "Dr. Geetha KS",
-      post: "Vice Principal, Professor and Head, Department of Electronics and \nCommunication Engineering, RV College of Engineering, Bengaluru."
     }
   ]
 },
@@ -192,7 +174,23 @@ const committeeMembers: Mem[] = [{
       post: "Associate Professor, Department of ECE, RVCE"
     }
   ]
-},
+  }, {
+    label: "IEEE Co-ordinators",
+    members: [
+      {
+        name: "Dr. Prakash Biswagar",
+        post: ",Professor, Department of ECE"
+      },
+      {
+        name: "Dr. Ashok Kumar AR",
+        post: "Associate Professor, Department of CSE"
+      },
+      {
+        name: "Prof. Raghavendra Prasad S G",
+        post: "Assistant Professor, Department of ISE"
+      }
+    ]
+  },
 {
   label: "Conference Convenors",
   members: [
