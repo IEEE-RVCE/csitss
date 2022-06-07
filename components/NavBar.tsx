@@ -26,7 +26,7 @@ const Links = [
     href: "/registration",
     label: "Registration",
   },
-  
+
   {
     href: "/contact",
     label: "Contact Us",
@@ -43,7 +43,7 @@ const NavBar = () => {
             <Link href="/">
               <a className="flex items-center" href="/">
                 <Image
-                  src="https://i.ibb.co/LPGJHks/logo.png"
+                  src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
                   alt="logo"
                   className=" mt-5 h-full w-20"
                 />
@@ -112,7 +112,7 @@ const Footer = () => {
         <Link href="/">
           <a className="flex items-center justify-items-center" href="/">
             <Image
-              src="https://i.ibb.co/LPGJHks/logo.png"
+              src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
               alt="logo"
               className="m-5 h-full w-20"
             />
