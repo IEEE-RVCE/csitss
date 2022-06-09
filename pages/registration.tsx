@@ -8,7 +8,8 @@ function registration() {
       "DELEGATES", "INDIAN DELEGATES AMOUNT IN RS.\n(INCLUDING GST) ", "  FOREIGN DELEGATES AMOUNT IN USD.(INCLUDING GST)"],
 
     rows: [
-      ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
+      ["Students (Early bird Registrations) ", "Rs. 4,000", "USD. 75"],
+      ["Faculty (Early bird Registrations) ", "Rs. 5,000", "USD. 100"], ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
       ["Students (Non-IEEE Members)", "Rs. 6,000", "USD. 125"],
       ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
       ["Faculty (Non-IEEE Members)", "Rs. 7,000", "USD. 150"],
@@ -17,10 +18,6 @@ function registration() {
     ]
 
   }
-
-
-
-
 
 
   return (

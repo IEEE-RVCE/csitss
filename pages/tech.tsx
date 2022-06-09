@@ -98,17 +98,14 @@ function Tech() {
                 size through online submission at Microsoft CMT - on or before 15th July 2022. The manuscript should
                 follow the standard IEEE template. The acceptance of submission for peer review will be based on the
                 plagiarism check. All submission will be handled electronically and submitted papers will be double blind
-                peer reviewed by domain experts. Microsoft CMT Link: https://easychair.org/cfp/csitss2021
+                peer reviewed by domain experts.
               </p>
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">
                 <a
-                  href=""
+                  href="https://cmt3.research.microsoft.com/CSITSS2022"
                   className="block rounded-lg bg-blue-500 px-5 py-3 font-medium text-white shadow-xl hover:bg-blue-600"
                   target="_blank"
-                  onClick={() => {
-                    window.alert("Will be updated soon");
-                  }}
                 >
                   Submit Your Paper
                 </a>
