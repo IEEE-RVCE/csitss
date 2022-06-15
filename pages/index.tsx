@@ -34,7 +34,7 @@ export default function Index() {
                 </p>
                 <p className="text-gray-400">
                   Organized by RV College of Engineering®, Bengaluru Technically
-                  Co-Sponsored by IEEE Bangalore Section Technically
+                  Co-Sponsored by IEEE Bangalore Section.
                 </p>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 p-4">
                   <a
@@ -44,11 +44,8 @@ export default function Index() {
                     Submit Paper
                   </a>
                   <a className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none" href="brochure.pdf">
-                    Brochure
+                    Download CFP
                   </a>
-                  <button className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
-                    Flyer
-                  </button>
                   <ScrollLink
                     activeClass="active"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
