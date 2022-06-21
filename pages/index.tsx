@@ -33,8 +33,7 @@ export default function Index() {
                   </span>
                 </p>
                 <p className="text-gray-400">
-                  Organized by RV College of Engineering®, Bengaluru Technically
-                  Co-Sponsored by IEEE Bangalore Section.
+                  Organized by RV College of Engineering®
                 </p>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 p-4">
                   <a
