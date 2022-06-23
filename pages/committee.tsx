@@ -71,12 +71,12 @@ const committeeMembers: Mem[] = [{
     // }, 
     {
       name: "Shri.Puneet Kumar Mishra",
-      post: "Chair, IEEE Bangalore Section and Secretary IEEE India Council",
+      post: "Chair, AP/MTT Bangalore Joint Chapter, Secretary, India Council.",
       imgLink:"https://ieeebangalore.org/wp-content/uploads/2021/02/Puneet-1024x1024.jpg"
       
     }, {
       name: "Dr. Deepa Shenoy",
-      post: "Chir, IEEE Bangalore Section",
+      post: "Chair, IEEE Bangalore Section",
       imgLink:"https://media-exp2.licdn.com/dms/image/C4E03AQEftkV0U4U8lQ/profile-displayphoto-shrink_200_200/0/1516330237646?e=1661385600&v=beta&t=jl_qo_DZoBUxaX0VBcHv_jQ8hIGcH33KsCFxSHW2Xb8"
     }
   ]
