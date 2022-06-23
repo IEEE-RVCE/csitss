@@ -16,7 +16,7 @@ export default function CustomTimeLine() {
     },
     {
       label: "Notification of Acceptance",
-      date: "20 August 2022 - 7 September 2022"
+      date: "12 August 2022 - 7 September 2022"
     },
     {
       label: "Early Bird Registration",
