@@ -42,9 +42,9 @@ export default function Index() {
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
                     Submit Paper
                   </a>
-                  <a className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none" href="brochure.pdf">
+                  {/* <a className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none" href="brochure.pdf">
                     Download CFP
-                  </a>
+                  </a> */}
                   <ScrollLink
                     activeClass="active"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
@@ -71,8 +71,7 @@ export default function Index() {
               Intelligent systems, Computing, Communication and Energy solutions) from 21th to 23rd
               December 2022.
               The conference has been held successfully for the past five years with participants from all over
-              India and abroad. All peer reviewed and selected papers of the conference will be submitted for
-              possible inclusion in IEEE digital library Indexed by Scopus. The present version of the
+              India and abroad.The present version of the
               CSITSS-2022 aims to achieve higher standards by attracting original research works in SPICCE.
               International speakers will deliver the keynote talks on the latest happenings in the domains. The
               CSITSS-2022 ensures to provide a platform for researchers around the globe for knowledge
