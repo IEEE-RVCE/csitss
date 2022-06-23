@@ -80,7 +80,7 @@ export default function Index() {
             </p>
             <p className="text-base font-bold text-white">
               The event is jointly organized by R V College Of Engineering,
-              Technically co-sponsored by IEEE Bangalore Section
+              {/* Technically co-sponsored by IEEE Bangalore Section */}
             </p>
           </div>
         </aside>
