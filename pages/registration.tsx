@@ -10,10 +10,11 @@ function registration() {
     rows: [
       ["Students (Early bird Registrations) ", "Rs. 4,000", "USD. 75"],
       ["Faculty (Early bird Registrations) ", "Rs. 5,000", "USD. 100"], ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
-      ["Students (Non-IEEE Members)", "Rs. 6,000", "USD. 125"],
+      ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
       ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
-      ["Faculty (Non-IEEE Members)", "Rs. 7,500", "USD. 150"],
+      ["Faculty (Non-IEEE Members)", "Rs. 8,000", "USD. 160"],
       ["Industry Professionals (IEEE Members) ", "Rs. 10,000", "USD. 200"],
+      ["Industry Professionals (Non-IEEE Members) ", "Rs. 13,500", "USD. 240"],
 
     ]
 

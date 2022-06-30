@@ -16,7 +16,7 @@ export default function CustomTimeLine() {
     },
     {
       label: "Notification of Acceptance",
-      date: "12 August 2022 - 7 September 2022"
+      date: "20 August 2022 - 7 September 2022"
     },
     {
       label: "Early Bird Registration",
@@ -24,7 +24,7 @@ export default function CustomTimeLine() {
     },
     {
       label: "Submission of Camera-ready Manuscript",
-      date: "5 October2022"
+      date: "5 October 2022"
     },
     {
       label: "Last Date for Registration",
