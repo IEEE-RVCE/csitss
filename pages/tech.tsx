@@ -109,12 +109,12 @@ function Tech() {
                 >
                   Submit Your Paper
                 </a>
-                <a
+                {/* <a
                   href="brochure.pdf"
                   className="mt-4 block rounded-lg px-5 py-3 font-medium text-blue-500 hover:text-blue-600 sm:mt-0"
                   download>
                   Download CFP
-                </a>
+                </a> */}
               </div>
             </div>
           </aside>
