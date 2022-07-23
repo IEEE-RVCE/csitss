@@ -8,27 +8,27 @@ export default function CustomTimeLine() {
   const data = [
     {
       label: "Submission of Full-length Manuscript(opens from)",
-      date: "15 June 2022"
+      date: "1 August 2022"
     },
     {
       label: "Last date to submit Full-length Manuscript",
-      date: "18 July 2022"
+      date: "31 August 2022"
     },
     {
       label: "Notification of Acceptance",
-      date: "20 August 2022 - 7 September 2022"
+      date: "30 September 2022"
     },
     {
       label: "Early Bird Registration",
-      date: "16 August 2022-15 September 2022"
+      date: "30 September 2022 - 15 November 2022"
     },
     {
       label: "Submission of Camera-ready Manuscript",
-      date: "5 October 2022"
+      date: "15 November 2022"
     },
     {
       label: "Last Date for Registration",
-      date: "20 November 2022"
+      date: "30 November 2022"
     },
     {
       label: "Pre-Conference Tutorial",
