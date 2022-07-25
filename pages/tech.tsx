@@ -95,7 +95,7 @@ function Tech() {
               <p className="text-xl font-medium text-gray-500">
                 Prospective authors are encouraged to submit quality and original research papers for presentation at the
                 Conference. Authors are requested to submit their manuscripts in PDF format not exceeding 6 pages in A4
-                size through online submission at Microsoft CMT - on or before 15th July 2022. The manuscript should
+                size through online submission at Microsoft CMT - on or before 31th August 2022. The manuscript should
                 follow the standard IEEE template. The acceptance of submission for peer review will be based on the
                 plagiarism check. All submission will be handled electronically and submitted papers will be double blind
                 peer reviewed by domain experts.
