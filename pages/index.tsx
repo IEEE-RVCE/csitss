@@ -3,15 +3,12 @@ import { Element, Link as ScrollLink } from "react-scroll";
 
 import HeaderImages from "../components/HeaderImages";
 import React from "react";
-import Timeline from '../components/TimeLine';
+import Timeline from "../components/TimeLine";
 
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 
-
-
 export default function Index() {
-
   return (
     <>
       <HeaderImages />
@@ -35,11 +32,12 @@ export default function Index() {
                 <p className="text-gray-400">
                   Organized by RV College of Engineering®
                 </p>
-                <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 xl:grid-cols-2 p-4">
+                <div className="grid grid-cols-2 gap-4 p-4 lg:grid-cols-2 xl:grid-cols-2">
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2022"
                     target="_blank"
-                    className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none">
+                    className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
+                  >
                     Submit Paper
                   </a>
                   {/* <a className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none" href="brochure.pdf" download>
@@ -62,32 +60,35 @@ export default function Index() {
           </div>
         </header>
         <aside className="mt-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 p-12">
-          <div>
-            <p className="text-lg font-bold text-white sm:text-2xl">
-              The 6th International Conference on “Computational Systems and Information Technology for
-              Sustainable Solutions [CSITSS – 2022] focusses to bring together leading academic scientists,
-              researchers, industry representatives, postdoctoral fellows and research scholars around the
-              world to share their knowledge and research expertise in SPICCE (Sensors, Processors,
-              Intelligent systems, Computing, Communication and Energy solutions) from 21st to 23rd
-              December 2022.
-              The conference has been held successfully for the past five years with participants from all over
-              India and abroad.The present version of the
-              CSITSS-2022 aims to achieve higher standards by attracting original research works in SPICCE.
-              International speakers will deliver the keynote talks on the latest happenings in the domains. The
-              CSITSS-2022 ensures to provide a platform for researchers around the globe for knowledge
-              exchange and networking.
-            </p>
-            <p className="text-base font-bold text-white text-center">
-              Organized by R V College Of Engineering 
-            </p> <br>
-            <p className="text-base font-bold text-white text-center">
-              in association with 
-            </p> <br>
-            <img src ="fiu-logo.png"><br>
-            <p className="text-base font-bold text-white text-center">
-              Technically co-sponsored by IEEE Bangalore Section 
-            </p>
-          </div>
+          <p className="text-lg font-bold text-white sm:text-2xl">
+            The 6th International Conference on “Computational Systems and
+            Information Technology for Sustainable Solutions [CSITSS – 2022]
+            focusses to bring together leading academic scientists, researchers,
+            industry representatives, postdoctoral fellows and research scholars
+            around the world to share their knowledge and research expertise in
+            SPICCE (Sensors, Processors, Intelligent systems, Computing,
+            Communication and Energy solutions) from 21st to 23rd December 2022.
+            The conference has been held successfully for the past five years
+            with participants from all over India and abroad.The present version
+            of the CSITSS-2022 aims to achieve higher standards by attracting
+            original research works in SPICCE. International speakers will
+            deliver the keynote talks on the latest happenings in the domains.
+            The CSITSS-2022 ensures to provide a platform for researchers around
+            the globe for knowledge exchange and networking.
+          </p>
+          <p className="text-center text-base font-bold text-white">
+            Organized by R V College Of Engineering
+          </p>{" "}
+          <br />
+          <p className="text-center text-base font-bold text-white">
+            in association with
+          </p>{" "}
+          <br />
+          <img src="fiu-logo.png" />
+          <br />
+          <p className="text-center text-base font-bold text-white">
+            Technically co-sponsored by IEEE Bangalore Section
+          </p>
         </aside>
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
