@@ -68,7 +68,7 @@ export default function Index() {
               Sustainable Solutions [CSITSS – 2022] focusses to bring together leading academic scientists,
               researchers, industry representatives, postdoctoral fellows and research scholars around the
               world to share their knowledge and research expertise in SPICCE (Sensors, Processors,
-              Intelligent systems, Computing, Communication and Energy solutions) from 21th to 23rd
+              Intelligent systems, Computing, Communication and Energy solutions) from 21st to 23rd
               December 2022.
               The conference has been held successfully for the past five years with participants from all over
               India and abroad.The present version of the
