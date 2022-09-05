@@ -21,7 +21,7 @@ const HeaderImages = () => {
                 </a>
               </div>
             </div>
-            {/* <div className="inline-block px-3">
+             <div className="inline-block px-3">
               <div className="w-auto h-auto max-w-xs overflow-hidden rounded-lg bg-none m-5 p-2 hover:shadow-xl transition-shadow duration-300 ease-in-out">
                 <a href="https://www.ieee.org" target="_blank" rel="noreferrer">
                   <img
@@ -46,7 +46,7 @@ const HeaderImages = () => {
                   />
                 </a>
               </div>
-  </div>*/}
+  </div>
             <div className="inline-block px-3">
               <div className="m-5 h-auto w-auto max-w-xs overflow-hidden  rounded-lg bg-none pt-11 transition-shadow duration-300 ease-in-out hover:shadow-xl">
                 <a
