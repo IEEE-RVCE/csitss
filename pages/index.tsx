@@ -35,7 +35,7 @@ export default function Index() {
                 <p className="text-gray-400">
                   Organized by RV College of Engineering®
                 </p>
-                <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 p-4">
+                <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 xl:grid-cols-2 p-4">
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2022"
                     target="_blank"
@@ -77,9 +77,15 @@ export default function Index() {
               CSITSS-2022 ensures to provide a platform for researchers around the globe for knowledge
               exchange and networking.
             </p>
-            <p className="text-base font-bold text-white">
-              The event is jointly organized by R V College Of Engineering,
-              {/* Technically co-sponsored by IEEE Bangalore Section */}
+            <p className="text-base font-bold text-white text-center">
+              Organized by R V College Of Engineering 
+            </p> <br>
+            <p className="text-base font-bold text-white text-center">
+              in association with 
+            </p> <br>
+            <img src ="fiu-logo.png"><br>
+            <p className="text-base font-bold text-white text-center">
+              Technically co-sponsored by IEEE Bangalore Section 
             </p>
           </div>
         </aside>
