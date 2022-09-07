@@ -49,7 +49,7 @@ function about() {
               />
             </div>
 
-            <div className="lg:py-24">          India and abroad.The present version of the
+            <div className="lg:py-24">
               <h2 className="text-3xl font-bold sm:text-4xl">About RVCE</h2>
 
               <p className="mt-4 text-gray-600">

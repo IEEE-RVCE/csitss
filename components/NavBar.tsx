@@ -30,11 +30,10 @@ const Links = [
   {
     href: "/contact",
     label: "Contact Us",
-  }
-]
+  },
+];
 
 const NavBar = () => {
-
   return (
     <header>
       <div className="mx-auto max-w-screen-xl p-4">
@@ -54,7 +53,10 @@ const NavBar = () => {
           <nav className="hidden space-x-8 text-sm font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={JSON.stringify(link)}>
-                <a className="text-gray-500 hover:text-indigo-400" href={link.href}>
+                <a
+                  className="text-gray-500 hover:text-indigo-400"
+                  href={link.href}
+                >
                   {link.label}
                 </a>
               </Link>
@@ -109,17 +111,26 @@ const Footer = () => {
   return (
     <footer className="static bottom-0 w-[100%] bg-gray-50">
       <div className="mx-auto flex max-w-screen-xl flex-col items-center px-4 py-16 sm:px-6 lg:block lg:px-8">
-        <Link href="/">
-          <a className="flex items-center justify-items-center" href="/">
-            <Image
-              src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
-              alt="logo"
-              className="m-5 h-full w-20"
-            />
-          </a>
-        </Link>
+        <a className="flex items-center justify-around" href="/">
+          <Image
+            src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
+            alt="logo"
+            className="m-5 h-full w-20"
+          />
+          <Image
+            src="https://i.ibb.co/dBDxKQt/GO-CHANGE-THE-WORLD.png"
+            alt="GO-CHANGE-THE-WORLD"
+            className="m-5 h-full w-20"
+          />
+        </a>
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="font-extrabold uppercase text-blue-800">
+            RV College of Engineering
+          </h1>
+          <h2>RV Vidyanikethan Post, Mysuru Road Bengaluru - 560059</h2>
+        </div>
         <div className="mt-8 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between">
-          <p className="text-xs text-gray-500">
+          <p className="text-center text-xs text-gray-500">
             &copy; 2022
             {new Date().getFullYear() === 2022
               ? ""
@@ -131,14 +142,13 @@ const Footer = () => {
               Collaboration with{" "}
             </span>
             <div className="mb-2 flex items-center justify-center gap-4">
-              <CashIcon className="text-green-400 h-full w-16 rounded-full object-cover p-4 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
+              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
 
-              <CashIcon className="text-green-400 h-full w-16 rounded-full object-cover p-4 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
+              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
 
-              <CashIcon className="text-green-400 h-full w-16 rounded-full object-cover p-4 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
+              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
 
-              <CashIcon className="text-green-400 h-full w-16 rounded-full object-cover p-4 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-
+              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
             </div>
           </div>
           <div>
@@ -154,11 +164,7 @@ const Footer = () => {
               </a>
             </p>
             <Tooltip label="Contact ME">
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <ChatIcon className="h-5 w-5 text-gray-400" />
               </a>
             </Tooltip>

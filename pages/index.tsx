@@ -76,19 +76,29 @@ export default function Index() {
             The CSITSS-2022 ensures to provide a platform for researchers around
             the globe for knowledge exchange and networking.
           </p>
-          <p className="text-center text-base font-bold text-white">
+          <h1 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
             Organized by R V College Of Engineering
-          </p>{" "}
-          <br />
-          <p className="text-center text-base font-bold text-white">
+          </h1>{" "}
+          <p className="m-4 text-center text-base font-bold text-white">
             in association with
           </p>{" "}
+          <div className="flex flex-row items-center justify-center">
+            <img
+              src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
+              className="h-auto w-auto object-cover"
+            />
+          </div>
           <br />
-          <img src="fiu-logo.png" />
-          <br />
-          <p className="text-center text-base font-bold text-white">
+          <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
             Technically co-sponsored by IEEE Bangalore Section
-          </p>
+          </h1>
+          <div className="flex flex-row items-center justify-center">
+            <img
+              className="h-[25%] w-auto object-cover"
+              src="https://ieeebangalore.org/wp-content/uploads/2022/01/Bangalore-Section-Logo-white-1-01-768x183.png"
+              alt="ieee_blr_logo"
+            />
+          </div>
         </aside>
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
