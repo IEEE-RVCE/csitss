@@ -6,3 +6,9 @@
 .heroHeader {
   background-image: url(https://rvitm.com/ctgzma2021/img/slider1.jpg);
 }
+.charge {
+  position: relative;
+  bottom: 0.5em;
+  color: red;
+  font-size: 0.8em;
+}

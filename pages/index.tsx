@@ -29,8 +29,11 @@ export default function Index() {
                     Information Technology for Sustainable Solution
                   </span>
                 </p>
-                <p className="text-gray-400">
-                  Organized by RV College of Engineering®
+                <p className="text-gray-400 align-text-center">
+                  Organized by
+                </p>
+                <p className="text-gray-400 text-align-center">
+                <h4>RV College of Engineering®</h4>
                 </p>
                 <div className="grid grid-cols-2 gap-4 p-4 lg:grid-cols-2 xl:grid-cols-2">
                   <a
@@ -61,7 +64,7 @@ export default function Index() {
         </header>
         <aside className="mt-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 p-12">
           <p className="text-lg font-bold text-white sm:text-2xl">
-            The 6th International Conference on “Computational Systems and
+            The 6<span className="charge">th</span> International Conference on “Computational Systems and
             Information Technology for Sustainable Solutions [CSITSS – 2022]
             focusses to bring together leading academic scientists, researchers,
             industry representatives, postdoctoral fellows and research scholars
@@ -77,7 +80,7 @@ export default function Index() {
             the globe for knowledge exchange and networking.
           </p>
           <h1 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-            Organized by R V College Of Engineering
+            Organized by RV College Of Engineering
           </h1>{" "}
           <p className="m-4 text-center text-base font-bold text-white">
             in association with
