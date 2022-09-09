@@ -25,17 +25,19 @@ export default function Index() {
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
                   <span className="font-semibold">
-                    6th International Conference on Computational Systems and
-                    Information Technology for Sustainable Solution
+                    6<sup>th</sup> International Conference on Computational
+                    Systems and Information Technology for Sustainable Solutions
                   </span>
                 </p>
-                <p className="text-gray-400 align-text-center">
+                <p className="align-text-center text-xl text-slate-50">
                   Organized by
                 </p>
-                <p className="text-gray-400 text-align-center">
-                <h4>RV College of Engineering®</h4>
+                <p className="text-align-center text-2xl text-slate-50">
+                  <h4>
+                    RV College of Engineering<sup className="text-lg">®</sup>
+                  </h4>
                 </p>
-                <div className="grid grid-cols-2 gap-4 p-4 lg:grid-cols-2 xl:grid-cols-2">
+                <div className="grid grid-cols-3 gap-4 p-4 lg:grid-cols-3 xl:grid-cols-3">
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2022"
                     target="_blank"
@@ -57,27 +59,35 @@ export default function Index() {
                   >
                     TimeLine
                   </ScrollLink>
+                  <a
+                    href="https://cmt3.research.microsoft.com/CSITSS2022"
+                    target="_blank"
+                    className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
+                  >
+                    Submit Paper
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </header>
         <aside className="mt-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 p-12">
-          <p className="text-lg font-bold text-white sm:text-2xl">
-            The 6<span className="charge">th</span> International Conference on “Computational Systems and
-            Information Technology for Sustainable Solutions [CSITSS – 2022]
-            focusses to bring together leading academic scientists, researchers,
-            industry representatives, postdoctoral fellows and research scholars
-            around the world to share their knowledge and research expertise in
-            SPICCE (Sensors, Processors, Intelligent systems, Computing,
-            Communication and Energy solutions) from 21st to 23rd December 2022.
-            The conference has been held successfully for the past five years
-            with participants from all over India and abroad.The present version
-            of the CSITSS-2022 aims to achieve higher standards by attracting
-            original research works in SPICCE. International speakers will
-            deliver the keynote talks on the latest happenings in the domains.
-            The CSITSS-2022 ensures to provide a platform for researchers around
-            the globe for knowledge exchange and networking.
+          <p className="text-justify text-lg font-bold text-white sm:text-2xl">
+            The 6<span className="charge">th</span> International Conference on
+            “Computational Systems and Information Technology for Sustainable
+            Solutions [CSITSS – 2022] focusses to bring together leading
+            academic scientists, researchers, industry representatives,
+            postdoctoral fellows and research scholars around the world to share
+            their knowledge and research expertise in SPICCE (Sensors,
+            Processors, Intelligent systems, Computing, Communication and Energy
+            solutions) from 21st to 23rd December 2022. The conference has been
+            held successfully for the past five years with participants from all
+            over India and abroad.The present version of the CSITSS-2022 aims to
+            achieve higher standards by attracting original research works in
+            SPICCE. International speakers will deliver the keynote talks on the
+            latest happenings in the domains. The CSITSS-2022 ensures to provide
+            a platform for researchers around the globe for knowledge exchange
+            and networking.
           </p>
           <h1 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
             Organized by RV College Of Engineering
@@ -93,7 +103,7 @@ export default function Index() {
           </div>
           <br />
           <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-            Technically co-sponsored by IEEE Bangalore Section
+            Technically co-sponsored by <br /> IEEE Bangalore Section
           </h1>
           <div className="flex flex-row items-center justify-center">
             <img
@@ -103,6 +113,69 @@ export default function Index() {
             />
           </div>
         </aside>
+        <section>
+          <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+              <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                <img
+                  className="absolute inset-0 h-full w-full object-cover"
+                  src="https://www.hyperui.dev/photos/man-1.jpeg"
+                  alt="Man using a computer"
+                />
+              </div>
+
+              <div className="lg:py-24">
+                <h2 className="my-4 text-3xl font-bold sm:text-4xl">
+                  About CSITSS
+                </h2>
+
+                <p className="break-normal text-justify text-lg font-bold text-gray-900">
+                  The 6<span className="charge">th</span> International
+                  Conference on “Computational Systems and Information
+                  Technology for Sustainable Solutions
+                  <br /> [CSITSS – 2022] focusses to bring together leading
+                  academic scientists, researchers, industry representatives,
+                  postdoctoral fellows and research scholars around the world to
+                  share their knowledge and research expertise in SPICCE
+                  (Sensors, Processors, Intelligent systems, Computing,
+                  Communication and Energy solutions) from 21<sup>st</sup> to 23
+                  <sup>rd</sup> December 2022. The conference has been held
+                  successfully for the past five years with participants from
+                  all over India and abroad.The present version of the
+                  CSITSS-2022 aims to achieve higher standards by attracting
+                  original research works in SPICCE. International speakers will
+                  deliver the keynote talks on the latest happenings in the
+                  domains. The CSITSS-2022 ensures to provide a platform for
+                  researchers around the globe for knowledge exchange and
+                  networking.
+                </p>
+
+                <a
+                  className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                  href="/get-started"
+                >
+                  <span className="text-sm font-medium"> Get Started </span>
+
+                  <svg
+                    className="ml-3 h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
             <Timeline />

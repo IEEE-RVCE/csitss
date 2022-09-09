@@ -4,13 +4,12 @@ function registration() {
   const TableData = {
     columns: [
       "DELEGATES",
-      "INDIAN DELEGATES AMOUNT IN RS.\n(Excluding GST*) ",
-      "FOREIGN DELEGATES AMOUNT IN USD.(Excluding GST*)",
+      "INDIAN DELEGATES AMOUNT IN RS.\n ",
+      "FOREIGN DELEGATES AMOUNT IN USD.",
     ],
 
     rows: [
-      ["Students (Early bird Registrations) ", "Rs. 4,000", "USD. 75"],
-      ["Faculty (Early bird Registrations) ", "Rs. 5,000", "USD. 100"],
+      ['Regular Registrations from Nov 16, 2022','',''],
       ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
       ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
       ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
@@ -20,6 +19,24 @@ function registration() {
       ["Pre Conference Tutorial", "Rs. 500", "USD. 50"],
     ],
   };
+
+
+  const EarlyBirdTableData = {
+    rows: [
+      ['Early Bird Registrations before 15th November 2022','',''],
+      [
+        "Students ",
+        "Rs. 4,000",
+        "USD. 75",
+      ],
+      [
+        "Faculty ",
+        "Rs. 5,000",
+        "USD. 100",
+      ],
+    ],
+  };
+
 
   return (
     <>
@@ -83,6 +100,26 @@ function registration() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
+                  {EarlyBirdTableData.rows.map((row) => (
+                    <tr>
+                      <td
+                        className={`whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900 ${
+                          row[0] ===
+                          "Early Bird Registrations before 15th November 2022"
+                            ? "font-extrabold"
+                            : ""
+                        }`}
+                      >
+                        {row[0]}
+                      </td>
+                      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                        {row[1]}
+                      </td>
+                      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                        {row[2]}
+                      </td>
+                    </tr>
+                  ))}
                   {TableData.rows.map((row) => (
                     <tr>
                       <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
@@ -99,7 +136,6 @@ function registration() {
                 </tbody>
               </table>
             </div>
-                * GST is 18%.
           </p>
         </section>
       </div>

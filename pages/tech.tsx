@@ -93,17 +93,17 @@ function Tech() {
               <p className="text-center text-3xl font-bold sm:text-5xl">
                 Call For Papers{" "}
               </p>
-              <p className="text-xl font-medium text-gray-500">
+              <p className="text-xl font-medium text-gray-500 text-justify">
                 Prospective authors are encouraged to submit quality and
                 original research papers for presentation at the Conference.
                 Authors are requested to submit their manuscripts in PDF format
                 not exceeding 6 pages in A4 size through online submission at
-                Microsoft CMT - on or before 25th October022. The manuscript
-                should follow the standard IEEE template. The acceptance of
-                submission for peer review will be based on the plagiarism
-                check. All submission will be handled electronically and
-                submitted papers will be double blind peer reviewed by domain
-                experts.
+                Microsoft CMT - on or before 25<sup>th</sup> October 2022. The
+                manuscript should follow the standard IEEE template. The
+                acceptance of submission for peer review will be based on the
+                plagiarism check. All submission will be handled electronicareflly
+                and submitted papers will be double blind peer reviewed by
+                domain experts.
               </p>
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">

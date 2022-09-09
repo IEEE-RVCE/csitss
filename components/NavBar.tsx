@@ -120,7 +120,7 @@ const Footer = () => {
           <Image
             src="https://i.ibb.co/dBDxKQt/GO-CHANGE-THE-WORLD.png"
             alt="GO-CHANGE-THE-WORLD"
-            className="m-5 h-full w-20"
+            className="m-5 h-full w-48"
           />
         </a>
         <div className="flex flex-col items-center justify-center">
