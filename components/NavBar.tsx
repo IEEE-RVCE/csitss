@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Header, Image, Menu, Tooltip } from "@mantine/core";
-import { CashIcon, ChatIcon } from "@heroicons/react/solid";
+import { AppShell, Header, Image, Menu } from "@mantine/core";
+import { CashIcon } from "@heroicons/react/solid";
 
 import Link from "next/link";
 import React from "react";
