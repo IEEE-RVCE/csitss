@@ -70,25 +70,6 @@ export default function Index() {
             </div>
           </div>
         </header>
-        <aside className="mt-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 p-12">
-          <p className="text-justify text-lg font-bold text-white sm:text-2xl">
-            The 6<span className="charge">th</span> International Conference on
-            “Computational Systems and Information Technology for Sustainable
-            Solutions [CSITSS – 2022] focusses to bring together leading
-            academic scientists, researchers, industry representatives,
-            postdoctoral fellows and research scholars around the world to share
-            their knowledge and research expertise in SPICCE (Sensors,
-            Processors, Intelligent systems, Computing, Communication and Energy
-            solutions) from 21st to 23rd December 2022. The conference has been
-            held successfully for the past five years with participants from all
-            over India and abroad.The present version of the CSITSS-2022 aims to
-            achieve higher standards by attracting original research works in
-            SPICCE. International speakers will deliver the keynote talks on the
-            latest happenings in the domains. The CSITSS-2022 ensures to provide
-            a platform for researchers around the globe for knowledge exchange
-            and networking.
-          </p>
-        </aside>
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
