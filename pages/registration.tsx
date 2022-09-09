@@ -17,7 +17,7 @@ function registration() {
       ["Faculty (Non-IEEE Members)", "Rs. 8,000", "USD. 160"],
       ["Industry Professionals (IEEE Members) ", "Rs. 10,000", "USD. 200"],
       ["Industry Professionals (Non-IEEE Members) ", "Rs. 13,500", "USD. 240"],
-      ["Pre Conference Tutorial", "Rs. 50", "USD. 50"],
+      ["Pre Conference Tutorial", "Rs. 500", "USD. 50"],
     ],
   };
 
