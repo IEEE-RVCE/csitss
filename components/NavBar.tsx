@@ -40,7 +40,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="flex" href="/">
+              <a className="flex items-center" href="/">
                 <Image
                   src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
                   alt="logo"
@@ -123,7 +123,7 @@ const Footer = () => {
             className="m-5 h-full w-48"
           />
         </a>
-        <div className="flex flex-col items-center justify-center text-justify">
+        <div className="flex flex-col items-center justify-center">
           <h1 className="font-extrabold uppercase text-blue-800">
             RV College of Engineering
           </h1>
@@ -157,12 +157,17 @@ const Footer = () => {
               <a
                 target="_blank"
                 className="font-bold text-indigo-500"
-                href=""
+                href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/"
                 rel="noreferrer"
               >
-                IEEE-RVCE SE Team.
+                Prajwal P
               </a>
             </p>
+            <Tooltip label="Contact ME">
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <ChatIcon className="h-5 w-5 text-gray-400" />
+              </a>
+            </Tooltip>
           </div>
         </div>
       </div>
