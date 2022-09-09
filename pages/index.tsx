@@ -88,42 +88,37 @@ export default function Index() {
             a platform for researchers around the globe for knowledge exchange
             and networking.
           </p>
-          <h1 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-            Organized by RV College Of Engineering
-          </h1>{" "}
-          <p className="m-4 text-center text-base font-bold text-white">
-            in association with
-          </p>{" "}
-          <div className="flex flex-row items-center justify-center">
-            <img
-              src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
-              className="h-auto w-auto object-cover"
-            />
-          </div>
-          <br />
-          <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-            Technically co-sponsored by <br /> IEEE Bangalore Section
-          </h1>
-          <div className="flex flex-row items-center justify-center">
-            <img
-              className="h-[25%] w-auto object-cover"
-              src="https://ieeebangalore.org/wp-content/uploads/2022/01/Bangalore-Section-Logo-white-1-01-768x183.png"
-              alt="ieee_blr_logo"
-            />
-          </div>
         </aside>
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                <img
-                  className="absolute inset-0 h-full w-full object-cover"
-                  src="https://www.hyperui.dev/photos/man-1.jpeg"
-                  alt="Man using a computer"
-                />
+                <h1 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
+                  Organized by RV College Of Engineering
+                </h1>{" "}
+                <p className="m-4 text-center text-base font-bold text-white">
+                  in association with
+                </p>{" "}
+                <div className="flex flex-row items-center justify-center">
+                  <img
+                    src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
+                    className="h-auto w-auto object-cover"
+                  />
+                </div>
+                <br />
+                <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
+                  Technically co-sponsored by <br /> IEEE Bangalore Section
+                </h1>
+                <div className="flex flex-row items-center justify-center">
+                  <img
+                    className="h-[25%] w-auto object-cover"
+                    src="https://ieeebangalore.org/wp-content/uploads/2022/01/Bangalore-Section-Logo-white-1-01-768x183.png"
+                    alt="ieee_blr_logo"
+                  />
+                </div>
               </div>
 
-              <div className="lg:py-24">
+              <div>
                 <h2 className="my-4 text-3xl font-bold sm:text-4xl">
                   About CSITSS
                 </h2>
@@ -153,7 +148,13 @@ export default function Index() {
                   className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                   href="/get-started"
                 >
-                  <span className="text-sm font-medium"> Get Started </span>
+                  <a
+                    href="https://cmt3.research.microsoft.com/CSITSS2022"
+                    className="text-sm font-medium"
+                  >
+                    {" "}
+                    Submit Paper{" "}
+                  </a>
 
                   <svg
                     className="ml-3 h-5 w-5"
