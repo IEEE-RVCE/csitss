@@ -160,14 +160,9 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/"
                 rel="noreferrer"
               >
-                Prajwal P
+                IEEE RVCE SE Team
               </a>
             </p>
-            <Tooltip label="Contact ME">
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                <ChatIcon className="h-5 w-5 text-gray-400" />
-              </a>
-            </Tooltip>
           </div>
         </div>
       </div>
