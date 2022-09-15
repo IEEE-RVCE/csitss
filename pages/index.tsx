@@ -105,24 +105,26 @@ export default function Index() {
                 </h2>
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                  The 6<span className="charge">th</span> International
+                  The 6<span className="charge">th</span> h International
                   Conference on “Computational Systems and Information
-                  Technology for Sustainable Solutions
-                  <br /> [CSITSS – 2022] focusses to bring together leading
-                  academic scientists, researchers, industry representatives,
-                  postdoctoral fellows and research scholars around the world to
-                  share their knowledge and research expertise in SPICCE
-                  (Sensors, Processors, Intelligent systems, Computing,
-                  Communication and Energy solutions) from 21<sup>st</sup> to 23
-                  <sup>rd</sup> December 2022. The conference has been held
-                  successfully for the past five years with participants from
-                  all over India and abroad.The present version of the
-                  CSITSS-2022 aims to achieve higher standards by attracting
-                  original research works in SPICCE. International speakers will
-                  deliver the keynote talks on the latest happenings in the
-                  domains. The CSITSS-2022 ensures to provide a platform for
-                  researchers around the globe for knowledge exchange and
-                  networking.
+                  Technology for Sustainable Solutions [CSITSS – 2022]” focusses
+                  to bring together leading academicians, scientists,
+                  researchers, industry representatives, postdoctoral fellows
+                  and research scholars around the world to share their
+                  knowledge and research expertise in SPICCE (Sensors,
+                  Processors, Intelligent systems, Computing, Communication and
+                  Energy solutions) from 21<sup>st</sup> to 23
+                  <sup>rd</sup> December 2022. <br /> The conference has been
+                  successfully organised for the past five years with
+                  participants from all over India and abroad. All peer
+                  reviewed, selected and presented papers of the conference will
+                  be submitted for possible inclusion in IEEE digital library.
+                  The present version of the CSITSS-2022 aims to achieve higher
+                  standards by attracting original research works in the domain
+                  of SPICCE. International speakers will deliver the keynote
+                  talks on the latest technologies in these domains. The
+                  CSITSS-2022 ensures to provide a platform for researchers
+                  around the globe for knowledge exchange and networking.
                 </p>
 
                 <a
