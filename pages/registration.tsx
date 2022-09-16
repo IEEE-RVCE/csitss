@@ -9,7 +9,7 @@ function registration() {
     ],
 
     rows: [
-      ['Regular Registrations from Nov 16, 2022','',''],
+      ["Regular Registrations from Nov 16, 2022", "", ""],
       ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
       ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
       ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
@@ -20,23 +20,13 @@ function registration() {
     ],
   };
 
-
   const EarlyBirdTableData = {
     rows: [
-      ['Early Bird Registrations before 15th November 2022','',''],
-      [
-        "Students ",
-        "Rs. 4,000",
-        "USD. 75",
-      ],
-      [
-        "Faculty ",
-        "Rs. 5,000",
-        "USD. 100",
-      ],
+      ["Early Bird Registrations before 15th November 2022", "", ""],
+      ["Students ", "Rs. 4,000", "USD. 75"],
+      ["Faculty ", "Rs. 5,000", "USD. 100"],
     ],
   };
-
 
   return (
     <>
@@ -45,13 +35,13 @@ function registration() {
           <h2 className="text-3xl font-extrabold sm:text-4xl">Registration</h2>
           <p className="mt-4 text-gray-600">
             At least one of the authors should register to participate in the
-            Conference. All peer reviewed and selected papers of the conference
-            will be submitted for possible inclusion in IEEE digital library
-            Indexed by Scopus. The payment mode is mentioned in the conference
-            website. Registration is compulsory for participation in the
-            Conference. Authors and participants are requested to download the
-            registration form from the conference website and submit the filled
-            form to the Email ID:
+            Conference. The payment mode is mentioned in the conference website.
+            Registration is compulsory for participation in the Conference.
+            Authors can present two papers for single registration.
+            <br />
+            Authors and participants are requested to download the registra-
+            tion form from the conference website and submit the filled form to
+            the Email ID:
             <a href="mailto:sitss2022@rvce.edu.in" className="text-indigo-500">
               csitss2022@rvce.edu.in
             </a>
@@ -78,7 +68,7 @@ function registration() {
             KKBK0008053
             <br />
             <b>SWIFT Code: </b>
-            KKBKINBBCPC
+            KKBKINBB
           </p>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
