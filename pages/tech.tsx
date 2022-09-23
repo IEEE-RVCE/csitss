@@ -98,12 +98,8 @@ function Tech() {
                 original research papers for presentation at the Conference.
                 Authors are requested to submit their manuscripts in PDF format
                 not exceeding 6 pages in A4 size through online submission at
-                Microsoft CMT - on or before 25<sup>th</sup> October 2022. The
-                manuscript should follow the standard IEEE template. The
-                acceptance of submission for peer review will be based on the
-                plagiarism check. All submission will be handled electronicareflly
-                and submitted papers will be double blind peer reviewed by
-                domain experts.
+                Microsoft CMT - on or <i>before 25<sup>th</sup> October 2022</i>. The
+                manuscript should follow the standard IEEE template.The format of the paper could be downloaded in link below <a href="https://www.ieee.org/conferences/publishing/templates.html"><b>https://www.ieee.org/conferences/publishing/templates.html</b></a>.<br/>All submission for the conference will be handled electronically and submitted papers will be peer reviewed by domain experts. To submit the papers use the Microsoft CMT Link mentioned below:<br/><a href="https://cmt3.research.microsoft.com/CSITSS2022"><b>https://cmt3.research.microsoft.com/CSITSS2022.</b></a>
               </p>
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">

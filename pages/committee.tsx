@@ -89,6 +89,12 @@ const committeeMembers: Mem[] = [
         imgLink:
           "https://media-exp2.licdn.com/dms/image/C4E03AQEftkV0U4U8lQ/profile-displayphoto-shrink_200_200/0/1516330237646?e=1661385600&v=beta&t=jl_qo_DZoBUxaX0VBcHv_jQ8hIGcH33KsCFxSHW2Xb8",
       },
+      {
+        name: "Dr. S S Iyengar",
+        post: "Director of Computer Science,FIU,USA",
+        imgLink:
+          "https://media-exp2.licdn.com/dms/image/C4E03AQEftkV0U4U8lQ/profile-displayphoto-shrink_200_200/0/1516330237646?e=1661385600&v=beta&t=jl_qo_DZoBUxaX0VBcHv_jQ8hIGcH33KsCFxSHW2Xb8",
+      },
     ],
   },
   {
