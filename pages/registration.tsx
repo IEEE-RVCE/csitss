@@ -39,8 +39,7 @@ function registration() {
             Registration is compulsory for participation in the Conference.
             Authors can present two papers for single registration.
             <br />
-            Authors and participants are requested to download the registra-
-            tion form from the conference website and submit the filled form to
+            Authors and participants are requested to download the registration form from the conference website and submit the filled form to
             the Email ID:
             <a href="mailto:sitss2022@rvce.edu.in" className="text-indigo-500">
               csitss2022@rvce.edu.in
@@ -127,6 +126,7 @@ function registration() {
               </table>
             </div>
           </p>
+          <p><i>*Inclusion of 18% GST</i></p>
         </section>
       </div>
     </>

@@ -17,7 +17,7 @@ function about() {
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">Mission</h2>
           <p className="mt-4 text-gray-600">
-            <ul>
+            <ul className = "list-disc">
               <li>
                 To deliver outcome-based quality education, emphasizing on
                 experiential learning with state-of-the-art infrastructure
@@ -63,11 +63,11 @@ function about() {
                   Trust (RSST) a not-for-profit Trust. RVCE is an Autonomous
                   college. Currently, the institution offers 15 Bachelors, 14
                   Master Programs and all the departments have Research Centres,
-                  affiliated to Visvesvaraya Technologi- cal University (VTU)
+                  affiliated to Visvesvaraya Technological University (VTU)
                   Belagavi. The institution has set itself a Vision “Leadership
                   in Quality Technical Education, Interdisciplinary Research &
                   Innovation, With a Focus on Sustainable and Inclusive
-                  Technolo- gy”.
+                  Technology”.
                   <br />
                   <br />
                   Recent awards and achievements include - Ranked 89th in the
@@ -97,7 +97,7 @@ function about() {
             The 6th International Conference on “Computational Systems and
             Information Technology for Sustain- able Solutions [CSITSS – 2022]”
             focusses to bring together leading academicians, scientists,
-            research- ers, industry representatives, postdoctoral fellows and
+            researchers, industry representatives, postdoctoral fellows and
             research scholars around the world to share their knowledge and
             research expertise in SPICCE (Sensors, Processors, Intelligent
             systems, Computing, Communication and Energy solutions) from 21

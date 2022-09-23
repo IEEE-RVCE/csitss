@@ -14,6 +14,26 @@ export default function Index() {
       <HeaderImages />
       <section className="body-font text-gray-600">
         <header>
+
+          <div className="row">
+            <div className="col">
+              <p className="my-4 text-3xl font-bold text-red-600 sm:text-4xl">Past Conferences</p>
+              <ul className="list-disc">
+                <li><a href="http://csitss.rvce.edu.in/csitss2021/">CSITSS 2021</a></li>
+                <li ><a href="http://csitss.rvce.edu.in/csitss2019/">CSITSS 2019</a></li>
+                <li><a href="http://www.csitss2018.rvce.edu.in/">CSITSS 2018</a></li>
+                <li><a href="http://www.csitss.rvce.edu.in/csitss2017/">CSITSS 2017</a></li>
+                <li><a href="http://csitss2016.rvce.edu.in/">CSITSS 2016</a></li>
+              </ul>
+            </div>
+            <div className="col">
+              <p className="my-4 text-2xl font-bold text-red-600 sm:text-1xl">Glimpses-CSITSS 2021</p>
+              <a href="" className="font text-green-600">Click here</a>
+              <p className="my-4 text-2xl font-bold text-red-600 sm:text-1xl">Report : CSITSS 2021</p>
+              <a href="FINAL_CSITSS_2021_REPORT.pdf" className="font text-green-600">Click here</a>
+            </div>
+          </div>
+
           <div
             className="heroHeader w-full bg-cover bg-center"
             style={{ height: "50rem" }}
