@@ -74,7 +74,7 @@ export default function Index() {
           >
             <div className="flex h-full w-full items-center justify-center bg-gray-900 bg-opacity-50">
               <div className="text-center font-extrabold">
-                <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent">
+                <h1 className="bg-gradient-to-r from-yellow-300 via-amber-400  via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent bg">
                   WELCOME TO CSITSS-2022
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
