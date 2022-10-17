@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Header, Image, Menu } from "@mantine/core";
-import { CashIcon } from "@heroicons/react/solid";
+import { AppShell, Box, Header, Image, Menu } from "@mantine/core";
+
 
 import Link from "next/link";
 import React from "react";
-
+import HeaderImages from "../components/HeaderImages";
 const Links = [
   {
     href: "/",
@@ -36,7 +36,7 @@ const Links = [
 const NavBar = () => {
   return (
     <header>
-      <div className="mx-auto max-w-screen-xl p-4">
+      <div className="mx-auto max-w-screen-xl p-2">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
@@ -141,15 +141,67 @@ const Footer = () => {
             <span className="text-center text-xs text-gray-500">
               Collaboration with{" "}
             </span>
-            <div className="mb-2 flex items-center justify-center gap-4">
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
+            <Box>
+              <div className="ml-10 flex flex-nowrap md:ml-20 lg:ml-40 justify-evenly">
+                <div className="inline-block px-3">
+                  <div className="m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none p-2 transition-shadow duration-300 ease-in-out hover:shadow-xl">
+                    <a
+                      href="https://www.rvce.edu.in/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="h-full w-full rounded-full object-cover"
+                        src="RVCE NEW-HEADER.png"
+                        alt="rvce_logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="inline-block px-3">
+                  <div className="w-auto h-auto max-w-xs overflow-hidden rounded-lg bg-none m-5 p-2 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <a href="https://www.ieee.org" target="_blank" rel="noreferrer">
+                      <img
+                        className="w-auto h-auto object-cover"
+                        src="logo_IEEE_Main.png"
+                        alt="rvce_logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="inline-block px-3">
+                  <div className="w-auto h-auto max-w-xs overflow-hidden rounded-lg  bg-none m-5 pt-6 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <a
+                      href="https://ieeebangalore.org/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="w-auto h-auto object-cover"
+                        src="logo_IEEE_Banaglaore_Section.png"
+                        alt="rvce_logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="inline-block px-3">
+                  <div className="m-5 h-auto w-auto max-w-xs overflow-hidden  rounded-lg bg-none pt-11 transition-shadow duration-300 ease-in-out hover:shadow-xl">
+                    <a
+                      href="https://ieee-rvce.org/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="h-auto w-auto object-cover"
+                        src="logo_rvce_ieee.png"
+                        alt="rvce_logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Box>
 
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-            </div>
           </div>
           <div>
             <p className="text-sm text-gray-500">

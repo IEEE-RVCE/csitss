@@ -4,7 +4,7 @@ const HeaderImages = () => {
   return (
     <div>
       <div className="center p-auto m-auto hidden flex-col md:block">
-        <div className="scrollbar-hide flex overflow-x-scroll pb-10">
+        <div className="scrollbar-hide flex overflow-x-scroll pb-0">
           <div className="ml-10 flex flex-nowrap md:ml-20 lg:ml-40 justify-evenly">
             <div className="inline-block px-3">
               <div className="m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none p-2 transition-shadow duration-300 ease-in-out hover:shadow-xl">
