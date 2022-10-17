@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Header, Image, Menu } from "@mantine/core";
-import { CashIcon } from "@heroicons/react/solid";
+import { AppShell, Box, Header, Image, Menu } from "@mantine/core";
+
 
 import Link from "next/link";
 import React from "react";
-
+import HeaderImages from "../components/HeaderImages";
 const Links = [
   {
     href: "/",
@@ -141,15 +141,10 @@ const Footer = () => {
             <span className="text-center text-xs text-gray-500">
               Collaboration with{" "}
             </span>
-            <div className="mb-2 flex items-center justify-center gap-4">
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
+            <Box>
+              <HeaderImages />           
+            </Box>
 
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-
-              <CashIcon className="h-full w-16 rounded-full object-cover p-4 text-green-400 transition-shadow duration-300 ease-in-out hover:shadow-xl lg:h-20 lg:w-20" />
-            </div>
           </div>
           <div>
             <p className="text-sm text-gray-500">
