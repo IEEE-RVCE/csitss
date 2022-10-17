@@ -36,7 +36,7 @@ const Links = [
 const NavBar = () => {
   return (
     <header>
-      <div className="mx-auto max-w-screen-xl p-4">
+      <div className="mx-auto max-w-screen-xl p-2">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
