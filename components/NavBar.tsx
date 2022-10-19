@@ -4,7 +4,6 @@ import { AppShell, Box, Header, Image, Menu } from "@mantine/core";
 
 import Link from "next/link";
 import React from "react";
-import HeaderImages from "../components/HeaderImages";
 const Links = [
   {
     href: "/",
