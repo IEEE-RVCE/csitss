@@ -4,6 +4,7 @@ import { Element, Link as ScrollLink } from "react-scroll";
 import HeaderImages from "../components/HeaderImages";
 import React from "react";
 import Timeline from "../components/TimeLine";
+import Gallery from '../components/Gallery';
 
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
@@ -255,6 +256,14 @@ export default function Index() {
             </div>
           </div>
         </section>
+      </section>
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <h1>
+            <span className="text-3xl font-bold sm:text-4xl">Previous Conference Images</span>
+          </h1>
+          <Gallery />
+        </div>
       </section>
     </>
   );
