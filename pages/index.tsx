@@ -14,7 +14,7 @@ export default function Index() {
       <HeaderImages />
       <section className="body-font text-gray-600">
         <div className="relative flex overflow-x-hidden">
-          <div className="animate-marquee whitespace-nowrap py-12">
+          <div className="animate-marquee whitespace-nowrap py-12 hover:animate-none">
             <span className="mx-4 text-xl font-bold text-blue-400">
               {" "}
               Past Conferences
