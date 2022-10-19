@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .heroHeader {
-  background-image: url(https://rvitm.com/ctgzma2021/img/slider1.jpg);
+  background-image: url(https://raw.githubusercontent.com/naveenbteli/btwebsite/main/easy%20web/images/banner.jpeg)
 }
 .charge {
   position: relative;
