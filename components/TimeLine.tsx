@@ -12,7 +12,7 @@ export default function CustomTimeLine() {
     },
     {
       label: "Last date to submit Full-length Manuscript",
-      date: "25 October 2022"
+      date: "5 November 2022"
     },
     {
       label: "Notification of Acceptance",

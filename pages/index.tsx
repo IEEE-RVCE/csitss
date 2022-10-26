@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Element, Link as ScrollLink } from "react-scroll";
-
 import HeaderImages from "../components/HeaderImages";
 import React from "react";
 import Timeline from "../components/TimeLine";
@@ -12,9 +11,9 @@ import Gallery from '../components/Gallery';
 export default function Index() {
   return (
     <>
-      <HeaderImages />
-      <section className="body-font text-gray-600">
-        <div className="relative flex overflow-x-hidden">
+      {/* <HeaderImages /> */}
+      <section className="body-font text-gray-600 m-0">
+        {/* <div className="relative flex overflow-x-hidden">
           <div className="animate-marquee whitespace-nowrap py-12 hover:animate-none">
             <span className="mx-4 text-xl font-bold text-blue-400">
               {" "}
@@ -67,19 +66,17 @@ export default function Index() {
               <a href="http://csitss2016.rvce.edu.in/">CSITSS 2016</a>
             </span>
           </div>
-        </div>
+        </div> */}
         <header>
-          <div
-            className="heroHeader w-full bg-cover bg-center"
-            style={{ height: "50rem" }}
-          >
-            <div className="flex h-full w-full items-center justify-center bg-gray-900 bg-opacity-50">
-              <div className="text-center font-extrabold">
+          <div className="heroHeader w-full bg-cover bg-center" style={{ height: "38rem" }}>
+            <HeaderImages /> 
+            <div className="flex h-4/6  w-full items-center justify-center ">
+              <div className="text-center font-extrabold bg-gray-800 bg-opacity-50">
                 <h1 className="bg-gradient-to-r from-yellow-300 via-amber-400  via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent bg">
                   WELCOME TO CSITSS-2022
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
-                  <span className="font-semibold">
+                  <span className="font-semibold ">
                     6<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>

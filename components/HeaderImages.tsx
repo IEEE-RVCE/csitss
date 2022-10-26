@@ -3,7 +3,7 @@ import React from "react";
 const HeaderImages = () => {
   return (
     <div>
-      <div className="center p-auto m-auto hidden flex-col md:block">
+      <div className="center p-auto m-auto hidden flex-col md:block ">
         <div className="scrollbar-hide flex overflow-x-scroll pb-0">
           <div className="ml-10 flex flex-nowrap md:ml-20 lg:ml-40 justify-evenly">
             <div className="inline-block px-3">

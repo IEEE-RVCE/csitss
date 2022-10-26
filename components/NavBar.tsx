@@ -226,7 +226,7 @@ const WrapApp = ({ children }: any) => {
     <AppShell
       padding="md"
       header={
-        <Header height={130}>
+        <Header height={80} >
           <NavBar />
         </Header>
       }
