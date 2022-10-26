@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .heroHeader {
-  background-image: url("../public/main_gate.jpg")
+  background-image: url("https://user-images.githubusercontent.com/100517925/197962701-b2c2b570-59db-45c9-8393-eec94d88abd7.jpg")
 }
 .charge {
   position: relative;
