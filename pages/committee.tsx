@@ -19,7 +19,7 @@ const committeeMembers: Mem[] = [
         name: "Dr. M. P. Shyam",
         post: "President, RSST.",
         imgLink:
-          "https://www.ssmrv.edu.in/wp-content/uploads/2020/11/Dr.-M.P-Shyam-300x223.png",
+          "https://img.etimg.com/thumb/msid-91593340,width-300,imgsize-59386,,resizemode-4,quality-100/1.jpg",
       },
     ],
   },
@@ -29,6 +29,7 @@ const committeeMembers: Mem[] = [
       {
         name: "Sri. K. G. Subbarama Setty	",
         post: "Hon. Treasurer, RSST.",
+        imgLink: "https://i.ibb.co/NCNHtpb/Whats-App-Image-2022-10-21-at-2-06-04-PM.jpg"
       },
       {
         name: "Sri. A.V.S. Murthy",
@@ -38,6 +39,7 @@ const committeeMembers: Mem[] = [
       {
         name: "Sri. D.P.Nagaraj",
         post: "Hon. Joint Secretary, RSST.",
+        imgLink: "https://i.ibb.co/cYYfZh0/Whats-App-Image-2022-10-21-at-2-06-39-PM.jpg"
       },
       {
         name: "Sri Dr. K N Subramanya",
@@ -71,7 +73,7 @@ const committeeMembers: Mem[] = [
         name: "Dr.Devesh Dwivedi",
         post: "India Site Head, IP Development and Design Centre of Excellence, Global Foundries, India",
         imgLink:
-          "https://media-exp2.licdn.com/dms/image/C5103AQEUuD3yiZ9NfA/profile-displayphoto-shrink_200_200/0/1516329271276?e=1661385600&v=beta&t=x33tejmk4W57a3Z5w3s49sFnnTlUu1xre1Rc28c4j-U",
+          "https://i.ibb.co/TmdN1kZ/Whats-App-Image-2022-10-21-at-8-21-12-PM.jpg"
       },
       // {
       //   name: "Dr. Amara",
@@ -92,8 +94,7 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. S S Iyengar",
         post: "Director of Computer Science,FIU,USA",
-        imgLink:
-          "https://media-exp2.licdn.com/dms/image/C4E03AQEftkV0U4U8lQ/profile-displayphoto-shrink_200_200/0/1516330237646?e=1661385600&v=beta&t=jl_qo_DZoBUxaX0VBcHv_jQ8hIGcH33KsCFxSHW2Xb8",
+        imgLink: "https://i.ibb.co/JQZkFLD/Whats-App-Image-2022-10-27-at-12-40-27-PM.jpg"
       },
     ],
   },
@@ -177,7 +178,7 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Rajesh",
         post: "Honeywell Pvt. Ltd., Bangalore",
-        imgLink: "",
+        imgLink: "https://i.ibb.co/6w3985S/Rajesh-Honeywell.jpg",
       },
       {
         name: "Dr. Chengappa",
