@@ -30,6 +30,10 @@ const Links = [
     href: "/contact",
     label: "Contact Us",
   },
+  {
+    href: "https://rzp.io/l/FtNzQRku",
+    label: "Quick Payment Link",
+  }
 ];
 
 const NavBar = () => {

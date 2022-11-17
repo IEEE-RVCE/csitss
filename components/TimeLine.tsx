@@ -20,7 +20,7 @@ export default function CustomTimeLine() {
     },
     {
       label: "Early Bird Registration",
-      date: "Before 15 November 2022"
+      date: "Before 22 November 2022"
     },
     {
       label: "Submission of Camera-ready Manuscript",
