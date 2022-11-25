@@ -24,11 +24,11 @@ export default function CustomTimeLine() {
     },
     {
       label: "Submission of Camera-ready Manuscript",
-      date: "31 November 2022"
+      date: "30 November 2022"
     },
     {
       label: "Last Date for Registration",
-      date: "31 November 2022"
+      date: "30 November 2022"
     },
     {
       label: "Pre-Conference Tutorial",

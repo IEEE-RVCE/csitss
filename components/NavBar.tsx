@@ -4,7 +4,12 @@ import { AppShell, Box, Header, Image, Menu } from "@mantine/core";
 
 import Link from "next/link";
 import React from "react";
-const Links = [
+const Links:Array<
+{
+href:string,
+label:string,
+newTab?:boolean
+}>= [
   {
     href: "/",
     label: "Home",
@@ -31,8 +36,9 @@ const Links = [
     label: "Contact Us",
   },
   {
-    href: "https://rzp.io/l/FtNzQRku",
+    href: "https://rzp.io/l/3N4bwhvH",
     label: "Quick Payment Link",
+    newTab:true
   }
 ];
 
@@ -43,7 +49,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="flex items-center" href="/">
+              <a className="flex items-center" href="/" >
                 <Image
                   src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
                   alt="logo"
@@ -59,6 +65,7 @@ const NavBar = () => {
                 <a
                   className="text-gray-500 hover:text-indigo-400"
                   href={link.href}
+                  target={link.newTab ? "_blank": "_self"}
                 >
                   {link.label}
                 </a>
