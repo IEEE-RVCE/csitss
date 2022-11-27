@@ -39,6 +39,10 @@ newTab?:boolean
     href: "https://rzp.io/l/3N4bwhvH",
     label: "Quick Payment Link",
     newTab:true
+  },
+  {
+    href: "/pgmschedule",
+    label: "Program Schedule",
   }
 ];
 
