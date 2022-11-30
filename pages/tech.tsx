@@ -93,13 +93,30 @@ function Tech() {
               <p className="text-center text-3xl font-bold sm:text-5xl">
                 Call For Papers{" "}
               </p>
-              <p className="text-xl font-medium text-gray-500 text-justify">
+              <p className="text-justify text-xl font-medium text-gray-500">
                 Prospective authors are encouraged to submit quality and
                 original research papers for presentation at the Conference.
                 Authors are requested to submit their manuscripts in PDF format
                 not exceeding 6 pages in A4 size through online submission at
-                Microsoft CMT - on or <i>before 5<sup>th</sup> November 2022</i>. The
-                manuscript should follow the standard IEEE template.The format of the paper could be downloaded in link below <a href="https://www.ieee.org/conferences/publishing/templates.html"><b>https://www.ieee.org/conferences/publishing/templates.html</b></a>.<br/>All submission for the conference will be handled electronically and submitted papers will be peer reviewed by domain experts. To submit the papers use the Microsoft CMT Link mentioned below:<br/><a href="https://cmt3.research.microsoft.com/CSITSS2022"><b>https://cmt3.research.microsoft.com/CSITSS2022.</b></a>
+                Microsoft CMT - on or{" "}
+                <i>
+                  before 5<sup>th</sup> November 2022
+                </i>
+                . The manuscript should follow the standard IEEE template.The
+                format of the paper could be downloaded in link below{" "}
+                <a href="https://www.ieee.org/conferences/publishing/templates.html">
+                  <b>
+                    https://www.ieee.org/conferences/publishing/templates.html
+                  </b>
+                </a>
+                .<br />
+                All submission for the conference will be handled electronically
+                and submitted papers will be peer reviewed by domain experts. To
+                submit the papers use the Microsoft CMT Link mentioned below:
+                <br />
+                <a href="https://cmt3.research.microsoft.com/CSITSS2022">
+                  <b>https://cmt3.research.microsoft.com/CSITSS2022.</b>
+                </a>
               </p>
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">

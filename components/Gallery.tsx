@@ -1,12 +1,18 @@
-import React from 'react'
-import { createStyles, SimpleGrid, Card, Image, Container, AspectRatio } from '@mantine/core';
-
+import React from "react";
+import {
+  createStyles,
+  SimpleGrid,
+  Card,
+  Image,
+  Container,
+  AspectRatio,
+} from "@mantine/core";
 
 const imgLinks = [
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173373/csitss/3J2A4489_nga06d.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173374/csitss/3J2A4460_bwsns3.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173374/csitss/3J2A4447_jucqfm.jpg",
-  'https://res.cloudinary.com/devcoffee/image/upload/v1666173356/csitss/P2570137_icct6k.jpg',
+  "https://res.cloudinary.com/devcoffee/image/upload/v1666173356/csitss/P2570137_icct6k.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173374/csitss/3J2A4484_bv2s4t.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173374/csitss/3J2A4421_mz6fos.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173372/csitss/3J2A4491_uigwei.jpg",
@@ -24,17 +30,15 @@ const imgLinks = [
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173358/csitss/P2570105_uvy4es.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173356/csitss/P2570098_jemwk2.jpg",
   "https://res.cloudinary.com/devcoffee/image/upload/v1666173362/csitss/3J2A4699_my90dw.jpg",
-  "https://res.cloudinary.com/devcoffee/image/upload/v1666173360/csitss/P2570039_rzuojx.jpg"
-
-]
-
+  "https://res.cloudinary.com/devcoffee/image/upload/v1666173360/csitss/P2570039_rzuojx.jpg",
+];
 
 const useStyles = createStyles((theme) => ({
   card: {
-    transition: 'transform 150ms ease, box-shadow 150ms ease',
+    transition: "transform 150ms ease, box-shadow 150ms ease",
 
-    '&:hover': {
-      transform: 'scale(1.01)',
+    "&:hover": {
+      transform: "scale(1.01)",
       boxShadow: theme.shadows.md,
     },
   },
@@ -45,12 +49,8 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-
-
 function Gallery() {
-
   const { classes } = useStyles();
-
 
   const cards = imgLinks.map((link) => (
     <Card key={link} p="md" radius="md" className={classes.card}>
@@ -60,16 +60,13 @@ function Gallery() {
     </Card>
   ));
 
-
-
-
   return (
     <Container py="xl">
-      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+      <SimpleGrid cols={3} breakpoints={[{ maxWidth: "sm", cols: 1 }]}>
         {cards}
       </SimpleGrid>
     </Container>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;

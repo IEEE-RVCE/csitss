@@ -1,6 +1,6 @@
-import { Accordion } from '@mantine/core';
-import { Avatar } from '@mantine/core';
-import React from 'react'
+import { Accordion } from "@mantine/core";
+import { Avatar } from "@mantine/core";
+import React from "react";
 
 type Mem = {
   label: string;
@@ -9,7 +9,7 @@ type Mem = {
     post?: string;
     imgLink?: string;
   }[];
-}
+};
 
 const committeeMembers: Mem[] = [
   {
@@ -29,7 +29,8 @@ const committeeMembers: Mem[] = [
       {
         name: "Sri. K. G. Subbarama Setty	",
         post: "Hon. Treasurer, RSST.",
-        imgLink: "https://i.ibb.co/NCNHtpb/Whats-App-Image-2022-10-21-at-2-06-04-PM.jpg"
+        imgLink:
+          "https://i.ibb.co/NCNHtpb/Whats-App-Image-2022-10-21-at-2-06-04-PM.jpg",
       },
       {
         name: "Sri. A.V.S. Murthy",
@@ -39,7 +40,8 @@ const committeeMembers: Mem[] = [
       {
         name: "Sri. D.P.Nagaraj",
         post: "Hon. Joint Secretary, RSST.",
-        imgLink: "https://i.ibb.co/cYYfZh0/Whats-App-Image-2022-10-21-at-2-06-39-PM.jpg"
+        imgLink:
+          "https://i.ibb.co/cYYfZh0/Whats-App-Image-2022-10-21-at-2-06-39-PM.jpg",
       },
       {
         name: "Sri Dr. K N Subramanya",
@@ -73,7 +75,7 @@ const committeeMembers: Mem[] = [
         name: "Dr.Devesh Dwivedi",
         post: "India Site Head, IP Development and Design Centre of Excellence, Global Foundries, India",
         imgLink:
-          "https://i.ibb.co/TmdN1kZ/Whats-App-Image-2022-10-21-at-8-21-12-PM.jpg"
+          "https://i.ibb.co/TmdN1kZ/Whats-App-Image-2022-10-21-at-8-21-12-PM.jpg",
       },
       // {
       //   name: "Dr. Amara",
@@ -94,7 +96,8 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. S S Iyengar",
         post: "Director of Computer Science,FIU,USA",
-        imgLink: "https://i.ibb.co/JQZkFLD/Whats-App-Image-2022-10-27-at-12-40-27-PM.jpg"
+        imgLink:
+          "https://i.ibb.co/JQZkFLD/Whats-App-Image-2022-10-27-at-12-40-27-PM.jpg",
       },
     ],
   },
@@ -297,13 +300,10 @@ const committeeMembers: Mem[] = [
   },
 ];
 
-
 function committee() {
   return (
     <div>
-      <h2 className="text-4xl font-bold sm:text-5xl text-center">
-        Committee
-      </h2>
+      <h2 className="text-center text-4xl font-bold sm:text-5xl">Committee</h2>
       <div className="space-y-4">
         {committeeMembers.map((committeeMember, index) => {
           return (
@@ -313,19 +313,23 @@ function committee() {
                   {committeeMember.members.map((member, index) => {
                     return (
                       <>
-                        <div className="grid grid-col-3">
-
+                        <div className="grid-col-3 grid">
                           {index + 1}.
-                          <a
-                            className="block mt-2 p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
-                          >
+                          <a className="mt-2 block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
                             <div className="flex flex-col items-center justify-between sm:flex-row">
                               <div>
-                                <Avatar src={member.imgLink} alt={member.name} color="indigo" size={200} />
+                                <Avatar
+                                  src={member.imgLink}
+                                  alt={member.name}
+                                  color="indigo"
+                                  size={200}
+                                />
                               </div>
                               <div>
-                                <h6 className="mt-2 font-bold">{member.name}</h6>
-                                <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
+                                <h6 className="mt-2 font-bold">
+                                  {member.name}
+                                </h6>
+                                <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                                   {member.post}
                                 </p>
                               </div>
@@ -333,16 +337,16 @@ function committee() {
                           </a>
                         </div>
                       </>
-                    )
+                    );
                   })}
                 </Accordion.Item>
               </Accordion>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
+  );
 }
 
-export default committee
+export default committee;
