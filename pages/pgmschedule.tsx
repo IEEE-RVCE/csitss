@@ -5,7 +5,7 @@ export default function pgmschedule() {
   const Day1 = {
     head: [
       [
-        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022]",
+        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
       ],
       ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
     ],
@@ -63,7 +63,7 @@ export default function pgmschedule() {
   const Day2 = {
     head: [
       [
-        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022]",
+        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
       ],
       ["Inaguration/ Day 2/ 22-12-2022"],
     ],
@@ -71,47 +71,47 @@ export default function pgmschedule() {
       "",
       "10:00-11:00",
       "11:00-11:30",
-      "11:30-12:30",
-      "12:30-1:30",
-      "12:45-1:45",
-      "1:45-3:15",
-      "3:15-3:30",
-      "3:30-5:00",
+      "11:30-12:15",
+      "12:15-1:15",
+      "1:15-2:00",
+      "2:00-2:45",
+      "2:45-3:00",
+      "3:00-4:30",
     ],
 
     rows: [
       [
         "Theme 1",
-        "Inaguration",
+        "Inaguration IEM Auditorium",
         "High Tea",
         "Key note Address: Dr. SS Iyengar",
         "Invited Talk 1: AI and Quantum Electronics:  Dr. L V Subramaniam",
         "LUNCH",
-        "Sensors: Paper Proceding: 6 Papers",
+        "Planery Talk:Progress Software+ Talk by MUK; BT Seminar Hall    ",
         "HIGH TEA",
-        "Energy Systems: Paper Proceding 6 Papers",
+        "Sensors: Paper Proceding: 6 Papers",
       ],
       [
         "Theme 2",
-        "Inaguration",
+        "Inaguration IEM Auditorium",
         "High Tea",
         "Key note Address: Dr. SS Iyengar",
         "Invited Talk 1: AI and Quantum Electronics:  Dr. L V Subramaniam",
         "LUNCH",
-        "Communication:Paper Proceding:6 Papers",
+        "Planery Talk:Progress Software+ Talk by MUK; BT Seminar Hall   ",
         "HIGH TEA",
-        "Processing::Paper Proceding:6 Papers",
+        "Communication:Paper Proceding:6 Papers",
       ],
       [
         "Theme 3",
-        "Inaguration",
+        "Inaguration IEM Auditorium",
         "High Tea",
         "Key note Address: Dr. SS Iyengar",
         "Invited Talk 1: AI and Quantum Electronics:  Dr. L V Subramaniam",
         "LUNCH",
-        "Intelligent Systems:Paper Proceding:6 Papers",
+        "Planery Talk:Progress Software+ Talk by MUK; BT Seminar Hall   ",
         "HIGH TEA",
-        "Computing:Paper Proceding:6 Papers",
+        "Intelligent Systems:Paper Proceding:6 Papers",
       ],
     ],
   };
@@ -119,55 +119,59 @@ export default function pgmschedule() {
   const Day3 = {
     head: [
       [
-        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022]",
+        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
       ],
       ["Conference Day 3/ 23-12-2022"],
     ],
     columns: [
-      "",
-      "9:30-10:15",
-      "10:45-11:30",
-      "11:30-11:45",
-      "11:450-12:45",
-      "12:45-1:45",
-      "1:45-3:15",
-      "3:15-3:30",
-      "3:30-5:00",
+      " ",
+      "9:15-10:00",
+      "10:00-11:00",
+      "11:00-11:30",
+      "11:30-1:00",
+      "1:00-2:00",
+      "2:00-2:45",
+      "2:45-3:00",
+      "3:30-4:30",
+      "4:30-5:00"
     ],
 
     rows: [
       [
         "Theme 1",
-        "Invited Talk:Nokia Networks",
-        "Invited Talk: ",
+        "Invited Talk:Nokia Networks: BT Seminar Hall",
+        "Invited Talk :Global Founders:  BT Seminar HALL ",
         "High Tea",
-        "Invited Talk:Fidelity",
+        "Processing::Paper Proceding:5 Papers",
         "LUNCH",
-        "Sensors: Paper Proceding: 6 Papers",
+        "Invited Talk:fidility Sridhar: BT Seminar HALL",
         "HIGH TEA",
-        "Energy Systems: Paper Proceding 6 Papers",
+        "Intelligent Systems: Paper Proceding 5 Papers",
+        "Valedectory",
       ],
       [
         "Theme 2",
-        "Invited Talk:Nokia Networks",
-        "Invited Talk: ",
+        "Invited Talk:Nokia Networks: BT Seminar Hall",
+        "Invited Talk:Global Founders: BT Seminar HALL ",
         "High Tea",
-        "Invited Talk:Fidelity",
+        "Computing::Paper Proceding:6 Papers",
         "LUNCH",
-        "Communication:Paper Proceding:6 Papers",
+        "Invited Talk:fidility Sridhar : BT Seminar HALL",
         "HIGH TEA",
-        "Processing::Paper Proceding:6 Papers",
+        "Communication: Paper Proceding:4",
+        "Valedectory",
       ],
       [
         "Theme 3",
-        "Invited Talk:Nokia Networks",
-        "Invited Talk: ",
+        "Invited Talk:Nokia Networks: BT Seminar Hall",
+        "Invited Talk:Global Founders: BT Seminar HALL ",
         "High Tea",
-        "Invited Talk:Fidelity",
+        "Intelligent Systems:Paper Proceding:6",
         "LUNCH",
-        "Intelligent Systems:Paper Proceding:6 Papers",
+        "Invited Talk:fidility  Sridhar :BT Seminar HALL",
         "HIGH TEA",
-        "Computing:Paper Proceding:6 Papers",
+        "Intelligent Systems: Paper Proceding 5 Papers",
+        "Valedectory",
       ],
     ],
   };
@@ -183,6 +187,7 @@ export default function pgmschedule() {
                     <th className="block text-blue-800">{row[0]}</th>
                   </>
                 ))}
+                <th className="block text-gray-600">Paper presentation will be updated at the earliest</th>
               </div>
               <p className="mt-4 text-gray-600">
                 <div className="overflow-x-auto">
@@ -237,7 +242,10 @@ export default function pgmschedule() {
                   <>
                     <th className="block text-blue-800">{row[0]}</th>
                   </>
+
                 ))}
+                <th className="block text-gray-600">Paper presentation will be updated at the earliest</th>
+
               </div>
               <p className="mt-4 text-gray-600">
                 <div className="overflow-x-auto">
@@ -296,6 +304,8 @@ export default function pgmschedule() {
                     <th className="block text-blue-800">{row[0]}</th>
                   </>
                 ))}
+                <th className="block text-gray-600">Paper presentation will be updated at the earliest</th>
+
               </div>
               <p className="mt-4 text-gray-600">
                 <div className="overflow-x-auto">
@@ -337,6 +347,9 @@ export default function pgmschedule() {
                           <td className=" px-1 py-2 text-gray-700">{row[7]}</td>
                           <td className=" bg-gray-100 px-1 py-2  text-gray-700">
                             {row[8]}
+                          </td>
+                          <td className="px-1 py-2  text-gray-700">
+                            {row[9]}
                           </td>
                         </tr>
                       ))}
