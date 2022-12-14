@@ -2,7 +2,7 @@ import React from "react";
 import { Tabs } from "@mantine/core";
 
 export default function pgmschedule() {
-    const Day1 = {
+    const Day1 = [{
         head: [
             [
                 "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
@@ -10,55 +10,184 @@ export default function pgmschedule() {
             ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
         ],
         columns: [
+            "PRE TUTORIAL TRACK 01",
             "",
-            "9:30-11:00",
-            "11:00-11:15",
-            "11:15-12:45",
-            "12:45-1:45",
-            "1:45-3:15",
-            "3:15-3:30",
-            "3:30-5:00",
+            " Processors & Communication Systems",
+            "BT Seminar Hall",
+        ],
+        rows: [
+            [
+                "9:30AM to 11:00AM",
+                // "Mr. G Balaj, ABB",
+                "Signal Processing and Health Care : Our endeavors during the COVID-19 Lockdown",
+                "Dr.Sriram Ganapathy, Associate Professor, Electrical Engineering, IISc Bangalore",
+                // "Mr. G Balaji, ABB",
+                "BT Seminar Hall",
+            ],
+            [
+                "11.00AM to 11.30AM",
+                "----",
+                "High Tea",
+                "",
+            ],
+            [
+                "11.30AM to 01.00PM",
+                "NiralOS : Open and Disaggregated Private 5G and Edge Infrastructure Platform for Enterprise Operational Effectiveness",
+                "Abhijit Chaudhary is the Founder and CEO of Niral Networks",
+                "BT Seminar Hall",
+            ],
+            [
+                "01.00PM to 02.00PM",
+                "---",
+                "Lunch",
+                "----",
+            ],
+            [
+                "02.00PM to 03.15PM",
+                "Pre tutorial from M/s Leka Wireless",
+                "Hariprasad Bhat, Leka Wireless",
+                "BT Seminar Hall",
+            ],
+            [
+                "3.15PM to 3.30PM",
+                "----",
+                "High Tea",
+                "----",
+            ],
+            [
+                "3.30PM to 4.30PM",
+                "Pre tutorial from M/s Leka Wireless,",
+                "Hariprasad Bhat, Leka Wireless ",
+                "BT Seminar Hall",
+            ],
+        ],
+    },
+    {
+        head: [
+            [
+                "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
+            ],
+            ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
+        ],
+        columns: [
+            "PRE TUTORIAL TRACK 2",
+            "",
+            "Computing Systems and Applications & Intelligent Systems Venue",
+            "MCA Seminar Hall",
+        ],
+        rows: [
+            [
+                "9:30AM to 11:00AM",
+                // "Mr. G Balaj, ABB",
+                "Question answering using information retrieval techniques",
+                "Dr. Jyotirmoy Banerjee, Mr. Srinivas Kundeti, Mr. L Raghunatha Reddy and Mr. Sridhar D Kamoji, Ercrisson ",
+                // "Mr. G Balaji, ABB",
+                "MCA Seminar Hall",
+            ],
+            [
+                "11.00AM to 11.30AM",
+                "----",
+                "High Tea",
+                "----",
+            ],
+            [
+                "11.30AM to 01.00PM",
+                "Question answering using information retrieval techniques",
+                " Dr. Jyotirmoy Banerjee, Mr. Srinivas Kundeti, Mr. L Raghunatha Reddy and Mr. Sridhar D Kamoji",
+                "MCA Seminar Hall",
+            ],
+            [
+                "01.00PM to 02.00PM",
+                "----",
+                "Lunch",
+                "----",
+            ],
+            [
+                "02.00PM to 03.15PM",
+                "Pre tutorial from M/s NAL",
+                "Dr K C Gouda,Principal Scientist,NAL",
+                "MCA Seminar Hall",
+            ],
+            [
+                "3.15PM to 3.30PM",
+                "----",
+                "High Tea",
+                "----",
+            ],
+            [
+                "3.30PM to 4.30PM",
+                "Pre tutorial from M/s NAL",
+                "Dr K C Gouda,Principal Scientist,NAL",
+                "MCA Seminar Hall",
+            ],
+        ],
+    },
+    {
+        head: [
+            [
+                "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
+            ],
+            ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
+        ],
+        columns: [
+            "PRE TUTORIAL TRACK 3",
+            "",
+            "Sensors: Sensors, Automation & Process Control; Energy Systems",
+            "IEM Seminar Hall",
         ],
 
         rows: [
             [
-                "Theme 1",
+                "9:30AM to 11:00AM",
                 // "Mr. G Balaj, ABB",
-                "ABB",
-                "High Tea",
+                "Pre Tutorial:  Energy Systems",
+                "G Balaji Sr.Vice President & Local Division Manager - Energy Industries",
                 // "Mr. G Balaji, ABB",
-                "ABB",
-                "LUNCH",
-                "To Be finalised",
-                "HIGH TEA",
-                "To Be finalised",
+                "IEM Seminar Hall",
             ],
             [
-                "Theme 2",
-                "Prof Sriram Ganapathy",
+                "11.00AM to 11.30AM",
+                "----",
                 "High Tea",
-                "Niral Networks",
-                "LUNCH",
-                // "Sri Hari Prasad Bhat, Leka Wireless",
-                "Leka Wireless",
-                "HIGH TEA",
-                //"Sri Hari Prasad Bhat, Leka Wireless",
-                "Leka Wireless",
+                "----",
             ],
             [
-                "Theme 3",
-                "Ericsson R&D",
-                //"Dr. Jyotirmoy Banerjee is Principal Data Scientist,Ericsson",
+                "11.30AM to 01.00PM",
+                "Pre Tutorial:  Energy Systems",
+                "G Balaji Sr.Vice President & Local Division Manager - Energy Industries",
+                "IEM Seminar Hall",
+            ],
+            [
+                "11.30AM to 01.00PM",
+                "Demo:  Energy Systems",
+                "Dr. Srivani, HOD, EEE, RVCE",
+                "ABB LAB, EEE, RVCE",
+            ],
+            [
+                "01.00PM to 02.00PM",
+                "----",
+                "Lunch",
+                "----",
+            ],
+            [
+                "02.00PM to 03.15PM",
+                "Pre tutorial on Sensor Technology",
+                "IEM Seminar Hall",
+            ],
+            [
+                "3.15PM to 3.30PM",
+                "----",
                 "High Tea",
-                "Ericsson R&D",
-                // "Srinivas Kundeti,Ericsson R&D;L Raghunatha Reddy, Senior Data Scientist Ericsson R&D",
-                "LUNCH",
-                "To Be finalised",
-                "HIGH TEA",
-                "To Be finalised",
+                "----",
+            ],
+            [
+                "3.30PM to 4.30PM",
+                "Pre tutorial on Sensor Technology",
+                "Dr K NATARAJAN Professor & Functional Head- Avionics",
+                "IEM Seminar Hall",
             ],
         ],
-    };
+    }];
 
     const Day2 = {
         head: [
@@ -68,50 +197,92 @@ export default function pgmschedule() {
             ["Inaguration/ Day 2/ 22-12-2022"],
         ],
         columns: [
-            "",
-            "10:00-11:00",
-            "11:00-11:30",
-            "11:30-12:15",
-            "12:15-1:15",
-            "1:15-2:00",
-            "2:00-2:45",
-            "2:45-3:00",
-            "3:00-4:30",
+            "Time",
+            "Topic",
+            "Speaker",
+            "Venue",
         ],
 
         rows: [
             [
-                "Theme 1",
-                "Inaguration IEM Auditorium",
-                "High Tea",
-                "Key note Address: Dr. SS Iyengar",
-                "Invited Talk 1: AI and Quantum Electronics:  Dr. L V Subramaniam",
-                "LUNCH",
-                "Planery Talk:Progress Software+ Talk by MUK; BT Seminar Hall    ",
-                "HIGH TEA",
-                "Sensors: Paper Proceding: 6 Papers",
+                "10.00AM TO 11.00AM",
+                // "Mr. G Balaj, ABB",
+                "Inauguration",
+                "",
+                // "Mr. G Balaji, ABB",
+                "IEM Auditorium",
             ],
             [
-                "Theme 2",
-                "Inaguration IEM Auditorium",
+                "11.00AM TO 11.30AM",
+                // "Mr. G Balaj, ABB",
+                "-------",
                 "High Tea",
-                "Key note Address: Dr. SS Iyengar",
-                "Invited Talk 1: AI and Quantum Electronics:  Dr. L V Subramaniam",
-                "LUNCH",
-                "Planery Talk:Progress Software+ Talk by MUK; BT Seminar Hall   ",
-                "HIGH TEA",
-                "Communication:Paper Proceding:6 Papers",
+                // "Mr. G Balaji, ABB",
+                "-------",
             ],
             [
-                "Theme 3",
-                "Inaguration IEM Auditorium",
-                "High Tea",
-                "Key note Address: Dr. SS Iyengar",
-                "Invited Talk 1: AI and Quantum Electronics:  Dr. L V Subramaniam",
+                "11.30AM TO 12.15PM",
+                // "Mr. G Balaj, ABB",
+                "Next generation of Cyber Forensics: A Road Map ",
+                ":Dr.S S Iyengar is a world-renowned computer scientist and a Director of US Army funded Centre of Excellence in Digital Forensics in USA",
+                // "Mr. G Balaji, ABB",
+                "IEM Auditorium",
+            ],
+            [
+                "12.15AM TO 01.00PM",
+                // "Mr. G Balaj, ABB",
+                "The Future of Computing",
+                " Dr. L Venkata Subramaniam an IBM Distinguished Quantum Ambassador. ",
+                // "Mr. G Balaji, ABB",
+                "IEM Auditorium",
+            ],
+            [
+                " 01.00PM TO 02.00PM",
+                // "Mr. G Balaj, ABB",
+                "-------",
                 "LUNCH",
-                "Planery Talk:Progress Software+ Talk by MUK; BT Seminar Hall   ",
-                "HIGH TEA",
-                "Intelligent Systems:Paper Proceding:6 Papers",
+                // "Mr. G Balaji, ABB",
+                "-------",
+            ],
+            [
+                "02.00PM TO 02.45PM",
+                // "Mr. G Balaj, ABB",
+                "Plenary Talk:",
+                "Expert Committee from Progress Software        ",
+                // "Mr. G Balaji, ABB",
+                "Venue: BT Seminar Hall",
+            ],
+            [
+                "02.45PM to 3.00PM",
+                // "Mr. G Balaj, ABB",
+                "-------",
+                "TEA Break",
+                // "Mr. G Balaji, ABB",
+                "-------",
+            ],
+            [
+                "3.00PM to 4.45PM",
+                // "Mr. G Balaj, ABB",
+                "TRACK 1:",
+                "Sensors: Sensors, Automation & Process Control; Energy Systems  Paper ID: 85,147,164,192,156,53       ",
+                // "Mr. G Balaji, ABB",
+                "Venue: BT Seminar Hall",
+            ],
+            [
+                "  ",
+                // "Mr. G Balaj, ABB",
+                "TRACK 2:",
+                "Communication Systems-1 Paper ID:9,36,158,190,229,230  ",
+                // "Mr. G Balaji, ABB",
+                "Venue: MCA Seminar Hall        ",
+            ],
+            [
+                "  ",
+                // "Mr. G Balaj, ABB",
+                "TRACK 3:",
+                " Intelligent Systems-1  Paper ID:108,118,243,122,154,59       ",
+                // "Mr. G Balaji, ABB",
+                "Venue: MCA Seminar Hall        ",
             ],
         ],
     };
@@ -199,19 +370,20 @@ export default function pgmschedule() {
                     <Tabs.Tab label="DAY 1">
                         <aside className=" p-12 sm:p-16 lg:p-24">
                             <div className="block">
-                                {Day1.head.map((row) => (
+                                {Day1[0].head.map((row) => (
                                     <>
                                         <th className="block text-blue-800">{row[0]}</th>
                                     </>
                                 ))}
-                                <th className="block text-gray-600">Paper presentation will be updated at the earliest</th>
+                                <th className="block text-gray-600">Program Schedule</th>
                             </div>
                             <p className="mt-4 text-gray-600">
                                 <div className="overflow-x-auto">
+                                    <br />
                                     <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
                                         <thead className="bg-gray-100">
                                             <tr>
-                                                {Day1.columns.map((col) => (
+                                                {Day1[0].columns.map((col) => (
                                                     <th className="whitespace-nowrap px-2 py-2 text-left">
                                                         {col}
                                                     </th>
@@ -219,7 +391,67 @@ export default function pgmschedule() {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-gray-200">
-                                            {Day1.rows.map((row) => (
+                                            {Day1[0].rows.map((row) => (
+                                                <tr>
+                                                    <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                                                        {row[0]}
+                                                    </td>
+
+                                                    <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                                                    <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                                                        {row[2]}
+                                                    </td>
+
+                                                    <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+
+                                    <br />
+                                    <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                                        <thead className="bg-gray-100">
+                                            <tr>
+                                                {Day1[1].columns.map((col) => (
+                                                    <th className="whitespace-nowrap px-2 py-2 text-left">
+                                                        {col}
+                                                    </th>
+                                                ))}
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-gray-200">
+                                            {Day1[1].rows.map((row) => (
+                                                <tr>
+                                                    <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                                                        {row[0]}
+                                                    </td>
+
+                                                    <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                                                    <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                                                        {row[2]}
+                                                    </td>
+
+                                                    <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+
+                                    <br />
+                                    <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                                        <thead className="bg-gray-100">
+                                            <tr>
+                                                {Day1[2].columns.map((col) => (
+                                                    <th className="whitespace-nowrap px-2 py-2 text-left">
+                                                        {col}
+                                                    </th>
+                                                ))}
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-gray-200">
+                                            {Day1[2].rows.map((row) => (
                                                 <tr>
                                                     <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
                                                         {row[0]}
@@ -233,21 +465,12 @@ export default function pgmschedule() {
 
                                                     <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
 
-                                                    <td className=" bg-gray-100 px-1 py-2 text-gray-700">
-                                                        {row[4]}
-                                                    </td>
 
-                                                    <td className=" px-1 py-2 text-gray-700">{row[5]}</td>
-
-                                                    <td className=" bg-gray-100 px-1 py-2 text-gray-700">
-                                                        {row[6]}
-                                                    </td>
-
-                                                    <td className=" px-1 py-2 text-gray-700">{row[7]}</td>
                                                 </tr>
                                             ))}
                                         </tbody>
                                     </table>
+                                    <br />
                                 </div>
                             </p>
                         </aside>
@@ -261,7 +484,7 @@ export default function pgmschedule() {
                                     </>
 
                                 ))}
-                                <th className="block text-gray-600">Paper presentation will be updated at the earliest</th>
+                                <th className="block text-gray-600">Program Schedule</th>
 
                             </div>
                             <p className="mt-4 text-gray-600">
@@ -290,21 +513,6 @@ export default function pgmschedule() {
                                                     </td>
 
                                                     <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
-
-                                                    <td className=" bg-gray-100 px-1 py-2 text-gray-700">
-                                                        {row[4]}
-                                                    </td>
-
-                                                    <td className=" px-1 py-2 text-gray-700">{row[5]}</td>
-
-                                                    <td className=" bg-gray-100 px-1 py-2 text-gray-700">
-                                                        {row[6]}
-                                                    </td>
-
-                                                    <td className=" px-1 py-2 text-gray-700">{row[7]}</td>
-                                                    <td className=" bg-gray-100 px-1 py-2  text-gray-700">
-                                                        {row[8]}
-                                                    </td>
                                                 </tr>
                                             ))}
                                         </tbody>
