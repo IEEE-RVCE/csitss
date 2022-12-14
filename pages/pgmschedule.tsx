@@ -10,40 +10,28 @@ export default function pgmschedule() {
       ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
     ],
     columns: [
-      "",
-      "9:30-11:00",
-      "11:00-11:15",
-      "11:15-12:45",
-      "12:45-1:45",
-      "1:45-3:15",
-      "3:15-3:30",
-      "3:30-5:00",
+      "Time",
+      "Topic",
+      "Speaker",
+      "Venue",
     ],
 
     rows: [
       [
-        "Theme 1",
+        "9:30AM to 11:00AM",
         // "Mr. G Balaj, ABB",
-        "ABB",
-        "High Tea",
+        "Processors & Communication Systems",
+        "Dr.Sriram Ganapathy, Associate Professor, Electrical Engineering, IISc Bangalore",
         // "Mr. G Balaji, ABB",
-        "ABB",
-        "LUNCH",
-        "To Be finalised",
-        "HIGH TEA",
-        "To Be finalised",
+        "BT Seminar Hall",
+        
       ],
       [
         "Theme 2",
         "Prof Sriram Ganapathy",
         "High Tea",
         "Niral Networks",
-        "LUNCH",
-        // "Sri Hari Prasad Bhat, Leka Wireless",
-        "Leka Wireless",
-        "HIGH TEA",
-        //"Sri Hari Prasad Bhat, Leka Wireless",
-        "Leka Wireless",
+        
       ],
       [
         "Theme 3",
@@ -52,10 +40,7 @@ export default function pgmschedule() {
         "High Tea",
         "Ericsson R&D",
         // "Srinivas Kundeti,Ericsson R&D;L Raghunatha Reddy, Senior Data Scientist Ericsson R&D",
-        "LUNCH",
-        "To Be finalised",
-        "HIGH TEA",
-        "To Be finalised",
+        
       ],
     ],
   };
@@ -216,17 +201,17 @@ export default function pgmschedule() {
 
                           <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
 
-                          <td className=" bg-gray-100 px-1 py-2 text-gray-700">
+                          {/* <td className=" bg-gray-100 px-1 py-2 text-gray-700">
                             {row[4]}
-                          </td>
+                          </td> */}
 
-                          <td className=" px-1 py-2 text-gray-700">{row[5]}</td>
+                          {/* <td className=" px-1 py-2 text-gray-700">{row[5]}</td>
 
                           <td className=" bg-gray-100 px-1 py-2 text-gray-700">
                             {row[6]}
                           </td>
 
-                          <td className=" px-1 py-2 text-gray-700">{row[7]}</td>
+                          <td className=" px-1 py-2 text-gray-700">{row[7]}</td> */}
                         </tr>
                       ))}
                     </tbody>
