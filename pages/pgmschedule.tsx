@@ -408,7 +408,7 @@ export default function pgmschedule() {
                   <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
                     <thead className="bg-gray-100">
                       <tr>
-                        {Day1[2].columns.map((col) => (
+                        {Day1[1].columns.map((col) => (
                           <th className="whitespace-nowrap px-2 py-2 text-left">
                             {col}
                           </th>
@@ -416,7 +416,7 @@ export default function pgmschedule() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                      {Day1[2].rows.map((row) => (
+                      {Day1[1].rows.map((row) => (
                         <tr>
                           <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
                             {row[0]}
@@ -528,7 +528,7 @@ export default function pgmschedule() {
                           </td>
 
                           <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
-
+{/* 
                           <td className=" bg-gray-100 px-1 py-2 text-gray-700">
                             {row[4]}
                           </td>
@@ -542,7 +542,7 @@ export default function pgmschedule() {
                           <td className=" px-1 py-2 text-gray-700">{row[7]}</td>
                           <td className=" bg-gray-100 px-1 py-2  text-gray-700">
                             {row[8]}
-                          </td>
+                          </td> */}
                         </tr>
                       ))}
                     </tbody>
@@ -589,7 +589,7 @@ export default function pgmschedule() {
 
                           <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
 
-                          <td className=" bg-gray-100 px-1 py-2 text-gray-700">
+                          {/* <td className=" bg-gray-100 px-1 py-2 text-gray-700">
                             {row[4]}
                           </td>
 
@@ -605,7 +605,7 @@ export default function pgmschedule() {
                           </td>
                           <td className="px-1 py-2  text-gray-700">
                             {row[9]}
-                          </td>
+                          </td> */}
                         </tr>
                       ))}
                     </tbody>
