@@ -27,8 +27,8 @@ export default function pgmschedule() {
       ],
       [
         "11.00AM to 11.30AM",
-        "",
-        "TEA BREAK",
+        "----",
+        "High Tea",
         "",
       ],
       [
@@ -39,9 +39,9 @@ export default function pgmschedule() {
       ],
       [
         "01.00PM to 02.00PM",
-        "",
+        "---",
         "Lunch",
-        "",
+        "----",
       ],
       [
         "02.00PM to 03.15PM",
@@ -51,9 +51,9 @@ export default function pgmschedule() {
       ],
       [
         "3.15PM to 3.30PM",
-        "",
-        "TEA BREAK",
-        "",
+        "----",
+        "High Tea",
+        "----",
       ],
       [
         "3.30PM to 4.30PM",
@@ -88,9 +88,9 @@ export default function pgmschedule() {
       ],
       [
         "11.00AM to 11.30AM",
-        "",
-        "TEA BREAK",
-        "",
+        "----",
+        "High Tea",
+        "----",
       ],
       [
         "11.30AM to 01.00PM",
@@ -100,9 +100,9 @@ export default function pgmschedule() {
       ],
       [
         "01.00PM to 02.00PM",
-        "",
+        "----",
         "Lunch",
-        "",
+        "----",
       ],
       [
         "02.00PM to 03.15PM",
@@ -112,9 +112,9 @@ export default function pgmschedule() {
       ],
       [
         "3.15PM to 3.30PM",
-        "",
-        "TEA BREAK",
-        "",
+        "----",
+        "High Tea",
+        "----",
       ],
       [
         "3.30PM to 4.30PM",
@@ -149,9 +149,9 @@ export default function pgmschedule() {
       ],
       [
         "11.00AM to 11.30AM",
-        "",
-        "TEA BREAK",
-        "",
+        "----",
+        "High Tea",
+        "----",
       ],
       [
         "11.30AM to 01.00PM",
@@ -167,9 +167,9 @@ export default function pgmschedule() {
       ],
       [
         "01.00PM to 02.00PM",
-        "",
+        "----",
         "Lunch",
-        "",
+        "----",
       ],
       [
         "02.00PM to 03.15PM",
@@ -178,9 +178,9 @@ export default function pgmschedule() {
       ],
       [
         "3.15PM to 3.30PM",
-        "",
-        "TEA BREAK",
-        "",
+        "----",
+        "High Tea",
+        "----",
       ],
       [
         "3.30PM to 4.30PM",
