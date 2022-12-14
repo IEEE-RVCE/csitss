@@ -2,7 +2,7 @@ import React from "react";
 import { Tabs } from "@mantine/core";
 
 export default function pgmschedule() {
-  const Day1 = {
+  const Day1 = [{
     head: [
       [
         "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
@@ -10,40 +10,120 @@ export default function pgmschedule() {
       ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
     ],
     columns: [
-      "Time",
-      "Topic",
-      "Speaker",
-      "Venue",
+      "PRE TUTORIAL TRACK 01",
+      "",
+      " Processors & Communication Systems",
+      "BT Seminar Hall",
     ],
 
     rows: [
       [
         "9:30AM to 11:00AM",
         // "Mr. G Balaj, ABB",
-        "Processors & Communication Systems",
+        "Signal Processing and Health Care : Our endeavors during the COVID-19 Lockdown",
         "Dr.Sriram Ganapathy, Associate Professor, Electrical Engineering, IISc Bangalore",
         // "Mr. G Balaji, ABB",
         "BT Seminar Hall",
-        
       ],
       [
-        "Theme 2",
-        "Prof Sriram Ganapathy",
-        "High Tea",
-        "Niral Networks",
-        
+        "11.00AM to 11.30AM",
+        "",
+        "TEA BREAK",
+        "",
       ],
       [
-        "Theme 3",
-        "Ericsson R&D",
-        //"Dr. Jyotirmoy Banerjee is Principal Data Scientist,Ericsson",
-        "High Tea",
-        "Ericsson R&D",
-        // "Srinivas Kundeti,Ericsson R&D;L Raghunatha Reddy, Senior Data Scientist Ericsson R&D",
-        
+        "11.30AM to 01.00PM",
+        "NiralOS : Open and Disaggregated Private 5G and Edge Infrastructure Platform for Enterprise Operational Effectiveness",
+        "Abhijit Chaudhary is the Founder and CEO of Niral Networks",
+        "BT Seminar Hall",
+      ],
+      [
+        "01.00PM to 02.00PM",
+        "",
+        "Lunch",
+        "",
+      ],
+      [
+        "02.00PM to 03.15PM",
+        "Pre tutorial from M/s Leka Wireless",
+        "Hariprasad Bhat, Leka Wireless",
+        "BT Seminar Hall",
+      ],
+      [
+        "3.15PM to 3.30PM",
+        "",
+        "TEA BREAK",
+        "",
+      ],
+      [
+        "3.30PM to 4.30PM",
+        "Pre tutorial from M/s Leka Wireless,",
+        "Hariprasad Bhat, Leka Wireless ",
+        "BT Seminar Hall",
       ],
     ],
-  };
+  },
+  {
+    head: [
+      [
+        "6 INTERNATIONAL CONFERENCE on Computational Systems & Information Technology Sustainable Solutions [CSITSS-2022] (Tentative schedule, Subject to changes.)",
+      ],
+      ["TUTORIAL DAY: DAY 1 SCHEDULE/ 21-12-2022"],
+    ],
+    columns: [
+      "PRE TUTORIAL TRACK 2",
+      "",
+      "Computing Systems and Applications & Intelligent Systems Venue",
+      "MCA Seminar Hall",
+    ],
+
+    rows: [
+      [
+        "9:30AM to 11:00AM",
+        // "Mr. G Balaj, ABB",
+        "Signal Processing and Health Care : Our endeavors during the COVID-19 Lockdown",
+        "Dr.Sriram Ganapathy, Associate Professor, Electrical Engineering, IISc Bangalore",
+        // "Mr. G Balaji, ABB",
+        "BT Seminar Hall",
+      ],
+      [
+        "11.00AM to 11.30AM",
+        "",
+        "TEA BREAK",
+        "",
+      ],
+      [
+        "11.30AM to 01.00PM",
+        "NiralOS : Open and Disaggregated Private 5G and Edge Infrastructure Platform for Enterprise Operational Effectiveness",
+        "Abhijit Chaudhary is the Founder and CEO of Niral Networks",
+        "BT Seminar Hall",
+      ],
+      [
+        "01.00PM to 02.00PM",
+        "",
+        "Lunch",
+        "",
+      ],
+      [
+        "02.00PM to 03.15PM",
+        "Pre tutorial from M/s Leka Wireless",
+        "Hariprasad Bhat, Leka Wireless",
+        "BT Seminar Hall",
+      ],
+      [
+        "3.15PM to 3.30PM",
+        "",
+        "TEA BREAK",
+        "",
+      ],
+      [
+        "3.30PM to 4.30PM",
+        "Pre tutorial from M/s Leka Wireless,",
+        "Hariprasad Bhat, Leka Wireless ",
+        "BT Seminar Hall",
+      ],
+    ],
+  }];
 
   const Day2 = {
     head: [
@@ -167,7 +247,7 @@ export default function pgmschedule() {
           <Tabs.Tab label="DAY 1">
             <aside className=" p-12 sm:p-16 lg:p-24">
               <div className="block">
-                {Day1.head.map((row) => (
+                {Day1[0].head.map((row) => (
                   <>
                     <th className="block text-blue-800">{row[0]}</th>
                   </>
@@ -179,7 +259,7 @@ export default function pgmschedule() {
                   <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
                     <thead className="bg-gray-100">
                       <tr>
-                        {Day1.columns.map((col) => (
+                        {Day1[0].columns.map((col) => (
                           <th className="whitespace-nowrap px-2 py-2 text-left">
                             {col}
                           </th>
@@ -187,7 +267,48 @@ export default function pgmschedule() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                      {Day1.rows.map((row) => (
+                      {Day1[0].rows.map((row) => (
+                        <tr>
+                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                            {row[0]}
+                          </td>
+
+                          <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                          <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                            {row[2]}
+                          </td>
+
+                          <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
+
+                          {/* <td className=" bg-gray-100 px-1 py-2 text-gray-700">
+                            {row[4]}
+                          </td> */}
+
+                          {/* <td className=" px-1 py-2 text-gray-700">{row[5]}</td>
+
+                          <td className=" bg-gray-100 px-1 py-2 text-gray-700">
+                            {row[6]}
+                          </td>
+
+                          <td className=" px-1 py-2 text-gray-700">{row[7]}</td> */}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                  <br />
+                  <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                    <thead className="bg-gray-100">
+                      <tr>
+                        {Day1[1].columns.map((col) => (
+                          <th className="whitespace-nowrap px-2 py-2 text-left">
+                            {col}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      {Day1[1].rows.map((row) => (
                         <tr>
                           <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
                             {row[0]}
