@@ -12,11 +12,17 @@ export default function Index() {
   return (
     <>
       <section className="body-font m-0 text-gray-600">
+        <div className="bar">
+          <span className="bar_content">
+            All of the students register for pre-tutorial conference. Amount to be paid : 590(Includes GST)
+          </span>
+        </div>
         <header>
           <div
             className="heroHeader w-full bg-cover bg-center"
             style={{ height: "38rem" }}
           >
+
             <HeaderImages />
             <div className="flex h-4/6  w-full items-center justify-center ">
               <div className="bg-gray-800 bg-opacity-50 text-center font-extrabold">
@@ -222,7 +228,7 @@ export default function Index() {
           </div>
         </section>
       </section>
-      <section>     
+      <section>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <h1>
             <span className="text-3xl font-bold sm:text-4xl">
