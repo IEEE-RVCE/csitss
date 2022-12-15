@@ -12,7 +12,7 @@
   font-size: 0.8em;
 }
 .bar {
-  width: 100%;
+  /* width: 100%; */
   padding: 2px 0;
 
   /* background-color: #e74c3c; */
@@ -25,8 +25,8 @@
 .bar_content {
   display: block; /* Important to give the content a width */
 
-  width: 100%;
-  transform: translateX(100%); /* Animation start out of the screen */
+  /* width: 100%; */
+  transform: translateX(80%); /* Animation start out of the screen */
 
   /* Add the animation */
   animation: move 15s linear infinite /* infinite make reapeat the animation indefinitely */;
