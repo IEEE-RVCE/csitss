@@ -105,7 +105,7 @@ const NavBar = () => {
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="text-gray-500" href="/">
+                    <a className="text-gray-500" >
                       {link.label}
                     </a>
                   </Link>
