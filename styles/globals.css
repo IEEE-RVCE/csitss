@@ -36,3 +36,9 @@
 @keyframes move {
   to { transform: translateX(-100%); }
 }
+
+@media screen and (max-width: 600px) {
+  .bar{
+    display: none;
+  }
+}
