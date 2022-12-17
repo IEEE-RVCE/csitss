@@ -109,7 +109,7 @@ export default function Index() {
                 </h2>
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                  The 6<span className="charge">th</span> h International
+                  The 6<span className="charge">th</span> International
                   Conference on “Computational Systems and Information
                   Technology for Sustainable Solutions [CSITSS – 2022]” focusses
                   to bring together leading academicians, scientists,

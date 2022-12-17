@@ -101,7 +101,7 @@ const NavBar = () => {
                 </button>
               }
             >
-              <Menu.Label>Goto</Menu.Label>
+              <Menu.Label> </Menu.Label>
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
