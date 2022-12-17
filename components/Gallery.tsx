@@ -9,8 +9,9 @@ import {
 } from "@mantine/core";
 
 const imgLinks = [
-  "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4484.JPG",
+  "https://github.com/naveenbteli/gallery/blob/master/Album/P2570137.JPEG?raw=true",
   "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4489.JPG",
+  "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4657.JPG",
   "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4421.JPG",
   "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4491.JPG",
   "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4510.JPG",
@@ -21,7 +22,6 @@ const imgLinks = [
   "https://github.com/naveenbteli/gallery/blob/master/Album/P2570098.JPG?raw=true",
   "https://github.com/naveenbteli/gallery/blob/master/Album/P2570105.JPG?raw=true",
   "https://github.com/naveenbteli/gallery/blob/master/Album/P2570114.JPG?raw=true",
-  "https://github.com/naveenbteli/gallery/blob/master/Album/P2570137.JPEG?raw=true",
   "https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4657.JPG?raw=true",
   "https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4674.JPG?raw=true",
   "https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4697.JPG?raw=true",
