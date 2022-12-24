@@ -12,12 +12,12 @@ export default function Index() {
   return (
     <>
       <section className="body-font m-0 text-gray-600">
-        <div className="bar">
+        {/* <div className="bar">
           <span className="bar_content">
             All of the students register for pre-tutorial conference. Amount to be paid : 590 (Includes GST)
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
-        </div>
+        </div> */}
         <header>
           <div
             className="heroHeader w-full bg-cover bg-center"
