@@ -3,7 +3,7 @@ import { Element, Link as ScrollLink } from "react-scroll";
 import HeaderImages from "../components/HeaderImages";
 import React from "react";
 import Timeline from "../components/TimeLine";
-import Gallery from '../components/Gallery';
+import Gallery from "../components/Gallery";
 
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
@@ -11,68 +11,23 @@ import Gallery from '../components/Gallery';
 export default function Index() {
   return (
     <>
-      {/* <HeaderImages /> */}
-      <section className="body-font text-gray-600 m-0">
-        {/* <div className="relative flex overflow-x-hidden">
-          <div className="animate-marquee whitespace-nowrap py-12 hover:animate-none">
-            <span className="mx-4 text-xl font-bold text-blue-400">
-              {" "}
-              Past Conferences
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://csitss.rvce.edu.in/csitss2021/">CSITSS 2021</a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://csitss.rvce.edu.in/csitss2019/">CSITSS 2019</a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://www.csitss.rvce.edu.in/csitss2017/">
-                CSITSS 2017
-              </a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://www.csitss2018.rvce.edu.in/">CSITSS 2018</a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://csitss2016.rvce.edu.in/">CSITSS 2016</a>
-            </span>
-          </div>
-          <div className="animate-marquee2 whitespace-nowrap py-12">
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://csitss.rvce.edu.in/csitss2021/">CSITSS 2021</a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://csitss.rvce.edu.in/csitss2019/">CSITSS 2019</a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://www.csitss.rvce.edu.in/csitss2017/">
-                CSITSS 2017
-              </a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://www.csitss2018.rvce.edu.in/">CSITSS 2018</a>
-            </span>
-            <span className="mx-4 text-xl">
-              {" "}
-              <a href="http://csitss2016.rvce.edu.in/">CSITSS 2016</a>
-            </span>
-          </div>
+      <section className="body-font m-0 text-gray-600">
+        {/* <div className="bar">
+          <span className="bar_content">
+            All of the students register for pre-tutorial conference. Amount to be paid : 590 (Includes GST)
+            <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
+          </span>
         </div> */}
         <header>
-          <div className="heroHeader w-full bg-cover bg-center" style={{ height: "38rem" }}>
-            <HeaderImages /> 
+          <div
+            className="heroHeader w-full bg-cover bg-center"
+            style={{ height: "38rem" }}
+          >
+
+            <HeaderImages />
             <div className="flex h-4/6  w-full items-center justify-center ">
-              <div className="text-center font-extrabold bg-gray-800 bg-opacity-50">
-                <h1 className="bg-gradient-to-r from-yellow-300 via-amber-400  via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent bg">
+              <div className="bg-gray-800 bg-opacity-50 text-center font-extrabold">
+                <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
                   WELCOME TO CSITSS-2022
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
@@ -154,7 +109,7 @@ export default function Index() {
                 </h2>
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                  The 6<span className="charge">th</span> h International
+                  The 6<span className="charge">th</span> International
                   Conference on “Computational Systems and Information
                   Technology for Sustainable Solutions [CSITSS – 2022]” focusses
                   to bring together leading academicians, scientists,
@@ -226,14 +181,34 @@ export default function Index() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <div className="lg:py-24">
+              <div className="lg:py-24 gap-8">
                 <h2 className="text-3xl font-bold sm:text-4xl">Venue</h2>
                 <p className="mt-4 text-gray-600">RVCE, Mysuru Road</p>
                 <a
-                  className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                  href="/get-started"
+                  className="mr-8 mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                  href="https://goo.gl/maps/sXWGV9iXqQRwz2PJ9"
                 >
                   <span className="text-sm font-medium"> Open Maps </span>
+                  <svg
+                    className="ml-3 h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+                <a
+                  className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                  href="HOTELS.pdf"
+                >
+                  <span className="text-sm font-medium"> Download Hotels List Near RVCE </span>
                   <svg
                     className="ml-3 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +232,9 @@ export default function Index() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <h1>
-            <span className="text-3xl font-bold sm:text-4xl">Previous Conference Images</span>
+            <span className="text-3xl font-bold sm:text-4xl">
+              Previous Conference Images
+            </span>
           </h1>
           <Gallery />
         </div>

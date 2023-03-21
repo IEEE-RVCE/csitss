@@ -1,15 +1,13 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { AppShell, Box, Header, Image, Menu } from "@mantine/core";
 
-
 import Link from "next/link";
 import React from "react";
-const Links:Array<
-{
-href:string,
-label:string,
-newTab?:boolean
-}>= [
+const Links: Array<{
+  href: string;
+  label: string;
+  newTab?: boolean;
+}> = [
   {
     href: "/",
     label: "Home",
@@ -38,12 +36,12 @@ newTab?:boolean
   {
     href: "https://rzp.io/l/3N4bwhvH",
     label: "Quick Payment Link",
-    newTab:true
+    newTab: true,
   },
   {
     href: "/pgmschedule",
     label: "Program Schedule",
-  }
+  },
 ];
 
 const NavBar = () => {
@@ -53,7 +51,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="flex items-center" href="/" >
+              <a className="flex items-center" href="/">
                 <Image
                   src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
                   alt="logo"
@@ -69,7 +67,7 @@ const NavBar = () => {
                 <a
                   className="text-gray-500 hover:text-indigo-400"
                   href={link.href}
-                  target={link.newTab ? "_blank": "_self"}
+                  target={link.newTab ? "_blank" : "_self"}
                 >
                   {link.label}
                 </a>
@@ -103,11 +101,11 @@ const NavBar = () => {
                 </button>
               }
             >
-              <Menu.Label>Goto</Menu.Label>
+              <Menu.Label> </Menu.Label>
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="text-gray-500" href="/">
+                    <a className="text-gray-500" >
                       {link.label}
                     </a>
                   </Link>
@@ -156,7 +154,7 @@ const Footer = () => {
               Collaboration with{" "}
             </span>
             <Box>
-              <div className="ml-10 flex flex-nowrap md:ml-20 lg:ml-40 justify-evenly">
+              <div className="ml-10 flex flex-nowrap justify-evenly md:ml-20 lg:ml-40">
                 <div className="inline-block px-3">
                   <div className="m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none p-2 transition-shadow duration-300 ease-in-out hover:shadow-xl">
                     <a
@@ -173,10 +171,14 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="inline-block px-3">
-                  <div className="w-auto h-auto max-w-xs overflow-hidden rounded-lg bg-none m-5 p-2 hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <a href="https://www.ieee.org" target="_blank" rel="noreferrer">
+                  <div className="m-5 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none p-2 transition-shadow duration-300 ease-in-out hover:shadow-xl">
+                    <a
+                      href="https://www.ieee.org"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
-                        className="w-auto h-auto object-cover"
+                        className="h-auto w-auto object-cover"
                         src="logo_IEEE_Main.png"
                         alt="rvce_logo"
                       />
@@ -184,14 +186,14 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="inline-block px-3">
-                  <div className="w-auto h-auto max-w-xs overflow-hidden rounded-lg  bg-none m-5 pt-6 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                  <div className="m-5 h-auto w-auto max-w-xs overflow-hidden  rounded-lg bg-none pt-6 transition-shadow duration-300 ease-in-out hover:shadow-xl">
                     <a
                       href="https://ieeebangalore.org/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <img
-                        className="w-auto h-auto object-cover"
+                        className="h-auto w-auto object-cover"
                         src="logo_IEEE_Banaglaore_Section.png"
                         alt="rvce_logo"
                       />
@@ -215,7 +217,6 @@ const Footer = () => {
                 </div>
               </div>
             </Box>
-
           </div>
           <div>
             <p className="text-sm text-gray-500">
@@ -241,7 +242,7 @@ const WrapApp = ({ children }: any) => {
     <AppShell
       padding="md"
       header={
-        <Header height={80} >
+        <Header height={80}>
           <NavBar />
         </Header>
       }

@@ -17,7 +17,7 @@ function about() {
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">Mission</h2>
           <p className="mt-4 text-gray-600">
-            <ul className = "list-disc">
+            <ul className="list-disc">
               <li>
                 To deliver outcome-based quality education, emphasizing on
                 experiential learning with state-of-the-art infrastructure
@@ -101,8 +101,7 @@ function about() {
             research scholars around the world to share their knowledge and
             research expertise in SPICCE (Sensors, Processors, Intelligent
             systems, Computing, Communication and Energy solutions) from 21
-            <sup>st</sup> to 23<sup>rd</sup>{" "}
-            December 2022.
+            <sup>st</sup> to 23<sup>rd</sup> December 2022.
             <br />
             <br />
             The conference has been successfully organised for the past five
