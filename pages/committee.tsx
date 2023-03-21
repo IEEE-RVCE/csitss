@@ -339,8 +339,8 @@ const committeeMembers: Mem[] = [
        
       },
       {
-        name: "Dr. Kiran V, Assoc.Professor",
-        post: "Department of ECE, RVCE",
+        name: "Dr. Kiran V",
+        post: " Assoc.Professor, Department of ECE, RVCE",
        
       },
     ],
@@ -354,8 +354,8 @@ const committeeMembers: Mem[] = [
        
       },
       {
-        name: "Mrs Raja Vidya, Asst",
-        post: "Professor, Department of EEE, RVCE",
+        name: "Mrs Raja Vidya",
+        post: " Asst Professor, Department of EEE, RVCE",
        
       },
       {
@@ -409,8 +409,8 @@ const committeeMembers: Mem[] = [
        // imgLink: "https://www.rvce.edu.in//sites/default/files/VD.jpg",
       },
       {
-        name: "Dr. Vandana Jha, Asst",
-        post: "Professor, Department of EEE, RVCE",
+        name: "Dr. Vandana Jha",
+        post: " Asst. Professor, Department of EEE, RVCE",
       //  imgLink: "https://www.rvce.edu.in//sites/default/files/ec-ssn.png",
       },
       {
