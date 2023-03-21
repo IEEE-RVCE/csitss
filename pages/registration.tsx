@@ -43,7 +43,7 @@ function registration() {
             form from the conference website and submit the filled form to the
             Email ID:
             <a href="mailto:sitss2022@rvce.edu.in" className="text-indigo-500">
-              csitss2023@rvce.edu.in
+srivanisg@rvce.edu.in
             </a>
           </p>
         </section>
