@@ -100,7 +100,7 @@ function Tech() {
                 not exceeding 6 pages in A4 size through online submission at
                 Microsoft CMT - on or{" "}
                 <i>
-                  before 5<sup>th</sup> November 2022
+                  before 28<sup>th</sup> August 2023
                 </i>
                 . The manuscript should follow the standard IEEE template.The
                 format of the paper could be downloaded in link below{" "}
@@ -114,14 +114,14 @@ function Tech() {
                 and submitted papers will be peer reviewed by domain experts. To
                 submit the papers use the Microsoft CMT Link mentioned below:
                 <br />
-                <a href="https://cmt3.research.microsoft.com/CSITSS2022">
-                  <b>https://cmt3.research.microsoft.com/CSITSS2022.</b>
+                <a href="https://cmt3.research.microsoft.com/CSITSS2023">
+                  <b>https://cmt3.research.microsoft.com/CSITSS2023.</b>
                 </a>
               </p>
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">
                 <a
-                  href="https://cmt3.research.microsoft.com/CSITSS2022"
+                  href="https://cmt3.research.microsoft.com/CSITSS2023"
                   className="block rounded-lg bg-blue-500 px-5 py-3 font-medium text-white shadow-xl hover:bg-blue-600"
                   target="_blank"
                 >

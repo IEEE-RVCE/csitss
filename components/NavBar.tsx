@@ -33,15 +33,15 @@ const Links: Array<{
     href: "/contact",
     label: "Contact Us",
   },
-  {
-    href: "https://rzp.io/l/3N4bwhvH",
-    label: "Quick Payment Link",
-    newTab: true,
-  },
-  {
-    href: "/pgmschedule",
-    label: "Program Schedule",
-  },
+  // {
+  //   href: "https://rzp.io/l/3N4bwhvH",
+  //   label: "Quick Payment Link",
+  //   newTab: true,
+  // },
+  // {
+  //   href: "/pgmschedule",
+  //   label: "Program Schedule",
+  // },
 ];
 
 const NavBar = () => {

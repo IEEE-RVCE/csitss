@@ -28,11 +28,11 @@ export default function Index() {
             <div className="flex h-4/6  w-full items-center justify-center ">
               <div className="bg-gray-800 bg-opacity-50 text-center font-extrabold">
                 <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
-                  WELCOME TO CSITSS-2022
+                  WELCOME TO CSITSS-2023
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
                   <span className="font-semibold ">
-                    6<sup>th</sup> International Conference on Computational
+                    t<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>
                 </p>
@@ -64,7 +64,7 @@ export default function Index() {
                     TimeLine
                   </ScrollLink>
                   <a
-                    href="CSITSS_22.pdf"
+                    href="CSITSS-23.pdf"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Download Brochure
@@ -109,26 +109,15 @@ export default function Index() {
                 </h2>
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                  The 6<span className="charge">th</span> International
-                  Conference on “Computational Systems and Information
-                  Technology for Sustainable Solutions [CSITSS – 2022]” focusses
-                  to bring together leading academicians, scientists,
-                  researchers, industry representatives, postdoctoral fellows
-                  and research scholars around the world to share their
-                  knowledge and research expertise in SPICCE (Sensors,
-                  Processors, Intelligent systems, Computing, Communication and
-                  Energy solutions) from 21<sup>st</sup> to 23
-                  <sup>rd</sup> December 2022. <br /> The conference has been
-                  successfully organised for the past five years with
-                  participants from all over India and abroad. All peer
-                  reviewed, selected and presented papers of the conference will
-                  be submitted for possible inclusion in IEEE digital library.
-                  The present version of the CSITSS-2022 aims to achieve higher
-                  standards by attracting original research works in the domain
-                  of SPICCE. International speakers will deliver the keynote
-                  talks on the latest technologies in these domains. The
-                  CSITSS-2022 ensures to provide a platform for researchers
-                  around the globe for knowledge exchange and networking.
+                  The 7<span className="charge">th</span> International Conference on "Computational Systems and
+                  Information Technology for Sustainable Solutions [CSITSS — 2023]"
+                  focuses on bringing together leading academicians, scientists,
+                  researchers, industry representatives, postdoctoral fellows and
+                  research scholars around the world to share their knowledge and
+                  research expertise in RVCCCE (Renewable, VLSI, Control,
+                  Computing, Communication, E-mobility) from 2<sup>nd</sup> to 4<sup>th</sup>,
+                  November 2023. <br />
+                  The conference has been successfully organised for the past six years with participants from all over India and abroad. All peer-reviewed, selected and presented papers from the conference will be submitted for possible inclusion in IEEE digital library. The present version of the CSITSS-2023 aims to achieve higher standards by attracting original research works in the domain of RVCCCE. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2023 ensures to provide a platform for researchers around the globe for knowledge exchange and networking.
                 </p>
 
                 <a
@@ -136,7 +125,7 @@ export default function Index() {
                   href="/get-started"
                 >
                   <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2022"
+                    href="https://cmt3.research.microsoft.com/CSITSS2023"
                     className="text-sm font-medium"
                   >
                     {" "}
