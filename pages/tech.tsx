@@ -4,81 +4,80 @@ import React from "react";
 
 export const Topics = [
   {
-    label: "Sensors: Sensors, Automation and Process control",
+    label: "Renewable: Power and energy system ",
     subTopics: [
-      "Sensors for Smart Systems (Health Care/IoT systems / Agriculture, etc.) ",
-      "Wearable electronics",
-      "Industrial/Home Automation",
-      "Bioinformatics",
-      "Non-invasive Biomedical devices ",
-      "Robotics",
-      "Advanced control Applications",
+      "Power systems & HVDC",
+      "Power electronics and Industrial drives",
+      "Renewable energy systems & Grid Integration",
+      "Micro grids and Smart grids",
+      "Power system protection, monitoring & control",
+      "Computational intelligent techniques for energy sustainability",
+      "Power system resilience & Cyber security",
     ],
   },
   {
-    label: "Processors: VLSI Design and Embedded Systems",
+    label: "Computing and Intelligent Systems",
     subTopics: [
-      "Analog/ Digital /Mixed Signal/RF System Designs",
-      "Static Timing Analysis, Physical design, Circuit Design and Layouts",
-      "Emulation, Verification: Pre-silicon, Post-silicon and Validation",
-      "H/W and S/W acceleration, IPs for system designs Testing - ATE, DFT, MBIST, Scan",
-      "Machine Learning on Hardware/Neural Processing units",
-      "High reliable Systems",
-    ],
-  },
-  {
-    label: "Intelligent Systems",
-    subTopics: [
-      "Modeling and Simulation",
-      "Natural Language Processing",
-      "Computer Vision and Pattern Recognition ",
-      "Data Science and Big Data Analytics",
-      "Augmented and Virtual Reality",
-      "Artificial Intelligence and Machine Learning",
-      "Smart City",
-      "Smart Transport Systems",
-    ],
-  },
-  {
-    label: "Computing",
-    subTopics: [
-      "Cyber security and Block-chain",
+      "Computer Networks and Cyber security",
+      "Machine Intelligence",
       "Web and Mobile Applications",
-      "Human-Computer Interaction",
-      "Internet of Things/ Cyber Physical Systems",
-      "Soft Computing",
-      "Knowledge-based Systems",
-      "Cloud and Edge Computing",
-      "Social Computing and Networks",
-      "Autonomic Software Systems",
+      "Computing Environments (Cloud, Distributed, etc.)",
+      "Internet of Things / Edge Systems",
+      "Augmented, Virtual Reality and extended reality",
+      "Data Analytics",
+      "Block Chain",
+      "Computer Vision and Pattern Recognition",
+      "Metaverse",
+    ],    
+  },
+  {
+    label: "Control and automation",
+    subTopics: [
+      "Sensors for smart systems (IoT/Healthcare etc,.)",
+      "Industrial & Home Automation",
+      "Robotics and Advanced control application",
+      "Biomedical applications",
+      "Virtual instrumentation",
+      "UAV/Drone Technology",
+      "Wearable and Implantable Body Sensor",
     ],
   },
   {
     label: "Communication",
     subTopics: [
-      "Sensor Networks",
-      "Channel Models for mmwave and THz",
-      "Signal Processing for RADAR, SONAR and LiDAR",
-      "Speech/Image/Video Processing",
-      "MIMO and multicarrier",
-      "5G and Beyond 5G Communications",
-      "IoT networks and Integration with cellular",
-      "Optical Communication",
-      "Software Defined Radio/ Networks",
+      "5G and beyond 5G Technology",
+      "Image/Video/Audio processing",
+      "Optical communication and networks",
+      "RADAR, SONAR and LIDAR applications",
+      "RADAR, SONAR and LIDAR applications",
+      "Microwave and Wireless Networking",
+      "Software Defined Networking (SDN)",
+      "Social Media Networks",
+      "Ultra-wideband and Green communications",
     ],
   },
   {
-    label: "Energy Systems",
+    label: "E-mobility and Sustainable Systems",
     subTopics: [
-      "Energy management for smart mobility ",
-      "Intelligent Energy management and sustainable solutions",
-      "Computational Intelligence for energy management",
-      "Autonomous Electric vehicles",
-      "Renewable energy systems ",
-      "Power System and High Voltage DC Transmission",
-      "Wireless Power Transfer",
-      "Battery Technology",
-      "Industrial Drives and Automation",
+      "Hybrid Energy Storage & BMS",
+      "Smart City & Smart Energy System",
+      "Fuel-cell-based transport",
+      "EV/HEV Design, HIL, SIL & Annotation",
+      "EVs and PHEVs charging, V2G strategies",
+      "Autonomous vehicle, intelligent guidance,safety assessment",
+      "Modelling, simulation and control of EV systems",
+    ],
+  },
+  {
+    label: "VLSI design and Embedded system",
+    subTopics: [
+      "Analog/ Digital /Mixed Signal/RF System Designs",
+      "Advances in CAD for VLSI",
+      "Embedded Systems Design",
+      "Low-power digital architectures",
+      "Test & Reliability of Machine Learning Systems",
+      "Microsystems/MEMS/Sensors Test",
+      "Pre-silicon, Post-silicon: Debug, Verification and Validation",
     ],
   },
 ];
@@ -144,9 +143,7 @@ function Tech() {
                 Conference Tracks{" "}
               </p>
               <p className="text-center text-sm font-bold">
-                Research submissions on all topics related to SPICCE (Sensors,
-                Processors, Intelligent systems, Computing, Communication and
-                Energy solutions), but not limited to the following
+              Authors are invited to submit their original research work in the following (but not limited to)
               </p>
               {Topics.map((topic, index) => (
                 <div className="mt-8" key={topic.label}>
