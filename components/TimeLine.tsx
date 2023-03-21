@@ -43,7 +43,7 @@ export default function CustomTimeLine() {
       <h1 className="my-4 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-extrabold text-transparent underline">
         Important Dates
       </h1>
-      <Timeline active={1} bulletSize={24} lineWidth={3}>
+      {/* <Timeline active={1} bulletSize={24} lineWidth={3}>
         {data.map((item, index) => (
           <Timeline.Item
             key={index}
@@ -55,7 +55,8 @@ export default function CustomTimeLine() {
             </Text>
           </Timeline.Item>
         ))}
-      </Timeline>
+      </Timeline> */}
+      coming soon...
     </>
   );
 }

@@ -9,7 +9,7 @@ function registration() {
     ],
 
     rows: [
-      ["Regular Registrations from Nov 16, 2022", "", ""],
+      ["Regular Registrations from September 16, 2023", "", ""],
       ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
       ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
       ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
@@ -22,7 +22,7 @@ function registration() {
 
   const EarlyBirdTableData = {
     rows: [
-      ["Early Bird Registrations before 15th November 2022", "", ""],
+      ["Early Bird Registrations before September 15, 2023:", "", ""],
       ["Students ", "Rs. 4,000", "USD. 75"],
       ["Faculty ", "Rs. 5,000", "USD. 100"],
     ],
@@ -35,15 +35,15 @@ function registration() {
           <h2 className="text-3xl font-extrabold sm:text-4xl">Registration</h2>
           <p className="mt-4 text-gray-600">
             At least one of the authors should register to participate in the
-            Conference. The payment mode is mentioned in the conference website.
-            Registration is compulsory for participation in the Conference.
+            Conference. The payment mode is mentioned in the conference
+            website. Registration is compulsory for participation in the Conference.
             Authors can present two papers for single registration.
             <br />
             Authors and participants are requested to download the registration
             form from the conference website and submit the filled form to the
             Email ID:
             <a href="mailto:sitss2022@rvce.edu.in" className="text-indigo-500">
-              csitss2022@rvce.edu.in
+              csitss2023@rvce.edu.in
             </a>
           </p>
         </section>
@@ -93,12 +93,11 @@ function registration() {
                   {EarlyBirdTableData.rows.map((row) => (
                     <tr>
                       <td
-                        className={`whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900 ${
-                          row[0] ===
+                        className={`whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900 ${row[0] ===
                           "Early Bird Registrations before 15th November 2022"
-                            ? "font-extrabold"
-                            : ""
-                        }`}
+                          ? "font-extrabold"
+                          : ""
+                          }`}
                       >
                         {row[0]}
                       </td>
