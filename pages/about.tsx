@@ -17,7 +17,7 @@ function about() {
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">Mission</h2>
           <p className="mt-4 text-gray-600">
-            <ul className = "list-disc">
+            <ul className="list-disc">
               <li>
                 To deliver outcome-based quality education, emphasizing on
                 experiential learning with state-of-the-art infrastructure
@@ -94,27 +94,8 @@ function about() {
             ABOUT THE CONFERENCE
           </h2>
           <p className="mt-4 text-justify text-gray-600">
-            The 6th International Conference on “Computational Systems and
-            Information Technology for Sustain- able Solutions [CSITSS – 2022]”
-            focusses to bring together leading academicians, scientists,
-            researchers, industry representatives, postdoctoral fellows and
-            research scholars around the world to share their knowledge and
-            research expertise in SPICCE (Sensors, Processors, Intelligent
-            systems, Computing, Communication and Energy solutions) from 21
-            <sup>st</sup> to 23<sup>rd</sup>{" "}
-            December 2022.
-            <br />
-            <br />
-            The conference has been successfully organised for the past five
-            years with participants from all over India and abroad. All peer
-            reviewed, selected and presented papers of the conference will be
-            submitted for possible inclusion in IEEE digital library. The
-            present version of the CSITSS-2022 aims to achieve higher standards
-            by attracting original research works in the domain of SPICCE.
-            International speakers will deliver the keynote talks on the latest
-            technologies in these domains. The CSITSS-2022 ensures to provide a
-            platform for researchers around the globe for knowledge exchange and
-            networking.
+            The 7<span className="charge">th</span> International Conference on "Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2023]" focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows and research scholars around the world to share their knowledge and research expertise in RVCCCE (Renewable, VLSI, Control, Computing, Communication, E-mobility) from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023. <br />
+            The conference has been successfully organised for the past six years with participants from all over India and abroad. All peer-reviewed, selected and presented papers from the conference will be submitted for possible inclusion in IEEE digital library. The present version of the CSITSS-2023 aims to achieve higher standards by attracting original research works in the domain of RVCCCE. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2023 ensures to provide a platform for researchers around the globe for knowledge exchange and networking.
           </p>
         </section>
         <section>

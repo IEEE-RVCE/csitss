@@ -1,13 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .heroHeader {
-  background-image: url("https://user-images.githubusercontent.com/100517925/197962701-b2c2b570-59db-45c9-8393-eec94d88abd7.jpg")
+  background-image: url("https://user-images.githubusercontent.com/100517925/197962701-b2c2b570-59db-45c9-8393-eec94d88abd7.jpg");
 }
 .charge {
   position: relative;
   bottom: 0.5em;
   font-size: 0.8em;
+}
+.bar {
+  /* width: 100%; */
+  padding: 2px 0;
+
+  /* background-color: #e74c3c; */
+  color: blue;
+
+  font-family: Gelasio;
+  font-size: 18px;
+} 
+
+.bar_content {
+  display: block; /* Important to give the content a width */
+
+  /* width: 100%; */
+  transform: translateX(80%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 15s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+@media screen and (max-width: 600px) {
+  .bar{
+    display: none;
+  }
 }
