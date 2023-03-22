@@ -32,7 +32,7 @@ export default function Index() {
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
                   <span className="font-semibold ">
-                    t<sup>th</sup> International Conference on Computational
+                    7<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>
                 </p>
