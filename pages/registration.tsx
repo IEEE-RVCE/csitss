@@ -42,8 +42,8 @@ function registration() {
             Authors and participants are requested to download the registration
             form from the conference website and submit the filled form to the
             Email ID:
-            <a href="mailto:srivanisg@rvce.edu.in" className="text-indigo-500">
-srivanisg@rvce.edu.in
+            <a href="mailto:csitss@rvce.edu.in" className="text-indigo-500">
+              csitss@rvce.edu.in
             </a>
           </p>
         </section>
