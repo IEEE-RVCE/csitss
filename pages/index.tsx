@@ -46,7 +46,7 @@ export default function Index() {
                 </p>
                 <div className="grid grid-cols-3 gap-4 p-4 lg:grid-cols-3 xl:grid-cols-3">
                   <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2022"
+                    href="https://cmt3.research.microsoft.com/CSITSS2023"
                     target="_blank"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
@@ -122,7 +122,7 @@ export default function Index() {
 
                 <a
                   className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                  href="/get-started"
+                  href="https://cmt3.research.microsoft.com/CSITSS2023"
                 >
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2023"

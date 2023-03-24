@@ -8,41 +8,41 @@ const Links: Array<{
   label: string;
   newTab?: boolean;
 }> = [
-  {
-    href: "/",
-    label: "Home",
-  },
-  {
-    href: "/about",
-    label: "About",
-  },
-  {
-    href: "/committee",
-    label: "Committee",
-  },
-  {
-    href: "/tech",
-    label: "Technical Program",
-  },
-  {
-    href: "/registration",
-    label: "Registration",
-  },
+    {
+      href: "/",
+      label: "Home",
+    },
+    {
+      href: "/about",
+      label: "About",
+    },
+    {
+      href: "/committee",
+      label: "Committee",
+    },
+    {
+      href: "/tech",
+      label: "Technical Program",
+    },
+    {
+      href: "/registration",
+      label: "Registration",
+    },
 
-  {
-    href: "/contact",
-    label: "Contact Us",
-  },
-  // {
-  //   href: "https://rzp.io/l/3N4bwhvH",
-  //   label: "Quick Payment Link",
-  //   newTab: true,
-  // },
-  // {
-  //   href: "/pgmschedule",
-  //   label: "Program Schedule",
-  // },
-];
+    {
+      href: "/contact",
+      label: "Contact Us",
+    },
+    // {
+    //   href: "https://rzp.io/l/3N4bwhvH",
+    //   label: "Quick Payment Link",
+    //   newTab: true,
+    // },
+    // {
+    //   href: "/pgmschedule",
+    //   label: "Program Schedule",
+    // },
+  ];
 
 const NavBar = () => {
   return (
@@ -224,7 +224,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 className="font-bold text-indigo-500"
-                href="https://www.linkedin.com/in/prajwal-prakash-a3b9931b3/"
+                href="https://ieee-rvce.org/#/devs"
                 rel="noreferrer"
               >
                 IEEE RVCE SE Team
