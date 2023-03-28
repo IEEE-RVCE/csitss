@@ -1,12 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable react/no-unescaped-entities */
 import { Element, Link as ScrollLink } from "react-scroll";
 import HeaderImages from "../components/HeaderImages";
-import React from "react";
 import Timeline from "../components/TimeLine";
 import Gallery from "../components/Gallery";
 
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/no-img-element */
 
 export default function Index() {
   return (
