@@ -4,7 +4,7 @@ import React from "react";
 
 export const Topics = [
   {
-    label: "Renewable: Power and energy system ",
+    label: "Renewable Energy & Power System",
     subTopics: [
       "Power systems & HVDC",
       "Power electronics and Industrial drives",
@@ -16,22 +16,7 @@ export const Topics = [
     ],
   },
   {
-    label: "Computing and Intelligent Systems",
-    subTopics: [
-      "Computer Networks and Cyber security",
-      "Machine Intelligence",
-      "Web and Mobile Applications",
-      "Computing Environments (Cloud, Distributed, etc.)",
-      "Internet of Things / Edge Systems",
-      "Augmented, Virtual Reality and extended reality",
-      "Data Analytics",
-      "Block Chain",
-      "Computer Vision and Pattern Recognition",
-      "Metaverse",
-    ],    
-  },
-  {
-    label: "Control and automation",
+    label: "Robotics and automation",
     subTopics: [
       "Sensors for smart systems (IoT/Healthcare etc,.)",
       "Industrial & Home Automation",
@@ -49,11 +34,25 @@ export const Topics = [
       "Image/Video/Audio processing",
       "Optical communication and networks",
       "RADAR, SONAR and LIDAR applications",
-      "RADAR, SONAR and LIDAR applications",
       "Microwave and Wireless Networking",
       "Software Defined Networking (SDN)",
       "Social Media Networks",
       "Ultra-wideband and Green communications",
+    ],
+  },
+  {
+    label: "Computing and Intelligent Systems",
+    subTopics: [
+      "Computer Networks and Cyber security",
+      "Machine Intelligence",
+      "Web and Mobile Applications",
+      "Computing Environments (Cloud, Distributed, etc.)",
+      "Internet of Things / Edge Systems",
+      "Augmented, Virtual Reality and extended reality",
+      "Data Analytics",
+      "Block Chain",
+      "Computer Vision and Pattern Recognition",
+      "Metaverse",
     ],
   },
   {
@@ -69,7 +68,7 @@ export const Topics = [
     ],
   },
   {
-    label: "VLSI design and Embedded system",
+    label: "Embedded systems and VLSI Design",
     subTopics: [
       "Analog/ Digital /Mixed Signal/RF System Designs",
       "Advances in CAD for VLSI",
@@ -93,19 +92,18 @@ function Tech() {
                 Call For Papers{" "}
               </p>
               <p className="text-justify text-xl font-medium text-gray-500">
-                Prospective authors are encouraged to submit quality and
-                original research papers for presentation at the Conference.
-                Authors are requested to submit their manuscripts in PDF format
-                not exceeding 6 pages in A4 size through online submission at
-                Microsoft CMT - on or{" "}
+                Prospective authors are encouraged to submit quality and original research papers
+                for presentation at the Conference. Authors are requested to submit their manuscripts
+                in PDF format not exceeding 6 pages in A4 size through online submission at Microsoft
+                CMT - on or {" "}
                 <i>
-                  before 28<sup>th</sup> August 2023
+                  before 28<sup>th</sup> August 2023.{" "}
                 </i>
-                . The manuscript should follow the standard IEEE template.The
+                The manuscript should follow the standard IEEE template.The
                 format of the paper could be downloaded in link below{" "}
                 <a href="https://www.ieee.org/conferences/publishing/templates.html">
                   <b>
-                    https://www.ieee.org/conferences/publishing/templates.html
+                    Manuscript Template Link
                   </b>
                 </a>
                 .<br />
@@ -114,7 +112,7 @@ function Tech() {
                 submit the papers use the Microsoft CMT Link mentioned below:
                 <br />
                 <a href="https://cmt3.research.microsoft.com/CSITSS2023">
-                  <b>https://cmt3.research.microsoft.com/CSITSS2023.</b>
+                  <b>Paper Submission Link</b>
                 </a>
               </p>
 
@@ -143,7 +141,7 @@ function Tech() {
                 Conference Tracks{" "}
               </p>
               <p className="text-center text-sm font-bold">
-              Authors are invited to submit their original research work in the following (but not limited to)
+                Authors are invited to submit their original research work in the following (but not limited to)
               </p>
               {Topics.map((topic, index) => (
                 <div className="mt-8" key={topic.label}>

@@ -10,8 +10,8 @@ function about() {
           <h2 className="text-3xl font-extrabold sm:text-4xl">Vision</h2>
           <p className="mt-4 text-gray-600">
             Leadership in Quality Technical Education, Interdisciplinary
-            Research and Innovation, with a focus on Sustainable and Inclusive
-            Technology
+            Research and Innovation, focusing on Sustainable and Inclusive
+            Technology.
           </p>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
@@ -19,25 +19,23 @@ function about() {
           <p className="mt-4 text-gray-600">
             <ul className="list-disc">
               <li>
-                To deliver outcome-based quality education, emphasizing on
-                experiential learning with state-of-the-art infrastructure
+                To deliver outcome-based quality education, emphasizing on experiential learning
+                with state-of-the-art infrastructure.
               </li>
               <li>
-                To create a conducive environment for interdisciplinary research
-                and innovation.
+                To create a conducive environment for interdisciplinary research and innovation.
               </li>
               <li>
-                To develop professionals through holistic education focusing on
-                individual growth, discipline, integrity, ethics and social
-                sensitivity.
+                To develop professionals through holistic education focusing on individual growth,
+                discipline, integrity, ethics and social sensitivity.
               </li>
               <li>
-                To nurture industry – institution collaboration leading to
-                competency enhancement and entrepreneurship.
+                To nurture industry-institution collaboration leading to competency enhancement
+                and entrepreneurship.
               </li>
               <li>
-                To focus on technologies that are sustainable and inclusive,
-                benefiting all sections of the society.
+                To focus on technologies that are sustainable and inclusive, benefiting all sections
+                of the society.
               </li>
             </ul>
           </p>
@@ -57,33 +55,24 @@ function about() {
                 <h2 className="text-3xl font-bold sm:text-4xl ">About RVCE</h2>
 
                 <p className="mt-4 text-justify text-gray-600">
-                  RV College of Engineering (RVCE) established in 1963 is one of
-                  the earliest self-financing engineering colleges in the
-                  country. The institution is run by Rashtreeya Sikshana Samithi
-                  Trust (RSST) a not-for-profit Trust. RVCE is an Autonomous
-                  college. Currently, the institution offers 15 Bachelors, 14
-                  Master Programs and all the departments have Research Centres,
-                  affiliated to Visvesvaraya Technological University (VTU)
-                  Belagavi. The institution has set itself a Vision “Leadership
-                  in Quality Technical Education, Interdisciplinary Research &
-                  Innovation, With a Focus on Sustainable and Inclusive
-                  Technology”.
+                  RV College of Engineering (RVCE) established in 1963 is one of the earliest self-financing
+                  engineering colleges in the country. The institution is run by Rashtreeya Sikshana Samithi Trust
+                  (RSST) a not-for-profit Trust. RVCE is an Autonomous college. Currently, the institution offers 15
+                  Bachelors, 14 Master Programs and all the departments have Research Centres, affiliated to
+                  Visvesvaraya Technological University (VTU) Belagavi. The institution has set itself a Vision
+                  "Leadership in Quality Technical Education, Interdisciplinary Research & Innovation, With a
+                  Focus on Sustainable and Inclusive Technology"
                   <br />
+                  Recent awards and achievements include - Ranked 89th in the Country by National Institutional
+                  Ranking Framework (NIRF: 2022), QS-IGUAGE -Diamond University Rating (2021-2024), ranked
+                  1501+ in Times Higher Education World University Rankings-2022, "Excellent" rating in ARIIA
+                  Ranking-2021 and NPTEL (Local Chapter) "A" Rating & Max. No. of NPTEL Stars.
                   <br />
-                  Recent awards and achievements include - Ranked 89th in the
-                  Country by National Institutional Ranking Framework (NIRF:
-                  2022), QS-IGUAGE -Diamond University Rating (2021-2024),
-                  “Excellent” rating in ARIIA Ranking-2021 and NPTEL (Local
-                  Chapter) “AA” Rating & Max. No. of NPTEL Stars. The
-                  institution has to its credit over 1500 National and
-                  International Journal & Conference publications, filed over 50
-                  patents, 49 published patents, 15 granted patents, completed
-                  sponsored research and consultancy projects worth Rs. 20.0
-                  crores in the last three years. The institution has
-                  established Centres of Competence (5) and Centres of
-                  Excellence (17) in various domains. The students have won
-                  awards and accolades in national and international
-                  competitions.
+                  The institution has to its credit over 1500 National and International Journal & Conference
+                  publications, filed 06 patents, 12 published patents, 17 granted patents, completed sponsored
+                  research and consultancy projects worth ₹ 16.0 crores in the last three yea₹ The institution has
+                  established Centres of Competence (7) and Centres of Excellence (17) in various domains. The
+                  students have won awards and accolades in national and international competitions.
                 </p>
               </div>
             </div>
@@ -94,8 +83,20 @@ function about() {
             ABOUT THE CONFERENCE
           </h2>
           <p className="mt-4 text-justify text-gray-600">
-            The 7<span className="charge">th</span> International Conference on "Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2023]" focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows and research scholars around the world to share their knowledge and research expertise in RVCCCE (Renewable, VLSI, Control, Computing, Communication, E-mobility) from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023. <br />
-            The conference has been successfully organised for the past six years with participants from all over India and abroad. All peer-reviewed, selected and presented papers from the conference will be submitted for possible inclusion in IEEE digital library. The present version of the CSITSS-2023 aims to achieve higher standards by attracting original research works in the domain of RVCCCE. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2023 ensures to provide a platform for researchers around the globe for knowledge exchange and networking.
+            The 7<sup>th</sup> International Conference on "Computational Systems and Information
+            Technology for Sustainable Solutions [CSITSS — 2023]" focuses on bringing together
+            leading academicians, scientists, researchers, industry representatives, postdoctoral
+            fellows and research scholars around the world to share their knowledge and research
+            expertise in Renewable, Robotics, Computing, Communication, E-mobility, Embedded,
+            (R2C2E2) from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023.
+            <br />
+            The conference has been successfully organised for the past six years with participants
+            from all over India and abroad. All peer-reviewed, selected and presented papers from
+            the conference will be submitted for possible inclusion in IEEE digital library. The present
+            version of the CSITSS-2023 aims to achieve higher standards by attracting original
+            research works in the domain of R2C2E2. International speakers will deliver keynote talks
+            on the latest technologies in these domains. The CSITSS-2023 ensures to provide a
+            platform for researchers around the globe for knowledge exchange and networking.
           </p>
         </section>
         <section>
