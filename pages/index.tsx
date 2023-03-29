@@ -63,7 +63,7 @@ export default function Index() {
                     TimeLine
                   </ScrollLink>
                   <a
-                    href="CSITSS-23.pdf"
+                    href="CSITSS-29032023_brochure.pdf"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Download Brochure
