@@ -28,7 +28,7 @@ const HeaderImages = () => {
       src: "logo_rvce_ieee.png",
       alt: "rvce_ieee_logo",
       href: "https://ieee-rvce.org/",
-      show: true,
+      show: false,
       padding: "pt-6"
     },
   ];

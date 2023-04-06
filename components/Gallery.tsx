@@ -1,4 +1,3 @@
-import React from "react";
 import {
   createStyles,
   SimpleGrid,
@@ -56,7 +55,7 @@ function Gallery() {
   const cards = imgLinks.map((link) => (
     <Card key={link} p="md" radius="md" className={classes.card}>
       <AspectRatio ratio={1920 / 1080}>
-        <Image src={link} />
+        <Image src={link}/>
       </AspectRatio>
     </Card>
   ));
