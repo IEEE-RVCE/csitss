@@ -97,7 +97,7 @@ function Tech() {
                 in PDF format not exceeding 6 pages in A4 size through online submission at Microsoft
                 CMT - on or {" "}
                 <i>
-                  before 28<sup>th</sup> August 2023.{" "}
+                  before 5<sup>th</sup> August 2023.{" "}
                 </i>
                 The manuscript should follow the standard IEEE template.The
                 format of the paper could be downloaded in link below{" "}

@@ -63,7 +63,7 @@ export default function Index() {
                     TimeLine
                   </ScrollLink>
                   <a
-                    href="CSITSS-29032023_brochure.pdf"
+                    href="CSITSS_11-04-2023.pdf"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Download Brochure
@@ -91,7 +91,7 @@ export default function Index() {
                 </div>
                 <br />
                 <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-                  Technically co-sponsored by <br /> IEEE Bangalore Section
+                  {/* Technically co-sponsored by <br /> IEEE Bangalore Section */}
                 </h1>
                 <div className="flex flex-row items-center justify-center">
                   <img
