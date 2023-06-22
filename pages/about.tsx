@@ -87,7 +87,7 @@ function about() {
             Technology for Sustainable Solutions [CSITSS — 2023]" focuses on bringing together
             leading academicians, scientists, researchers, industry representatives, postdoctoral
             fellows and research scholars around the world to share their knowledge and research
-            expertise in Renewable, Robotics, Computing, Communication, E-mobility, Embedded,
+            expertise in Renewable Energy, Robotics, Computing, Communication, E-mobility, Embedded Systems,
             (R2C2E2) from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023.
             <br />
             The conference has been successfully organised for the past six years with participants

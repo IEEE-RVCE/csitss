@@ -170,7 +170,7 @@ const Footer = () => {
                     </a>
                   </div>
                 </div>
-                {/* <div className="inline-block px-3">
+                <div className="inline-block px-3">
                   <div className="m-5 h-auto w-auto max-w-xs overflow-hidden  rounded-lg bg-none pt-11 transition-shadow duration-300 ease-in-out hover:shadow-xl">
                     <a
                       href="https://ieee-rvce.org/"
@@ -184,13 +184,13 @@ const Footer = () => {
                       />
                     </a>
                   </div>
-                </div> */}
+                </div>
               </div>
             </Box>
           </div>
           <div>
             <p className="text-sm text-gray-500">
-              Developed by{" "}
+              Developed by{" "} <br />
               <a
                 target="_blank"
                 className="font-bold text-indigo-500"

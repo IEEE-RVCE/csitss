@@ -14,21 +14,21 @@ const HeaderImages = () => {
       src: "logo_IEEE_Main.png",
       alt: "ieee_logo",
       href: "https://www.ieee.org",
-      show: false,
+      show: true,
       padding: "p-2"
     },
     {
       src: "logo_IEEE_Banaglaore_Section.png",
       alt: "ieee_bangalore_logo",
       href: "https://ieeebangalore.org/",
-      show: false,
+      show: true,
       padding: "pt-6"
     },
     {
       src: "logo_rvce_ieee.png",
       alt: "rvce_ieee_logo",
       href: "https://ieee-rvce.org/",
-      show: false,
+      show: true,
       padding: "pt-6"
     },
   ];
@@ -43,7 +43,7 @@ const HeaderImages = () => {
                 <div className="inline-block px-3">
                   <div className={`m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none ${image.padding} transition-shadow duration-300 ease-in-out hover:shadow-xl`}>
                     <a href={image.href} target="_blank" rel="noreferrer">
-                      <img className="h-full w-full object-cover" src={image.src} alt={image.alt} />
+                      <img className="h-full w-full object-cover backdrop-blur-md" src={image.src} alt={image.alt} />
                     </a>
                   </div>
                 </div>

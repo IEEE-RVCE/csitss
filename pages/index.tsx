@@ -7,6 +7,15 @@ import Timeline from "../components/TimeLine";
 import Gallery from "../components/Gallery";
 
 
+const image = {
+  src: "logo_IEEE_Banaglaore_Section.png",
+  alt: "ieee_bangalore_logo",
+  href: "https://ieeebangalore.org/",
+  show: true,
+  padding: "pt-6"
+};
+
+
 export default function Index() {
   return (
     <>
@@ -34,6 +43,9 @@ export default function Index() {
                     7<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>
+                </p>
+                <p className="align-text-center text-xl text-slate-50">
+                  Conference Record #60515
                 </p>
                 <p className="align-text-center text-xl text-slate-50">
                   Organized by
@@ -77,22 +89,33 @@ export default function Index() {
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                <h1 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-                  Organized by RV College Of Engineering
-                </h1>{" "}
-                <p className="m-4 text-center text-base font-bold text-white">
-                  in association with
-                </p>{" "}
+                <br /><br />
+                <br /><br />
+                <br /><br />
+                {/* <h2 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+                  Organized by
+                </h2>{" "} <br />
+                <h1 className=" text-blue-800 text-center text-4xl font-extrabold text-transparent">
+                  R V College of Engineering
+                </h1>{" "} <br /> */}
+                <h4 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+                  In association with
+                </h4>{" "} <br /> 
                 <div className="flex flex-row items-center justify-center">
                   <img
                     src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
                     className="h-auto w-auto object-cover"
                   />
                 </div>
-                <br />
-                <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-                  {/* Technically co-sponsored by <br /> IEEE Bangalore Section */}
+                <br /> <br />
+                <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+                  Technically co-sponsored by <br />
                 </h1>
+                <div className={`flex flex-row items-center justify-center`}>
+                    <a href={image.href} target="_blank" rel="noreferrer">
+                      <img className="h-auto w-auto object-cover" src={image.src} alt={image.alt} />
+                    </a>
+                </div>
                 <div className="flex flex-row items-center justify-center">
                   <img
                     className="h-[25%] w-auto object-cover"
@@ -112,7 +135,7 @@ export default function Index() {
                   Technology for Sustainable Solutions [CSITSS — 2023]" focuses on bringing together
                   leading academicians, scientists, researchers, industry representatives, postdoctoral
                   fellows and research scholars around the world to share their knowledge and research
-                  expertise in Renewable, Robotics, Computing, Communication, E-mobility, Embedded,
+                  expertise in Renewable Energy, Robotics, Computing, Communication, E-mobility, Embedded Systems,
                   (R2C2E2) from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023.
                   <br />
                   The conference has been successfully organised for the past six years with participants
