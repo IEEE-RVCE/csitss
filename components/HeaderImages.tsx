@@ -43,7 +43,7 @@ const HeaderImages = () => {
                 <div className="inline-block px-3">
                   <div className={`m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none ${image.padding} transition-shadow duration-300 ease-in-out hover:shadow-xl`}>
                     <a href={image.href} target="_blank" rel="noreferrer">
-                      <img className="h-full w-full object-cover backdrop-blur-md" src={image.src} alt={image.alt} />
+                      <img className="h-full w-full object-cover backdrop-blur-sm" src={image.src} alt={image.alt} />
                     </a>
                   </div>
                 </div>
