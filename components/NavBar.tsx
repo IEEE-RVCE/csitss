@@ -51,9 +51,9 @@ const NavBar = () => {
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
-              <a className="flex items-center" href="/">
+              <a className="flex items-stretch" href="/">
                 <Image
-                  src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
+                  src="RVCE NEW-HEADER_onlyLogo.png"
                   alt="logo"
                   className=" mt-5 h-full w-20"
                 />
