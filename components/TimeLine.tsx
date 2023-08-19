@@ -11,7 +11,7 @@ export default function CustomTimeLine() {
     },
     {
       label: "Last date to submit Full-length Manuscript",
-      date: "21st August 2023 (Date Extended)",
+      date: "27th August 2023 (Final Extention)",
     },
     {
       label: "Notification of Acceptance",
