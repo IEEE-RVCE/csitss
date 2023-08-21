@@ -22,7 +22,7 @@
 
   font-family: Gelasio;
   font-size: 18px;
-} 
+}
 
 .bar_content {
   display: block; /* Important to give the content a width */
@@ -31,16 +31,46 @@
   transform: translateX(80%); /* Animation start out of the screen */
 
   /* Add the animation */
-  animation: move 15s linear infinite /* infinite make reapeat the animation indefinitely */;
+  animation: move 15s linear infinite
+    /* infinite make reapeat the animation indefinitely */;
 }
 
 /* Create the animation */
 @keyframes move {
-  to { transform: translateX(-100%); }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .bar{
+  .bar {
     display: none;
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 30px;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+  display: block;
+  background-color: white;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 16s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

@@ -111,8 +111,13 @@ const NavBar = () => {
                   </Link>
                 </Menu.Item>
               ))}
-            </Menu>
+            </Menu> 
           </div>
+        </div>
+        <div className="marquee">
+          <div className="track">
+          <div className="content"><span style={{ color: 'red' , marginLeft: '50px' }} >Deadline extended.</span> Last date to submit full length manuscript : 31 August 2023<span style={{ color: 'red' , marginLeft: '50px' }} >Deadline extended.</span> Last date to submit full length manuscript : 31 August 2023<span style={{ color: 'red' , marginLeft: '50px' }} >Deadline extended.</span> Last date to submit full length manuscript : 31 August 2023</div>
+        </div>
         </div>
       </div>
     </header>
