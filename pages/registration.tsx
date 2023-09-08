@@ -47,7 +47,7 @@ function registration() {
             </a>
           </p>
         </section>
-        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+        {/* <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">
             Registration Details
           </h2>
@@ -70,7 +70,7 @@ function registration() {
             <b>SWIFT Code: </b>
             KKBKINBB
           </p>
-        </section>
+        </section> */}
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">
             Pricing Details
