@@ -268,7 +268,7 @@ function registration() {
           </ol>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <a href="https://forms.gle/NaKWRJ9gJjiyd4dX6"><p className="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-bounce text-4xl font-bold">Click Here To Register</p></a>
+          <a className="text-center" href="https://forms.gle/NaKWRJ9gJjiyd4dX6"><p className="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-bounce text-4xl font-bold">Click Here To Register</p></a>
         </section>
       </div>
     </>
