@@ -15,15 +15,15 @@ export default function CustomTimeLine() {
     },
     {
       label: "Notification of Acceptance",
-      date: "20th September 2023",
+      date: "25th September 2023",
     },
     {
       label: "Early Bird Registration",
-      date: "25th September 2023",
+      date: "30th September 2023",
     },
     {
       label: "Submission of Camera-ready Manuscript and Copyright Form",
-      date: "25th September 2023",
+      date: "30th September 2023",
     },
     {
       label: "Last Date for Registration",

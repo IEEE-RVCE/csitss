@@ -116,7 +116,7 @@ const NavBar = () => {
         </div>
         <div className="marquee">
           <div className="track">
-          <div className="content"><span style={{ color: 'red' , marginLeft: '50px' }} >Deadline extended.</span> Last date to submit full length manuscript : 31 August 2023<span style={{ color: 'red' , marginLeft: '50px' }} >Deadline extended.</span> Last date to submit full length manuscript : 31 August 2023<span style={{ color: 'red' , marginLeft: '50px' }} >Deadline extended.</span> Last date to submit full length manuscript : 31 August 2023</div>
+          <div className="content"><span style={{ color: 'red' , marginLeft: '20px' }} >Deadline extended.</span> Notification of Acceptance: 25th September 2023<span style={{ color: 'red' , marginLeft: '20px' }} >Deadline extended.</span> Early Bird Registration: 30th September 2023<span style={{ color: 'red' , marginLeft: '20px' }} >Deadline extended.</span> Submission of Camera-ready Manuscript and Copyright Form: 30th September 2023 </div>
         </div>
         </div>
       </div>
