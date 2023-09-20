@@ -238,10 +238,10 @@ function registration() {
             At least one author per accepted paper has to register.
             </li>
             <li>At least one author must present their accepted paper in the conference for consideration of publication on IEEE explore.</li>
-            <li>Registration fee for the paper (with authorship) includes access to the pre conference tutorial, conference proceedings, all technical sessions and presenter certificate.</li>
-            <li>The registration process entitles the same author to present maximum of two papers only. However, the author has to register for each paper ID separately (with the same transaction ID).</li>
-            <li>Registration fee for the pre conference tutorial includes access to the pre conference tutorial only (2nd Nov 2023).</li>
-            <li>Registration fee for the conference participation without authorship-attendee is not entitled for paper publication, however participation certificate will be provided.</li>
+            <li>Registration fee for the paper (<span className="font-bold">with authorship</span>) includes access to the pre conference tutorial, conference proceedings, all technical sessions and presenter certificate.</li>
+            <li>The registration process entitles the <span className="font-bold">same author</span> to present maximum of two papers only. However, the author has to register for each paper ID separately (with the same transaction ID).</li>
+            <li>Registration fee for the <span className="font-bold">pre conference tutorial</span> includes access to the pre conference tutorial only (2nd Nov 2023).</li>
+            <li>Registration fee for the <span className="font-bold">conference participation without authorship-attendee</span> is not entitled for paper publication, however participation certificate will be provided.</li>
           </ol>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
@@ -254,7 +254,7 @@ function registration() {
             Registration fees are not refundable or non-transferable.
             </li>
             <li>
-            You must save the payment proof in pdf. This payment proof file is to be attached in a section while filling the registration form.
+            You must save the payment proof in <span className="italic">pdf</span>. This payment proof file is to be attached in a section while filling the registration form.
             </li>
             <li>
             CSITSS-2023 organizing committee will not be responsible for any financial loss caused by improper transactions during registration process in CSITSS-2023.
