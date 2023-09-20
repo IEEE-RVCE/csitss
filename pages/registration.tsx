@@ -78,58 +78,55 @@ function registration() {
           </h2> */}
           <p className="mt-4 text-gray-600">
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y-2 divide-gray-200 text-sm">
-                <thead>
-                  <tr>
-                    {/* {TableData.columns.map((col) => (
-                      <>
-                        <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
-                          {col}
-                        </th>
-                      </>
-                    ))} */}
-                    <th colSpan={6}><b>Indian Delegates (INR)</b></th>
+              <table className="min-w-full divide-y-2 divide-gray-200 divide-x text-sm border-2">
+                <thead className="divide-x divide-y">
+                  <tr >
+                    
+                    <th colSpan={6} ><b>Indian Delegates (INR)</b></th>
                   </tr>
-                  <tr>
+                  <tr className="divide-x ">
                     <th colSpan={2} rowSpan={2}>Categories</th>
                     <th colSpan={2}>Early Bird Registration (till 30th September 2023)</th>
                     <th colSpan={2}>Regular Registration (after 30th September 2023)</th>
                   </tr>
-                  <tr>
+                  <tr className="divide-x">
+                    <th className="hidden"></th>
                     <th>IEEE</th>
                     <th>Non-IEEE</th>
                     <th>IEEE</th>
                     <th>Non-IEEE</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
+                <tbody className="divide-y divide-gray-200 ">
+                  <tr className="divide-x text-center">
                     <th rowSpan={3}>With Authorship</th>
-                    <th>Student/Research Scholars</th>
+                    <th >Student/Research Scholars</th>
                     <td>4000</td>
                     <td>5000</td>
                     <td>5000</td>
                     <td>6500</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
+                  <th className="hidden"></th>
                     <th>Academicians</th>
                     <td>5000</td>
                     <td>6000</td>
                     <td>6000</td>
                     <td>8000</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
+                  <th className="hidden"></th>
                     <th>Industry Professionals</th>
                     <td>6000</td>
                     <td>7000</td>
                     <td>10000</td>
                     <td>13500</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th colSpan={2}>Pre Conference Tutorial</th>
                     <td colSpan={4}>500</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th colSpan={2}>
                     Conference Participation without authorship-attendee
                     </th>
@@ -138,17 +135,18 @@ function registration() {
                     </td>
                   </tr>
                   {/* <br /> */}
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th colSpan={6}>
                       Foreign Delegates (USD)
                     </th>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th colSpan={2} rowSpan={2}>Categories</th>
                     <th colSpan={2}>Early Bird Registration (till 30th September 2023)</th>
                     <th colSpan={2}>Regular Registration (after 30th September 2023)</th>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
+                  <th className="hidden"></th>
                     <th>IEEE</th>
                     <th>Non-IEEE</th>
                     <th>IEEE</th>
@@ -156,7 +154,7 @@ function registration() {
                   </tr>
                 {/* </thead> */}
                 {/* <tbody className="divide-y divide-gray-200"> */}
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th rowSpan={3}>With Authorship</th>
                     <th>Student/Research Scholars</th>
                     <td>75</td>
@@ -164,25 +162,27 @@ function registration() {
                     <td>100</td>
                     <td>130</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
+                  <th className="hidden"></th>
                     <th>Academicians</th>
                     <td>90</td>
                     <td>120</td>
                     <td>125</td>
                     <td>160</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
+                  <th className="hidden"></th>
                     <th>Industry Professionals</th>
                     <td>100</td>
                     <td>125</td>
                     <td>200</td>
                     <td>240</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th colSpan={2}>Pre Conference Tutorial</th>
                     <td colSpan={4}>25</td>
                   </tr>
-                  <tr>
+                  <tr className="divide-x text-center">
                     <th colSpan={2}>
                     Conference Participation without authorship-attendee
                     </th>
@@ -268,8 +268,8 @@ function registration() {
           </ol>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <a href="https://forms.gle/NaKWRJ9gJjiyd4dX6"><button>Click Here To Register</button></a>
-          <p>If it doesn't work, go to the link <a href="https://forms.gle/NaKWRJ9gJjiyd4dX6">https://forms.gle/NaKWRJ9gJjiyd4dX6</a></p>
+          <a href="https://forms.gle/NaKWRJ9gJjiyd4dX6"><p className="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-bounce text-4xl font-bold">Click Here To Register</p></a>
+          <p>If it doesn't work, go to the link <a href="https://forms.gle/NaKWRJ9gJjiyd4dX6" className="text-red-900">https://forms.gle/NaKWRJ9gJjiyd4dX6</a></p>
         </section>
       </div>
     </>
