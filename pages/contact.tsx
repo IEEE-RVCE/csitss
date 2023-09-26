@@ -4,9 +4,9 @@ function contact() {
   return (
     <>
     
-      <div className="mx-auto flex justify-center items-center px-5 py-24 sm:flex-col">
+      <div className="flex flex-row">
       <div className="relative z-10 w-full md:w-1/2 lg:w-1/2">
-     <table className="border-collapse border border-gray-300 mx-auto">
+     <table className="border-collapse border border-gray-300 mx-auto mt-40">
         <tr>
             <th className="border border-gray-300 px-4 py-2">Name</th>
             <th  className="border border-gray-300 px-4 py-2">Contact Number</th>
