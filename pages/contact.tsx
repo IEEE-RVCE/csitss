@@ -3,8 +3,35 @@ import React from "react";
 function contact() {
   return (
     <>
-      <div className="mx-auto flex justify-center px-5 py-24 sm:flex-col">
-        <div className="relative z-10 mt-10 flex w-full flex-col rounded-lg bg-gray-900 p-8 shadow-md md:ml-auto md:mt-0 md:w-1/2 lg:w-1/3">
+    
+      <div className="flex flex-row">
+      <div className="relative z-10 w-full md:w-1/2 lg:w-1/2">
+     <table className="border-collapse border border-gray-300 mx-auto mt-40">
+        <tr>
+            <th className="border border-gray-300 px-4 py-2">Name</th>
+            <th  className="border border-gray-300 px-4 py-2">Contact Number</th>
+        </tr>
+        <tr>
+            <td  className="border border-gray-300 px-4 py-2">Dr. Abhilash Krishna D G</td>
+            <td  className="border border-gray-300 px-4 py-2">+91 7989341864</td>
+        </tr>
+        <tr>
+            <td className="border border-gray-300 px-4 py-2">Dr. Parth Sarathi Panigrahy</td>
+            <td className="border border-gray-300 px-4 py-2">+91 8847834371</td>
+        </tr>
+        <tr>
+          <td className="border border-gray-300 px-4 py-2">Dr. Pandry Narendra Rao</td>
+           <td className="border border-gray-300 px-4 py-2">+91 9885414398</td>
+        </tr>
+        <tr>
+          <td className="border border-gray-300 px-4 py-2">Dr. Vandana Jha </td>
+           <td className="border border-gray-300 px-4 py-2">+91 8969977560</td>
+        </tr>
+       
+    </table>
+    </div>
+        <div className="relative z-10 mt-10 flex w-full flex-col rounded-lg bg-gray-900 p-8 shadow-md md:w-1/2 lg:w-1/2">
+          
           <h2 className="title-font mb-1 text-lg font-medium text-white">
             Contact Us
           </h2>
@@ -46,7 +73,10 @@ function contact() {
           <p className="mt-3 text-xs text-gray-400 text-opacity-90">
             Your email will be not shared with anyone.
           </p>
+
         </div>
+       
+
       </div>
     </>
   );
