@@ -239,7 +239,6 @@ function registration() {
             </li>
             <li>At least one author must present their accepted paper in the conference for consideration of publication on IEEE explore.</li>
             <li>Registration fee for the paper (<span className="font-bold">with authorship</span>) includes access to the pre conference tutorial, conference proceedings, all technical sessions and presenter certificate.</li>
-            <li>The registration process entitles the <span className="font-bold">same author</span> to present maximum of two papers only. However, the author has to register for each paper ID separately (with the same transaction ID).</li>
             <li>Registration fee for the <span className="font-bold">pre conference tutorial</span> includes access to the pre conference tutorial only (2nd Nov 2023).</li>
             <li>Registration fee for the <span className="font-bold">conference participation without authorship-attendee</span> is not entitled for paper publication, however participation certificate will be provided.</li>
           </ol>
