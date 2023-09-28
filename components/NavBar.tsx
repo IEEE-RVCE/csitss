@@ -116,7 +116,7 @@ const NavBar = () => {
         </div>
         <div className="marquee">
           <div className="track">
-          <div className="content"><span className="text-red-800 ml-20">Deadline extended.</span> Notification of Acceptance: 25th September 2023<span className="text-red-800 ml-20">Deadline extended.</span> Early Bird Registration: 30th September 2023<span className="text-red-800 ml-20" >Deadline extended.</span> Submission of Camera-ready Manuscript and Copyright Form: 30th September 2023 </div>
+          <div className="content"><span className="text-red-800 ml-20">Deadline extended.</span> Early Bird Registration: 30th September 2023<span className="text-red-800 ml-20" >Deadline extended.</span> Submission of Camera-ready Manuscript and Copyright Form: 9th October 2023 </div>
         </div>
         </div>
       </div>
