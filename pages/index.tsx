@@ -33,8 +33,8 @@ export default function Index() {
           >
 
             <HeaderImages />
-            <div className="flex h-4/6  w-full items-center justify-center ">
-              <div className="bg-gray-800 bg-opacity-50 text-center font-extrabold">
+            <div className="flex  w-full items-center justify-center ">
+              <div className="bg-gray-800 bg-opacity-70 text-center px-9 py-5 rounded-3xl font-extrabold">
                 <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
                   WELCOME TO CSITSS-2023
                 </h1>
