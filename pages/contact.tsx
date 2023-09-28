@@ -1,6 +1,38 @@
+
 import React from "react";
 
+
 function contact() {
+  
+
+  const handleSubmit = async (e) => {
+   e.preventDefault();
+  
+    try {
+      const formData = new FormData(e.target);
+      await fetch(
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf4r9wOt9cnbgLAIilhKZjIITkC3k5rjFNtjnzCjkeyoIeNMw/formResponse",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+  
+      /*if (response.ok) {
+       
+        e.target.reset();
+      } else {
+   
+        alert("Failed to submit form");
+      } */
+    } catch (error) {
+      
+      alert("Submitted Successfully");
+    }
+    e.target.reset()
+    
+    
+  };
   return (
     <>
     
@@ -38,7 +70,7 @@ function contact() {
           <p className="mb-5 leading-relaxed text-white">
             Any Doubts pertaining to the CSITSS
           </p>
-          <form action="https://formspree.io/f/xrgrdozk" method="POST">
+          <form name="myForm" onSubmit={handleSubmit}>
             <div className="relative mb-4">
               <label
                 htmlFor="email"
@@ -49,9 +81,10 @@ function contact() {
               <input
                 type="email"
                 id="email"
-                name="email"
+                name="entry.1908009841"
                 className="w-full rounded border border-gray-700 bg-gray-800 py-1 px-3 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
               />
+              
             </div>
             <div className="relative mb-4">
               <label
@@ -62,7 +95,7 @@ function contact() {
               </label>
               <textarea
                 id="message"
-                name="message"
+                name="entry.1909108941"
                 className="h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 py-1 px-3 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
               ></textarea>
             </div>
