@@ -31,8 +31,8 @@ export default function Index() {
             className="heroHeader w-full bg-cover bg-center"
             style={{ height: "38rem" }}
           >
-
-            <HeaderImages />
+              <div className="mt-8">
+            <HeaderImages /></div>
             <div className="flex  w-full items-center justify-center ">
               <div className="bg-gray-800 bg-opacity-70 text-center px-9 py-5 rounded-3xl font-extrabold">
                 <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">

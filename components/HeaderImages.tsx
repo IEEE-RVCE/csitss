@@ -35,8 +35,8 @@ const HeaderImages = () => {
 
   return (
     <div>
-      <div className="center p-auto m-12   hidden flex-col md:block ">
-        <div className="flex overflow-x-scroll gap-8  scrollbar-hide justify-evenly bg-white bg-opacity-30 rounded-3xl mx-20 ">
+      <div className="center p-auto m-14  hidden flex-col md:block ">
+        <div className="flex overflow-x-scroll gap-8 mt-6 scrollbar-hide justify-evenly bg-white bg-opacity-30 rounded-3xl mx-20 ">
           {images.map((image) => {
             if (image.show) {
               return (
