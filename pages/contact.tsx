@@ -4,7 +4,7 @@ import React from "react";
 function contact() {
   
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:React.SyntheticEvent) => {
    e.preventDefault();
   
     try {
