@@ -24,10 +24,10 @@ export default function CustomTimeLine() {
       label: "Submission of Camera-ready Manuscript and Copyright Form",
       date: "9th October 2023",
     },
-    // {
-    //   label: "Last Date for Registration",
-    //   date: "6th October 2023",
-    // },
+    {
+      label: "Last Date for Registration",
+      date: "12th October 2023",
+    },
     {
       label: "Pre-Conference Tutorial",
       date: "2nd November 2023",
