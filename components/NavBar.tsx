@@ -8,41 +8,41 @@ const Links: Array<{
   label: string;
   newTab?: boolean;
 }> = [
-    {
-      href: "/",
-      label: "Home",
-    },
-    {
-      href: "/about",
-      label: "About",
-    },
-    {
-      href: "/committee",
-      label: "Committee",
-    },
-    {
-      href: "/tech",
-      label: "Technical Program",
-    },
-    {
-      href: "/registration",
-      label: "Registration",
-    },
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/about",
+    label: "About",
+  },
+  {
+    href: "/committee",
+    label: "Committee",
+  },
+  {
+    href: "/tech",
+    label: "Technical Program",
+  },
+  {
+    href: "/registration",
+    label: "Registration",
+  },
 
-    {
-      href: "/contact",
-      label: "Contact Us",
-    },
-    // {
-    //   href: "https://rzp.io/l/3N4bwhvH",
-    //   label: "Quick Payment Link",
-    //   newTab: true,
-    // },
-    // {
-    //   href: "/pgmschedule",
-    //   label: "Program Schedule",
-    // },
-  ];
+  {
+    href: "/contact",
+    label: "Contact Us",
+  },
+  // {
+  //   href: "https://rzp.io/l/3N4bwhvH",
+  //   label: "Quick Payment Link",
+  //   newTab: true,
+  // },
+  // {
+  //   href: "/pgmschedule",
+  //   label: "Program Schedule",
+  // },
+];
 
 const NavBar = () => {
   return (
@@ -105,19 +105,23 @@ const NavBar = () => {
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="text-gray-500 font-sans" >
-                      {link.label}
-                    </a>
+                    <a className="text-gray-500 font-sans">{link.label}</a>
                   </Link>
                 </Menu.Item>
               ))}
-            </Menu> 
+            </Menu>
           </div>
         </div>
         <div className="marquee font-sans">
           <div className="track">
-          <div className="content"><span style={{ color: 'red' , marginLeft: '20px' }} >Deadline extended.</span> Notification of Acceptance: 25th September 2023<span style={{ color: 'red' , marginLeft: '20px' }} >Deadline extended.</span> Early Bird Registration: 30th September 2023<span style={{ color: 'red' , marginLeft: '20px' }} >Deadline extended.</span> Submission of Camera-ready Manuscript and Copyright Form: 30th September 2023 </div>
-        </div>
+            <div className="content">
+              <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
+              Submission of Camera-ready Manuscript and Copyright Form: 9th
+              October 2023{" "}
+              <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
+              Last Date for Registration: 12th October 2023{" "}
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -195,7 +199,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-sm text-gray-500">
-              Developed by{" "} <br />
+              Developed by <br />
               <a
                 target="_blank"
                 className="font-bold text-indigo-500"

@@ -78,18 +78,18 @@ function registration() {
           </h2> */}
           <p className="mt-4 text-gray-600">
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y-2 divide-gray-200 divide-x text-sm border-2">
-                <thead className="divide-x divide-y">
-                  <tr >
+              <table className="min-w-full divide-y divide-x text-sm border-2 border-blue-900  divide-blue-900 ">
+                <thead className="divide-x divide-y divide-blue-900 ">
+                  <tr className="bg-blue-900 text-white">
                     
-                    <th colSpan={6} ><b>Indian Delegates (INR)</b></th>
+                    <th colSpan={6} >Indian Delegates (INR)</th>
                   </tr>
-                  <tr className="divide-x ">
+                  <tr className="divide-x divide-blue-900">
                     <th colSpan={2} rowSpan={2}>Categories</th>
                     <th colSpan={2}>Early Bird Registration (till 30th September 2023)</th>
                     <th colSpan={2}>Regular Registration (after 30th September 2023)</th>
                   </tr>
-                  <tr className="divide-x">
+                  <tr className="divide-x divide-blue-900">
                     <th className="hidden"></th>
                     <th>IEEE</th>
                     <th>Non-IEEE</th>
@@ -97,8 +97,8 @@ function registration() {
                     <th>Non-IEEE</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200 ">
-                  <tr className="divide-x text-center">
+                <tbody className="divide-y divide-blue-900 ">
+                  <tr className="divide-x text-center  divide-blue-900  ">
                     <th rowSpan={3}>With Authorship</th>
                     <th >Student/Research Scholars</th>
                     <td>4000</td>
@@ -106,7 +106,7 @@ function registration() {
                     <td>5000</td>
                     <td>6500</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Academicians</th>
                     <td>5000</td>
@@ -114,7 +114,7 @@ function registration() {
                     <td>6000</td>
                     <td>8000</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Industry Professionals</th>
                     <td>6000</td>
@@ -122,11 +122,11 @@ function registration() {
                     <td>10000</td>
                     <td>13500</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2}>Pre Conference Tutorial</th>
                     <td colSpan={4}>500</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2}>
                     Conference Participation without authorship-attendee
                     </th>
@@ -135,17 +135,17 @@ function registration() {
                     </td>
                   </tr>
                   {/* <br /> */}
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center bg-blue-900 text-white  divide-blue-900 ">
                     <th colSpan={6}>
                       Foreign Delegates (USD)
                     </th>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2} rowSpan={2}>Categories</th>
                     <th colSpan={2}>Early Bird Registration (till 30th September 2023)</th>
                     <th colSpan={2}>Regular Registration (after 30th September 2023)</th>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>IEEE</th>
                     <th>Non-IEEE</th>
@@ -154,7 +154,7 @@ function registration() {
                   </tr>
                 {/* </thead> */}
                 {/* <tbody className="divide-y divide-gray-200"> */}
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center  divide-blue-900 ">
                     <th rowSpan={3}>With Authorship</th>
                     <th>Student/Research Scholars</th>
                     <td>75</td>
@@ -162,7 +162,7 @@ function registration() {
                     <td>100</td>
                     <td>130</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center  divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Academicians</th>
                     <td>90</td>
@@ -170,7 +170,7 @@ function registration() {
                     <td>125</td>
                     <td>160</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center  divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Industry Professionals</th>
                     <td>100</td>
@@ -178,11 +178,11 @@ function registration() {
                     <td>200</td>
                     <td>240</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center  divide-blue-900 ">
                     <th colSpan={2}>Pre Conference Tutorial</th>
                     <td colSpan={4}>25</td>
                   </tr>
-                  <tr className="divide-x text-center">
+                  <tr className="divide-x text-center  divide-blue-900 ">
                     <th colSpan={2}>
                     Conference Participation without authorship-attendee
                     </th>
@@ -228,7 +228,7 @@ function registration() {
             </div>
           </p>
           <p>
-            <strong><i>*All the pricing details mentioned above are inclusive of 18% GST</i></strong>
+            <strong><i className="text-red-800">*All the pricing details mentioned above are inclusive of 18% GST</i></strong>
           </p>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
@@ -239,7 +239,6 @@ function registration() {
             </li>
             <li>At least one author must present their accepted paper in the conference for consideration of publication on IEEE explore.</li>
             <li>Registration fee for the paper (<span className="font-bold">with authorship</span>) includes access to the pre conference tutorial, conference proceedings, all technical sessions and presenter certificate.</li>
-            <li>The registration process entitles the <span className="font-bold">same author</span> to present maximum of two papers only. However, the author has to register for each paper ID separately (with the same transaction ID).</li>
             <li>Registration fee for the <span className="font-bold">pre conference tutorial</span> includes access to the pre conference tutorial only (2nd Nov 2023).</li>
             <li>Registration fee for the <span className="font-bold">conference participation without authorship-attendee</span> is not entitled for paper publication, however participation certificate will be provided.</li>
           </ol>
