@@ -32,18 +32,17 @@ const HeaderImages = () => {
       padding: "pt-6"
     },
   ];
-
   return (
     <div>
-      <div className="center p-auto m-auto hidden flex-col md:block ">
-        <div className="flex overflow-x-scroll pb-0 scrollbar-hide justify-evenly">
+      <div className="center p-auto mt-0 m-14  hidden flex-col md:block ">
+        <div className="flex items-center overflow-x-scroll gap-8 mt-6 scrollbar-hide justify-evenly bg-white bg-opacity-30 rounded-3xl mx-20 backdrop-blur-sm ">
           {images.map((image) => {
             if (image.show) {
               return (
-                <div className="inline-block px-3">
-                  <div className={`m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden rounded-lg bg-none ${image.padding} transition-shadow duration-300 ease-in-out hover:shadow-xl`}>
+                <div className="inline-block  my-6 ">
+                  <div className={` mx-0   max-w-xs overflow-hidden  ${image.padding} transition-shadow duration-300 ease-in-out hover:shadow-xl `}>
                     <a href={image.href} target="_blank" rel="noreferrer">
-                      <img className="h-full w-full object-cover backdrop-blur-sm" src={image.src} alt={image.alt} />
+                      <img className="h-fit w-fit object-cover " src={image.src} alt={image.alt} />
                     </a>
                   </div>
                 </div>

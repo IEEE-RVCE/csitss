@@ -83,7 +83,7 @@ export const Topics = [
 
 function Tech() {
   return (
-    <div>
+    <div className="mt-10">
       <Tabs grow>
         <Tabs.Tab label="Call For Papers">
           <aside className="bg-gray-100 p-12 sm:p-16 lg:p-24">

@@ -47,7 +47,7 @@ const Links: Array<{
 const NavBar = () => {
   return (
     <header>
-      <div className="mx-auto max-w-screen-xl p-2">
+      <div className="mx-auto  w-full shadow-md  p-2">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
@@ -55,17 +55,17 @@ const NavBar = () => {
                 <Image
                   src="RVCE NEW-HEADER_onlyLogo.png"
                   alt="logo"
-                  className=" mt-5 h-full w-20"
+                  className="  h-full w-20"
                 />
               </a>
             </Link>
           </div>
 
-          <nav className="hidden space-x-8 text-sm font-medium md:flex">
+          <nav className="hidden space-x-8 text-m  font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={JSON.stringify(link)}>
                 <a
-                  className="text-gray-500 hover:text-indigo-400"
+                  className="text-gray-500 hover:text-blue-700 hover:border-b-2 font-sans text-lg "
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
                 >
@@ -105,14 +105,16 @@ const NavBar = () => {
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="text-gray-500">{link.label}</a>
+                    <a className="text-gray-500 font-sans" >
+                      {link.label}
+                    </a>
                   </Link>
                 </Menu.Item>
               ))}
             </Menu>
           </div>
         </div>
-        <div className="marquee">
+        <div className="marquee font-sans">
           <div className="track">
             <div className="content">
               <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
