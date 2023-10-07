@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { AppShell, Box, Header, Image, Menu } from "@mantine/core";
+import Marquee from "react-fast-marquee";
 
 import Link from "next/link";
 import React from "react";
@@ -47,7 +48,7 @@ const Links: Array<{
 const NavBar = () => {
   return (
     <header>
-      <div className="mx-auto  w-full shadow-md  p-2">
+      <div className="mx-auto  w-full p-2  shadow-md">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
@@ -61,11 +62,11 @@ const NavBar = () => {
             </Link>
           </div>
 
-          <nav className="hidden space-x-8 text-m  font-medium md:flex">
+          <nav className="text-m hidden space-x-8  font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={JSON.stringify(link)}>
                 <a
-                  className="text-gray-500 hover:text-blue-700 hover:border-b-2 font-sans text-lg "
+                  className="font-sans text-lg text-gray-500 hover:border-b-2 hover:text-blue-700 "
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
                 >
@@ -105,26 +106,23 @@ const NavBar = () => {
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="text-gray-500 font-sans" >
-                      {link.label}
-                    </a>
+                    <a className="font-sans text-gray-500">{link.label}</a>
                   </Link>
                 </Menu.Item>
               ))}
             </Menu>
           </div>
         </div>
-        <div className="marquee font-sans">
-          <div className="track">
-            <div className="content">
-              <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
-              Submission of Camera-ready Manuscript and Copyright Form: 9th
-              October 2023{" "}
-              <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
-              Last Date for Registration: 12th October 2023{" "}
-            </div>
+        <Marquee>
+          <div className="content">
+            <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
+            Submission of Camera-ready Manuscript and Copyright Form: 9th
+            October 2023{" "}
+            <span className="ml-20 text-red-800">Deadline extended.</span> Last
+            Date for Registration: 12th October 2023{" "}
           </div>
-        </div>
+        </Marquee>
+        <br />
       </div>
     </header>
   );
@@ -160,11 +158,11 @@ const Footer = () => {
               : "- " + new Date().getFullYear()}{" "}
             IEEE RVCE
           </p>
-          <div className="flex flex-col items-center justify-center gap-4">
+          {/*<div className="flex flex-col items-center justify-center gap-4">
             <span className="text-center text-xs text-gray-500">
               Collaboration with{" "}
             </span>
-            <Box>
+             <Box>
               <div className="ml-10 flex flex-nowrap justify-evenly md:ml-20 lg:ml-40">
                 <div className="inline-block px-3">
                   <div className="m-5 ml-0 h-auto w-auto max-w-xs overflow-hidden bg-none p-2 transition-shadow duration-300 ease-in-out hover:shadow-xl">
@@ -174,7 +172,7 @@ const Footer = () => {
                       rel="noreferrer"
                     >
                       <img
-                        className="h-full w-full rounded-full object-cover"
+                        className="h-full w-full object-cover"
                         src="RVCE NEW-HEADER.png"
                         alt="rvce_logo"
                       />
@@ -198,7 +196,7 @@ const Footer = () => {
                 </div>
               </div>
             </Box>
-          </div>
+          </div> */}
           <div>
             <p className="text-sm text-gray-500">
               Developed by <br />
@@ -223,7 +221,7 @@ const WrapApp = ({ children }: any) => {
     <AppShell
       padding="md"
       header={
-        <Header height={80}>
+        <Header height={100}>
           <NavBar />
         </Header>
       }
