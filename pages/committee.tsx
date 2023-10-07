@@ -147,20 +147,23 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Uma B.V.",
         post: "Dean Student Affairs and Professor, Department. of ECE",
-        // imgLink: "https://rvce.edu.in/sites/default/files/BVU.jpg",
+        imgLink: "https://rvce.edu.in/sites/default/files/BVU.jpg",
       },
       {
         name: "Dr. S G Srivani",
         post: "Professor and Head , Department of EEE,RVCE",
-        // imgLink: "https://rvce.edu.in/sites/default/files/eee-sgs.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-sgs.png",
       },
       {
         name: "Dr. H. V. Ravish Aradhya",
         post: "Professor and Head, Department. of ECE,RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/hvr_photo.jpg",
       },
       {
         name: "Dr. K. Sreelakshmi",
         post: "Professor and Head, Department of ETE,RVCE",
+        imgLink:
+          "https://rvce.edu.in/sites/default/files/Dr.KS_Profilephoto.jpg",
       },
       {
         name: "Dr. C H Renumadhavi",
@@ -170,52 +173,58 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Ramakanth Kumar P",
         post: "Professor and Head, Department of CSE,RVCE,AI-ML,RVCE",
-        //  imgLink:
-        //  "https://rvce.edu.in/sites/default/files/cse_Dr.Ramakanthkumar_p.jpg",
+        imgLink:
+          "https://rvce.edu.in/sites/default/files/cse_Dr.Ramakanthkumar_p.jpg",
       },
       {
         name: "Dr. B.M. Sagar",
         post: "Professor and Head, Department of ISE,RVCE",
-        //  imgLink:
-        //  "https://media-exp1.licdn.com/dms/image/C5603AQFDQlGgXxsvxg/profile-displayphoto-shrink_200_200/0/1595389613138?e=1668038400&v=beta&t=mhi2QCeqkeIXcyFIqazQQx7V-aDrABjcpGvdUqfrZRk",
+        imgLink: "https://i.ibb.co/s5tH88F/bms.jpg",
       },
       {
         name: "Dr. Andhe Dharani",
         post: " Professor and Director, MCA,RVCE",
+        imgLink: "https://i.ibb.co/Krh4KKn/andheD.png",
       },
       {
         name: "Dr. Satish Babu",
         post: "Professor and Head,Department of AI-ML, RVCE",
+        imgLink:
+          "https://rvce.edu.in/sites/default/files/bsb-passport-photo.jpg",
       },
       {
         name: "Dr. Padmaja K V",
         post: "Professor,Department of EIE, RVCE",
+        imgLink:
+          "http://www.rvce.edu.in/sites/default/files/IMG_20160924_103402.jpg",
       },
       {
         name: "Dr. Nagaraja G S",
         post: "Professor, Department of CSE,RVCE",
+        imgLink: "https://i.ibb.co/7NKfJLm/ngs.png",
       },
       {
         name: "Dr. Ashok Kumar A R",
         post: "Associate Professor, Department of CSE,RVCE",
-        // imgLink: "https://ieee-rvce.org/assets/images/execom/compsoc/ashok_sir.jpg",
+        imgLink:
+          "https://ieee-rvce.org/assets/images/execom/compsoc/ashok_sir.jpg",
       },
       {
         name: "Dr. Rajesh",
         post: "Honeywell Pvt. Ltd., Bangalore",
-        // imgLink: "https://i.ibb.co/6w3985S/Rajesh-Honeywell.jpg",
+        imgLink: "https://i.ibb.co/6w3985S/Rajesh-Honeywell.jpg",
       },
       {
         name: "Dr. Chengappa",
         post: "Secretary, IEEE Bangalore Section",
-        //   imgLink:
-        //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
+        imgLink:
+          "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
       },
       {
         name: "Mr. H. S. Hallikeri",
         post: " Director, Arctictern Pvt. Ltd., Bangalore        ",
-        //   imgLink:
-        //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
+        imgLink:
+          "https://media.licdn.com/dms/image/C5103AQFXOEmDQOSeUw/profile-displayphoto-shrink_800_800/0/1562063151710?e=2147483647&v=beta&t=ThtwLW--w4Yx8Fa1zQvE88d5uleoMka4Pjv-Any-ZDI",
       },
     ],
   },
@@ -225,26 +234,22 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr M N Dinesh",
         post: "Professor, Department of EEE, RVCE",
-        //   imgLink:
-        //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-mnd.png",
       },
       {
         name: "Dr. K S Shushrutha",
         post: "Associate Professor, Department of ECE, RVCE",
-        //  imgLink:
-        //   "https://ieee-rvce.org/assets/images/execom/comsoc/shushrutha_sir.jpg",
+        imgLink: "https://i.ibb.co/7GcYKBk/kss.png",
       },
       {
         name: "Dr. Anand Jatti",
         post: "Assoc. Professor, Department of EIE, RVCE",
-        //   imgLink:
-        //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
+        imgLink: "https://i.ibb.co/DR1CRx0/aj.jpg",
       },
       {
         name: "Mr. Raghavendra Prasad S G",
         post: "Asst. Professor, Department of ISE, RVCE",
-        //   imgLink:
-        //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/sgr.jpg",
       },
     ],
   },
@@ -254,18 +259,18 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Nagamani K",
         post: "Professor, Department of ETE, RVCE",
-        // imgLink: "https://rvce.edu.in/sites/default/files/sgr.jpg",
+        imgLink: "https://i.ibb.co/Swqs1Gv/kn.png",
       },
       {
         name: "Dr. Hemalatha J.N",
         post: "Associate Professor, Department of EEE, RVCE",
-        //  imgLink:
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-jnh.jpg",
         //  "https://ieee-rvce.org/assets/images/execom/main/mahesh_sir.jpg",
       },
       {
         name: "Dr. Mahesh A",
         post: " Assoc.Professor, Department of ECE, RVCE        ",
-        //   imgLink:
+        imgLink: "https://i.ibb.co/KD67WDG/mah.jpg",
         //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
       },
     ],
@@ -276,17 +281,17 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Prasanna Kumar",
         post: "Asst. Professor, Department of EIE, RVCE",
-        //   imgLink: "https://rvce.edu.in/sites/default/files/IMG-5954.jpg",
+        imgLink: "https://rvce.edu.in/sites/default/files/EIE-SCPK.jpg",
       },
       {
         name: "Dr. Anitha G.S",
         post: "Associate Professor, Department of EEE, RVCE",
-        //  imgLink: "https://rvce.edu.in/sites/default/files/BSK%20ECE1.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-gsa.png",
       },
       {
         name: "Dr. Adinath Jain",
         post: "Asst. Professor, Department of EEE, RVCE",
-        //  imgLink: "https://rvce.edu.in/sites/default/files/BSK%20ECE1.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-aj.jpg",
       },
     ],
   },
@@ -296,17 +301,18 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Usha J",
         post: "Professor, Department of MCA, RVCE",
-        //  imgLink: "https://rvce.edu.in/sites/default/files/BSK%20ECE1.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/mca-uj.jpg",
       },
       {
         name: "Dr. Minal Moharir",
         post: "Professor, Department of CSE, RVCE",
-        //  imgLink: "https://rvce.edu.in/sites/default/files/BSK%20ECE1.png",
+        imgLink: "https://i.ibb.co/p3gSKmV/mm.jpg",
       },
       {
         name: "Dr. Madhu B R",
         post: "Assoc. Professor, Department of EEE, RVCE",
-        //  imgLink: "https://rvce.edu.in/sites/default/files/BSK%20ECE1.png",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-mbr.jpg",
+
       },
     ],
   },
@@ -316,14 +322,19 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Anala M R",
         post: "Professor, Department of ISE, RVCE",
+
+        imgLink: "https://rvce.edu.in/sites/default/files/Anala%20M%20R.jpg",
       },
       {
         name: "Dr. V Chayapathy",
         post: "Assoc. Professor, Department of EEE, RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-vc.jpg",
+
       },
       {
         name: "Dr. Ajay K M",
         post: "Asst. Professor, Department of EEE, RVCE",
+        imgLink: "https://i.ibb.co/PZp0KnJ/akm.png",
       },
     ],
   },
@@ -333,14 +344,18 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Vinay Hegde",
         post: "Assoc. Professor, Department of CSE, RVCE",
+        imgLink: "https://i.ibb.co/Wytj8B2/vh.png",
       },
       {
         name: "Mr. Suresha C",
         post: " Asst Professor, Department of EEE, RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-css.jpg",
       },
       {
         name: "Mrs. Raja Vidya",
         post: "Asst. Professor, Department of EEE, RVCE",
+        imgLink:
+          "http://www.rvce.edu.in/sites/default/files/Passport_Photo-min.jpg",
       },
     ],
   },
@@ -350,16 +365,17 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Vijaya Lakshmi M N",
         post: "Assoc. Professor, Department of AI-ML, RVCE",
+        imgLink: "http://www.rvce.edu.in/sites/default/files/mca-mnv_0.jpg",
       },
       {
         name: "Mrs C. Sunanda",
         post: "Asst. Professor, Department of EEE, RVCE",
-        // imgLink: "https://www.rvce.edu.in//sites/default/files/VD.jpg",
+        imgLink: "https://rvce.edu.in/sites/default/files/eee-cs.jpg",
       },
       {
         name: "Mrs Sushmita Sarkar",
         post: "Asst. Professor, Department of EEE, RVCE",
-        // imgLink: "https://www.rvce.edu.in//sites/default/files/VD.jpg",
+        imgLink: "http://www.rvce.edu.in/sites/default/files/DSC_743244.jpg",
       },
     ],
   },
@@ -369,26 +385,28 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Abhay Deshpande",
         post: "Associate Professor, Department of ECE, RVCE",
+        imgLink: "https://i.ibb.co/fpfCtJs/adec.png",
       },
       {
         name: "Dr. Abhilash Krishna D G",
-        post: "Asst. Professor, Department of EEE, RVCE        ",
-        // imgLink: "https://www.rvce.edu.in//sites/default/files/VD.jpg",
+        post: "Asst. Professor, Department of EEE, RVCE",
+        imgLink: "https://i.ibb.co/Pm9X1QV/akdg.jpg",
       },
       {
         name: "Dr. Parth Sarathi Panigrahy",
         post: "Asst. Professor, Department of EEE,RVCE        ",
-        // imgLink: "https://www.rvce.edu.in//sites/default/files/VD.jpg",
+        imgLink: "https://rvce.edu.in/sites/default/files/partha.png",
       },
       {
         name: "Dr. Pandry Narendra Rao",
         post: "Asst. Professor, Department of EEE, RVCE        ",
-        // imgLink: "https://www.rvce.edu.in//sites/default/files/VD.jpg",
+        imgLink: "https://rvce.irins.org/assets/profile_images/381452.jpg",
       },
       {
         name: "Dr. Vandana Jha",
         post: " Asst. Professor, Department of EEE, RVCE",
-        //  imgLink: "https://www.rvce.edu.in//sites/default/files/ec-ssn.png",
+        imgLink:
+          "https://rvce.edu.in/sites/default/files/eee-faculty-bhvandana.png",
       },
     ],
   },
