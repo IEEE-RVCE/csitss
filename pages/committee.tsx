@@ -105,7 +105,7 @@ const committeeMembers: Mem[] = [
       },
       {
         name: "Dr. Sachin R Rondiya",
-        post: "Asst. Professor, Dept. of Materials Engineering, IISC, Bangalore.",
+        post: "Asst. Professor, Dept. of Materials Engineering, IISc, Bangalore.",
         imgLink:
           "https://materials.iisc.ac.in/assets/images/faculty/sachin.jpg",
         //  "https://i.ibb.co/TmdN1kZ/Whats-App-Image-2022-10-21-at-8-21-12-PM.jpg"
@@ -125,7 +125,7 @@ const committeeMembers: Mem[] = [
       },
       {
         name: "Dr. Gurunath Gurrala",
-        post: "Assoc.Prof., Dept.of. EECS, IISC, Bengaluru.",
+        post: "Assoc.Prof., Dept.of. EECS, IISc, Bengaluru.",
         imgLink:
           "https://eecs.iisc.ac.in/wp-content/uploads/2019/10/gurunath-300x300.jpg",
       },
@@ -241,11 +241,6 @@ const committeeMembers: Mem[] = [
         imgLink: "https://i.ibb.co/7GcYKBk/kss.png",
       },
       {
-        name: "Dr. Anand Jatti",
-        post: "Assoc. Professor, Department of EIE, RVCE",
-        imgLink: "https://i.ibb.co/DR1CRx0/aj.jpg",
-      },
-      {
         name: "Mr. Raghavendra Prasad S G",
         post: "Asst. Professor, Department of ISE, RVCE",
         imgLink: "https://rvce.edu.in/sites/default/files/sgr.jpg",
@@ -283,14 +278,14 @@ const committeeMembers: Mem[] = [
         imgLink: "https://rvce.edu.in/sites/default/files/EIE-SCPK.jpg",
       },
       {
-        name: "Dr. Anitha G.S",
-        post: "Associate Professor, Department of EEE, RVCE",
-        imgLink: "https://rvce.edu.in/sites/default/files/eee-gsa.png",
-      },
-      {
         name: "Dr. Adinath Jain",
         post: "Asst. Professor, Department of EEE, RVCE",
         imgLink: "https://rvce.edu.in/sites/default/files/eee-aj.jpg",
+      },
+      {
+        name: "Dr. Usha Rani K R",
+        post: "Professor, Department of ECE, RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/IMG-5954.jpg",
       },
     ],
   },
@@ -303,9 +298,9 @@ const committeeMembers: Mem[] = [
         imgLink: "https://rvce.edu.in/sites/default/files/mca-uj.jpg",
       },
       {
-        name: "Dr. Minal Moharir",
+        name: "Dr. Shanta Rangaswamy",
         post: "Professor, Department of CSE, RVCE",
-        imgLink: "https://i.ibb.co/p3gSKmV/mm.jpg",
+        imgLink: "https://i.ibb.co/89CJWsS/sr.png",
       },
       {
         name: "Dr. Madhu B R",
@@ -315,23 +310,23 @@ const committeeMembers: Mem[] = [
     ],
   },
   {
-    label: "SponsorShip Chair",
+    label: "Sponsorship Chair",
     members: [
       {
-        name: "Dr. Anala M R",
-        post: "Professor, Department of ISE, RVCE",
+        name: "Dr. D Ranganath",
+        post: "Dean, Placement & Training Department",
 
-        imgLink: "https://rvce.edu.in/sites/default/files/Anala%20M%20R.jpg",
-      },
-      {
-        name: "Dr. V Chayapathy",
-        post: "Assoc. Professor, Department of EEE, RVCE",
-        imgLink: "https://rvce.edu.in/sites/default/files/eee-vc.jpg",
+        imgLink: "https://rvce.edu.in/sites/default/files/Plac_Ranganath.JPG",
       },
       {
         name: "Dr. Ajay K M",
         post: "Asst. Professor, Department of EEE, RVCE",
         imgLink: "https://i.ibb.co/PZp0KnJ/akm.png",
+      },
+      {
+        name: "Mr. Somesh Nandi",
+        post: "Asst. Professor, Department of AIML, RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/somesh.jpg",
       },
     ],
   },
@@ -344,15 +339,16 @@ const committeeMembers: Mem[] = [
         imgLink: "https://i.ibb.co/Wytj8B2/vh.png",
       },
       {
-        name: "Mr. Suresha C",
-        post: " Asst Professor, Department of EEE, RVCE",
-        imgLink: "https://rvce.edu.in/sites/default/files/eee-css.jpg",
-      },
-      {
-        name: "Mrs. Raja Vidya",
+        name: "Smt. Raja Vidya",
         post: "Asst. Professor, Department of EEE, RVCE",
         imgLink:
           "http://www.rvce.edu.in/sites/default/files/Passport_Photo-min.jpg",
+      },
+      {
+        name: "Dr. Shilpa D R",
+        post: " Assoc. Professor, Department of ECE, RVCE",
+        imgLink:
+          "https://rvce.edu.in/sites/default/files/Dr.%20Shilpa%20D.R.jpg",
       },
     ],
   },
