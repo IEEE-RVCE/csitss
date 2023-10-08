@@ -223,8 +223,7 @@ const committeeMembers: Mem[] = [
       {
         name: "Mr. H. S. Hallikeri",
         post: " Director, Arctictern Pvt. Ltd., Bangalore        ",
-        imgLink:
-          "https://media.licdn.com/dms/image/C5103AQFXOEmDQOSeUw/profile-displayphoto-shrink_800_800/0/1562063151710?e=2147483647&v=beta&t=ThtwLW--w4Yx8Fa1zQvE88d5uleoMka4Pjv-Any-ZDI",
+        imgLink: "https://i.ibb.co/VmScg7p/hsh.jpg",
       },
     ],
   },
@@ -312,7 +311,6 @@ const committeeMembers: Mem[] = [
         name: "Dr. Madhu B R",
         post: "Assoc. Professor, Department of EEE, RVCE",
         imgLink: "https://rvce.edu.in/sites/default/files/eee-mbr.jpg",
-
       },
     ],
   },
@@ -329,7 +327,6 @@ const committeeMembers: Mem[] = [
         name: "Dr. V Chayapathy",
         post: "Assoc. Professor, Department of EEE, RVCE",
         imgLink: "https://rvce.edu.in/sites/default/files/eee-vc.jpg",
-
       },
       {
         name: "Dr. Ajay K M",
@@ -363,19 +360,19 @@ const committeeMembers: Mem[] = [
     label: "Website Management & System",
     members: [
       {
-        name: "Dr. Vijaya Lakshmi M N",
-        post: "Assoc. Professor, Department of AI-ML, RVCE",
-        imgLink: "http://www.rvce.edu.in/sites/default/files/mca-mnv_0.jpg",
-      },
-      {
-        name: "Mrs C. Sunanda",
-        post: "Asst. Professor, Department of EEE, RVCE",
-        imgLink: "https://rvce.edu.in/sites/default/files/eee-cs.jpg",
+        name: "Dr. Veena Devi",
+        post: "Assoc. Professor, Department of ECE, RVCE",
+        imgLink: "http://www.rvce.edu.in/sites/default/files/VD.jpg",
       },
       {
         name: "Mrs Sushmita Sarkar",
         post: "Asst. Professor, Department of EEE, RVCE",
         imgLink: "http://www.rvce.edu.in/sites/default/files/DSC_743244.jpg",
+      },
+      {
+        name: "Dr. B Renuka Prasad",
+        post: "Assoc. Professor & Assoc. Dean, Department of MCA, RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/brp.JPG",
       },
     ],
   },
