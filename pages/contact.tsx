@@ -3,6 +3,7 @@ import { PhoneIcon } from "@heroicons/react/solid";
 function contact() {
   return (
     <>
+      <br />
       <div className="container my-4 mx-auto bg-gray-100 p-4">
         <div className="grid grid-cols-1 gap-1 md:grid-cols-2">
           <div>
