@@ -8,6 +8,9 @@ import {
 } from "@mantine/core";
 
 const imgLinks = [
+  "https://i.imgur.com/pOMnurc.png",
+  "https://i.imgur.com/NDp81Y1.png",
+  "https://i.imgur.com/6EfIKBa.png",
   "https://github.com/naveenbteli/gallery/blob/master/Album/P2570137.JPEG?raw=true",
   "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4489.JPG",
   "https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4657.JPG",
