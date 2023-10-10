@@ -137,8 +137,7 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. S G Srivani",
         post: "Professor & Head, Department. of EEE, RVCE",
-        imgLink: "https://i.ibb.co/mqWnSMW/srivani.jpg",
-        // "https://rvce.edu.in/sites/default/files/eee-sgs.png",
+        imgLink: "https://i.ibb.co/Y7f0pwt/srivani.jpg",
       },
     ],
   },
@@ -151,10 +150,9 @@ const committeeMembers: Mem[] = [
         imgLink: "https://rvce.edu.in/sites/default/files/BVU.jpg",
       },
       {
-        name: "Dr. S G Srivani",
-        post: "Professor and Head , Department of EEE,RVCE",
-        imgLink: "https://i.ibb.co/mqWnSMW/srivani.jpg",
-        // "https://rvce.edu.in/sites/default/files/eee-sgs.png",
+        name: "Dr. M Uttara Kumari",
+        post: "Professor, Department of ECE,RVCE",
+        imgLink: "https://rvce.edu.in/sites/default/files/MUK_1.jpg",
       },
       {
         name: "Dr. H. V. Ravish Aradhya",
