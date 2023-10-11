@@ -1,4 +1,4 @@
-import { List, Tabs } from "@mantine/core";
+import { Center, List, Tabs } from "@mantine/core";
 
 import React from "react";
 
@@ -92,19 +92,18 @@ function Tech() {
                 Call For Papers{" "}
               </p>
               <p className="text-justify text-xl font-medium text-gray-500">
-                Prospective authors are encouraged to submit quality and original research papers
-                for presentation at the Conference. Authors are requested to submit their manuscripts
-                in PDF format not exceeding 6 pages in A4 size through online submission at Microsoft
-                CMT - on or {" "}
+                Prospective authors are encouraged to submit quality and
+                original research papers for presentation at the Conference.
+                Authors are requested to submit their manuscripts in PDF format
+                not exceeding 6 pages in A4 size through online submission at
+                Microsoft CMT - on or{" "}
                 <i>
                   before 5<sup>th</sup> August 2023.{" "}
                 </i>
                 The manuscript should follow the standard IEEE template.The
                 format of the paper could be downloaded in link below{" "}
                 <a href="https://www.ieee.org/conferences/publishing/templates.html">
-                  <b>
-                    Manuscript Template Link
-                  </b>
+                  <b>Manuscript Template Link</b>
                 </a>
                 .<br />
                 All submission for the conference will be handled electronically
@@ -135,31 +134,37 @@ function Tech() {
           </aside>
         </Tabs.Tab>
         <Tabs.Tab label="Conference Tracks">
-          <aside className="bg-gray-100 p-12 sm:p-16 lg:p-24">
-            <div className="">
+          <aside className="m-6 bg-gray-100 sm:m-8 lg:m-12">
+            <div className=" p-6 sm:p-8 lg:p-12">
               <p className="text-center text-3xl font-bold sm:text-5xl">
                 Conference Tracks{" "}
               </p>
               <p className="text-center text-sm font-bold">
-                Authors are invited to submit their original research work in the following (but not limited to)
+                Authors are invited to submit their original research work in
+                the following (but not limited to)
               </p>
-              {Topics.map((topic, index) => (
-                <div className="mt-8" key={topic.label}>
-                  <p className="text-2xl font-medium text-gray-900">
-                    {index + 1}. {topic.label}
-                  </p>
-                  <List className="mt-4" type="ordered">
-                    {topic.subTopics.map((subTopic, index) => (
-                      <List.Item
-                        className="text-lg font-medium text-gray-500"
-                        key={subTopic}
-                      >
-                        {index + 1}) {subTopic}
-                      </List.Item>
-                    ))}
-                  </List>
+              <Center>
+                <div>
+                  {Topics.map((topic, index) => (
+                    <div className="mt-8" key={topic.label}>
+                      <p className="mb-4 text-2xl font-medium text-gray-900">
+                        {index + 1}. {topic.label}
+                      </p>
+                      {/* <br /> */}
+                      <List className="mt-4" type="ordered">
+                        {topic.subTopics.map((subTopic, index) => (
+                          <List.Item
+                            className="relative left-6 text-lg font-medium text-gray-500"
+                            key={subTopic}
+                          >
+                            {index + 1}) {subTopic}
+                          </List.Item>
+                        ))}
+                      </List>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </Center>
             </div>
           </aside>
         </Tabs.Tab>
