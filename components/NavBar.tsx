@@ -9,41 +9,44 @@ const Links: Array<{
   label: string;
   newTab?: boolean;
 }> = [
-  {
-    href: "/",
-    label: "Home",
-  },
-  {
-    href: "/about",
-    label: "About",
-  },
-  {
-    href: "/committee",
-    label: "Committee",
-  },
-  {
-    href: "/tech",
-    label: "Technical Program",
-  },
-  {
-    href: "/registration",
-    label: "Registration",
-  },
-
-  {
-    href: "/contact",
-    label: "Contact Us",
-  },
-  // {
-  //   href: "https://rzp.io/l/3N4bwhvH",
-  //   label: "Quick Payment Link",
-  //   newTab: true,
-  // },
-  // {
-  //   href: "/pgmschedule",
-  //   label: "Program Schedule",
-  // },
-];
+    {
+      href: "/",
+      label: "Home",
+    },
+    {
+      href: "/about",
+      label: "About",
+    },
+    {
+      href: "/committee",
+      label: "Committee",
+    },
+    {
+      href: "/tech",
+      label: "Technical Program",
+    },
+    {
+      href: "/registration",
+      label: "Registration",
+    },
+    {
+      href: "/sponsorship",
+      label: "Sponsors",
+    },
+    {
+      href: "/contact",
+      label: "Contact Us",
+    },
+    // {
+    //   href: "https://rzp.io/l/3N4bwhvH",
+    //   label: "Quick Payment Link",
+    //   newTab: true,
+    // },
+    // {
+    //   href: "/pgmschedule",
+    //   label: "Program Schedule",
+    // },
+  ];
 
 const NavBar = () => {
   return (
