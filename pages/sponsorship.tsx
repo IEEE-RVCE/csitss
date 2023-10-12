@@ -17,72 +17,58 @@ const SponsorsData: Sponsor[] = [
     // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "ADC.jpg",
     link: "https://www.adc.com/",
-    type: "others",
-    description: "xxx",
+    type: "diamond",
+    description: "",
   },
   {
     name: "ARCTICERN",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "ARCTICTERN.png",
     link: "https://www.ARCTICTERN.com/",
     type: "others",
-    description: "xxx",
-
+    description: "",
   },
   {
     name: "Apraava Energy",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "Apraava Energy.png",
     link: "https://www.apraava.com//",
     type: "others",
-    description: "xxx",
-
+    description: "",
   },
   {
     name: "LAPP Kabel",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "LAPP Kabel.png",
     link: "https://www.lapp.com/en/fr/",
     type: "others",
-    description: "xxx",
-
+    description: "",
   },
   {
     name: "Log9",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "Log9.png",
     link: "https://www.log9materials.com/",
     type: "others",
-    description: "xxx",
-
+    description: "",
   },
   {
     name: "Rexroth",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "Rexroth.jpg",
     link: "https://www.boschrexroth.com/en/dc/",
     type: "others",
-    description: "xxx",
-
+    description: "",
   },
   {
     name: "Synaptics",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "Synaptics.png",
     link: "https://www.synaptics.com//",
     type: "others",
-    description: "xxx",
-
+    description: "",
   },
   {
     name: "Vena Energy",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
     logo: "Vena Energy.png",
     link: "https://www.venaenergy.com/",
     type: "others",
-    description: "xxx",
-
-  }
+    description: "",
+  },
   // Add more sponsors as needed
 ];
 
@@ -96,13 +82,10 @@ const Sponsorship: React.FC = () => {
     silver: [],
     others: [],
   };
-  
 
   SponsorsData.forEach((sponsor) => {
     groupedSponsors[sponsor.type].push(sponsor);
   });
-
-  
 
   const sponsorGroups = Object.entries(groupedSponsors).map(
     ([type, sponsors]) => {
@@ -114,7 +97,7 @@ const Sponsorship: React.FC = () => {
         <div
           key={item.name}
           className="mb-4 rounded-lg bg-white p-4 shadow-lg"
-          style={{ border: "2px solid black" }} // Add this line to add the border
+          style={{ border: "2px solid black" }}
         >
           <div className="flex items-center">
             <div className="mr-4">
@@ -136,9 +119,9 @@ const Sponsorship: React.FC = () => {
 
       return (
         <div key={type} className="mb-8">
-          <Text className="text-xl font-bold text-indigo-600">
+          <h1 className="bg-gradient-to-r from-red-500 to-red-800 bg-clip-text text-3xl font-extrabold text-transparent">
             {type.charAt(0).toUpperCase() + type.slice(1)}
-          </Text>
+          </h1>
           <SimpleGrid cols={3} spacing={6} mt={4}>
             {items}
           </SimpleGrid>
@@ -147,12 +130,10 @@ const Sponsorship: React.FC = () => {
     }
   );
 
-
-
   return (
     <div className="bg-gray-100 p-4">
       <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-        <h2 className="mb-8 text-center text-3xl font-extrabold sm:text-4xl">
+        <h2 className="mb-8 bg-gradient-to-b from-gray-900 via-purple-900 to-violet-600 bg-clip-text text-center text-3xl font-extrabold text-transparent sm:text-4xl">
           Sponsors
         </h2>
         {sponsorGroups}
