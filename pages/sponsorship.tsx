@@ -11,34 +11,20 @@ type Sponsor = {
   type: SponsorType;
 };
 
+// all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
 const SponsorsData: Sponsor[] = [
   {
-    name: "ADC",
-    // all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
-    logo: "ADC.jpg",
-    link: "https://www.adc.com/",
+    name: "Synaptics",
+    logo: "Synaptics.png",
+    link: "https://www.synaptics.com//",
     type: "diamond",
-    description: "",
-  },
-  {
-    name: "ARCTICERN",
-    logo: "ARCTICTERN.png",
-    link: "https://www.ARCTICTERN.com/",
-    type: "others",
-    description: "",
-  },
-  {
-    name: "Apraava Energy",
-    logo: "Apraava Energy.png",
-    link: "https://www.apraava.com//",
-    type: "others",
     description: "",
   },
   {
     name: "LAPP Kabel",
     logo: "LAPP Kabel.png",
     link: "https://www.lapp.com/en/fr/",
-    type: "others",
+    type: "gold",
     description: "",
   },
   {
@@ -49,26 +35,103 @@ const SponsorsData: Sponsor[] = [
     description: "",
   },
   {
-    name: "Rexroth",
-    logo: "Rexroth.jpg",
-    link: "https://www.boschrexroth.com/en/dc/",
+    name: "Essen Electrical Enterprise",
+    logo: "essen.png",
+    link: "https://www.essenelectric.com/",
+    type: "silver",
+    description: "",
+  },
+  {
+    name: "Torrent Power Limited",
+    logo: "torrent.png",
+    link: "https://www.torrentpower.com/",
+    type: "silver",
+    description: "",
+  },
+  {
+    name: "Apraava Energy Private Ltd",
+    logo: "Apraava Energy.png",
+    link: "https://www.apraava.com//",
     type: "others",
     description: "",
   },
   {
-    name: "Synaptics",
-    logo: "Synaptics.png",
-    link: "https://www.synaptics.com//",
-    type: "others",
-    description: "",
-  },
-  {
-    name: "Vena Energy",
+    name: "Vena Energy Infrastructures Service Private Ltd",
     logo: "Vena Energy.png",
     link: "https://www.venaenergy.com/",
     type: "others",
     description: "",
   },
+  {
+    name: "MSPL Limited",
+    logo: "mspl.png",
+    link: "https://baldota.co.in/mspl-limited",
+    type: "others",
+    description: "",
+  },
+  {
+    name: "Enerfra Solutions",
+    logo: "enerfra.png",
+    link: "https://www.enerfra.com/",
+    type: "diamond",
+    description: "",
+  },
+  {
+    name: "Anandi Developers and Constructors",
+    logo: "ADC.jpg",
+    link: "https://www.adc.com/",
+    type: "others",
+    description: "",
+  },
+  {
+    name: "Bosch Rexroth (India) Private Limited",
+    logo: "rexroth.png",
+    link: "https://www.ARCTICTERN.com/",
+    type: "others",
+    description: "",
+  },
+  // {
+  //   name: "Book Paradise",
+  //   logo: "",
+  //   link: "https://booksparadise.in/",
+  //   type: "others",
+  //   description: "",
+  // },
+  {
+    name: "Arctictern",
+    logo: "ARCTICTERN.png",
+    link: "https://www.ARCTICTERN.com/",
+    type: "others",
+    description: "",
+  },
+  // {
+  //   name: "Dept. of TE (RVCE)",
+  //   logo: "",
+  //   link: "https://rvce.edu.in/tc-menu",
+  //   type: "others",
+  //   description: "",
+  // },
+  {
+    name: "Orbit Techsol India Private Ltd",
+    logo: "orbit.png",
+    link: "https://www.orbitindia.net/",
+    type: "others",
+    description: "",
+  },
+  // {
+  //   name: "Advance Controls",
+  //   logo: "",
+  //   link: "",
+  //   type: "others",
+  //   description: "",
+  // },
+  // {
+  //   name: "Vijayavani Paper News Coverage",
+  //   logo: "",
+  //   link: "",
+  //   type: "others",
+  //   description: "",
+  // },
   // Add more sponsors as needed
 ];
 
