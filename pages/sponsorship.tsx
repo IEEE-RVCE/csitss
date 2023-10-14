@@ -159,22 +159,17 @@ const Sponsorship: React.FC = () => {
       const items = sponsors.map((item) => (
         <div
           key={item.name}
-          className="mb-4 rounded-lg bg-white p-4 shadow-lg"
-          style={{ border: "2px solid black" }}
+          className="mb-4 rounded-md bg-white p-4  shadow-lg"
         >
-          <div className="flex items-center">
-            <div className="mr-4">
-              <ThemeIcon variant="light" size={100} radius="md">
-                <Image src={`/sponsors/${item.logo}`} alt={item.name} />
-              </ThemeIcon>
-            </div>
-            <div style={{ flex: 1 }}>
-              <div>
-                <Text size="lg" className="font-bold text-blue-500">
-                  {item.name}
-                </Text>
-                <Text className="text-gray-700">{item.description ?? ""}</Text>
-              </div>
+          <div className="flex-row">
+            <ThemeIcon variant="light" size={100} radius="md">
+              <Image src={`/sponsors/${item.logo}`} alt={item.name} />
+            </ThemeIcon>
+            <div>
+              <Text size="md" className="font-bold text-blue-500">
+                {item.name}
+              </Text>
+              <Text className="text-gray-700">{item.description ?? ""}</Text>
             </div>
           </div>
         </div>
@@ -182,10 +177,22 @@ const Sponsorship: React.FC = () => {
 
       return (
         <div key={type} className="mb-8">
-          <h1 className="bg-gradient-to-r from-red-500 to-red-800 bg-clip-text text-3xl font-extrabold text-transparent">
-            {type.charAt(0).toUpperCase() + type.slice(1)}
-          </h1>
-          <SimpleGrid cols={3} spacing={6} mt={4}>
+          <div className="flex items-center">
+            <h1 className="mr-4 bg-gradient-to-r from-red-500 to-red-800 bg-clip-text text-3xl font-extrabold text-transparent">
+              {type.charAt(0).toUpperCase() + type.slice(1)}
+            </h1>
+            <hr className="h-1 flex-1 bg-gradient-to-r from-red-500 to-red-800" />
+          </div>
+          <SimpleGrid
+            cols={6}
+            spacing="xl"
+            mt={4}
+            breakpoints={[
+              { maxWidth: 980, cols: 3, spacing: "md" },
+              { maxWidth: 755, cols: 2, spacing: "sm" },
+              { maxWidth: 600, cols: 1, spacing: "sm" },
+            ]}
+          >
             {items}
           </SimpleGrid>
         </div>
@@ -196,9 +203,7 @@ const Sponsorship: React.FC = () => {
   return (
     <div className="bg-gray-100 p-4">
       <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-        <h2 className="mb-8 bg-gradient-to-b from-gray-900 via-purple-900 to-violet-600 bg-clip-text text-center text-3xl font-extrabold text-transparent sm:text-4xl">
-          Sponsors
-        </h2>
+        <p className="text-center text-3xl font-bold sm:text-5xl">Sponsors </p>
         {sponsorGroups}
       </section>
     </div>
