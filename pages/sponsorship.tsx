@@ -159,29 +159,63 @@ const Sponsorship: React.FC = () => {
       const items = sponsors.map((item) => (
         <div
           key={item.name}
-          className="mb-4 rounded-md bg-white p-4  shadow-lg"
+          style={{
+            marginBottom: "1rem",
+            padding: "1rem",
+            borderRadius: "0.5rem",
+            backgroundColor: "white",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "transform 0.2s",
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
+            alignItems: "center", // Center align content vertically
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "translateY(-4px)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "translateY(0)";
+          }}
         >
-          <div className="flex-row">
-            <ThemeIcon variant="light" size={100} radius="md">
-              <Image src={`/sponsors/${item.logo}`} alt={item.name} />
-            </ThemeIcon>
-            <div>
-              <Text size="md" className="font-bold text-blue-500">
-                {item.name}
-              </Text>
-              <Text className="text-gray-700">{item.description ?? ""}</Text>
-            </div>
+          <ThemeIcon variant="light" size={100} radius="md" style={{ background: "transparent" }}>
+            <Image src={`/sponsors/${item.logo}`} alt={item.name} style={{ background: "transparent" }} />
+          </ThemeIcon>
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <Text size="md" className="font-bold text-blue-500" style={{ textAlign: "center" }}>
+              {item.name}
+            </Text>
+            <Text className="text-gray-700" style={{ flex: 1, textAlign: "center" }}>
+              {item.description ?? ""}
+            </Text>
           </div>
         </div>
       ));
+      
 
       return (
-        <div key={type} className="mb-8">
-          <div className="flex items-center">
-            <h1 className="mr-4 bg-gradient-to-r from-red-500 to-red-800 bg-clip-text text-3xl font-extrabold text-transparent">
+        <div key={type} style={{ marginBottom: "2rem" }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <h1
+              style={{
+                marginRight: "1rem",
+                background: "linear-gradient(to right, #ff0000, #800000)",
+                WebkitBackgroundClip: "text",
+                fontSize: "3rem",
+                fontWeight: "bold",
+                color: "transparent",
+              }}
+            >
               {type.charAt(0).toUpperCase() + type.slice(1)}
             </h1>
-            <hr className="h-1 flex-1 bg-gradient-to-r from-red-500 to-red-800" />
+            <hr
+              style={{
+                background: "linear-gradient(to right, red, transparent)",
+                height: "3px",
+                width: "100%",
+                marginRight: "1rem",
+              }}
+            />
           </div>
           <SimpleGrid
             cols={6}
@@ -201,9 +235,24 @@ const Sponsorship: React.FC = () => {
   );
 
   return (
-    <div className="bg-gray-100 p-4">
-      <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-        <p className="text-center text-3xl font-bold sm:text-5xl">Sponsors </p>
+    <div style={{ backgroundColor: "#f0f0f0", padding: "1rem" }}>
+      <section
+        style={{
+          margin: "auto",
+          maxWidth: "75rem",
+          padding: "1rem",
+        }}
+      >
+        
+        <p
+          style={{
+            textAlign: "center",
+            fontSize: "3rem",
+            fontWeight: "bold",
+          }}
+        >
+          Sponsors
+        </p>
         {sponsorGroups}
       </section>
     </div>
