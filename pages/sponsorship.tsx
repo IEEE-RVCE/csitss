@@ -178,20 +178,43 @@ const Sponsorship: React.FC = () => {
             e.currentTarget.style.transform = "translateY(0)";
           }}
         >
-          <ThemeIcon variant="light" size={100} radius="md" style={{ background: "transparent" }}>
-            <Image src={`/sponsors/${item.logo}`} alt={item.name} style={{ background: "transparent" }} />
+          <ThemeIcon
+            variant="light"
+            size={200}
+            radius="md"
+            style={{ background: "transparent" }}
+          >
+            <Image
+              src={`/sponsors/${item.logo}`}
+              alt={item.name}
+              style={{ background: "transparent" }}
+            />
           </ThemeIcon>
-          <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <Text size="md" className="font-bold text-blue-500" style={{ textAlign: "center" }}>
+          <div
+            style={{
+              flex: 1,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <br />
+            <Text
+              size="md"
+              className="font-bold text-blue-500"
+              style={{ textAlign: "center" }}
+            >
               {item.name}
             </Text>
-            <Text className="text-gray-700" style={{ flex: 1, textAlign: "center" }}>
+            {/* <Text
+              className="text-gray-700"
+              style={{ flex: 1, textAlign: "center" }}
+            >
               {item.description ?? ""}
-            </Text>
+            </Text> */}
           </div>
         </div>
       ));
-      
 
       return (
         <div key={type} style={{ marginBottom: "2rem" }}>
@@ -222,7 +245,7 @@ const Sponsorship: React.FC = () => {
             spacing="xl"
             mt={4}
             breakpoints={[
-              { maxWidth: 980, cols: 3, spacing: "md" },
+              { maxWidth: 1280, cols: 3, spacing: "md" },
               { maxWidth: 755, cols: 2, spacing: "sm" },
               { maxWidth: 600, cols: 1, spacing: "sm" },
             ]}
@@ -243,7 +266,6 @@ const Sponsorship: React.FC = () => {
           padding: "1rem",
         }}
       >
-        
         <p
           style={{
             textAlign: "center",
