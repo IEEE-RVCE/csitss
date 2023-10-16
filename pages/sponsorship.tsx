@@ -160,7 +160,7 @@ const Sponsorship: React.FC = () => {
         <div
           key={item.name}
           style={{
-            marginBottom: "1rem",
+            // marginBottom: "1rem",
             padding: "1rem",
             borderRadius: "0.5rem",
             backgroundColor: "white",
