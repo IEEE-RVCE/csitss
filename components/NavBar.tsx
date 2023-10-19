@@ -30,6 +30,13 @@ const Links: Array<{
       label: "Registration",
     },
     {
+      href: "./PDF PROGRAMPLAN.pdf",
+      label: "Program Schedule",
+    }, {
+      href: "./PDF TUTORIALS & TRACK.pdf",
+      label: "Tutorial Schedule",
+    },
+    {
       href: "/sponsorship",
       label: "Sponsors",
     },
@@ -118,11 +125,12 @@ const NavBar = () => {
         </div>
         <Marquee>
           <div className="content">
-            <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
-            Submission of Camera-ready Manuscript and Copyright Form: 9th
-            October 2023{" "}
-            <span className="ml-20 text-red-800">Deadline extended.</span> Last
-            Date for Registration: 12th October 2023{" "}
+                <a href="./PDF PROGRAMPLAN.pdf">
+            <span className="ml-20 text-red-800">Program Schedule</span>{" "}Schedule Released--Download Here{" "}
+            </a>
+            <a href="./PDF TUTORIALS & TRACK.pdf">
+            <span className="ml-20 text-red-800">Tutorial Schedule</span> {" "}Schedule Released--Download Here{" "}
+            </a>
           </div>
         </Marquee>
         <br />
