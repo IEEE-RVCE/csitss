@@ -9,51 +9,56 @@ const Links: Array<{
   label: string;
   newTab?: boolean;
 }> = [
-    {
-      href: "/",
-      label: "Home",
-    },
-    {
-      href: "/about",
-      label: "About",
-    },
-    {
-      href: "/committee",
-      label: "Committee",
-    },
-    {
-      href: "/tech",
-      label: "Technical Program",
-    },
-    {
-      href: "/registration",
-      label: "Registration",
-    },
-    {
-      href: "./PDF PROGRAMPLAN.pdf",
-      label: "Program Schedule",
-    }, {
-      href: "./PDF TUTORIALS & TRACK.pdf",
-      label: "Tutorial Schedule",
-    },
-    {
-      href: "/sponsorship",
-      label: "Sponsors",
-    },
-    {
-      href: "/contact",
-      label: "Contact Us",
-    },
-    // {
-    //   href: "https://rzp.io/l/3N4bwhvH",
-    //   label: "Quick Payment Link",
-    //   newTab: true,
-    // },
-    // {
-    //   href: "/pgmschedule",
-    //   label: "Program Schedule",
-    // },
-  ];
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/about",
+    label: "About",
+  },
+  {
+    href: "/committee",
+    label: "Committee",
+  },
+  {
+    href: "/tech",
+    label: "Technical Program",
+  },
+  {
+    href: "/registration",
+    label: "Registration",
+  },
+  {
+    href: "./PDF PROGRAMPLAN.pdf",
+    label: "Program Schedule",
+  },
+  {
+    href: "./PDF TUTORIALS & TRACK.pdf",
+    label: "Tutorial Schedule",
+  },
+  {
+    href: "./Invitation Letter.pdf",
+    label: "Inaugural Invitation & Schedule",
+  },
+  {
+    href: "/sponsorship",
+    label: "Sponsors",
+  },
+  {
+    href: "/contact",
+    label: "Contact Us",
+  },
+  // {
+  //   href: "https://rzp.io/l/3N4bwhvH",
+  //   label: "Quick Payment Link",
+  //   newTab: true,
+  // },
+  // {
+  //   href: "/pgmschedule",
+  //   label: "Program Schedule",
+  // },
+];
 
 const NavBar = () => {
   return (
@@ -72,11 +77,11 @@ const NavBar = () => {
             </Link>
           </div>
 
-          <nav className="text-m hidden space-x-8  font-medium md:flex">
+          <nav className="text-m hidden space-x-4  font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={JSON.stringify(link)}>
                 <a
-                  className="font-sans text-lg text-gray-500 hover:border-b-2 hover:text-blue-700 "
+                  className="font-sans text-gray-500 hover:border-b-2 hover:text-blue-700 "
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
                 >
@@ -125,11 +130,17 @@ const NavBar = () => {
         </div>
         <Marquee>
           <div className="content">
-                <a href="./PDF PROGRAMPLAN.pdf">
-            <span className="ml-20 text-red-800">Program Schedule</span>{" "}Schedule Released--Download Here{" "}
+            <a href="./PDF PROGRAMPLAN.pdf">
+              <span className="ml-20 text-red-800">Program Schedule</span>{" "}
+              Released--Download Here{" "}
             </a>
             <a href="./PDF TUTORIALS & TRACK.pdf">
-            <span className="ml-20 text-red-800">Tutorial Schedule</span> {" "}Schedule Released--Download Here{" "}
+              <span className="ml-20 text-red-800">Tutorial Schedule</span>{" "}
+              Released--Download Here{" "}
+            </a>
+            <a href="./Invitation Letter.pdf">
+              <span className="ml-20 text-red-800"></span>{" "}
+              Inauguration Invitation and Schedule{" "}
             </a>
           </div>
         </Marquee>
