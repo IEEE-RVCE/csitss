@@ -160,62 +160,67 @@ const Sponsorship: React.FC = () => {
         <div
           key={item.name}
           style={{
-            marginBottom: "1rem",
-            padding: "1rem",
-            borderRadius: "0.5rem",
-            backgroundColor: "white",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-            transition: "transform 0.2s",
-            display: "flex",
-            flexDirection: "column",
-            height: "100%",
-            alignItems: "center", // Center align content vertically
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = "translateY(-4px)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = "translateY(0)";
+            width: "250px", // Set a fixed width for the cards
+            margin: "0 1rem", // Add some margin between cards if needed
+            marginTop: type === "others" ? "1rem" : 0, // Add top margin for "others" section
           }}
         >
-          <ThemeIcon
-            variant="light"
-            size={200}
-            radius="md"
-            style={{ background: "transparent" }}
-          >
-            <Image
-              src={`/sponsors/${item.logo}`}
-              alt={item.name}
-              style={{ background: "transparent" }}
-            />
-          </ThemeIcon>
           <div
             style={{
-              flex: 1,
+              padding: "1rem",
+              borderRadius: "0.5rem",
+              backgroundColor: "white",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              transition: "transform 0.2s",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              justifyContent: "center",
+              border: "2.5px solid #ccc",
+              height: "300px", // Set a fixed height for the cards
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-4px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
             }}
           >
-            <br />
-            <Text
-              size="md"
-              className="font-bold text-blue-500"
-              style={{ textAlign: "center" }}
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: "transparent" }}
             >
-              {item.name}
-            </Text>
-            {/* <Text
-              className="text-gray-700"
-              style={{ flex: 1, textAlign: "center" }}
+              <Image
+                src={`/sponsors/${item.logo}`}
+                alt={item.name}
+                style={{ background: "transparent", maxWidth: "100%" }}
+              />
+            </ThemeIcon>
+            <div
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center", // Center both horizontally and vertically
+              }}
             >
-              {item.description ?? ""}
-            </Text> */}
+              <br />
+              <Text
+                size="md"
+                className="font-bold text-blue-500"
+                style={{ textAlign: "center" }}
+              >
+                {item.name}
+              </Text>
+            </div>
           </div>
         </div>
       ));
-
+      
+  
       return (
         <div key={type} style={{ marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center" }}>
@@ -227,6 +232,7 @@ const Sponsorship: React.FC = () => {
                 fontSize: "3rem",
                 fontWeight: "bold",
                 color: "transparent",
+                alignContent: "center",
               }}
             >
               {type.charAt(0).toUpperCase() + type.slice(1)}
@@ -240,37 +246,54 @@ const Sponsorship: React.FC = () => {
               }}
             />
           </div>
-          <SimpleGrid
-            cols={6}
-            spacing="xl"
-            mt={4}
-            breakpoints={[
-              { maxWidth: 1280, cols: 3, spacing: "md" },
-              { maxWidth: 755, cols: 2, spacing: "sm" },
-              { maxWidth: 600, cols: 1, spacing: "sm" },
-            ]}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center", // Center horizontally
+            }}
           >
             {items}
-          </SimpleGrid>
+          </div>
         </div>
       );
     }
   );
 
   return (
-    <div style={{ backgroundColor: "#f0f0f0", padding: "1rem" }}>
+    <div style={{ backgroundColor: "white", padding: "1rem" }}>
       <section
         style={{
           margin: "auto",
           maxWidth: "75rem",
           padding: "1rem",
+          position: "relative",
         }}
       >
+        <div
+          style={{
+            position: "relative", // Position it relative to the section
+            width: "100%", // Take up the full width
+            background: `url(https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-web-template-business-report-with-smooth-circle-gradient-color_1258-54733.jpg)`,
+            height:"90px",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            
+          }}
+        ></div>
+        
+        
+        
         <p
           style={{
-            textAlign: "center",
+            position: "absolute", // Position it absolutely within the container
+            top: "2.7%", // Vertically center
+            left: "50%", // Horizontally center
+            transform: "translate(-50%, -50%)", // Center both horizontally and vertically
             fontSize: "3rem",
             fontWeight: "bold",
+            color: "black", // Text color
+            margin: 0, // Remove default margin
           }}
         >
           Sponsors
