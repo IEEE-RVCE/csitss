@@ -9,44 +9,56 @@ const Links: Array<{
   label: string;
   newTab?: boolean;
 }> = [
-    {
-      href: "/",
-      label: "Home",
-    },
-    {
-      href: "/about",
-      label: "About",
-    },
-    {
-      href: "/committee",
-      label: "Committee",
-    },
-    {
-      href: "/tech",
-      label: "Technical Program",
-    },
-    {
-      href: "/registration",
-      label: "Registration",
-    },
-    {
-      href: "/sponsorship",
-      label: "Sponsors",
-    },
-    {
-      href: "/contact",
-      label: "Contact Us",
-    },
-    // {
-    //   href: "https://rzp.io/l/3N4bwhvH",
-    //   label: "Quick Payment Link",
-    //   newTab: true,
-    // },
-    // {
-    //   href: "/pgmschedule",
-    //   label: "Program Schedule",
-    // },
-  ];
+  {
+    href: "/",
+    label: "Home",
+  },
+  {
+    href: "/about",
+    label: "About",
+  },
+  {
+    href: "/committee",
+    label: "Committee",
+  },
+  {
+    href: "/tech",
+    label: "Technical Program",
+  },
+  {
+    href: "/registration",
+    label: "Registration",
+  },
+  // {
+  //   href: "./PDF PROGRAMPLAN.pdf",
+  //   label: "Program Schedule",
+  // },
+  // {
+  //   href: "./PDF TUTORIALS & TRACK.pdf",
+  //   label: "Tutorial Schedule",
+  // },
+  // {
+  //   href: "./Invitation Letter.pdf",
+  //   label: "Inaugural Invitation & Schedule",
+  // },
+  {
+    href: "/sponsorship",
+    label: "Sponsors",
+  },
+  {
+    href: "/contact",
+    label: "Contact Us",
+  },
+  // {
+  //   href: "https://rzp.io/l/3N4bwhvH",
+  //   label: "Quick Payment Link",
+  //   newTab: true,
+  // },
+  // {
+  //   href: "/pgmschedule",
+  //   label: "Program Schedule",
+  // },
+];
 
 const NavBar = () => {
   return (
@@ -118,11 +130,18 @@ const NavBar = () => {
         </div>
         <Marquee>
           <div className="content">
-            <span className="ml-20 text-red-800">Deadline extended.</span>{" "}
-            Submission of Camera-ready Manuscript and Copyright Form: 9th
-            October 2023{" "}
-            <span className="ml-20 text-red-800">Deadline extended.</span> Last
-            Date for Registration: 12th October 2023{" "}
+            <a href="./PDF PROGRAMPLAN.pdf">
+              <span className="ml-20 text-red-800">Program Schedule</span>{" "}
+              Released--Download Here{" "}
+            </a>
+            <a href="./PDF TUTORIALS & TRACK.pdf">
+              <span className="ml-20 text-red-800">Tutorial Schedule</span>{" "}
+              Released--Download Here{" "}
+            </a>
+            <a href="./Invitation Letter.pdf">
+              <span className="ml-20 text-red-800"></span> Inauguration
+              Invitation and Schedule{" "}
+            </a>
           </div>
         </Marquee>
         <br />
