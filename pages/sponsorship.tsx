@@ -21,7 +21,7 @@ const SponsorsData: Sponsor[] = [
     description: "",
   },
   {
-    name: "LAPP Kabel",
+    name: "LAPP Kabel", 
     logo: "LAPP Kabel.png",
     link: "https://www.lapp.com/en/fr/",
     type: "gold",
@@ -274,30 +274,39 @@ const Sponsorship: React.FC = () => {
           style={{
             position: "relative", // Position it relative to the section
             width: "100%", // Take up the full width
+            display:"flex",
+            justifyContent:"center",
+            flexWrap:"wrap",
             background: `url(https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-web-template-business-report-with-smooth-circle-gradient-color_1258-54733.jpg)`,
-            height:"90px",
+            // background: "linear-gradient(to right, #ff0000, #800000)",
+            minHeight:"90px",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
+            padding:"10px"
             
           }}
-        ></div>
-        
-        
-        
-        <p
+        >
+          <p
           style={{
-            position: "absolute", // Position it absolutely within the container
-            top: "2.7%", // Vertically center
-            left: "50%", // Horizontally center
-            transform: "translate(-50%, -50%)", // Center both horizontally and vertically
+            // position: "a", // Position it absolutely within the container
+            // top: "2.7%", // Vertically center
+            // left: "50%", // Horizontally center
+            // transform: "translate(-50%, -50%)", // Center both horizontally and vertically
+           
+            alignItems:"center",
             fontSize: "3rem",
             fontWeight: "bold",
-            color: "black", // Text color
+            color: "white", // Text color
             margin: 0, // Remove default margin
           }}
         >
-          Sponsors
+          Special Thanks To Our Sponsors
         </p>
+        </div>
+        
+        
+        
+        
         {sponsorGroups}
       </section>
     </div>
