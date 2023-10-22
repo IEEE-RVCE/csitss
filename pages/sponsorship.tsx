@@ -56,7 +56,7 @@ const SponsorsData: Sponsor[] = [
   },
   {
     name: "MSPL Limited",
-    logo: "mspl.png",
+    logo: "mspl.jpeg",
     link: "https://baldota.co.in/mspl-limited",
     type: "in association with",
     description: "",
@@ -188,67 +188,69 @@ const Sponsorship: React.FC = () => {
       }
 
       const items = sponsors.map((item) => (
-        <div
-          key={item.name}
-          style={{
-            width: "250px", // Set a fixed width for the cards
-            margin: "0rem 1rem 1rem 0rem", // Add some margin between cards if needed
-            marginTop: type === "others" ? "1rem" : 0, // Add top margin for "others" section
-          }}
-        >
+        <a href={item.link} target="_blank">
           <div
+            key={item.name}
             style={{
-              padding: "1rem",
-              borderRadius: "0.5rem",
-              backgroundColor: "white",
-              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-              transition: "transform 0.2s",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "2.5px solid #ccc",
-              height: "300px", // Set a fixed heigh for the cards
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-4px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
+              width: "250px", // Set a fixed width for the cards
+              margin: "0rem 1rem 1rem 0rem", // Add some margin between cards if needed
+              marginTop: type === "others" ? "1rem" : 0, // Add top margin for "others" section
             }}
           >
-            <ThemeIcon
-              variant="light"
-              size={200}
-              radius="md"
-              style={{ background: "transparent" }}
-            >
-              <Image
-                src={`/sponsors/${item.logo}`}
-                alt={item.name}
-                style={{ background: "transparent", maxWidth: "100%" }}
-              />
-            </ThemeIcon>
             <div
               style={{
-                flex: 1,
+                padding: "1rem",
+                borderRadius: "0.5rem",
+                backgroundColor: "white",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                transition: "transform 0.2s",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "center", // Center both horizontally and vertically
+                justifyContent: "center",
+                border: "2.5px solid #ccc",
+                height: "300px", // Set a fixed heigh for the cards
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-4px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              {/* <br /> */}
-              <Text
-                size="md"
-                className="font-bold text-blue-500"
-                style={{ textAlign: "center" }}
+              <ThemeIcon
+                variant="light"
+                size={200}
+                radius="md"
+                style={{ background: "transparent" }}
               >
-                {item.name}
-              </Text>
+                <Image
+                  src={`/sponsors/${item.logo}`}
+                  alt={item.name}
+                  style={{ background: "transparent", maxWidth: "100%" }}
+                />
+              </ThemeIcon>
+              <div
+                style={{
+                  flex: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center", // Center both horizontally and vertically
+                }}
+              >
+                {/* <br /> */}
+                <Text
+                  size="md"
+                  className="font-bold text-blue-500"
+                  style={{ textAlign: "center" }}
+                >
+                  {item.name}
+                </Text>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       ));
 
       return (
