@@ -30,18 +30,6 @@ const Links: Array<{
     label: "Registration",
   },
   {
-    href: "./PDF PROGRAMPLAN.pdf",
-    label: "Program Schedule",
-  },
-  {
-    href: "./PDF TUTORIALS & TRACK.pdf",
-    label: "Tutorial Schedule",
-  },
-  {
-    href: "./Invitation Letter.pdf",
-    label: "Inaugural Invitation & Schedule",
-  },
-  {
     href: "/sponsorship",
     label: "Sponsors",
   },
@@ -58,6 +46,21 @@ const Links: Array<{
   //   href: "/pgmschedule",
   //   label: "Program Schedule",
   // },
+];
+
+const downloadLinks = [
+  {
+    href: "./PDF PROGRAMPLAN.pdf",
+    label: "Program Schedule",
+  },
+  {
+    href: "./PDF TUTORIALS & TRACK.pdf",
+    label: "Tutorial Schedule",
+  },
+  {
+    href: "./Invitation Letter.pdf",
+    label: "Inaugural Invitation & Schedule",
+  },
 ];
 
 const NavBar = () => {
@@ -90,6 +93,48 @@ const NavBar = () => {
               </Link>
             ))}
           </nav>
+          <div className="hidden items-center justify-end space-x-8 md:flex-1 lg:flex lg:w-0">
+            <Menu
+              control={
+                <button
+                  className="rounded-lg bg-gray-100 p-2 text-gray-600"
+                  type="button"
+                  name="Mobile Navigation Menu"
+                >
+                  {" "}
+                  <svg
+                    aria-hidden="true"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </button>
+              }
+            >
+              <Menu.Label>
+                <p className="font-sans text-blue-400 underline">
+                  Download Links
+                </p>
+              </Menu.Label>
+
+              {downloadLinks.map((link) => (
+                <Menu.Item>
+                  <Link href={link.href}>
+                    <a className="font-sans text-gray-500">{link.label}</a>
+                  </Link>
+                </Menu.Item>
+              ))}
+            </Menu>
+          </div>
           <div className="lg:hidden">
             <Menu
               control={
@@ -125,6 +170,18 @@ const NavBar = () => {
                   </Link>
                 </Menu.Item>
               ))}
+              <Menu.Label>
+                <p className="font-sans text-blue-400 underline">
+                  Download Links
+                </p>
+              </Menu.Label>
+              {downloadLinks.map((link) => (
+                <Menu.Item>
+                  <Link href={link.href}>
+                    <a className="font-sans text-gray-500">{link.label}</a>
+                  </Link>
+                </Menu.Item>
+              ))}
             </Menu>
           </div>
         </div>
@@ -139,8 +196,8 @@ const NavBar = () => {
               Released--Download Here{" "}
             </a>
             <a href="./Invitation Letter.pdf">
-              <span className="ml-20 text-red-800"></span>{" "}
-              Inauguration Invitation and Schedule{" "}
+              <span className="ml-20 text-red-800"></span> Inauguration
+              Invitation and Schedule{" "}
             </a>
           </div>
         </Marquee>
