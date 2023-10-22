@@ -29,18 +29,6 @@ const Links: Array<{
     href: "/registration",
     label: "Registration",
   },
-  // {
-  //   href: "./PDF PROGRAMPLAN.pdf",
-  //   label: "Program Schedule",
-  // },
-  // {
-  //   href: "./PDF TUTORIALS & TRACK.pdf",
-  //   label: "Tutorial Schedule",
-  // },
-  // {
-  //   href: "./Invitation Letter.pdf",
-  //   label: "Inaugural Invitation & Schedule",
-  // },
   {
     href: "/sponsorship",
     label: "Sponsors",
@@ -60,6 +48,21 @@ const Links: Array<{
   // },
 ];
 
+const downloadLinks = [
+  {
+    href: "./PDF PROGRAMPLAN.pdf",
+    label: "Program Schedule",
+  },
+  {
+    href: "./PDF TUTORIALS & TRACK.pdf",
+    label: "Tutorial Schedule",
+  },
+  {
+    href: "./Invitation Letter.pdf",
+    label: "Inaugural Invitation & Schedule",
+  },
+];
+
 const NavBar = () => {
   return (
     <header>
@@ -77,11 +80,11 @@ const NavBar = () => {
             </Link>
           </div>
 
-          <nav className="text-m hidden space-x-8  font-medium md:flex">
+          <nav className="text-m hidden space-x-4  font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={JSON.stringify(link)}>
                 <a
-                  className="font-sans text-lg text-gray-500 hover:border-b-2 hover:text-blue-700 "
+                  className="font-sans text-gray-500 hover:border-b-2 hover:text-blue-700 "
                   href={link.href}
                   target={link.newTab ? "_blank" : "_self"}
                 >
@@ -90,6 +93,48 @@ const NavBar = () => {
               </Link>
             ))}
           </nav>
+          <div className="hidden items-center justify-end space-x-8 md:flex-1 lg:flex lg:w-0">
+            <Menu
+              control={
+                <button
+                  className="rounded-lg bg-gray-100 p-2 text-gray-600"
+                  type="button"
+                  name="Mobile Navigation Menu"
+                >
+                  {" "}
+                  <svg
+                    aria-hidden="true"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </button>
+              }
+            >
+              <Menu.Label>
+                <p className="font-sans text-blue-400 underline">
+                  Download Links
+                </p>
+              </Menu.Label>
+
+              {downloadLinks.map((link) => (
+                <Menu.Item>
+                  <Link href={link.href}>
+                    <a className="font-sans text-gray-500">{link.label}</a>
+                  </Link>
+                </Menu.Item>
+              ))}
+            </Menu>
+          </div>
           <div className="lg:hidden">
             <Menu
               control={
@@ -119,6 +164,18 @@ const NavBar = () => {
             >
               <Menu.Label> </Menu.Label>
               {Links.map((link) => (
+                <Menu.Item>
+                  <Link href={link.href}>
+                    <a className="font-sans text-gray-500">{link.label}</a>
+                  </Link>
+                </Menu.Item>
+              ))}
+              <Menu.Label>
+                <p className="font-sans text-blue-400 underline">
+                  Download Links
+                </p>
+              </Menu.Label>
+              {downloadLinks.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
                     <a className="font-sans text-gray-500">{link.label}</a>

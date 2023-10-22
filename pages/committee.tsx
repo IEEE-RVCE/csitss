@@ -92,7 +92,8 @@ const committeeMembers: Mem[] = [
       {
         name: "Dr. Chandra Shekhar Atla",
         post: "Chair, PES IEEE Bangalore Section",
-        // imgLink:
+        imgLink:
+          "https://i.ibb.co/GJ4JyXg/31dd669b-fa0e-4d1d-8277-1ebf74ab919b.jpg",
         //  "https://www.deakin.edu.au/media/data-sources/profiles-images/web-profile-image?src=1265.jpg",
       },
 
