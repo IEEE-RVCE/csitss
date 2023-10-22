@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, ThemeIcon, SimpleGrid } from "@mantine/core";
+import { Image, Text, ThemeIcon } from "@mantine/core";
 
 type SponsorType =
   | "platinum"
