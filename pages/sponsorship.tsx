@@ -69,15 +69,15 @@ const SponsorsData: Sponsor[] = [
     description: "",
   },
   {
-    name: "Synaptics",
+    name: "Synaptics India Pvt Ltd",
     logo: "Synaptics.png",
     link: "https://www.synaptics.com//",
     type: "diamond",
     description: "",
   },
   {
-    name: "LAPP Kabel",
-    logo: "LAPP Kabel.png",
+    name: "LAPP India Pvt Ltd",
+    logo: "LAPP.png",
     link: "https://www.lapp.com/en/fr/",
     type: "gold",
     description: "",
@@ -90,7 +90,14 @@ const SponsorsData: Sponsor[] = [
     description: "",
   },
   {
-    name: "Log9",
+    name: "Arcadis",
+    logo: "arcadis.png",
+    link: "https://www.arcadis.com",
+    type: "gold",
+    description: "",
+  },
+  {
+    name: "Log 9 Materials Scientific Pvt Ltd",
     logo: "Log9.png",
     link: "https://www.log9materials.com/",
     type: "silver",
@@ -103,7 +110,13 @@ const SponsorsData: Sponsor[] = [
     type: "silver",
     description: "",
   },
-
+  {
+    name: "JVS Electronics Pvt Ltd",
+    logo: "jvs.png",
+    link: "https://www.jvselectronics.in/",
+    type: "others",
+    description: "",
+  },
   {
     name: "Anandi Developers and Constructors",
     logo: "ADC.jpg",
@@ -118,13 +131,6 @@ const SponsorsData: Sponsor[] = [
     type: "others",
     description: "",
   },
-  // {
-  //   name: "Book Paradise",
-  //   logo: "",
-  //   link: "https://booksparadise.in/",
-  //   type: "others",
-  //   description: "",
-  // },
 
   // {
   //   name: "Dept. of TE (RVCE)",
@@ -141,9 +147,23 @@ const SponsorsData: Sponsor[] = [
     description: "",
   },
   {
-    name: "Arctictern",
+    name: "Arctictern Solutions",
     logo: "ARCTICTERN.png",
     link: "https://www.ARCTICTERN.com/",
+    type: "others",
+    description: "",
+  },
+  {
+    name: "Book Paradise",
+    logo: "bookParadise.png",
+    link: "https://booksparadise.in/",
+    type: "others",
+    description: "",
+  },
+  {
+    name: "S K Publishers",
+    logo: "sk.png",
+    link: "#",
     type: "others",
     description: "",
   },
