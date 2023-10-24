@@ -118,7 +118,7 @@ function about() {
                       fontWeight: "bold",
                       color: "transparent",
                       alignContent: "center",
-                      width: "70%",
+                      width: "100%",
                     }}
                   >
                     About RVCE
@@ -179,7 +179,7 @@ function about() {
                 fontWeight: "bold",
                 color: "transparent",
                 alignContent: "center",
-                width: "75%",
+                width: "100%",
               }}
             >
               About The Conference
@@ -236,7 +236,7 @@ function about() {
                   fontWeight: "bold",
                   color: "transparent",
                   alignContent: "center",
-                  width: "75%",
+                  width: "100%",
                 }}
               >
                 Conference Tracks
