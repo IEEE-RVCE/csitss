@@ -132,7 +132,7 @@ export default function Index() {
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
                   The 7<sup>th</sup> International Conference on "Computational Systems and Information
-                  Technology for Sustainable Solutions [CSITSS — 2023]" focuses on bringing together
+                  Technology for Sustainable Solutions [CSITSS — 2024]" focuses on bringing together
                   leading academicians, scientists, researchers, industry representatives, postdoctoral
                   fellows and research scholars around the world to share their knowledge and research
                   expertise in Renewable Energy, Robotics, Computing, Communication, E-mobility, Embedded Systems,
