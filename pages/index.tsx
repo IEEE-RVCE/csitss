@@ -36,11 +36,11 @@ export default function Index() {
             <div className="flex  w-full items-center justify-center ">
               <div className="bg-gray-800 bg-opacity-70 text-center px-9 py-5 rounded-3xl font-extrabold ">
                 <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
-                  WELCOME TO CSITSS-2023
+                  WELCOME TO CSITSS-2024
                 </h1>
                 <p className="text-xl text-white md:text-2xl">
                   <span className="font-semibold ">
-                    7<sup>th</sup> International Conference on Computational
+                    8<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>
                 </p>
@@ -131,20 +131,9 @@ export default function Index() {
                 </h2>
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                  The 7<sup>th</sup> International Conference on "Computational Systems and Information
-                  Technology for Sustainable Solutions [CSITSS — 2024]" focuses on bringing together
-                  leading academicians, scientists, researchers, industry representatives, postdoctoral
-                  fellows and research scholars around the world to share their knowledge and research
-                  expertise in Renewable Energy, Robotics, Computing, Communication, E-mobility, Embedded Systems,
-                  (R2C2E2) from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023.
+                The 8<sup>th</sup> International Conference on "Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2024]" focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows and research scholars around the world to share their knowledge and research expertise in RVCCCE (Renewable, VLSI, Control, Computing, Communication, E-mobility) from Nov 7<sup>th</sup>, 8<sup>th</sup> and 9<sup>th</sup> 2024.
                   <br />
-                  The conference has been successfully organised for the past six years with participants
-                  from all over India and abroad. All peer-reviewed, selected and presented papers from
-                  the conference will be submitted for possible inclusion in IEEE digital library. The present
-                  version of the CSITSS-2023 aims to achieve higher standards by attracting original
-                  research works in the domain of R2C2E2. International speakers will deliver keynote talks
-                  on the latest technologies in these domains. The CSITSS-2023 ensures to provide a
-                  platform for researchers around the globe for knowledge exchange and networking.                </p>
+                  The conference has been successfully organised for the past seven years with participants from all over India and abroad. All peer-reviewed, selected and presented papers from the conference will be submitted for possible inclusion in IEEE digital library. The present version of the CSITSS-2024 aims to achieve higher standards by attracting original research works in the domain of RVCCCE. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking.              </p>
 
                 <a
                   className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
