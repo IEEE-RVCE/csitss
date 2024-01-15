@@ -86,8 +86,8 @@ function registration() {
                   </tr>
                   <tr className="divide-x divide-blue-900">
                     <th colSpan={2} rowSpan={2}>Categories</th>
-                    <th colSpan={2}>Early Bird Registration (till 30th September 2023)</th>
-                    <th colSpan={2}>Regular Registration (after 30th September 2023)</th>
+                    <th colSpan={2}>Early Bird Registration (till 5th June 2024)</th>
+                    <th colSpan={2}>Regular Registration (after 5th September 2024)</th>
                   </tr>
                   <tr className="divide-x divide-blue-900">
                     <th className="hidden"></th>
@@ -101,10 +101,10 @@ function registration() {
                   <tr className="divide-x text-center  divide-blue-900  ">
                     <th rowSpan={3}>With Authorship</th>
                     <th >Student/Research Scholars</th>
-                    <td>4000</td>
-                    <td>5000</td>
                     <td>5000</td>
                     <td>6500</td>
+                    <td>6000</td>
+                    <td>7000</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
@@ -256,7 +256,7 @@ function registration() {
             You must save the payment proof in <span className="italic">pdf</span>. This payment proof file is to be attached in a section while filling the registration form.
             </li>
             <li>
-            CSITSS-2023 organizing committee will not be responsible for any financial loss caused by improper transactions during registration process in CSITSS-2023.
+            CSITSS-2024 organizing committee will not be responsible for any financial loss caused by improper transactions during registration process in CSITSS-2024.
             </li>
             <li>
             The author's name(s) must match the ones provided during the manuscript submission, registration (There should be one/same name at all stages of the conference).
@@ -266,9 +266,9 @@ function registration() {
             </li>
           </ol>
         </section>
-        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+        {/*<section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <a className="text-center" href="https://forms.gle/NaKWRJ9gJjiyd4dX6"><p className="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-bounce text-4xl font-bold">Click Here To Register</p></a>
-        </section>
+                </section>  */}
       </div>
     </>
   );

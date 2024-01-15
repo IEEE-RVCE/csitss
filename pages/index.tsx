@@ -56,13 +56,13 @@ export default function Index() {
                   </h4>
                 </p>
                 <div className="grid grid-cols-3 gap-4 p-4 lg:grid-cols-3 xl:grid-cols-3">
-                  <a
+                 <a
                     href="https://cmt3.research.microsoft.com/CSITSS2023"
                     target="_blank"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Submit Paper
-                  </a>
+                  </a> 
                   <ScrollLink
                     activeClass="active"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"

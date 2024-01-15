@@ -16,31 +16,6 @@ export const Topics = [
     ],
   },
   {
-    label: "Robotics and automation",
-    subTopics: [
-      "Sensors for smart systems (IoT/Healthcare etc,.)",
-      "Industrial & Home Automation",
-      "Robotics and Advanced control application",
-      "Biomedical applications",
-      "Virtual instrumentation",
-      "UAV/Drone Technology",
-      "Wearable and Implantable Body Sensor",
-    ],
-  },
-  {
-    label: "Communication",
-    subTopics: [
-      "5G and beyond 5G Technology",
-      "Image/Video/Audio processing",
-      "Optical communication and networks",
-      "RADAR, SONAR and LIDAR applications",
-      "Microwave and Wireless Networking",
-      "Software Defined Networking (SDN)",
-      "Social Media Networks",
-      "Ultra-wideband and Green communications",
-    ],
-  },
-  {
     label: "Computing and Intelligent Systems",
     subTopics: [
       "Computer Networks and Cyber security",
@@ -56,7 +31,33 @@ export const Topics = [
     ],
   },
   {
-    label: "E-mobility and Sustainable Systems",
+    label: "Control and Automation",
+    subTopics: [
+      "Sensors for smart systems (IoT/Healthcare etc,.)",
+      "Industrial & Home Automation",
+      "Robotics and Advanced control application",
+      "Biomedical applications",
+      "Virtual instrumentation",
+      "UAV/Drone Technology",
+      "Wearable and Implantable Body Sensor",
+    ],
+  },
+  {
+    label: "Smart Communication",
+    subTopics: [
+      "5G and beyond 5G Technology",
+      "Image/Video/Audio processing",
+      "Optical communication and networks",
+      "RADAR, SONAR and LIDAR applications",
+      "Microwave and Wireless Networking",
+      "Software Defined Networking (SDN)",
+      "Social Media Networks",
+      "Ultra-wideband and Green communications",
+    ],
+  },
+
+  {
+    label: "E-mobility Sustainable Systems",
     subTopics: [
       "Hybrid Energy Storage & BMS",
       "Smart City & Smart Energy System",
@@ -68,7 +69,7 @@ export const Topics = [
     ],
   },
   {
-    label: "Embedded systems and VLSI Design",
+    label: "VLSI Design and Embedded System",
     subTopics: [
       "Analog/ Digital /Mixed Signal/RF System Designs",
       "Advances in CAD for VLSI",
