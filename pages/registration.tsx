@@ -111,20 +111,20 @@ function registration() {
                     <th>Academicians</th>
                     <td>5000</td>
                     <td>6000</td>
-                    <td>6000</td>
-                    <td>8000</td>
+                    <td>7500</td>
+                    <td>8500</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Industry Professionals</th>
                     <td>6000</td>
                     <td>7000</td>
-                    <td>10000</td>
-                    <td>13500</td>
+                    <td>8000</td>
+                    <td>9000</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2}>Pre Conference Tutorial</th>
-                    <td colSpan={4}>500</td>
+                    <td colSpan={4}>1000</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2}>
@@ -159,28 +159,28 @@ function registration() {
                     <th>Student/Research Scholars</th>
                     <td>75</td>
                     <td>100</td>
-                    <td>100</td>
-                    <td>130</td>
+                    <td>69</td>
+                    <td>81</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Academicians</th>
                     <td>90</td>
                     <td>120</td>
-                    <td>125</td>
-                    <td>160</td>
+                    <td>86</td>
+                    <td>98</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Industry Professionals</th>
                     <td>100</td>
                     <td>125</td>
-                    <td>200</td>
-                    <td>240</td>
+                    <td>92</td>
+                    <td>104</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                     <th colSpan={2}>Pre Conference Tutorial</th>
-                    <td colSpan={4}>25</td>
+                    <td colSpan={4}>12</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                     <th colSpan={2}>
@@ -239,7 +239,7 @@ function registration() {
             </li>
             <li>At least one author must present their accepted paper in the conference for consideration of publication on IEEE explore.</li>
             <li>Registration fee for the paper (<span className="font-bold">with authorship</span>) includes access to the pre conference tutorial, conference proceedings, all technical sessions and presenter certificate.</li>
-            <li>Registration fee for the <span className="font-bold">pre conference tutorial</span> includes access to the pre conference tutorial only (2nd Nov 2023).</li>
+            <li>Registration fee for the <span className="font-bold">pre conference tutorial</span> includes access to the pre conference tutorial only (7th Nov 2024).</li>
             <li>Registration fee for the <span className="font-bold">conference participation without authorship-attendee</span> is not entitled for paper publication, however participation certificate will be provided.</li>
           </ol>
         </section>
