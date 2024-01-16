@@ -6,35 +6,35 @@ export default function CustomTimeLine() {
   const data = [
     {
       label: "Submission of Full-length Manuscript (opens from)",
-      date: "26th June 2023",
+      date: "25th June 2024",
     },
     {
       label: "Last date to submit Full-length Manuscript",
-      date: "31st August 2023 (Hard Deadline)",
+      date: "30th July 2024",
     },
     {
       label: "Notification of Acceptance",
-      date: "25th September 2023",
+      date: "25th August 2024",
     },
     {
       label: "Early Bird Registration",
-      date: "30th September 2023",
+      date: "Before 5th September 2024",
     },
     {
       label: "Submission of Camera-ready Manuscript and Copyright Form",
-      date: "9th October 2023",
+      date: "10th October 2024",
     },
     {
       label: "Last Date for Registration",
-      date: "12th October 2023",
+      date: "25th October 2024",
     },
     {
       label: "Pre-Conference Tutorial",
-      date: "2nd November 2023",
+      date: "7th November 2024",
     },
     {
       label: "Conference Dates",
-      date: "2nd-4th November 2023",
+      date: "8th and 9th November 2024",
     },
   ];
 
@@ -43,7 +43,7 @@ export default function CustomTimeLine() {
       <h1 className="my-4 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-extrabold text-transparent underline">
         Important Dates
       </h1>
-      <Timeline active={4} bulletSize={24} lineWidth={3}>
+      <Timeline active={0} bulletSize={24} lineWidth={3}>
         {data.map((item, index) => (
           <Timeline.Item
             key={index}

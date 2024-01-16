@@ -53,10 +53,11 @@ const downloadLinks = [
     href: "./PDF PROGRAMPLAN.pdf",
     label: "Program Schedule",
   },
-  {
+ /* {
     href: "./PDF TUTORIALS & TRACK.pdf",
     label: "Tutorial Schedule",
   },
+  */
   {
     href: "./Invitation Letter.pdf",
     label: "Inaugural Invitation & Schedule",
@@ -191,10 +192,7 @@ const NavBar = () => {
               <span className="ml-20 text-red-800">Program Schedule</span>{" "}
               Released--Download Here{" "}
             </a>
-            <a href="./PDF TUTORIALS & TRACK.pdf">
-              <span className="ml-20 text-red-800">Tutorial Schedule</span>{" "}
-              Released--Download Here{" "}
-            </a>
+            
             <a href="./Invitation Letter.pdf">
               <span className="ml-20 text-red-800"></span> Inauguration
               Invitation and Schedule{" "}
