@@ -10,20 +10,20 @@ const HeaderImages = () => {
       show: true,
       padding: "p-2"
     },
-    {
-      src: "logo_IEEE_Main.png",
-      alt: "ieee_logo",
-      href: "https://www.ieee.org",
-      show: true,
-      padding: "p-2"
-    },
-    {
-      src: "logo_IEEE_Banaglaore_Section.png",
-      alt: "ieee_bangalore_logo",
-      href: "https://ieeebangalore.org/",
-      show: true,
-      padding: "pt-6"
-    },
+    // {
+    //   src: "logo_IEEE_Main.png",
+    //   alt: "ieee_logo",
+    //   href: "https://www.ieee.org",
+    //   show: true,
+    //   padding: "p-2"
+    // },
+    // {
+    //   src: "logo_IEEE_Banaglaore_Section.png",
+    //   alt: "ieee_bangalore_logo",
+    //   href: "https://ieeebangalore.org/",
+    //   show: true,
+    //   padding: "pt-6"
+    // },
     {
       src: "logo_rvce_ieee.png",
       alt: "rvce_ieee_logo",
