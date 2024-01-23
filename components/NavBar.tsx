@@ -25,10 +25,10 @@ const Links: Array<{
     href: "/tech",
     label: "Technical Program",
   },
-  {
-    href: "/registration",
-    label: "Registration",
-  },
+  //{
+    //href: "/registration",
+    //label: "Registration",
+  //},
   {
     href: "/sponsorship",
     label: "Sponsors",
