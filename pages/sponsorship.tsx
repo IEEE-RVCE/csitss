@@ -376,7 +376,7 @@ const Sponsorship: React.FC = () => {
               margin: 0, // Remove default margin
             }}
           >
-            Special Thanks To Previous Our Sponsors
+            Special Thanks To Our Previous Sponsors
           </p>
         </div>
 
