@@ -186,7 +186,7 @@ const NavBar = () => {
             </Menu>
           </div>
         </div>
-        <Marquee>
+        {/*<Marquee>
           <div className="content">
             <a href="./PDF PROGRAMPLAN.pdf">
               <span className="ml-20 text-red-800">Program Schedule</span>{" "}
@@ -198,8 +198,8 @@ const NavBar = () => {
               Invitation and Schedule{" "}
             </a>
           </div>
-        </Marquee>
-        <br />
+              </Marquee>*/}
+        
       </div>
     </header>
   );
