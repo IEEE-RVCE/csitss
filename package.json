@@ -7,6 +7,10 @@
     "name": "Prajwal Prakash",
     "url": "https://www.devcoffee.me"
   },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
   "license": "MIT",
   "description": "PWA to interact with users for CSITSS",
   "scripts": {
