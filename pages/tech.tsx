@@ -1,86 +1,86 @@
-import { Center, List, Tabs } from "@mantine/core";
+import { Center, List, Tabs } from '@mantine/core'
 
-import React from "react";
+import React from 'react'
 
 export const Topics = [
   {
-    label: "Renewable Energy & Power System",
+    label: 'Renewable Energy & Power System',
     subTopics: [
-      "Power systems & HVDC",
-      "Power electronics and Industrial drives",
-      "Renewable energy systems & Grid Integration",
-      "Micro grids and Smart grids",
-      "Power system protection, monitoring & control",
-      "Computational intelligent techniques for energy sustainability",
-      "Power system resilience & Cyber security",
+      'Power systems & HVDC',
+      'Power electronics and Industrial drives',
+      'Renewable energy systems & Grid Integration',
+      'Micro grids and Smart grids',
+      'Power system protection, monitoring & control',
+      'Computational intelligent techniques for energy sustainability',
+      'Power system resilience & Cyber security',
     ],
   },
   {
-    label: "Computing and Intelligent Systems",
+    label: 'Computing and Intelligent Systems',
     subTopics: [
-      "Computer Networks and Cyber security",
-      "Machine Intelligence",
-      "Web and Mobile Applications",
-      "Computing Environments (Cloud, Distributed, etc.)",
-      "Internet of Things / Edge Systems",
-      "Augmented, Virtual Reality and extended reality",
-      "Data Analytics",
-      "Block Chain",
-      "Computer Vision and Pattern Recognition",
-      "Metaverse",
+      'Computer Networks and Cyber security',
+      'Machine Intelligence',
+      'Web and Mobile Applications',
+      'Computing Environments (Cloud, Distributed, etc.)',
+      'Internet of Things / Edge Systems',
+      'Augmented, Virtual Reality and extended reality',
+      'Data Analytics',
+      'Block Chain',
+      'Computer Vision and Pattern Recognition',
+      'Metaverse',
     ],
   },
   {
-    label: "Control and Automation",
+    label: 'Control and Automation',
     subTopics: [
-      "Sensors for smart systems (IoT/Healthcare etc,.)",
-      "Industrial & Home Automation",
-      "Robotics and Advanced control application",
-      "Biomedical applications",
-      "Virtual instrumentation",
-      "UAV/Drone Technology",
-      "Wearable and Implantable Body Sensor",
+      'Sensors for smart systems (IoT/Healthcare etc,.)',
+      'Industrial & Home Automation',
+      'Robotics and Advanced control application',
+      'Biomedical applications',
+      'Virtual instrumentation',
+      'UAV/Drone Technology',
+      'Wearable and Implantable Body Sensor',
     ],
   },
   {
-    label: "Smart Communication",
+    label: 'Smart Communication',
     subTopics: [
-      "5G and beyond 5G Technology",
-      "Image/Video/Audio processing",
-      "Optical communication and networks",
-      "RADAR, SONAR and LIDAR applications",
-      "Microwave and Wireless Networking",
-      "Software Defined Networking (SDN)",
-      "Social Media Networks",
-      "Ultra-wideband and Green communications",
+      '5G and beyond 5G Technology',
+      'Image/Video/Audio processing',
+      'Optical communication and networks',
+      'RADAR, SONAR and LIDAR applications',
+      'Microwave and Wireless Networking',
+      'Software Defined Networking (SDN)',
+      'Social Media Networks',
+      'Ultra-wideband and Green communications',
     ],
   },
 
   {
-    label: "E-mobility Sustainable Systems",
+    label: 'E-mobility Sustainable Systems',
     subTopics: [
-      "Hybrid Energy Storage & BMS",
-      "Smart City & Smart Energy System",
-      "Fuel-cell-based transport",
-      "EV/HEV Design, HIL, SIL & Annotation",
-      "EVs and PHEVs charging, V2G strategies",
-      "Autonomous vehicle, intelligent guidance,safety assessment",
-      "Modelling, simulation and control of EV systems",
+      'Hybrid Energy Storage & BMS',
+      'Smart City & Smart Energy System',
+      'Fuel-cell-based transport',
+      'EV/HEV Design, HIL, SIL & Annotation',
+      'EVs and PHEVs charging, V2G strategies',
+      'Autonomous vehicle, intelligent guidance,safety assessment',
+      'Modelling, simulation and control of EV systems',
     ],
   },
   {
-    label: "VLSI Design and Embedded System",
+    label: 'VLSI Design and Embedded System',
     subTopics: [
-      "Analog/ Digital /Mixed Signal/RF System Designs",
-      "Advances in CAD for VLSI",
-      "Embedded Systems Design",
-      "Low-power digital architectures",
-      "Test & Reliability of Machine Learning Systems",
-      "Microsystems/MEMS/Sensors Test",
-      "Pre-silicon, Post-silicon: Debug, Verification and Validation",
+      'Analog/ Digital /Mixed Signal/RF System Designs',
+      'Advances in CAD for VLSI',
+      'Embedded Systems Design',
+      'Low-power digital architectures',
+      'Test & Reliability of Machine Learning Systems',
+      'Microsystems/MEMS/Sensors Test',
+      'Pre-silicon, Post-silicon: Debug, Verification and Validation',
     ],
   },
-];
+]
 
 function Tech() {
   return (
@@ -90,19 +90,19 @@ function Tech() {
           <aside className="bg-gray-100 p-12 sm:p-16 lg:p-24">
             <div className="mx-auto">
               <p className="text-center text-3xl font-bold sm:text-5xl">
-                Call For Papers{" "}
+                Call For Papers{' '}
               </p>
               <p className="text-justify text-xl font-medium text-gray-500">
                 Prospective authors are encouraged to submit quality and
                 original research papers for presentation at the Conference.
                 Authors are requested to submit their manuscripts in PDF format
                 not exceeding 6 pages in A4 size through online submission at
-                Microsoft CMT - on or{" "}
+                Microsoft CMT - on or{' '}
                 <i>
-                  before 5<sup>th</sup> August 2023.{" "}
+                  before 5<sup>th</sup> August 2023.{' '}
                 </i>
                 The manuscript should follow the standard IEEE template.The
-                format of the paper could be downloaded in link below{" "}
+                format of the paper could be downloaded in link below{' '}
                 <a href="https://www.ieee.org/conferences/publishing/templates.html">
                   <b>Manuscript Template Link</b>
                 </a>
@@ -138,7 +138,7 @@ function Tech() {
           <aside className="m-6 bg-gray-100 sm:m-8 lg:m-12">
             <div className=" p-6 sm:p-8 lg:p-12">
               <p className="text-center text-3xl font-bold sm:text-5xl">
-                Conference Tracks{" "}
+                Conference Tracks{' '}
               </p>
               <p className="text-center text-sm font-bold">
                 Authors are invited to submit their original research work in
@@ -171,7 +171,7 @@ function Tech() {
         </Tabs.Tab>
       </Tabs>
     </div>
-  );
+  )
 }
 
-export default Tech;
+export default Tech

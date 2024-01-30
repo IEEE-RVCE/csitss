@@ -1,42 +1,42 @@
-import { Text, Timeline } from "@mantine/core";
+import { Text, Timeline } from '@mantine/core'
 
-import { AnnotationIcon } from "@heroicons/react/solid";
+import { AnnotationIcon } from '@heroicons/react/solid'
 
 export default function CustomTimeLine() {
   const data = [
     {
-      label: "Submission of Full-length Manuscript (opens from)",
-      date: "25th June 2024",
+      label: 'Submission of Full-length Manuscript (opens from)',
+      date: '25th June 2024',
     },
     {
-      label: "Last date to submit Full-length Manuscript",
-      date: "30th July 2024",
+      label: 'Last date to submit Full-length Manuscript',
+      date: '30th July 2024',
     },
     {
-      label: "Notification of Acceptance",
-      date: "25th August 2024",
+      label: 'Notification of Acceptance',
+      date: '25th August 2024',
     },
     {
-      label: "Early Bird Registration",
-      date: "Before 5th September 2024",
+      label: 'Early Bird Registration',
+      date: 'Before 5th September 2024',
     },
     {
-      label: "Submission of Camera-ready Manuscript and Copyright Form",
-      date: "10th October 2024",
+      label: 'Submission of Camera-ready Manuscript and Copyright Form',
+      date: '10th October 2024',
     },
     {
-      label: "Last Date for Registration",
-      date: "25th October 2024",
+      label: 'Last Date for Registration',
+      date: '25th October 2024',
     },
     {
-      label: "Pre-Conference Tutorial",
-      date: "7th November 2024",
+      label: 'Pre-Conference Tutorial',
+      date: '7th November 2024',
     },
     {
-      label: "Conference Dates",
-      date: "8th and 9th November 2024",
+      label: 'Conference Dates',
+      date: '8th and 9th November 2024',
     },
-  ];
+  ]
 
   return (
     <>
@@ -57,5 +57,5 @@ export default function CustomTimeLine() {
         ))}
       </Timeline>
     </>
-  );
+  )
 }

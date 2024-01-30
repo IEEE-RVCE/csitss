@@ -1,20 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable react/no-unescaped-entities */
-import { Element, Link as ScrollLink } from "react-scroll";
-import HeaderImages from "../components/HeaderImages";
-import Timeline from "../components/TimeLine";
-import Gallery from "../components/Gallery";
-
+import { Element, Link as ScrollLink } from 'react-scroll'
+import HeaderImages from '../components/HeaderImages'
+import Timeline from '../components/TimeLine'
+import Gallery from '../components/Gallery'
 
 const image = {
-  src: "logo_IEEE_Banaglaore_Section.png",
-  alt: "ieee_bangalore_logo",
-  href: "https://ieeebangalore.org/",
+  src: 'logo_IEEE_Banaglaore_Section.png',
+  alt: 'ieee_bangalore_logo',
+  href: 'https://ieeebangalore.org/',
   show: true,
-  padding: "pt-6"
-};
-
+  padding: 'pt-6',
+}
 
 export default function Index() {
   return (
@@ -29,12 +27,11 @@ export default function Index() {
         <header>
           <div
             className="heroHeader w-full bg-cover bg-center "
-            style={{ height: "38rem" }}
+            style={{ height: '38rem' }}
           >
-                  
             <HeaderImages />
             <div className="flex  w-full items-center justify-center ">
-              <div className="bg-gray-800 bg-opacity-70 text-center px-9 py-5 rounded-3xl font-extrabold ">
+              <div className="rounded-3xl bg-gray-800 bg-opacity-70 px-9 py-5 text-center font-extrabold ">
                 <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
                   WELCOME TO CSITSS-2024
                 </h1>
@@ -56,13 +53,13 @@ export default function Index() {
                   </h4>
                 </p>
                 <div className="grid grid-cols-3 gap-4 p-4 lg:grid-cols-3 xl:grid-cols-3">
-                 <a
+                  <a
                     href="https://cmt3.research.microsoft.com/CSITSS2023"
                     target="_blank"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Submit Paper
-                  </a> 
+                  </a>
                   <ScrollLink
                     activeClass="active"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
@@ -89,9 +86,12 @@ export default function Index() {
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                <br /><br />
-                <br /><br />
-                <br /><br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 {/* <h2 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
                   Organized by
                 </h2>{" "} <br />
@@ -100,7 +100,8 @@ export default function Index() {
                 </h1>{" "} <br /> */}
                 <h4 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
                   In association with
-                </h4>{" "} <br /> 
+                </h4>{' '}
+                <br />
                 <div className="flex flex-row items-center justify-center">
                   <img
                     src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
@@ -112,9 +113,13 @@ export default function Index() {
                   Technically co-sponsored by <br />
                 </h1>
                 <div className={`flex flex-row items-center justify-center`}>
-                    <a href={image.href} target="_blank" rel="noreferrer">
-                      <img className="h-auto w-auto object-cover" src={image.src} alt={image.alt} />
-                    </a>
+                  <a href={image.href} target="_blank" rel="noreferrer">
+                    <img
+                      className="h-auto w-auto object-cover"
+                      src={image.src}
+                      alt={image.alt}
+                    />
+                  </a>
                 </div>
                 <div className="flex flex-row items-center justify-center">
                   <img
@@ -131,9 +136,28 @@ export default function Index() {
                 </h2>
 
                 <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                The 8<sup>th</sup> International Conference on "Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2024]" focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows and research scholars around the world to share their knowledge and research expertise in RVCCCE (Renewable, VLSI, Control, Computing, Communication, E-mobility) from Nov 7<sup>th</sup>, 8<sup>th</sup> and 9<sup>th</sup> 2024.
+                  The 8<sup>th</sup> International Conference on "Computational
+                  Systems and Information Technology for Sustainable Solutions
+                  [CSITSS — 2024]" focuses on bringing together leading
+                  academicians, scientists, researchers, industry
+                  representatives, postdoctoral fellows and research scholars
+                  around the world to share their knowledge and research
+                  expertise in RVCCCE (Renewable, VLSI, Control, Computing,
+                  Communication, E-mobility) from Nov 7<sup>th</sup>, 8
+                  <sup>th</sup> and 9<sup>th</sup> 2024.
                   <br />
-                  The conference has been successfully organised for the past seven years with participants from all over India and abroad. All peer-reviewed, selected and presented papers from the conference will be submitted for possible inclusion in IEEE digital library. The present version of the CSITSS-2024 aims to achieve higher standards by attracting original research works in the domain of RVCCCE. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking.              </p>
+                  The conference has been successfully organised for the past
+                  seven years with participants from all over India and abroad.
+                  All peer-reviewed, selected and presented papers from the
+                  conference will be submitted for possible inclusion in IEEE
+                  digital library. The present version of the CSITSS-2024 aims
+                  to achieve higher standards by attracting original research
+                  works in the domain of RVCCCE. International speakers will
+                  deliver keynote talks on the latest technologies in these
+                  domains. The CSITSS-2024 ensures to provide a platform for
+                  researchers around the globe for knowledge exchange and
+                  networking.{' '}
+                </p>
 
                 <a
                   className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
@@ -143,8 +167,8 @@ export default function Index() {
                     href="https://cmt3.research.microsoft.com/CSITSS2023"
                     className="text-sm font-medium"
                   >
-                    {" "}
-                    Submit Paper{" "}
+                    {' '}
+                    Submit Paper{' '}
                   </a>
 
                   <svg
@@ -185,7 +209,7 @@ export default function Index() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <div className="lg:py-24 gap-8">
+              <div className="gap-8 lg:py-24">
                 <h2 className="text-3xl font-bold sm:text-4xl">Venue</h2>
                 <p className="mt-4 text-gray-600">RVCE, Mysuru Road</p>
                 <a
@@ -212,7 +236,10 @@ export default function Index() {
                   className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                   href="HOTELS.pdf"
                 >
-                  <span className="text-sm font-medium"> Download Hotels List Near RVCE </span>
+                  <span className="text-sm font-medium">
+                    {' '}
+                    Download Hotels List Near RVCE{' '}
+                  </span>
                   <svg
                     className="ml-3 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -244,5 +271,5 @@ export default function Index() {
         </div>
       </section>
     </>
-  );
+  )
 }

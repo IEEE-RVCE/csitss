@@ -1,40 +1,40 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Header, Image, Menu } from "@mantine/core";
+import { AppShell, Header, Image, Menu } from '@mantine/core'
 
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link'
+import React from 'react'
 const Links: Array<{
-  href: string;
-  label: string;
-  newTab?: boolean;
+  href: string
+  label: string
+  newTab?: boolean
 }> = [
   {
-    href: "/",
-    label: "Home",
+    href: '/',
+    label: 'Home',
   },
   {
-    href: "/about",
-    label: "About",
+    href: '/about',
+    label: 'About',
   },
   {
-    href: "/committee",
-    label: "Committee",
+    href: '/committee',
+    label: 'Committee',
   },
   {
-    href: "/tech",
-    label: "Technical Program",
+    href: '/tech',
+    label: 'Technical Program',
   },
   // {
   //   href: "/registration",
   //   label: "Registration",
   // },
   {
-    href: "/sponsorship",
-    label: "Sponsors",
+    href: '/sponsorship',
+    label: 'Sponsors',
   },
   {
-    href: "/contact",
-    label: "Contact Us",
+    href: '/contact',
+    label: 'Contact Us',
   },
   // {
   //   href: "https://rzp.io/l/3N4bwhvH",
@@ -45,23 +45,23 @@ const Links: Array<{
   //   href: "/pgmschedule",
   //   label: "Program Schedule",
   // },
-];
+]
 
 const downloadLinks = [
   {
-    href: "./PDF PROGRAMPLAN.pdf",
-    label: "Program Schedule",
+    href: './PDF PROGRAMPLAN.pdf',
+    label: 'Program Schedule',
   },
- /* {
+  /* {
     href: "./PDF TUTORIALS & TRACK.pdf",
     label: "Tutorial Schedule",
   },
   */
   {
-    href: "./Invitation Letter.pdf",
-    label: "Inaugural Invitation & Schedule",
+    href: './Invitation Letter.pdf',
+    label: 'Inaugural Invitation & Schedule',
   },
-];
+]
 
 const NavBar = () => {
   return (
@@ -86,7 +86,7 @@ const NavBar = () => {
                 <a
                   className="font-sans text-gray-500 hover:border-b-2 hover:text-blue-700 "
                   href={link.href}
-                  target={link.newTab ? "_blank" : "_self"}
+                  target={link.newTab ? '_blank' : '_self'}
                 >
                   {link.label}
                 </a>
@@ -101,7 +101,7 @@ const NavBar = () => {
                   type="button"
                   name="Mobile Navigation Menu"
                 >
-                  {" "}
+                  {' '}
                   <svg
                     aria-hidden="true"
                     className="h-5 w-5"
@@ -143,7 +143,7 @@ const NavBar = () => {
                   type="button"
                   name="Mobile Navigation Menu"
                 >
-                  {" "}
+                  {' '}
                   <svg
                     aria-hidden="true"
                     className="h-5 w-5"
@@ -198,11 +198,10 @@ const NavBar = () => {
             </a>
           </div>
               </Marquee>*/}
-        
       </div>
     </header>
-  );
-};
+  )
+}
 
 const Footer = () => {
   return (
@@ -230,8 +229,8 @@ const Footer = () => {
           <p className="text-center text-xs text-gray-500">
             &copy; 2022
             {new Date().getFullYear() === 2022
-              ? ""
-              : "- " + new Date().getFullYear()}{" "}
+              ? ''
+              : '- ' + new Date().getFullYear()}{' '}
             IEEE RVCE
           </p>
           {/*<div className="flex flex-col items-center justify-center gap-4">
@@ -289,8 +288,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
 const WrapApp = ({ children }: any) => {
   return (
@@ -305,7 +304,7 @@ const WrapApp = ({ children }: any) => {
     >
       {children}
     </AppShell>
-  );
-};
+  )
+}
 
-export default WrapApp;
+export default WrapApp

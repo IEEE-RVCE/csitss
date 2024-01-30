@@ -1,5 +1,5 @@
-import React from "react";
-import { PhoneIcon } from "@heroicons/react/solid";
+import React from 'react'
+import { PhoneIcon } from '@heroicons/react/solid'
 function contact() {
   return (
     <>
@@ -61,7 +61,7 @@ function contact() {
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Vandana Jha{" "}
+                      Dr. Vandana Jha{' '}
                     </td>
                     <td className="border border-black px-4 py-2">
                       <div className="flex">
@@ -86,7 +86,7 @@ function contact() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default contact;
+export default contact

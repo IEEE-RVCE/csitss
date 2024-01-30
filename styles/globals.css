@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +6,7 @@
 .heroHeader {
   /* background-image: url("https://user-images.githubusercontent.com/100517925/197962701-b2c2b570-59db-45c9-8393-eec94d88abd7.jpg"); */
   /* background-image: url('https://github.com/IEEE-RVCE/csitss/blob/master/public/mainGate.jpeg'), */
-  background-image: url("https://res.cloudinary.com/dmxwnn7mm/image/upload/v1689738072/mainGate_jyx5r7.jpg");
+  background-image: url('https://res.cloudinary.com/dmxwnn7mm/image/upload/v1689738072/mainGate_jyx5r7.jpg');
   padding-top: 1px;
 }
 .charge {
