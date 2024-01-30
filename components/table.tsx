@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
 type TableProps = {
-  timeSlot: string;
-};
+  timeSlot: string
+}
 
 function Table({}: TableProps) {
   return (
     <>
       <h1>Hello World</h1>
     </>
-  );
+  )
 }
-export default Table;
+export default Table

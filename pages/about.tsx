@@ -1,6 +1,6 @@
-import { Accordion } from "@mantine/core";
-import React from "react";
-import { Topics } from "./tech";
+import { Accordion } from '@mantine/core'
+import React from 'react'
+import { Topics } from './tech'
 
 function about() {
   return (
@@ -10,26 +10,26 @@ function about() {
           {/* <h2 className="text-3xl font-extrabold text-red-800 sm:text-4xl">
             Vision
           </h2> */}
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <h1
               style={{
-                marginRight: "1rem",
-                background: "linear-gradient(to right, #ff0000, #800000)",
-                WebkitBackgroundClip: "text",
-                fontSize: "2.5rem",
-                fontWeight: "bold",
-                color: "transparent",
-                alignContent: "center",
+                marginRight: '1rem',
+                background: 'linear-gradient(to right, #ff0000, #800000)',
+                WebkitBackgroundClip: 'text',
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'transparent',
+                alignContent: 'center',
               }}
             >
               Vision
             </h1>
             <hr
               style={{
-                background: "linear-gradient(to right, red, transparent)",
-                height: "3px",
-                width: "100%",
-                marginRight: "1rem",
+                background: 'linear-gradient(to right, red, transparent)',
+                height: '3px',
+                width: '100%',
+                marginRight: '1rem',
               }}
             />
           </div>
@@ -41,26 +41,26 @@ function about() {
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           {/* <h2 className="text-3xl font-extrabold sm:text-4xl">Mission</h2> */}
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <h1
               style={{
-                marginRight: "1rem",
-                background: "linear-gradient(to right, #ff0000, #800000)",
-                WebkitBackgroundClip: "text",
-                fontSize: "2.5rem",
-                fontWeight: "bold",
-                color: "transparent",
-                alignContent: "center",
+                marginRight: '1rem',
+                background: 'linear-gradient(to right, #ff0000, #800000)',
+                WebkitBackgroundClip: 'text',
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'transparent',
+                alignContent: 'center',
               }}
             >
               Mission
             </h1>
             <hr
               style={{
-                background: "linear-gradient(to right, red, transparent)",
-                height: "3px",
-                width: "100%",
-                marginRight: "1rem",
+                background: 'linear-gradient(to right, red, transparent)',
+                height: '3px',
+                width: '100%',
+                marginRight: '1rem',
               }}
             />
           </div>
@@ -105,30 +105,30 @@ function about() {
                 {/* <h2 className="text-3xl font-bold sm:text-4xl ">About RVCE</h2> */}
                 <div
                   style={{
-                    display: "flex",
-                    alignItems: "center",
+                    display: 'flex',
+                    alignItems: 'center',
                   }}
                 >
                   <h1
                     style={{
-                      marginRight: "1rem",
-                      background: "linear-gradient(to right, #ff0000, #800000)",
-                      WebkitBackgroundClip: "text",
-                      fontSize: "2rem",
-                      fontWeight: "bold",
-                      color: "transparent",
-                      alignContent: "center",
-                      width: "100%",
+                      marginRight: '1rem',
+                      background: 'linear-gradient(to right, #ff0000, #800000)',
+                      WebkitBackgroundClip: 'text',
+                      fontSize: '2rem',
+                      fontWeight: 'bold',
+                      color: 'transparent',
+                      alignContent: 'center',
+                      width: '100%',
                     }}
                   >
                     About RVCE
                   </h1>
                   <hr
                     style={{
-                      background: "linear-gradient(to right, red, transparent)",
-                      height: "3px",
-                      width: "100%",
-                      marginRight: "1rem",
+                      background: 'linear-gradient(to right, red, transparent)',
+                      height: '3px',
+                      width: '100%',
+                      marginRight: '1rem',
                     }}
                   />
                 </div>
@@ -169,27 +169,27 @@ function about() {
           {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
             ABOUT THE CONFERENCE
           </h2> */}
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <h1
               style={{
-                marginRight: "1rem",
-                background: "linear-gradient(to right, #ff0000, #800000)",
-                WebkitBackgroundClip: "text",
-                fontSize: "2.5rem",
-                fontWeight: "bold",
-                color: "transparent",
-                alignContent: "center",
-                width: "100%",
+                marginRight: '1rem',
+                background: 'linear-gradient(to right, #ff0000, #800000)',
+                WebkitBackgroundClip: 'text',
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: 'transparent',
+                alignContent: 'center',
+                width: '100%',
               }}
             >
               About The Conference
             </h1>
             <hr
               style={{
-                background: "linear-gradient(to right, red, transparent)",
-                height: "3px",
-                width: "100%",
-                marginRight: "1rem",
+                background: 'linear-gradient(to right, red, transparent)',
+                height: '3px',
+                width: '100%',
+                marginRight: '1rem',
               }}
             />
           </div>
@@ -223,30 +223,30 @@ function about() {
 
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
+                display: 'flex',
+                alignItems: 'center',
               }}
             >
               <h1
                 style={{
-                  marginRight: "1rem",
-                  background: "linear-gradient(to right, #ff0000, #800000)",
-                  WebkitBackgroundClip: "text",
-                  fontSize: "2.5rem",
-                  fontWeight: "bold",
-                  color: "transparent",
-                  alignContent: "center",
-                  width: "100%",
+                  marginRight: '1rem',
+                  background: 'linear-gradient(to right, #ff0000, #800000)',
+                  WebkitBackgroundClip: 'text',
+                  fontSize: '2.5rem',
+                  fontWeight: 'bold',
+                  color: 'transparent',
+                  alignContent: 'center',
+                  width: '100%',
                 }}
               >
                 Conference Tracks
               </h1>
               <hr
                 style={{
-                  background: "linear-gradient(to right, red, transparent)",
-                  height: "3px",
-                  width: "100%",
-                  marginRight: "1rem",
+                  background: 'linear-gradient(to right, red, transparent)',
+                  height: '3px',
+                  width: '100%',
+                  marginRight: '1rem',
                 }}
               />
             </div>
@@ -267,7 +267,7 @@ function about() {
         </section>
       </div>
     </>
-  );
+  )
 }
 
-export default about;
+export default about
