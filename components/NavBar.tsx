@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { AppShell, Header, Image, Menu } from "@mantine/core";
-import Marquee from "react-fast-marquee";
 
 import Link from "next/link";
 import React from "react";
@@ -186,7 +185,7 @@ const NavBar = () => {
             </Menu>
           </div>
         </div>
-        <Marquee>
+        {/*<Marquee>
           <div className="content">
             <a href="./PDF PROGRAMPLAN.pdf">
               <span className="ml-20 text-red-800">Program Schedule</span>{" "}
@@ -198,8 +197,8 @@ const NavBar = () => {
               Invitation and Schedule{" "}
             </a>
           </div>
-        </Marquee>
-        <br />
+              </Marquee>*/}
+        
       </div>
     </header>
   );
