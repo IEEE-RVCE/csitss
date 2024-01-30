@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { AppShell, Header, Image, Menu } from "@mantine/core";
-import Marquee from "react-fast-marquee";
 
 import Link from "next/link";
 import React from "react";
