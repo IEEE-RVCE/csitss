@@ -118,7 +118,7 @@ function Tech() {
 
               <div className="mt-8 sm:flex sm:items-center sm:justify-center">
                 <a
-                  href="https://cmt3.research.microsoft.com/CSITSS2023"
+                  href="https://cmt3.research.microsoft.com/CSITSS2024"
                   className="block rounded-lg bg-blue-500 px-5 py-3 font-medium text-white shadow-xl hover:bg-blue-600"
                   target="_blank"
                 >
