@@ -1,32 +1,32 @@
 import React from "react";
 
 function registration() {
-  const TableData = {
-    columns: [
-      "DELEGATES",
-      "INDIAN DELEGATES AMOUNT IN RS.\n ",
-      "FOREIGN DELEGATES AMOUNT IN USD.",
-    ],
+  // const TableData = {
+  //   columns: [
+  //     "DELEGATES",
+  //     "INDIAN DELEGATES AMOUNT IN RS.\n ",
+  //     "FOREIGN DELEGATES AMOUNT IN USD.",
+  //   ],
 
-    rows: [
-      ["Regular Registrations from September 16, 2023", "", ""],
-      ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
-      ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
-      ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
-      ["Faculty (Non-IEEE Members)", "Rs. 8,000", "USD. 160"],
-      ["Industry Professionals (IEEE Members) ", "Rs. 10,000", "USD. 200"],
-      ["Industry Professionals (Non-IEEE Members) ", "Rs. 13,500", "USD. 240"],
-      ["Pre Conference Tutorial", "Rs. 500", "USD. 50"],
-    ],
-  };
+  //   rows: [
+  //     ["Regular Registrations from September 16, 2023", "", ""],
+  //     ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
+  //     ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
+  //     ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
+  //     ["Faculty (Non-IEEE Members)", "Rs. 8,000", "USD. 160"],
+  //     ["Industry Professionals (IEEE Members) ", "Rs. 10,000", "USD. 200"],
+  //     ["Industry Professionals (Non-IEEE Members) ", "Rs. 13,500", "USD. 240"],
+  //     ["Pre Conference Tutorial", "Rs. 500", "USD. 50"],
+  //   ],
+  // };
 
-  const EarlyBirdTableData = {
-    rows: [
-      ["Early Bird Registrations before September 15, 2023:", "", ""],
-      ["Students ", "Rs. 4,000", "USD. 75"],
-      ["Faculty ", "Rs. 5,000", "USD. 100"],
-    ],
-  };
+  // const EarlyBirdTableData = {
+  //   rows: [
+  //     ["Early Bird Registrations before September 15, 2023:", "", ""],
+  //     ["Students ", "Rs. 4,000", "USD. 75"],
+  //     ["Faculty ", "Rs. 5,000", "USD. 100"],
+  //   ],
+  // };
 
   return (
     <>
