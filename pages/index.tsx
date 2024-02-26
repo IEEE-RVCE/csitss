@@ -42,7 +42,7 @@ export default function Index() {
                   </span>
                 </p>
                 <p className="align-text-center text-xl text-slate-50">
-                  Conference Record #60515
+                 
                 </p>
                 <p className="align-text-center text-xl text-slate-50">
                   Organized by
@@ -72,7 +72,7 @@ export default function Index() {
                     TimeLine
                   </ScrollLink>
                   <a
-                    href="CSITSS_28-07-2023.pdf"
+                    href="Brochure - V3.pdf"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Download Brochure
