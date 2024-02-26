@@ -27,46 +27,35 @@ function contact() {
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Abhilash Krishna D G
+                    Dr. Padmashree T 
                     </td>
 
                     <td className="flex-row border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 7989341864
+                        +91 9632076605
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Parth Sarathi Panigrahy
+                      Dr. Shilpa D R
                     </td>
                     <td className="border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 8847834371
+                        +91 9481427157
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Pandry Narendra Rao
+                    Dr. Vishnumurthy K A
                     </td>
                     <td className="border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 9885414398
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-black px-4 py-2">
-                      Dr. Vandana Jha{' '}
-                    </td>
-                    <td className="border border-black px-4 py-2">
-                      <div className="flex">
-                        <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 8969977560
+                        +91 9741211557
                       </div>
                     </td>
                   </tr>
