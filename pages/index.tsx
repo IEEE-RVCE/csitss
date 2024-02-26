@@ -6,13 +6,13 @@ import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 
-const image = {
-  src: 'logo_IEEE_Banaglaore_Section.png',
-  alt: 'ieee_bangalore_logo',
-  href: 'https://ieeebangalore.org/',
-  show: true,
-  padding: 'pt-6',
-}
+// const image = {
+//   src: 'logo_IEEE_Banaglaore_Section.png',
+//   alt: 'ieee_bangalore_logo',
+//   href: 'https://ieeebangalore.org/',
+//   show: true,
+//   padding: 'pt-6',
+// }
 
 export default function Index() {
   return (
