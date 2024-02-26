@@ -18,7 +18,7 @@ export default function CustomTimeLine() {
     },
     {
       label: 'Early Bird Registration',
-      date: 'Before 5th September 2024',
+      date: 'Before 18th September 2024',
     },
     {
       label: 'Submission of Camera-ready Manuscript and Copyright Form',

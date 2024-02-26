@@ -109,7 +109,7 @@ export default function Index() {
                   />
                 </div>
                 <br /> <br />
-                <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+                {/* <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
                   Technically co-sponsored by <br />
                 </h1>
                 <div className={`flex flex-row items-center justify-center`}>
@@ -120,7 +120,7 @@ export default function Index() {
                       alt={image.alt}
                     />
                   </a>
-                </div>
+                </div> */}
                 <div className="flex flex-row items-center justify-center">
                   <img
                     className="h-[25%] w-auto object-cover"
