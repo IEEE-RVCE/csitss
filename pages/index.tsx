@@ -6,13 +6,13 @@ import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 
-const image = {
-  src: 'logo_IEEE_Banaglaore_Section.png',
-  alt: 'ieee_bangalore_logo',
-  href: 'https://ieeebangalore.org/',
-  show: true,
-  padding: 'pt-6',
-}
+// const image = {
+//   src: 'logo_IEEE_Banaglaore_Section.png',
+//   alt: 'ieee_bangalore_logo',
+//   href: 'https://ieeebangalore.org/',
+//   show: true,
+//   padding: 'pt-6',
+// }
 
 export default function Index() {
   return (
@@ -42,7 +42,7 @@ export default function Index() {
                   </span>
                 </p>
                 <p className="align-text-center text-xl text-slate-50">
-                  Conference Record #60515
+                 
                 </p>
                 <p className="align-text-center text-xl text-slate-50">
                   Organized by
@@ -72,7 +72,7 @@ export default function Index() {
                     TimeLine
                   </ScrollLink>
                   <a
-                    href="CSITSS_28-07-2023.pdf"
+                    href="Brochure - V3.pdf"
                     className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                   >
                     Download Brochure
@@ -109,7 +109,7 @@ export default function Index() {
                   />
                 </div>
                 <br /> <br />
-                <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+                {/* <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
                   Technically co-sponsored by <br />
                 </h1>
                 <div className={`flex flex-row items-center justify-center`}>
@@ -120,7 +120,7 @@ export default function Index() {
                       alt={image.alt}
                     />
                   </a>
-                </div>
+                </div> */}
                 <div className="flex flex-row items-center justify-center">
                   <img
                     className="h-[25%] w-auto object-cover"

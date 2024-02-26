@@ -92,6 +92,9 @@ function Tech() {
               <p className="text-center text-3xl font-bold sm:text-5xl">
                 Call For Papers{' '}
               </p>
+              <p className="text-justify text-2xl font-medium text-gray-700 my-4">
+                Conference does not accept/encourage Survey/Review articles.
+                </p>
               <p className="text-justify text-xl font-medium text-gray-500">
                 Prospective authors are encouraged to submit quality and
                 original research papers for presentation at the Conference.

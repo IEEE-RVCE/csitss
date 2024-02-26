@@ -47,21 +47,21 @@ const Links: Array<{
   // },
 ]
 
-const downloadLinks = [
-  {
-    href: './PDF PROGRAMPLAN.pdf',
-    label: 'Program Schedule',
-  },
-  /* {
-    href: "./PDF TUTORIALS & TRACK.pdf",
-    label: "Tutorial Schedule",
-  },
-  */
-  {
-    href: './Invitation Letter.pdf',
-    label: 'Inaugural Invitation & Schedule',
-  },
-]
+// const downloadLinks = [
+//   {
+//     href: './PDF PROGRAMPLAN.pdf',
+//     label: 'Program Schedule',
+//   },
+//    {
+//     href: "./PDF TUTORIALS & TRACK.pdf",
+//     label: "Tutorial Schedule",
+//   },
+  
+//   {
+//     href: './Invitation Letter.pdf',
+//     label: 'Inaugural Invitation & Schedule',
+//   },
+// ]
 
 const NavBar = () => {
   return (
@@ -88,7 +88,7 @@ const NavBar = () => {
                   href={link.href}
                   target={link.newTab ? '_blank' : '_self'}
                 >
-                  {link.label}
+                  {link.label} 
                 </a>
               </Link>
             ))}
@@ -126,13 +126,13 @@ const NavBar = () => {
                 </p>
               </Menu.Label>
 
-              {downloadLinks.map((link) => (
+              {/* {downloadLinks.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
                     <a className="font-sans text-gray-500">{link.label}</a>
                   </Link>
                 </Menu.Item>
-              ))}
+              ))} */}
             </Menu>
           </div>
           <div className="lg:hidden">
@@ -166,22 +166,22 @@ const NavBar = () => {
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="font-sans text-gray-500">{link.label}</a>
+                    <a className="font-sans text-gray-500">{link.label} qq</a>
                   </Link>
                 </Menu.Item>
               ))}
               <Menu.Label>
                 <p className="font-sans text-blue-400 underline">
-                  Download Links
+                  Download Links 
                 </p>
               </Menu.Label>
-              {downloadLinks.map((link) => (
+              {/* {downloadLinks.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="font-sans text-gray-500">{link.label}</a>
+                    <a className="font-sans text-gray-500">{link.label}  qqq</a>
                   </Link>
                 </Menu.Item>
-              ))}
+              ))} */}
             </Menu>
           </div>
         </div>
