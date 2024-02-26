@@ -161,10 +161,10 @@ export default function Index() {
 
                 <a
                   className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                  href="https://cmt3.research.microsoft.com/CSITSS2023"
+                  href="https://cmt3.research.microsoft.com/CSITSS2024"
                 >
                   <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2023"
+                    href="https://cmt3.research.microsoft.com/CSITSS2024"
                     className="text-sm font-medium"
                   >
                     {' '}
