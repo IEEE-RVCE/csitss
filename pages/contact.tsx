@@ -27,6 +27,30 @@ function contact() {
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
+                    Dr. Sagar BM
+                    </td>
+
+                    <td className="flex-row border border-black px-4 py-2">
+                      <div className="flex">
+                        <PhoneIcon className="mx-2 h-4 w-4" />
+                        +91 9886332226
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black px-4 py-2">
+                    Dr. M Krishna
+                    </td>
+
+                    <td className="flex-row border border-black px-4 py-2">
+                      <div className="flex">
+                        <PhoneIcon className="mx-2 h-4 w-4" />
+                        +91 9980480001
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black px-4 py-2">
                     Dr. Padmashree T 
                     </td>
 
