@@ -376,7 +376,7 @@ const Sponsorship: React.FC = () => {
               margin: 0, // Remove default margin
             }}
           >
-            Special Thanks To Our Previous Sponsors
+            Special thanks to Sponsors of CSITSS-2023
           </p>
         </div>
 
