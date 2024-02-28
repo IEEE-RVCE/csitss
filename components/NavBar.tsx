@@ -209,7 +209,7 @@ const Footer = () => {
       <div className="mx-auto flex max-w-screen-xl flex-col items-center px-4 py-16 sm:px-6 lg:block lg:px-8">
         <a className="flex items-center justify-around" href="/">
           <Image
-            src="https://i.ibb.co/pzcZmKs/Untitled-design-5.png"
+            src="logo_rvce.jpg"
             alt="logo"
             className="m-5 h-full w-20"
           />
