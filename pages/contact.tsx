@@ -27,46 +27,59 @@ function contact() {
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Abhilash Krishna D G
+                    Dr. Sagar BM
                     </td>
 
                     <td className="flex-row border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 7989341864
+                        +91 9886332226
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Parth Sarathi Panigrahy
+                    Dr. M Krishna
                     </td>
-                    <td className="border border-black px-4 py-2">
+
+                    <td className="flex-row border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 8847834371
+                        +91 9980480001
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Pandry Narendra Rao
+                    Dr. Padmashree T 
                     </td>
-                    <td className="border border-black px-4 py-2">
+
+                    <td className="flex-row border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 9885414398
+                        +91 9632076605
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-black px-4 py-2">
-                      Dr. Vandana Jha{' '}
+                      Dr. Shilpa D R
                     </td>
                     <td className="border border-black px-4 py-2">
                       <div className="flex">
                         <PhoneIcon className="mx-2 h-4 w-4" />
-                        +91 8969977560
+                        +91 9481427157
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-black px-4 py-2">
+                    Dr. Vishnumurthy K A
+                    </td>
+                    <td className="border border-black px-4 py-2">
+                      <div className="flex">
+                        <PhoneIcon className="mx-2 h-4 w-4" />
+                        +91 9741211557
                       </div>
                     </td>
                   </tr>
@@ -77,7 +90,7 @@ function contact() {
                   For any queires, please mail us at
                   <br />
                   <a href="mailto:csitss@rvce.edu.in">
-                    <span className="font-bold">csitss@rvce.edu.in</span>
+                    <span className="font-bold">csitss2024@rvce.edu.in</span>
                   </a>
                 </h3>
               </div>

@@ -1,6 +1,6 @@
-import { Accordion } from '@mantine/core'
+// import { Accordion } from '@mantine/core'
 import React from 'react'
-import { Topics } from './tech'
+// import { Topics } from './tech'
 
 function about() {
   return (
@@ -194,34 +194,34 @@ function about() {
             />
           </div>
           <p className="mt-4 text-justify text-gray-600">
-            The 7<sup>th</sup> International Conference on "Computational
+            The 8<sup>th</sup> International Conference on "Computational
             Systems and Information Technology for Sustainable Solutions [CSITSS
-            — 2023]" focuses on bringing together leading academicians,
+            — 2024]" focuses on bringing together leading academicians,
             scientists, researchers, industry representatives, postdoctoral
             fellows and research scholars around the world to share their
-            knowledge and research expertise in Renewable Energy, Robotics,
-            Computing, Communication, E-mobility, Embedded Systems, (R2C2E2)
-            from 2<sup>nd</sup> to 4<sup>th</sup>, November 2023.
+            knowledge and research expertise in RVCCCE (Renewabe,VLSI
+            Computing, Communication, E-mobility) 
+            from Nov 7<sup>th</sup>, 8<sup>th</sup> and 9<sup>th</sup> 2024.
             <br />
-            The conference has been successfully organised for the past six
+            The conference has been successfully organised for the past seven
             years with participants from all over India and abroad. All
             peer-reviewed, selected and presented papers from the conference
             will be submitted for possible inclusion in IEEE digital library.
-            The present version of the CSITSS-2023 aims to achieve higher
+            The present version of the CSITSS-2024 aims to achieve higher
             standards by attracting original research works in the domain of
-            R2C2E2. International speakers will deliver keynote talks on the
-            latest technologies in these domains. The CSITSS-2023 ensures to
+            RVCCCE. International speakers will deliver keynote talks on the
+            latest technologies in these domains. The CSITSS-2024 ensures to
             provide a platform for researchers around the globe for knowledge
             exchange and networking.
           </p>
         </section>
-        <section>
+        {/* <section>
           <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
             {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
               CONFERENCE TRACKS
-            </h2> */}
+            </h2> */} 
 
-            <div
+            {/* <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -240,8 +240,8 @@ function about() {
                 }}
               >
                 Conference Tracks
-              </h1>
-              <hr
+              </h1> */}
+              {/* <hr
                 style={{
                   background: 'linear-gradient(to right, red, transparent)',
                   height: '3px',
@@ -249,10 +249,10 @@ function about() {
                   marginRight: '1rem',
                 }}
               />
-            </div>
-            {Topics.map((topic) => (
+            </div> */}
+            {/* {Topics.map((topic) => (
               <div className="flex flex-col overflow-hidden  rounded-lg">
-                <Accordion>
+                <Accordion>                                            ////////  uncomment this when subpoints are given......
                   <Accordion.Item label={topic.label}>
                     {topic.subTopics.map((subTopic) => (
                       <ol className="list-disc">
@@ -262,9 +262,29 @@ function about() {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            ))}
+            ))} */}
+             {/* <div>
+                  {Topics.map((topic, index) => (
+                    <div className="mt-8" key={topic.label}>
+                      <p className="mb-4 text-2xl font-medium text-gray-900">
+                        {index + 1}. {topic.label}
+                      </p>
+                      {/* <br /> */}
+                      {/* <List className="mt-4" type="ordered">
+                        {topic.subTopics.map((subTopic, index) => (
+                          <List.Item
+                            className="relative left-6 text-lg font-medium text-gray-500"
+                            key={subTopic}
+                          >
+                            {index + 1}) {subTopic}
+                          </List.Item>
+                        ))}
+                      </List> */}
+                    {/* </div> 
+                  ))}
+                </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   )
