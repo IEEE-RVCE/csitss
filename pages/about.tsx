@@ -1,6 +1,6 @@
-import { Accordion } from '@mantine/core'
+// import { Accordion } from '@mantine/core'
 import React from 'react'
-import { Topics } from './tech'
+// import { Topics } from './tech'
 
 function about() {
   return (
@@ -215,13 +215,13 @@ function about() {
             exchange and networking.
           </p>
         </section>
-        <section>
+        {/* <section>
           <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
             {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
               CONFERENCE TRACKS
-            </h2> */}
+            </h2> */} 
 
-            <div
+            {/* <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -240,8 +240,8 @@ function about() {
                 }}
               >
                 Conference Tracks
-              </h1>
-              <hr
+              </h1> */}
+              {/* <hr
                 style={{
                   background: 'linear-gradient(to right, red, transparent)',
                   height: '3px',
@@ -249,10 +249,10 @@ function about() {
                   marginRight: '1rem',
                 }}
               />
-            </div>
-            {Topics.map((topic) => (
+            </div> */}
+            {/* {Topics.map((topic) => (
               <div className="flex flex-col overflow-hidden  rounded-lg">
-                <Accordion>
+                <Accordion>                                            ////////  uncomment this when subpoints are given......
                   <Accordion.Item label={topic.label}>
                     {topic.subTopics.map((subTopic) => (
                       <ol className="list-disc">
@@ -262,9 +262,29 @@ function about() {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            ))}
+            ))} */}
+             {/* <div>
+                  {Topics.map((topic, index) => (
+                    <div className="mt-8" key={topic.label}>
+                      <p className="mb-4 text-2xl font-medium text-gray-900">
+                        {index + 1}. {topic.label}
+                      </p>
+                      {/* <br /> */}
+                      {/* <List className="mt-4" type="ordered">
+                        {topic.subTopics.map((subTopic, index) => (
+                          <List.Item
+                            className="relative left-6 text-lg font-medium text-gray-500"
+                            key={subTopic}
+                          >
+                            {index + 1}) {subTopic}
+                          </List.Item>
+                        ))}
+                      </List> */}
+                    {/* </div> 
+                  ))}
+                </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   )
