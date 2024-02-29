@@ -1,83 +1,80 @@
-import { Center, List, Tabs } from '@mantine/core'
+import {   Tabs } from '@mantine/core'
+// import { List,Center } from '@mantine/core'
 
 import React from 'react'
 
 export const Topics = [
   {
-    label: 'Renewable Energy & Power System',
+    label: 'Computational Analysis of Structural and Functional Materials',
     subTopics: [
-      'Power systems & HVDC',
-      'Power electronics and Industrial drives',
-      'Renewable energy systems & Grid Integration',
-      'Micro grids and Smart grids',
-      'Power system protection, monitoring & control',
-      'Computational intelligent techniques for energy sustainability',
-      'Power system resilience & Cyber security',
+      null
     ],
   },
   {
-    label: 'Computing and Intelligent Systems',
+    label: 'Autonomous Vehicles Navigation and Control Systems',
     subTopics: [
-      'Computer Networks and Cyber security',
-      'Machine Intelligence',
-      'Web and Mobile Applications',
-      'Computing Environments (Cloud, Distributed, etc.)',
-      'Internet of Things / Edge Systems',
-      'Augmented, Virtual Reality and extended reality',
-      'Data Analytics',
-      'Block Chain',
-      'Computer Vision and Pattern Recognition',
-      'Metaverse',
+      null
     ],
   },
   {
-    label: 'Control and Automation',
+    label: 'Green Electronics: Sustainable Practices',
     subTopics: [
-      'Sensors for smart systems (IoT/Healthcare etc,.)',
-      'Industrial & Home Automation',
-      'Robotics and Advanced control application',
-      'Biomedical applications',
-      'Virtual instrumentation',
-      'UAV/Drone Technology',
-      'Wearable and Implantable Body Sensor',
+      null
     ],
   },
   {
-    label: 'Smart Communication',
+    label: 'Robotics and Automation',
     subTopics: [
-      '5G and beyond 5G Technology',
-      'Image/Video/Audio processing',
-      'Optical communication and networks',
-      'RADAR, SONAR and LIDAR applications',
-      'Microwave and Wireless Networking',
-      'Software Defined Networking (SDN)',
-      'Social Media Networks',
-      'Ultra-wideband and Green communications',
+      null
     ],
   },
 
   {
-    label: 'E-mobility Sustainable Systems',
+    label: 'Photonics, Optoelectronics and Mechatronics System',
     subTopics: [
-      'Hybrid Energy Storage & BMS',
-      'Smart City & Smart Energy System',
-      'Fuel-cell-based transport',
-      'EV/HEV Design, HIL, SIL & Annotation',
-      'EVs and PHEVs charging, V2G strategies',
-      'Autonomous vehicle, intelligent guidance,safety assessment',
-      'Modelling, simulation and control of EV systems',
+     null
     ],
   },
   {
-    label: 'VLSI Design and Embedded System',
+    label: 'Artificial Intelligence for Sustainable World',
     subTopics: [
-      'Analog/ Digital /Mixed Signal/RF System Designs',
-      'Advances in CAD for VLSI',
-      'Embedded Systems Design',
-      'Low-power digital architectures',
-      'Test & Reliability of Machine Learning Systems',
-      'Microsystems/MEMS/Sensors Test',
-      'Pre-silicon, Post-silicon: Debug, Verification and Validation',
+      null
+    ],
+  },
+  {
+    label: 'Digital Transformation in Various Sectors of Economy',
+    subTopics: [
+      null
+    ],
+  },
+  {
+    label: 'Renewable Energy and Environmental Engineering',
+    subTopics: [
+      null
+    ],
+  },
+  {
+    label: 'Cyber-Physical Systems',
+    subTopics: [
+      null
+    ],
+  },
+  {
+    label: 'Biomedical Electronics and Healthcare Applications',
+    subTopics: [
+      null
+    ],
+  },
+  {
+    label: 'Quantum Mechanics and Computing',
+    subTopics: [
+      null
+    ],
+  },
+  {
+    label: 'Next-Generation Communication Systems',
+    subTopics: [
+      null
     ],
   },
 ]
@@ -127,17 +124,17 @@ function Tech() {
                 >
                   Submit Your Paper
                 </a>
-                {/* <a
-                  href="brochure.pdf"
-                  className="mt-4 block rounded-lg px-5 py-3 font-medium text-blue-500 hover:text-blue-600 sm:mt-0"
+                <a
+                  href="Guidelines to Authors - IEEE.pdf"
+                  className="mt-4 block rounded-lg  px-5 py-3 font-medium text-blue-500 hover:text-blue-600 sm:mt-0"
                   download>
-                  Download CFP
-                </a> */}
+                  Download Guidelines for Authors
+                </a>
               </div>
             </div>
           </aside>
         </Tabs.Tab>
-        <Tabs.Tab label="Conference Tracks">
+        {/* <Tabs.Tab label="Conference Tracks">
           <aside className="m-6 bg-gray-100 sm:m-8 lg:m-12">
             <div className=" p-6 sm:p-8 lg:p-12">
               <p className="text-center text-3xl font-bold sm:text-5xl">
@@ -154,7 +151,7 @@ function Tech() {
                       <p className="mb-4 text-2xl font-medium text-gray-900">
                         {index + 1}. {topic.label}
                       </p>
-                      {/* <br /> */}
+                      <br />
                       <List className="mt-4" type="ordered">
                         {topic.subTopics.map((subTopic, index) => (
                           <List.Item
@@ -171,7 +168,7 @@ function Tech() {
               </Center>
             </div>
           </aside>
-        </Tabs.Tab>
+        </Tabs.Tab> */}
       </Tabs>
     </div>
   )

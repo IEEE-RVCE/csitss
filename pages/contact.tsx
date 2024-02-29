@@ -90,7 +90,7 @@ function contact() {
                   For any queires, please mail us at
                   <br />
                   <a href="mailto:csitss@rvce.edu.in">
-                    <span className="font-bold">csitss@rvce.edu.in</span>
+                    <span className="font-bold">csitss2024@rvce.edu.in</span>
                   </a>
                 </h3>
               </div>
