@@ -23,13 +23,13 @@ const HeaderImages = () => {
     //   show: true,
     //   padding: "pt-6"
     // },
-    {
-      src: 'logo_rvce_ieee.png',
-      alt: 'rvce_ieee_logo',
-      href: 'https://ieee-rvce.org/',
-      show: true,
-      padding: 'pt-6',
-    },
+    // {
+    //   src: 'logo_rvce_ieee.png',
+    //   alt: 'rvce_ieee_logo',
+    //   href: 'https://ieee-rvce.org/',
+    //   show: true,
+    //   padding: 'pt-6',
+    // },
   ]
   return (
     <div>
