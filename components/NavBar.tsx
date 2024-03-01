@@ -166,7 +166,7 @@ const NavBar = () => {
               {Links.map((link) => (
                 <Menu.Item>
                   <Link href={link.href}>
-                    <a className="font-sans text-gray-500">{link.label} qq</a>
+                    <a className="font-sans text-gray-500">{link.label} </a>
                   </Link>
                 </Menu.Item>
               ))}
