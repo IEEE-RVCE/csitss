@@ -21,8 +21,8 @@ const Links: Array<{
     label: 'Committee',
   },
   {
-    href: '/tech',
-    label: 'Technical Program',
+    href: '/papers',
+    label: 'Call for Papers',
   },
   {
     href: "/registration",
