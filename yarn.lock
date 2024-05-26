@@ -1862,7 +1862,7 @@ next-seo@^5.6.0:
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.6.0.tgz#70cb96199e77718d0ffb499c43c7317aba905797"
   integrity sha512-6o7OJq+/V7ZrijayG94BvNOYLQg9xQp0OAwLpA5kdlSei3mYsVbSB32UBIqSxT6uqRf55Jmd56ScG65IDnJShw==
 
-next@latest:
+next@^12.1.6:
   version "12.1.6"
   resolved "https://registry.npmjs.org/next/-/next-12.1.6.tgz"
   integrity sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A==
