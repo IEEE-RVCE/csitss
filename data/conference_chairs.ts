@@ -1,4 +1,4 @@
-export const conference_chairs_data = [
+ const conference_chairs_data = [
     {
       name: 'Dr. B M Sagar',
       post: 'Professor & HoD, Department of ISE',
@@ -18,3 +18,4 @@ export const conference_chairs_data = [
     //  "https://img.etimg.com/thumb/msid-91593340,width-300,imgsize-59386,,resizemode-4,quality-100/1.jpg",
     //},
 ]
+export default conference_chairs_data;

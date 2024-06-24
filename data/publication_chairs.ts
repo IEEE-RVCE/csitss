@@ -1,4 +1,4 @@
-export const publication_chairs_data = [
+const publication_chairs_data = [
     {
       name: 'Mr. Raghavendra Prasad S G',
       post: 'Assistant Professor, Department of ISE, RVCE',
@@ -32,3 +32,4 @@ export const publication_chairs_data = [
       
     },
 ]
+export default publication_chairs_data
