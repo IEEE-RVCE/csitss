@@ -26,8 +26,8 @@ export default function Index() {
         </div> */}
         <header>
           <div
-            className="heroHeader w-full bg-cover bg-center "
-            style={{ height: '38rem' }}
+            className="heroHeader w-full bg-cover bg-center"
+            style={{padding:'1rem',borderRadius:'1rem'}}
           >
             <HeaderImages />
             <div className="flex  w-full items-center justify-center ">
@@ -35,7 +35,7 @@ export default function Index() {
                 <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
                   WELCOME TO CSITSS-2024
                 </h1>
-                <p className="text-xl text-white md:text-2xl">
+                <p className="text-xl text-white md:text-2xl md:mt-0 mt-4">
                   <span className="font-semibold ">
                     8<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
@@ -52,7 +52,8 @@ export default function Index() {
                     RV College of Engineering<sup className="text-lg">®</sup>
                   </h4>
                 </p>
-                <div className="grid grid-cols-3 gap-4 p-4 lg:grid-cols-3 xl:grid-cols-3">
+                
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-4 p-4">
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2024"
                     target="_blank"
@@ -78,6 +79,7 @@ export default function Index() {
                     Download Brochure
                   </a>
                 </div>
+
               </div>
             </div>
           </div>
@@ -86,19 +88,13 @@ export default function Index() {
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 {/* <h2 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
                   Organized by
                 </h2>{" "} <br />
                 <h1 className=" text-blue-800 text-center text-4xl font-extrabold text-transparent">
                   R V College of Engineering
                 </h1>{" "} <br /> */}
-                <h4 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+                <h4 className="lg:mt-44 mt-12 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
                   In association with
                 </h4>{' '}
                 <br />

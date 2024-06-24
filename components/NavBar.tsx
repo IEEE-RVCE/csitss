@@ -74,7 +74,7 @@ const NavBar = () => {
                 <Image
                   src="RVCE NEW-HEADER_onlyLogo.png"
                   alt="logo"
-                  className="  h-full w-20"
+                  className="h-full w-14"
                 />
               </a>
             </Link>
