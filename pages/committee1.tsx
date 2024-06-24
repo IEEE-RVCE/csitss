@@ -13,9 +13,9 @@ export default function committee1() {
                 <Card committeeName={"Publicity and Media Chairs"} to={""}/>
             </div>
             <div className="md:w-2/3 w-4/5">
-                <Card committeeName={"Website Chairs"} to={""}/>
-                <Card committeeName={"Conference Convenors"} to={""}/>
-                <Card committeeName={"Session Management"} to={""}/>
+                <Card committeeName={"Website Chairs"} to={"/committee-details/website_chairs"}/>
+                <Card committeeName={"Conference Convenors"} to={"/committee-details/conference_convenors"}/>
+                <Card committeeName={"Session Management"} to={"/committee-details/session_management"}/>
                 <Card committeeName={"Hospitality"} to={""}/>
                 <Card committeeName={"Transportation"} to={""}/>
                 <Card committeeName={"Stage Committee"} to={""}/>
