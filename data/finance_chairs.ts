@@ -3,12 +3,12 @@
     {
       name:'Mrs. Shyamala S',
       post:' Senior Manager',
-      imgLink:'',
+      imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_NZykul07nU3cliFuRZQr4_q-gOdkRTmRA&s',
     },
     {
       name: ' Mr. Ravi Varma RB',
       post: 'System Administrator',
-      imgLink:'https://rvce.irins.org/assets/profile_images/229199.jpg',
+      imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_NZykul07nU3cliFuRZQr4_q-gOdkRTmRA&s',
     },
     {
       name:'Mrs. Poornima Kulkarni',
