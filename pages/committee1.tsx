@@ -16,10 +16,10 @@ export default function committee1() {
                 <Card committeeName={"Website Chairs"} to={"/committee-details/website_chairs"}/>
                 <Card committeeName={"Conference Convenors"} to={"/committee-details/conference_convenors"}/>
                 <Card committeeName={"Session Management"} to={"/committee-details/session_management"}/>
-                <Card committeeName={"Hospitality"} to={""}/>
-                <Card committeeName={"Transportation"} to={""}/>
+                <Card committeeName={"Hospitality"} to={"/committee-details/hospitality"}/>
+                <Card committeeName={"Transportation"} to={"/committee-details/transportation"}/>
                 <Card committeeName={"Stage Committee"} to={""}/>
-                <Card committeeName={"Registration Committee"} to={""}/>
+                <Card committeeName={"Registration Committee"} to={"/committee-details/registration_committee"}/>
             </div>
         </div>
     </div>
