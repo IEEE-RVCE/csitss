@@ -6,11 +6,11 @@ export default function CustomTimeLine() {
   const data = [
     {
       label: 'Submission of Full-length Manuscript (opens from)',
-      date: '10th June 2024',
+      date: '5th July 2024',
     },
     {
       label: 'Last date to submit Full-length Manuscript',
-      date: '15th July 2024',
+      date: '30th July 2024',
     },
     {
       label: 'Notification of Acceptance',

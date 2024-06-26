@@ -23,7 +23,7 @@ function Papers() {
                 not exceeding 6 pages in A4 size through online submission at
                 Microsoft CMT - on or{' '}
                 <i>
-                  before 15<sup>th</sup> July 2024.{' '}
+                  before 30<sup>th</sup> July 2024.{' '}
                 </i>
                 The manuscript should follow the standard IEEE template.The
                 format of the paper could be downloaded in link below{' '}
