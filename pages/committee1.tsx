@@ -6,7 +6,7 @@ export default function committee1() {
             <div className="md:w-2/3 w-4/5 ">
                 <Card committeeName={"Conference Chairs"} to={"/committee-details/conference_chairs"}/>
                 <Card committeeName={"Program Chairs"} to={"/committee-details/program_chairs"}/>
-                <Card committeeName={"Technical Program Chairs"} to={""}/>
+                <Card committeeName={"Technical Program Chairs"} to={"/committee-details/technical_program_chairs"}/>
                 <Card committeeName={"Finance Chairs"} to={"/committee-details/finance_chairs"}/>
                 <Card committeeName={"Publication Chairs"} to={"/committee-details/publication_chairs"}/>
                 <Card committeeName={"Sponsorship Chairs"} to={"/committee-details/sponsorship_chairs"}/>
