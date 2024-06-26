@@ -12,7 +12,7 @@ const sponsorship_chairs_data = [
       imgLink: 'https://rvce.edu.in/sites/default/files/Photo%20Anjaneyappa_0.JPG',
     },
     {
-      name: 'Dr.KM Ajay',
+      name: 'Dr. KM Ajay',
       post: 'Assistant Professor, Department of EEE, RVCE ',
       imgLink: 'https://rvce.edu.in/sites/default/files/eee-kma.jpg',
     },  

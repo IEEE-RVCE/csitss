@@ -1,6 +1,6 @@
 const publication_chairs_data = [
     {
-      name: 'Mr. Raghavendra Prasad S G',
+      name: 'Prof. Raghavendra Prasad SG',
       post: 'Assistant Professor, Department of ISE, RVCE',
       imgLink:
         'https://rvce.edu.in/sites/default/files/sgr.jpg',
