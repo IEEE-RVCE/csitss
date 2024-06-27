@@ -14,6 +14,8 @@ import Gallery from '../components/Gallery'
 //   padding: 'pt-6',
 // }
 
+
+
 export default function Index() {
   return (
     <>
@@ -88,108 +90,89 @@ export default function Index() {
             </div>
           </div>
         </header>
+        
         <section>
-          <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-              <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                {/* <h2 className=" bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
-                  Organized by
-                </h2>{" "} <br />
-                <h1 className=" text-blue-800 text-center text-4xl font-extrabold text-transparent">
-                  R V College of Engineering
-                </h1>{" "} <br /> */}
-                <h4 className="lg:mt-44 mt-12 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
-                  In association with
-                </h4>{' '}
-                <br />
-                <div className="flex flex-row items-center justify-center">
-                  <img
-                    src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
-                    className="h-auto w-auto object-cover"
-                  />
-                </div>
-                <br /> <br />
-                {/* <h1 className="font-poppins bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
-                  Technically co-sponsored by <br />
-                </h1>
-                <div className={`flex flex-row items-center justify-center`}>
-                  <a href={image.href} target="_blank" rel="noreferrer">
-                    <img
-                      className="h-auto w-auto object-cover"
-                      src={image.src}
-                      alt={image.alt}
-                    />
-                  </a>
-                </div> */}
-                <div className="flex flex-row items-center justify-center">
-                  <img
-                    className="h-[25%] w-auto object-cover"
-                    src="https://ieeebangalore.org/wp-content/uploads/2022/01/Bangalore-Section-Logo-white-1-01-768x183.png"
-                    alt="ieee_blr_logo"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <h2 className="my-4 text-3xl font-bold sm:text-4xl">
-                  About CSITSS
-                </h2>
-
-                <p className="break-normal text-justify text-lg font-bold text-gray-900">
-                  The 8<sup>th</sup> International Conference on "Computational
-                  Systems and Information Technology for Sustainable Solutions
-                  [CSITSS — 2024]" focuses on bringing together leading
-                  academicians, scientists, researchers, industry
-                  representatives, postdoctoral fellows and research scholars
-                  around the world to share their knowledge and research
-                  expertise in RVCCCE (Renewable, VLSI, Control, Computing,
-                  Communication, E-mobility) from Nov 7<sup>th</sup>, 8
-                  <sup>th</sup> and 9<sup>th</sup> 2024.
-                  <br />
-                  The conference has been successfully organised for the past
-                  seven years with participants from all over India and abroad.
-                  All peer-reviewed, selected and presented papers from the
-                  conference will be submitted for possible inclusion in IEEE
-                  digital library. The present version of the CSITSS-2024 aims
-                  to achieve higher standards by attracting original research
-                  works in the domain of RVCCCE. International speakers will
-                  deliver keynote talks on the latest technologies in these
-                  domains. The CSITSS-2024 ensures to provide a platform for
-                  researchers around the globe for knowledge exchange and
-                  networking.{' '}
-                </p>
-
-                <a
-                  className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                  href="https://cmt3.research.microsoft.com/CSITSS2024"
-                >
-                  <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2024"
-                    className="text-sm font-medium"
-                  >
-                    {' '}
-                    Submit Paper{' '}
-                  </a>
-
-                  <svg
-                    className="ml-3 h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
+  <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+      <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+        <h4 className="lg:mt-20 mt-12 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
+          In association with
+        </h4>
+        <br />
+        <div className="flex flex-col items-center justify-center">
+          <div className="mb-8 logo-animation">
+            <img
+              src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
+              className="h-auto w-auto object-cover"
+              alt="FIU Logo"
+            />
           </div>
-        </section>
+          <div className="mt-24 logo-animation">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650"
+              className="h-auto w-auto object-cover"
+              alt="FH Dortmund Logo"
+            />
+          </div>
+        </div>
+        <br /> <br />
+        <div className="flex flex-row items-center justify-center logo-animation">
+          <img
+            className="h-[25%] w-auto object-cover"
+            src="https://ieeebangalore.org/wp-content/uploads/2022/01/Bangalore-Section-Logo-white-1-01-768x183.png"
+            alt="IEEE Bangalore Logo"
+          />
+        </div>
+      </div>
+
+      <div>
+        <h2 className="my-4 text-3xl font-bold sm:text-4xl">About CSITSS</h2>
+
+        <p className="break-normal text-justify text-lg font-bold text-gray-900">
+          The 8<sup>th</sup> International Conference on "Computational
+          Systems and Information Technology for Sustainable Solutions [CSITSS
+          — 2024]" focuses on bringing together leading academicians,
+          scientists, researchers, industry representatives, postdoctoral
+          fellows and research scholars around the world to share their
+          knowledge and research expertise in RVCCCE (Renewable, VLSI, Control,
+          Computing, Communication, E-mobility) from Nov 7<sup>th</sup>, 8
+          <sup>th</sup> and 9<sup>th</sup> 2024. <br /> The conference has been
+          successfully organised for the past seven years with participants
+          from all over India and abroad. All peer-reviewed, selected and
+          presented papers from the conference will be submitted for possible
+          inclusion in IEEE digital library. The present version of the
+          CSITSS-2024 aims to achieve higher standards by attracting original
+          research works in the domain of RVCCCE. International speakers will
+          deliver keynote talks on the latest technologies in these domains.
+          The CSITSS-2024 ensures to provide a platform for researchers around
+          the globe for knowledge exchange and networking.{" "}
+        </p>
+
+        <a
+          className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+          href="https://cmt3.research.microsoft.com/CSITSS2024"
+        >
+          <span className="text-sm font-medium"> Submit Paper </span>
+
+          <svg
+            className="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
