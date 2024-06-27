@@ -27,12 +27,12 @@ export default function Index() {
         <header>
           <div
             className="heroHeader w-full bg-cover bg-center"
-            style={{padding:'1rem',borderRadius:'1rem'}}
+            style={{padding:'3rem'}}
           >
             <HeaderImages />
             <div className="flex  w-full items-center justify-center ">
-              <div className="rounded-3xl bg-gray-800 bg-opacity-70 px-9 py-5 text-center font-extrabold ">
-                <h1 className="bg bg-gradient-to-r from-yellow-300  via-amber-400 via-orange-500 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
+              <div className="rounded-3xl bg-gray-800 bg-opacity-80 px-9 py-5 text-center font-extrabold ">
+                <h1 className="bg bg-gradient-to-r from-yellow-200  via-amber-500 via-orange-600 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
                   WELCOME TO CSITSS-2024
                 </h1>
                 <p className="text-xl text-white md:text-2xl md:mt-0 mt-4">
@@ -55,30 +55,33 @@ export default function Index() {
                 
                 <div className="flex flex-col md:grid md:grid-cols-3 gap-4 p-4">
                   <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2024"
-                    target="_blank"
-                    className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
-                  >
-                    Submit Paper
-                  </a>
-                  <ScrollLink
-                    activeClass="active"
-                    className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
-                    to="test4"
-                    spy={true}
-                    smooth={true}
-                    duration={600}
-                    delay={100}
-                  >
-                    TimeLine
-                  </ScrollLink>
-                  <a
-                    href="Brochure - V3.2 (1).pdf"
-                    className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
-                  >
-                    Download Brochure
-                  </a>
-                </div>
+                  href="https://cmt3.research.microsoft.com/CSITSS2024"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="mt-4 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none flex items-center justify-center transition-colors duration-300 ease-in-out"
+                   >
+    <span>Submit Paper</span>
+  </a>
+  <ScrollLink
+    activeClass="active"
+    className="mt-4 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none flex items-center justify-center transition-colors duration-300 ease-in-out"
+    to="test4"
+    spy={true}
+    smooth={true}
+    duration={600}
+    delay={100}
+  >
+    <span>Timeline</span>
+  </ScrollLink>
+  <a
+    href="Brochure - V3.2 (1).pdf"
+    className="mt-4 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none flex items-center justify-center transition-colors duration-300 ease-in-out"
+    download
+  >
+    <span>Download Brochure</span>
+  </a>
+</div>
+
 
               </div>
             </div>
@@ -196,14 +199,15 @@ export default function Index() {
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509397044632!2d77.49651251530834!3d12.923722790887302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1652610248773!5m2!1sen!2sin"
-                  width="1200"
-                  height="600"
-                  style={{ border: 0 }}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509397044632!2d77.49651251530834!3d12.923722790887302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1652610248773!5m2!1sen!2sin"
+  width="1200"
+  height="600"
+  style={{ border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.8), 0 2px 4px -1px rgba(0, 0, 0, 0.06)', padding: '1rem' }}
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
               </div>
               <div className="gap-8 lg:py-24">
                 <h2 className="text-3xl font-bold sm:text-4xl">Venue</h2>

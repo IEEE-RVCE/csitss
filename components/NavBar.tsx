@@ -66,7 +66,7 @@ const Links: Array<{
 const NavBar = () => {
   return (
     <header>
-      <div className="mx-auto  w-full p-2  shadow-md">
+      <div className="mx-auto w-full p-1 shadow-md bg-blue-100 bg-opacity-20">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
@@ -80,11 +80,11 @@ const NavBar = () => {
             </Link>
           </div>
 
-          <nav className="text-m hidden space-x-4  font-medium md:flex">
+          <nav className="text-m hidden space-x-10  font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={JSON.stringify(link)}>
                 <a
-                  className="font-sans text-gray-500 hover:border-b-2 hover:text-blue-700 "
+                  className="font-sans text-black-500 hover:border-b-3 hover:text-blue-700 "
                   href={link.href}
                   target={link.newTab ? '_blank' : '_self'}
                 >
@@ -97,7 +97,7 @@ const NavBar = () => {
             <Menu
               control={
                 <button
-                  className="rounded-lg bg-gray-100 p-2 text-gray-600"
+                  className="rounded-lg bg-black-100 p-2 text-gray-600"
                   type="button"
                   name="Mobile Navigation Menu"
                 >
@@ -226,7 +226,7 @@ const Footer = () => {
           <h2>RV Vidyanikethan Post, Mysuru Road Bengaluru - 560059</h2>
         </div>
         <div className="mt-8 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between">
-          <p className="text-center text-xs text-gray-500">
+          <p className="text-center text-xs text-gray-900">
             &copy; 2022
             {new Date().getFullYear() === 2022
               ? ''
@@ -296,7 +296,7 @@ const WrapApp = ({ children }: any) => {
     <AppShell
       padding="md"
       header={
-        <Header height={100}>
+        <Header height={80}>
           <NavBar />
         </Header>
       }
