@@ -39,10 +39,10 @@ const imgLinks = [
 
 const useStyles = createStyles((theme) => ({
   card: {
-    transition: 'transform 150ms ease, box-shadow 150ms ease',
-
+    transition: 'transform 150ms ease, box-shadow 200ms ease',
+    border: `1px solid ${theme.colors.gray[6]}`,
     '&:hover': {
-      transform: 'scale(1.01)',
+      transform: 'scale(1.02)',
       boxShadow: theme.shadows.md,
     },
   },
@@ -50,6 +50,17 @@ const useStyles = createStyles((theme) => ({
   title: {
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 600,
+  },
+
+  container: {
+    paddingTop: theme.spacing.xl,
+    paddingBottom: theme.spacing.xl,
+  },
+
+  grid: {
+    [theme.fn.smallerThan('sm')]: {
+      gridTemplateColumns: '1fr !important',
+    },
   },
 }))
 
@@ -59,14 +70,18 @@ function Gallery() {
   const cards = imgLinks.map((link) => (
     <Card key={link} p="md" radius="md" className={classes.card}>
       <AspectRatio ratio={1920 / 1080}>
-        <Image src={link} />
+        <Image src={link} alt="Gallery Image" withPlaceholder />
       </AspectRatio>
     </Card>
   ))
 
   return (
-    <Container py="xl">
-      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+    <Container className={classes.container}>
+      <SimpleGrid
+        cols={3}
+        spacing="lg"
+        className={classes.grid}
+      >
         {cards}
       </SimpleGrid>
     </Container>
