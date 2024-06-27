@@ -1,4 +1,16 @@
 const advisory_committee = [
+  {
+    name: 'Dr. KN Subramanya',
+    post: 'Principal, RVCE, Bengaluru',
+    imgLink:'https://rvce.irins.org/assets/profile_images/209990.jpeg'
+
+  },
+  {
+    name: 'Dr. KS Geetha',
+    post: 'Vice Principal, RVCE, Bengaluru',
+    imgLink:'https://rvce.edu.in/sites/default/files/KS-Geetha-VP.jpg'
+
+  },
     {
         name: 'Sri. SS Iyengar',
         post: 'Professor, Ryder Professor of Computer Science, Florida International University (FIU), Miami',
@@ -50,7 +62,7 @@ const advisory_committee = [
         {
           name: 'Dr. Mahadev Prasanna',
           post: 'Director, Indian Institute of Information Technology (IIIT) Dharwad',
-          imgLink:'https://lh4.googleusercontent.com/Dhm1SV6qJpWMAsoO98cFGqDrukSNxcR4sOL7g5vnz9Ax-tGJdNVg_r-6qYwTyS_aGRtYXgyEdqoB1fmhDh4u3DYvX9hb387umvfdre3muW0wtigj=w1280'
+          imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyvmxY-osBuxocKXU9tDiE9DhIQ6E-Og5arw&s'
     
         },
         {
