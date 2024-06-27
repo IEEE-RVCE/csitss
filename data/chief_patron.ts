@@ -3,8 +3,8 @@ const chief_patron=
     {
         name: 'Dr. MP Shyamm',
         post: 'President, RSST',
-        imgLink:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWx98LkAMrfC1ZtWNWZ_pM0iyEik9a2NNZh4PUJYaEdAHdzlTMmu8&usqp=CAE&s',
+        imgLink:'https://media.licdn.com/dms/image/D5603AQHhesV0NwOscA/profile-displayphoto-shrink_400_400/0/1681215680922?e=1724889600&v=beta&t=0jW_gtoi2bXSgJ4EMLhttPJIqiFMWaU6sDxjhU2xXj4',
+          
       }
 ]
 export default chief_patron;
