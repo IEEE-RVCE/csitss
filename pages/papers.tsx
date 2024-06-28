@@ -35,7 +35,7 @@ function Papers() {
                 and submitted papers will be peer reviewed by domain experts. To
                 submit the papers use the Microsoft CMT Link mentioned below:
                 <br />
-                <a href="https://cmt3.research.microsoft.com/CSITSS2023">
+                <a href="https://cmt3.research.microsoft.com/CSITSS2024">
                   <b>Paper Submission Link</b>
                 </a>
               </p>
