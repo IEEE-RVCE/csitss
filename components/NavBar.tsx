@@ -25,6 +25,10 @@ const Links: Array<{
     label: 'Call for Papers',
   },
   {
+    href: '/awards',
+    label: 'Awards',
+  },
+  {
     href: "/registration",
     label: "Registration",
   },
