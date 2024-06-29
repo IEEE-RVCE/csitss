@@ -19,8 +19,8 @@ function Awards() {
               <p className="text-justify text-xl font-medium text-gray-500">
             
 The below awards will be conferred by CSITSS-2024:
-<br />i. Best Ph.D Thesis
-<br />ii. Best Faculty and Student Paper 
+<br /><i>i.</i> Best Ph.D Thesis
+<br /><i>ii</i>. Best Faculty and Student Paper 
 <br />
 <br />
 Ph.D. scholars, who have been awarded their Ph.D. degree in the conference themes specified from 
@@ -28,26 +28,11 @@ recognized universities during the period June 1, 2023 to June 1, 2024, are elig
 CSITSS 2024 Best Ph.D. Thesis Award. Ph.D. Thesis (in pdf format) and degree certificate can be 
 submitted to the <b>Email ID: csitss2024@rvce.edu.in.</b> Application fees: Rs.1000/-.
                 <br />
-             
-              </p>
+                <br />
+                <br />
+                <br />
 
-              <div className="mt-8 sm:flex sm:items-center sm:justify-center">
-                <a
-                  href="https://cmt3.research.microsoft.com/CSITSS2024"
-                  className="block rounded-lg bg-blue-500 px-5 py-3 font-medium text-white shadow-xl hover:bg-blue-600"
-                  target="_blank"
-                >
-                  Submit Your Paper
-                </a>
-                </div>
-                <div className="mt-8 sm:flex sm:items-center sm:justify-center">
-                <a
-                  href="Guidelines to Authors - IEEE.pdf"
-                  className="mt-4 block rounded-lg  px-5 py-3 font-medium text-blue-500 hover:text-blue-600 sm:mt-0"
-                  download>
-                  Download Guidelines for Authors
-                </a>
-              </div>
+              </p>
             </div>
           </aside>
         
