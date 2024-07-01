@@ -23,7 +23,7 @@ The below awards will be conferred by CSITSS-2024:
 <br /><i>ii</i>. Best Faculty and Student Paper 
 <br />
 <br />
-Ph.D. scholars, who have been awarded their Ph.D. degree in the conference themes specified from 
+Ph.D. scholars, who have been awarded their Ph.D. degree in the conference themes specified, from 
 recognized universities during the period June 1, 2023 to June 1, 2024, are eligible to apply for 
 CSITSS 2024 Best Ph.D. Thesis Award. Ph.D. Thesis (in pdf format) and degree certificate can be 
 submitted to the <b>Email ID: csitss2024@rvce.edu.in.</b> Application fees: Rs.1000/-.
