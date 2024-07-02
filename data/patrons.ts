@@ -1,7 +1,7 @@
 const patrons = [
 
   {
-      name: 'Dr. AVS Murthy',
+      name: 'Dr. A V S Murthy',
       post: 'Hon. Secretary, RSST',
       imgLink:'https://rvu.edu.in/wp-content/uploads/2023/02/02-3.png'
 
