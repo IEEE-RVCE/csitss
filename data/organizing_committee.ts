@@ -1,6 +1,19 @@
 const organizing_committee=
 [
-    {
+    
+      {
+        name: 'Dr. Shanmukha N',
+        post: 'Dean Academics , RVCE',
+        imgLink:'https://media.licdn.com/dms/image/C5603AQGBCxGDQqYybw/profile-displayphoto-shrink_200_200/0/1626524723738?e=1725494400&v=beta&t=AMVK10uy_PoGNaYDoIeCN_RFy3NgzbbP8POg1c1y4yo',
+          
+      },
+      {
+        name: 'Dr. Uma B V',
+        post: 'Dean Student Affairs, RVCE',
+        imgLink:'https://rvce.edu.in/sites/default/files/BVU.jpg',
+          
+      },
+      {
         name: 'Dr. Ravindra S Kulkarni',
         post: 'Professor & Head, Department of AE, RVCE',
         imgLink:'http://www.rvce.edu.in/sites/default/files/Aero-rsk_0.JPG',
