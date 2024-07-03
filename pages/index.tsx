@@ -77,7 +77,7 @@ export default function Index() {
                   <span>Timeline</span>
                 </ScrollLink>
   <a
-    href="Brochure - V3.2 (1).pdf"
+    href="CSITSS'24.pdf"
     className="mt-4 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white hover:bg-blue-500 focus:bg-blue-500 focus:outline-none flex items-center justify-center transition-colors duration-300 ease-in-out"
     download
   >
