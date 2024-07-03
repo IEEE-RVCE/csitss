@@ -1,18 +1,18 @@
 const advisory_committee = [
   {
-    name: 'Dr. KN Subramanya',
+    name: 'Dr. K N Subramanya',
     post: 'Principal, RVCE, Bengaluru',
     imgLink:'https://rvce.irins.org/assets/profile_images/209990.jpeg'
 
   },
   {
-    name: 'Dr. KS Geetha',
+    name: 'Dr. K S Geetha',
     post: 'Vice Principal, RVCE, Bengaluru',
     imgLink:'https://rvce.edu.in/sites/default/files/KS-Geetha-VP.jpg'
 
   },
     {
-        name: 'Sri. SS Iyengar',
+        name: 'Sri. S S Iyengar',
         post: 'Professor, Ryder Professor of Computer Science, Florida International University (FIU), Miami',
         imgLink:'https://www.cis.fiu.edu/wp-content/uploads/2016/07/S-S-Iyengar.jpg'
   
