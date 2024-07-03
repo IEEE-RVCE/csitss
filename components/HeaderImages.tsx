@@ -9,13 +9,13 @@ const HeaderImages = () => {
       show: true,
       padding: 'p-2',
     },
-    // {
-    //   src: "logo_IEEE_Main.png",
-    //   alt: "ieee_logo",
-    //   href: "https://www.ieee.org",
-    //   show: true,
-    //   padding: "p-2"
-    // },
+    {
+      src: "ieee-main.png",
+      alt: "ieee_logo",
+      href: "https://www.ieee.org",
+      show: true,
+      padding: "p-2"
+    },
     // {
     //   src: "logo_IEEE_Banaglaore_Section.png",
     //   alt: "ieee_bangalore_logo",
@@ -34,7 +34,7 @@ const HeaderImages = () => {
   return (
     <div>
       <div className="center p-auto m-14 mt-0  hidden flex-col md:block ">
-        <div className="mx-20 mt-6 flex items-center justify-evenly gap-8 overflow-x-scroll rounded-3xl bg-white bg-opacity-20  scrollbar-hide ">
+        <div className="mx-20 mt-6 flex items-center justify-evenly gap-8 overflow-x-scroll rounded-3xl bg-white bg-opacity-40  scrollbar-hide ">
           {images.map((image) => {
             if (image.show) {
               return (
