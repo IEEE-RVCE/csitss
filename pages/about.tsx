@@ -14,7 +14,7 @@ function about() {
             <h1
               style={{
                 marginRight: '1rem',
-                background: 'linear-gradient(to right, #ff0000, #800000)',
+                background: 'linear-gradient(to right, #00BFFF, #002244)',
                 WebkitBackgroundClip: 'text',
                 fontSize: '2.5rem',
                 fontWeight: 'bold',
@@ -26,7 +26,7 @@ function about() {
             </h1>
             <hr
               style={{
-                background: 'linear-gradient(to right, red, transparent)',
+                background: 'linear-gradient(to right, #00BFFF, transparent)',
                 height: '3px',
                 width: '100%',
                 marginRight: '1rem',
@@ -45,7 +45,7 @@ function about() {
             <h1
               style={{
                 marginRight: '1rem',
-                background: 'linear-gradient(to right, #ff0000, #800000)',
+                background: 'linear-gradient(to right, #00BFFF, #002244)',
                 WebkitBackgroundClip: 'text',
                 fontSize: '2.5rem',
                 fontWeight: 'bold',
@@ -57,7 +57,7 @@ function about() {
             </h1>
             <hr
               style={{
-                background: 'linear-gradient(to right, red, transparent)',
+                background: 'linear-gradient(to right, #00BFFF, transparent)',
                 height: '3px',
                 width: '100%',
                 marginRight: '1rem',
@@ -112,7 +112,7 @@ function about() {
                   <h1
                     style={{
                       marginRight: '1rem',
-                      background: 'linear-gradient(to right, #ff0000, #800000)',
+                      background: 'linear-gradient(to right, #00BFFF, #002244)',
                       WebkitBackgroundClip: 'text',
                       fontSize: '2rem',
                       fontWeight: 'bold',
@@ -125,7 +125,7 @@ function about() {
                   </h1>
                   <hr
                     style={{
-                      background: 'linear-gradient(to right, red, transparent)',
+                      background: 'linear-gradient(to right, #00BFFF, transparent)',
                       height: '3px',
                       width: '100%',
                       marginRight: '1rem',
@@ -165,15 +165,13 @@ sponsored research projects and consultancy in the last five years.
             </div>
           </div>
         </section>
-        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
-            ABOUT THE CONFERENCE
-          </h2> */}
+        {/* <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+        
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <h1
               style={{
                 marginRight: '1rem',
-                background: 'linear-gradient(to right, #ff0000, #800000)',
+                background: 'linear-gradient(to right, #00BFFF, #002244)',
                 WebkitBackgroundClip: 'text',
                 fontSize: '2.5rem',
                 fontWeight: 'bold',
@@ -186,7 +184,7 @@ sponsored research projects and consultancy in the last five years.
             </h1>
             <hr
               style={{
-                background: 'linear-gradient(to right, red, transparent)',
+                background: 'linear-gradient(to right, #00BFFF, transparent)',
                 height: '3px',
                 width: '100%',
                 marginRight: '1rem',
@@ -207,7 +205,7 @@ talks on the latest technologies in these domains. The CSITSS-2024 ensures to pr
 for researchers around the globe for knowledge exchange and networking. The Conference is
 approved by IEEE with the conference number : 64042
           </p>
-        </section>
+        </section> */}
         {/* <section>
           <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
             {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
