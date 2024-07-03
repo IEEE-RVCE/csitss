@@ -145,21 +145,21 @@ function about() {
                   Innovation, With a Focus on Sustainable and Inclusive
                   Technology"
                   <br />
-                  Recent awards and achievements include - Ranked 89th in the
-                  Country by National Institutional Ranking Framework (NIRF:
-                  2022), QS-IGUAGE -Diamond University Rating (2021-2024),
-                  ranked 1501+ in Times Higher Education World University
-                  Rankings-2022, "Excellent" rating in ARIIA Ranking-2021 and
-                  NPTEL (Local Chapter) "A" Rating & Max. No. of NPTEL Stars.
+                  <br/>
+                  Recent awards and achievements include - Ranked 96th in the Country by National Institutional
+Ranking Framework (NIRF: 2021-22), “Engineering College of the Year-2023” by the Higher
+Education Review Magazine, Ranked 10th in the country & 2nd in Karnataka - IIRF Ranking (2023),
+Ranked 6<sup>th</sup> among the top 10 of 100 Pvt. Engg. Colleges in the Country by Education World
+Magazine-2023. Ranked 1501+ in Times Higher Education World University Rankings-2024. Ranked
+801+ in Computer Science and 1001+ Rank in Engineering category in THE World University
+Rankings-2024, Ranked 1501+ in Impact Ranking in The World University Rankings-2024, Ranking
+601+ in Times Higher Education Asia University Rankings-2024 and NPTEL (Local Chapter) “AAA”
+Rating.
                   <br />
-                  The institution has to its credit over 1500 National and
-                  International Journal & Conference publications, filed 06
-                  patents, 12 published patents, 17 granted patents, completed
-                  sponsored research and consultancy projects worth ₹ 16.0
-                  crores in the last three yea₹ The institution has established
-                  Centres of Competence (7) and Centres of Excellence (17) in
-                  various domains. The students have won awards and accolades in
-                  national and international competitions.
+                  <br/>
+                  RVCE has to its credit over 1700 national and international journal publications, 70 filed patents, out
+of which 59 were published patents, 38 granted patents and executed over Rs. 30 crores of
+sponsored research projects and consultancy in the last five years.
                 </p>
               </div>
             </div>
@@ -194,25 +194,18 @@ function about() {
             />
           </div>
           <p className="mt-4 text-justify text-gray-600">
-            The 8<sup>th</sup> International Conference on "Computational
-            Systems and Information Technology for Sustainable Solutions [CSITSS
-            — 2024]" focuses on bringing together leading academicians,
-            scientists, researchers, industry representatives, postdoctoral
-            fellows and research scholars around the world to share their
-            knowledge and research expertise in RVCCCE (Renewabe,VLSI
-            Computing, Communication, E-mobility) 
-            from Nov 7<sup>th</sup>, 8<sup>th</sup> and 9<sup>th</sup> 2024.
-            <br />
-            The conference has been successfully organised for the past seven
-            years with participants from all over India and abroad. All
-            peer-reviewed, selected and presented papers from the conference
-            will be submitted for possible inclusion in IEEE digital library.
-            The present version of the CSITSS-2024 aims to achieve higher
-            standards by attracting original research works in the domain of
-            RVCCCE. International speakers will deliver keynote talks on the
-            latest technologies in these domains. The CSITSS-2024 ensures to
-            provide a platform for researchers around the globe for knowledge
-            exchange and networking.
+          The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for
+Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians,
+scientists, researchers, industry representatives, postdoctoral fellows and research scholars around
+the world to share their knowledge and research expertise in Green Electronics, Renewable Energy,
+Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum
+Mechanics and Computing from November 7<sup>th</sup> to 9<sup>th</sup> 2024.
+The conference has been successfully organised for the past seven years with participants from all
+over India and abroad. All peer-reviewed, selected and presented papers from the conference will be
+submitted for possible inclusion in IEEE digital library. International speakers will deliver keynote
+talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform
+for researchers around the globe for knowledge exchange and networking. The Conference is
+approved by IEEE with the conference number : 64042
           </p>
         </section>
         {/* <section>
