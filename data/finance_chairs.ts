@@ -17,7 +17,7 @@
     {
       name: ' Mr. Ravi Varma R B',
       post: 'System Administrator',
-      imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_NZykul07nU3cliFuRZQr4_q-gOdkRTmRA&s',
+      imgLink:'ravi-varma.jpg',
     },
     
 ]

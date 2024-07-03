@@ -36,7 +36,7 @@ const advisory_committee = [
     
         },
         {
-          name: 'Dr.Surendiran',
+          name: 'Dr. Surendiran',
           post: 'Associate Professor, Department of Computer Science and Engineering, National Institute of Technology ,Puducherry',
           imgLink:'https://nitpy.irins.org/assets/profile_images/101712.png'
     
@@ -48,13 +48,13 @@ const advisory_committee = [
     
         },
         {
-          name: 'Dr.Pramod Kumar',
+          name: 'Dr. Pramod Kumar',
           post: 'Associate Professor, IISc',
           imgLink:'https://mecheng.iisc.ac.in//wp-content/uploads/2020/02/Pramod.jpg'
     
         },
         {
-          name: 'Dr.Nirmala Devi',
+          name: 'Dr. Nirmala Devi',
           post: 'Professor, Department of E&C ,Osmania University, Hyderabad',
           imgLink:'https://media.licdn.com/dms/image/C5603AQERRw_DU5gLsQ/profile-displayphoto-shrink_200_200/0/1596720840323?e=1724889600&v=beta&t=5Mkptx2c9A9ikeEif5goqlx8S5e9MQFrQcuor7-_XBo'
     

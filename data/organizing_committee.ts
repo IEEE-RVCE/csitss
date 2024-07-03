@@ -78,7 +78,7 @@ const organizing_committee=
         imgLink:'https://rvce.edu.in/sites/default/files/Dr.KS_Profilephoto.jpg'
       },
       {
-        name: 'Dr. Sudha Kamath MK',
+        name: 'Dr. Sudha Kamath M K',
         post: 'Associate Professor & Head, Department of Physics, RVCE',
         imgLink:'https://rvce.edu.in/sites/default/files/ph-sk.jpg'       
       },
