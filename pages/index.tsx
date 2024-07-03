@@ -129,23 +129,19 @@ export default function Index() {
         <h2 className="my-4 text-3xl font-bold sm:text-4xl">About CSITSS</h2>
 
         <p className=" text-justify text-lg font-bold text-gray-900">
-          The 8<sup>th</sup> International Conference on "Computational
-          Systems and Information Technology for Sustainable Solutions [CSITSS
-          — 2024]" focuses on bringing together leading academicians,
-          scientists, researchers, industry representatives, postdoctoral
-          fellows and research scholars around the world to share their
-          knowledge and research expertise in RVCCCE (Renewable, VLSI, Control,
-          Computing, Communication, E-mobility) from Nov 7<sup>th</sup>, 8
-          <sup>th</sup> and 9<sup>th</sup> 2024. <br /> The conference has been
-          successfully organised for the past seven years with participants
-          from all over India and abroad. All peer-reviewed, selected and
-          presented papers from the conference will be submitted for possible
-          inclusion in IEEE digital library. The present version of the
-          CSITSS-2024 aims to achieve higher standards by attracting original
-          research works in the domain of RVCCCE. International speakers will
-          deliver keynote talks on the latest technologies in these domains.
-          The CSITSS-2024 ensures to provide a platform for researchers around
-          the globe for knowledge exchange and networking.{" "}
+              The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for
+Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians,
+scientists, researchers, industry representatives, postdoctoral fellows and research scholars around
+the world to share their knowledge and research expertise in Green Electronics, Renewable Energy,
+Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum
+Mechanics and Computing from November 7<sup>th</sup> to 9<sup>th</sup> 2024.
+The conference has been successfully organised for the past seven years with participants from all
+over India and abroad. All peer-reviewed, selected and presented papers from the conference will be
+submitted for possible inclusion in IEEE digital library. International speakers will deliver keynote
+talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform
+for researchers around the globe for knowledge exchange and networking. The Conference is
+approved by IEEE with the conference number : 64042.{" "}
+
         </p>
 
         <a

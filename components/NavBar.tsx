@@ -37,9 +37,14 @@ const Links: Array<{
     label: 'Sponsors',
   },
   {
+    href: '/tracks',
+    label: 'Tracks',
+  },
+  {
     href: '/contact',
     label: 'Contact Us',
   },
+  
   // {
   //   href: "https://rzp.io/l/3N4bwhvH",
   //   label: "Quick Payment Link",
