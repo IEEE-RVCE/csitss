@@ -1,11 +1,11 @@
 import React from 'react'
-import { PhoneIcon } from '@heroicons/react/solid'
+import { PhoneIcon, MailIcon } from '@heroicons/react/solid'
 
 function Contact() {
   return (
     <>
       <br />
-      <div className="container my-8 mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <div className="container my-8 mx-auto bg-white p-4 md:p-8 rounded-lg shadow-lg">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
             <img
@@ -16,22 +16,25 @@ function Contact() {
           </div>
           <div>
             <div className="md:flex md:flex-col md:justify-between">
-              <div className="mb-4 p-2 md:mb-0">
-                <table className="mx-auto w-full border-collapse border border-gray-300 text-sm rounded-lg shadow-sm">
+              <div className="mb-4 p-2 md:mb-0 overflow-x-auto">
+                <table className="w-full border-collapse border border-gray-300 text-sm rounded-lg shadow-sm">
                   <thead>
-                    <tr className="bg-gray-200">
+                    <tr className="bg-blue-200">
                       <th className="border border-gray-300 px-4 py-2 text-left">
                         Name
                       </th>
-                      <th className="border border-gray-300 px-4 py-2 text-left">
+                      <th className="border border-gray-300 px-10 py-2 text-left">
                         Contact Number
+                      </th>
+                      <th className="border border-gray-300 px-4 py-2 text-left">
+                        Email
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="hover:bg-gray-100">
                       <td className="border border-gray-300 px-4 py-2">
-                        Dr. Sagar B M, HOD Dept. of ISE
+                        Dr. Sagar B M, HOD Dept. of ISE, RVCE
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
@@ -41,10 +44,18 @@ function Contact() {
                           </span>
                         </div>
                       </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            sagarbm@rvce.edu.in
+                          </span>
+                        </div>
+                      </td>
                     </tr>
                     <tr className="hover:bg-gray-100">
                       <td className="border border-gray-300 px-4 py-2">
-                        Dr. M Krishna
+                        Dr. M Krishna, HOD Dept. of ME, RVCE
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
@@ -54,10 +65,18 @@ function Contact() {
                           </span>
                         </div>
                       </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            krishnam@rvce.edu.in
+                          </span>
+                        </div>
+                      </td>
                     </tr>
                     <tr className="hover:bg-gray-100">
                       <td className="border border-gray-300 px-4 py-2">
-                        Dr. Padmashree T
+                        Dr. Padmashree T, Associate Professor, Dept. of ISE, RVCE
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
@@ -67,10 +86,18 @@ function Contact() {
                           </span>
                         </div>
                       </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            padmashreet@rvce.edu.in
+                          </span>
+                        </div>
+                      </td>
                     </tr>
                     <tr className="hover:bg-gray-100">
                       <td className="border border-gray-300 px-4 py-2">
-                        Dr. Shilpa D R
+                        Dr. Shilpa D R, Associate Professor, Dept. of ECE, RVCE
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
@@ -80,16 +107,32 @@ function Contact() {
                           </span>
                         </div>
                       </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            shilpadr@rvce.edu.in
+                          </span>
+                        </div>
+                      </td>
                     </tr>
                     <tr className="hover:bg-gray-100">
                       <td className="border border-gray-300 px-4 py-2">
-                        Dr. Vishnumurthy K A
+                        Dr. Vishnumurthy K A, Assistant Professor, Dept. of CHY, RVCE
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
                           <PhoneIcon className="mr-2 h-4 w-4 text-blue-500" />
                           <span className="hover:text-blue-500 cursor-pointer">
                             +91 9741211557
+                          </span>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            vishnumurthyka@rvce.edu.in
                           </span>
                         </div>
                       </td>
