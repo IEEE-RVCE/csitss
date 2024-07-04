@@ -1,7 +1,7 @@
 const sponsorship_chairs_data = [
     {
       name: 'Dr. D Ranganath ',
-      post: 'Dean:Placement and Training Department, RVCE',
+      post: 'Dean, Placement and Training Department, RVCE',
 
       imgLink:
         'https://rvce.edu.in/sites/default/files/Plac_Ranganath.JPG',
