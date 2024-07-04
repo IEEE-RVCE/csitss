@@ -11,13 +11,13 @@
   },
     {
       name:'Mrs. Shyamala S',
-      post:' Senior Manager',
+      post:' Senior Manager-Finance, Accounts Section, RVCE',
       imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_NZykul07nU3cliFuRZQr4_q-gOdkRTmRA&s',
     },
     {
       name: ' Mr. Ravi Varma R B',
       post: 'System Administrator',
-      imgLink:'ravi-varma.jpg',
+      imgLink:'/ravi-varma.jpg',
     },
     
 ]

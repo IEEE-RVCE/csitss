@@ -1,13 +1,13 @@
 const advisory_committee = [
   {
     name: 'Dr. K N Subramanya',
-    post: 'Principal, RVCE, Bengaluru',
+    post: 'Principal, RVCE',
     imgLink:'https://rvce.irins.org/assets/profile_images/209990.jpeg'
 
   },
   {
     name: 'Dr. K S Geetha',
-    post: 'Vice Principal, RVCE, Bengaluru',
+    post: 'Vice Principal, RVCE',
     imgLink:'https://rvce.edu.in/sites/default/files/KS-Geetha-VP.jpg'
 
   },
