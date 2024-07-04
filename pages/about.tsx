@@ -82,7 +82,7 @@ function About() {
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full shadow-lg">
                 <img
                   className="absolute inset-0 h-full w-full object-cover"
-                  src="https://rvce.edu.in/sites/default/files/styles/slider/public/PIC015-converted-20%25.jpg?itok=I7U60Fq8"
+                    src="/rv2.jpg"
                   alt="Man using a computer"
                 />
               </div>
