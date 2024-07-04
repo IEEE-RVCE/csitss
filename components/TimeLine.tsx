@@ -1,5 +1,4 @@
 import { Text, Timeline } from '@mantine/core'
-
 import { AnnotationIcon } from '@heroicons/react/solid'
 
 export default function CustomTimeLine() {
@@ -39,23 +38,24 @@ export default function CustomTimeLine() {
   ]
 
   return (
-    <>
-      <h1 className="my-4 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-extrabold text-transparent underline">
+    <div>
+      <h1 className="my-4 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent underline">
         Important Dates
       </h1>
-      <Timeline active={0} bulletSize={24} lineWidth={3}>
+      <Timeline active={0} bulletSize={24} lineWidth={4} color="teal">
         {data.map((item, index) => (
           <Timeline.Item
             key={index}
-            bullet={<AnnotationIcon />}
-            title={item.label}
+            bullet={<AnnotationIcon className="h-6 w-6 text-teal-500" />}
+            title={<span className="font-semibold text-lg">{item.label}</span>}
+            className="my-2"
           >
-            <Text size="md" mt={4}>
+            <Text size="md" mt={4} className="text-gray-700">
               {item.date}
             </Text>
           </Timeline.Item>
         ))}
       </Timeline>
-    </>
+    </div>
   )
 }
