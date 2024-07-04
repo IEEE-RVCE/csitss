@@ -90,8 +90,14 @@ export default function Index() {
             </div>
           </div>
         </header>
-        
+        <div className="w-full bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black mt-4 rounded-lg shadow-lg">
+  <p className="font-semibold text-lg">
+    Organized by <span className="text-blue-700">RV College of Engineering</span> in association with <span className="text-blue-700">Florida International University</span>, <span className="text-blue-700">Fachhochschule Dortmund, Germany</span>. Technically Co-Sponsored by <span className="text-blue-700">IEEE Bangalore Section, India</span>.
+  </p>
+</div>
+
         <section>
+          
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-24 lg:grid-cols-2 lg:gap-16">
       <div className="relative h-64 overflow-visible rounded-lg sm:h-80 lg:order-last lg:h-full">
