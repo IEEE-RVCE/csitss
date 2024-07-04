@@ -123,38 +123,8 @@ function About() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <h1
-              style={{
-                marginRight: '1rem',
-                background: 'linear-gradient(to right, #3b82f6, #1e3a8a)',
-                WebkitBackgroundClip: 'text',
-                fontSize: '2.5rem',
-                fontWeight: 'bold',
-                color: 'transparent',
-                alignContent: 'center',
-                width: '100%',
-              }}
-            >
-              About The Conference
-            </h1>
-            <hr
-              style={{
-                background: 'linear-gradient(to right, #3b82f6, transparent)',
-                height: '3px',
-                width: '100%',
-                border: 'none',
-                marginRight: '1rem',
-              }}
-            />
-          </div>
-          <p className="mt-4 text-justify text-gray-700 leading-relaxed">
-            The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows and research scholars around the world to share their knowledge and research expertise in Green Electronics, Renewable Energy, Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum Mechanics and Computing from November 7<sup>th</sup> to 9<sup>th</sup> 2024.
-            The conference has been successfully organised for the past seven years with participants from all over India and abroad. All peer-reviewed, selected and presented papers from the conference will be submitted for possible inclusion in IEEE digital library. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking. The Conference is approved by IEEE with the conference number : 64042
-          </p>
-        </section>
+          </section>
+       
          {/* <section>
           <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
             {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
