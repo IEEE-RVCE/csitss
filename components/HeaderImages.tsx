@@ -17,7 +17,7 @@ const HeaderImages = () => {
       padding: 'p-2',
     },
     {
-      src: 'https://www.fh-dortmund.de/WEB-IES/fhdo-module/2.19.0/images/FHDO-Logo-large.svg',
+      src: 'https://www.fh-dortmund.de/WEB-IES/fhdo-module/2.20.0/images/FHDO-Logo-large.svg',
       alt: 'fh_dortmund_logo',
       href: 'https://www.fh-dortmund.de/',
       show: true,
