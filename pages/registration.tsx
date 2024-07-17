@@ -101,30 +101,30 @@ function registration() {
                   <tr className="divide-x text-center  divide-blue-900  ">
                     <th rowSpan={3}>With Authorship</th>
                     <th >Student/Research Scholars</th>
-                    <td>5310</td>
-                    <td>6490</td>
-                    <td>6490</td>
-                    <td>7670</td>
+                    <td>&#8377;5310</td>
+                    <td>&#8377;6490</td>
+                    <td>&#8377;6490</td>
+                    <td>&#8377;7670</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Academicians</th>
-                    <td>7080</td>
-                    <td>8260</td>
-                    <td>8260</td>
-                    <td>10030</td>
+                    <td>&#8377;7080</td>
+                    <td>&#8377;8260</td>
+                    <td>&#8377;8260</td>
+                    <td>&#8377;10030</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Industry Professionals</th>
-                    <td>8260</td>
-                    <td>9440</td>
-                    <td>11800</td>
-                    <td>15930</td>
+                    <td>&#8377;8260</td>
+                    <td>&#8377;9440</td>
+                    <td>&#8377;11800</td>
+                    <td>&#8377;15930</td>
                   </tr>
                   <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2}>Pre Conference Tutorial</th>
-                    <td colSpan={4}>500</td>
+                    <td colSpan={4}>&#8377;500</td>
                   </tr>
                   {/* <tr className="divide-x text-center divide-blue-900 ">
                     <th colSpan={2}>
@@ -157,30 +157,30 @@ function registration() {
                   <tr className="divide-x text-center  divide-blue-900 ">
                     <th rowSpan={3}>With Authorship</th>
                     <th>Student/Research Scholars</th>
-                    <td>80</td>
-                    <td>110</td>
-                    <td>110</td>
-                    <td>130</td>
+                    <td>$80</td>
+                    <td>$110</td>
+                    <td>$110</td>
+                    <td>$130</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Academicians</th>
-                    <td>100</td>
-                    <td>130</td>
-                    <td>135</td>
-                    <td>165</td>
+                    <td>$100</td>
+                    <td>$130</td>
+                    <td>$135</td>
+                    <td>$165</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                   <th className="hidden"></th>
                     <th>Industry Professionals</th>
-                    <td>110</td>
-                    <td>135</td>
-                    <td>200</td>
-                    <td>240</td>
+                    <td>$110</td>
+                    <td>$135</td>
+                    <td>$200</td>
+                    <td>$240</td>
                   </tr>
                   <tr className="divide-x text-center  divide-blue-900 ">
                     <th colSpan={2}>Pre Conference Tutorial</th>
-                    <td colSpan={4}>25</td>
+                    <td colSpan={4}>$25</td>
                   </tr>
                   {/* <tr className="divide-x text-center  divide-blue-900 ">
                     <th colSpan={2}>

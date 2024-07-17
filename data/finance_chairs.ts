@@ -1,8 +1,24 @@
  const finance_chairs_data = [
+  {
+    name:'Dr. Usha Rani K R',
+    post:'Professor, Department of ECE, RVCE',
+    imgLink:'https://rvce.edu.in/sites/default/files/IMG-5954.jpg',
+  },
+  {
+    name:'Dr. Manjunatha Reddy A H',
+    post:'Associate Professor, Department of BT, RVCE',
+    imgLink:'http://www.rvce.edu.in/sites/default/files/AHM_2.jpg',
+  },
     {
-      name: 'Ravi Varma RB',
-      post: 'System Administrator',
-      imgLink:'https://media.licdn.com/dms/image/C5603AQHqhq9mk15kXA/profile-displayphoto-shrink_400_400/0/1639220175636?e=1714608000&v=beta&t=EOQOliI-69KnRETUyUGQFySvpRmkz9iOhGgQFZzmNRg',
+      name:'Mrs. Shyamala S',
+      post:' Senior Manager-Finance, Accounts Section, RVCE',
+      imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_NZykul07nU3cliFuRZQr4_q-gOdkRTmRA&s',
     },
+    {
+      name: ' Mr. Ravi Varma R B',
+      post: 'System Administrator',
+      imgLink:'/ravi-varma.jpg',
+    },
+    
 ]
 export default finance_chairs_data;

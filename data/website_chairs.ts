@@ -1,7 +1,7 @@
 const website_chairs = [
     {
       name: 'Dr. Renuka Prasad B',
-      post: 'Associate Professor,Department of MCA,RVCE',
+      post: 'Associate Professor,Department of MCA, RVCE',
       imgLink:
         'https://rvce.edu.in/sites/default/files/brp.JPG',
     },

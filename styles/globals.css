@@ -8,6 +8,25 @@
   /* background-image: url('https://github.com/IEEE-RVCE/csitss/blob/master/public/mainGate.jpeg'), */
   background-image: url('https://res.cloudinary.com/dmxwnn7mm/image/upload/v1689738072/mainGate_jyx5r7.jpg');
   padding-top: 1px;
+  background-size: cover; /* Ensure the image covers the entire element */
+  background-position: center; /* Center the background image */
+  filter: brightness(110%); /* Adjust brightness to make it brighter */
+  
+}
+.heroHeader:before {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure overlay is above the background image */
+}
+
+@media (min-width: 768px) {
+  .heroHeader {
+    background-attachment: fixed; /* Add parallax effect */
+  }
 }
 .charge {
   position: relative;
@@ -81,3 +100,5 @@
   height: 100%;
   display: block;
 }
+
+
