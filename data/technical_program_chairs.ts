@@ -1,9 +1,5 @@
 const technical_program_chairs_data = [
-  {
-    name: 'Dr. Parameshachari B D',
-    post: 'SAC Chair, IEEE, Bangalore Section',
-    imgLink: 'https://media.licdn.com/dms/image/C5603AQG1mOjNggjUHQ/profile-displayphoto-shrink_200_200/0/1641466719062?e=1725494400&v=beta&t=PQgdq1MCF6naYsBpVw-StXRhUrOrBeonJK7U468-cME',
-  },
+  
   {
     name: 'Dr. Anala M R',
     post: 'Professor, Department of ISE, RVCE',
@@ -14,6 +10,11 @@ const technical_program_chairs_data = [
     post: 'Professor, Department of CV, RVCE',
     imgLink: 'https://rvce.edu.in/sites/default/files/cv-mvrd.jpg',
     //  "https://ieee-rvce.org/assets/images/execom/main/mahesh_sir.jpg",
+  },
+  {
+    name: 'Dr. Parameshachari B D',
+    post: 'SAC Chair, IEEE, Bangalore Section',
+    imgLink: 'https://media.licdn.com/dms/image/C5603AQG1mOjNggjUHQ/profile-displayphoto-shrink_200_200/0/1641466719062?e=1725494400&v=beta&t=PQgdq1MCF6naYsBpVw-StXRhUrOrBeonJK7U468-cME',
   },
   {
     name: 'Dr. K Nagamani',
@@ -63,7 +64,7 @@ const technical_program_chairs_data = [
   },
   {
     name: 'Dr. Supreeth R',
-    post: ' Assistant Professor, Department of ASE, RVCE        ',
+    post: ' Associate Professor, Department of ASE, RVCE        ',
     imgLink: 'https://media.licdn.com/dms/image/D5603AQF6bblVY7TkXw/profile-displayphoto-shrink_200_200/0/1675228044711?e=1725494400&v=beta&t=G9DNt63K7_25vNswZyY6KbzIQn_0c8G4sCralKl4GS8',
     //  "https://ieeebangalore.org/wp-content/uploads/2019/12/Chengappa_Headshot.png",
   },
