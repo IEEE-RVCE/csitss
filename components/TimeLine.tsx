@@ -25,7 +25,7 @@ export default function CustomTimeLine() {
     },
     {
       label: 'Last Date for Registration',
-      date: '25th October 2024',
+      date: '15th October 2024',
     },
     {
       label: 'Pre-Conference Tutorial',
