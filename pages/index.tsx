@@ -38,7 +38,7 @@ export default function Index() {
                   WELCOME TO CSITSS-2024
                 </h1>
                 <p className="text-xl text-white md:text-2xl md:mt-0 mt-4">
-                  <span className="font-semibold ">
+                  <span className="font-normal ">
                     8<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>
@@ -46,7 +46,7 @@ export default function Index() {
                 <p className="align-text-center text-xl text-slate-50">
                  
                 </p>
-                <p className="align-text-center text-xl text-slate-50">
+                <p className="align-text-center text-xl font-normal text-slate-50">
                   Organized by
                 </p>
                 <p className="text-align-center text-2xl text-slate-50">
@@ -134,7 +134,7 @@ export default function Index() {
       <div>
         <h2 className="my-4 text-3xl font-bold sm:text-4xl">About CSITSS</h2>
 
-        <p className=" text-justify text-lg font-bold text-gray-900">
+        <p className=" text-justify text-lg font-normal text-gray-900">
               The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for
 Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians,
 scientists, researchers, industry representatives, postdoctoral fellows and research scholars around
