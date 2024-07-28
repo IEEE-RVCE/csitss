@@ -1,5 +1,6 @@
-import { Text, Timeline } from '@mantine/core'
-import { AnnotationIcon } from '@heroicons/react/solid'
+import { Text, Timeline } from '@mantine/core';
+import { AnnotationIcon } from '@heroicons/react/solid';
+
 
 export default function CustomTimeLine() {
   const data = [
@@ -35,10 +36,10 @@ export default function CustomTimeLine() {
       label: 'Conference Dates',
       date: '8th and 9th November 2024',
     },
-  ]
+  ];
 
   return (
-    <div>
+    <div className="fade-in">
       <h1 className="my-4 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent underline">
         Important Dates
       </h1>
@@ -57,5 +58,5 @@ export default function CustomTimeLine() {
         ))}
       </Timeline>
     </div>
-  )
+  );
 }
