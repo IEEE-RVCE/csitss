@@ -102,3 +102,60 @@
 }
 
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Ensures proper container padding and visibility */
+.timeline-container {
+  padding: 2rem;
+  position: relative;
+  opacity: 0; /* Start with hidden state */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1s ease-in, transform 1s ease-in; /* Smooth transition */
+}
+
+.timeline-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #3b82f6, #1e3a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.timeline-icon {
+  height: 32px;
+  width: 32px;
+  color: #4ade80;
+}
+
+.timeline-item {
+  margin: 1rem 0;
+}
+
+.timeline-item-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.timeline-item-text {
+  color: #4b5563;
+}
+
+.fade-in {
+  opacity: 1; /* Visible state */
+  transform: translateY(0); /* Move to final position */
+}
