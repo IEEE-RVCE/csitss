@@ -10,7 +10,7 @@ export default function CustomTimeLine() {
     },
     {
       label: 'Last date to submit Full-length Manuscript',
-      date: '30th July 2024',
+      date: '10th August 2024',
     },
     {
       label: 'Notification of Acceptance',
