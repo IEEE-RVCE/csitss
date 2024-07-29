@@ -15,7 +15,7 @@ function Papers() {
         <p className="text-justify text-base sm:text-xl font-medium text-gray-600 my-4">
           Prospective authors are encouraged to submit quality and original research papers for presentation at the Conference. Authors are requested to submit their manuscripts in PDF format not exceeding 6 pages in A4 size through online submission at Microsoft CMT - on or{' '}
           <i>
-            before 30<sup>th</sup> July 2024.{' '}
+            before 10<sup>th</sup> August 2024.{' '}
           </i>
           The manuscript should follow the standard IEEE template. The format of the paper could be downloaded in the link below{' '}
           <a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-500 hover:underline">
