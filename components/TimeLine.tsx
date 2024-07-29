@@ -1,7 +1,6 @@
 import { Text, Timeline } from '@mantine/core';
 import { AnnotationIcon } from '@heroicons/react/solid';
 
-
 export default function CustomTimeLine() {
   const data = [
     {
@@ -10,7 +9,8 @@ export default function CustomTimeLine() {
     },
     {
       label: 'Last date to submit Full-length Manuscript',
-      date: '10th August 2024',
+      oldDate: '30th July 2024',
+      newDate: '10th August 2024',
     },
     {
       label: 'Notification of Acceptance',
@@ -52,7 +52,15 @@ export default function CustomTimeLine() {
             className="my-2"
           >
             <Text size="md" mt={4} className="text-gray-700">
-              {item.date}
+              {item.oldDate ? (
+                <>
+                  <span className="line-through text-black">{item.oldDate}</span>
+                  {' '}
+                  <span className="font-bold text-black">{item.newDate}</span>
+                </>
+              ) : (
+                item.date
+              )}
             </Text>
           </Timeline.Item>
         ))}
