@@ -69,7 +69,7 @@ function Gallery() {
 
   const cards = imgLinks.map((link) => (
     <Card key={link} p="md" radius="md" className={classes.card}>
-      <AspectRatio ratio={1920 / 1080}>
+      <AspectRatio ratio={16 / 9}>
         <Image src={link} alt="Gallery Image" withPlaceholder />
       </AspectRatio>
     </Card>
@@ -78,7 +78,7 @@ function Gallery() {
   return (
     <Container className={classes.container}>
       <SimpleGrid
-        cols={3}
+        cols={4}
         spacing="lg"
         className={classes.grid}
       >
