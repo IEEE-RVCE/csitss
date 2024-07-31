@@ -2,10 +2,10 @@ import {
   createStyles,
   SimpleGrid,
   Card,
-  Image,
   Container,
   AspectRatio,
 } from '@mantine/core'
+import Image from 'next/image'
 
 const imgLinks = [
    '/gallery/image_1.webp',
@@ -70,7 +70,14 @@ function Gallery() {
   const cards = imgLinks.map((link) => (
     <Card key={link} p="md" radius="md" className={classes.card}>
       <AspectRatio ratio={16 / 9}>
-        <Image src={link} alt="Gallery Image" withPlaceholder />
+        <Image
+          src={link}
+          alt="Gallery Image"
+          layout="fill"
+          objectFit="cover"
+          placeholder="blur"
+          blurDataURL={`data:image/webp;base64,${link}`}
+        />
       </AspectRatio>
     </Card>
   ))
