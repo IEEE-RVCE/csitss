@@ -5,6 +5,7 @@ import { Element, Link as ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
+import CountdownTimer from '../components/CountdownTimer'; 
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
@@ -89,12 +90,88 @@ export default function Index() {
               </div>
             </div>
           </div>
+          <CountdownTimer />
         </header>
         <div className="w-full bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black mt-4 rounded-lg shadow-lg">
   <p className="font-semibold text-lg">
     Organized by <span className="text-blue-700">RV College of Engineering</span> in association with <span className="text-blue-700">Florida International University</span>, <span className="text-blue-700">Fachhochschule Dortmund, Germany</span>. Technically Co-Sponsored by <span className="text-blue-700">IEEE Bangalore Section, India</span>.
   </p>
 </div>
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+  <div className="bg-red-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-red-200 transition-colors duration-300">
+    <svg
+      className="mx-auto mb-4 h-12 w-12 text-red-500"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M3 7h18M3 11h18M3 15h18M3 19h18"
+      />
+    </svg>
+    <h3 className="text-2xl font-bold">November 7-9, 2024</h3>
+    <p>Date</p>
+  </div>
+  <div className="bg-green-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-green-200 transition-colors duration-300">
+    <svg
+      className="mx-auto mb-4 h-12 w-12 text-green-500"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M5 13l4 4L19 7"
+      />
+    </svg>
+    <h3 className="text-2xl font-bold">RV College of Engineering</h3>
+    <p>Venue</p>
+  </div>
+  <div className="bg-blue-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-blue-200 transition-colors duration-300">
+    <svg
+      className="mx-auto mb-4 h-12 w-12 text-blue-500"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M3 7h18M3 11h18M3 15h18M3 19h18"
+      />
+    </svg>
+    <h3 className="text-2xl font-bold">IEEE Approval</h3>
+    <p>Conference Number: 64042</p>
+  </div>
+  <div className="bg-yellow-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-yellow-200 transition-colors duration-300">
+    <svg
+      className="mx-auto mb-4 h-12 w-12 text-yellow-500"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M4 12l8 8 8-8-8-8-8 8z"
+      />
+    </svg>
+    <h3 className="text-2xl font-bold">Global Participation</h3>
+    <p>Researchers from Around the World</p>
+  </div>
+</div>
+
 
         <section>
           
@@ -131,31 +208,21 @@ export default function Index() {
         </div> */}
       </div>
 
-      <div>
-        <h2 className="my-4 text-3xl font-bold sm:text-4xl">About CSITSS</h2>
-
-        <p className=" text-justify text-lg font-normal text-gray-900">
-              The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for
-Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians,
-scientists, researchers, industry representatives, postdoctoral fellows and research scholars around
-the world to share their knowledge and research expertise in Green Electronics, Renewable Energy,
-Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum
-Mechanics and Computing from November 7<sup>th</sup> to 9<sup>th</sup> 2024.
-The conference has been successfully organised for the past seven years with participants from all
-over India and abroad. All peer-reviewed, selected and presented papers from the conference will be
-submitted for possible inclusion in IEEE digital library. International speakers will deliver keynote
-talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform
-for researchers around the globe for knowledge exchange and networking. The Conference is
-approved by IEEE with the conference number : 64042.{" "}
-
+     
+      <div className="flex flex-col justify-center animate-fadeIn">
+        <h2 className="text-3xl font-bold sm:text-4xl mb-6 text-gradient">
+          About CSITSS
+        </h2>
+        <p className="text-lg font-normal text-gray-900 mb-8 leading-relaxed">
+          The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows, and research scholars around the world to share their knowledge and research expertise in Green Electronics, Renewable Energy, Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum Mechanics, and Computing from November 7<sup>th</sup> to 9<sup>th</sup> 2024.
+          <br /><br />
+          The conference has been successfully organized for the past seven years with participants from all over India and abroad. All peer-reviewed, selected, and presented papers from the conference will be submitted for possible inclusion in the IEEE digital library. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking. The Conference is approved by IEEE with the conference number: 64042.
         </p>
-
         <a
-          className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+          className="inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
           href="https://cmt3.research.microsoft.com/CSITSS2024"
         >
-          <span className="text-sm font-medium"> Submit Paper </span>
-
+          <span className="text-sm font-medium">Submit Paper</span>
           <svg
             className="ml-3 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -181,71 +248,86 @@ approved by IEEE with the conference number : 64042.{" "}
             <Timeline />
           </div>
         </Element>
-        <section>
-  <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-      <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509397044632!2d77.49651251530834!3d12.923722790887302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1652610248773!5m2!1sen!2sin"
-          width="1200"
-          height="600"
-          style={{ border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.8), 0 2px 4px -1px rgba(0, 0, 0, 0.06)', padding: '1rem' }}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </div>
-      <div className="gap-8 lg:py-24">
-        <h2 className="text-3xl font-bold sm:text-4xl animate-fadeIn">Venue</h2>
-        <p className="mt-4 text-gray-600 animate-fadeIn">RVCE, Mysuru Road</p>
-        <a
-          className="mr-8 mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 transition-colors duration-300 animate-fadeIn"
-          href="https://goo.gl/maps/sXWGV9iXqQRwz2PJ9"
+        <section className=" py-16">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center sm:text-4xl mb-8 animate-fadeIn">Venue</h2>
+    <div className="relative overflow-hidden rounded-lg ">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509397044632!2d77.49651251530834!3d12.923722790887302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1652610248773!5m2!1sen!2sin&style=feature:all|element:geometry|color:0x242f3e|visibility:simplified&style=feature:landscape|element:geometry.fill|color:0x2b2b2b&style=feature:poi|element:all|visibility:off&style=feature:road|element:geometry|color:0x38414e&style=feature:road|element:labels.icon|visibility:off&style=feature:transit|element:all|visibility:off&style=feature:water|element:geometry.fill|color:0x212a37&style=feature:water|element:labels.text.fill|color:0x3e606f"
+        width="100%"
+        height="400"
+        style={{
+          border: '2px solid #374151',
+          borderRadius: '0.5rem',
+          maxWidth: '900px', // Decreased width
+          margin: '0 auto', // Centering the map
+          padding: '0.5rem',
+          backgroundColor: '#1F2937',
+        }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+    <div className="flex justify-center mt-8 space-x-4 animate-fadeIn">
+      <a
+        className="inline-flex items-center rounded-lg border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 transition-colors duration-300"
+        href="https://goo.gl/maps/sXWGV9iXqQRwz2PJ9"
+      >
+        <span className="text-sm font-medium">Open Maps</span>
+        <svg
+          className="ml-3 h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <span className="text-sm font-medium"> Open Maps </span>
-          <svg
-            className="ml-3 h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </a>
-        <a
-          className="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 transition-colors duration-300 animate-fadeIn"
-          href="HOTELS.pdf"
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"
+          />
+        </svg>
+      </a>
+      <a
+        className="inline-flex items-center rounded-lg border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 transition-colors duration-300"
+        href="HOTELS.pdf"
+      >
+        <span className="text-sm font-medium">Download Hotels List Near RVCE</span>
+        <svg
+          className="ml-3 h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <span className="text-sm font-medium">
-            {' '}
-            Download Hotels List Near RVCE{' '}
-          </span>
-          <svg
-            className="ml-3 h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </a>
-      </div>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"
+          />
+        </svg>
+      </a>
     </div>
   </div>
-  </section>
 </section>
-      <section>
+
+<style jsx>{`
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`}</style>
+
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <h1>
             <span className="text-3xl font-bold sm:text-4xl">
