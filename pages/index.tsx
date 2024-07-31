@@ -149,7 +149,7 @@ export default function Index() {
         d="M3 7h18M3 11h18M3 15h18M3 19h18"
       />
     </svg>
-    <h3 className="text-2xl font-bold">IEEE Approval</h3>
+    <h3 className="text-2xl font-bold">IEEE Approved Conference</h3>
     <p>Conference Number: 64042</p>
   </div>
   <div className="bg-yellow-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-yellow-200 transition-colors duration-300">
