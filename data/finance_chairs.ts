@@ -12,7 +12,7 @@ const finance_chairs_data = [
   },
   {
     name:'Mrs. Shyamala S',
-    post:' Senior haha Manager-Finance, Accounts Section, RVCE',
+    post:' Senior Manager-Finance, Accounts Section, RVCE',
     imgLink: "/R B Ravi Varma.jpg",
   },
   {
