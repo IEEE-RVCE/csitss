@@ -1,4 +1,5 @@
- const finance_chairs_data = [
+
+const finance_chairs_data = [
   {
     name:'Dr. Usha Rani K R',
     post:'Professor, Department of ECE, RVCE',
@@ -11,13 +12,13 @@
   },
   {
     name:'Mrs. Shyamala S',
-    post:' Senior Manager-Finance, Accounts Section, RVCE',
-    imgLink:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_NZykul07nU3cliFuRZQr4_q-gOdkRTmRA&s',
+    post:' Senior haha Manager-Finance, Accounts Section, RVCE',
+    imgLink: "/R B Ravi Varma.jpg",
   },
   {
     name: ' Mr. Ravi Varma R B',
     post: 'System Administrator',
-    imgLink:'/ravi-varma.jpg',
+    imgLink: "/Shyamala S.jpg"
   },
     
 ]
