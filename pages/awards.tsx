@@ -33,12 +33,13 @@ function Awards() {
             </p>
           </div>
           <div className="rounded-lg bg-gray-100 p-2 shadow-inner sm:p-4">
-            <embed
+            <iframe
               src="Award.pdf"
-              type="application/pdf"
               width="100%"
               height="400px"
               className="rounded-lg"
+              style={{ border: 'none' }}
+              title="PDF Preview"
             />
           </div>
           <div className="mt-4 text-center">
