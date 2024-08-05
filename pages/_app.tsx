@@ -6,7 +6,6 @@ import type { AppProps } from 'next/app'
 import WrapApp from '../components/NavBar'
 import { NextSeo } from 'next-seo'
 
-
 const theme: MantineThemeOverride = {
   colorScheme: 'light',
   primaryColor: 'indigo',
@@ -46,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           }}
         />
         <Component {...pageProps} />
-        
+
         <div id="recaptcha-container" />
       </WrapApp>
     </MantineProvider>
