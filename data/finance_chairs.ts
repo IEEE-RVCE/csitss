@@ -13,12 +13,17 @@ const finance_chairs_data = [
   {
     name:'Mrs. Shyamala S',
     post:' Senior Manager-Finance, Accounts Section, RVCE',
-    imgLink: "/R B Ravi Varma.jpg",
+    imgLink: "/Shyamala S.jpg",
   },
   {
     name: ' Mr. Ravi Varma R B',
-    post: 'System Administrator',
-    imgLink: "/Shyamala S.jpg"
+    post: 'System Administrator, RVCE',
+    imgLink: "/R B Ravi Varma.jpg"
+  },
+  {
+    name: 'Dr. I M Umesh',
+    post: 'System Analyst, RVCE',
+    imgLink: "/Dr. I M Umesh.jpg"
   },
     
 ]
