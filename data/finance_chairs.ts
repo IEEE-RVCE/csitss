@@ -11,14 +11,14 @@ const finance_chairs_data = [
     imgLink:'http://www.rvce.edu.in/sites/default/files/AHM_2.jpg',
   },
   {
-    name:'Mrs. Shyamala S',
-    post:' Senior Manager-Finance, Accounts Section, RVCE',
-    imgLink: "/Shyamala S.jpg",
-  },
-  {
     name: ' Mr. Ravi Varma R B',
     post: 'System Administrator, RVCE',
     imgLink: "/R B Ravi Varma.jpg"
+  },
+  {
+    name:'Mrs. Shyamala S',
+    post:' Senior Manager-Finance, Accounts Section, RVCE',
+    imgLink: "/Shyamala S.jpg",
   },
   {
     name: 'Dr. I M Umesh',
