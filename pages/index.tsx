@@ -149,7 +149,9 @@ export default function Index() {
         d="M3 7h18M3 11h18M3 15h18M3 19h18"
       />
     </svg>
-    <h3 className="text-2xl font-bold">IEEE Approval</h3>
+
+    <h3 className="text-2xl font-bold">IEEE Approved Conference</h3>
+
     <p>Conference Number: 64042</p>
   </div>
   <div className="bg-yellow-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-yellow-200 transition-colors duration-300">
@@ -172,6 +174,7 @@ export default function Index() {
   </div>
 </div>
 
+
 <section>
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-24 lg:grid-cols-2 lg:gap-16">
@@ -182,6 +185,7 @@ export default function Index() {
           alt="Your Image"
         />
       </div>
+
 
       <div className="flex flex-col justify-center animate-fadeIn2">
         <h2 className="text-3xl font-bold sm:text-4xl mb-6 text-gradient text-black">
@@ -217,6 +221,7 @@ export default function Index() {
   <br /><br />
   The conference has been successfully organized for the past seven years with participants from all over India and abroad. All peer-reviewed, selected, and presented papers from the conference will be submitted for possible inclusion in the IEEE digital library. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking. The Conference is approved by IEEE with the conference number: 64042.
 </p>
+
 
 
         <a

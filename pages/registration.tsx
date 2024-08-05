@@ -231,6 +231,11 @@ function registration() {
             <strong><i className="text-red-800">*All the pricing details mentioned above are inclusive of 18% GST</i></strong>
           </p>
         </section>
+        <section className="flex justify-center py-4">
+  <a href="https://rzp.io/l/v8bJlYuW" className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-700">
+    Click Here to Pay Through Razorpay
+  </a>
+</section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
         <h3 className="text-xl font-extrabold sm:text-xl">Payment Details</h3> <br />      
         <ul className="text-justify space-y-1 pb-10">

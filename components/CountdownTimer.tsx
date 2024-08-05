@@ -10,7 +10,17 @@ type TimeLeft = {
 
 const CountdownTimer = () => {
   const calculateTimeLeft = (): TimeLeft => {
-    const difference = +new Date('2024-11-08') - +new Date();
+
+    // Get current date in IST
+    const now = new Date();
+    const istOffset = 5.5 * 60 * 60 * 1000; // 5 hours 30 minutes in milliseconds
+    const nowIST = new Date(now.getTime() + istOffset);
+    
+    // Set the target date in IST
+    const targetDate = new Date('2024-11-08T00:00:00+05:30'); // Midnight of the target date in IST
+
+    const difference = +targetDate - +nowIST;
+
     let timeLeft: TimeLeft = {
       days: 0,
       hours: 0,

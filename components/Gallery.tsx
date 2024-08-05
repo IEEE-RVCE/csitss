@@ -2,39 +2,39 @@ import {
   createStyles,
   SimpleGrid,
   Card,
-  Image,
   Container,
   AspectRatio,
 } from '@mantine/core'
+import Image from 'next/image'
 
 const imgLinks = [
-  'https://i.imgur.com/pOMnurc.png',
-  'https://i.imgur.com/NDp81Y1.png',
-  'https://i.imgur.com/6EfIKBa.png',
-  'https://i.ibb.co/h7qyQs8/IMG-20221223-162526-comp.jpg',
-  'https://i.ibb.co/t8rqP2L/IMG-20221223-154910-comp.jpg',
-  'https://i.ibb.co/NjZWtvf/IMG-20221222-103051-comp.jpg',
-  'https://i.ibb.co/6YbHtyt/20221221-121446-comp.jpg',
-  'https://i.ibb.co/bmKKrSL/IMG-20221223-WA0018.jpg',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570137.JPEG?raw=true',
-  'https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4489.JPG',
-  'https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4491.JPG',
-  'https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4510.JPG',
-  'https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4553.JPG',
-  'https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4585.JPG',
-  'https://raw.githubusercontent.com/naveenbteli/gallery/master/Album/3J2A4460.JPG',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4628.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570098.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570105.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570114.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4657.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4674.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4697.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4699.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/3J2A4731.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570039.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570041.JPG?raw=true',
-  'https://github.com/naveenbteli/gallery/blob/master/Album/P2570066.JPG?raw=true',
+   '/gallery/image_1.webp',
+    '/gallery/image_2.webp',
+    '/gallery/image_3.webp',
+    '/gallery/image_4.webp',
+    '/gallery/image_5.webp',
+    '/gallery/image_6.webp',
+    '/gallery/image_7.webp',
+    '/gallery/image_8.webp',
+    '/gallery/image_9.webp',
+    '/gallery/image_10.webp',
+    '/gallery/image_11.webp',
+    '/gallery/image_12.webp',
+    '/gallery/image_13.webp',
+    '/gallery/image_14.webp',
+    '/gallery/image_15.webp',
+    '/gallery/image_16.webp',
+    '/gallery/image_17.webp',
+    '/gallery/image_18.webp',
+    '/gallery/image_19.webp',
+    '/gallery/image_20.webp',
+    '/gallery/image_21.webp',
+    '/gallery/image_22.webp',
+    '/gallery/image_23.webp',
+    '/gallery/image_24.webp',
+    '/gallery/image_25.webp',
+    '/gallery/image_26.webp',
+    '/gallery/image_27.webp'
 ]
 
 const useStyles = createStyles((theme) => ({
@@ -70,7 +70,14 @@ function Gallery() {
   const cards = imgLinks.map((link) => (
     <Card key={link} p="md" radius="md" className={classes.card}>
       <AspectRatio ratio={16 / 9}>
-        <Image src={link} alt="Gallery Image" withPlaceholder />
+        <Image
+          src={link}
+          alt="Gallery Image"
+          layout="fill"
+          objectFit="cover"
+          placeholder="blur"
+          blurDataURL={`data:image/webp;base64,${link}`}
+        />
       </AspectRatio>
     </Card>
   ))
