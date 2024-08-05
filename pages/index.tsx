@@ -149,7 +149,9 @@ export default function Index() {
         d="M3 7h18M3 11h18M3 15h18M3 19h18"
       />
     </svg>
+
     <h3 className="text-2xl font-bold">IEEE Approved Conference</h3>
+
     <p>Conference Number: 64042</p>
   </div>
   <div className="bg-yellow-100 p-6 rounded-lg shadow-lg text-center text-gray-800 hover:bg-yellow-200 transition-colors duration-300">
@@ -173,51 +175,55 @@ export default function Index() {
 </div>
 
 
-        <section>
-          
+<section>
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-24 lg:grid-cols-2 lg:gap-16">
-      <div className="relative h-64 overflow-visible rounded-lg sm:h-80 lg:order-last lg:h-full">
-        <h4 className="lg:mt-20 mt-12 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-center text-3xl font-extrabold text-transparent">
-          In association with
-        </h4>
-        <br />
-        <div className="flex flex-col items-center justify-center">
-          <div className="mb-4 logo-animation">
-            <img
-              src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
-              className="h-auto w-auto object-cover"
-              alt="FIU Logo"
-            />
-          </div>
-          <div className="mt-10  logo-animation">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650"
-              className="h-auto w-auto object-cover"
-              alt="FH Dortmund Logo"
-            />
-          </div>
-        </div>
-        
-        {/* <div className="flex flex-row items-center justify-center logo-animation">
-          <img
-            className="h-[25%] w-auto object-cover"
-            src="https://ieeebangalore.org/wp-content/uploads/2022/01/Bangalore-Section-Logo-white-1-01-768x183.png"
-            alt="IEEE Bangalore Logo"
-          />
-        </div> */}
+      <div className="relative overflow-visible rounded-lg sm:h-80 lg:order-last lg:h-full animate-fadeIn2 image-3d">
+        <img
+          src="Poster.png"
+          className="w-full h-auto object-cover rounded-lg shadow-lg"
+          alt="Your Image"
+        />
       </div>
 
-     
-      <div className="flex flex-col justify-center animate-fadeIn">
-        <h2 className="text-3xl font-bold sm:text-4xl mb-6 text-gradient">
+
+      <div className="flex flex-col justify-center animate-fadeIn2">
+        <h2 className="text-3xl font-bold sm:text-4xl mb-6 text-gradient text-black">
           About CSITSS
         </h2>
-        <p className="text-lg font-normal text-gray-900 mb-8 leading-relaxed">
-          The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows, and research scholars around the world to share their knowledge and research expertise in Green Electronics, Renewable Energy, Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum Mechanics, and Computing from November 7<sup>th</sup> to 9<sup>th</sup> 2024.
-          <br /><br />
-          The conference has been successfully organized for the past seven years with participants from all over India and abroad. All peer-reviewed, selected, and presented papers from the conference will be submitted for possible inclusion in the IEEE digital library. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking. The Conference is approved by IEEE with the conference number: 64042.
-        </p>
+        <p className="text-xl font-normal text-gray-900 mb-8 leading-relaxed">
+  The 8<sup>th</sup> International Conference on Computational Systems and Information Technology for Sustainable Solutions [CSITSS — 2024] focuses on bringing together leading academicians, scientists, researchers, industry representatives, postdoctoral fellows, and research scholars around the world to share their knowledge and research expertise in Green Electronics, Renewable Energy, Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, Quantum Mechanics, and Computing from <span> </span>
+  <span className="animated-date">
+    <span> </span>
+    <span>N</span>
+    <span>o</span>
+    <span>v</span>
+    <span>e</span>
+    <span>m</span>
+    <span>b</span>
+    <span>e</span>
+    <span>r</span>
+    <span> </span>
+    <span>7</span>
+    <span><sup>th</sup></span>
+    <span> </span>
+    <span>t</span>
+    <span>o</span>
+    <span> </span>
+    <span>9</span>
+    <span><sup>th</sup></span>
+    <span> </span>
+    <span>2</span>
+    <span>0</span>
+    <span>2</span>
+    <span>4</span>
+  </span>.
+  <br /><br />
+  The conference has been successfully organized for the past seven years with participants from all over India and abroad. All peer-reviewed, selected, and presented papers from the conference will be submitted for possible inclusion in the IEEE digital library. International speakers will deliver keynote talks on the latest technologies in these domains. The CSITSS-2024 ensures to provide a platform for researchers around the globe for knowledge exchange and networking. The Conference is approved by IEEE with the conference number: 64042.
+</p>
+
+
+
         <a
           className="inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
           href="https://cmt3.research.microsoft.com/CSITSS2024"
@@ -240,8 +246,31 @@ export default function Index() {
         </a>
       </div>
     </div>
+
+    <div className="mt-40 text-center animate-fadeIn2">
+      <h4 className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-3xl font-bold text-transparent">
+        In association with
+      </h4>
+      <div className="flex justify-center mt-6 animate-fadeIn2">
+        <div className="mx-10 logo-animation">
+          <img
+            src="https://brand.fiu.edu/_assets/images/fiu-logo.png"
+            className="h-auto w-auto object-cover"
+            alt="FIU Logo"
+          />
+        </div>
+        <div className="mx-4 logo-animation">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650"
+            className="h-auto w-auto object-cover"
+            alt="FH Dortmund Logo"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
 
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
