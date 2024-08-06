@@ -237,15 +237,7 @@ function registration() {
   </a>
 </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-        <h3 className="text-xl font-extrabold sm:text-xl">Payment Details</h3> <br />      
-        <ul className="text-justify space-y-1 pb-10">
-          <li> <span className="font-bold">Beneficiary Name: </span> PRINCIPAL, RVCE</li>
-          <li> <span className="font-bold">Bank Account Number:</span> 136010112055</li>
-          <li> <span className="font-bold">Bank Name:</span>KOTAK MAHINDRA BANK </li>
-          <li> <span className="font-bold">Branch Name:</span> RVCE Campus, Bengaluru </li>
-          <li> <span className="font-bold">IFSC Code: </span> KKBK0008053 </li>
-          <li> <span className="font-bold">SWIFT Code: </span> KKBKINBB</li>
-         </ul>    
+   
 
           <h3 className="text-xl font-extrabold sm:text-xl">Instructions for Registration</h3> <br />
           <ol className="list-decimal text-justify space-y-1">
