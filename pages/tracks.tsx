@@ -1,125 +1,140 @@
-import React from 'react';
+import React from 'react'
 
 function Papers() {
   return (
-    <div className="mt-10 bg-light-blue-100 py-10">
-      <aside className="bg-white shadow-lg rounded-lg p-6 sm:p-8 lg:p-12 mx-auto max-w-4xl">
+    <div className="bg-light-blue-100 mt-10 py-10">
+      <aside className="mx-auto max-w-4xl transform rounded-lg bg-white p-6 shadow-lg transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl sm:p-8 lg:p-12">
         <div className="text-center">
-          <p className="text-3xl sm:text-5xl font-bold text-blue-700">Conference Tracks</p>
+          <p className="animate-fade-in text-3xl font-bold text-blue-700 sm:text-5xl">
+            Conference Tracks
+          </p>
         </div>
-        <p className="text-justify text-lg sm:text-2xl font-medium text-gray-700 my-4">
-          Authors are invited to submit their original research work in the following areas (but not limited to):
+        <p className="animate-fade-in my-4 text-justify text-lg font-medium text-gray-700 sm:text-2xl">
+          Authors are invited to submit their original research work in the
+          following areas (but not limited to):
         </p>
-        <ul className="text-justify text-base sm:text-xl font-medium text-gray-600 list-none space-y-4">
-          <li>
-            <b>Computational Analysis of Structural and Functional Materials:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Energy Materials, Nanomaterials, Smart Materials</li>
-              <li>High-performance Embedded Computation</li>
-              <li>Decision and Planning</li>
-              <li>Target Tracking/Recognition</li>
-            </ul>
-          </li>
-          <li>
-            <b>Green Electronics: Sustainable Practices:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Eco-Friendly Materials for Electronics</li>
-              <li>Energy-Efficient Electronic Devices</li>
-              <li>Green Supply Chain Management in Electronics</li>
-              <li>Biodegradable and Organic Electronics</li>
-            </ul>
-          </li>
-          <li>
-            <b>Robotics and Automation:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Artificial Intelligence in Robotics</li>
-              <li>Human-Robot Interaction</li>
-              <li>Agricultural Robotics</li>
-              <li>Robotic Perception and Sensing</li>
-            </ul>
-          </li>
-          <li>
-            <b>Photonics, Optoelectronics and Mechatronics Systems:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Fiber optics and optical communications</li>
-              <li>Optical sensors and imaging systems</li>
-              <li>Control systems and intelligent systems</li>
-              <li>Micro-electromechanical systems (MEMS)</li>
-            </ul>
-          </li>
-          <li>
-            <b>Artificial Intelligence for Sustainable World:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>AI and ML engineering and science applications</li>
-              <li>Natural language processing and large language models for regional requirements</li>
-              <li>Advanced AI models and algorithms</li>
-              <li>Mathematical algorithms for ML</li>
-              <li>New generation hardware architectures for AI</li>
-              <li>Generative AI for society and industry</li>
-            </ul>
-          </li>
-          <li>
-            <b>Digital Transformation in Various Sectors of Economy:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Digital transformation in Logistics</li>
-              <li>Digitization and Inclusivity in Banking and Financial Services Sector</li>
-              <li>Digital Modeling practices in Manufacturing</li>
-              <li>E-commerce and E-business</li>
-            </ul>
-          </li>
-          <li>
-            <b>Renewable Energy and Environmental Engineering:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Microgrids & Smart grids</li>
-              <li>Power Electronics application to Renewable Energy systems</li>
-              <li>Computational Intelligent Techniques for Energy Sustainability</li>
-              <li>Distributed Energy system and Control Strategies</li>
-              <li>Power System operation, resilience, monitoring and control</li>
-              <li>Carbon Capture, Utilization & Storage (CCUS) and Alternative Fuels</li>
-              <li>Sustainable construction materials and technologies</li>
-            </ul>
-          </li>
-          <li>
-            <b>Cyber-Physical Systems:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Next-Generation CPS Architectures</li>
-              <li>IoT-based Smart Infrastructures</li>
-              <li>Cybersecurity Challenges in CPS</li>
-              <li>Ethical Considerations in CPS Design and Deployment</li>
-            </ul>
-          </li>
-          <li>
-            <b>Biomedical Electronics and Healthcare Applications:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Biomedical Image processing</li>
-              <li>Biosensors and Wearable electronics</li>
-              <li>Point of care devices, Bio_Mems</li>
-            </ul>
-          </li>
-          <li>
-            <b>Quantum Mechanics and Computing:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Hybrid quantum-classical computing systems</li>
-              <li>Quantum simulation and modelling</li>
-              <li>Quantum machine learning and optimization algorithms</li>
-            </ul>
-          </li>
-          <li>
-            <b>Next-Generation Communication Systems:</b>
-            <ul className="pl-6 list-disc list-inside space-y-2">
-              <li>Internet of Things (IoT), 5G and Beyond</li>
-              <li>Edge Computing and Edge Networking</li>
-              <li>Software-Defined Networking (SDN) and Network Function Virtualization (NFV)</li>
-              <li>Satellite Communication Systems</li>
-              <li>Wireless Sensor Networks and Smart Grid Communication</li>
-              <li>Blockchain and Distributed Ledger Technologies (DLT)</li>
-              <li>Emerging Communication Technologies</li>
-            </ul>
-          </li>
+        <ul className="animate-fade-in list-none space-y-4 text-justify text-base font-medium text-gray-600 sm:text-xl">
+          {[
+            {
+              title:
+                'Computational Analysis of Structural and Functional Materials:',
+              items: [
+                'Energy Materials, Nanomaterials, Smart Materials',
+                'High-performance Embedded Computation',
+                'Decision and Planning',
+                'Target Tracking/Recognition',
+              ],
+            },
+            {
+              title: 'Green Electronics: Sustainable Practices:',
+              items: [
+                'Eco-Friendly Materials for Electronics',
+                'Energy-Efficient Electronic Devices',
+                'Green Supply Chain Management in Electronics',
+                'Biodegradable and Organic Electronics',
+              ],
+            },
+            {
+              title: 'Robotics and Automation:',
+              items: [
+                'Artificial Intelligence in Robotics',
+                'Human-Robot Interaction',
+                'Agricultural Robotics',
+                'Robotic Perception and Sensing',
+              ],
+            },
+            {
+              title: 'Photonics, Optoelectronics and Mechatronics Systems:',
+              items: [
+                'Fiber optics and optical communications',
+                'Optical sensors and imaging systems',
+                'Control systems and intelligent systems',
+                'Micro-electromechanical systems (MEMS)',
+              ],
+            },
+            {
+              title: 'Artificial Intelligence for Sustainable World:',
+              items: [
+                'AI and ML engineering and science applications',
+                'Natural language processing and large language models for regional requirements',
+                'Advanced AI models and algorithms',
+                'Mathematical algorithms for ML',
+                'New generation hardware architectures for AI',
+                'Generative AI for society and industry',
+              ],
+            },
+            {
+              title: 'Digital Transformation in Various Sectors of Economy:',
+              items: [
+                'Digital transformation in Logistics',
+                'Digitization and Inclusivity in Banking and Financial Services Sector',
+                'Digital Modeling practices in Manufacturing',
+                'E-commerce and E-business',
+              ],
+            },
+            {
+              title: 'Renewable Energy and Environmental Engineering:',
+              items: [
+                'Microgrids & Smart grids',
+                'Power Electronics application to Renewable Energy systems',
+                'Computational Intelligent Techniques for Energy Sustainability',
+                'Distributed Energy system and Control Strategies',
+                'Power System operation, resilience, monitoring and control',
+                'Carbon Capture, Utilization & Storage (CCUS) and Alternative Fuels',
+                'Sustainable construction materials and technologies',
+              ],
+            },
+            {
+              title: 'Cyber-Physical Systems:',
+              items: [
+                'Next-Generation CPS Architectures',
+                'IoT-based Smart Infrastructures',
+                'Cybersecurity Challenges in CPS',
+                'Ethical Considerations in CPS Design and Deployment',
+              ],
+            },
+            {
+              title: 'Biomedical Electronics and Healthcare Applications:',
+              items: [
+                'Biomedical Image processing',
+                'Biosensors and Wearable electronics',
+                'Point of care devices, Bio_Mems',
+              ],
+            },
+            {
+              title: 'Quantum Mechanics and Computing:',
+              items: [
+                'Hybrid quantum-classical computing systems',
+                'Quantum simulation and modelling',
+                'Quantum machine learning and optimization algorithms',
+              ],
+            },
+            {
+              title: 'Next-Generation Communication Systems:',
+              items: [
+                'Internet of Things (IoT), 5G and Beyond',
+                'Edge Computing and Edge Networking',
+                'Software-Defined Networking (SDN) and Network Function Virtualization (NFV)',
+                'Satellite Communication Systems',
+                'Wireless Sensor Networks and Smart Grid Communication',
+                'Blockchain and Distributed Ledger Technologies (DLT)',
+                'Emerging Communication Technologies',
+              ],
+            },
+          ].map((track, index) => (
+            <li key={index} className="animate-fade-in">
+              <b>{track.title}</b>
+              <ul className="list-inside list-disc space-y-2 pl-6">
+                {track.items.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            </li>
+          ))}
         </ul>
       </aside>
     </div>
-  );
+  )
 }
 
-export default Papers;
+export default Papers
