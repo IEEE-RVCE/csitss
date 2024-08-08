@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Center, Header, Image, Menu } from '@mantine/core';
-import Marquee from "react-fast-marquee";
-import Link from 'next/link';
+import { AppShell, Center, Header, Image, Menu } from '@mantine/core'
+import Marquee from 'react-fast-marquee'
+import Link from 'next/link'
 
 const Links = [
   { href: '/', label: 'Home' },
@@ -13,12 +13,12 @@ const Links = [
   { href: '/sponsorship', label: 'Sponsors' },
   { href: '/tracks', label: 'Tracks' },
   { href: '/contact', label: 'Contact Us' },
-];
+]
 
 const NavBar = () => {
   return (
     <header>
-      <div className="navbar mx-auto w-full p-1 shadow-md bg-blue-400 bg-opacity-20">
+      <div className="navbar mx-auto w-full bg-blue-400 bg-opacity-20 p-1 shadow-md">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             <Link href="/">
@@ -34,7 +34,7 @@ const NavBar = () => {
           <nav className="text-m hidden space-x-10 font-medium md:flex">
             {Links.map((link) => (
               <Link href={link.href} key={link.label}>
-                <a className="nav-link font-sans text-black-500 hover:border-b-3 hover:text-blue-700">
+                <a className="nav-link text-black-500 hover:border-b-3 font-sans hover:text-blue-700">
                   {link.label}
                 </a>
               </Link>
@@ -44,7 +44,7 @@ const NavBar = () => {
             <Menu
               control={
                 <button
-                  className="rounded-lg bg-black-100 p-2 text-gray-600"
+                  className="bg-black-100 rounded-lg p-2 text-gray-600"
                   type="button"
                   name="Mobile Navigation Menu"
                 >
@@ -116,10 +116,16 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <Marquee className="bg-blue-300 marquee">
+      <Marquee className="marquee bg-blue-300">
         <div className="content">
-          <span className="ml-80 text-red-500">Manuscript Submission</span>{" "}
+          <span className="ml-80 font-bold text-red-500">
+            Manuscript Submission
+          </span>{' '}
           Date Extended to 10th August 2024
+        </div>
+        <div className="content">
+          <span className="ml-80 font-bold text-red-500 ">Last Date </span>
+          to accept Best thesis nomination till 31st Aug 2024.
         </div>
       </Marquee>
       <style jsx>{`
@@ -163,13 +169,16 @@ const NavBar = () => {
         }
       `}</style>
     </header>
-  );
-};
+  )
+}
 
 const Footer = () => {
   return (
     <footer className="static bottom-0 w-full bg-gray-50">
-      <div className="mx-auto flex max-w-screen-xl flex-col items-center px-4 py-16 sm:px-6 lg:block lg:px-8 mainDiv" style={{ padding: '10px' }}>
+      <div
+        className="mainDiv mx-auto flex max-w-screen-xl flex-col items-center px-4 py-16 sm:px-6 lg:block lg:px-8"
+        style={{ padding: '10px' }}
+      >
         <a className="flex items-center justify-around" href="/">
           <Image src="/logo_rvce.jpg" alt="logo" className="m-5 h-full w-20" />
         </a>
@@ -186,12 +195,18 @@ const Footer = () => {
           <h1 className="font-extrabold uppercase text-blue-800">
             RV College of Engineering
           </h1>
-          <h2 className="text-center">RV Vidyanikethan Post, Mysuru Road Bengaluru - 560059</h2>
+          <h2 className="text-center">
+            RV Vidyanikethan Post, Mysuru Road Bengaluru - 560059
+          </h2>
         </div>
-        <div className="mt-8 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between abc">
+        <div className="abc mt-8 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between">
           <div>
             <p className="text-center text-xs text-gray-900">
-              &copy; 2022{new Date().getFullYear() > 2022 ? `-${new Date().getFullYear()}` : ''} IEEE RVCE
+              &copy; 2022
+              {new Date().getFullYear() > 2022
+                ? `-${new Date().getFullYear()}`
+                : ''}{' '}
+              IEEE RVCE
             </p>
           </div>
           <div>
@@ -235,8 +250,8 @@ const Footer = () => {
         }
       `}</style>
     </footer>
-  );
-};
+  )
+}
 
 const WrapApp = ({ children }: any) => {
   return (
@@ -251,7 +266,7 @@ const WrapApp = ({ children }: any) => {
     >
       {children}
     </AppShell>
-  );
-};
+  )
+}
 
-export default WrapApp;
+export default WrapApp
