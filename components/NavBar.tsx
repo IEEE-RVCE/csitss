@@ -117,14 +117,14 @@ const NavBar = () => {
         </div>
       </div>
       <Marquee className="marquee bg-blue-300">
-        <div className="content">
-          <span className="ml-80 font-bold text-red-500">
+        <div className="content1">
+          <span className="ml-80 font-bold text-yellow-300">
             Manuscript Submission
           </span>{' '}
           Date Extended to 10th August 2024
         </div>
-        <div className="content">
-          <span className="ml-80 font-bold text-red-500 ">Last Date </span>
+        <div className="content1">
+          <span className="ml-80 font-bold text-yellow-300 ">Last Date </span>
           to accept Best thesis nomination till 31st Aug 2024.
         </div>
       </Marquee>

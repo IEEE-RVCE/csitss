@@ -164,7 +164,9 @@
     opacity: 1;
   }
 }
-
+.content1 {
+  color: white;
+}
 .animate-fadeIn2 {
   animation: fadeIn 2s ease-in-out;
 }
