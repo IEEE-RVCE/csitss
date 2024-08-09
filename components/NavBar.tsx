@@ -125,7 +125,7 @@ const NavBar = () => {
         </div>
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300 ">Last Date </span>
-          to accept Best thesis nomination till 31st Aug 2024.
+          to accept Best thesis nomination is 31st Aug 2024.
         </div>
       </Marquee>
       <style jsx>{`
