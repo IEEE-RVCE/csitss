@@ -121,7 +121,7 @@ const NavBar = () => {
           <span className="ml-80 font-bold text-yellow-300">
             Manuscript Submission
           </span>{' '}
-          Date Extended to 10th August 2024
+          Date Extended to 14th August 2024
         </div>
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300 ">Last Date </span>

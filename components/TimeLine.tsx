@@ -8,8 +8,8 @@ const data = [
   },
   {
     label: 'Last date to submit Full-length Manuscript',
-    oldDate: '30th July 2024',
-    newDate: '10th August 2024',
+    oldDate: '10th August 2024',
+    newDate: '14th August 2024',
   },
   {
     label: 'Notification of Acceptance',

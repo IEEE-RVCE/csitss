@@ -233,9 +233,34 @@ function registration() {
         </section>
         <section className="flex justify-center py-4">
   <a href="https://rzp.io/l/v8bJlYuW" className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-700">
-    Click Here to Pay Through Razorpay
+    Click Here to Pay Through Razorpay (Indian Delegates)
   </a>
+  
 </section>
+<section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold sm:text-2xl">
+            Registration Method for Foreign Delegates only
+          </h2>
+          <p className="mt-4 text-gray-600">
+            <b>Beneficiary Name: </b>
+            PRINCIPAL, RVCE
+            <br />
+            <b>Bank Account Number: </b>
+            136010112055
+            <br />
+            <b>Bank Name: </b>
+            KOTAK MAHINDRA BANK
+            <br />
+            <b>Branch Name: </b>
+            RVCE Campus, Bengaluru
+            <br />
+            <b>IFSC Code: </b>
+            KKBK0008053
+            <br />
+            <b>SWIFT Code: </b>
+            KKBKINBB
+          </p>
+        </section> 
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
    
 
