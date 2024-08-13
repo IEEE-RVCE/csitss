@@ -17,8 +17,8 @@ type Sponsor = {
   type: SponsorType
 }
 
-// all images should be in public/sponsors folder, just put the name of the image here and it will be loaded
 const SponsorsData: Sponsor[] = [
+  // Your existing sponsors data here
   {
     name: 'Indian Wind Power Association',
     logo: 'iwpa.png',
@@ -184,9 +184,6 @@ const SponsorsData: Sponsor[] = [
 
   // Add more sponsors as needed
 ]
-
-// don't worry about this, this just loops through the sponsors and groups them by type helps with easier rendering
-
 const Sponsorship: React.FC = () => {
   const groupedSponsors: Record<SponsorType, Sponsor[]> = {
     platinum: [],
@@ -208,13 +205,12 @@ const Sponsorship: React.FC = () => {
       }
 
       const items = sponsors.map((item) => (
-        <a href={item.link} target="_blank">
+        <a href={item.link} target="_blank" key={item.name}>
           <div
-            key={item.name}
             style={{
-              width: '250px', // Set a fixed width for the cards
-              margin: '0rem 1rem 1rem 0rem', // Add some margin between cards if needed
-              marginTop: type === 'others' ? '1rem' : 0, // Add top margin for "others" section
+              width: '250px',
+              margin: '0rem 1rem 1rem 0rem',
+              marginTop: type === 'others' ? '1rem' : 0,
             }}
           >
             <div
@@ -229,7 +225,7 @@ const Sponsorship: React.FC = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 border: '2.5px solid #ccc',
-                height: '300px', // Set a fixed heigh for the cards
+                height: '300px',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-4px)'
@@ -256,10 +252,9 @@ const Sponsorship: React.FC = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
-                  justifyContent: 'center', // Center both horizontally and vertically
+                  justifyContent: 'center',
                 }}
               >
-                {/* <br /> */}
                 <Text
                   size="md"
                   className="font-bold text-blue-500"
@@ -327,7 +322,7 @@ const Sponsorship: React.FC = () => {
             style={{
               display: 'flex',
               flexWrap: 'wrap',
-              justifyContent: 'center', // Center horizontally
+              justifyContent: 'center',
             }}
           >
             {items}
@@ -339,6 +334,7 @@ const Sponsorship: React.FC = () => {
 
   return (
     <div style={{ backgroundColor: 'white', padding: '1rem' }}>
+      {/* New Section: Sponsors of 2024 */}
       <section
         style={{
           margin: 'auto',
@@ -347,37 +343,172 @@ const Sponsorship: React.FC = () => {
           position: 'relative',
         }}
       >
-       <div
-  style={{
-    position: 'relative', 
-    width: '70%', 
-    margin:'0 auto',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: `url(https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-web-template-business-report-with-smooth-circle-gradient-color_1258-54733.jpg)`,
-    minHeight: '90px',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    padding: '10px',
-    textAlign: 'center', 
-  }}
->
-  <p
-    style={{
-      fontSize: '1.8rem', 
-      fontWeight: 'bold',
-      color: 'white', 
-      margin: 0, 
-      padding: '0 10px', 
-      maxWidth: '90%', 
-      wordWrap: 'break-word', 
-    }}
-  >
-    Special thanks to Sponsors of CSITSS-2023
-  </p>
-</div>
+        <div
+          style={{
+            background: 'linear-gradient(to right, #ff0000, #800000)',
+            color: 'white',
+            padding: '1rem',
+            borderRadius: '0.5rem',
+            marginBottom: '2rem',
+            textAlign: 'center',
+          }}
+        >
+          <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: 0 }}>
+            Sponsors of 2024
+          </h1>
+        </div>
+        <div
+          style={{
+            background: 'linear-gradient(to right, #ff0000, #800000)',
+            height: '3px',
+            width: '100%',
+            marginBottom: '2rem',
+          }}
+        />
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            flexWrap: 'wrap', // For mobile responsiveness
+          }}
+        >
+          <a
+            href="https://www.ctrls.in/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/CtrlS.png`}
+                alt="Ctrls"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              CtrlS
+            </Text>
+          </a>
+          <a
+            href="https://www.arcadis.com"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/Arcadis.jpg`}
+                alt="Arcadis"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Arcadis
+            </Text>
+          </a>
+        </div>
+      </section>
 
+      {/* Existing Section: Special thanks to Sponsors of CSITSS-2023 */}
+      <section
+        style={{
+          margin: 'auto',
+          maxWidth: '75rem',
+          padding: '1rem',
+          position: 'relative',
+        }}
+      >
+        <div
+          style={{
+            position: 'relative',
+            width: '100%',
+            margin: '0 auto',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            background: `url(https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-web-template-business-report-with-smooth-circle-gradient-color_1258-54733.jpg)`,
+            minHeight: '90px',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            padding: '10px',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            style={{
+              fontSize: '1.8rem',
+              fontWeight: 'bold',
+              color: 'white',
+              margin: 0,
+              padding: '0 10px',
+              maxWidth: '90%',
+              wordWrap: 'break-word',
+            }}
+          >
+            Special thanks to Sponsors of CSITSS-2023
+          </p>
+        </div>
 
         {sponsorGroups}
       </section>
