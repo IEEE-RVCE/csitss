@@ -273,7 +273,9 @@ function registration() {
             <li>Registration fee for the paper (<span className="font-bold">with authorship</span>) includes access to the pre conference tutorial, conference proceedings, all technical sessions and presenter certificate.</li>
             <li>Registration fee for the <span className="font-bold">pre conference tutorial</span> includes access to the pre conference tutorial only (7th Nov 2024).</li>
             <li>Registration fee for the <span className="font-bold">conference participation without authorship-attendee</span> is not entitled for paper publication, however participation certificate will be provided.</li>
+  
             <li>Registration for  <span className="font-bold">Indian Delegates is through Razorpay</span> and <span className="font-bold">Foreign Delegates can use the account details</span> mentioned for bank transfer</li>
+            <li>While registering for <span className="font-bold">Best Thesis Award</span>, enter paper id as 9999</li>
           </ol>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
