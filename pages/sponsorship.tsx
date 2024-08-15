@@ -357,14 +357,30 @@ const Sponsorship: React.FC = () => {
             Sponsors of 2024
           </h1>
         </div>
-        <div
-          style={{
-            background: 'linear-gradient(to right, #ff0000, #800000)',
-            height: '3px',
-            width: '100%',
-            marginBottom: '2rem',
-          }}
-        />
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+              <h1
+                style={{
+                  marginRight: '1rem',
+                  background: 'linear-gradient(to right, #ff0000, #800000)',
+                  WebkitBackgroundClip: 'text',
+                  fontSize: '3rem',
+                  fontWeight: 'bold',
+                  color: 'transparent',
+                  alignContent: 'center',
+                }}
+              >
+                Silver
+              </h1>
+              <hr
+                style={{
+                  background: 'linear-gradient(to right, red, transparent)',
+                  height: '3px',
+                  width: '100%',
+                  marginRight: '1rem',
+                }}
+              />
+            </div>
+
         <div
           style={{
             display: 'flex',
