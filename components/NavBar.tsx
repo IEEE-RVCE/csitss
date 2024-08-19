@@ -119,9 +119,9 @@ const NavBar = () => {
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300">
-            Manuscript Submission
+            Notification of Acceptance
           </span>{' '}
-          Date Extended to 14th August 2024
+          will be provided by 28th Aug 2024.
         </div>
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300 ">Last Date </span>
