@@ -8,24 +8,28 @@ const data = [
   },
   {
     label: 'Last date to submit Full-length Manuscript',
-    oldDate: '14th August 2024',
-    newDate: '',
+    date: '14th August 2024',
+    
   },
   {
     label: 'Notification of Acceptance',
-    date: '28th August 2024',
+    oldDate: '28th August 2024',
+    newDate:'7th September 2024',
   },
   {
     label: 'Early Bird Registration',
-    date: 'Before 18th September 2024',
+    
+    date:'Before 23th September 2024',
   },
   {
     label: 'Submission of Camera-ready Manuscript and Copyright Form',
-    date: '10th October 2024',
+    oldDate: '10th October 2024',
+    newDate:'7th October 2024',
   },
   {
     label: 'Last Date for Registration',
-    date: '15th October 2024',
+    oldDate: '15th October 2024',
+    newDate:'12th October 2024',
   },
   {
     label: 'Pre-Conference Tutorial',
