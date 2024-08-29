@@ -18,18 +18,16 @@ const data = [
   },
   {
     label: 'Early Bird Registration',
-    
-    date:'Before 23th September 2024',
+    date:'Before 18th September 2024',
   },
   {
     label: 'Submission of Camera-ready Manuscript and Copyright Form',
-    oldDate: '10th October 2024',
-    newDate:'7th October 2024',
+    date:'7th October 2024',
   },
   {
     label: 'Last Date for Registration',
-    oldDate: '15th October 2024',
-    newDate:'12th October 2024',
+    date: '15th October 2024',
+    
   },
   {
     label: 'Pre-Conference Tutorial',
