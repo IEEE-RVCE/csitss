@@ -20,15 +20,16 @@ const data = [
     label: 'Early Bird Registration',
     date:'Before 18th September 2024',
   },
+    {
+    label: 'Last Date for Registration',
+    date: '3rd October 2024',
+    
+  },
   {
     label: 'Submission of Camera-ready Manuscript and Copyright Form',
     date:'7th October 2024',
   },
-  {
-    label: 'Last Date for Registration',
-    date: '15th October 2024',
-    
-  },
+
   {
     label: 'Pre-Conference Tutorial',
     date: '7th November 2024',
