@@ -232,7 +232,7 @@ function registration() {
           </p>
         </section>
         <section className="flex justify-center py-4">
-  <a href="https://rzp.io/l/v8bJlYuW" className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-700">
+  <a href="https://rzp.io/l/vMqgBae" className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-700">
     Click Here to Pay Through Razorpay (Indian Delegates)
   </a>
   
