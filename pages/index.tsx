@@ -41,7 +41,7 @@ export default function Index() {
                 <p className="text-xl text-white md:text-2xl md:mt-0 mt-4">
                   <span className="font-normal ">
                     8<sup>th</sup> International Conference on Computational
-                    Systems and Information Technology for Sustainable Solutions
+                    TEST
                   </span>
                 </p>
                 <p className="align-text-center text-xl text-slate-50">
