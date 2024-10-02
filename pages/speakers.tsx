@@ -32,10 +32,12 @@ const speakerList: SpeakerType[] = [
 
 const speakers = () => {
   return (
-    <div className="py-8">
-      <h1 className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-center text-4xl font-bold text-transparent">
+    <div className="py-10">
+    <div className='flex justify-center'>
+      <h1 className="shadow-xl w-fit px-4 py-2 rounded-2xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 bg-clip-text text-center text-3xl font-bold text-transparent">
         Keynote Speakers
       </h1>
+    </div>
       <div className="mt-12 flex w-full flex-col items-center space-x-0 space-y-8 py-2 px-0  lg:flex-row lg:justify-between lg:space-x-4 lg:space-y-0 lg:px-12">
         {speakerList.map((speaker: SpeakerType) => (
           <SpeakerCard speaker={speaker} />

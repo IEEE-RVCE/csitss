@@ -15,12 +15,12 @@ const SpeakerCard = ({ speaker }: { speaker: SpeakerType }) => {
     >
       <img
         src={speaker.imageLink}
-        className="h-64 w-64 rounded-xl"
+        className="h-64 w-64 rounded-xl object-cover"
         alt={speaker.name}
       />
       <div>
-        <h1 className="text-xl font-bold">{speaker.name}</h1>
-        <h1 className="text-lg text-gray-500">{speaker.designation}</h1>
+        <h1 className="text-lg font-bold">{speaker.name}</h1>
+        <h1 className="text-md text-gray-500">{speaker.designation}</h1>
       </div>
     </div>
   )
