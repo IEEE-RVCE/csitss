@@ -24,9 +24,9 @@ const speakerList: SpeakerType[] = [
   },
   {
     id: 3,
-    name: 'Rajamani',
-    designation: 'Founder and CEO, Google',
-    imageLink: 'https://rvu.edu.in/wp-content/uploads/2023/02/02-3.png',
+    name: 'Prof. Dr.-Ing. Vinod Rajamani',
+    designation: 'Professor, University of Applied Sciences and Arts Dortmund',
+    imageLink: 'https://www.fh-dortmund.de/kontakt-daten/Rajamani-Vinod.php.media/82194/Vinod-Rajamani_Portrait.jpg.scaled/3312b7eed140ac54332cfc22f82c192c.jpg',
   },
 ]
 
