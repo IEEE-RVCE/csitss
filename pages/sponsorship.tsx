@@ -166,13 +166,6 @@ const SponsorsData: Sponsor[] = [
     link: '#',
     type: 'others',
     description: '',
-  },
-  {
-    name: "MathWorks",
-    logo: 'mathworks.jpeg',
-    link: 'https://in.mathworks.com/',
-    type: 'others',
-    description: ''
   }
   // {
   //   name: "Advance Controls",
@@ -572,7 +565,94 @@ const Sponsorship: React.FC = () => {
             </Text>
           </a>
         </div>
+            
+       
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+              <h1
+                style={{
+                  marginRight: '1rem',
+                  background: 'linear-gradient(to right, #ff0000, #800000)',
+                  WebkitBackgroundClip: 'text',
+                  fontSize: '3rem',
+                  fontWeight: 'bold',
+                  color: 'transparent',
+                  alignContent: 'center',
+                }}
+              >
+                Others
+              </h1>
+              <hr
+                style={{
+                  background: 'linear-gradient(to right, red, transparent)',
+                  height: '3px',
+                  width: '100%',
+                  marginRight: '1rem',
+                }}
+              />
+            </div>
+
+                 {/* {
+    name: "MathWorks",
+    logo: 'mathworks.jpeg',
+    link: 'https://in.mathworks.com/',
+    type: 'others',
+    description: ''
+  } */}
+
+        <div className='flex justify-center'>
+            <a
+            href="https://in.mathworks.com/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/mathworks.jpeg`}
+                alt="Mathworks"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              MathWorks
+            </Text>
+          </a>
+          </div>
       </section>
+
+      
+
 
       {/* Existing Section: Special thanks to Sponsors of CSITSS-2023 */}
       <section
