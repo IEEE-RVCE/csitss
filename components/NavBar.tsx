@@ -7,7 +7,7 @@ const Links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/committee', label: 'Committee' },
-  { href: '/speakers', label : 'Speakers'},
+  { href: '/speakers', label: 'Speakers' },
   { href: '/papers', label: 'Call for Papers' },
   { href: '/awards', label: 'Awards' },
   { href: '/registration', label: 'Registration' },
@@ -119,10 +119,18 @@ const NavBar = () => {
       </div>
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
-          <span className="ml-80 font-bold text-yellow-300">
-            Notification of Acceptance
-          </span>{' '}
-          will be provided by 28th Aug 2024.
+          <span className="ml-80 font-bold text-xl text-yellow-300">
+            Registrations are closed
+          </span>
+          <span className="ml-80 font-bold text-xl text-yellow-300">
+            Registrations are closed
+          </span>
+          <span className="ml-80 font-bold text-xl text-yellow-300">
+            Registrations are closed
+          </span>
+          <span className="ml-80 font-bold text-xl text-yellow-300">
+            Registrations are closed
+          </span>
         </div>
       </Marquee>
       <style jsx>{`
