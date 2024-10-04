@@ -21,6 +21,7 @@ const data = [
   {
     label: 'Last Date for Registration',
     oldDate: '3rd October 2024',
+    newDate: '',
   },
   {
     label: 'Submission of Camera-ready Manuscript and Copyright Form',
