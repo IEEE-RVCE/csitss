@@ -167,6 +167,13 @@ const SponsorsData: Sponsor[] = [
     type: 'others',
     description: '',
   },
+  {
+    name: "MathWorks",
+    logo: 'mathworks.jpeg',
+    link: 'https://in.mathworks.com/',
+    type: 'others',
+    description: ''
+  }
   // {
   //   name: "Advance Controls",
   //   logo: "",
