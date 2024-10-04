@@ -12,8 +12,7 @@ const data = [
   },
   {
     label: 'Notification of Acceptance',
-    oldDate: '28th August 2024',
-    newDate: '7th September 2024',
+    date: '7th September 2024',
   },
   {
     label: 'Early Bird Registration',
