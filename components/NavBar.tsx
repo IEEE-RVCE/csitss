@@ -127,10 +127,6 @@ const NavBar = () => {
           <span className="ml-80 font-bold text-yellow-300">
             Registrations are closed{' '}
           </span>{' '}
-          <span className="ml-80 font-bold text-yellow-300">
-            Notification of Acceptance
-          </span>{' '}
-          will be provided by 28th Aug 2024.
         </div>
       </Marquee>
       <style jsx>{`
