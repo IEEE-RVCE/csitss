@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Awards() {
   return (
@@ -28,28 +27,13 @@ function Awards() {
         </p>
 
         <div className="mt-6">
-          <div className="mb-4 text-center">
-            <p className="text-xl font-bold text-blue-700 sm:text-2xl lg:text-3xl">
-              Preview PDF
-            </p>
-          </div>
-          <div className="rounded-lg bg-gray-100 p-2 shadow-inner sm:p-4">
-            <iframe
-              src="Award.pdf"
-              width="100%"
-              height="400px"
-              className="rounded-lg"
-              style={{ border: 'none' }}
-              title="PDF Preview"
-            />
-          </div>
           <div className="mt-4 text-center">
             <a
-              href="Award.pdf"
+              href="PhD-Results.pdf"
               download
               className="text-lg font-medium text-blue-700 hover:underline sm:text-xl lg:text-2xl"
             >
-              Download PDF
+              Download PhD-Results
             </a>
           </div>
         </div>
