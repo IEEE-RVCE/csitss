@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Awards() {
   return (
@@ -46,6 +45,14 @@ function Awards() {
           <div className="mt-4 text-center">
             <a
               href="Award.pdf"
+              download
+              className="text-lg font-medium text-blue-700 hover:underline sm:text-xl lg:text-2xl"
+            >
+              Download PDF
+            </a>
+            <br></br>
+            <a
+              href="PhD-Results.pdf"
               download
               className="text-lg font-medium text-blue-700 hover:underline sm:text-xl lg:text-2xl"
             >

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { AppShell, Center, Header, Image, Menu } from '@mantine/core'
-import Marquee from 'react-fast-marquee'
 import Link from 'next/link'
+import Marquee from 'react-fast-marquee'
 
 const Links = [
   { href: '/', label: 'Home' },
@@ -119,6 +119,11 @@ const NavBar = () => {
       </div>
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
+          <span className="ml-80 font-bold text-yellow-300">
+          <a href="PhD-Results.pdf"  download>
+          Download PDF
+          </a>
+          </span>{' '}
           <span className="ml-80 font-bold text-yellow-300">
             Registrations are closed{' '}
           </span>{' '}
