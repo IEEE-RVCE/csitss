@@ -121,7 +121,7 @@ const NavBar = () => {
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300">
           <a href="PhD-Results.pdf"  download>
-          Download PDF
+          Download PhD-Results
           </a>
           </span>{' '}
           <span className="ml-80 font-bold text-yellow-300">
