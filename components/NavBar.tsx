@@ -125,12 +125,13 @@ const NavBar = () => {
           </a>
           </span>{' '}
           <span className="ml-80 font-bold text-yellow-300">
-            Registrations are closed{' '}
+          <a href="PhD-Results.pdf"  download>
+         Click here for Best Ph.D thesis result
+          </a>
           </span>{' '}
           <span className="ml-80 font-bold text-yellow-300">
-            Notification of Acceptance
+            Registrations are closed{' '}
           </span>{' '}
-          will be provided by 28th Aug 2024.
         </div>
       </Marquee>
       <style jsx>{`
