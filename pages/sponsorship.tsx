@@ -645,7 +645,7 @@ const Sponsorship: React.FC = () => {
           }}
         >
           <a
-            href="https://www.ctrls.in/"
+            href="https://in.mathworks.com/"
             target="_blank"
             style={{
               width: '300px',
@@ -736,6 +736,100 @@ const Sponsorship: React.FC = () => {
               }}
             >
               Ganesha Enterprise, Bangalore
+            </Text>
+            </a>
+            <a
+            href="https://canarabank.com/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '220px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/canara_bank.jpg`}
+                alt="Canara Bank"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Canara Bank
+            </Text>
+          </a>
+            <a
+            href="https://www.orbitindia.net/#"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '220px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/orbit.png`}
+                alt="Orbit Techsol"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Orbit Techsol
             </Text>
           </a>
         </div>
