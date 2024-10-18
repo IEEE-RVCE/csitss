@@ -119,6 +119,11 @@ const NavBar = () => {
       </div>
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
+        <span className="ml-80 font-bold text-yellow-300">
+          <a href="PresentationSchedule.pdf"  download>
+         Click here for Paper Presentation Schedule
+          </a>
+          </span>{' '}
           <span className="ml-80 font-bold text-yellow-300">
           <a href="PhD-Results.pdf"  download>
          Click here for Best Ph.D thesis result
