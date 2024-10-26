@@ -121,7 +121,7 @@ const NavBar = () => {
         <div className="content1">
         <span className="ml-80 font-bold text-yellow-300">
           <a href="Program Schedule 25-10-2024.pdf"  download>
-          Please find the finalized program schedule. No further changes will be accommodated.
+          Please find the updated program schedule. No further changes will be accommodated.
           </a>
           </span>{' '}
         <span className="ml-80 font-bold text-yellow-300">
@@ -129,19 +129,13 @@ const NavBar = () => {
          Click here for Paper Presentation Template
           </a>
           </span>{' '}
-        <span className="ml-80 font-bold text-yellow-300">
-          <a href="PresentationSchedule.pdf"  download>
-         Click here for Paper Presentation Schedule
-          </a>
-          </span>{' '}
+   
           <span className="ml-80 font-bold text-yellow-300">
           <a href="PhD-Results.pdf"  download>
          Click here for Best Ph.D thesis result
           </a>
           </span>{' '}
-          <span className="ml-80 font-bold text-yellow-300">
-            Registrations are closed{' '}
-          </span>{' '}
+
         </div>
       </Marquee>
       <style jsx>{`
