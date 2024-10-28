@@ -156,8 +156,10 @@ export default function CustomTimeLine() {
                           {event.speaker}
                         </Text>
                         {event.topic && (
-                          <Text size="sm" color="gray" italic>
-                            Topic: {event.topic}
+                          <Text size="sm" color="gray">
+                            <span style={{ fontStyle: 'italic' }}>
+                              Topic: {event.topic}
+                            </span>
                           </Text>
                         )}
                       </div>
