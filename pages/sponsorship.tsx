@@ -437,6 +437,88 @@ const Sponsorship: React.FC = () => {
             </Text>
           </a>
         </div>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <h1
+            style={{
+              marginRight: '1rem',
+              background: 'linear-gradient(to right, #ff0000, #800000)',
+              WebkitBackgroundClip: 'text',
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              color: 'transparent',
+              alignContent: 'center',
+            }}
+          >
+            Gold
+          </h1>
+          <hr
+            style={{
+              background: 'linear-gradient(to right, red, transparent)',
+              height: '3px',
+              width: '100%',
+              marginRight: '1rem',
+            }}
+          />
+        </div>
+
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            flexWrap: 'wrap', // For mobile responsiveness
+          }}
+        >
+          <a
+            href="https://chamundeswarisugars.in/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/chamundeswari.jpg`}
+                alt="Chamundi"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Chamundi Sugars
+            </Text>
+          </a>
+        </div>
+
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <h1
             style={{
@@ -737,8 +819,8 @@ const Sponsorship: React.FC = () => {
             >
               Ganesha Enterprise, Bangalore
             </Text>
-            </a>
-            <a
+          </a>
+          <a
             href="https://canarabank.com/"
             target="_blank"
             style={{
@@ -785,7 +867,7 @@ const Sponsorship: React.FC = () => {
               Canara Bank
             </Text>
           </a>
-            <a
+          <a
             href="https://www.orbitindia.net/#"
             target="_blank"
             style={{
@@ -830,6 +912,53 @@ const Sponsorship: React.FC = () => {
               }}
             >
               Orbit Techsol
+            </Text>
+          </a>
+          <a
+            href="https://womenincloud.com/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '220px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/women.jpg`}
+                alt="Women in Cloud"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Women in Cloud
             </Text>
           </a>
         </div>
