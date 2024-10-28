@@ -4,6 +4,7 @@ type SpeakerType = {
   id: number
   name: string
   designation: string
+  topic?: string
   imageLink: string
 }
 
@@ -11,7 +12,7 @@ const SpeakerCard = ({ speaker }: { speaker: SpeakerType }) => {
   return (
     <div
       key={speaker.id}
-      className="hover:border-gradient-to-r relative flex w-72 flex-col space-y-3 rounded-3xl border-2 border-transparent bg-white from-purple-500 via-indigo-500 to-blue-500 p-4 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
+      className="hover:border-gradient-to-r relative flex w-72 flex-col space-y-3 rounded-3xl border-2 border-transparent bg-white p-4 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
     >
       {/* Image Section */}
       <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-lg">
@@ -26,10 +27,14 @@ const SpeakerCard = ({ speaker }: { speaker: SpeakerType }) => {
       <div className="text-center">
         <h1 className="text-xl font-semibold text-gray-800">{speaker.name}</h1>
         <h2 className="mt-1 text-sm text-gray-500">{speaker.designation}</h2>
+        {speaker.topic && (
+          <p className="mt-2 text-sm font-medium italic text-gray-600">
+            Topic: {speaker.topic}
+          </p>
+        )}
       </div>
 
-      {/* Hover Effect */}
-      <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 opacity-0 transition-opacity duration-300 hover:opacity-20"></div>
+      {/* Hover Overlay Effect */}
     </div>
   )
 }
