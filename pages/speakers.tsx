@@ -97,7 +97,7 @@ const Speakers = () => {
       {/* Pre Conference Speakers Section */}
       <div className="mt-16 flex justify-center">
         <h1 className="w-fit rounded-full bg-gradient-to-r from-teal-600 via-green-600 to-yellow-600 bg-clip-text px-6 py-3 text-4xl font-extrabold text-transparent shadow-lg">
-          Pre Conference Speakers
+          Invited Speakers
         </h1>
       </div>
 
