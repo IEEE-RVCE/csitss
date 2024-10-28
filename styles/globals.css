@@ -259,3 +259,10 @@
 .animated-date span:nth-child(23) {
   animation-delay: 5.2s;
 }
+.download-button {
+  margin-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
