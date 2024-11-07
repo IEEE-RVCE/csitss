@@ -120,6 +120,11 @@ const NavBar = () => {
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
         <span className="ml-80 font-bold text-yellow-300">
+          <a href="SouvenirCSITSS-2024.pdf"  download>
+            Click here for CSITSS Souvenior
+          </a>
+          </span>{' '}
+        <span className="ml-80 font-bold text-yellow-300">
           <a href="Program_Schedule.pdf"  download>
           Please find the final program schedule updated as on  5th November.
           </a>
