@@ -757,7 +757,7 @@ const Sponsorship: React.FC = () => {
               style={{ background: 'transparent' }}
             >
               <Image
-                src={`/sponsors/mathworks.jpeg`}
+                src={`/sponsors/mathworks.png`}
                 alt="Mathworks"
                 style={{ background: 'transparent', maxWidth: '100%' }}
               />
