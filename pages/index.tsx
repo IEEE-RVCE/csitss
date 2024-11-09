@@ -3,9 +3,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Element, Link as ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
+import { useState } from 'react'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 import CountdownTimer from '../components/CountdownTimer'
+import ThankYouPopup from '../components/ThankYouPopup'
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
@@ -16,8 +18,15 @@ import CountdownTimer from '../components/CountdownTimer'
 // }
 
 export default function Index() {
+  const [isThankYouPopupOpen, setIsThankYouPopupOpen] = useState(true)
+
+  const closeThankYouPopup = () => setIsThankYouPopupOpen(false)
   return (
     <>
+      <ThankYouPopup
+        isOpen={isThankYouPopupOpen}
+        onClose={closeThankYouPopup}
+      />
       <section className="body-font m-0 text-gray-600">
         {/* <div className="bar">
           <span className="bar_content">
