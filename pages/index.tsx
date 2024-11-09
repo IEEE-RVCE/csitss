@@ -6,7 +6,7 @@ import HeaderImages from '../components/HeaderImages'
 import { useState } from 'react'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
-import CountdownTimer from '../components/CountdownTimer'
+
 import ThankYouPopup from '../components/ThankYouPopup'
 
 // const image = {
@@ -93,7 +93,6 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <CountdownTimer />
         </header>
         <div className="mt-4 w-full rounded-lg bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black shadow-lg">
           <p className="text-lg font-semibold">
