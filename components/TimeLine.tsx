@@ -112,7 +112,7 @@ export default function CustomTimeLine() {
   return (
     <div className={`timeline-container ${isVisible ? 'fade-in' : ''}`}>
       <h1 className="timeline-title">Important Dates</h1>
-      <Timeline active={0} bulletSize={28} lineWidth={4} color="teal">
+      <Timeline active={8} bulletSize={28} lineWidth={4} color="teal">
         {data.map((item, index) => (
           <Timeline.Item
             key={index}
