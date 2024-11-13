@@ -6,7 +6,6 @@ import HeaderImages from '../components/HeaderImages'
 import { useState } from 'react'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
-
 import ThankYouPopup from '../components/ThankYouPopup'
 
 // const image = {
@@ -298,6 +297,81 @@ export default function Index() {
                     className="h-auto w-auto object-cover"
                     alt="FH Dortmund Logo"
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-24 lg:grid-cols-2 lg:gap-16">
+              {/* Image with Enhanced 3D Effect */}
+              <div className="animate-fadeIn2 image-3d relative transform overflow-visible rounded-lg transition-transform duration-300 hover:scale-105 sm:h-80 lg:order-last lg:h-full">
+                <img
+                  src="thank.jpg"
+                  className="h-auto w-full rounded-lg object-cover shadow-xl shadow-gray-500/50"
+                  alt="Event Image"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="animate-fadeIn2 flex flex-col justify-center">
+                <h2 className="mb-6 bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
+                  Glimpse of CSITSS-2024
+                </h2>
+                <p className="mb-8 text-lg leading-relaxed text-gray-700">
+                  Dear Authors, Reviewers, Attendees, and Session Chairs,
+                  <br /> We are delighted to announce the successful conclusion
+                  of the 8th IEEE International Conference on Computational
+                  Systems and Information Technology for Sustainable Solutions
+                  on <strong className="text-blue-600">November 9, 2024</strong>
+                  .
+                  <br /> Thank you for your active participation and invaluable
+                  contributions.
+                  <br />{' '}
+                  <span className="font-semibold text-green-600">
+                    E-certificates
+                  </span>{' '}
+                  will be sent to your registered email addresses shortly.
+                  <br /> Warm regards,
+                  <br /> <strong>General Chair:</strong> Dr. B M Sagar,
+                  Professor and Head, Dept of Information Science and
+                  Engineering, RV College of Engineering.
+                  <br /> <strong>Dr. M Krishna:</strong> Professor and Head,
+                  Dept of Mechanical Engineering, RV College of Engineering.
+                </p>
+
+                {/* Awards Section with Icons and Gradient Background */}
+                <div className="rounded-lg bg-gradient-to-r from-blue-50 to-blue-100 p-6 shadow-lg transition-transform hover:scale-105">
+                  <h3 className="mb-4 flex items-center text-2xl font-semibold text-gray-900">
+                    🏆 Best Ph.D. Thesis Award Final Results:
+                  </h3>
+                  <ul className="space-y-3 text-gray-800">
+                    <li>
+                      <strong className="text-blue-600">
+                        1st place - Dr. Shwetha K P
+                      </strong>
+                      , Assistant Professor, Department of Physics, RVCE,
+                      Bengaluru.
+                    </li>
+                    <li>
+                      <strong className="text-blue-500">
+                        2nd place - Dr. Yashodha S R
+                      </strong>
+                      , Assistant Professor, Dept. of Physics, RNS Institute of
+                      Technology, Bengaluru.
+                    </li>
+                    <li>
+                      <strong className="text-blue-400">
+                        3rd place - Dr. Sneha M
+                      </strong>
+                      , Assistant Professor, Dept. of CSE, RVCE, Bengaluru.
+                    </li>
+                  </ul>
+                  <p className="mt-4 animate-pulse text-lg font-semibold text-teal-600">
+                    Congratulations to all awardees!
+                  </p>
                 </div>
               </div>
             </div>
