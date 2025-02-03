@@ -120,32 +120,11 @@ const NavBar = () => {
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300">
-          <a href="https://ieeexplore.ieee.org/xpl/conhome/10816706/proceeding"  download>
-          Presented Papers are now Live on IEEE Xplore. Click to view.
+          <a href=""  download>
+          Website Under Construction
           </a>
           </span>{' '}
-  <span className="ml-80 font-bold text-yellow-300">
-          <a href="Souvenir CSITSS- 2024 7-11-2024.pdf"  download>
-          Click to download CSITSS Souvenir
-          </a>
-          </span>{' '}
-        <span className="ml-80 font-bold text-yellow-300">
-          <a href="Program_Schedule.pdf"  download>
-          Please find the final program schedule updated as on  5th November.
-          </a>
-          </span>{' '}
-        <span className="ml-80 font-bold text-yellow-300">
-          <a href="Paper_Presentation_Template_CSITSS2024.pptx"  download>
-         Click here for Paper Presentation Template
-          </a>
-          </span>{' '}
-   
-          <span className="ml-80 font-bold text-yellow-300">
-          <a href="PhD-Results.pdf"  download>
-         Click here for Best Ph.D thesis result
-          </a>
-          </span>{' '}
-
+  
         </div>
       </Marquee>
       <style jsx>{`
