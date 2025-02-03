@@ -9,41 +9,41 @@ const HeaderImages = () => {
       show: true,
       padding: 'p-2',
     },
-    {
-      src: 'ieee-main.png',
-      alt: 'ieee_logo',
-      href: 'https://www.ieee.org',
-      show: true,
-      padding: 'p-2',
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
-      alt: 'fh_dortmund_logo',
-      href: 'https://www.fh-dortmund.de/',
-      show: true,
-      padding: 'p-2',
-    },
-    {
-      src: 'fiu-logo2.png',
-      alt: 'fiu_logo',
-      href: 'https://www.fiu.edu/',
-      show: true,
-      padding: 'p-2',
-    },
     // {
-    //   src: "logo_IEEE_Banaglaore_Section.png",
-    //   alt: "ieee_bangalore_logo",
-    //   href: "https://ieeebangalore.org/",
+    //   src: 'ieee-main.png',
+    //   alt: 'ieee_logo',
+    //   href: 'https://www.ieee.org',
     //   show: true,
-    //   padding: "pt-6"
+    //   padding: 'p-2',
     // },
     // {
-    //   src: 'logo_rvce_ieee.png',
-    //   alt: 'rvce_ieee_logo',
-    //   href: 'https://ieee-rvce.org/',
+    //   src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
+    //   alt: 'fh_dortmund_logo',
+    //   href: 'https://www.fh-dortmund.de/',
     //   show: true,
-    //   padding: 'pt-6',
+    //   padding: 'p-2',
     // },
+    // {
+    //   src: 'fiu-logo2.png',
+    //   alt: 'fiu_logo',
+    //   href: 'https://www.fiu.edu/',
+    //   show: true,
+    //   padding: 'p-2',
+    // },
+    // // {
+    // //   src: "logo_IEEE_Banaglaore_Section.png",
+    // //   alt: "ieee_bangalore_logo",
+    // //   href: "https://ieeebangalore.org/",
+    // //   show: true,
+    // //   padding: "pt-6"
+    // // },
+    // // {
+    // //   src: 'logo_rvce_ieee.png',
+    // //   alt: 'rvce_ieee_logo',
+    // //   href: 'https://ieee-rvce.org/',
+    // //   show: true,
+    // //   padding: 'pt-6',
+    // // },
   ];
 
   return (
