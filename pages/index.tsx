@@ -4,9 +4,9 @@
 import { Element, Link as ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
 import { useState } from 'react'
-import Timeline from '../components/TimeLine'
+
 import Gallery from '../components/Gallery'
-import ThankYouPopup from '../components/ThankYouPopup'
+
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
