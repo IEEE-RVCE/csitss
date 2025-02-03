@@ -22,6 +22,7 @@ function Contact() {
                     <tr className="bg-blue-200">
                       <th className="border border-gray-300 px-4 py-2 text-left">Name</th>
                       <th className="border border-gray-300 px-10 py-2 text-left">Contact Number</th>
+                      <th className="border border-gray-300 px-10 py-2 text-left">Email</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -33,6 +34,13 @@ function Contact() {
                           <span className="hover:text-blue-500 cursor-pointer">+91 97390 37207</span>
                         </div>
                       </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">	
+                          shantharangaswamy@rvce.edu.in</span>
+                        </div>
+                      </td>
                     </tr>
                     <tr className="hover:bg-gray-100">
                       <td className="border border-gray-300 px-4 py-2">Dr. Anjaneyappa, HoD Civil Department</td>
@@ -40,6 +48,12 @@ function Contact() {
                         <div className="flex items-center">
                           <PhoneIcon className="mr-2 h-4 w-4 text-blue-500" />
                           <span className="hover:text-blue-500 cursor-pointer">+91 99808 47938</span>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        <div className="flex items-center">
+                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">anjaneyappa@rvce.edu.in</span>
                         </div>
                       </td>
                     </tr>
