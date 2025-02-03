@@ -42,11 +42,11 @@ export default function Index() {
             <div className="flex  w-full items-center justify-center ">
               <div className="rounded-3xl bg-gray-800 bg-opacity-80 px-9 py-5 text-center font-extrabold ">
                 <h1 className="bg bg-gradient-to-r from-yellow-200  via-amber-500 via-orange-600 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
-                  WELCOME TO CSITSS-2024
+                  WELCOME TO CSITSS-2025
                 </h1>
                 <p className="mt-4 text-xl text-white md:mt-0 md:text-2xl">
                   <span className="font-normal ">
-                    8<sup>th</sup> International Conference on Computational
+                    9<sup>th</sup> International Conference on Computational
                     Systems and Information Technology for Sustainable Solutions
                   </span>
                 </p>
@@ -126,7 +126,7 @@ export default function Index() {
                 d="M3 7h18M3 11h18M3 15h18M3 19h18"
               />
             </svg>
-            <h3 className="text-2xl font-bold">November 7-9, 2024</h3>
+            <h3 className="text-2xl font-bold">November 20-22, 2025</h3>
             <p>Date</p>
           </div>
           <div className="rounded-lg bg-green-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-green-200">
@@ -163,9 +163,9 @@ export default function Index() {
               />
             </svg>
 
-            <h3 className="text-2xl font-bold">IEEE Approved Conference</h3>
+            <h3 className="text-2xl font-bold">8 successful editions of CSITSS</h3>
 
-            <p>Conference Number: 64042</p>
+            
           </div>
           <div className="rounded-lg bg-yellow-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-yellow-200">
             <svg
@@ -203,9 +203,9 @@ export default function Index() {
                   About CSITSS
                 </h2>
                 <p className="mb-8 text-xl font-normal leading-relaxed text-gray-900">
-                  The 8<sup>th</sup> International Conference on Computational
+                  The 9<sup>th</sup> International Conference on Computational
                   Systems and Information Technology for Sustainable Solutions
-                  [CSITSS — 2024] focuses on bringing together leading
+                  [CSITSS — 2025] focuses on bringing together leading
                   academicians, scientists, researchers, industry
                   representatives, postdoctoral fellows, and research scholars
                   around the world to share their knowledge and research
@@ -223,7 +223,7 @@ export default function Index() {
                     <span>e</span>
                     <span>r</span>
                     <span> </span>
-                    <span>7</span>
+                    <span>20</span>
                     <span>
                       <sup>th</sup>
                     </span>
@@ -231,15 +231,15 @@ export default function Index() {
                     <span>t</span>
                     <span>o</span>
                     <span> </span>
-                    <span>9</span>
+                    <span>22</span>
                     <span>
-                      <sup>th</sup>
+                      <sup>22md</sup>
                     </span>
                     <span> </span>
                     <span>2</span>
                     <span>0</span>
                     <span>2</span>
-                    <span>4</span>
+                    <span>5</span>
                   </span>
                   .
                   <br />
@@ -250,10 +250,8 @@ export default function Index() {
                   conference will be submitted for possible inclusion in the
                   IEEE digital library. International speakers will deliver
                   keynote talks on the latest technologies in these domains. The
-                  CSITSS-2024 ensures to provide a platform for researchers
-                  around the globe for knowledge exchange and networking. The
-                  Conference is approved by IEEE with the conference number:
-                  64042.
+                  CSITSS-2025 ensures to provide a platform for researchers
+                  around the globe for knowledge exchange and networking. 
                 </p>
 
                 <a
