@@ -3,7 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Element, Link as ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
-import { useState } from 'react'
+
 
 import Gallery from '../components/Gallery'
 
@@ -17,9 +17,7 @@ import Gallery from '../components/Gallery'
 // }
 
 export default function Index() {
-  const [isThankYouPopupOpen, setIsThankYouPopupOpen] = useState(true)
 
-  const closeThankYouPopup = () => setIsThankYouPopupOpen(false)
   return (
     <>
      
