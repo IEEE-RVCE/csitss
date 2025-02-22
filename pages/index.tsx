@@ -3,6 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Element, Link as ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
+import Timeline from '../components/TimeLine'
 
 
 import Gallery from '../components/Gallery'
@@ -267,7 +268,7 @@ export default function Index() {
 
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
-            
+          <Timeline />
           </div>
         </Element>
         <section className="py-16">
