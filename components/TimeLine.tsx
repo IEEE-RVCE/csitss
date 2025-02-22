@@ -20,12 +20,20 @@ const CustomTimeline = () => {
       date: '30th August 2025',
     },
     {
-      label: 'Camera ready paper',
+      label: 'Camera Ready Paper',
       date: '10th September 2025',
     },
     {
-      label: 'Conference registration',
+      label: 'Conference Registration',
       date: '10th October 2025',
+    },
+    {
+      label: 'Pre-Conference Workshop',
+      date: '5th November 2025',
+    },
+    {
+      label: 'Conference Dates',
+      date: '8th - 9th November 2025',
     },
   ];
 
@@ -45,7 +53,7 @@ const CustomTimeline = () => {
 
   const handleDownload = () => {
     setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000);
   };
 
   return (
@@ -78,7 +86,7 @@ const CustomTimeline = () => {
             <div
               key={index}
               className={`mb-16 transition-all duration-500 ${
-                index <= activeIndex ? 'opacity-100 translate-x-0' : 'opacity-50 -translate-x-4'
+                index <= activeIndex ? 'opacity-100 translate-x-0' : 'opacity-80 -translate-x-4'
               }`}
             >
               <div className="flex items-start gap-8">
@@ -97,10 +105,10 @@ const CustomTimeline = () => {
                 
                 <div className={`flex-1 pt-3 transition-all duration-500 transform 
                   ${index <= activeIndex ? 'translate-y-0' : 'translate-y-4'}`}>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-1">
                     {item.label}
                   </h3>
-                  
+                  <p className="text-xl text-gray-700 font-medium">{item.date}</p>
                 </div>
               </div>
             </div>
