@@ -100,20 +100,7 @@ const CustomTimeline = () => {
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">
                     {item.label}
                   </h3>
-                  <p className="text-xl">
-                    {/*{item.newDate ? (
-                      <>
-                        <span className="text-gray-400 line-through mr-3">
-                          {item.date}
-                        </span>
-                        <span className="text-blue-600 font-semibold">
-                          {item.newDate}
-                        </span>
-                      </>
-                    ) : (
-                      <span className="text-gray-600">{item.date}</span>
-                    )}*/}
-                  </p>
+                  
                 </div>
               </div>
             </div>
