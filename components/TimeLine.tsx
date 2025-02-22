@@ -1,182 +1,139 @@
-import { Text, Button, Timeline } from '@mantine/core'
-import { AnnotationIcon } from '@heroicons/react/solid'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Calendar, Clock, Download, X } from 'lucide-react';
 
-const data = [
-  {
-    label: 'Submission of Full-length Manuscript (opens from)',
-    date: '5th July 2024',
-  },
-  {
-    label: 'Last date to submit Full-length Manuscript',
-    date: '14th August 2024',
-  },
-  {
-    label: 'Notification of Acceptance',
-    oldDate: '28th August 2024',
-    newDate: '7th September 2024',
-  },
-  {
-    label: 'Early Bird Registration',
-    date: 'Before 18th September 2024',
-  },
-  {
-    label: 'Last Date for Registration',
-    oldDate: '3rd October 2024',
-  },
-  {
-    label: 'Submission of Camera-ready Manuscript and Copyright Form',
-    date: '10th October 2024',
-  },
-  {
-    label: 'Pre-Conference Tutorial',
-    date: '7th November 2024',
-    venue: 'ISE Department',
-    time: '8:30 AM - 9:30 AM',
-    subEvents: [
-      {
-        track: 'Track 1: AI for All',
-        venue: 'MV Seminar Hall (Dept. of Civil Engg., 3rd Floor)',
-        events: [
-          {
-            time: '9:30 AM - 11:00 AM',
-            speaker: 'Mr. Raj Pagaku',
-            topic: 'Inclusive AI: Shaping the Future for Everyone',
-          },
-          {
-            time: '11:00 AM - 11:30 AM',
-            speaker: 'Tea Break',
-          },
-          {
-            time: '11:30 AM - 1:00 PM',
-            speaker: 'Dr. Nagaraju G',
-            topic: 'AI in Health Care',
-          },
-        ],
-      },
-      {
-        track: 'Track 2: Digital Transformation',
-        venue:
-          'ET Seminar Hall (Dept. of Electronics & Telecom. Engg., Ground Floor)',
-        events: [
-          {
-            time: '9:30 AM - 11:00 AM',
-            speaker: 'Dr. K B Shyam Prasad',
-            topic: 'Accelerate Innovation through Digital Tools',
-          },
-          {
-            time: '11:00 AM - 11:30 AM',
-            speaker: 'Tea Break',
-          },
-          {
-            time: '11:30 AM - 1:00 PM',
-            speaker: 'Mr. Abhi Anand',
-            topic: 'Sustainable AI Applications',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Conference Dates',
-    date: '8th and 9th November 2024',
-  },
-]
+const CustomTimeline = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
+  const [showPopup, setShowPopup] = useState(false);
 
-export default function CustomTimeLine() {
-  const [isVisible, setIsVisible] = useState(false)
+  const data = [
+    {
+      label: 'Paper Submission Begins',
+      date: '20th March 2025',
+    },
+    {
+      label: 'Paper Submission Deadline',
+      date: '20th July 2025',
+    },
+    {
+      label: 'Notification of Acceptance',
+      date: '30th August 2025',
+    },
+    {
+      label: 'Camera ready paper',
+      date: '10th September 2025',
+    },
+    {
+      label: 'Conference registration',
+      date: '10th October 2025',
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
-      }
-    }
+      const scrollPosition = window.scrollY;
+      setIsVisible(scrollPosition > 50);
+      
+      const itemHeight = 150;
+      const activeItemIndex = Math.floor(scrollPosition / itemHeight);
+      setActiveIndex(Math.min(activeItemIndex, data.length - 1));
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleDownload = () => {
-    const fileUrl = '/PRE_CONFERENCE.pdf' // Path to your file
-    const element = document.createElement('a')
-    element.href = fileUrl
-    element.download = 'PreConferenceSchedule.pdf' // Specify file name
-    document.body.appendChild(element)
-    element.click()
-    document.body.removeChild(element)
-  }
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
+  };
 
   return (
-    <div className={`timeline-container ${isVisible ? 'fade-in' : ''}`}>
-      <h1 className="timeline-title">Important Dates</h1>
-      <Timeline active={8} bulletSize={28} lineWidth={4} color="teal">
-        {data.map((item, index) => (
-          <Timeline.Item
-            key={index}
-            bullet={<AnnotationIcon className="timeline-icon" />}
-            title={<span className="timeline-item-title">{item.label}</span>}
-            className="timeline-item"
-          >
-            <Text size="lg" mt={2} className="timeline-item-text">
-              {item.oldDate ? (
-                <>
-                  <span className="text-gray-500 line-through">
-                    {item.oldDate}
-                  </span>{' '}
-                  <span className="font-bold text-gray-900">
-                    {item.newDate}
-                  </span>
-                </>
-              ) : (
-                item.date
-              )}
-            </Text>
-            {item.venue && (
-              <Text size="md" color="gray">
-                Venue: {item.venue} | Time: {item.time}
-              </Text>
-            )}
-            {/* Sub-events for Pre-Conference Tutorial */}
-            {item.subEvents && (
-              <div className="sub-events mt-4">
-                {item.subEvents.map((subEvent, subIndex) => (
-                  <div key={subIndex} className="sub-event mt-4">
-                    <Text size="sm" color="gray" weight={600}>
-                      {subEvent.track} - {subEvent.venue}
-                    </Text>
-                    {subEvent.events.map((event, eventIndex) => (
-                      <div key={eventIndex} className="event mt-2">
-                        <Text size="sm" color="gray">
-                          {event.time}
-                        </Text>
-                        <Text size="sm" color="gray" weight={600}>
-                          {event.speaker}
-                        </Text>
-                        {event.topic && (
-                          <Text size="sm" color="gray">
-                            <span style={{ fontStyle: 'italic' }}>
-                              Topic: {event.topic}
-                            </span>
-                          </Text>
-                        )}
-                      </div>
-                    ))}
+    <div className="w-full px-4 py-12 relative">
+      {/* Popup Notification */}
+      <div
+        className={`fixed top-4 right-4 bg-blue-600 text-white px-6 py-4 rounded-lg shadow-xl 
+          transform transition-all duration-300 flex items-center gap-3 z-50
+          ${showPopup ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
+      >
+        <span className="font-semibold">Coming Soon!</span>
+        <button 
+          onClick={() => setShowPopup(false)}
+          className="text-white hover:text-blue-200 transition-colors"
+        >
+          <X size={20} />
+        </button>
+      </div>
+
+      <div className={`max-w-5xl mx-auto transition-all duration-700 transform ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+      }`}>
+        <h1 className="text-4xl font-extrabold text-gray-800 text-center mb-16 flex items-center justify-center gap-3">
+          <Calendar className="text-blue-600" size={40} />
+          Important Dates
+        </h1>
+        
+        <div className="relative pl-8">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className={`mb-16 transition-all duration-500 ${
+                index <= activeIndex ? 'opacity-100 translate-x-0' : 'opacity-50 -translate-x-4'
+              }`}
+            >
+              <div className="flex items-start gap-8">
+                <div className="relative">
+                  <div className={`w-16 h-16 rounded-full flex items-center justify-center 
+                    ${index <= activeIndex ? 'bg-blue-600' : 'bg-gray-200'} 
+                    transition-all duration-500 transform hover:scale-110`}>
+                    <Clock className="w-8 h-8 text-white" />
                   </div>
-                ))}
+                  {index < data.length - 1 && (
+                    <div className={`absolute left-8 top-16 w-0.5 h-24 
+                      ${index <= activeIndex ? 'bg-blue-600' : 'bg-gray-200'} 
+                      transition-colors duration-500`} />
+                  )}
+                </div>
+                
+                <div className={`flex-1 pt-3 transition-all duration-500 transform 
+                  ${index <= activeIndex ? 'translate-y-0' : 'translate-y-4'}`}>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                    {item.label}
+                  </h3>
+                  <p className="text-xl">
+                    {/*{item.newDate ? (
+                      <>
+                        <span className="text-gray-400 line-through mr-3">
+                          {item.date}
+                        </span>
+                        <span className="text-blue-600 font-semibold">
+                          {item.newDate}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-gray-600">{item.date}</span>
+                    )}*/}
+                  </p>
+                </div>
               </div>
-            )}
-          </Timeline.Item>
-        ))}
-      </Timeline>
-      {/* Download Button */}
-      <div className="download-button mt-4">
-        <Button onClick={handleDownload} variant="outline" color="teal">
-          Download Pre-Conference Schedule
-        </Button>
+            </div>
+          ))}
+        </div>
+        
+        <div className="mt-16 text-center">
+          <button
+            onClick={handleDownload}
+            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 
+              text-white text-lg font-semibold rounded-full transition-all duration-300 
+              transform hover:scale-105 hover:shadow-xl"
+          >
+            <Download className="w-5 h-5" />
+            Download Pre-Conference Schedule
+          </button>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default CustomTimeline;
