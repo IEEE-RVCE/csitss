@@ -212,7 +212,7 @@ export default function Index() {
                     <span> </span>
                     <span>22</span>
                     <span>
-                      <sup>22md</sup>
+                      <sup>nd</sup>
                     </span>
                     <span> </span>
                     <span>2</span>
