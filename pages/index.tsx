@@ -189,7 +189,7 @@ export default function Index() {
                   representatives, postdoctoral fellows, and research scholars
                   around the world to share their knowledge and research
                   expertise in Green Electronics, Renewable Energy, Robotics and
-                  Automation, Photonics, Artificial Intelligence, Cyber-Physical
+                  Automation,Photonics, Artificial Intelligence, Cyber-Physical
                   Systems, Quantum Mechanics, and Computing from <span> </span>
                   <span className="animated-date">
                     <span> </span>
