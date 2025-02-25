@@ -27,14 +27,7 @@ const CustomTimeline = () => {
       label: 'Conference Registration',
       date: '10th October 2025',
     },
-    {
-      label: 'Pre-Conference Workshop',
-      date: '5th November 2025',
-    },
-    {
-      label: 'Conference Dates',
-      date: '8th - 9th November 2025',
-    },
+   
   ];
 
   useEffect(() => {
