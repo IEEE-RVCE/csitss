@@ -64,8 +64,8 @@ function Contact() {
                 <h3 className="text-center text-sm md:text-lg">
                   For any queries, please mail us at
                   <br />
-                  <a href="mailto:csitss@rvce.edu.in" className="font-bold text-blue-600 hover:underline">
-                    csitss2024@rvce.edu.in
+                  <a href="mailto:csitss2025@rvce.edu.in" className="font-bold text-blue-600 hover:underline">
+                    csitss2025@rvce.edu.in
                   </a>
                 </h3>
               </div>
