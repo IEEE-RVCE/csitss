@@ -1,9 +1,7 @@
 /**@type{import('next).NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  experimental: {
-    outputStandalone: true,
-  },
+  output: 'standalone',
 
   //    used preReact to reduce the bundle size and faster response rate.
   webpack: (config, { dev, isServer }) => {

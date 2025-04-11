@@ -1,5 +1,4 @@
 import React from 'react'
-import { Tabs } from '@mantine/core'
 
 export default function pgmschedule() {
   const Day1 = [
@@ -248,11 +247,10 @@ export default function pgmschedule() {
       ['Conference Day 3/ 23-12-2022'],
     ],
     columns: ['Time', 'Event', 'Venue'],
-
-    rows: [
+    data: [
       [
         '9:30-10:15',
-        'Plenary Talk - A keynote speech on 5G and Nokia’s sustainable solutions in 5G area which covers not just the 5G ecosystem but also the various enterprise and CSP use cases/solutions where Nokia is already focussing on to make an impact when it comes to sustainable solutions and Environmental Social Governance (ESG) for Industry 4.0, Innovation, infrastructure and improve global economic growth.Speaker: Sunil Kumar G, Head - Industrialization & Commercialization, CNS EnSo SIS, Senior Executive with 28 years track record of successful strategic leadership in the Telecom and IT space with core competencies in Consulting, Operations, Delivery, Pre- Sales, Program management, System Integration, Automation, Testing and Product Management.Successfully built & managed services and product businesses across Europe, Americas, APAC and India including several key onsite engagements in UK, APAC, USA including an independent consultant role in Brazil.',
+        'Plenary Talk - A keynote speech on 5G and Nokia\'s sustainable solutions in 5G area which covers not just the 5G ecosystem but also the various enterprise and CSP use cases/solutions where Nokia is already focussing on to make an impact when it comes to sustainable solutions and Environmental Social Governance (ESG) for Industry 4.0, Innovation, infrastructure and improve global economic growth.Speaker: Sunil Kumar G, Head - Industrialization & Commercialization, CNS EnSo SIS, Senior Executive with 28 years track record of successful strategic leadership in the Telecom and IT space with core competencies in Consulting, Operations, Delivery, Pre- Sales, Program management, System Integration, Automation, Testing and Product Management.Successfully built & managed services and product businesses across Europe, Americas, APAC and India including several key onsite engagements in UK, APAC, USA including an independent consultant role in Brazil.',
         'BT Seminar Hall',
       ],
       [
@@ -296,205 +294,227 @@ export default function pgmschedule() {
       ['4:30-5:00', 'Valedictory', 'BT Seminar Hall'],
     ],
   }
+
+  const [activeTab, setActiveTab] = React.useState('day1')
+
   return (
     <>
       <div>
-        <Tabs grow>
-          <Tabs.Tab label="DAY 1">
-            <aside className=" p-12 sm:p-16 lg:p-24">
-              <div className="block">
-                {Day1[0].head.map((row) => (
-                  <>
-                    <th className="block text-blue-800">{row[0]}</th>
-                  </>
-                ))}
-                <th className="block text-gray-600">Program Schedule</th>
+        <div className="flex space-x-4 border-b border-gray-200">
+          <button
+            className="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 focus:outline-none"
+            onClick={() => setActiveTab('day1')}
+          >
+            DAY 1
+          </button>
+          <button
+            className="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 focus:outline-none"
+            onClick={() => setActiveTab('day2')}
+          >
+            DAY 2
+          </button>
+          <button
+            className="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 focus:outline-none"
+            onClick={() => setActiveTab('day3')}
+          >
+            DAY 3
+          </button>
+        </div>
+
+        {activeTab === 'day1' && (
+          <aside className="p-12 sm:p-16 lg:p-24">
+            <div className="block">
+              {Day1[0].head.map((row) => (
+                <>
+                  <th className="block text-blue-800">{row[0]}</th>
+                </>
+              ))}
+              <th className="block text-gray-600">Program Schedule</th>
+            </div>
+            <p className="mt-4 text-gray-600">
+              <div className="overflow-x-auto">
+                <br />
+                <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      {Day1[0].columns.map((col) => (
+                        <th className="whitespace-nowrap px-2 py-2 text-left">
+                          {col}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {Day1[0].rows.map((row) => (
+                      <tr>
+                        <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[0]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                        <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[2]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+
+                <br />
+                <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      {Day1[1].columns.map((col) => (
+                        <th className="whitespace-nowrap px-2 py-2 text-left">
+                          {col}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {Day1[1].rows.map((row) => (
+                      <tr>
+                        <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[0]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                        <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[2]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+
+                <br />
+                <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      {Day1[2].columns.map((col) => (
+                        <th className="whitespace-nowrap px-2 py-2 text-left">
+                          {col}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {Day1[2].rows.map((row) => (
+                      <tr>
+                        <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[0]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                        <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[2]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <br />
               </div>
-              <p className="mt-4 text-gray-600">
-                <div className="overflow-x-auto">
-                  <br />
-                  <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
-                    <thead className="bg-gray-100">
-                      <tr>
-                        {Day1[0].columns.map((col) => (
-                          <th className="whitespace-nowrap px-2 py-2 text-left">
-                            {col}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      {Day1[0].rows.map((row) => (
-                        <tr>
-                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[0]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
-
-                          <td className="bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[2]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
-                        </tr>
+            </p>
+          </aside>
+        )}
+        {activeTab === 'day2' && (
+          <aside className="p-12 sm:p-16 lg:p-24">
+            <div className="block">
+              {Day2.head.map((row) => (
+                <>
+                  <th className="block text-blue-800">{row[0]}</th>
+                </>
+              ))}
+              <th className="block text-gray-600">Program Schedule</th>
+            </div>
+            <p className="mt-4 text-gray-600">
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      {Day2.columns.map((col) => (
+                        <th className="whitespace-nowrap px-2 py-2 text-left">
+                          {col}
+                        </th>
                       ))}
-                    </tbody>
-                  </table>
-
-                  <br />
-                  <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
-                    <thead className="bg-gray-100">
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {Day2.rows.map((row) => (
                       <tr>
-                        {Day1[1].columns.map((col) => (
-                          <th className="whitespace-nowrap px-2 py-2 text-left">
-                            {col}
-                          </th>
-                        ))}
+                        <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[0]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
+
+                        <td className="bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[2]}
+                        </td>
+
+                        <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
                       </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      {Day1[1].rows.map((row) => (
-                        <tr>
-                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[0]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
-
-                          <td className="bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[2]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-
-                  <br />
-                  <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
-                    <thead className="bg-gray-100">
-                      <tr>
-                        {Day1[2].columns.map((col) => (
-                          <th className="whitespace-nowrap px-2 py-2 text-left">
-                            {col}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      {Day1[2].rows.map((row) => (
-                        <tr>
-                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[0]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
-
-                          <td className="bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[2]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                  <br />
-                </div>
-              </p>
-            </aside>
-          </Tabs.Tab>
-          <Tabs.Tab label="DAY 2">
-            <aside className=" p-12 sm:p-16 lg:p-24">
-              <div className="block">
-                {Day2.head.map((row) => (
-                  <>
-                    <th className="block text-blue-800">{row[0]}</th>
-                  </>
-                ))}
-                <th className="block text-gray-600">Program Schedule</th>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-              <p className="mt-4 text-gray-600">
-                <div className="overflow-x-auto">
-                  <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
-                    <thead className="bg-gray-100">
-                      <tr>
-                        {Day2.columns.map((col) => (
-                          <th className="whitespace-nowrap px-2 py-2 text-left">
-                            {col}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      {Day2.rows.map((row) => (
-                        <tr>
-                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[0]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[1]}</td>
-
-                          <td className="bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[2]}
-                          </td>
-
-                          <td className=" px-1 py-2 text-gray-700">{row[3]}</td>
-                        </tr>
+            </p>
+          </aside>
+        )}
+        {activeTab === 'day3' && (
+          <aside className="p-12 sm:p-16 lg:p-24">
+            <div className="block">
+              {Day3.head.map((row) => (
+                <>
+                  <th className="block text-blue-800">{row[0]}</th>
+                </>
+              ))}
+              <th className="block text-gray-600">Program Schedule</th>
+            </div>
+            <p className="mt-4 text-gray-600">
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      {Day3.columns.map((col) => (
+                        <th className="whitespace-nowrap px-2 py-2 text-center">
+                          {col}
+                        </th>
                       ))}
-                    </tbody>
-                  </table>
-                </div>
-              </p>
-            </aside>
-          </Tabs.Tab>
-          <Tabs.Tab label="DAY 3">
-            <aside className=" p-12 sm:p-16 lg:p-24">
-              <div className="block">
-                {Day3.head.map((row) => (
-                  <>
-                    <th className="block text-blue-800">{row[0]}</th>
-                  </>
-                ))}
-                <th className="block text-gray-600">Program Schedule</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {Day3.data.map((row) => (
+                      <tr>
+                        <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[0]}
+                        </td>
+
+                        <td className="px-1 py-2 text-justify text-gray-700">
+                          {row[1]}
+                        </td>
+
+                        <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
+                          {row[2]}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-              <p className="mt-4 text-gray-600">
-                <div className="overflow-x-auto">
-                  <table className="min-w-full divide-y-2 divide-gray-200 border-2 text-sm sm:p-16 lg:p-24">
-                    <thead className="bg-gray-100">
-                      <tr>
-                        {Day3.columns.map((col) => (
-                          <th className="whitespace-nowrap px-2 py-2 text-center">
-                            {col}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      {Day3.rows.map((row) => (
-                        <tr>
-                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[0]}
-                          </td>
-
-                          <td className="px-1 py-2 text-justify text-gray-700">
-                            {row[1]}
-                          </td>
-
-                          <td className="whitespace-nowrap bg-gray-100 px-1 py-2  text-gray-700">
-                            {row[2]}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </p>
-            </aside>
-          </Tabs.Tab>
-        </Tabs>
+            </p>
+          </aside>
+        )}
       </div>
     </>
   )

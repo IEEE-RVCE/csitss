@@ -42,7 +42,11 @@ function registration() {
             Authors and participants are requested to download the registration
             form from the conference website and submit the filled form to the
             Email ID:
-            <a href="mailto:csitss@rvce.edu.in" className="text-indigo-500">
+            <a 
+              href="mailto:csitss@rvce.edu.in" 
+              className="text-indigo-500"
+              rel="noopener noreferrer"
+            >
               csitss@rvce.edu.in
             </a> */}
             The details of the registration fees are as follows: 
@@ -232,12 +236,16 @@ function registration() {
           </p>
         </section>
         <section className="flex justify-center py-4">
-  <a href="https://rzp.io/l/vMqgBae" className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-700">
-    Click Here to Pay Through Razorpay (Indian Delegates)
-  </a>
-  
-</section>
-<section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+          <a 
+            href="https://rzp.io/l/vMqgBae" 
+            className="bg-blue-500 text-white py-2 px-4 rounded-md text-center hover:bg-blue-700"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click Here to Pay Through Razorpay (Indian Delegates)
+          </a>
+        </section>
+        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold sm:text-2xl">
             Registration Method for Foreign Delegates only
           </h2>

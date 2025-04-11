@@ -6,6 +6,7 @@ import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 
 import Gallery from '../components/Gallery'
+import React from 'react'
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
