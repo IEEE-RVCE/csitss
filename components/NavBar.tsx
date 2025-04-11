@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+import React, { useEffect, useState } from 'react'
 import { AppShell, Center, Header, Image, Menu } from '@mantine/core'
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
@@ -120,11 +121,10 @@ const NavBar = () => {
       <Marquee className="marquee bg-blue-300">
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300">
-          <a href=""  download>
-          Website Under Construction
-          </a>
+            <a href="" download>
+              Website Under Construction
+            </a>
           </span>{' '}
-  
         </div>
       </Marquee>
       <style jsx>{`
@@ -172,6 +172,16 @@ const NavBar = () => {
 }
 
 const Footer = () => {
+  const [pageViews, setPageViews] = useState(0)
+
+  useEffect(() => {
+    // Fetch the page view count
+    fetch('/api/pageViews', { method: 'POST' })
+      .then((res) => res.json())
+      .then((data) => setPageViews(data.count))
+      .catch((err) => console.error('Failed to fetch page views:', err))
+  }, [])
+
   return (
     <footer className="static bottom-0 w-full bg-gray-50">
       <div
@@ -221,6 +231,12 @@ const Footer = () => {
               </a>
             </p>
           </div>
+        </div>
+        <div className="mt-4 text-center">
+          <p className="inline-block rounded-lg bg-blue-100 py-2 px-4 text-sm font-semibold text-gray-700 shadow-md">
+            Total Page Views:{' '}
+            <span className="font-bold text-blue-800">{pageViews}</span>
+          </p>
         </div>
       </div>
       <style jsx>{`
