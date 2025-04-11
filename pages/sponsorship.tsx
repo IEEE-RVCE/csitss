@@ -354,7 +354,7 @@ const Sponsorship: React.FC = () => {
           }}
         >
           <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: 0 }}>
-            Sponsors of 2024
+            Special thanks to Sponsors of CSITSS-2024
           </h1>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
