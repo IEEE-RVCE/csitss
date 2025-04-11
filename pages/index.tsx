@@ -5,9 +5,7 @@ import { Element, Link as ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 
-
 import Gallery from '../components/Gallery'
-
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
@@ -18,10 +16,8 @@ import Gallery from '../components/Gallery'
 // }
 
 export default function Index() {
-
   return (
     <>
-     
       <section className="body-font m-0 text-gray-600">
         {/* <div className="bar">
           <span className="bar_content">
@@ -78,7 +74,7 @@ export default function Index() {
                     <span>Timeline</span>
                   </ScrollLink>
                   <a
-                    href="CSITSS 2024 Brochure.pdf"
+                    href="Draft brochure-CSITSS 2025.pdf"
                     className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
                     download
                   >
@@ -93,7 +89,7 @@ export default function Index() {
           <p className="text-lg font-semibold">
             Organized by{' '}
             <span className="text-blue-700">RV College of Engineering</span>
-            </p>
+          </p>
         </div>
         <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="rounded-lg bg-red-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-red-200">
@@ -148,9 +144,9 @@ export default function Index() {
               />
             </svg>
 
-            <h3 className="text-2xl font-bold">8 successful editions of CSITSS</h3>
-
-            
+            <h3 className="text-2xl font-bold">
+              8 successful editions of CSITSS
+            </h3>
           </div>
           <div className="rounded-lg bg-yellow-100 p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-yellow-200">
             <svg
@@ -174,101 +170,89 @@ export default function Index() {
 
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-           
-             
-
-              <div className="animate-fadeIn2 flex flex-col justify-center">
-                <h2 className="text-gradient mb-6 text-3xl font-bold text-black sm:text-4xl">
-                  About CSITSS
-                </h2>
-                <p className="mb-8 text-xl font-normal leading-relaxed text-gray-900">
-                  The 9<sup>th</sup> International Conference on Computational
-                  Systems and Information Technology for Sustainable Solutions
-                  [CSITSS — 2025] focuses on bringing together leading
-                  academicians, scientists, researchers, industry
-                  representatives, postdoctoral fellows, and research scholars
-                  around the world to share their knowledge and research
-                  expertise in Green Electronics, Renewable Energy, Robotics and
-                  Automation,Photonics, Artificial Intelligence, Cyber-Physical
-                  Systems, Quantum Mechanics, and Computing from <span> </span>
-                  <span className="animated-date">
-                    <span> </span>
-                    <span>N</span>
-                    <span>o</span>
-                    <span>v</span>
-                    <span>e</span>
-                    <span>m</span>
-                    <span>b</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span> </span>
-                    <span>20</span>
-                    <span>
-                      <sup>th</sup>
-                    </span>
-                    <span> </span>
-                    <span>t</span>
-                    <span>o</span>
-                    <span> </span>
-                    <span>22</span>
-                    <span>
-                      <sup>nd</sup>
-                    </span>
-                    <span> </span>
-                    <span>2</span>
-                    <span>0</span>
-                    <span>2</span>
-                    <span>5</span>
+            <div className="animate-fadeIn2 flex flex-col justify-center">
+              <h2 className="text-gradient mb-6 text-3xl font-bold text-black sm:text-4xl">
+                About CSITSS
+              </h2>
+              <p className="mb-8 text-xl font-normal leading-relaxed text-gray-900">
+                The 9<sup>th</sup> International Conference on Computational
+                Systems and Information Technology for Sustainable Solutions
+                [CSITSS — 2025] focuses on bringing together leading
+                academicians, scientists, researchers, industry representatives,
+                postdoctoral fellows, and research scholars around the world to
+                share their knowledge and research expertise in Green
+                Electronics, Renewable Energy, Robotics and
+                Automation,Photonics, Artificial Intelligence, Cyber-Physical
+                Systems, Quantum Mechanics, and Computing from <span> </span>
+                <span className="animated-date">
+                  <span> </span>
+                  <span>N</span>
+                  <span>o</span>
+                  <span>v</span>
+                  <span>e</span>
+                  <span>m</span>
+                  <span>b</span>
+                  <span>e</span>
+                  <span>r</span>
+                  <span> </span>
+                  <span>20</span>
+                  <span>
+                    <sup>th</sup>
                   </span>
-                  .
-                  <br />
-                  <br />
-                  The conference has been successfully organized for the past
-                  seven years with participants from all over India and abroad.
-                  All peer-reviewed, selected, and presented papers from the
-                  conference will be submitted for possible inclusion in the
-                  IEEE digital library. International speakers will deliver
-                  keynote talks on the latest technologies in these domains. The
-                  CSITSS-2025 ensures to provide a platform for researchers
-                  around the globe for knowledge exchange and networking. 
-                </p>
+                  <span> </span>
+                  <span>t</span>
+                  <span>o</span>
+                  <span> </span>
+                  <span>22</span>
+                  <span>
+                    <sup>nd</sup>
+                  </span>
+                  <span> </span>
+                  <span>2</span>
+                  <span>0</span>
+                  <span>2</span>
+                  <span>5</span>
+                </span>
+                .
+                <br />
+                <br />
+                The conference has been successfully organized for the past
+                seven years with participants from all over India and abroad.
+                All peer-reviewed, selected, and presented papers from the
+                conference will be submitted for possible inclusion in the IEEE
+                digital library. International speakers will deliver keynote
+                talks on the latest technologies in these domains. The
+                CSITSS-2025 ensures to provide a platform for researchers around
+                the globe for knowledge exchange and networking.
+              </p>
 
-                <a
-                  className="inline-flex transform items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                  href="https://cmt3.research.microsoft.com/CSITSS2024"
+              <a
+                className="inline-flex transform items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                href="https://cmt3.research.microsoft.com/CSITSS2024"
+              >
+                <span className="text-sm font-medium">Submit Paper</span>
+                <svg
+                  className="ml-3 h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <span className="text-sm font-medium">Submit Paper</span>
-                  <svg
-                    className="ml-3 h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
             </div>
-
-            
-            
-         
-              
-            
-          
+          </div>
         </section>
-
-        
 
         <Element name="test4" className="element">
           <div className="flex flex-col items-center justify-center p-4">
-          <Timeline />
+            <Timeline />
           </div>
         </Element>
         <section className="py-16">
