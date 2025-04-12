@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import React, { useEffect, useState } from 'react'
-import { AppShell, Center, Header, Image, Menu } from '@mantine/core'
+import { AppShell, Center, Image, Menu } from '@mantine/core'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import Marquee from 'react-fast-marquee'
 
 const Links = [
@@ -23,7 +23,7 @@ const NavBar = () => {
       <div className="navbar mx-auto w-full bg-blue-400 bg-opacity-20 p-1 shadow-md">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className="flex items-stretch">
                 <Image
                   src="RVCE NEW-HEADER_onlyLogo.png"
@@ -35,7 +35,7 @@ const NavBar = () => {
           </div>
           <nav className="text-m hidden space-x-10 font-medium md:flex">
             {Links.map((link) => (
-              <Link href={link.href} key={link.label}>
+              <Link href={link.href} key={link.label} legacyBehavior>
                 <a className="nav-link text-black-500 hover:border-b-3 font-sans hover:text-blue-700">
                   {link.label}
                 </a>
@@ -43,10 +43,10 @@ const NavBar = () => {
             ))}
           </nav>
           <div className="hidden items-center justify-end space-x-8 md:flex-1 lg:flex lg:w-0">
-            <Menu
-              control={
+            <Menu>
+              <Menu.Target>
                 <button
-                  className="bg-black-100 rounded-lg p-2 text-gray-600"
+                  className="bg-black-100 rounded-lg p-2 text-gray-600 hover:bg-gray-200 transition-colors"
                   type="button"
                   name="Mobile Navigation Menu"
                 >
@@ -66,20 +66,21 @@ const NavBar = () => {
                     />
                   </svg>
                 </button>
-              }
-            >
-              <Menu.Label>
-                <p className="font-sans text-blue-400 underline">
-                  Download Links
-                </p>
-              </Menu.Label>
+              </Menu.Target>
+              <Menu.Dropdown className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 p-4 hidden lg:block">
+                <Menu.Label>
+                  <p className="font-sans text-blue-400 underline">
+                    Download Links
+                  </p>
+                </Menu.Label>
+              </Menu.Dropdown>
             </Menu>
           </div>
           <div className="lg:hidden">
-            <Menu
-              control={
+            <Menu>
+              <Menu.Target>
                 <button
-                  className="rounded-lg bg-gray-100 p-2 text-gray-600"
+                  className="rounded-lg bg-gray-100 p-2 text-gray-600 hover:bg-gray-200 transition-colors"
                   type="button"
                   name="Mobile Navigation Menu"
                 >
@@ -99,21 +100,24 @@ const NavBar = () => {
                     />
                   </svg>
                 </button>
-              }
-            >
-              <Menu.Label> </Menu.Label>
-              {Links.map((link) => (
-                <Menu.Item key={link.label}>
-                  <Link href={link.href}>
-                    <a className="font-sans text-gray-500">{link.label}</a>
-                  </Link>
-                </Menu.Item>
-              ))}
-              <Menu.Label>
-                <p className="font-sans text-blue-400 underline">
-                  Download Links
-                </p>
-              </Menu.Label>
+              </Menu.Target>
+              <Menu.Dropdown className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 p-4 flex  flex-col items-start  ">
+                {Links.map((link) => (
+                  <Menu.Item
+                    key={link.label}
+                    className="hover:bg-blue-100 hover:text-blue-700 p-2 transition-colors"
+                  >
+                    <Link href={link.href} legacyBehavior>
+                      <a className="font-sans text-gray-500">{link.label}</a>
+                    </Link>
+                  </Menu.Item>
+                ))}
+                <Menu.Label>
+                  <p className="font-sans text-blue-400 underline">
+                    Download Links
+                  </p>
+                </Menu.Label>
+              </Menu.Dropdown>
             </Menu>
           </div>
         </div>
@@ -139,7 +143,9 @@ const NavBar = () => {
         }
         .nav-link {
           position: relative;
-          transition: color 0.3s, border-bottom 0.3s;
+          transition:
+            color 0.3s,
+            border-bottom 0.3s;
         }
         .nav-link::before {
           content: '';
@@ -272,14 +278,20 @@ const WrapApp = ({ children }: any) => {
   return (
     <AppShell
       padding="md"
-      header={
-        <Header height={80}>
-          <NavBar />
-        </Header>
-      }
-      footer={<Footer />}
+      header={{
+        height: 60,
+      }}
+      footer={{
+        height: 60,
+      }}
     >
-      {children}
+      <AppShell.Header>
+        <NavBar />
+      </AppShell.Header>
+      <AppShell.Main>{children}</AppShell.Main>
+      <AppShell.Footer>
+        <Footer />
+      </AppShell.Footer>
     </AppShell>
   )
 }

@@ -6,9 +6,8 @@ import type { AppProps } from 'next/app'
 import WrapApp from '../components/NavBar'
 import { NextSeo } from 'next-seo'
 
-
 const theme: MantineThemeOverride = {
-  colorScheme: 'light',
+  // colorScheme: 'light',
   primaryColor: 'indigo',
   fontFamily: 'Verdana, sans-serif',
   fontFamilyMonospace: 'Monaco, Courier, monospace',
@@ -19,8 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider
       theme={theme}
-      // Done to avoid Tailwind CSS Class Clashes
-      emotionOptions={{ key: 'mantinedevcss', prepend: false }}
+      // emotionOptions has been removed in Mantine v7, use cssVariables instead for prefixing
     >
       <WrapApp>
         <NextSeo
@@ -46,7 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           }}
         />
         <Component {...pageProps} />
-        
+
         <div id="recaptcha-container" />
       </WrapApp>
     </MantineProvider>

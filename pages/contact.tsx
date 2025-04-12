@@ -1,5 +1,5 @@
-import React from 'react';
-import { PhoneIcon, MailIcon } from '@heroicons/react/solid';
+import React from 'react'
+import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 
 function Contact() {
   return (
@@ -20,40 +20,57 @@ function Contact() {
                 <table className="w-full border-collapse border border-gray-300 text-sm rounded-lg shadow-sm">
                   <thead>
                     <tr className="bg-blue-200">
-                      <th className="border border-gray-300 px-4 py-2 text-left">Name</th>
-                      <th className="border border-gray-300 px-10 py-2 text-left">Contact Number</th>
-                      <th className="border border-gray-300 px-10 py-2 text-left">Email</th>
+                      <th className="border border-gray-300 px-4 py-2 text-left">
+                        Name
+                      </th>
+                      <th className="border border-gray-300 px-10 py-2 text-left">
+                        Contact Number
+                      </th>
+                      <th className="border border-gray-300 px-10 py-2 text-left">
+                        Email
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="hover:bg-gray-100">
-                      <td className="border border-gray-300 px-4 py-2">Dr. Shanta Rangaswamy, HoD CSE Department</td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        Dr. Shanta Rangaswamy, HoD CSE Department
+                      </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
                           <PhoneIcon className="mr-2 h-4 w-4 text-blue-500" />
-                          <span className="hover:text-blue-500 cursor-pointer">+91 97390 37207</span>
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            +91 97390 37207
+                          </span>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
-                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
-                          <span className="hover:text-blue-500 cursor-pointer">	
-                          shantharangaswamy@rvce.edu.in</span>
+                          <EnvelopeIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            shantharangaswamy@rvce.edu.in
+                          </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-100">
-                      <td className="border border-gray-300 px-4 py-2">Dr. Anjaneyappa, HoD Civil Department</td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        Dr. Anjaneyappa, HoD Civil Department
+                      </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
                           <PhoneIcon className="mr-2 h-4 w-4 text-blue-500" />
-                          <span className="hover:text-blue-500 cursor-pointer">+91 99808 47938</span>
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            +91 99808 47938
+                          </span>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         <div className="flex items-center">
-                          <MailIcon className="mr-2 h-4 w-4 text-blue-500" />
-                          <span className="hover:text-blue-500 cursor-pointer">anjaneyappa@rvce.edu.in</span>
+                          <EnvelopeIcon className="mr-2 h-4 w-4 text-blue-500" />
+                          <span className="hover:text-blue-500 cursor-pointer">
+                            anjaneyappa@rvce.edu.in
+                          </span>
                         </div>
                       </td>
                     </tr>
@@ -64,7 +81,10 @@ function Contact() {
                 <h3 className="text-center text-sm md:text-lg">
                   For any queries, please mail us at
                   <br />
-                  <a href="mailto:csitss2025@rvce.edu.in" className="font-bold text-blue-600 hover:underline">
+                  <a
+                    href="mailto:csitss2025@rvce.edu.in"
+                    className="font-bold text-blue-600 hover:underline"
+                  >
                     csitss2025@rvce.edu.in
                   </a>
                 </h3>
@@ -74,7 +94,7 @@ function Contact() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

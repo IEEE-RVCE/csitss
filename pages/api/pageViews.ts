@@ -3,7 +3,7 @@ import path from 'path'
 
 const filePath = path.resolve('./pageViews.json')
 
-export default function handler(req, res) {
+export default function handler(req: any, res: any) {
   if (req.method === 'POST') {
     const { cookies } = req
     const hasVisited = cookies.page_viewed

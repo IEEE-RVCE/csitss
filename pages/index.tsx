@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable react/no-unescaped-entities */
-import { Element, Link as ScrollLink } from 'react-scroll'
+// import { Element, ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 
@@ -18,7 +18,7 @@ import Gallery from '../components/Gallery'
 export default function Index() {
   return (
     <>
-      <section className="body-font m-0 text-gray-600">
+      <section className="body-font m-0 px-4 text-gray-600">
         {/* <div className="bar">
           <span className="bar_content">
             All of the students register for pre-tutorial conference. Amount to be paid : 590 (Includes GST)
@@ -27,7 +27,7 @@ export default function Index() {
         </div> */}
         <header>
           <div
-            className="heroHeader w-full bg-cover bg-center"
+            className="heroHeader  w-full bg-cover bg-center"
             style={{ padding: '3rem' }}
           >
             <HeaderImages />
@@ -62,17 +62,12 @@ export default function Index() {
                     <span>Submit Paper</span>
                   </a>
 
-                  <ScrollLink
-                    activeClass="active"
+                  <a
+                    href="#timeline"
                     className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
-                    to="test4"
-                    spy={true}
-                    smooth={true}
-                    duration={600}
-                    delay={100}
                   >
                     <span>Timeline</span>
-                  </ScrollLink>
+                  </a>
                   <a
                     href="Draft brochure-CSITSS 2025.pdf"
                     className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
@@ -85,7 +80,7 @@ export default function Index() {
             </div>
           </div>
         </header>
-        <div className="mt-4 w-full rounded-lg bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black shadow-lg">
+        <div className="mt-4  w-full rounded-lg bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black shadow-lg">
           <p className="text-lg font-semibold">
             Organized by{' '}
             <span className="text-blue-700">RV College of Engineering</span>
@@ -250,11 +245,11 @@ export default function Index() {
           </div>
         </section>
 
-        <Element name="test4" className="element">
-          <div className="flex flex-col items-center justify-center p-4">
-            <Timeline />
-          </div>
-        </Element>
+        {/* <Element name="test4" className="element"> */}
+        <div className="flex flex-col items-center justify-center p-4">
+          <Timeline />
+        </div>
+        {/* </Element> */}
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="animate-fadeIn mb-8 text-center text-3xl font-bold sm:text-4xl">

@@ -56,11 +56,11 @@ const HeaderImages = () => {
   return (
     <div>
       <div className="center p-auto m-14 mt-0 hidden flex-col md:block">
-        <div className="mt-6 flex items-center justify-evenly gap-8 overflow-x-scroll rounded-3xl bg-white bg-opacity-70 scrollbar-hide sm:mx-0 md:mx-0 lg:mx-20">
+        <div className="mt-6 flex items-center justify-evenly  gap-8 overflow-x-scroll rounded-3xl bg-white bg-opacity-60 scrollbar-hide sm:mx-0 md:mx-0 lg:mx-20">
           {images.map((image) => {
             if (image.show) {
               return (
-                <div className="my-6 inline-block" key={image.alt}>
+                <div className="my-7 inline-block" key={image.alt}>
                   <div
                     className={`mx-0 max-w-xs overflow-hidden ${image.padding} transition-shadow duration-300 ease-in-out hover:shadow-xl`}
                   >
