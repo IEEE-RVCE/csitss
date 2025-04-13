@@ -299,8 +299,8 @@ export default function pgmschedule() {
   return (
     <>
       <div>
-        <Tabs grow>
-          <Tabs.Tab label="DAY 1">
+        <Tabs variant="pills">
+          <Tabs.Tab value="DAY 1">
             <aside className=" p-12 sm:p-16 lg:p-24">
               <div className="block">
                 {Day1[0].head.map((row) => (
@@ -406,7 +406,7 @@ export default function pgmschedule() {
               </p>
             </aside>
           </Tabs.Tab>
-          <Tabs.Tab label="DAY 2">
+          <Tabs.Tab value="DAY 2">
             <aside className=" p-12 sm:p-16 lg:p-24">
               <div className="block">
                 {Day2.head.map((row) => (
@@ -450,7 +450,7 @@ export default function pgmschedule() {
               </p>
             </aside>
           </Tabs.Tab>
-          <Tabs.Tab label="DAY 3">
+          <Tabs.Tab value="DAY 3">
             <aside className=" p-12 sm:p-16 lg:p-24">
               <div className="block">
                 {Day3.head.map((row) => (

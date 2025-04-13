@@ -72,7 +72,7 @@
   max-width: 100%;
   height: 30px;
   overflow-x: hidden;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: block;
   background-color: rgba(37, 104, 211, 0.879);
 }
@@ -120,7 +120,9 @@
   position: relative;
   opacity: 0; /* Start with hidden state */
   transform: translateY(20px); /* Start slightly below */
-  transition: opacity 1s ease-in, transform 1s ease-in; /* Smooth transition */
+  transition:
+    opacity 1s ease-in,
+    transform 1s ease-in; /* Smooth transition */
 }
 
 .timeline-title {

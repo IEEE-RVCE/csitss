@@ -1,4 +1,4 @@
-/**@type{import('next).NextConfig} */
+/**@type{import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
   experimental: {
@@ -17,9 +17,9 @@ module.exports = {
     return config
   },
 }
-// const withBundleAnalyzer = require("@next/bundle-analyzer")({
-//   enabled: process.env.ANALYZE === "true",
-// });
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 
-// module.exports = nextConfig;
-// module.exports = withBundleAnalyzer({});
+// module.exports = nextConfig
+module.exports = withBundleAnalyzer({})

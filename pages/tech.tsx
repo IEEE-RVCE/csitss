@@ -1,4 +1,4 @@
-import {   Tabs } from '@mantine/core'
+import { Tabs, TabsTab } from '@mantine/core'
 // import { List,Center } from '@mantine/core'
 
 import React from 'react'
@@ -6,84 +6,60 @@ import React from 'react'
 export const Topics = [
   {
     label: 'Computational Analysis of Structural and Functional Materials',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Autonomous Vehicles Navigation and Control Systems',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Green Electronics: Sustainable Practices',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Robotics and Automation',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
 
   {
     label: 'Photonics, Optoelectronics and Mechatronics System',
-    subTopics: [
-     null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Artificial Intelligence for Sustainable World',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Digital Transformation in Various Sectors of Economy',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Renewable Energy and Environmental Engineering',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Cyber-Physical Systems',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Biomedical Electronics and Healthcare Applications',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Quantum Mechanics and Computing',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
   {
     label: 'Next-Generation Communication Systems',
-    subTopics: [
-      null
-    ],
+    subTopics: [null],
   },
 ]
 
 function Tech() {
   return (
     <div className="mt-10">
-      <Tabs grow>
-        <Tabs.Tab label="Call For Papers">
+      <Tabs variant="pills">
+        <TabsTab title="Call For Papers" value="Call For Papers">
           <aside className="bg-gray-100 p-12 sm:p-16 lg:p-24">
             <div className="mx-auto">
               <p className="text-center text-3xl font-bold sm:text-5xl">
@@ -91,7 +67,7 @@ function Tech() {
               </p>
               <p className="text-justify text-2xl font-medium text-gray-700 my-4">
                 Conference does not accept/encourage Survey/Review articles.
-                </p>
+              </p>
               <p className="text-justify text-xl font-medium text-gray-500">
                 Prospective authors are encouraged to submit quality and
                 original research papers for presentation at the Conference.
@@ -127,13 +103,14 @@ function Tech() {
                 <a
                   href="Guidelines to Authors - IEEE.pdf"
                   className="mt-4 block rounded-lg  px-5 py-3 font-medium text-blue-500 hover:text-blue-600 sm:mt-0"
-                  download>
+                  download
+                >
                   Download Guidelines for Authors
                 </a>
               </div>
             </div>
           </aside>
-        </Tabs.Tab>
+        </TabsTab>
         {/* <Tabs.Tab label="Conference Tracks">
           <aside className="m-6 bg-gray-100 sm:m-8 lg:m-12">
             <div className=" p-6 sm:p-8 lg:p-12">
