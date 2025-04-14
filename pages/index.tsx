@@ -46,11 +46,11 @@ export default function Index() {
                 <p className="align-text-center text-xl font-normal text-slate-50">
                   Organized by
                 </p>
-                <p className="text-align-center text-2xl text-slate-50">
+                <div className="text-align-center text-2xl text-slate-50">
                   <h4>
                     RV College of Engineering<sup className="text-lg">®</sup>
                   </h4>
-                </p>
+                </div>
 
                 <div className="flex flex-col gap-4 p-4 md:grid md:grid-cols-3">
                   <a

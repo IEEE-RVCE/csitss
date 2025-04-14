@@ -225,7 +225,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <p className="text-sm text-gray-500">
+            <div className="text-sm text-gray-500">
               <Center>Developed by</Center>
               <a
                 target="_blank"
@@ -235,7 +235,7 @@ const Footer = () => {
               >
                 IEEE RVCE SE Team
               </a>
-            </p>
+            </div>
           </div>
         </div>
         <div className="mt-4 text-center">
