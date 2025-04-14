@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import { CommitteeCard } from "../../components/CommitteeCard";
+import { useRouter } from "next/router";
 
 const CommitteeDetail = () => {
     const [members, setMembers] = useState([]);
     const [loading, setLoading] = useState(true);
+    const router = useRouter();
   
     useEffect(() => {
       const fetchCommitteeData = async () => {
-        const pathname = window.location.pathname;
-        const name = pathname.split("/").pop();
+        // Only run this on the client-side
+        if (!router.isReady) return;
+        
+        const { name } = router.query;
   
-        if (name) {
+        if (name && typeof name === 'string') {
           try {
             const data = require(`../../data/${name}`).default;
             setMembers(data);
@@ -23,15 +27,15 @@ const CommitteeDetail = () => {
       };
   
       fetchCommitteeData();
-    }, []);
+    }, [router.isReady, router.query]);
   
     if (loading) {
       return <div>Loading...</div>;
     }
   
     return (
-      <div className="flex justify-center items-center w-screen">
-        <div>
+      <div className="flex justify-center items-center w-screen py-10">
+        <div className="container mx-auto px-4">
           <CommitteeCard members={members} />
         </div>
       </div>
