@@ -7,7 +7,7 @@ import Marquee from 'react-fast-marquee'
 const Links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/committee', label: 'Committee' },
+  //{ href: '/committee', label: 'Committee' },
   { href: '/speakers', label: 'Speakers' },
   { href: '/papers', label: 'Call for Papers' },
   { href: '/awards', label: 'Awards' },
