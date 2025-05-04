@@ -8,7 +8,7 @@ function Awards() {
           </p>
         </div>
         <p className="my-4 text-justify text-lg font-medium text-gray-700 sm:text-xl lg:text-2xl">
-          The below awards will be conferred by CSITSS-2024:
+          The below awards will be conferred by CSITSS-2025:
         </p>
         <p className="my-4 text-justify text-base font-medium text-gray-600 sm:text-lg lg:text-xl">
           <i>i.</i> Best Ph.D Thesis
@@ -18,7 +18,7 @@ function Awards() {
         <p className="my-4 text-justify text-base font-medium text-gray-600 sm:text-lg lg:text-xl">
           Ph.D. scholars, who have been awarded their Ph.D. degree in the
           conference themes specified, from recognized universities are eligible
-          to apply for CSITSS 2024 Best Ph.D. Thesis Award. Ph.D. Thesis (in pdf
+          to apply for CSITSS 2025 Best Ph.D. Thesis Award. Ph.D. Thesis (in pdf
           format) and degree certificate can be submitted to the{' '}
           <b>Email ID: csitss2025@rvce.edu.in.</b> Application fees: Rs.1000/-.
           While registering for <b>Best Thesis award</b>, enter the paper ID as
