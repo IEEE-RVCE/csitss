@@ -30,6 +30,13 @@ const HeaderImages = () => {
       show: true,
     },
     {
+      src: "ieee-main.png",
+      alt: "ieee_bangalore_logo",
+      href: "https://ieeebangalore.org/",
+      show: true,
+      padding: "pt-6"
+    },
+    {
       src: 'rosenheim.png',
       alt: 'rosenheim_logo',
       href: 'https://www.rosenheim.de/',
@@ -37,13 +44,7 @@ const HeaderImages = () => {
       padding: 'pr-2',
     },
 
-    // // {
-    // //   src: "logo_IEEE_Banaglaore_Section.png",
-    // //   alt: "ieee_bangalore_logo",
-    // //   href: "https://ieeebangalore.org/",
-    // //   show: true,
-    // //   padding: "pt-6"
-    // // },
+     
     // // {
     // //   src: 'logo_rvce_ieee.png',
     // //   alt: 'rvce_ieee_logo',
