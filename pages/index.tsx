@@ -169,7 +169,15 @@ export default function Index() {
               <h2 className="text-gradient mb-6 text-3xl font-bold text-black sm:text-4xl">
                 About CSITSS
               </h2>
-              <p className="mb-8 text-xl font-normal leading-relaxed text-gray-900">
+              <p
+                className="mb-8 text-xl font-normal leading-relaxed text-gray-900"
+                style={{
+                  textAlign: 'justify',
+                  textJustify: 'inter-word',
+                  hyphens: 'auto',
+                  wordSpacing: 'normal',
+                }}
+              >
                 The 9<sup>th</sup> International Conference on Computational
                 Systems and Information Technology for Sustainable Solutions
                 [CSITSS — 2025] focuses on bringing together leading
@@ -193,16 +201,15 @@ export default function Index() {
                   <span>20</span>
                   <span>
                     <sup>th</sup>
-                  </span>
+                  </span>{' '}
                   <span> </span>
                   <span>t</span>
-                  <span>o</span>
-                  <span> </span>
+                  <span>o</span> <span> </span>
                   <span>22</span>
                   <span>
                     <sup>nd</sup>
-                  </span>
-                  <span> </span>
+                    <span> </span>
+                  </span>{' '}
                   <span>2</span>
                   <span>0</span>
                   <span>2</span>
@@ -219,6 +226,30 @@ export default function Index() {
                 talks on the latest technologies in these domains. The
                 CSITSS-2025 ensures to provide a platform for researchers around
                 the globe for knowledge exchange and networking.
+              </p>
+
+              <p
+                className="mb-8 text-xl font-normal leading-relaxed text-gray-900"
+                style={{
+                  textAlign: 'justify',
+                  textJustify: 'inter-word',
+                  hyphens: 'auto',
+                  wordSpacing: 'normal',
+                }}
+              >
+                The{' '}
+                <a
+                  href="https://cmt3.research.microsoft.com/"
+                  className="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200 no-underline"
+                  style={{ textDecoration: 'none' }}
+                >
+                  Microsoft CMT service
+                </a>{' '}
+                was used for managing the peer-reviewing process for this
+                conference. This service was provided for free by Microsoft and
+                they bore all expenses, including costs for Azure cloud services
+                as well as for software development and support." Thanks and
+                regards,
               </p>
 
               <a
