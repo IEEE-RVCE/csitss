@@ -182,40 +182,11 @@ export default function Index() {
                 Systems and Information Technology for Sustainable Solutions
                 [CSITSS — 2025] focuses on bringing together leading
                 academicians, scientists, researchers, industry representatives,
-                postdoctoral fellows, and research scholars around the world to
+                postdoctoral fellows and research scholars around the world to
                 share their knowledge and research expertise in Green
                 Electronics, Renewable Energy, Robotics and
-                Automation,Photonics, Artificial Intelligence, Cyber-Physical
-                Systems, Quantum Mechanics, and Computing from <span> </span>
-                <span className="animated-date">
-                  <span> </span>
-                  <span>N</span>
-                  <span>o</span>
-                  <span>v</span>
-                  <span>e</span>
-                  <span>m</span>
-                  <span>b</span>
-                  <span>e</span>
-                  <span>r</span>
-                  <span> </span>
-                  <span>20</span>
-                  <span>
-                    <sup>th</sup>
-                  </span>{' '}
-                  <span> </span>
-                  <span>t</span>
-                  <span>o</span> <span> </span>
-                  <span>22</span>
-                  <span>
-                    <sup>nd</sup>
-                    <span> </span>
-                  </span>{' '}
-                  <span>2</span>
-                  <span>0</span>
-                  <span>2</span>
-                  <span>5</span>
-                </span>
-                .
+                Automation, Photonics, Artificial Intelligence, Cyber-Physical
+                Systems, Quantum Mechanics and Computing from November 20<sup>th</sup> to 22<sup>nd</sup>, 2025.
                 <br />
                 <br />
                 The conference has been successfully organized for the past
@@ -245,11 +216,10 @@ export default function Index() {
                 >
                   Microsoft CMT service
                 </a>{' '}
-                was used for managing the peer-reviewing process for this
-                conference. This service was provided for free by Microsoft and
-                they bore all expenses, including costs for Azure cloud services
-                as well as for software development and support. Thanks and
-                regards,
+                is used for managing the peer-reviewing process for this
+                conference. This service is provided for free by Microsoft, and
+                they bear all expenses, including costs for Azure cloud services
+                as well as for software development and support.
               </p>
 
               <a
