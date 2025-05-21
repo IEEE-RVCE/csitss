@@ -27,8 +27,8 @@ export default function Index() {
         </div> */}
         <header>
           <div
-            className="heroHeader  w-full bg-cover bg-center"
-            style={{ padding: '3rem' }}
+            className="heroHeader w-full bg-cover bg-center"
+            style={{ padding: '3rem', paddingTop: '1rem' }}
           >
             <HeaderImages />
             <div className="flex  w-full items-center justify-center ">
@@ -184,9 +184,10 @@ export default function Index() {
                 academicians, scientists, researchers, industry representatives,
                 postdoctoral fellows and research scholars around the world to
                 share their knowledge and research expertise in Green
-                Electronics, Renewable Energy, Robotics and
-                Automation, Photonics, Artificial Intelligence, Cyber-Physical
-                Systems, Quantum Mechanics and Computing from November 20<sup>th</sup> to 22<sup>nd</sup>, 2025.
+                Electronics, Renewable Energy, Robotics and Automation,
+                Photonics, Artificial Intelligence, Cyber-Physical Systems,
+                Quantum Mechanics and Computing from November 20<sup>th</sup> to
+                22<sup>nd</sup>, 2025.
                 <br />
                 <br />
                 The conference has been successfully organized for the past

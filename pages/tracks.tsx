@@ -53,20 +53,20 @@ function Tracks() {
     },
     {
       id: 4,
-      title: 'Computing and Intelligent Systems',
+      title: 'Blockchain Systems and Their Emerging Applications',
       gradient: 'from-orange-500 to-amber-400',
       icon: '💻',
       items: [
-        'Computer Networks and Cyber security',
-        'Machine Intelligence',
-        'Web and Mobile Applications',
-        'Computing Environments (Cloud, Distributed, etc.)',
-        'Internet of Things / Edge Systems',
-        'Augmented, Virtual Reality and extended reality',
-        'Data Analytics',
-        'Block Chain',
-        'Computer Vision and Pattern Recognition',
-        'Metaverse',
+        'Consensus Mechanisms and Protocol Design',
+        'Smart Contracts and Decentralized Applications (dApps)',
+        'Blockchain Scalability and Interoperability',
+        'Blockchain in Web and Mobile Environments',
+        'Security, Privacy, and Trust in Blockchain',
+        'Tokenomics and Decentralized Finance (DeFi)',
+        'Blockchain for Cybersecurity and Data Integrity',
+        'Blockchain in Cloud, Edge, and IoT Systems',
+        'Legal, Ethical, and Standardization Aspects',
+        'Applications in Healthcare, Supply Chain, Voting, and Governance',
       ],
     },
     {
@@ -176,7 +176,8 @@ function Tracks() {
             </span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-xl text-gray-600">
-            Authors are invited to submit their original research work in the following areas (but not limited to):
+            Authors are invited to submit their original research work in the
+            following areas (but not limited to):
           </p>
         </div>
 
@@ -188,8 +189,10 @@ function Tracks() {
               className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl"
               onClick={() => handleTrackClick(track.id)}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${track.gradient} opacity-90`}></div>
-              
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${track.gradient} opacity-90`}
+              ></div>
+
               <div className="relative p-8">
                 <div className="mb-4 flex items-center justify-between">
                   <span className="text-3xl">{track.icon}</span>
@@ -197,15 +200,15 @@ function Tracks() {
                     {track.id}
                   </span>
                 </div>
-                
+
                 <h3 className="mb-2 text-xl font-bold text-white sm:text-2xl">
                   {track.title}
                 </h3>
-                
+
                 <p className="text-sm text-white text-opacity-80">
                   {track.items.length} research areas
                 </p>
-                
+
                 <div
                   className={`mt-4 overflow-hidden transition-all duration-300 ${
                     activeTrack === track.id ? 'max-h-96' : 'max-h-0'
@@ -220,10 +223,8 @@ function Tracks() {
                     ))}
                   </ul>
                 </div>
-                
-                <button
-                  className="mt-6 inline-flex items-center text-sm font-medium text-white hover:underline focus:outline-none"
-                >
+
+                <button className="mt-6 inline-flex items-center text-sm font-medium text-white hover:underline focus:outline-none">
                   {activeTrack === track.id ? 'Hide details' : 'Show details'}
                   <svg
                     className={`ml-1 h-4 w-4 transform transition-transform ${
@@ -259,17 +260,17 @@ function Tracks() {
               className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-base font-medium text-white shadow-lg transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Submit your paper
-              <svg 
-                className="ml-2 h-5 w-5" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                className="ml-2 h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth="2" 
-                  d="M14 5l7 7m0 0l-7 7m7-7H3" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
             </a>
