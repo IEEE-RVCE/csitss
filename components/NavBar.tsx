@@ -181,11 +181,23 @@ const Footer = () => {
   const [pageViews, setPageViews] = useState(0)
 
   useEffect(() => {
-    // Fetch the page view count
-    fetch('/api/pageViews', { method: 'POST' })
-      .then((res) => res.json())
-      .then((data) => setPageViews(data.count))
-      .catch((err) => console.error('Failed to fetch page views:', err))
+    // Check if the user has already visited (cookie)
+    const hasVisited = document.cookie.includes('page_viewed=true')
+    console.log({ hasVisited })
+    if (!hasVisited) {
+      // First visit: increment the counter and set the cookie
+      fetch('/api/pageViews', { method: 'POST', credentials: 'include' })
+        .then((res) => res.json())
+        .then((data) => setPageViews(data.count))
+        .catch((err) => console.error('Failed to fetch page views:', err))
+    } else {
+      // Subsequent visits: just get the current count
+      console.log('HELLO')
+      fetch('/api/pageViews', { method: 'GET', credentials: 'include' })
+        .then((res) => res.json())
+        .then((data) => setPageViews(data.count))
+        .catch((err) => console.error('Failed to fetch page views:', err))
+    }
   }, [])
 
   return (
