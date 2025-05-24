@@ -1,5 +1,4 @@
 import React from 'react'
-import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 
 function Contact() {
   return (
