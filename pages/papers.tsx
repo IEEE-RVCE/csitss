@@ -32,7 +32,7 @@ function Papers() {
           the papers, use the Microsoft CMT Link mentioned below:
           <br />
           <a
-            href="https://cmt3.research.microsoft.com/CSITSS2024"
+            href="https://cmt3.research.microsoft.com/CSITSS2025"
             className="text-blue-500 hover:underline"
           >
             <b>Paper Submission Link</b>
@@ -41,7 +41,7 @@ function Papers() {
 
         <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
-            href="https://cmt3.research.microsoft.com/CSITSS2024"
+            href="https://cmt3.research.microsoft.com/CSITSS2025"
             className="block rounded-lg bg-blue-500 px-5 py-3 font-medium text-white shadow-xl hover:bg-blue-600"
             target="_blank"
             rel="noopener noreferrer"

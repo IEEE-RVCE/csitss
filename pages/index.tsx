@@ -54,7 +54,7 @@ export default function Index() {
 
                 <div className="flex flex-col gap-4 p-4 md:grid md:grid-cols-3">
                   <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2024"
+                    href="https://cmt3.research.microsoft.com/CSITSS2025"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
@@ -225,7 +225,7 @@ export default function Index() {
 
               <a
                 className="inline-flex transform items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
-                href="https://cmt3.research.microsoft.com/CSITSS2024"
+                href="https://cmt3.research.microsoft.com/CSITSS2025"
               >
                 <span className="text-sm font-medium">Submit Paper</span>
                 <svg
