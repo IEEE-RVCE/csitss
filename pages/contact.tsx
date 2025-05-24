@@ -16,7 +16,7 @@ function Contact() {
           </div>
           <div>
             <div className="md:flex md:flex-col md:justify-between">
-              <div className="mb-4 p-2 md:mb-0 overflow-x-auto">
+              {/* <div className="mb-4 p-2 md:mb-0 overflow-x-auto">
                 <table className="w-full border-collapse border border-gray-300 text-sm rounded-lg shadow-sm">
                   <thead>
                     <tr className="bg-blue-200">
@@ -76,7 +76,7 @@ function Contact() {
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> */}
               <div className="mt-4">
                 <h3 className="text-center text-sm md:text-lg">
                   For any queries, please mail us at
