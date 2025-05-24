@@ -1,62 +1,47 @@
-import fs from 'fs'
-import path from 'path'
+import type { NextApiRequest, NextApiResponse } from 'next'
+import axios from 'axios'
 
-const filePath = path.resolve('./pageViews.json')
+// This API route is now a proxy to countapi.xyz for page view counting on Vercel
+// spell-checker: disable
+// spell-checker: disable-line
+const NAMESPACE = 'csitss' // Change to a unique string for your site
+const KEY = 'homepage' // Change to a unique string for your page
+const baseUrl = `https://api.counterapi.dev/v1`
 
-export default function handler(req: any, res: any) {
-  if (req.method === 'POST') {
-    const { cookies } = req
-    const hasVisited = cookies.page_viewed
+interface PageViewCookies {
+  page_viewed?: string
+}
 
-    if (hasVisited) {
-      // User has already been counted today
-      fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-          return res.status(500).json({ error: 'Failed to read page views' })
-        }
-        const count = JSON.parse(data).count || 0
-        return res.status(200).json({ count })
-      })
+interface PageViewResponse {
+  count: number
+}
+
+interface ErrorResponse {
+  error: string
+}
+
+export default async function handler(
+  req: NextApiRequest & { cookies: PageViewCookies },
+  res: NextApiResponse<PageViewResponse | ErrorResponse>
+): Promise<void> {
+  try {
+    if (req.method === 'POST') {
+      // Increment and return the new count
+      const response = await axios.get(`${baseUrl}/${NAMESPACE}/${KEY}/up`)
+      const data: PageViewResponse = response.data
+      // Set a cookie to prevent multiple increments in one day
+      res.setHeader('Set-Cookie', 'page_viewed=true; Max-Age=86400; Path=/')
+      return res.status(200).json({ count: data.count })
+    } else if (req.method === 'GET') {
+      const response = await axios.get(`${baseUrl}/${NAMESPACE}/${KEY}`)
+      const data: PageViewResponse = response.data
+      return res.status(200).json({ count: data.count })
     } else {
-      // Increment the page view count
-      fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-          return res.status(500).json({ error: 'Failed to read page views' })
-        }
-        const currentCount = JSON.parse(data).count || 0
-        const updatedCount = currentCount + 1
-
-        fs.writeFile(
-          filePath,
-          JSON.stringify({ count: updatedCount }),
-          (err) => {
-            if (err) {
-              return res
-                .status(500)
-                .json({ error: 'Failed to update page views' })
-            }
-
-            // Set a cookie to prevent multiple increments in one day
-            res.setHeader(
-              'Set-Cookie',
-              'page_viewed=true; Max-Age=86400; Path=/'
-            )
-            return res.status(200).json({ count: updatedCount })
-          }
-        )
-      })
+      res.setHeader('Allow', ['GET', 'POST'])
+      res.status(405).end(`Method ${req.method} Not Allowed`)
     }
-  } else if (req.method === 'GET') {
-    // Read the current page view count
-    fs.readFile(filePath, 'utf8', (err, data) => {
-      if (err) {
-        return res.status(500).json({ error: 'Failed to read page views' })
-      }
-      const count = JSON.parse(data).count || 0
-      return res.status(200).json({ count })
-    })
-  } else {
-    res.setHeader('Allow', ['GET', 'POST'])
-    res.status(405).end(`Method ${req.method} Not Allowed`)
+  } catch (error) {
+    console.error('Page view counter error:', error)
+    return res.status(503).json({ error: 'Page view service unavailable' })
   }
 }
