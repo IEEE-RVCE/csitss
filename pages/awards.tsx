@@ -25,7 +25,7 @@ function Awards() {
           9999
         </p>
 
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <div className="mt-4 text-center">
             <a
               href="PhD-Results.pdf"
@@ -35,7 +35,7 @@ function Awards() {
               Download PhD-Results
             </a>
           </div>
-        </div>
+        </div> */}
       </aside>
     </div>
   )
