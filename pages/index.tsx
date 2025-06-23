@@ -30,50 +30,100 @@ export default function Index() {
             className="heroHeader w-full bg-cover bg-center"
             style={{ padding: '3rem', paddingTop: '1rem' }}
           >
-            <HeaderImages />
-            <div className="flex  w-full items-center justify-center ">
-              <div className="rounded-3xl bg-gray-800 bg-opacity-80 px-9 py-5 text-center font-extrabold ">
-                <h1 className="bg bg-gradient-to-r from-yellow-200  via-amber-500 via-orange-600 via-red-600 via-amber-400 to-yellow-300 bg-clip-text text-5xl font-extrabold text-transparent">
+            {' '}
+            <HeaderImages />{' '}
+            <div className="flex w-full items-center justify-center mt-8 md:mt-28">
+              <div className="w-full bg-white/10 dark:bg-black/15 rounded-3xl backdrop-blur-[2px] border border-white/20 dark:border-gray-700/30 px-10 py-8 text-center shadow-2xl">
+                <h1 className="whitespace-nowrap bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
                   WELCOME TO CSITSS-2025
                 </h1>
-                <p className="mt-4 text-xl text-white md:mt-0 md:text-2xl">
-                  <span className="font-normal ">
-                    9<sup>th</sup> International Conference on Computational
-                    Systems and Information Technology for Sustainable Solutions
-                  </span>
+                <p className="mt-6 text-lg sm:text-xl lg:text-2xl text-white font-semibold drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)]">
+                  9<sup className="text-sm">th</sup> International Conference on
+                  Computational
+                  <br />
+                  Systems and Information Technology for Sustainable Solutions
                 </p>
-                <p className="align-text-center text-xl text-slate-50"></p>
-                <p className="align-text-center text-xl font-normal text-slate-50">
-                  Organized by
-                </p>
-                <div className="text-align-center text-2xl text-slate-50">
-                  <h4>
-                    RV College of Engineering<sup className="text-lg">®</sup>
+
+                <div className="mt-8 mb-6">
+                  <p className="text-lg text-white/90 font-medium drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] mb-2">
+                    Organized by
+                  </p>
+                  <h4 className="text-xl sm:text-2xl lg:text-3xl text-white font-bold drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)]">
+                    RV College of Engineering<sup className="text-sm">®</sup>
                   </h4>
                 </div>
 
-                <div className="flex flex-col gap-4 p-4 md:grid md:grid-cols-3">
+                <div className="flex flex-col gap-4 p-6 sm:flex-row sm:justify-center sm:gap-6">
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2025"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
+                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-blue-500 hover:to-blue-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
                   >
-                    <span>Submit Paper</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+                    <span className="relative flex items-center justify-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                        />
+                      </svg>
+                      Submit Paper
+                    </span>
                   </a>
 
                   <a
                     href="#timeline"
-                    className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
+                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-emerald-500 hover:to-emerald-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95"
                   >
-                    <span>Timeline</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+                    <span className="relative flex items-center justify-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Timeline
+                    </span>
                   </a>
+
                   <a
                     href="Draft brochure-CSITSS 2025.pdf"
-                    className="mt-4 flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-medium uppercase text-white transition-colors duration-300 ease-in-out hover:bg-blue-500 focus:bg-blue-500 focus:outline-none"
+                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-purple-500 hover:to-purple-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
                     download
                   >
-                    <span>Download Brochure</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+                    <span className="relative flex items-center justify-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
+                      </svg>
+                      Download Brochure
+                    </span>
                   </a>
                 </div>
               </div>
