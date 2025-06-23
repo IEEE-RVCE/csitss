@@ -474,7 +474,7 @@ function registration() {
               Registration fee for the{' '}
               <span className="font-bold">pre conference tutorial</span>{' '}
               includes access to the pre conference tutorial only (7th Nov
-              2024).
+              2025).
             </li>
             <li>
               Registration fee for the{' '}
@@ -521,9 +521,9 @@ function registration() {
               be attached in a section while filling the registration form.
             </li>
             <li>
-              CSITSS-2024 organizing committee will not be responsible for any
+              CSITSS-2025 organizing committee will not be responsible for any
               financial loss caused by improper transactions during registration
-              process in CSITSS-2024.
+              process in CSITSS-2025.
             </li>
             <li>
               The author's name(s) must match the ones provided during the
