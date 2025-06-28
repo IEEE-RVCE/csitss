@@ -43,7 +43,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             ],
           }}
         />
-        <Component {...pageProps} />
+        <div className="w-full max-w-none min-h-screen px-0 sm:px-4">
+          <Component {...pageProps} />
+        </div>
 
         <div id="recaptcha-container" />
       </WrapApp>
