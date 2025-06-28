@@ -122,7 +122,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <Marquee className="marquee bg-blue-300">
+      {/* <Marquee className="marquee bg-blue-300">
         <div className="content1">
           <span className="ml-80 font-bold text-yellow-300">
             <a href="" download>
@@ -130,7 +130,7 @@ const NavBar = () => {
             </a>
           </span>{' '}
         </div>
-      </Marquee>
+      </Marquee> */}
       <style jsx>{`
         .navbar {
           animation: fadeIn 1s ease-in-out;
