@@ -93,7 +93,7 @@ const HeaderImages: React.FC = () => {
   ]
   return (
     <div>
-      <div className="center p-auto m-14 mt-0 hidden md:block">
+      <div className="center p-auto m-14 -mt-5 hidden md:block">
         <div className="mt-6 flex flex-col rounded-3xl bg-white bg-opacity-60 pt-4 scrollbar-hide sm:mx-0 md:mx-0 lg:mx-20">
           {/* First Row */}
           <div className="flex items-center justify-evenly gap-8 overflow-x-scroll px-4">
