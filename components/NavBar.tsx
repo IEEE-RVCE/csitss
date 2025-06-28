@@ -2,7 +2,7 @@
 import { AppShell, Center, Image, Menu } from '@mantine/core'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import Marquee from 'react-fast-marquee'
+// import Marquee from 'react-fast-marquee'
 
 const Links = [
   { href: '/', label: 'Home' },
