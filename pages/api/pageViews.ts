@@ -1,47 +1,49 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import axios from 'axios'
+import { createClient } from 'redis'
 
-// This API route is now a proxy to countapi.xyz for page view counting on Vercel
-// spell-checker: disable
-// spell-checker: disable-line
-const NAMESPACE = 'csitss' // Change to a unique string for your site
-const KEY = 'homepage' // Change to a unique string for your page
-const baseUrl = `https://api.counterapi.dev/v1`
+const redis = createClient({
+  url: process.env.REDIS_URL,
+})
 
-interface PageViewCookies {
-  page_viewed?: string
-}
-
-interface PageViewResponse {
-  count: number
-}
-
-interface ErrorResponse {
-  error: string
-}
+redis.on('error', (err) => console.error('Redis Client Error', err))
+await redis.connect()
 
 export default async function handler(
-  req: NextApiRequest & { cookies: PageViewCookies },
-  res: NextApiResponse<PageViewResponse | ErrorResponse>
-): Promise<void> {
+  req: NextApiRequest,
+  res: NextApiResponse<{ count: number } | { error: string }>
+) {
   try {
+    // Use Next.js built-in cookie parsing
+    const hasViewed = req.cookies.page_viewed === 'true'
+
     if (req.method === 'POST') {
-      // Increment and return the new count
-      const response = await axios.get(`${baseUrl}/${NAMESPACE}/${KEY}/up`)
-      const data: PageViewResponse = response.data
-      // Set a cookie to prevent multiple increments in one day
-      res.setHeader('Set-Cookie', 'page_viewed=true; Max-Age=86400; Path=/')
-      return res.status(200).json({ count: data.count })
-    } else if (req.method === 'GET') {
-      const response = await axios.get(`${baseUrl}/${NAMESPACE}/${KEY}`)
-      const data: PageViewResponse = response.data
-      return res.status(200).json({ count: data.count })
-    } else {
-      res.setHeader('Allow', ['GET', 'POST'])
-      res.status(405).end(`Method ${req.method} Not Allowed`)
+      let count: number
+
+      if (hasViewed) {
+        const current = await redis.get('page_view_count')
+        count = Number(current)
+      } else {
+        count = await redis.incr('page_view_count')
+
+        // Set cookie using Next.js method
+        res.setHeader(
+          'Set-Cookie',
+          `page_viewed=true; Max-Age=86400; Path=/; SameSite=lax`
+        )
+      }
+
+      return res.status(200).json({ count })
     }
+
+    // if (req.method === 'GET') {
+    //   const current = await redis.get('page_view_count')
+    //   return res.status(200).json({ count: Number(current) })
+    // }
+
+    res.setHeader('Allow', ['GET', 'POST'])
+    res.status(405).end(`Method ${req.method} Not Allowed`)
   } catch (error) {
-    console.error('Page view counter error:', error)
-    return res.status(503).json({ error: 'Page view service unavailable' })
+    console.error('Redis error:', error)
+    res.status(503).json({ error: 'Service unavailable' })
   }
 }
