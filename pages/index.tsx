@@ -98,7 +98,7 @@ export default function Index() {
                   </a>
 
                   <a
-                    href="Draft brochure-CSITSS 2025.pdf"
+                    href="CSITSS 2024 Brochure.pdf"
                     className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-purple-500 hover:to-purple-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
                     download
                   >
