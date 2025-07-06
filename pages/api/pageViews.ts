@@ -1,49 +1,47 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { createClient } from 'redis'
+import axios from 'axios'
 
-const redis = createClient({
-  url: process.env.REDIS_URL,
-})
+// This API route is now a proxy to countapi.xyz for page view counting on Vercel
+// spell-checker: disable
+// spell-checker: disable-line
+const NAMESPACE = 'csitss' // Change to a unique string for your site
+const KEY = 'homepage' // Change to a unique string for your page
+const baseUrl = `https://api.counterapi.dev/v1`
 
-redis.on('error', (err) => console.error('Redis Client Error', err))
-await redis.connect()
+interface PageViewCookies {
+  page_viewed?: string
+}
+
+interface PageViewResponse {
+  count: number
+}
+
+interface ErrorResponse {
+  error: string
+}
 
 export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<{ count: number } | { error: string }>
-) {
+  req: NextApiRequest & { cookies: PageViewCookies },
+  res: NextApiResponse<PageViewResponse | ErrorResponse>
+): Promise<void> {
   try {
-    // Use Next.js built-in cookie parsing
-    const hasViewed = req.cookies.page_viewed === 'true'
-
     if (req.method === 'POST') {
-      let count: number
-
-      if (hasViewed) {
-        const current = await redis.get('page_view_count')
-        count = Number(current)
-      } else {
-        count = await redis.incr('page_view_count')
-
-        // Set cookie using Next.js method
-        res.setHeader(
-          'Set-Cookie',
-          `page_viewed=true; Max-Age=86400; Path=/; SameSite=lax`
-        )
-      }
-
-      return res.status(200).json({ count })
+      // Increment and return the new count
+      const response = await axios.get(`${baseUrl}/${NAMESPACE}/${KEY}/up`)
+      const data: PageViewResponse = response.data
+      // Set a cookie to prevent multiple increments in one day
+      res.setHeader('Set-Cookie', 'page_viewed=true; Max-Age=86400; Path=/')
+      return res.status(200).json({ count: data.count })
+    } else if (req.method === 'GET') {
+      const response = await axios.get(`${baseUrl}/${NAMESPACE}/${KEY}`)
+      const data: PageViewResponse = response.data
+      return res.status(200).json({ count: data.count })
+    } else {
+      res.setHeader('Allow', ['GET', 'POST'])
+      res.status(405).end(`Method ${req.method} Not Allowed`)
     }
-
-    // if (req.method === 'GET') {
-    //   const current = await redis.get('page_view_count')
-    //   return res.status(200).json({ count: Number(current) })
-    // }
-
-    res.setHeader('Allow', ['GET', 'POST'])
-    res.status(405).end(`Method ${req.method} Not Allowed`)
   } catch (error) {
-    console.error('Redis error:', error)
-    res.status(503).json({ error: 'Service unavailable' })
+    console.error('Page view counter error:', error)
+    return res.status(503).json({ error: 'Page view service unavailable' })
   }
 }
