@@ -1,210 +1,323 @@
 import React, { useState } from 'react'
 
 function Tracks() {
-  const [activeTrack, setActiveTrack] = useState<number | null>(null)
+  const [activeTrack, setActiveTrack] = useState<string | null>(null)
 
+  // const tracks = [
+  //   {
+  //     id: 1,
+  //     title: 'Computing and Intelligent Systems',
+  //     chair: 'Dr Nagaraja G.S',
+  //     gradient: 'from-blue-500 to-cyan-400',
+  //     icon: '🧠',
+  //     items: [
+  //       'Artificial Intelligence and Machine learning',
+  //       'Computing and Intelligent Systems',
+  //       'Cloud, Big Data, and Distributed Architectures',
+  //       'Cybersecurity, Blockchain, and Privacy-Aware Systems',
+  //       'Data Analytics in Healthcare',
+  //       'Quantum Mechanics and Computing',
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Advanced Electronics and Communication Systems',
+  //     chair: 'Dr Shylashree N',
+  //     gradient: 'from-purple-500 to-pink-500',
+  //     icon: '📡',
+  //     items: [
+  //       'VLSI Design & Embedded Systems',
+  //       'Photonics, Optoelectronics and Mechatronics System',
+  //       'Smart Antennas and MIMO Systems',
+  //       'Next-Generation Communication Systems',
+  //       'Green Electronics: Sustainable Practices',
+  //       'Cyber-Physical Systems',
+  //     ],
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Advanced Robotics and Digital Technologies for Industrial Automation',
+  //     chair: 'Dr Rama A',
+  //     gradient: 'from-emerald-500 to-teal-400',
+  //     icon: '🤖',
+  //     items: [
+  //       'Robotics and Automation',
+  //       'Autonomous Vehicles Navigation and Control Systems',
+  //       'Enhancing Organization Functions through Digital Technologies',
+  //       'Real time data analytics and supply chain Management',
+  //       'Advanced Manufacturing and Product Innovation',
+  //       'Thermal, Fluid, and Energy Systems Engineering',
+  //       'Enhancing Organization Functions through Digital Technologies',
+  //       'Digital Transformation in Various Sectors of Economy',
+  //     ],
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Sustainable Environment, Smart Infrastructure, and Intelligent Transport Systems',
+  //     chair: 'Dr Radha Krishna',
+  //     gradient: 'from-green-500 to-emerald-400',
+  //     icon: '🌱',
+  //     items: [
+  //       'Environmental Conservation , Biodiversity and Renewable Energy',
+  //       'Intelligent Transport Systems and E-Mobility',
+  //       'Infrastructure Health Monitoring and Smart Infrastructure.',
+  //       'Computational Analysis of Structural , Functional and Nano Materials',
+  //       '3D Printing',
+  //     ],
+  //   },
+  //   {
+  //     id: 5,
+  //     title: 'Integrated Controls, Energy Systems, and Biomedical Technologies',
+  //     chair: 'Dr Dinesh M N',
+  //     gradient: 'from-yellow-400 to-amber-500',
+  //     icon: '⚡',
+  //     items: [
+  //       'Biomedical Engineering and Healthcare Applications',
+  //       'Control and Automation',
+  //       'Integrated Energy Systems',
+  //       'Biomechanics and rehabilitation Engineering',
+  //       'Bio medical signal and image processing.',
+  //     ],
+  //   },
+  // ];
+
+  /*
+Old tracks array commented out for reference.
+*/
+
+  // Updated tracks as per July 2025 requirements
   const tracks = [
     {
-      id: 1,
-      title: 'Artificial Intelligence of Things',
+      id: 'A',
+      title: 'Computing and Intelligent Systems',
+      chair: 'Dr Nagaraja G.S',
       gradient: 'from-blue-500 to-cyan-400',
-      icon: '🤖',
+      icon: '🧠',
       items: [
-        'AI at the Edge vs. Cloud AI: Opportunities and Trade-offs',
-        'AIoT System Architectures and Communication Protocols',
-        'Energy-Efficient AI for IoT Devices',
-        'Real-Time Data Processing and Edge Computing',
-        'On-Device ML Models: TinyML and Federated Learning',
-        'Reinforcement Learning in Autonomous IoT Systems',
-        'Data Labeling and Quality Challenges in IoT Environments',
-        'Anomaly Detection in Sensor Networks using AI',
+        'Artificial Intelligence and Machine learning',
+        'Computing and Intelligent Systems',
+        'Cloud, Big Data, and Distributed Architectures',
+        'Cybersecurity, Blockchain, and Privacy-Aware Systems',
+        'Data Analytics in Healthcare',
+        'Quantum Mechanics and Computing',
       ],
     },
     {
-      id: 2,
-      title: 'AI in Education',
+      id: 'B',
+      title: 'Advanced Electronics and Communication Systems',
+      chair: 'Dr Shylashree N',
       gradient: 'from-purple-500 to-pink-500',
-      icon: '🎓',
-      items: [
-        'Personalized Learning through AI',
-        'AI in Educational Content Creation',
-        'AI for Teacher Support and Development',
-        'Ethical Challenges and Considerations',
-        'AI in Assessment and Evaluation',
-        'AI and Special Education',
-        'Future Research and Innovations in AI for Education',
-        'Designing AI Solutions for Educational Challenges',
-      ],
-    },
-    {
-      id: 3,
-      title: 'Machine Learning and AI in Image Processing',
-      gradient: 'from-emerald-500 to-teal-400',
-      icon: '🖼️',
-      items: [
-        'Generative Models in Image Processing',
-        'Self-supervised and Few-shot Learning',
-        'Multimodal Learning and Vision-Language Models',
-        'Healthcare and Medical Imaging',
-        'Autonomous Systems and Surveillance',
-        'Agricultural and Environmental Monitoring',
-        'Retail and Smart Cities',
-      ],
-    },
-    {
-      id: 4,
-      title: 'Blockchain Systems and Their Emerging Applications',
-      gradient: 'from-orange-500 to-amber-400',
-      icon: '💻',
-      items: [
-        'Consensus Mechanisms and Protocol Design',
-        'Smart Contracts and Decentralized Applications (dApps)',
-        'Blockchain Scalability and Interoperability',
-        'Blockchain in Web and Mobile Environments',
-        'Security, Privacy, and Trust in Blockchain',
-        'Tokenomics and Decentralized Finance (DeFi)',
-        'Blockchain for Cybersecurity and Data Integrity',
-        'Blockchain in Cloud, Edge, and IoT Systems',
-        'Legal, Ethical, and Standardization Aspects',
-        'Applications in Healthcare, Supply Chain, Voting, and Governance',
-      ],
-    },
-    {
-      id: 5,
-      title: 'VLSI design & Embedded system',
-      gradient: 'from-indigo-500 to-sky-400',
-      icon: '🔌',
-      items: [
-        'Analog/ Digital /Mixed Signal/RF System Designs',
-        'Advances in CAD for VLSI',
-        'Embedded Systems Design',
-        'Low-power digital architectures',
-        'Test & Reliability of Machine Learning Systems',
-        'Microsystems/MEMS/Sensors Test',
-        'Pre-silicon, Post-silicon: Debug, Verification and Validation',
-      ],
-    },
-    {
-      id: 6,
-      title: 'Smart communication',
-      gradient: 'from-rose-500 to-red-400',
       icon: '📡',
       items: [
-        'Intelligent Network Architectures',
-        'Wireless Communication Technologies',
-        'IoT and M2M Communication',
-        'AI/ML in Communication Systems',
-        'Secure and Resilient Communication',
-        'Human-Centered and Social Communication',
+        'VLSI Design & Embedded Systems',
+        'Photonics, Optoelectronics and Mechatronics System',
+        'Smart Antennas and MIMO Systems',
+        'Next-Generation Communication Systems',
+        'Green Electronics: Sustainable Practices',
+        'Cyber-Physical Systems',
       ],
     },
     {
-      id: 7,
-      title: 'Control and automation',
-      gradient: 'from-lime-500 to-green-400',
+      id: 'C',
+      title:
+        'Advanced Robotics and Digital Technologies for Industrial Automation',
+      chair: 'Dr Rama A',
+      gradient: 'from-emerald-500 to-teal-400',
       icon: '🤖',
       items: [
-        'Cyber-Physical Systems',
-        'Automation Technologies and Applications',
-        'Robotics and Autonomous Systems',
-        'Digital Twins in Automation and Control',
-        'Cybersecurity in Control and Automation Systems',
-        'Future Trends in Smart Factories and Industry 5.0',
-        'Wearable and Implantable Body Sensor',
+        'Robotics and Automation',
+        'Autonomous Vehicles Navigation and Control Systems',
+        'Enhancing Organization Functions through Digital Technologies',
+        'Real time data analytics and supply chain Management',
+        'Advanced Manufacturing and Product Innovation',
+        'Thermal, Fluid, and Energy Systems Engineering',
+        'Enhancing Organization Functions through Digital Technologies',
+        'Digital Transformation in Various Sectors of Economy',
       ],
     },
     {
-      id: 8,
-      title: 'Renewable Power and energy system',
-      gradient: 'from-yellow-400 to-amber-500',
-      icon: '⚡',
-      items: [
-        'Solar Energy Technologies',
-        'Wind Energy Systems',
-        'Energy Storage and Conversion',
-        'Smart Grids and Energy Management',
-        'Bioenergy and Waste-to-Energy',
-        'Hydropower and Ocean Energy',
-        'Policy, Regulation, and Economics',
-      ],
-    },
-    {
-      id: 9,
-      title: 'E-mobility Sustainable solutions',
-      gradient: 'from-cyan-500 to-blue-400',
-      icon: '🚗',
-      items: [
-        'E-Mobility as a Catalyst for Sustainable Transportation',
-        'Innovations in Electric Vehicle (EV) Technology',
-        'EV Charging Infrastructure',
-        'Sustainable Energy Integration',
-        'E-Mobility and Smart Cities',
-        'Environmental and Economic Impact Analysis',
-      ],
-    },
-    {
-      id: 10,
-      title: 'Environmental Conservation and Biodiversity',
+      id: 'D',
+      title:
+        'Sustainable Environment, Smart Infrastructure, and Intelligent Transport Systems',
+      chair: 'Dr Radha Krishna',
       gradient: 'from-green-500 to-emerald-400',
       icon: '🌱',
       items: [
-        'Biodiversity Assessment and Monitoring',
-        'Conservation Strategies and Protected Areas',
-        'Climate Change and Biodiversity',
-        'Ecosystem Services and Natural Capital',
-        'Human-Wildlife Interactions and Conflict Mitigation',
-        'Conservation Technology and Innovation',
-        'Education, Advocacy, and Community Engagement',
-        'Industry, Corporate Responsibility, and Biodiversity',
+        'Environmental Conservation , Biodiversity and Renewable Energy',
+        'Intelligent Transport Systems and E-Mobility',
+        'Infrastructure Health Monitoring and Smart Infrastructure.',
+        'Computational Analysis of Structural , Functional and Nano Materials',
+        '3D Printing',
       ],
     },
     {
-      id: 11,
-      title: 'Intelligent Transport Systems',
-      gradient: 'from-fuchsia-500 to-purple-400',
-      icon: '🚦',
+      id: 'E',
+      title: 'Integrated Controls, Energy Systems, and Biomedical Technologies',
+      chair: 'Dr Dinesh M N',
+      gradient: 'from-yellow-400 to-amber-500',
+      icon: '⚡',
       items: [
-        'Smart traffic management and congestion control',
-        'Connected and autonomous vehicles',
-        'Vehicle-to-everything (V2X) communication',
-        'AI and machine learning applications in transportation',
-        'Intelligent logistics and freight transport',
-        'Urban mobility and multimodal transport systems',
-        'ITS for public transportation systems',
-        'Predictive analytics for traffic flow and incident management',
-        'Real-time data analytics and edge computing in transport',
-        'Environmental sustainability through ITS',
-        'Simulation and modeling of intelligent transport scenarios',
-      ],
-    },
-    {
-      id: 12,
-      title: 'Infrastructure Health Monitoring',
-      gradient: 'from-gray-500 to-zinc-400',
-      icon: '🏗️',
-      items: [
-        'Structural health monitoring (SHM) systems and techniques',
-        'Internet of Things (IoT) for real-time infrastructure monitoring',
-        'Machine learning and AI for damage detection and prediction',
-        'Non-destructive testing (NDT) and evaluation methods',
-        'Sensor technologies and wireless sensor networks',
-        'Vibration analysis and acoustic emission monitoring',
-        'Remote sensing and UAV-based inspections',
-        'Digital twins for infrastructure lifecycle management',
-        'Smart materials and self-sensing infrastructure',
-        'Case studies and deployment of IHM systems',
-        'Resilience and risk assessment in infrastructure management',
+        'Biomedical Engineering and Healthcare Applications',
+        'Control and Automation',
+        'Integrated Energy Systems',
+        'Biomechanics and rehabilitation Engineering',
+        'Bio medical signal and image processing.',
       ],
     },
   ]
 
-  const handleTrackClick = (id: number) => {
+  const handleTrackClick = (id: string) => {
     setActiveTrack(activeTrack === id ? null : id)
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-blue-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
+        {/* AEGIS 2025 Theme Section */}
+        <div className="mb-20">
+          {/* Main Theme Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mb-6 shadow-lg">
+              <span className="text-3xl font-bold text-white">⚡</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+              <span className="block">Theme</span>
+              <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                AEGIS 2025
+              </span>
+            </h2>
+          </div>
+
+          {/* Interactive AEGIS Banner */}
+          <div className="relative">
+            <div className="bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 rounded-3xl p-8 sm:p-12 shadow-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20"></div>
+              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iIzMzMzMzMyIgZmlsbC1vcGFjaXR5PSIwLjEiLz4KPC9zdmc+')] opacity-20"></div>
+              <div className="relative text-center">
+                <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 mb-6">
+                  {[
+                    { letter: 'A', tracks: 'Robotics, Computing, Electronics' },
+                    {
+                      letter: 'E',
+                      tracks: 'Cross-cutting core for all tracks',
+                    },
+                    {
+                      letter: 'G',
+                      tracks: 'Sustainable infrastructure, energy, environment',
+                    },
+                    {
+                      letter: 'I',
+                      tracks: 'AI/ML, IoT, CPS, autonomous systems',
+                    },
+                    {
+                      letter: 'S',
+                      tracks:
+                        'Cybersecurity, communication, control, biomedical',
+                    },
+                  ].map((item) => (
+                    <div key={item.letter} className="group relative">
+                      <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-white bg-opacity-10 rounded-full backdrop-blur-sm border border-white border-opacity-20 group-hover:bg-opacity-20 transition-all duration-300">
+                        <span className="text-xl sm:text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300">
+                          {item.letter}
+                        </span>
+                      </div>
+                      {/* Tooltip */}
+                      <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white text-xs rounded-lg px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10 pointer-events-none">
+                        <div className="font-semibold mb-1">
+                          {item.letter === 'A'
+                            ? 'Advanced'
+                            : item.letter === 'E'
+                              ? 'Engineering'
+                              : item.letter === 'G'
+                                ? 'Green'
+                                : item.letter === 'I'
+                                  ? 'Intelligent'
+                                  : 'Secure Systems'}
+                        </div>
+                        <div className="text-xs text-gray-300 max-w-40 whitespace-normal">
+                          {item.tracks}
+                        </div>
+                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-b-slate-800"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-wide">
+                  Advanced Engineering for
+                </h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text mb-6 tracking-wide">
+                  Green, Intelligent, and Secure Systems
+                </h3>
+                <p className="text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                  Pioneering the future of engineering through sustainable
+                  innovation, intelligent solutions, and secure technologies
+                </p>
+
+                {/* Aligned Tracks Summary */}
+                <div className="mt-8 pt-8 border-t border-white border-opacity-20">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+                    <div className="bg-white bg-opacity-10 rounded-xl p-3 backdrop-blur-sm">
+                      <div className="text-cyan-400 font-bold text-lg mb-1">
+                        A
+                      </div>
+                      <div className="text-white text-sm font-semibold mb-1">
+                        Advanced
+                      </div>
+                      <div className="text-blue-200 text-xs">
+                        Robotics, Computing, Electronics
+                      </div>
+                    </div>
+                    <div className="bg-white bg-opacity-10 rounded-xl p-3 backdrop-blur-sm">
+                      <div className="text-indigo-400 font-bold text-lg mb-1">
+                        E
+                      </div>
+                      <div className="text-white text-sm font-semibold mb-1">
+                        Engineering
+                      </div>
+                      <div className="text-blue-200 text-xs">
+                        Cross-cutting core for all tracks
+                      </div>
+                    </div>
+                    <div className="bg-white bg-opacity-10 rounded-xl p-3 backdrop-blur-sm">
+                      <div className="text-green-400 font-bold text-lg mb-1">
+                        G
+                      </div>
+                      <div className="text-white text-sm font-semibold mb-1">
+                        Green
+                      </div>
+                      <div className="text-blue-200 text-xs">
+                        Sustainable infrastructure, energy, environment
+                      </div>
+                    </div>
+                    <div className="bg-white bg-opacity-10 rounded-xl p-3 backdrop-blur-sm">
+                      <div className="text-purple-400 font-bold text-lg mb-1">
+                        I
+                      </div>
+                      <div className="text-white text-sm font-semibold mb-1">
+                        Intelligent
+                      </div>
+                      <div className="text-blue-200 text-xs">
+                        AI/ML, IoT, CPS, autonomous systems
+                      </div>
+                    </div>
+                    <div className="bg-white bg-opacity-10 rounded-xl p-3 backdrop-blur-sm">
+                      <div className="text-orange-400 font-bold text-lg mb-1">
+                        S
+                      </div>
+                      <div className="text-white text-sm font-semibold mb-1">
+                        Secure Systems
+                      </div>
+                      <div className="text-blue-200 text-xs">
+                        Cybersecurity, communication, control, biomedical
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
@@ -242,7 +355,9 @@ function Tracks() {
                 <h3 className="mb-2 text-xl font-bold text-white sm:text-2xl">
                   {track.title}
                 </h3>
-
+                <p className="mb-1 text-sm text-white text-opacity-80 font-semibold">
+                  Chair: {track.chair}
+                </p>
                 <p className="text-sm text-white text-opacity-80">
                   {track.items.length} research areas
                 </p>
