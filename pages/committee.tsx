@@ -411,23 +411,23 @@ export default function Committee1() {
     return name.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')
   }
 
-  const getLevelTitle = (levelKey: string): string => {
-    const titles: { [key: string]: string } = {
-      level0: 'Leadership',
-      level1: 'Executive Committee',
-      level2: 'Program Management',
-      level3: 'Operations',
-      level4: 'Communications & Partnerships',
-      level5: 'Advisory & Organization',
-      level6: 'Technical & Coordination',
-      level7: 'Event Management',
-      level8: 'Logistics & Support',
-      level9: 'Special Committees',
-      level10: 'Publications & Souvenir',
-      level11: 'International Relations',
-    }
-    return titles[levelKey] || levelKey
-  }
+  // const getLevelTitle = (levelKey: string): string => {
+  //   const titles: { [key: string]: string } = {
+  //     level0: 'Leadership',
+  //     level1: 'Executive Committee',
+  //     level2: 'Program Management',
+  //     level3: 'Operations',
+  //     level4: 'Communications & Partnerships',
+  //     level5: 'Advisory & Organization',
+  //     level6: 'Technical & Coordination',
+  //     level7: 'Event Management',
+  //     level8: 'Logistics & Support',
+  //     level9: 'Special Committees',
+  //     level10: 'Publications & Souvenir',
+  //     level11: 'International Relations',
+  //   }
+  //   return titles[levelKey] || levelKey
+  // }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-blue-400">
@@ -540,42 +540,40 @@ export default function Committee1() {
         )}
 
         {/* Render Committee Levels with Hierarchy Emphasis */}
-        {Object.entries(committeeStructure).map(
-          ([levelKey, levelItems], levelIndex) => (
-            <div key={levelKey} className="relative z-20 mb-20">
-              {/* Level Header with Hierarchy Indicator */}{' '}
-              <div className="text-center mb-12">
-                {/* <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+        {Object.entries(committeeStructure).map(([levelKey, levelItems]) => (
+          <div key={levelKey} className="relative z-20 mb-20">
+            {/* Level Header with Hierarchy Indicator */}{' '}
+            <div className="text-center mb-12">
+              {/* <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
                   {getLevelTitle(levelKey)}
                 </h2> */}
-                {/* <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto opacity-60"></div> */}
-              </div>
-              {/* Level Cards Container */}
-              <div className="flex justify-center">
-                <div
-                  className={`grid gap-8 w-full ${
-                    levelItems.length === 1
-                      ? 'grid-cols-1 max-w-lg'
-                      : 'grid-cols-1 md:grid-cols-2 max-w-5xl'
-                  }`}
-                >
-                  {levelItems.map((item: CommitteeItem, index: number) => (
-                    <div
-                      key={index}
-                      data-card-id={generateCardId(item.name)}
-                      className="relative z-30"
-                    >
-                      {/* Card with enhanced hierarchy styling */}
-                      <div className="relative">
-                        <ModernCard committeeName={item.name} to={item.to} />
-                      </div>
+              {/* <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto opacity-60"></div> */}
+            </div>
+            {/* Level Cards Container */}
+            <div className="flex justify-center">
+              <div
+                className={`grid gap-8 w-full ${
+                  levelItems.length === 1
+                    ? 'grid-cols-1 max-w-lg'
+                    : 'grid-cols-1 md:grid-cols-2 max-w-5xl'
+                }`}
+              >
+                {levelItems.map((item: CommitteeItem, index: number) => (
+                  <div
+                    key={index}
+                    data-card-id={generateCardId(item.name)}
+                    className="relative z-30"
+                  >
+                    {/* Card with enhanced hierarchy styling */}
+                    <div className="relative">
+                      <ModernCard committeeName={item.name} to={item.to} />
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
-          )
-        )}
+          </div>
+        ))}
       </div>
 
       {/* Footer CTA */}
