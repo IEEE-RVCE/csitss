@@ -26,7 +26,7 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
         <div key={post} className="space-y-6">
           {/* Group heading */}
           <div className="">
-            +<h2 className="text-2xl font-bold text-gray-900 mb-2">{post}</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">{post}</h2>
             {/* <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div> */}
           </div>
 
