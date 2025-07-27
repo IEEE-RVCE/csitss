@@ -9,15 +9,15 @@ const CustomTimeline = () => {
   const data = [
     {
       label: 'Manuscript Submission Opens',
-      date: '20th May 2025',
+      date: '5th July 2025',
     },
     {
       label: 'Manuscript Submission Deadline',
-      date: '30th July 2025',
+      date: '16th August 2025',
     },
     {
       label: 'Acceptance Notification',
-      date: '28th Aug 2025',
+      date: '5th Sept 2025',
     },
     {
       label: 'Early Bird Registration Deadline',
