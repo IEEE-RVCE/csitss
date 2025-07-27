@@ -25,40 +25,73 @@ export default function Index() {
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
         </div> */}
+        <div className="flex items-center gap-x-6 bg-indigo-600 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+          <p className="text-sm/6 text-white">
+            <a href="#">
+              <strong className="font-semibold">Last Date To Submit </strong>
+              Full-length Manuscript -{' '}
+              <time dateTime="2025-08-16">August 16th, 2025</time>
+              <svg
+                viewBox="0 0 2 2"
+                className="mx-2 inline size-0.5 fill-current"
+                aria-hidden="true"
+              >
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+            </a>
+          </p>
+          <div className="flex flex-1 justify-end">
+            {/* <button
+              type="button"
+              className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+            >
+              <span className="sr-only">Dismiss</span>
+              <svg
+                className="size-5 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+              </svg>
+            </button> */}
+          </div>
+        </div>
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">
             {' '}
             <HeaderImages />{' '}
-            <div className="flex w-full items-center justify-center mt-8 md:mt-28">
-              <div className="w-full bg-white/10 dark:bg-black/15 rounded-3xl backdrop-blur-[2px] border border-white/20 dark:border-gray-700/30 px-10 py-8 text-center shadow-2xl">
-                <h1 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] text-center break-words px-2">
+            <div className="mt-8 flex w-full items-center justify-center md:mt-28">
+              <div className="w-full rounded-3xl border border-white/20 bg-white/10 px-10 py-8 text-center shadow-2xl backdrop-blur-[2px] dark:border-gray-700/30 dark:bg-black/15">
+                <h1 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text break-words px-2 text-center text-2xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                   WELCOME TO CSITSS-2025
                 </h1>
-                <p className="mt-4 text-base xs:text-lg sm:text-xl lg:text-2xl text-white font-semibold drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] px-2">
+                <p className="mt-4 px-2 text-base font-semibold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-lg sm:text-xl lg:text-2xl">
                   9<sup className="text-sm">th</sup> International Conference on
                   Computational
                   <br className="hidden xs:block" />
                   Systems and Information Technology for Sustainable Solutions
                 </p>
-                <div className="mt-6 mb-4">
-                  <p className="text-base xs:text-lg text-white/90 font-medium drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] mb-1 px-2">
+                <div className="mb-4 mt-6">
+                  <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg">
                     Organized by
                   </p>
-                  <h4 className="text-lg xs:text-xl sm:text-2xl lg:text-3xl text-white font-bold drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] px-2">
+                  <h4 className="px-2 text-lg font-bold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-xl sm:text-2xl lg:text-3xl">
                     RV College of Engineering<sup className="text-sm">®</sup>
                   </h4>
                 </div>
-                <div className="flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4 px-2">
+                <div className="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4">
                   <a
                     href="https://cmt3.research.microsoft.com/CSITSS2025"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-blue-500 hover:to-blue-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
+                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-blue-500 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+                    <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                     <span className="relative flex items-center justify-center gap-2">
                       <svg
-                        className="w-5 h-5"
+                        className="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -76,12 +109,12 @@ export default function Index() {
 
                   <a
                     href="#timeline"
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-emerald-500 hover:to-emerald-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95"
+                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+                    <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                     <span className="relative flex items-center justify-center gap-2">
                       <svg
-                        className="w-5 h-5"
+                        className="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -99,13 +132,13 @@ export default function Index() {
 
                   <a
                     href="CSITSS 2024 Brochure.pdf"
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-purple-500 hover:to-purple-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
+                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
                     download
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+                    <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                     <span className="relative flex items-center justify-center gap-2">
                       <svg
-                        className="w-5 h-5"
+                        className="h-5 w-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -125,14 +158,14 @@ export default function Index() {
             </div>
           </div>
         </header>
-        <div className="mt-4  w-full rounded-lg bg-blue-200 bg-opacity-50 py-4 px-6 text-center text-black shadow-lg">
+        <div className="mt-4 w-full rounded-lg bg-blue-200 bg-opacity-50 px-6 py-4 text-center text-black shadow-lg">
           <p className="text-lg font-semibold">
             Organized by{' '}
             <span className="text-blue-700">RV College of Engineering</span>
           </p>
         </div>
-        <div className="mt-8 grid grid-cols-1 xs:grid-cols-2 gap-4 md:grid-cols-4 px-2">
-          <div className="rounded-lg bg-red-100 p-4 xs:p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-red-200">
+        <div className="mt-8 grid grid-cols-1 gap-4 px-2 xs:grid-cols-2 md:grid-cols-4">
+          <div className="rounded-lg bg-red-100 p-4 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-red-200 xs:p-6">
             <svg
               className="mx-auto mb-4 h-12 w-12 text-red-500"
               xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +183,7 @@ export default function Index() {
             <h3 className="text-2xl font-bold">November 20-22, 2025</h3>
             <p>Date</p>
           </div>
-          <div className="rounded-lg bg-green-100 p-4 xs:p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-green-200">
+          <div className="rounded-lg bg-green-100 p-4 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-green-200 xs:p-6">
             <svg
               className="mx-auto mb-4 h-12 w-12 text-green-500"
               xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +201,7 @@ export default function Index() {
             <h3 className="text-2xl font-bold">RV College of Engineering</h3>
             <p>Venue</p>
           </div>
-          <div className="rounded-lg bg-blue-100 p-4 xs:p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-blue-200">
+          <div className="rounded-lg bg-blue-100 p-4 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-blue-200 xs:p-6">
             <svg
               className="mx-auto mb-4 h-12 w-12 text-blue-500"
               xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +221,7 @@ export default function Index() {
               8 successful editions of CSITSS
             </h3>
           </div>
-          <div className="rounded-lg bg-yellow-100 p-4 xs:p-6 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-yellow-200">
+          <div className="rounded-lg bg-yellow-100 p-4 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-yellow-200 xs:p-6">
             <svg
               className="mx-auto mb-4 h-12 w-12 text-yellow-500"
               xmlns="http://www.w3.org/2000/svg"
