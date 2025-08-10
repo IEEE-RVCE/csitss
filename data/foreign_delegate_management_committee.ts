@@ -1,10 +1,10 @@
 const foreign_delegate_management_committee_data = [
   {
     name: 'Dr. Shanta Rangaswamy',
-    post: '',
+    post: 'Foreign Delegate Management',
     department: 'CSE',
     email: 'shanta.rangaswamy@rvce.edu.in',
-    imgLink: '', // Add image link if available
+    imgLink: '',
   },
   {
     name: 'Dr. Vikram N Bahadurdesai',

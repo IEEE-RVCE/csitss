@@ -1,24 +1,24 @@
 const conference_coordinators_data = [
   {
     name: 'Dr. R.Bhagya',
-    email: 'bhagyar@rvce.edu.in',
-    department: 'ETE',
     post: 'Conference Coordinator',
+    department: 'ETE',
     imgLink: '',
+    email: 'bhagyar@rvce.edu.in',
   },
   {
-    name: 'Dr. Anand Jatti',
-    email: 'anandjatti@rvce.edu.in',
-    department: 'EIE',
+    name: 'Dr.Anand Jatti',
     post: 'Conference Coordinator',
+    department: 'EIE',
     imgLink: '',
+    email: 'anandjatti@rvce.edu.in',
   },
   {
     name: 'Dr. Archana M R',
-    email: 'archanamr@rvce.edu.in',
-    department: 'CV',
     post: 'Conference Coordinator',
+    department: 'CV',
     imgLink: '',
+    email: 'archanamr@rvce.edu.in',
   },
 ]
 

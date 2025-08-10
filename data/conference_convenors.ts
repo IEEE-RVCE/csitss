@@ -1,27 +1,24 @@
 const conference_convenors_data = [
   {
     name: 'Dr. Ashok Kumar A R',
-    post: 'Conference Convenor',
+    post: 'Conference Convener',
     department: 'CSE',
-    email: 'ashokkumarar@rvce.edu.in',
-    mobile: '8497042779',
     imgLink: '',
+    email: 'ashokkumarar@rvce.edu.in',
   },
   {
     name: 'Dr. Mohana',
-    post: 'Conference Convenor',
+    post: 'Conference Convener',
     department: 'CSE',
-    email: 'mohana@rvce.edu.in',
-    mobile: '9739866723',
     imgLink: '',
+    email: 'mohana@rvce.edu.in',
   },
   {
-    name: 'Dr Udaya Shankar B.C.',
-    post: 'Conference Convenor',
+    name: 'Dr. Udaya Shankar B.C.',
+    post: 'Conference Convener',
     department: 'Civil',
-    email: 'udayashankar@rvce.edu.in',
-    mobile: '9845432454',
     imgLink: '',
+    email: 'udayashankar@rvce.edu.in',
   },
 ]
 

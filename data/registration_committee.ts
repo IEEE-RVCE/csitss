@@ -41,6 +41,13 @@ const registration_committee_data = [
     imgLink: '',
     email: 'sindhud@rvce.edu.in',
   },
+  {
+    name: 'Dr. Vidya Patil',
+    post: '',
+    department: 'Mathematics',
+    imgLink: '',
+    email: 'vidyapatil@rvce.edu.in',
+  },
 ]
 
 export default registration_committee_data

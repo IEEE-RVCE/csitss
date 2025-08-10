@@ -104,60 +104,60 @@ export default function Committee1() {
     ],
     level2: [
       { name: 'Program Chairs', to: '/committee-details/program_chairs' },
-      {
-        name: 'Technical Program Chairs',
-        to: '/committee-details/technical_program_chairs',
-      },
+      // {
+      //   name: 'Technical Program Chairs',
+      //   to: '/committee-details/technical_program_chairs',
+      // },
+      { name: 'Finance Chairs', to: '/committee-details/finance_chairs' },
     ],
     level3: [
-      { name: 'Finance Chairs', to: '/committee-details/finance_chairs' },
       {
         name: 'Publication Chairs',
         to: '/committee-details/publication_chairs',
       },
-    ],
-    level4: [
       {
         name: 'Sponsorship Chairs',
         to: '/committee-details/sponsorship_chairs',
       },
+    ],
+    level4: [
       {
         name: 'Publicity and Media Chairs',
         to: '/committee-details/pm_chairs',
       },
-    ],
-    level5: [
       {
         name: 'Organizing Committee',
         to: '/committee-details/organizing_committee',
       },
-      {
-        name: 'Advisory Committee',
-        to: '/committee-details/advisory_committee',
-      },
     ],
-    level6: [
+    // level5: [
+    //   // {
+    //   //   name: 'Advisory Committee',
+    //   //   to: '/committee-details/advisory_committee',
+    //   // },
+    // ],
+    level5: [
       { name: 'Website Chairs', to: '/committee-details/website_chairs' },
       {
         name: 'Conference Convenors',
         to: '/committee-details/conference_convenors',
       },
     ],
-    level7: [
+    level6: [
       {
         name: 'Session Management',
         to: '/committee-details/session_management',
       },
       { name: 'Hospitality', to: '/committee-details/hospitality' },
     ],
-    level8: [
+    level7: [
       { name: 'Transportation', to: '/committee-details/transportation' },
       {
         name: 'Registration Committee',
         to: '/committee-details/registration_committee',
       },
     ],
-    level9: [
+    level8: [
       {
         name: 'Conference Coordinators',
         to: '/committee-details/conference_coordinators',
@@ -167,14 +167,14 @@ export default function Committee1() {
         to: '/committee-details/technical_committee',
       },
     ],
-    level10: [
+    level9: [
       { name: 'Brochure & Flyer', to: '/committee-details/brochure_flyer' },
       {
         name: 'Souvenir Committee',
         to: '/committee-details/souvenier_committee',
       },
     ],
-    level11: [
+    level10: [
       {
         name: 'Foreign Delegate Management',
         to: '/committee-details/foreign_delegate_management_committee',

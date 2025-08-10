@@ -8,31 +8,38 @@ const program_chairs_data = [
   },
   {
     name: 'Dr. Suma B',
-    post: 'Program Chair',
+    post: '',
     department: 'CSE',
     imgLink: '',
     email: 'sumab_rao@rvce.edu.in',
   },
   {
     name: 'Dr. C K Nagendra Guptha',
-    post: 'Program Chair',
+    post: '',
     department: 'IEM',
     imgLink: '',
     email: 'nagendragupta@rvce.edu.in',
   },
   {
     name: 'Dr. B Roja Reddy B',
-    post: 'Program Chair',
+    post: '',
     department: 'ETE',
     imgLink: '',
     email: 'rojareddyb@rvce.edu.in',
   },
   {
     name: 'Dr. Vinod A R',
-    post: 'Program Chair',
+    post: '',
     department: 'Civil',
     imgLink: '',
     email: 'vinodar@rvce.edu.in',
+  },
+  {
+    name: 'Dr. R. Prakash',
+    post: '',
+    department: 'Mathematics',
+    imgLink: '',
+    email: 'prakashr@rvce.edu.in',
   },
 ]
 
