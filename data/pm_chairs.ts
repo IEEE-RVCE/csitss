@@ -1,4 +1,4 @@
-const pm_chairs = [
+const pm_chairs_data = [
   {
     name: 'Dr. Vinay Hegde',
     post: 'Publicity Chair',
@@ -7,33 +7,33 @@ const pm_chairs = [
     email: 'vinayvhegde@rvce.edu.in',
   },
   {
-    name: 'Dr. Manas M N',
-    post: 'Publicity Chair',
+    name: 'Dr.Manas M N',
+    post: '',
     department: 'CSE',
     imgLink: '',
     email: 'manasmn@rvce.edu.in',
   },
   {
     name: 'Mr. T.P.Mithun',
-    post: 'Publicity Chair',
+    post: '',
     department: 'ETE',
     imgLink: '',
     email: 'mithuntp@rvce.edu.in',
   },
   {
-    name: 'Dr. Rajesh B M',
-    post: 'Publicity Chair',
+    name: 'Dr.Rajesh B M',
+    post: '',
     department: 'Physics',
     imgLink: '',
     email: 'rajeshbm@rvce.edu.in',
   },
   {
-    name: 'Dr. Sunil S',
-    post: 'Publicity Chair',
+    name: 'Dr. Vikas M',
+    post: '',
     department: 'Civil',
     imgLink: '',
-    email: 'sunils@rvce.edu.in',
+    email: 'vikasm@rvce.edu.in',
   },
 ]
 
-export default pm_chairs
+export default pm_chairs_data

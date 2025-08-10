@@ -1,13 +1,13 @@
 const finance_chairs_data = [
   {
     name: 'Dr. Deepamala N',
-    post: '',
+    post: 'Finance Chair',
     department: 'CSE',
     imgLink: '',
     email: 'deepamalan@rvce.edu.in',
   },
   {
-    name: 'Dr. SC Prasanna Kumar',
+    name: 'Dr.SC Prasanna Kumar',
     post: '',
     department: 'EIE',
     imgLink: '',
