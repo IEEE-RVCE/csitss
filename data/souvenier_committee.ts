@@ -27,13 +27,6 @@ const souvenier_committee_data = [
     imgLink: '',
     email: 'durgaprashanthl@rvce.edu.in',
   },
-  {
-    name: 'Y Sailaja',
-    post: '',
-    department: 'Mathematics',
-    imgLink: '',
-    email: 'sailajay@rvce.edu.in',
-  },
 ]
 
 export default souvenier_committee_data

@@ -48,6 +48,13 @@ const sponsorship_chairs_data = [
     imgLink: '',
     email: 'venkateshs@rvce.edu.in',
   },
+  {
+    name: 'Prof.Vikas M',
+    post: '',
+    department: 'Civil',
+    imgLink: '',
+    email: 'vikasm@rvce.edu.in',
+  },
 ]
 
 export default sponsorship_chairs_data

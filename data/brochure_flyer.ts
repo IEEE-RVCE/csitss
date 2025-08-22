@@ -27,13 +27,6 @@ const brochure_flyer_data = [
     imgLink: '',
     email: 'ramthilak@rvce.edu.in',
   },
-  {
-    name: 'Dr. C. Nandeesh Kumar',
-    post: '',
-    department: 'Mathematics',
-    imgLink: '',
-    email: 'nandeeshkumarc@rvce.edu.in',
-  },
 ]
 
 export default brochure_flyer_data

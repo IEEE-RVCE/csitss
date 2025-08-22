@@ -1,12 +1,5 @@
 const hospitality_data = [
   {
-    name: 'Dr. Harish M',
-    post: 'Hospitality',
-    department: 'Mathematics',
-    imgLink: '',
-    email: 'harishm@rvce.edu.in',
-  },
-  {
     name: 'Dr. Sridharan M',
     post: '',
     department: 'Chemistry',

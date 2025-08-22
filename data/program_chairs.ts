@@ -33,14 +33,7 @@ const program_chairs_data = [
     department: 'Civil',
     imgLink: '',
     email: 'vinodar@rvce.edu.in',
-  },
-  {
-    name: 'Dr. R. Prakash',
-    post: '',
-    department: 'Mathematics',
-    imgLink: '',
-    email: 'prakashr@rvce.edu.in',
-  },
+  }
 ]
 
 export default program_chairs_data

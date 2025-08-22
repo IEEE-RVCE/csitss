@@ -27,13 +27,6 @@ const session_management_data = [
     imgLink: '',
     email: 'nethravathis@rvce.edu.in',
   },
-  {
-    name: 'Nivya Muchikel',
-    post: '',
-    department: 'Mathematics',
-    imgLink: '',
-    email: 'nivyamuchikel@rvce.edu.in',
-  },
 ]
 
 export default session_management_data

@@ -1,12 +1,5 @@
 const transportation_data = [
   {
-    name: 'Dr. Suman N P',
-    post: 'Transport',
-    department: 'Mathematics',
-    imgLink: '',
-    email: 'sumannp@rvce.edu.in',
-  },
-  {
     name: 'Dr. Divakara S G',
     post: '',
     department: 'Chemistry',
