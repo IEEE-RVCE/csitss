@@ -96,7 +96,7 @@ const HeaderImages: React.FC = () => {
       <div className="center p-auto m-14 -mt-5 hidden md:block">
         <div className="mt-6 flex flex-col rounded-3xl bg-white bg-opacity-60 pt-4 scrollbar-hide sm:mx-0 md:mx-0 lg:mx-20">
           {/* First Row */}
-          <div className="flex items-center justify-evenly gap-8 overflow-x-scroll px-4">
+          <div className="flex items-center justify-evenly gap-8 overflow-x-hidden px-4">
             {firstRowImages.map((image: Image) =>
               image.show ? (
                 <div className=" inline-block flex-1" key={image.alt}>
@@ -116,7 +116,7 @@ const HeaderImages: React.FC = () => {
             )}
           </div>
           {/* Second Row */}
-          <div className="flex items-center justify-evenly gap-8 overflow-x-scroll px-4">
+          <div className="flex items-center justify-evenly gap-8 overflow-x-hidden px-4">
             {secondRowImages.map((image: Image) =>
               image.show ? (
                 <div className="my-4 mt-0 inline-block flex-1" key={image.alt}>

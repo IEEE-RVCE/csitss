@@ -63,12 +63,62 @@ const technical_committee_data = [
     email: 'varunam@rvce.edu.in',
   },
   {
-    name: 'Dr. Neeti Ghiya',
+    name: 'Dr. Shylashree N',
     post: 'Technical Committee Member',
-    department: 'Mathematics',
+    department: 'EC',
     imgLink: '',
-    email: 'neethighiya@rvce.edu.in',
+    email: 'shylashreen@rvce.edu.in',
   },
+{
+    name: 'Dr. Shanti P',
+    post: 'Technical Committee Member',
+    department: 'TC',
+    imgLink: '',
+    email: 'shanthip@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Venkateswran',
+    post: 'Technical Committee Member',
+    department: 'EC',
+    imgLink: '',
+    email: 'ramavenkateswarann@rvce.edu.in'
+  },
+  {
+    name: 'Dr. Jayanthi P N',
+    post: 'Technical Committee Member',
+    department: 'EC',
+    imgLink: '',
+    email: 'jayanthipn@rvce.edu.in'
+  },
+    {
+    name: 'Dr. Saraswathi K',
+    post: 'Technical Committee Member',
+    department: 'TC',
+    imgLink: '',
+    email: 'ksaraswathi@rvce.edu.in'
+  },
+  {
+    name: 'Dr. Ashwini K B',
+    post: 'Technical Committee Member',
+    department: 'ISE',
+    imgLink: '',
+    email: 'ashwinikb@rvce.edu.in'
+  },
+{
+    name: 'Dr. Usha J',
+    post: 'Technical Committee Member',
+    department: 'MCA',
+    imgLink: '',
+    email: 'ushaj@rvce.edu.in'
+  },
+  {
+    name: 'Dr. Usha Rani',
+    post: 'Technical Committee Member',
+    department: 'EC',
+    imgLink: '',
+    email: 'usharani@rvce.edu.in'
+  },
+
 ]
 
 export default technical_committee_data

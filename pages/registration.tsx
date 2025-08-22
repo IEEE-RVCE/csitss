@@ -423,7 +423,7 @@ function registration() {
         </section>{' '}
         <section className="flex justify-center py-4 px-4">
           <a
-            href="https://rzp.io/l/vMqgBae"
+            href="https://rzp.io/rzp/anQbpCLM"
             className="bg-blue-500 text-white py-3 px-4 sm:px-6 rounded-md text-center hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base font-medium shadow-lg"
           >
             Click Here to Pay Through Razorpay (Indian Delegates)
