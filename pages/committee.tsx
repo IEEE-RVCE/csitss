@@ -53,14 +53,14 @@ const ModernCard = ({
   const router = useRouter()
   return (
     <div
-      className="group relative bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50 
-                 border border-gray-200 hover:border-blue-300 rounded-xl shadow-sm hover:shadow-lg 
+      className="group relative bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50
+                 border border-gray-200 hover:border-blue-300 rounded-xl shadow-sm hover:shadow-lg
                  transition-all duration-300 cursor-pointer overflow-hidden"
       onClick={() => router.push(to)}
     >
       {/* Subtle gradient overlay */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/30 to-transparent 
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/30 to-transparent
                       opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       ></div>
       <div className="relative p-6 flex flex-col items-center justify-between">
@@ -71,19 +71,19 @@ const ModernCard = ({
               {getCommitteeEmoji(committeeName)}
             </span>
             <h3
-              className="text-lg font-semibold text-gray-800 group-hover:text-blue-700 
+              className="text-lg font-semibold text-gray-800 group-hover:text-blue-700
                            transition-colors duration-300 leading-tight text-left truncate"
             >
               {committeeName}
             </h3>
           </div>
           <ChevronRightIcon
-            className="w-5 h-5 text-gray-400 group-hover:text-blue-500 
+            className="w-5 h-5 text-gray-400 group-hover:text-blue-500
                                        transition-all duration-300 group-hover:translate-x-1 ml-4 flex-shrink-0"
           />
         </div>
         {/* <div
-          className="mt-2 h-1 w-12 bg-gradient-to-r from-blue-500 to-indigo-500 
+          className="mt-2 h-1 w-12 bg-gradient-to-r from-blue-500 to-indigo-500
                         rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         ></div> */}
       </div>
@@ -512,7 +512,7 @@ export default function Committee1() {
                   {connection.type === 'curved-line' ? (
                     // Curved lines for level 0 (Chief Patron) with horizontal segment
                     <path
-                      d={`M ${connection.from.x} ${connection.from.y} 
+                      d={`M ${connection.from.x} ${connection.from.y}
                           L ${connection.from.x} ${midY - 20}
                           Q ${connection.from.x} ${midY} ${connection.from.x + (connection.to.x - connection.from.x) / 2} ${midY}
                           Q ${connection.to.x} ${midY} ${connection.to.x} ${midY + 20}
@@ -525,7 +525,7 @@ export default function Committee1() {
                   ) : (
                     // Direct curved lines for other levels
                     <path
-                      d={`M ${connection.from.x} ${connection.from.y} 
+                      d={`M ${connection.from.x} ${connection.from.y}
                           Q ${(connection.from.x + connection.to.x) / 2} ${midY} ${connection.to.x} ${connection.to.y}`}
                       stroke="#3b82f6"
                       strokeWidth="3"
@@ -587,8 +587,8 @@ export default function Committee1() {
           </p>
           <a
             href="mailto:csitss2025@rvce.edu.in"
-            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-full font-semibold 
-                       hover:bg-blue-50 hover:shadow-xl hover:scale-105 transform 
+            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-full font-semibold
+                       hover:bg-blue-50 hover:shadow-xl hover:scale-105 transform
                        transition-all duration-300 shadow-lg"
           >
             csitss2025@rvce.edu.in
