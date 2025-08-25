@@ -1,39 +1,15 @@
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
-function registration() {
-  // const TableData = {
-  //   columns: [
-  //     "DELEGATES",
-  //     "INDIAN DELEGATES AMOUNT IN RS.\n ",
-  //     "FOREIGN DELEGATES AMOUNT IN USD.",
-  //   ],
-
-  //   rows: [
-  //     ["Regular Registrations from September 16, 2023", "", ""],
-  //     ["Students (IEEE Members) ", "Rs. 5,000", "USD. 100"],
-  //     ["Students (Non-IEEE Members)", "Rs. 6,500", "USD. 130"],
-  //     ["Faculty (IEEE Members) ", "Rs. 6,000", "USD. 125"],
-  //     ["Faculty (Non-IEEE Members)", "Rs. 8,000", "USD. 160"],
-  //     ["Industry Professionals (IEEE Members) ", "Rs. 10,000", "USD. 200"],
-  //     ["Industry Professionals (Non-IEEE Members) ", "Rs. 13,500", "USD. 240"],
-  //     ["Pre Conference Tutorial", "Rs. 500", "USD. 50"],
-  //   ],
-  // };
-
-  // const EarlyBirdTableData = {
-  //   rows: [
-  //     ["Early Bird Registrations before September 15, 2023:", "", ""],
-  //     ["Students ", "Rs. 4,000", "USD. 75"],
-  //     ["Faculty ", "Rs. 5,000", "USD. 100"],
-  //   ],
-  // };
+function Registration() {
+  // ...existing code...
 
   return (
     <>
-      <div className="p-4">
+      <div className="p-4 bg-gray-50 font-sans">
         {' '}
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800">
             Registration
           </h2>
           <p className="mt-4 text-gray-600 text-sm sm:text-base">
@@ -51,30 +27,7 @@ function registration() {
             The details of the registration fees are as follows:
           </p>
         </section>
-        {/* <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold sm:text-4xl">
-            Registration Details
-          </h2>
-          <p className="mt-4 text-gray-600">
-            <b>Beneficiary Name: </b>
-            PRINCIPAL, RVCE
-            <br />
-            <b>Bank Account Number: </b>
-            136010112055
-            <br />
-            <b>Bank Name: </b>
-            KOTAK MAHINDRA BANK
-            <br />
-            <b>Branch Name: </b>
-            RVCE Campus, Bengaluru
-            <br />
-            <b>IFSC Code: </b>
-            KKBK0008053
-            <br />
-            <b>SWIFT Code: </b>
-            KKBKINBB
-          </p>
-        </section> */}{' '}
+  {/* ...existing code... */}
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
             Pricing Details
@@ -107,7 +60,7 @@ function registration() {
                     </th>
                     <th
                       colSpan={2}
-                      className="bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold px-2 sm:px-4 py-3 shadow-lg"
+                      className="bg-green-600 text-white font-bold px-2 sm:px-4 py-3 shadow-lg"
                     >
                       <span className="flex items-center justify-center gap-1 sm:gap-2">
                         <svg
@@ -218,7 +171,7 @@ function registration() {
                       colSpan={2}
                       className="px-2 py-2 text-xs sm:text-sm font-medium bg-gray-50"
                     >
-                      Pre Conference Tutorial
+                      Pre Conference Tutorial (20th August)
                     </th>
                     <td colSpan={4} className="px-2 py-2 text-xs sm:text-sm">
                       &#8377;500
@@ -251,7 +204,7 @@ function registration() {
                     </th>
                     <th
                       colSpan={2}
-                      className="bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold px-2 sm:px-4 py-3 shadow-lg"
+                      className="bg-green-600 text-white font-bold px-2 sm:px-4 py-3 shadow-lg"
                     >
                       <span className="flex items-center justify-center gap-1 sm:gap-2">
                         <svg
@@ -362,7 +315,7 @@ function registration() {
                       colSpan={2}
                       className="px-2 py-2 text-xs sm:text-sm font-medium bg-gray-50"
                     >
-                      Pre Conference Tutorial
+                      Pre Conference Tutorial (20th August)
                     </th>
                     <td colSpan={4} className="px-2 py-2 text-xs sm:text-sm">
                       $25
@@ -412,9 +365,14 @@ function registration() {
               </table>
             </div>
           </div>
-          <p>
+          <p className="mt-2 flex flex-col gap-2 mt-3">
+                        <strong>
+              <i className="text-sm bg-green-600 text-white p-2 rounded-lg">
+                *Listener/Attendee Fee is ₹1000
+              </i>
+            </strong>
             <strong>
-              <i className="text-red-800">
+              <i className="text-red-800 text-sm">
                 *All the pricing details mentioned above are inclusive of 18%
                 GST
               </i>
@@ -423,42 +381,124 @@ function registration() {
         </section>{' '}
         <section className="flex justify-center py-4 px-4">
           <a
-            href="https://rzp.io/rzp/anQbpCLM"
-            className="bg-blue-500 text-white py-3 px-4 sm:px-6 rounded-md text-center hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base font-medium shadow-lg"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white py-3 px-4 sm:px-6 rounded-lg text-center hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base font-medium shadow-md hover:shadow-lg"
           >
             Click Here to Pay Through Razorpay (Indian Delegates)
           </a>
         </section>{' '}
+
+        {/* New Professional UI Section for Registration Links */}
+        <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+                    Complete Your Registration
+                </h2>
+                <p className="mt-2 text-gray-600">
+                    Please select the appropriate registration form below.
+                </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                {/* Card 1: For Authors */}
+                <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center flex flex-col items-center">
+                    <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                        For Authors of Accepted Papers
+                    </h3>
+                    <p className="text-gray-500 mb-4">
+                        Registration (Authors) - CSITSS 2025
+                    </p>
+                <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50">
+                      <Image
+                        src="/authorQR.png"
+                        alt="QR Code for Attendee Registration"
+                        width={160}
+                        height={160}
+                        className="w-40 h-40 object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src =
+                            "https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found";
+                        }}
+                      />
+                    </div>
+                    <a
+                        href="https://forms.gle/CavwwpknvbzvPHF77"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium"
+                    >
+                        Register as Author
+                    </a>
+                </div>
+
+                {/* Card 2: For Attendees */}
+                <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center flex flex-col items-center">
+                    <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                        For All Other Attendees
+                    </h3>
+                    <p className="text-gray-500 mb-4">
+                        (Pre-conference, Listener, Best Thesis Award)
+                    </p>
+                <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50">
+                      <Image
+                        src="/attendee.jpeg"
+                        alt="QR Code for Attendee Registration"
+                        width={160}
+                        height={160}
+                        className="w-40 h-40 object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src =
+                            "https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found";
+                        }}
+                      />
+                    </div>
+                    <a
+                        href="https://forms.gle/HjN9RNZC4K2S8pp7A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-gray-700 text-white py-2.5 px-5 rounded-md hover:bg-gray-800 transition-colors duration-300 font-medium"
+                    >
+                        Register as Attendee
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
             Registration Method for Foreign Delegates only
           </h2>
-          <p className="mt-4 text-gray-600 text-sm sm:text-base space-y-1">
-            <b>Beneficiary Name: </b>
-            PRINCIPAL, RVCE
-            <br />
-            <b>Bank Account Number: </b>
-            136010112055
-            <br />
-            <b>Bank Name: </b>
-            KOTAK MAHINDRA BANK
-            <br />
-            <b>Branch Name: </b>
-            RVCE Campus, Bengaluru
-            <br />
-            <b>IFSC Code: </b>
-            KKBK0008053
-            <br />
-            <b>SWIFT Code: </b>
-            KKBKINBB
-          </p>
+          <div className="mt-4 bg-white p-6 border rounded-lg shadow-sm">
+            <p className="text-gray-700 text-sm sm:text-base space-y-2">
+                <b>Beneficiary Name: </b>
+                PRINCIPAL, RVCE
+                <br />
+                <b>Bank Account Number: </b>
+                136010112055
+                <br />
+                <b>Bank Name: </b>
+                KOTAK MAHINDRA BANK
+                <br />
+                <b>Branch Name: </b>
+                RVCE Campus, Bengaluru
+                <br />
+                <b>IFSC Code: </b>
+                KKBK0008053
+                <br />
+                <b>SWIFT Code: </b>
+                KKBKINBB
+            </p>
+          </div>
         </section>{' '}
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <h3 className="text-lg sm:text-xl font-extrabold">
+          <h3 className="text-lg sm:text-xl font-extrabold text-gray-800">
             Instructions for Registration
           </h3>{' '}
           <br />
-          <ol className="list-decimal text-justify space-y-2 text-sm sm:text-base pl-4 sm:pl-6">
+          <ol className="list-decimal text-justify space-y-3 text-sm sm:text-base pl-4 sm:pl-6 text-gray-600">
             <li>At least one author per accepted paper has to register.</li>
             <li>
               At least one author must present their accepted paper in the
@@ -466,19 +506,19 @@ function registration() {
             </li>
             <li>
               Registration fee for the paper (
-              <span className="font-bold">with authorship</span>) includes
+              <span className="font-bold text-gray-700">with authorship</span>) includes
               access to the pre conference tutorial, conference proceedings, all
               technical sessions and presenter certificate.
             </li>
             <li>
               Registration fee for the{' '}
-              <span className="font-bold">pre conference tutorial</span>{' '}
+              <span className="font-bold text-gray-700">pre conference tutorial</span>{' '}
               includes access to the pre conference tutorial only (7th Nov
               2025).
             </li>
             <li>
               Registration fee for the{' '}
-              <span className="font-bold">
+              <span className="font-bold text-gray-700">
                 conference participation without authorship-attendee
               </span>{' '}
               is not entitled for paper publication, however participation
@@ -487,29 +527,29 @@ function registration() {
 
             <li>
               Registration for{' '}
-              <span className="font-bold">
+              <span className="font-bold text-gray-700">
                 Indian Delegates is through Razorpay
               </span>{' '}
               and{' '}
-              <span className="font-bold">
+              <span className="font-bold text-gray-700">
                 Foreign Delegates can use the account details
               </span>{' '}
               mentioned for bank transfer
             </li>
             <li>
               While registering for{' '}
-              <span className="font-bold">Best Thesis Award</span>, enter paper
+              <span className="font-bold text-gray-700">Best Thesis Award</span>, enter paper
               id as 9999
             </li>
           </ol>
         </section>
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           {' '}
-          <h3 className="text-lg sm:text-xl font-extrabold">
+          <h3 className="text-lg sm:text-xl font-extrabold text-gray-800">
             Important Notes
           </h3>{' '}
           <br />
-          <ol className="list-decimal text-justify space-y-2 text-sm sm:text-base pl-4 sm:pl-6">
+          <ol className="list-decimal text-justify space-y-3 text-sm sm:text-base pl-4 sm:pl-6 text-gray-600">
             <li>
               Registration category should be chosen appropriately from the
               aforementioned table.
@@ -517,7 +557,7 @@ function registration() {
             <li>Registration fees are not refundable or non-transferable.</li>
             <li>
               You must save the payment proof in{' '}
-              <span className="italic">pdf</span>. This payment proof file is to
+              <span className="italic font-semibold">pdf</span>. This payment proof file is to
               be attached in a section while filling the registration form.
             </li>
             <li>
@@ -536,12 +576,10 @@ function registration() {
             </li>
           </ol>
         </section>
-        {/*<section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <a className="text-center" href="https://forms.gle/NaKWRJ9gJjiyd4dX6"><p className="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-bounce text-4xl font-bold">Click Here To Register</p></a>
-                </section>  */}
+  {/* ...existing code... */}
       </div>
     </>
   )
 }
 
-export default registration
+export default Registration;

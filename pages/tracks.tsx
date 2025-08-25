@@ -347,9 +347,9 @@ Old tracks array commented out for reference.
               <div className="relative p-8">
                 <div className="mb-4 flex items-center justify-between">
                   <span className="text-3xl">{track.icon}</span>
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white bg-opacity-30 text-xl font-bold text-white">
+                  {/* <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white bg-opacity-30 text-xl font-bold text-white">
                     {track.id}
-                  </span>
+                  </span> */}
                 </div>
 
                 <h3 className="mb-2 text-xl font-bold text-white sm:text-2xl">
