@@ -171,7 +171,7 @@ function Registration() {
                       colSpan={2}
                       className="px-2 py-2 text-xs sm:text-sm font-medium bg-gray-50"
                     >
-                      Pre Conference Tutorial (20th August)
+                      Pre Conference Tutorial (20th November 2025)
                     </th>
                     <td colSpan={4} className="px-2 py-2 text-xs sm:text-sm">
                       &#8377;500
@@ -315,7 +315,7 @@ function Registration() {
                       colSpan={2}
                       className="px-2 py-2 text-xs sm:text-sm font-medium bg-gray-50"
                     >
-                      Pre Conference Tutorial (20th August)
+                      Pre Conference Tutorial (20th November 2025)
                     </th>
                     <td colSpan={4} className="px-2 py-2 text-xs sm:text-sm">
                       $25
