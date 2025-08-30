@@ -19,17 +19,23 @@ const keynoteSpeakers: SpeakerType[] = [
   },
   {
     id: 2,
-    name: 'Chaitra Vedullapalli',
-    designation: 'Cofounder & CMO, Meylah',
-    imageLink: './speakers/chaitra_v.jpeg',
-  },
-  {
-    id: 3,
-    name: 'Prof. Dr.-Ing. Vinod Rajamani',
-    designation: 'Professor, University of Applied Sciences and Arts Dortmund',
-    imageLink:
-      'https://www.fh-dortmund.de/kontakt-daten/Rajamani-Vinod.php.media/82194/Vinod-Rajamani_Portrait.jpg.scaled/3312b7eed140ac54332cfc22f82c192c.jpg',
-  },
+    name: "Prof. Dr. Stephan Weyers",
+    designation: "Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund.",
+    imageLink: "/speakers/stephanWeyers.png",
+  }
+  // {
+  //   id: 2,
+  //   name: 'Chaitra Vedullapalli',
+  //   designation: 'Cofounder & CMO, Meylah',
+  //   imageLink: './speakers/chaitra_v.jpeg',
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Prof. Dr.-Ing. Vinod Rajamani',
+  //   designation: 'Professor, University of Applied Sciences and Arts Dortmund',
+  //   imageLink:
+  //     'https://www.fh-dortmund.de/kontakt-daten/Rajamani-Vinod.php.media/82194/Vinod-Rajamani_Portrait.jpg.scaled/3312b7eed140ac54332cfc22f82c192c.jpg',
+  // },
 ]
 
 const aiForAllSpeakers: SpeakerType[] = [
