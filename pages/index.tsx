@@ -61,98 +61,135 @@ export default function Index() {
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">
             {' '}
-            <HeaderImages />{' '}
-            <div className="mt-8 flex w-full items-center justify-center md:mt-28">
-              <div className="w-full rounded-3xl border border-white/20 bg-white/10 px-10 py-8 text-center shadow-2xl backdrop-blur-[2px] dark:border-gray-700/30 dark:bg-black/15">
-                <h1 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text break-words px-2 text-center text-2xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-                  WELCOME TO CSITSS-2025
-                </h1>
-                <p className="mt-4 px-2 text-base font-semibold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-lg sm:text-xl lg:text-2xl">
-                  9<sup className="text-sm">th</sup> International Conference on
-                  Computational
-                  <br className="hidden xs:block" />
-                  Systems and Information Technology for Sustainable Solutions
-                </p>
-                <div className="mb-4 mt-6">
-                  <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg">
-                    Organized by
-                  </p>
-                  <h4 className="px-2 text-lg font-bold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-xl sm:text-2xl lg:text-3xl">
-                    RV College of Engineering<sup className="text-sm">®</sup>
-                  </h4>
+            <HeaderImages />
+            {/* Connected Date and Welcome Cards */}
+            <div className="mt-6 flex w-full items-center justify-center">
+              <div className="relative w-full max-w-6xl">
+                {/* Conference Date Section */}
+                <div className="flex w-full items-center justify-center">
+                  <div className="rounded-t-3xl border border-white/30 border-b-0 bg-white/10 px-6 py-3 text-center shadow-xl backdrop-blur-[2px] dark:border-gray-600/40 dark:bg-black/20 sm:px-10 sm:py-5 lg:px-12 lg:py-6">
+                    <div className="flex items-center justify-center gap-2 sm:gap-3 lg:gap-4">
+                      <svg
+                        className="h-6 w-6 text-white/90 sm:h-8 sm:w-8 lg:h-10 lg:w-10"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                      </svg>
+                      <div>
+                        <p className="text-xs font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] sm:text-sm lg:text-base">
+                          Conference Dates
+                        </p>
+                        <h3 className="whitespace-nowrap text-lg font-bold text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.9)] sm:text-xl lg:text-2xl xl:text-3xl">
+                          November 20-22, 2025
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4">
-                  <a
-                    href="https://cmt3.research.microsoft.com/CSITSS2025"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-blue-500 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
-                  >
-                    <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
-                    <span className="relative flex items-center justify-center gap-2">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                        />
-                      </svg>
-                      Submit Paper
-                    </span>
-                  </a>
 
-                  <a
-                    href="#timeline"
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95"
-                  >
-                    <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
-                    <span className="relative flex items-center justify-center gap-2">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                {/* Main Welcome Card - Connected */}
+                <div className="flex w-full items-center justify-center">
+                  <div className="w-full rounded-b-3xl rounded-t-none border border-white/20 border-t-white/30 bg-white/10 px-10 py-8 text-center shadow-2xl backdrop-blur-[2px] dark:border-gray-700/30 dark:border-t-gray-600/40 dark:bg-black/15">
+                    <h1 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text break-words px-2 text-center text-2xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+                      WELCOME TO CSITSS-2025
+                    </h1>
+                    <p className="mt-4 px-2 text-base font-semibold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-lg sm:text-xl lg:text-2xl">
+                      9<sup className="text-sm">th</sup> International
+                      Conference on Computational
+                      <br className="hidden xs:block" />
+                      Systems and Information Technology for Sustainable
+                      Solutions
+                    </p>
+                    <div className="mb-4 mt-6">
+                      <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg">
+                        Organized by
+                      </p>
+                      <h4 className="px-2 text-lg font-bold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-xl sm:text-2xl lg:text-3xl">
+                        RV College of Engineering
+                        <sup className="text-sm">®</sup>
+                      </h4>
+                    </div>
+                    <div className="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4">
+                      <a
+                        href="https://cmt3.research.microsoft.com/CSITSS2025"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-blue-500 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      Timeline
-                    </span>
-                  </a>
+                        <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
+                        <span className="relative flex items-center justify-center gap-2">
+                          <svg
+                            className="h-5 w-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                            />
+                          </svg>
+                          Submit Paper
+                        </span>
+                      </a>
 
-                  <a
-                    href="CSITSS 2024 Brochure.pdf"
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
-                    download
-                  >
-                    <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
-                    <span className="relative flex items-center justify-center gap-2">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                      <a
+                        href="#timeline"
+                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        />
-                      </svg>
-                      Download Flyer
-                    </span>
-                  </a>
+                        <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
+                        <span className="relative flex items-center justify-center gap-2">
+                          <svg
+                            className="h-5 w-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                          Timeline
+                        </span>
+                      </a>
+
+                      <a
+                        href="CSITSS 2024 Brochure.pdf"
+                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
+                        download
+                      >
+                        <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
+                        <span className="relative flex items-center justify-center gap-2">
+                          <svg
+                            className="h-5 w-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                            />
+                          </svg>
+                          Download Flyer
+                        </span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -243,23 +280,34 @@ export default function Index() {
 
         {/* IEEE Publication Information Section */}
         <section className="mx-auto max-w-screen-xl px-4 pt-12 sm:px-6 lg:px-8">
-            <div className="relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
-                <div className="flex flex-col items-center p-6 text-center md:flex-row md:p-8 md:text-left">
-                    <div className="flex-shrink-0">
-                        <svg className="h-16 w-16 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                        </svg>
-                    </div>
-                    <div className="mt-4 md:ml-6 md:mt-0">
-                        <h3 className="text-xl font-bold text-gray-800">
-                            Publication in IEEE Xplore
-                        </h3>
-                        <p className="mt-2 text-lg text-gray-600">
-                            All accepted and presented papers will be published in the IEEE Xplore Digital Library.
-                        </p>
-                    </div>
-                </div>
+          <div className="relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+            <div className="flex flex-col items-center p-6 text-center md:flex-row md:p-8 md:text-left">
+              <div className="flex-shrink-0">
+                <svg
+                  className="h-16 w-16 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                  />
+                </svg>
+              </div>
+              <div className="mt-4 md:ml-6 md:mt-0">
+                <h3 className="text-xl font-bold text-gray-800">
+                  Publication in IEEE Xplore
+                </h3>
+                <p className="mt-2 text-lg text-gray-600">
+                  All accepted and presented papers will be published in the
+                  IEEE Xplore Digital Library.
+                </p>
+              </div>
             </div>
+          </div>
         </section>
 
         {/* <Element name="test4" className="element"> */}
