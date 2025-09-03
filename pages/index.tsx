@@ -67,10 +67,10 @@ export default function Index() {
               <div className="relative w-full max-w-6xl">
                 {/* Conference Date Section */}
                 <div className="flex w-full items-center justify-center">
-                  <div className="rounded-t-3xl border border-white/30 border-b-0 bg-white/10 px-6 py-3 text-center shadow-xl backdrop-blur-[2px] dark:border-gray-600/40 dark:bg-black/20 sm:px-10 sm:py-5 lg:px-12 lg:py-6">
-                    <div className="flex items-center justify-center gap-2 sm:gap-3 lg:gap-4">
+                  <div className="rounded-2xl border border-white/30 bg-white/10 px-8 py-4 text-center shadow-xl backdrop-blur-[2px] dark:border-gray-600/40 dark:bg-black/20 sm:rounded-t-3xl sm:border-b-0 sm:px-10 sm:py-5 lg:px-12 lg:py-6">
+                    <div className="flex items-center justify-center gap-3">
                       <svg
-                        className="h-6 w-6 text-white/90 sm:h-8 sm:w-8 lg:h-10 lg:w-10"
+                        className="h-7 w-7 text-white/90 sm:h-8 sm:w-8 lg:h-10 lg:w-10"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -94,9 +94,9 @@ export default function Index() {
                   </div>
                 </div>
 
-                {/* Main Welcome Card - Connected */}
-                <div className="flex w-full items-center justify-center">
-                  <div className="w-full rounded-b-3xl rounded-t-none border border-white/20 border-t-white/30 bg-white/10 px-10 py-8 text-center shadow-2xl backdrop-blur-[2px] dark:border-gray-700/30 dark:border-t-gray-600/40 dark:bg-black/15">
+                {/* Main Welcome Card - Connected on larger screens, separated on mobile */}
+                <div className="mt-4 flex w-full items-center justify-center sm:mt-2">
+                  <div className="w-full rounded-2xl border border-white/20 bg-white/10 px-10 py-8 text-center shadow-2xl backdrop-blur-[2px] dark:border-gray-700/30 dark:bg-black/15 sm:rounded-b-3xl sm:rounded-t-none sm:border-t-white/30 dark:sm:border-t-gray-600/40">
                     <h1 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text break-words px-2 text-center text-2xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                       WELCOME TO CSITSS-2025
                     </h1>
