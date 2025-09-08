@@ -474,7 +474,7 @@ function Registration() {
           <div className="mt-4 bg-white p-6 border rounded-lg shadow-sm">
             <p className="text-gray-700 text-sm sm:text-base space-y-2">
                 <b>Beneficiary Name: </b>
-                PRINCIPAL, RVCE
+                The Principal, RV College of Engineering
                 <br />
                 <b>Bank Account Number: </b>
                 136010112055
