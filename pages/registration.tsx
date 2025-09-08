@@ -513,7 +513,7 @@ function Registration() {
             <li>
               Registration fee for the{' '}
               <span className="font-bold text-gray-700">pre conference tutorial</span>{' '}
-              includes access to the pre conference tutorial only (7th Nov
+              includes access to the pre conference tutorial only (20th Nov
               2025).
             </li>
             <li>
