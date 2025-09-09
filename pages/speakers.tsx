@@ -12,73 +12,23 @@ type SpeakerType = {
 const keynoteSpeakers: SpeakerType[] = [
   {
     id: 1,
-    name: 'Sri. S S Iyengar',
+    name: 'Prof. Dr. Jean Meyer',
     designation:
-      'Distinguished University Professor, Florida International University (FIU), Miami',
-    imageLink: './speakers/ss_iyenger.jpeg',
+      'President of the Technical University of Applied Sciences Wuerzburg-Schweinfurt (THWS)',
+    topic:'Humanoid Robots – More than just another Industrial Revolution',
+    imageLink: './speakers/Jean.png',
   },
   {
     id: 2,
-    name: "Prof. Dr. Stephan Weyers",
-    designation: "Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund.",
-    imageLink: "/speakers/stephanWeyers.png",
-  }
-  // {
-  //   id: 2,
-  //   name: 'Chaitra Vedullapalli',
-  //   designation: 'Cofounder & CMO, Meylah',
-  //   imageLink: './speakers/chaitra_v.jpeg',
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Prof. Dr.-Ing. Vinod Rajamani',
-  //   designation: 'Professor, University of Applied Sciences and Arts Dortmund',
-  //   imageLink:
-  //     'https://www.fh-dortmund.de/kontakt-daten/Rajamani-Vinod.php.media/82194/Vinod-Rajamani_Portrait.jpg.scaled/3312b7eed140ac54332cfc22f82c192c.jpg',
-  // },
+    name: 'Prof. Dr. Achim Förster',
+    designation: 'Vice President for International & Academic Affairs at THWS',
+    topic:'AI Regulation under the EU AI Act',
+    imageLink: './speakers/Achim.png',
+  },
+  
 ]
 
-const aiForAllSpeakers: SpeakerType[] = [
-  {
-    id: 4,
-    name: 'Mr. Raj Pagaku',
-    designation:
-      'VP Engineering, Security Business Unit, Juniper Networks India Pvt Ltd, Bengaluru, India',
-    topic: 'Inclusive AI: Shaping the Future for Everyone',
-    imageLink:
-      'https://media.licdn.com/dms/image/v2/D5603AQHYe3rt7tTUZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690629699833?e=1735776000&v=beta&t=kILq2XM2fufTdX-vVWqQWYw2E8EJGwS_sSRuuxW5dfs',
-  },
-  {
-    id: 5,
-    name: 'Dr. Nagaraju G',
-    designation:
-      'Director, Ophthalmology, Minto Eye Hospital, BMCRI, Bengaluru',
-    topic: 'AI in Health Care',
-    imageLink:
-      'https://mhbmcri.karnataka.gov.in/storage/pdf-files/DrNagraj.jpg',
-  },
-]
 
-const digitalTransformationSpeakers: SpeakerType[] = [
-  {
-    id: 6,
-    name: 'Dr. K B Shyam Prasad',
-    designation:
-      'Momentive Performance Materials India Pvt Ltd, India Technology Centre, Bengaluru',
-    topic: 'Accelerate Innovation through Digital Tools',
-    imageLink:
-      'https://media.licdn.com/dms/image/v2/C5603AQH8tHEbqXh4dg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517713735746?e=1735776000&v=beta&t=PEUeA-D3bFctLoqUEMUQ_8IAL_IlunJ3RPc2rVHb9kI',
-  },
-  {
-    id: 7,
-    name: 'Mr. Abhi Anand',
-    designation:
-      'Director (Financial Services Leader), PwC, Bagmane Tech Park, Bengaluru',
-    topic: 'Sustainable AI Applications',
-    imageLink:
-      'https://media.licdn.com/dms/image/v2/D5603AQHZ1kZTvzQ-tA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1692179908763?e=1735776000&v=beta&t=Rya_Qbez8e9baX4U9ZtaTIalpl8o95Z5xbyI_Gf_Q6Y',
-  },
-]
 
 const Speakers = () => {
   return (
@@ -99,15 +49,15 @@ const Speakers = () => {
           </div>
         ))}
       </div>
-
-      {/* Pre Conference Speakers Section */}
+{/* 
+      
       <div className="mt-16 flex justify-center">
         <h1 className="w-fit rounded-full bg-gradient-to-r from-teal-600 via-green-600 to-yellow-600 bg-clip-text px-6 py-3 text-4xl font-extrabold text-transparent shadow-lg">
           Invited Speakers
         </h1>
       </div>
 
-      {/* AI for All Track */}
+     
       <div className="mt-12 flex justify-center">
         <h2 className="w-fit rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text px-6 py-3 text-3xl font-extrabold text-transparent shadow-lg">
           Track 1: AI for All
@@ -124,7 +74,7 @@ const Speakers = () => {
         ))}
       </div>
 
-      {/* Digital Transformation Track */}
+
       <div className="mt-16 flex justify-center">
         <h2 className="w-fit rounded-full bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 bg-clip-text px-6 py-3 text-3xl font-extrabold text-transparent shadow-lg">
           Track 2: Digital Transformation
@@ -140,7 +90,9 @@ const Speakers = () => {
           </div>
         ))}
       </div>
+   */}
     </div>
+       
   )
 }
 
