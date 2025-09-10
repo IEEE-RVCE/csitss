@@ -4,7 +4,6 @@
 // import { Element, ScrollLink } from 'react-scroll'
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
-
 import Gallery from '../components/Gallery'
 
 // const image = {
@@ -107,7 +106,12 @@ export default function Index() {
                       Systems and Information Technology for Sustainable
                       Solutions
                     </p>
-                    <div className="mb-4 mt-6">
+                    <div className="my-3">
+                      <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg  lg:text-xl">
+                        CONFERENCE RECORD <b># 67709</b>
+                      </p>
+                    </div>
+                    <div className="mb-4 mt-2">
                       <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg">
                         Organized by
                       </p>
