@@ -33,7 +33,7 @@ const CustomTimeline = () => {
     },
     {
       label: 'Registration Deadline',
-      date: '25th Oct 2025',
+      date: '10th Oct 2025',
     },
   ]
 
