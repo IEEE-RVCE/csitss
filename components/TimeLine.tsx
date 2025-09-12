@@ -27,7 +27,10 @@ const CustomTimeline = () => {
       label: 'Early Bird Registration Deadline',
       date: '18th Sept 2025',
     },
-
+    {
+            label: 'Camera-Ready Submission Closes',
+      date: '10th Oct 2025 (Hard Deadline)',
+    },
     {
       label: 'Registration Deadline',
       date: '25th Oct 2025',
