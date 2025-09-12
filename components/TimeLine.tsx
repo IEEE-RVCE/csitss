@@ -19,14 +19,15 @@ const CustomTimeline = () => {
       label: 'Acceptance Notification',
       date: '5th Sept 2025',
     },
+        {
+      label: 'Camera-Ready Submission Opens',
+      date: '12th Sept 2025',
+    },
     {
       label: 'Early Bird Registration Deadline',
       date: '18th Sept 2025',
     },
-    {
-      label: 'Camera-Ready Submission Opens',
-      date: '10th Oct 2025',
-    },
+
     {
       label: 'Registration Deadline',
       date: '25th Oct 2025',
