@@ -20,7 +20,8 @@ const keynoteSpeakers: SpeakerType[] = [
   {
     id: 2,
     name: "Prof. Dr. Stephan Weyers",
-    designation: "Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund.",
+    designation: "Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund",
+    topic: "Navigating the Future: Engineering Education for Sustainability and Employability",
     imageLink: "/speakers/stephanWeyers.png",
   },
   {
