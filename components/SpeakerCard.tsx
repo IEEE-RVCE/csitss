@@ -10,31 +10,28 @@ type SpeakerType = {
 
 const SpeakerCard = ({ speaker }: { speaker: SpeakerType }) => {
   return (
-    <div
-      key={speaker.id}
-      className="hover:border-gradient-to-r relative flex w-72 flex-col space-y-3 rounded-3xl border-2 border-transparent bg-white p-4 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
-    >
+    <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
       {/* Image Section */}
-      <div className="relative h-64 w-full overflow-hidden rounded-xl shadow-lg">
+      <div className="relative h-64 w-full overflow-hidden">
         <img
           src={speaker.imageLink}
-          className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+          className="h-full w-full object-cover"
           alt={speaker.name}
         />
       </div>
 
       {/* Text Section */}
-      <div className="text-center">
-        <h1 className="text-xl font-semibold text-gray-800">{speaker.name}</h1>
-        <h2 className="mt-1 text-sm text-gray-500">{speaker.designation}</h2>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">{speaker.name}</h3>
+        <p className="text-sm text-gray-600 leading-relaxed mb-3">{speaker.designation}</p>
         {speaker.topic && (
-          <p className="mt-2 text-sm font-medium italic text-gray-600">
-            Topic: {speaker.topic}
-          </p>
+          <div className="mt-4 pt-3 border-t border-gray-100">
+            <p className="text-sm font-medium text-blue-600">
+              <span className="text-gray-500">Topic:</span> {speaker.topic}
+            </p>
+          </div>
         )}
       </div>
-
-      {/* Hover Overlay Effect */}
     </div>
   )
 }

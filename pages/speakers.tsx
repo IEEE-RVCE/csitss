@@ -22,20 +22,33 @@ const keynoteSpeakers: SpeakerType[] = [
     name: "Prof. Dr. Stephan Weyers",
     designation: "Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund.",
     imageLink: "/speakers/stephanWeyers.png",
+  },
+  {
+    id: 3,
+    name: "Prof. Dr. Jean Meyer",
+    designation: "President of THWS",
+    topic: "Humanoid Robots – More than just another Industrial Revolution",
+    imageLink: "/speakers/jean.png",
   }
+]
+
+const plenarySpeakers: SpeakerType[] = [
+  // Add your plenary speaker data here
+  // Example:
   // {
-  //   id: 2,
-  //   name: 'Chaitra Vedullapalli',
-  //   designation: 'Cofounder & CMO, Meylah',
-  //   imageLink: './speakers/chaitra_v.jpeg',
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Prof. Dr.-Ing. Vinod Rajamani',
-  //   designation: 'Professor, University of Applied Sciences and Arts Dortmund',
-  //   imageLink:
-  //     'https://www.fh-dortmund.de/kontakt-daten/Rajamani-Vinod.php.media/82194/Vinod-Rajamani_Portrait.jpg.scaled/3312b7eed140ac54332cfc22f82c192c.jpg',
-  // },
+  //   id: 10,
+  //   name: 'Plenary Speaker Name',
+  //   designation: 'Title and Organization',
+  //   topic: 'Talk Topic',
+  //   imageLink: '/speakers/plenary-speaker.jpg',
+  // }
+  {
+    id: 1,
+    name: "Prof. Dr. Achim Förster",
+    designation: "Vice President for International & Academic Affairs at THWS",
+    topic: "AI Regulation under the EU AI Act",
+    imageLink: "/speakers/achim.png",
+  }
 ]
 
 const aiForAllSpeakers: SpeakerType[] = [
@@ -81,64 +94,71 @@ const digitalTransformationSpeakers: SpeakerType[] = [
 ]
 
 const Speakers = () => {
+  const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }) => (
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-2">{title}</h2>
+      {subtitle && <p className="text-lg text-gray-600">{subtitle}</p>}
+      <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+    </div>
+  )
+
+  const SpeakerGrid = ({ speakers }: { speakers: SpeakerType[] }) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
+      {speakers.map((speaker) => (
+        <SpeakerCard key={speaker.id} speaker={speaker} />
+      ))}
+    </div>
+  )
+
   return (
-    <div className="min-h-screen bg-white py-10">
-      {/* Keynote Speakers Section */}
-      <div className="flex justify-center">
-        <h1 className="w-fit rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text px-6 py-3 text-4xl font-extrabold text-transparent shadow-lg">
-          Keynote Speakers
-        </h1>
-      </div>
-      <div className="mt-12 flex flex-wrap justify-center gap-8 py-6 px-4 lg:px-16">
-        {keynoteSpeakers.map((speaker) => (
-          <div
-            key={speaker.id}
-            className="hover:border-gradient-to-r w-full max-w-xs rounded-2xl border-2 border-transparent bg-white bg-clip-border p-6 shadow-lg transition-all hover:scale-105 hover:from-purple-500 hover:via-indigo-500 hover:to-blue-500 hover:shadow-2xl"
-          >
-            <SpeakerCard speaker={speaker} />
-          </div>
-        ))}
-      </div>
+    <div className="min-h-screen bg-gray-50 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Page Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Conference Speakers</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Meet our distinguished speakers who will share their expertise and insights at CSITSS 2025
+          </p>
+        </div>
 
-      {/* Pre Conference Speakers Section */}
-      <div className="mt-16 flex justify-center">
-        <h1 className="w-fit rounded-full bg-gradient-to-r from-teal-600 via-green-600 to-yellow-600 bg-clip-text px-6 py-3 text-4xl font-extrabold text-transparent shadow-lg">
-          Invited Speakers
-        </h1>
-      </div>
+        {/* Keynote Speakers Section */}
+        <section className="mb-20">
+          <SectionHeader title="Keynote Speakers" />
+          <SpeakerGrid speakers={keynoteSpeakers} />
+        </section>
 
-      {/* AI for All Track */}
-      <div className="mt-12 flex justify-center">
-        <h2 className="w-fit rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text px-6 py-3 text-3xl font-extrabold text-transparent shadow-lg">
-          Track 1: AI for All
-        </h2>
-      </div>
-      <div className="mt-8 flex flex-wrap justify-center gap-8 py-6 px-4 lg:px-16">
-        {aiForAllSpeakers.map((speaker) => (
-          <div
-            key={speaker.id}
-            className="hover:border-gradient-to-r w-full max-w-xs rounded-2xl border-2 border-transparent bg-white bg-clip-border p-6 shadow-lg transition-all hover:scale-105 hover:from-purple-500 hover:via-indigo-500 hover:to-blue-500 hover:shadow-2xl"
-          >
-            <SpeakerCard speaker={speaker} />
-          </div>
-        ))}
-      </div>
+        {/* Plenary Speakers Section */}
+        {plenarySpeakers.length > 0 && (
+          <section className="mb-20">
+            <SectionHeader title="Plenary Speakers" />
+            <SpeakerGrid speakers={plenarySpeakers} />
+          </section>
+        )}
 
-      {/* Digital Transformation Track */}
-      <div className="mt-16 flex justify-center">
-        <h2 className="w-fit rounded-full bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 bg-clip-text px-6 py-3 text-3xl font-extrabold text-transparent shadow-lg">
-          Track 2: Digital Transformation
-        </h2>
-      </div>
-      <div className="mt-8 flex flex-wrap justify-center gap-8 py-6 px-4 lg:px-16">
-        {digitalTransformationSpeakers.map((speaker) => (
-          <div
-            key={speaker.id}
-            className="hover:border-gradient-to-r w-full max-w-xs rounded-2xl border-2 border-transparent bg-white bg-clip-border p-6 shadow-lg transition-all hover:scale-105 hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:shadow-2xl"
-          >
-            <SpeakerCard speaker={speaker} />
+        {/* Invited Speakers Section */}
+        <section className="mb-20">
+          <SectionHeader title="Invited Speakers" subtitle="Special presentations across different tracks" />
+          
+          {/* AI for All Track */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">Track 1: AI for All</h3>
+              <div className="w-16 h-0.5 bg-purple-500 mx-auto rounded"></div>
+            </div>
+            <SpeakerGrid speakers={aiForAllSpeakers} />
           </div>
-        ))}
+
+          {/* Digital Transformation Track */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">Track 2: Digital Transformation</h3>
+              <div className="w-16 h-0.5 bg-green-500 mx-auto rounded"></div>
+            </div>
+            <SpeakerGrid speakers={digitalTransformationSpeakers} />
+          </div>
+        </section>
+
       </div>
     </div>
   )
