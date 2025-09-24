@@ -105,7 +105,7 @@ Old tracks array commented out for reference.
     {
       id: 'B',
       title: 'Advanced Electronics and Communication Systems',
-      chair: 'Dr Shylashree N',
+      chair: 'Dr Nagamani',
       gradient: 'from-purple-500 to-pink-500',
       icon: '📡',
       items: [

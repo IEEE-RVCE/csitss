@@ -16,10 +16,11 @@ function Awards() {
           <i>ii.</i> Best Faculty and Student Paper
         </p>{' '}
         <p className="my-4 text-justify text-base font-medium text-gray-600 sm:text-lg lg:text-xl">
-          Ph.D. scholars, who have been awarded their Ph.D. degree in the
-          conference themes specified, from recognized universities are eligible
-          to apply for CSITSS 2025 Best Ph.D. Thesis Award. Ph.D. Thesis (in pdf
-          format) and degree certificate can be submitted to the{' '}
+          Ph.D. scholars, who have been awarded their Ph.D. degree (From June
+          2024 to July 2025) in the conference themes specified, from recognized
+          universities are eligible to apply for CSITSS 2025 Best Ph.D. Thesis
+          Award. Ph.D. Thesis (in pdf format) and degree certificate can be
+          submitted to the{' '}
           <a
             href="mailto:csitss2025@rvce.edu.in?subject=CSITSS 2025 Best Ph.D. Thesis Award Application"
             className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 text-sm sm:text-base cursor-pointer"
@@ -31,7 +32,8 @@ function Awards() {
             csitss2025@rvce.edu.in
           </a>
           . Application fees: Rs.1000/-. While registering for{' '}
-          <b>Best Thesis award</b>, enter the paper ID as 9999
+          <b>Best Thesis award</b>, enter the paper ID as 9999. Last date for
+          submission 15th October 2025.
         </p>
         {/* <div className="mt-6">
           <div className="mt-4 text-center">
