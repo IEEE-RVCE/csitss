@@ -19,17 +19,18 @@ const keynoteSpeakers: SpeakerType[] = [
   },
   {
     id: 2,
-    name: "Prof. Dr. Stephan Weyers",
-    designation: "Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund.",
-    imageLink: "/speakers/stephanWeyers.png",
+    name: 'Prof. Dr. Stephan Weyers',
+    designation:
+      'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund.',
+    imageLink: '/speakers/stephanWeyers.png',
   },
   {
     id: 3,
-    name: "Prof. Dr. Jean Meyer",
-    designation: "President of THWS",
-    topic: "Humanoid Robots – More than just another Industrial Revolution",
-    imageLink: "/speakers/jean.png",
-  }
+    name: 'Prof. Dr. Jean Meyer',
+    designation: 'President of THWS',
+    topic: 'Humanoid Robots - More than just another Industrial Revolution',
+    imageLink: '/speakers/jean.png',
+  },
 ]
 
 const plenarySpeakers: SpeakerType[] = [
@@ -44,11 +45,20 @@ const plenarySpeakers: SpeakerType[] = [
   // }
   {
     id: 1,
-    name: "Prof. Dr. Achim Förster",
-    designation: "Vice President for International & Academic Affairs at THWS",
-    topic: "AI Regulation under the EU AI Act",
-    imageLink: "/speakers/achim.png",
-  }
+    name: 'Prof. Dr. Achim Förster',
+    designation: 'Vice President for International & Academic Affairs at THWS',
+    topic: 'AI Regulation under the EU AI Act',
+    imageLink: '/speakers/achim.png',
+  },
+  {
+    id: 2,
+    name: 'Prof. Dr. Vinod Rajamani',
+    designation:
+      'Department of Mechanical Engg. Professor "Vehicle dynamics", Vice Dean of Academics and Internationalisation, Chairman of Indo-German Collaboration at Auslandsgesellschaft.de',
+    topic:
+      'International Research Collaboration in Sustainability at Fachhochschule Dortmund',
+    imageLink: '/speakers/vinod.png',
+  },
 ]
 
 const aiForAllSpeakers: SpeakerType[] = [
@@ -94,7 +104,13 @@ const digitalTransformationSpeakers: SpeakerType[] = [
 ]
 
 const Speakers = () => {
-  const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }) => (
+  const SectionHeader = ({
+    title,
+    subtitle,
+  }: {
+    title: string
+    subtitle?: string
+  }) => (
     <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-gray-900 mb-2">{title}</h2>
       {subtitle && <p className="text-lg text-gray-600">{subtitle}</p>}
@@ -113,12 +129,14 @@ const Speakers = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Page Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Conference Speakers</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Conference Speakers
+          </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet our distinguished speakers who will share their expertise and insights at CSITSS 2025
+            Meet our distinguished speakers who will share their expertise and
+            insights at CSITSS 2025
           </p>
         </div>
 
@@ -138,12 +156,17 @@ const Speakers = () => {
 
         {/* Invited Speakers Section */}
         <section className="mb-20">
-          <SectionHeader title="Invited Speakers" subtitle="Special presentations across different tracks" />
-          
+          <SectionHeader
+            title="Invited Speakers"
+            subtitle="Special presentations across different tracks"
+          />
+
           {/* AI for All Track */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">Track 1: AI for All</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                Track 1: AI for All
+              </h3>
               <div className="w-16 h-0.5 bg-purple-500 mx-auto rounded"></div>
             </div>
             <SpeakerGrid speakers={aiForAllSpeakers} />
@@ -152,13 +175,14 @@ const Speakers = () => {
           {/* Digital Transformation Track */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">Track 2: Digital Transformation</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                Track 2: Digital Transformation
+              </h3>
               <div className="w-16 h-0.5 bg-green-500 mx-auto rounded"></div>
             </div>
             <SpeakerGrid speakers={digitalTransformationSpeakers} />
           </div>
         </section>
-
       </div>
     </div>
   )
