@@ -5,6 +5,10 @@ import { MantineProvider, MantineThemeOverride } from '@mantine/core'
 import type { AppProps } from 'next/app'
 import WrapApp from '../components/NavBar'
 import { NextSeo } from 'next-seo'
+import { useState } from 'react'
+import { useRouter } from 'next/router'
+import ScheduleFAB from '../components/ScheduleFAB'
+import ScheduleModal from '../components/ScheduleModal'
 
 const theme: MantineThemeOverride = {
   // colorScheme: 'light',
@@ -15,6 +19,12 @@ const theme: MantineThemeOverride = {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false)
+  const router = useRouter()
+  
+  // Only show Schedule button on these pages
+  const showScheduleButton = ['/registration', '/speakers', '/tracks'].includes(router.pathname)
+
   return (
     <MantineProvider
       theme={theme}
@@ -46,6 +56,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div className="w-full max-w-none min-h-screen px-0 sm:px-4">
           <Component {...pageProps} />
         </div>
+
+        {/* Schedule FAB and Modal - Only on specific pages */}
+        {showScheduleButton && (
+          <>
+            <ScheduleFAB onClick={() => setIsScheduleModalOpen(true)} />
+            <ScheduleModal
+              isOpen={isScheduleModalOpen}
+              onClose={() => setIsScheduleModalOpen(false)}
+            />
+          </>
+        )}
 
         <div id="recaptcha-container" />
       </WrapApp>
