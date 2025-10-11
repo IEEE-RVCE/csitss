@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import React from 'react';
+import React from 'react'
 
 function Registration() {
   // ...existing code...
@@ -27,7 +26,7 @@ function Registration() {
             The details of the registration fees are as follows:
           </p>
         </section>
-  {/* ...existing code... */}
+        {/* ...existing code... */}
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
             Pricing Details
@@ -365,8 +364,8 @@ function Registration() {
               </table>
             </div>
           </div>
-          <p className="mt-2 flex flex-col gap-2 mt-3">
-                        <strong>
+          <p className=" flex flex-col gap-2 mt-3">
+            <strong>
               <i className="text-sm bg-green-600 text-white p-2 rounded-lg">
                 *Listener/Attendee Fee is ₹1000
               </i>
@@ -381,117 +380,13 @@ function Registration() {
         </section>{' '}
         <section className="flex justify-center py-4 px-4">
           <a
-            href="https://rzp.io/rzp/Fk3gkFZV"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white py-3 px-4 sm:px-6 rounded-lg text-center hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base font-medium shadow-md hover:shadow-lg"
+            className="bg-blue-600 text-white py-3 px-4 sm:px-6 rounded-lg text-center hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base font-medium shadow-md hover:shadow-lg pointer-events-none cursor-not-allowed "
           >
-            Click Here to Pay Through Razorpay (Indian Delegates)
+            Registration Closed
           </a>
-        </section>{' '}
-
-        {/* New Professional UI Section for Registration Links */}
-        <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-            <div className="text-center mb-8">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-                    Complete Your Registration
-                </h2>
-                <p className="mt-2 text-gray-600">
-                    Please select the appropriate registration form below.
-                </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                {/* Card 1: For Authors */}
-                <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center flex flex-col items-center">
-                    <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                        For Authors of Accepted Papers
-                    </h3>
-                    <p className="text-gray-500 mb-4">
-                        Registration (Authors) - CSITSS 2025
-                    </p>
-                <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50">
-                      <Image
-                        src="/authorQR.png"
-                        alt="QR Code for Attendee Registration"
-                        width={160}
-                        height={160}
-                        className="w-40 h-40 object-cover"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src =
-                            "https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found";
-                        }}
-                      />
-                    </div>
-                    <a
-                        href="https://forms.gle/CavwwpknvbzvPHF77"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium"
-                    >
-                        Register as Author
-                    </a>
-                </div>
-
-                {/* Card 2: For Attendees */}
-                <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center flex flex-col items-center">
-                    <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                        For All Other Attendees
-                    </h3>
-                    <p className="text-gray-500 mb-4">
-                        (Pre-conference, Listener, Best Thesis Award)
-                    </p>
-                <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50">
-                      <Image
-                        src="/attendee.jpeg"
-                        alt="QR Code for Attendee Registration"
-                        width={160}
-                        height={160}
-                        className="w-40 h-40 object-cover"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src =
-                            "https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found";
-                        }}
-                      />
-                    </div>
-                    <a
-                        href="https://forms.gle/HjN9RNZC4K2S8pp7A"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full bg-gray-700 text-white py-2.5 px-5 rounded-md hover:bg-gray-800 transition-colors duration-300 font-medium"
-                    >
-                        Register as Attendee
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
-            Registration Method for Foreign Delegates only
-          </h2>
-          <div className="mt-4 bg-white p-6 border rounded-lg shadow-sm">
-            <p className="text-gray-700 text-sm sm:text-base space-y-2">
-                <b>Beneficiary Name: </b>
-                The Principal, RV College of Engineering
-                <br />
-                <b>Bank Account Number: </b>
-                136010112055
-                <br />
-                <b>Bank Name: </b>
-                KOTAK MAHINDRA BANK
-                <br />
-                <b>Branch Name: </b>
-                RVCE Campus, Bengaluru
-                <br />
-                <b>IFSC Code: </b>
-                KKBK0008053
-                <br />
-                <b>SWIFT Code: </b>
-                KKBKINBB
-            </p>
-          </div>
         </section>{' '}
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h3 className="text-lg sm:text-xl font-extrabold text-gray-800">
@@ -506,13 +401,15 @@ function Registration() {
             </li>
             <li>
               Registration fee for the paper (
-              <span className="font-bold text-gray-700">with authorship</span>) includes
-              access to the pre conference tutorial, conference proceedings, all
-              technical sessions and presenter certificate.
+              <span className="font-bold text-gray-700">with authorship</span>)
+              includes access to the pre conference tutorial, conference
+              proceedings, all technical sessions and presenter certificate.
             </li>
             <li>
               Registration fee for the{' '}
-              <span className="font-bold text-gray-700">pre conference tutorial</span>{' '}
+              <span className="font-bold text-gray-700">
+                pre conference tutorial
+              </span>{' '}
               includes access to the pre conference tutorial only (20th Nov
               2025).
             </li>
@@ -538,8 +435,8 @@ function Registration() {
             </li>
             <li>
               While registering for{' '}
-              <span className="font-bold text-gray-700">Best Thesis Award</span>, enter paper
-              id as 9999
+              <span className="font-bold text-gray-700">Best Thesis Award</span>
+              , enter paper id as 9999
             </li>
           </ol>
         </section>
@@ -557,8 +454,9 @@ function Registration() {
             <li>Registration fees are not refundable or non-transferable.</li>
             <li>
               You must save the payment proof in{' '}
-              <span className="italic font-semibold">pdf</span>. This payment proof file is to
-              be attached in a section while filling the registration form.
+              <span className="italic font-semibold">pdf</span>. This payment
+              proof file is to be attached in a section while filling the
+              registration form.
             </li>
             <li>
               CSITSS-2025 organizing committee will not be responsible for any
@@ -576,10 +474,10 @@ function Registration() {
             </li>
           </ol>
         </section>
-  {/* ...existing code... */}
+        {/* ...existing code... */}
       </div>
     </>
   )
 }
 
-export default Registration;
+export default Registration
