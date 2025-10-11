@@ -334,6 +334,236 @@ const Sponsorship: React.FC = () => {
 
   return (
     <div style={{ backgroundColor: 'white', padding: '1rem' }}>
+      {/* New Section: Special thanks to Sponsors of CSITSS-2025 */}
+      <section
+        style={{
+          margin: 'auto',
+          maxWidth: '75rem',
+          padding: '1rem',
+          position: 'relative',
+        }}
+      >
+        <div
+          style={{
+            background: 'linear-gradient(to right, #ff0000, #800000)',
+            color: 'white',
+            padding: '1rem',
+            borderRadius: '0.5rem',
+            marginBottom: '2rem',
+            textAlign: 'center',
+          }}
+        >
+          <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: 0 }}>
+            Special thanks to Sponsors of CSITSS-2025
+          </h1>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <h1
+            style={{
+              marginRight: '1rem',
+              background: 'linear-gradient(to right, #ff0000, #800000)',
+              WebkitBackgroundClip: 'text',
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              color: 'transparent',
+              alignContent: 'center',
+            }}
+          >
+            Gold
+          </h1>
+          <hr
+            style={{
+              background: 'linear-gradient(to right, red, transparent)',
+              height: '3px',
+              width: '100%',
+              marginRight: '1rem',
+            }}
+          />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            flexWrap: 'wrap', // For mobile responsiveness
+          }}
+        >
+          <a
+            href="https://flyingfireservices.com/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`https://flyingfireservices.com/images/resources/pnglogo`}
+                alt="FLYING FIRE"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              FLYING FIRE
+            </Text>
+          </a>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <h1
+            style={{
+              marginRight: '1rem',
+              background: 'linear-gradient(to right, #ff0000, #800000)',
+              WebkitBackgroundClip: 'text',
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              color: 'transparent',
+              alignContent: 'center',
+            }}
+          >
+            Co-Sponsor
+          </h1>
+          <hr
+            style={{
+              background: 'linear-gradient(to right, red, transparent)',
+              height: '3px',
+              width: '100%',
+              marginRight: '1rem',
+            }}
+          />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            flexWrap: 'wrap', // For mobile responsiveness
+          }}
+        >
+          <a
+            href="https://www.synaptics.com/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/Synaptics.png`}
+                alt="Synaptics Inidia Pvt Ltd"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Synaptics Inidia Pvt Ltd
+            </Text>
+          </a>
+          <a
+            href="https://presidenteducation.com/"
+            target="_blank"
+            style={{
+              width: '300px',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              border: '2.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '200px',
+              transition: 'transform 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={150}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/presidentEducation.png`}
+                alt="President Education"
+                style={{ background: 'transparent', maxWidth: '100%' }}
+              />
+            </ThemeIcon>
+            <Text
+              size="md"
+              style={{
+                marginTop: '0.5rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              PRESIDENT EDUCATION
+            </Text>
+          </a>
+        </div>
+      </section>
+
       {/* New Section: Sponsors of 2024 */}
       <section
         style={{
