@@ -381,12 +381,12 @@ function Registration() {
         </section>{' '}
         <section className="flex justify-center py-4 px-4">
           <a
-            href="https://rzp.io/rzp/Fk3gkFZV"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 text-white py-3 px-4 sm:px-6 rounded-lg text-center hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base font-medium shadow-md hover:shadow-lg"
           >
-            Click Here to Pay Through Razorpay (Indian Delegates)
+            Registration Closed
           </a>
         </section>{' '}
 
