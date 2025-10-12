@@ -5,6 +5,7 @@
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
+import Marquee from 'react-fast-marquee'
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
@@ -24,38 +25,14 @@ export default function Index() {
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
         </div> */}
-        <div className="flex items-center gap-x-6 bg-indigo-600 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-          <p className="text-sm/6 text-white">
-            <a href="#">
-              <strong className="font-semibold">Last Date To Submit </strong>
-              Full-length Manuscript -{' '}
-              <time dateTime="2025-08-16">August 16th, 2025</time>
-              <svg
-                viewBox="0 0 2 2"
-                className="mx-2 inline size-0.5 fill-current"
-                aria-hidden="true"
-              >
-                <circle cx="1" cy="1" r="1" />
-              </svg>
-            </a>
-          </p>
-          <div className="flex flex-1 justify-end">
-            {/* <button
-              type="button"
-              className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
-            >
-              <span className="sr-only">Dismiss</span>
-              <svg
-                className="size-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-                data-slot="icon"
-              >
-                <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-              </svg>
-            </button> */}
-          </div>
+        <div className="w-full bg-indigo-600 py-2.5">
+          <Marquee gradient={false} speed={50} pauseOnHover>
+            <span className="text-sm font-semibold text-white">
+              Due to multiple requests from authors, last date for payment and
+              registration is extended till &nbsp; <b>13th Oct 2025, 5.00PM</b>
+              &nbsp; - &nbsp; No further extension. &nbsp; &nbsp;
+            </span>
+          </Marquee>
         </div>
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">
