@@ -27,7 +27,7 @@ export default function Index() {
         </div> */}
         <div className="w-full bg-indigo-600 py-2.5">
           <Marquee gradient={false} speed={50} pauseOnHover>
-            <span className="text-sm font-semibold text-white">
+            <span className="text-lg font-semibold text-white">
               Due to multiple requests from authors, last date for payment and
               registration is extended till &nbsp; <b>13th Oct 2025, 5.00PM</b>
               &nbsp; - &nbsp; No further extension. &nbsp; &nbsp;
