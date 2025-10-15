@@ -511,7 +511,7 @@ const Sponsorship: React.FC = () => {
                 textAlign: 'center',
               }}
             >
-              Synaptics Inidia Pvt Ltd
+              Synaptics India Pvt Ltd
             </Text>
           </a>
           <a
