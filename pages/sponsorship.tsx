@@ -424,16 +424,6 @@ const Sponsorship: React.FC = () => {
                 style={{ background: 'transparent', maxWidth: '100%' }}
               />
             </ThemeIcon>
-            <Text
-              size="md"
-              style={{
-                marginTop: '0.5rem',
-                fontWeight: 'bold',
-                textAlign: 'center',
-              }}
-            >
-              FLYING FIRE
-            </Text>
           </a>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -503,16 +493,6 @@ const Sponsorship: React.FC = () => {
                 style={{ background: 'transparent', maxWidth: '100%' }}
               />
             </ThemeIcon>
-            <Text
-              size="md"
-              style={{
-                marginTop: '0.5rem',
-                fontWeight: 'bold',
-                textAlign: 'center',
-              }}
-            >
-              Synaptics Inidia Pvt Ltd
-            </Text>
           </a>
           <a
             href="https://presidenteducation.com/"
@@ -550,16 +530,6 @@ const Sponsorship: React.FC = () => {
                 style={{ background: 'transparent', maxWidth: '100%' }}
               />
             </ThemeIcon>
-            <Text
-              size="md"
-              style={{
-                marginTop: '0.5rem',
-                fontWeight: 'bold',
-                textAlign: 'center',
-              }}
-            >
-              PRESIDENT EDUCATION
-            </Text>
           </a>
         </div>
       </section>
