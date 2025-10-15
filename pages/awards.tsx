@@ -33,7 +33,7 @@ function Awards() {
           </a>
           . Application fees: Rs.1000/-. While registering for{' '}
           <b>Best Thesis award</b>, enter the paper ID as 9999. Last date for
-          submission 15th October 2025.
+          submission 22nd October 2025.
         </p>
         {/* <div className="mt-6">
           <div className="mt-4 text-center">
