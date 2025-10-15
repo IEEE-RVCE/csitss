@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Calendar, Clock, Download, X } from 'lucide-react'
+import { Calendar, Clock, Download } from 'lucide-react'
 
 const CustomTimeline = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [activeIndex, setActiveIndex] = useState(-1)
-  const [showPopup, setShowPopup] = useState(false)
+  // const [showPopup, setShowPopup] = useState(false)
 
   const data = [
     {
@@ -19,7 +19,7 @@ const CustomTimeline = () => {
       label: 'Acceptance Notification',
       date: '5th Sept 2025',
     },
-        {
+    {
       label: 'Camera-Ready Submission Opens',
       date: '12th Sept 2025',
     },
@@ -28,7 +28,7 @@ const CustomTimeline = () => {
       date: '18th Sept 2025',
     },
     {
-            label: 'Camera-Ready Submission Closes',
+      label: 'Camera-Ready Submission Closes',
       date: '10th Oct 2025 (Hard Deadline)',
     },
     {
@@ -52,14 +52,14 @@ const CustomTimeline = () => {
   }, [])
 
   const handleDownload = () => {
-    setShowPopup(true)
-    setTimeout(() => setShowPopup(false), 3000)
+    const pdfPath = '/Program_Schedule_WebsiteCSITSS2025.docx.pdf'
+    window.open(pdfPath, '_blank')
   }
 
   return (
     <div className="w-full px-4 py-12 relative">
       {/* Popup Notification */}
-      <div
+      {/* <div
         className={`fixed top-4 right-4 bg-blue-600 text-white px-6 py-4 rounded-lg shadow-xl 
           transform transition-all duration-300 flex items-center gap-3 z-50
           ${showPopup ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
@@ -71,7 +71,7 @@ const CustomTimeline = () => {
         >
           <X size={20} />
         </button>
-      </div>
+      </div> */}
 
       <div
         className={`max-w-5xl mx-auto transition-all duration-700 transform ${
