@@ -25,11 +25,13 @@ type TutorialSpeakerType = {
 const keynoteSpeakers: SpeakerType[] = [
   {
     id: 1,
-    name: 'Sri. S S Iyengar',
+    name: 'Prof. Dr. Jean Meyer',
     designation:
-      'Distinguished University Professor, Florida International University (FIU), Miami, USA',
-    imageLink: './speakers/ss_iyenger.jpeg',
+      'President of the Technical University of Applied Sciences Würzburg-Schweinfurt (THWS), Germany.',
+    // topic: 'Humanoid Robots - More than just another Industrial Revolution',
+    imageLink: '/speakers/jean.png',
   },
+
   {
     id: 2,
     name: 'Prof. Dr. Stephan Weyers',
@@ -39,11 +41,10 @@ const keynoteSpeakers: SpeakerType[] = [
   },
   {
     id: 3,
-    name: 'Prof. Dr. Jean Meyer',
+    name: 'Sri. S S Iyengar',
     designation:
-      'President of the Technical University of Applied Sciences Würzburg-Schweinfurt (THWS), Germany.',
-    topic: 'Humanoid Robots - More than just another Industrial Revolution',
-    imageLink: '/speakers/jean.png',
+      'Distinguished University Professor, Florida International University (FIU), Miami, USA',
+    imageLink: './speakers/ss_iyenger.jpeg',
   },
 ]
 
@@ -57,16 +58,9 @@ const plenarySpeakers: SpeakerType[] = [
   //   topic: 'Talk Topic',
   //   imageLink: '/speakers/plenary-speaker.jpg',
   // }
+
   {
     id: 1,
-    name: 'Prof. Dr. Achim Förster',
-    designation:
-      'Vice President for International & Academic Affairs at Technical University of Applied Sciences Würzburg-Schweinfurt (THWS),  Germany.',
-    topic: 'AI Regulation under the EU AI Act',
-    imageLink: '/speakers/achim.png',
-  },
-  {
-    id: 2,
     name: 'Prof. Dr. Vinod Rajamani',
     designation:
       'Department of Mechanical Engg. Professor "Vehicle dynamics", Vice Dean of Academics and Internationalisation, Chairman of Indo-German Collaboration at Auslandsgesellschaft.de, FH Dortmund, Germany.',
@@ -74,6 +68,14 @@ const plenarySpeakers: SpeakerType[] = [
       'International Research Collaboration in Sustainability at Fachhochschule Dortmund',
     profileLink: '/speakers/profiles/vinod-rajamani.jpg',
     imageLink: '/speakers/vinod.png',
+  },
+  {
+    id: 2,
+    name: 'Prof. Dr. Achim Förster',
+    designation:
+      'Vice President for International & Academic Affairs at Technical University of Applied Sciences Würzburg-Schweinfurt (THWS),  Germany.',
+    topic: 'AI Regulation under the EU AI Act',
+    imageLink: '/speakers/achim.png',
   },
 ]
 
@@ -96,18 +98,18 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
     topic:
       'AI for Visual Creativity: How Machines See, Enhance, and Reimagine Photos & Videos',
     imageLink: '/speakers/roopa-sheshadri.png',
-    profileLink: '/speakers/profiles/roopa-sheshadri-praful-mathur.jpg',
+    profileLink: '/speakers/profiles/roopa-sheshadri.jpg',
     time: '11:30 AM - 1:00 PM',
     venue: 'MV Seminar Hall (Dept of Civil Engg., 3rd Floor)',
   },
   {
     id: 3,
     name: 'Mr. Praful Mathur',
-    designation: 'Senior Researcher at Samsung R&D Institute, Bangalore',
+    designation: 'Chief Engineer at Samsung R&D Institute, Bangalore',
     topic:
       'AI for Visual Creativity: How Machines See, Enhance, and Reimagine Photos & Videos',
     imageLink: '/speakers/praful-mathur.png',
-    profileLink: '/speakers/profiles/roopa-sheshadri-praful-mathur.jpg',
+    profileLink: '/speakers/profiles/praful-mathur.jpg',
     time: '11:30 AM - 1:00 PM',
     venue: 'MV Seminar Hall (Dept of Civil Engg., 3rd Floor)',
   },
@@ -196,13 +198,14 @@ const Speakers = () => {
   )
 
   const SpeakerGrid = ({ speakers }: { speakers: SpeakerType[] }) => (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-6 w-full max-w-7xl mx-auto">
       {speakers.map((speaker) => (
-        <SpeakerCard
+        <div
           key={speaker.id}
-          speaker={speaker}
-          setSpeakerPopup={setSpeakerPopup}
-        />
+          className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+        >
+          <SpeakerCard speaker={speaker} setSpeakerPopup={setSpeakerPopup} />
+        </div>
       ))}
     </div>
   )
@@ -236,9 +239,9 @@ const Speakers = () => {
               <BriefcaseBusiness className="w-5 h-5 text-white" />
             </div>
             <div className="flex-1">
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
+              {/* <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
                 Designation
-              </p>
+              </p> */}
               <p className="text-sm text-gray-800 leading-relaxed font-medium">
                 {speaker.designation}
               </p>
@@ -333,9 +336,14 @@ const Speakers = () => {
   }: {
     speakers: TutorialSpeakerType[]
   }) => (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-6 w-full max-w-7xl mx-auto">
       {speakers.map((speaker) => (
-        <TutorialSpeakerCard key={speaker.id} speaker={speaker} />
+        <div
+          key={speaker.id}
+          className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+        >
+          <TutorialSpeakerCard speaker={speaker} />
+        </div>
       ))}
     </div>
   )
