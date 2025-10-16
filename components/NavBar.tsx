@@ -14,6 +14,7 @@ const Links = [
   { href: '/registration', label: 'Registration' },
   { href: '/sponsorship', label: 'Sponsors' },
   { href: '/tracks', label: 'Tracks' },
+  { href: '/schedules', label: 'Schedule' },
   { href: '/contact', label: 'Contact Us' },
 ]
 

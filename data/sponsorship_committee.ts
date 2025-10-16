@@ -1,7 +1,7 @@
 const sponsorship_chairs_data = [
   {
     name: 'Dr. Ramakanth Kumar P',
-    post: 'Sponsorship Chair',
+    post: 'Sponsorship Committee Members',
     department: 'Dean CSE Cluster',
     imgLink: '',
     email: 'ramakanthkp@rvce.edu.in',

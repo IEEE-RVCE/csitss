@@ -1,10 +1,17 @@
 const finance_chairs_data = [
   {
     name: 'Dr. Deepamala N',
-    post: 'Finance Chair',
+    post: 'Finance Committee Members',
     department: 'CSE',
     imgLink: '',
     email: 'deepamalan@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Azra Nasreen',
+    post: '',
+    department: 'CSE',
+    imgLink: '',
+    email: '',
   },
   {
     name: 'Dr.SC Prasanna Kumar',
