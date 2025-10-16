@@ -5,7 +5,7 @@
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
-import Marquee from 'react-fast-marquee'
+// import Marquee from 'react-fast-marquee'
 
 // const image = {
 //   src: 'logo_IEEE_Banaglaore_Section.png',
