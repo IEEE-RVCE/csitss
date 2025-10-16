@@ -20,12 +20,23 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
     {}
   )
 
+  const handleClick = () => {
+    const pdfPath = '/TPC_Team_CSITSS_2025_Trackwise.pdf'
+    window.open(pdfPath, '_blank')
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4 space-y-12">
       {Object.entries(groupedMembers).map(([post, postMembers]) => (
         <div key={post} className="space-y-6">
           {/* Group heading */}
-          <div className="">
+          <div
+            className={
+              post === 'General Chair' || post === 'Technical Chair'
+                ? 'text-center'
+                : ''
+            }
+          >
             <h2 className="text-2xl font-bold text-gray-900 mb-2">{post}</h2>
             {/* <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div> */}
           </div>
@@ -143,6 +154,16 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
               </div>
             ))}
           </div>
+          {post === 'Technical Committee Members' && (
+            <div className="flex justify-center mt-4">
+              <span
+                className="bg-indigo-600 rounded-lg text-white px-3 py-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-300"
+                onClick={handleClick}
+              >
+                List of Technical Committee Members
+              </span>
+            </div>
+          )}
         </div>
       ))}
     </div>

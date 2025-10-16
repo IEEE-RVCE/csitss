@@ -21,11 +21,11 @@ const registration_committee_data = [
     email: 'jyothis@rvce.edu.in',
   },
   {
-    name: 'Dr.Usha Padma',
+    name: 'Prof. Ganashree',
     post: '',
-    department: 'ETE',
+    department: 'CSE',
     imgLink: '',
-    email: 'kamakshimb@rvce.edu.in',
+    email: '',
   },
   {
     name: 'Chitra B T',
@@ -40,7 +40,7 @@ const registration_committee_data = [
     department: 'Civil',
     imgLink: '',
     email: 'sindhud@rvce.edu.in',
-  }
+  },
 ]
 
 export default registration_committee_data

@@ -1,28 +1,28 @@
 const website_chairs_data = [
   {
     name: 'Dr. Hemavathy R.',
-    post: 'Website Chair',
+    post: 'Website Committee Members',
     department: 'CSE',
     imgLink: '',
     email: 'hemavathyr@rvce.edu.in',
   },
   {
     name: 'Mrs. Mahalakshmi M.N',
-    post: 'Website Chair',
+    post: 'Website Committee Members',
     department: 'ETE',
     imgLink: '',
     email: 'mahalakshmimn@rvce.edu.in',
   },
   {
     name: 'Dr.Tabitha',
-    post: 'Website Chair',
+    post: 'Website Committee Members',
     department: 'EIE',
     imgLink: '',
     email: 'tabithajanumala@rvce.edu.in',
   },
   {
     name: 'Prof. Shashikiran S',
-    post: 'Website Chair',
+    post: 'Website Committee Members',
     department: 'Civil',
     imgLink: '',
     email: 'shashikirancr@rvce.edu.in',

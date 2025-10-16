@@ -23,35 +23,31 @@ const HeaderImages: React.FC = () => {
       show: true,
       padding: 'pl-2',
     },
+  ]
 
-    {
-      src: 'IEEE-CS-BangaloreChapter-Logo.png',
-      alt: 'ieee_cs_bangalore_chapter_logo',
-      href: 'https://cs.ieeebangalore.org/',
-      show: true,
-      // padding: 'p-2',
-    },
+  const technicalCoSponsors = [
     {
       src: 'IEEE-banglore-Section.jpg',
       alt: 'ieee_bangalore_section_logo',
       href: 'https://ieeebangalore.org/',
       show: true,
+      padding: 'pr-2',
     },
     {
       src: 'ieee-main.png',
       alt: 'ieee_bangalore_logo',
       href: 'https://ieeebangalore.org/',
       show: true,
-      padding: 'pt-6',
+      padding: 'pt-1',
     },
 
-    // // {
-    // //   src: 'logo_rvce_ieee.png',
-    // //   alt: 'rvce_ieee_logo',
-    // //   href: 'https://ieee-rvce.org/',
-    // //   show: true,
-    // //   padding: 'pt-6',
-    // // },
+    // {
+    //   src: 'logo_rvce_ieee.png',
+    //   alt: 'rvce_ieee_logo',
+    //   href: 'https://ieee-rvce.org/',
+    //   show: true,
+    //   padding: 'pt-6',
+    // },
   ]
 
   const secondRowImages = [
@@ -68,13 +64,13 @@ const HeaderImages: React.FC = () => {
       show: true,
       // padding: 'p-2',
     },
-    {
-      src: 'rosenheim.png',
-      alt: 'rosenheim_logo',
-      href: 'https://www.rosenheim.de/',
-      show: true,
-      padding: 'pr-2',
-    },
+    // {
+    //   src: 'rosenheim.png',
+    //   alt: 'rosenheim_logo',
+    //   href: 'https://www.rosenheim.de/',
+    //   show: true,
+    //   padding: 'pr-2',
+    // },
     {
       src: 'fiu-logo2.png',
       alt: 'fiu_logo',
@@ -94,18 +90,23 @@ const HeaderImages: React.FC = () => {
   return (
     <div>
       <div className="center p-auto m-14 -mt-5 hidden md:block">
-        <div className="mt-6 flex flex-col rounded-3xl bg-white bg-opacity-60 pt-4 scrollbar-hide sm:mx-0 md:mx-0 lg:mx-20">
+        <div className="mt-6 flex flex-col rounded-3xl bg-white bg-opacity-60 pt-4 pb-4 scrollbar-hide sm:mx-0 md:mx-0 lg:mx-20">
           {/* First Row */}
-          <div className="flex items-center justify-evenly gap-8 overflow-x-hidden px-4">
+          <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 py-6">
+            {/* RVCE Logo */}
             {firstRowImages.map((image: Image) =>
               image.show ? (
-                <div className=" inline-block flex-1" key={image.alt}>
+                <div
+                  className="flex items-center justify-center"
+                  key={image.alt}
+                  style={{ flexBasis: '25%' }}
+                >
                   <div
-                    className={`mx-0 max-w-xs overflow-hidden ${image.padding ?? ''} transition-shadow duration-300 ease-in-out hover:shadow-xl`}
+                    className={`mx-auto overflow-hidden ${image.padding ?? ''} transition-shadow duration-300 ease-in-out hover:shadow-xl flex justify-center`}
                   >
                     <a href={image.href} target="_blank" rel="noreferrer">
                       <img
-                        className="h-20 w-auto object-contain sm:h-24 md:h-28 lg:h-32"
+                        className="h-28 w-auto object-contain lg:h-32"
                         src={image.src}
                         alt={image.alt}
                       />
@@ -114,14 +115,55 @@ const HeaderImages: React.FC = () => {
                 </div>
               ) : null
             )}
+
+            {/* Technical Co-Sponsors Group */}
+            <div className="relative" style={{ flexBasis: '50%' }}>
+              <div className="relative  p-6 pt-10 ">
+                {/* Label positioned at top center, overlapping the border */}
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                  <span className="bg-blue-500 text-white px-6 py-1 rounded-full text-base font-bold shadow-2xl whitespace-nowrap ">
+                    Technical Co-Sponsors
+                  </span>
+                </div>
+
+                {/* Logos inside the box */}
+                <div className="flex items-center justify-evenly  gap-10">
+                  {technicalCoSponsors.map((image: Image) =>
+                    image.show ? (
+                      <div
+                        className="flex items-center justify-center flex-1"
+                        key={image.alt}
+                      >
+                        <div
+                          className={`overflow-hidden ${image.padding ?? ''} transition-all duration-300 ease-in-out hover:scale-105`}
+                        >
+                          <a href={image.href} target="_blank" rel="noreferrer">
+                            <img
+                              className="h-20 w-auto object-contain lg:h-24"
+                              src={image.src}
+                              alt={image.alt}
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    ) : null
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
+
           {/* Second Row */}
-          <div className="flex items-center justify-evenly gap-8 overflow-x-hidden px-4">
+          <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2">
             {secondRowImages.map((image: Image) =>
               image.show ? (
-                <div className="my-4 mt-0 inline-block flex-1" key={image.alt}>
+                <div
+                  className="flex items-center justify-center"
+                  key={image.alt}
+                  style={{ flexBasis: '25%' }}
+                >
                   <div
-                    className={`mx-0 max-w-xs overflow-hidden ${image.padding ?? ''} transition-shadow duration-300 ease-in-out hover:shadow-xl`}
+                    className={`mx-auto overflow-hidden ${image.padding ?? ''} transition-shadow duration-300 ease-in-out hover:shadow-xl`}
                   >
                     <a
                       href={image.href}
@@ -130,7 +172,7 @@ const HeaderImages: React.FC = () => {
                       className="flex justify-center"
                     >
                       <img
-                        className={`${image.size ?? 'w-20'} w-auto object-contain sm:h-24 md:h-28 lg:h-32`}
+                        className={`${image.size ?? 'h-28'} w-auto object-contain lg:h-32`}
                         src={image.src}
                         alt={image.alt}
                       />

@@ -1,7 +1,7 @@
 const program_chairs_data = [
   {
     name: 'Dr. Rajashree Shettar',
-    post: 'Program Chair',
+    post: 'Program Committee Members',
     department: 'CSE',
     imgLink: '',
     email: 'rajashreeshettar@rvce.edu.in',
@@ -33,7 +33,28 @@ const program_chairs_data = [
     department: 'Civil',
     imgLink: '',
     email: 'vinodar@rvce.edu.in',
-  }
+  },
+  {
+    name: 'Dr. Praveena T',
+    post: '',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Prathiba D',
+    post: '',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Prof. Shweta Babu Prasad',
+    post: '',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
 ]
 
 export default program_chairs_data

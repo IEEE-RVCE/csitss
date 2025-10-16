@@ -21,9 +21,9 @@ const theme: MantineThemeOverride = {
 function MyApp({ Component, pageProps }: AppProps) {
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false)
   const router = useRouter()
-  
+
   // Only show Schedule button on these pages
-  const showScheduleButton = ['/registration', '/speakers', '/tracks'].includes(router.pathname)
+  const showScheduleButton = [''].includes(router.pathname)
 
   return (
     <MantineProvider

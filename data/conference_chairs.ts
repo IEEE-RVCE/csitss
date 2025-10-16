@@ -69,6 +69,41 @@ const conference_chairs_data = [
     imgLink: '',
     email: 'ramakanthkp@rvce.edu.in',
   },
+  {
+    name: 'Dr. Chethana R Murthy',
+    post: 'Registration Chair',
+    department: 'CSE',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Sandhya S',
+    post: 'Session & Event Management Chair',
+    department: 'CSE',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Krishnappa H K',
+    post: 'Hospitality Chair',
+    department: 'CSE',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Manas M N',
+    post: 'Transportation Chair',
+    department: 'CSE',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. K Badarinath',
+    post: 'Main Stage Committee Chair',
+    department: 'CSE',
+    imgLink: '',
+    email: '',
+  },
 ]
 
 export default conference_chairs_data

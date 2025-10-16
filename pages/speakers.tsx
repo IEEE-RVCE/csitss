@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import SpeakerCard from '../components/SpeakerCard'
 import { BriefcaseBusiness, FileText, X } from 'lucide-react'
+import { speakersProfile } from '../data/speakers_profile'
 
 type SpeakerType = {
   id: number
@@ -29,6 +30,7 @@ const keynoteSpeakers: SpeakerType[] = [
     designation:
       'President of the Technical University of Applied Sciences Würzburg-Schweinfurt (THWS), Germany.',
     // topic: 'Humanoid Robots - More than just another Industrial Revolution',
+    profileLink: 'jean-meyer',
     imageLink: '/speakers/jean.png',
   },
 
@@ -37,6 +39,7 @@ const keynoteSpeakers: SpeakerType[] = [
     name: 'Prof. Dr. Stephan Weyers',
     designation:
       'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund, Germany.',
+    profileLink: 'stephan-weyers',
     imageLink: '/speakers/stephanWeyers.png',
   },
   {
@@ -45,6 +48,7 @@ const keynoteSpeakers: SpeakerType[] = [
     designation:
       'Distinguished University Professor, Florida International University (FIU), Miami, USA',
     imageLink: './speakers/ss_iyenger.jpeg',
+    profileLink: 'ss-iyengar',
   },
 ]
 
@@ -66,7 +70,7 @@ const plenarySpeakers: SpeakerType[] = [
       'Department of Mechanical Engg. Professor "Vehicle dynamics", Vice Dean of Academics and Internationalisation, Chairman of Indo-German Collaboration at Auslandsgesellschaft.de, FH Dortmund, Germany.',
     topic:
       'International Research Collaboration in Sustainability at Fachhochschule Dortmund',
-    profileLink: '/speakers/profiles/vinod-rajamani.jpg',
+    profileLink: 'vinod-rajamani',
     imageLink: '/speakers/vinod.png',
   },
   {
@@ -76,6 +80,7 @@ const plenarySpeakers: SpeakerType[] = [
       'Vice President for International & Academic Affairs at Technical University of Applied Sciences Würzburg-Schweinfurt (THWS),  Germany.',
     topic: 'AI Regulation under the EU AI Act',
     imageLink: '/speakers/achim.png',
+    profileLink: 'achim-forster',
   },
 ]
 
@@ -87,7 +92,7 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
       'Senior Software Manager, Embedded and Edge Products Division at Synaptics, Bangalore',
     topic: 'Generative AI at the Edge',
     imageLink: '/speakers/MrSambuMohan.png',
-    profileLink: '/speakers/profiles/sambu-mohan.jpg',
+    profileLink: 'sambu-mohan',
     time: '9:30 AM - 11:00 AM',
     venue: 'MV Seminar Hall (Dept of Civil Engg., 3rd Floor)',
   },
@@ -98,7 +103,7 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
     topic:
       'AI for Visual Creativity: How Machines See, Enhance, and Reimagine Photos & Videos',
     imageLink: '/speakers/roopa-sheshadri.png',
-    profileLink: '/speakers/profiles/roopa-sheshadri.jpg',
+    profileLink: 'roopa-sheshadri',
     time: '11:30 AM - 1:00 PM',
     venue: 'MV Seminar Hall (Dept of Civil Engg., 3rd Floor)',
   },
@@ -109,7 +114,7 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
     topic:
       'AI for Visual Creativity: How Machines See, Enhance, and Reimagine Photos & Videos',
     imageLink: '/speakers/praful-mathur.png',
-    profileLink: '/speakers/profiles/praful-mathur.jpg',
+    profileLink: 'praful-mathur',
     time: '11:30 AM - 1:00 PM',
     venue: 'MV Seminar Hall (Dept of Civil Engg., 3rd Floor)',
   },
@@ -121,7 +126,7 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
     topic:
       'AI-Driven IoT Analytics: Transforming Device Management for the Digital Era',
     imageLink: '/speakers/venkata-chunduru.png',
-    profileLink: '/speakers/profiles/venkata-chunduru.jpg',
+    profileLink: 'venkata-chunduru',
     time: '9:30 AM - 11:00 AM',
     venue: 'ISE Seminar Hall (Dept. of Information Science & Engg., 1st Floor)',
   },
@@ -132,7 +137,7 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
     topic:
       'Putting the Puzzle pieces together: A Systems Thinking Approach to Circular Economy Transitions',
     imageLink: '/speakers/tim-gruchmann.png',
-    profileLink: '/speakers/profiles/tim-gruchmann.jpg',
+    profileLink: 'tim-gruchmann',
     time: '11:30 AM - 1:00 PM',
     venue: 'ISE Seminar Hall (Dept. of Information Science & Engg., 1st Floor)',
   },
@@ -433,16 +438,17 @@ const Speakers = () => {
           </button>
 
           <div
-            className="bg-white rounded-lg shadow-2xl w-full max-w-[95vw] sm:max-w-[90vw] lg:max-w-6xl max-h-[95vh] sm:max-h-[90vh] overflow-auto relative"
+            className="bg-white rounded-lg shadow-2xl w-full max-w-[95vw] sm:max-w-[90vw] lg:max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Image Container */}
-            <div className="p-2 sm:p-4 md:p-6">
-              <img
-                src={speakerPopup}
-                alt="Speaker Profile"
-                className="w-full h-auto rounded-lg"
-              />
+            {/* Content Container */}
+            <div className="p-4 sm:p-6 md:p-8">
+              <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
+                <div className="text-gray-900 leading-relaxed text-sm sm:text-base whitespace-pre-wrap break-words text-justify">
+                  {speakersProfile[speakerPopup] ||
+                    'Profile information not available.'}
+                </div>
+              </div>
             </div>
           </div>
         </div>
