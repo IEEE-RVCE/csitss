@@ -25,14 +25,12 @@ export default function Index() {
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
         </div> */}
-        <div className="w-full bg-indigo-600 py-2.5">
-          <Marquee gradient={false} speed={50} pauseOnHover>
-            <span className="text-lg font-semibold text-white">
-              Due to multiple requests from authors, last date for payment and
-              registration is extended till &nbsp; <b>13th Oct 2025, 5.00PM</b>
-              &nbsp; - &nbsp; No further extension. &nbsp; &nbsp;
-            </span>
-          </Marquee>
+        <div className="w-full flex justify-center bg-indigo-600 py-2.5">
+          {/* <Marquee gradient={false} speed={50} pauseOnHover> */}
+          <span className="text-lg font-semibold text-white">
+            Conference paper registration is closed
+          </span>
+          {/* </Marquee> */}
         </div>
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">

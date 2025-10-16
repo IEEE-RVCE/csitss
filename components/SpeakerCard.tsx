@@ -42,9 +42,9 @@ const SpeakerCard = ({
               <BriefcaseBusiness className="w-5 h-5 text-white" />
             </div>
             <div className="flex-1">
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
+              {/* <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
                 Designation
-              </p>
+              </p> */}
               <p className="text-sm text-gray-800 leading-relaxed font-medium">
                 {speaker.designation}
               </p>

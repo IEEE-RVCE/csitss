@@ -119,7 +119,10 @@ const CustomTimeline = () => {
                     {item.label}
                   </h3>
                   <p className="text-xl text-gray-700 font-medium">
-                    {item.date}
+                    {item.date}{' '}
+                    <span className="bg-red-500 text-white px-2 py-1 rounded">
+                      CLOSED
+                    </span>
                   </p>
                 </div>
               </div>
