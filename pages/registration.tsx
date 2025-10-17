@@ -14,7 +14,7 @@ function Registration() {
           </h2>
           <p className="mt-4 flex ">
             <span className="bg-red-600 text-white font-bold px-4 py-2 rounded-lg shadow-lg text-base lg:text-lg sm:text-sm">
-              Registration is closed for Paper Authors
+              Registration is closed for All
             </span>
           </p>
           <p className="mt-4 text-gray-600 text-sm sm:text-base">
@@ -384,16 +384,7 @@ function Registration() {
             </strong>
           </p>
         </section>{' '}
-        <section className="flex justify-center py-4 px-4">
-          <a
-            href="https://rzp.io/rzp/Fk3gkFZV"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white py-3 px-4 sm:px-6 rounded-lg text-center hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base font-medium shadow-md hover:shadow-lg"
-          >
-            Payment link for Pre-conference tutorial and Listener
-          </a>
-        </section>{' '}
+
         {/* New Professional UI Section for Registration Links */}
         <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -456,7 +447,7 @@ function Registration() {
               <p className="text-gray-500 mb-4">
                 (Pre-conference, Listener, Best Thesis Award)
               </p>
-              <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50">
+              <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50 relative overflow-hidden">
                 <Image
                   src="/attendee.jpeg"
                   alt="QR Code for Attendee Registration"
@@ -469,44 +460,30 @@ function Registration() {
                       'https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found'
                   }}
                 />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="bg-red-600 text-white px-4 py-2 rounded-lg font-extrabold text-xs sm:text-sm shadow-2xl transform -rotate-12 border-2 border-red-700">
+                      <div className="text-center leading-tight">
+                        REGISTRATION
+                        <br />
+                        CLOSED
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <a
-                href="https://forms.gle/HjN9RNZC4K2S8pp7A"
+                // href="https://forms.gle/CavwwpknvbzvPHF77"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-gray-700 text-white py-2.5 px-5 rounded-md hover:bg-gray-800 transition-colors duration-300 font-medium"
+                className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium pointer-events-none opacity-50 cursor-not-allowed"
               >
-                Register as Attendee
+                Registration closed for Attendees
               </a>
             </div>
           </div>
         </section>
-        <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
-            Registration Method for Foreign Delegates only
-          </h2>
-          <div className="mt-4 bg-white p-6 border rounded-lg shadow-sm">
-            <p className="text-gray-700 text-sm sm:text-base space-y-2">
-              <b>Beneficiary Name: </b>
-              The Principal, RV College of Engineering
-              <br />
-              <b>Bank Account Number: </b>
-              136010112055
-              <br />
-              <b>Bank Name: </b>
-              KOTAK MAHINDRA BANK
-              <br />
-              <b>Branch Name: </b>
-              RVCE Campus, Bengaluru
-              <br />
-              <b>IFSC Code: </b>
-              KKBK0008053
-              <br />
-              <b>SWIFT Code: </b>
-              KKBKINBB
-            </p>
-          </div>
-        </section>{' '}
+        
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h3 className="text-lg sm:text-xl font-extrabold text-gray-800">
             Instructions for Registration
