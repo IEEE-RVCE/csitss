@@ -447,7 +447,7 @@ function Registration() {
               <p className="text-gray-500 mb-4">
                 (Pre-conference, Listener, Best Thesis Award)
               </p>
-              <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50">
+              <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50 relative overflow-hidden">
                 <Image
                   src="/attendee.jpeg"
                   alt="QR Code for Attendee Registration"
@@ -460,7 +460,7 @@ function Registration() {
                       'https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found'
                   }}
                 />
-                                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative">
                     <div className="bg-red-600 text-white px-4 py-2 rounded-lg font-extrabold text-xs sm:text-sm shadow-2xl transform -rotate-12 border-2 border-red-700">
                       <div className="text-center leading-tight">
@@ -471,7 +471,6 @@ function Registration() {
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
               <a
                 // href="https://forms.gle/CavwwpknvbzvPHF77"
