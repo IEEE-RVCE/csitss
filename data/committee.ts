@@ -1,13 +1,13 @@
 export const committees = [
   { name: 'Chief Patron', path: 'chief_patron' },
   { name: 'Patrons', path: 'patrons' },
+  { name: 'Organizing Committee', path: 'organizing_committee' },
   { name: 'Conference Chairs', path: 'conference_chairs' },
   { name: 'Program Committee', path: 'program_committee' },
   { name: 'Finance Committee', path: 'finance_committee' },
-  { name: 'Publication Committee', path: 'publication_committee' },
+  { name: 'Publication and Souvenir Committee', path: 'publication_committee' },
   { name: 'Sponsorship Committee', path: 'sponsorship_committee' },
   { name: 'Publicity and Media Committee', path: 'pm_committee' },
-  { name: 'Organizing Committee', path: 'organizing_committee' },
   { name: 'Website Committee', path: 'website_committee' },
   {
     name: 'Conference Convenors Committee',
@@ -22,8 +22,8 @@ export const committees = [
   { name: 'Registration Committee', path: 'registration_committee' },
   { name: 'Conference Coordinators', path: 'conference_coordinators' },
   { name: 'Technical Committee', path: 'technical_committee' },
-  { name: 'Brochure & Flyer', path: 'brochure_flyer' },
-  { name: 'Souvenir Committee', path: 'souvenir_committee' },
+  // { name: 'Brochure & Flyer', path: 'brochure_flyer' },
+  // { name: 'Souvenir Committee', path: 'souvenir_committee' },
   {
     name: 'Foreign Delegate Management',
     path: 'foreign_delegate_management_committee',

@@ -52,8 +52,8 @@ const CustomTimeline = () => {
   }, [])
 
   const handleDownload = () => {
-    const pdfPath = '/Program_Schedule_WebsiteCSITSS2025.docx.pdf'
-    window.open(pdfPath, '_blank')
+    // const pdfPath = '/Program_Schedule_WebsiteCSITSS2025.docx.pdf'
+    // window.open(pdfPath, '_blank')
   }
 
   return (
@@ -138,7 +138,7 @@ const CustomTimeline = () => {
               transform hover:scale-105 hover:shadow-xl"
           >
             <Download className="w-5 h-5" />
-            Download Pre-Conference Schedule
+            Download Paper-Presentation Track Schedule
           </button>
         </div>
       </div>
