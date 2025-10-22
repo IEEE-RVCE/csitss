@@ -52,9 +52,9 @@ const Schedules = () => {
             <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
-                <span className="bg-white text-blue-600 px-3 py-1 rounded-full text-xs font-bold">
+                {/* <span className="bg-white text-blue-600 px-3 py-1 rounded-full text-xs font-bold">
                   Day 1
-                </span>
+                </span> */}
               </div>
               <h3 className="text-2xl font-bold mb-2">
                 Pre-Conference Tutorial
@@ -90,9 +90,9 @@ const Schedules = () => {
             <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
-                <span className="bg-white text-green-600 px-3 py-1 rounded-full text-xs font-bold">
+                {/* <span className="bg-white text-green-600 px-3 py-1 rounded-full text-xs font-bold">
                   Day 2
-                </span>
+                </span> */}
               </div>
               <h3 className="text-2xl font-bold mb-2">Program Schedule</h3>
               <p className="text-green-100 text-sm">21st November 2025</p>
@@ -113,11 +113,11 @@ const Schedules = () => {
             <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
-                <span className="bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-bold">
+                {/* <span className="bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-bold">
                   Day 3
-                </span>
+                </span> */}
               </div>
-              <h3 className="text-2xl font-bold mb-2">Session Schedule</h3>
+              <h3 className="text-2xl font-bold mb-2">Paper Presentation Track Schedule</h3>
               <p className="text-purple-100 text-sm">22nd November 2025</p>
             </div>
 

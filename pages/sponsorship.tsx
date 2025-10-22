@@ -339,34 +339,41 @@ const Sponsorship: React.FC = () => {
         style={{
           margin: 'auto',
           maxWidth: '75rem',
-          padding: '1rem',
+          padding: '0.5rem 1rem 1rem 1rem',
           position: 'relative',
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+          overflow: 'hidden',
         }}
       >
         <div
           style={{
             background: 'linear-gradient(to right, #ff0000, #800000)',
             color: 'white',
-            padding: '1rem',
+            padding: '0.5rem',
             borderRadius: '0.5rem',
-            marginBottom: '2rem',
+            marginBottom: '0.5rem',
             textAlign: 'center',
           }}
         >
-          <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', margin: 0 }}>
+          <h1 style={{ fontSize: '1.6rem', fontWeight: 'bold', margin: 0 }}>
             Special thanks to Sponsors of CSITSS-2025
           </h1>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
           <h1
             style={{
-              marginRight: '1rem',
+              marginRight: '0.75rem',
               background: 'linear-gradient(to right, #ff0000, #800000)',
               WebkitBackgroundClip: 'text',
-              fontSize: '3rem',
+              fontSize: '2rem',
               fontWeight: 'bold',
               color: 'transparent',
               alignContent: 'center',
+              whiteSpace: 'nowrap',
+              flex: '0 0 auto',
             }}
           >
             Gold
@@ -375,7 +382,7 @@ const Sponsorship: React.FC = () => {
             style={{
               background: 'linear-gradient(to right, red, transparent)',
               height: '3px',
-              width: '100%',
+              flex: 1,
               marginRight: '1rem',
             }}
           />
@@ -384,29 +391,30 @@ const Sponsorship: React.FC = () => {
           style={{
             display: 'flex',
             justifyContent: 'center',
-            gap: '2rem',
+            gap: '1rem',
             flexWrap: 'wrap', // For mobile responsiveness
+            marginBottom: '0.75rem',
           }}
         >
           <a
             href="https://flyingfireservices.com/"
             target="_blank"
             style={{
-              width: '300px',
-              padding: '1rem',
+              width: '220px',
+              padding: '0.5rem',
               borderRadius: '0.5rem',
               backgroundColor: 'white',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              border: '2.5px solid #ccc',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.08)',
+              border: '1.5px solid #ccc',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '200px',
-              transition: 'transform 0.2s',
+              height: '150px',
+              transition: 'transform 0.15s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-4px)'
+              e.currentTarget.style.transform = 'translateY(-3px)'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)'
@@ -414,28 +422,30 @@ const Sponsorship: React.FC = () => {
           >
             <ThemeIcon
               variant="light"
-              size={150}
+              size={110}
               radius="md"
               style={{ background: 'transparent' }}
             >
               <Image
                 src={`https://flyingfireservices.com/images/resources/pnglogo`}
                 alt="FLYING FIRE"
-                style={{ background: 'transparent', maxWidth: '100%' }}
+                style={{ background: 'transparent', maxWidth: '100%', maxHeight: '84px' }}
               />
             </ThemeIcon>
           </a>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
           <h1
             style={{
-              marginRight: '1rem',
+              marginRight: '0.75rem',
               background: 'linear-gradient(to right, #ff0000, #800000)',
               WebkitBackgroundClip: 'text',
-              fontSize: '2.5rem',
+              fontSize: '1.6rem',
               fontWeight: 'bold',
               color: 'transparent',
               alignContent: 'center',
+              whiteSpace: 'nowrap',
+              flex: '0 0 auto',
             }}
           >
             Co-Sponsor
@@ -444,7 +454,7 @@ const Sponsorship: React.FC = () => {
             style={{
               background: 'linear-gradient(to right, red, transparent)',
               height: '3px',
-              width: '100%',
+              flex: 1,
               marginRight: '1rem',
             }}
           />
@@ -453,7 +463,7 @@ const Sponsorship: React.FC = () => {
           style={{
             display: 'flex',
             justifyContent: 'center',
-            gap: '2rem',
+            gap: '1rem',
             flexWrap: 'wrap', // For mobile responsiveness
           }}
         >
@@ -461,21 +471,21 @@ const Sponsorship: React.FC = () => {
             href="https://www.synaptics.com/"
             target="_blank"
             style={{
-              width: '300px',
-              padding: '1rem',
+              width: '220px',
+              padding: '0.5rem',
               borderRadius: '0.5rem',
               backgroundColor: 'white',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              border: '2.5px solid #ccc',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.08)',
+              border: '1.5px solid #ccc',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '200px',
-              transition: 'transform 0.2s',
+              height: '150px',
+              transition: 'transform 0.15s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-4px)'
+              e.currentTarget.style.transform = 'translateY(-3px)'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)'
@@ -483,14 +493,14 @@ const Sponsorship: React.FC = () => {
           >
             <ThemeIcon
               variant="light"
-              size={150}
+              size={110}
               radius="md"
               style={{ background: 'transparent' }}
             >
               <Image
                 src={`/sponsors/Synaptics.png`}
                 alt="Synaptics Inidia Pvt Ltd"
-                style={{ background: 'transparent', maxWidth: '100%' }}
+                style={{ background: 'transparent', maxWidth: '100%', maxHeight: '84px' }}
               />
             </ThemeIcon>
           </a>
@@ -498,21 +508,21 @@ const Sponsorship: React.FC = () => {
             href="https://presidenteducation.com/"
             target="_blank"
             style={{
-              width: '300px',
-              padding: '1rem',
+              width: '220px',
+              padding: '0.5rem',
               borderRadius: '0.5rem',
               backgroundColor: 'white',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              border: '2.5px solid #ccc',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.08)',
+              border: '1.5px solid #ccc',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '200px',
-              transition: 'transform 0.2s',
+              height: '150px',
+              transition: 'transform 0.15s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-4px)'
+              e.currentTarget.style.transform = 'translateY(-3px)'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)'
@@ -520,14 +530,14 @@ const Sponsorship: React.FC = () => {
           >
             <ThemeIcon
               variant="light"
-              size={150}
+              size={110}
               radius="md"
               style={{ background: 'transparent' }}
             >
               <Image
                 src={`/sponsors/presidentEducation.png`}
                 alt="President Education"
-                style={{ background: 'transparent', maxWidth: '100%' }}
+                style={{ background: 'transparent', maxWidth: '100%', maxHeight: '84px' }}
               />
             </ThemeIcon>
           </a>
