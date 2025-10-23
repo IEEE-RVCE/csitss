@@ -160,6 +160,9 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
                 return (
                   <div key={member.name} className="justify-self-start">
                     <div className="relative group rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 inline-block">
+                return (
+                  <div key={member.name} className="md:col-span-2 flex justify-center">
+                    <div className="w-full md:w-3/4 relative group rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
                       {card}
                     </div>
                   </div>
