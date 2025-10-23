@@ -156,13 +156,10 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
               )
 
               if (isLastSingle) {
-                // For patrons: don't span both columns or center — left-align and allow intrinsic width
+                // For Patrons: left-align the lone final card and let it size to content
                 return (
                   <div key={member.name} className="justify-self-start">
-                    <div className="relative group rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 inline-block">
-                return (
-                  <div key={member.name} className="md:col-span-2 flex justify-center">
-                    <div className="w-full md:w-3/4 relative group rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div className="group relative bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 inline-block overflow-hidden transform hover:-translate-y-1">
                       {card}
                     </div>
                   </div>
