@@ -1,18 +1,132 @@
 const organizing_committee_data = [
-  {
-    name: 'Shubha S',
+    {
+    name: 'Dr. Shanta Rangaswamy',
     post: 'Organizing Committee Members',
-    department: 'Physics',
+    department: 'Computer Science and Engineering',
     imgLink: '',
-    email: 'shubhas@rvce.edu.in',
+    email: 'shantharangaswamy@rvce.edu.in',
   },
   {
-    name: 'Dr. T Raghavendra',
+    name: 'Dr. Anjaneyappa',
     post: 'Organizing Committee Members',
-    department: 'Civil',
+    department: 'Civil Engineering',
     imgLink: '',
-    email: 'raghavendrat@rvce.edu.in',
+    email: 'anjaneyappa@rvce.edu.in',
   },
-]
+  {
+    name: 'Dr. M.V. Renukadevi',
+    post: 'Organizing Committee Members',
+    department: 'Civil Engineering',
+    imgLink: '',
+    email: 'renukadevimv@rvce.edu.in',
+  },
+  {
+    name: 'Dr. R Supreeth',
+    post: 'Organizing Committee Members',
+    department: 'Aerospace Engineering',
+    imgLink: '',
+    email: 'supreethr@rvce.edu.in',
+  },
+  {
+    name: 'Dr. B. Sathish Babu',
+    post: 'Organizing Committee Members',
+    department: 'Artificial Intelligence & Machine Learning',
+    imgLink: '',
+    email: 'bsbabu@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Nagashree N Rao',
+    post: 'Organizing Committee Members',
+    department: 'BioTechnology',
+    imgLink: '',
+    email: 'nagashreenrao@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Jagadish H Patil',
+    post: 'Organizing Committee Members',
+    department: 'Chemical Engineering',
+    imgLink: '',
+    email: 'jagadishhpatil@rvce.edu.in',
+  },
 
-export default organizing_committee_data
+
+  {
+    name: 'Dr. Hemalatha J.N.',
+    post: 'Organizing Committee Members',
+    department: 'Electrical and Electronics Engineering',
+    imgLink: '',
+    email: 'hemalathajn@rvce.edu.in',
+  },
+  {
+    name: 'Dr. H. V. Ravish Aradhya',
+    post: 'Organizing Committee Members',
+    department: 'Electronics and Communication Engineering',
+    imgLink: '',
+    email: 'ravisharadhya@rvce.edu.in',
+  },
+  {
+    name: 'Dr. CH Renu Madhavi',
+    post: 'Organizing Committee Members',
+    department: 'Electronics and Instrumentation Engineering',
+    imgLink: '',
+    email: 'renumadhavi@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Rajeswara Rao K V S',
+    post: 'Organizing Committee Members',
+    department: 'Industrial Engineering and Management',
+    imgLink: '',
+    email: 'rajeswararao@rvce.edu.in',
+  },
+  {
+    name: 'Dr. G S Mamatha',
+    post: 'Organizing Committee Members',
+    department: 'Information Science and Engineering',
+    imgLink: '',
+    email: 'mamathags@rvce.edu.in',
+  },
+  {
+    name: 'Dr Jasmine K S',
+    post: 'Organizing Committee Members',
+    department: 'Master of Computer Applications',
+    imgLink: '',
+    email: 'jasmineks@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Krishna M',
+    post: 'Organizing Committee Members',
+    department: 'Mechanical Engineering',
+    imgLink: '',
+    email: 'krishnam@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Nagamani K',
+    post: 'Organizing Committee Members',
+    department: 'Electronics and Telecommunication Engineering',
+    imgLink: '',
+    email: 'nagamanik@rvce.edu.in',
+  },
+  // {
+  //   name: 'Dr. Mahesh. R',
+  //   post: 'Organizing Committee Members',
+  //   department: 'Chemistry',
+  //   imgLink: '',
+  //   email: 'maheshr@rvce.edu.in',
+  // },
+  // {
+  //   name: 'Dr. G. Shireesha',
+  //   post: 'Organizing Committee Members',
+  //   department: 'Physics',
+  //   imgLink: '',
+  //   email: 'shireeshag@rvce.edu.in',
+  // },
+  // {
+  //   name: 'Dr. G. Jayalatha',
+  //   post: 'Organizing Committee Members',
+  //   department: 'Mathematics',
+  //   imgLink: '',
+  //   email: 'jayalathag@rvce.edu.in',
+  // },
+];
+
+export default organizing_committee_data;
