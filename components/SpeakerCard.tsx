@@ -8,8 +8,6 @@ type SpeakerType = {
   topic?: string
   imageLink: string
   profileLink?: string
-  time?: string
-  venue?: string
 }
 
 const SpeakerCard = ({
@@ -65,61 +63,6 @@ const SpeakerCard = ({
                 </p>
               </div>
             </div>
-          </div>
-        )}
-
-        {/* Time and Venue Info (for keynote/plenary) */}
-        {(speaker.time || speaker.venue) && (
-          <div className="space-y-3 mb-4 mt-2">
-            {speaker.time && (
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase">Time</p>
-                  <p className="text-sm font-medium text-gray-900">{speaker.time}</p>
-                </div>
-              </div>
-            )}
-
-            {speaker.venue && (
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase">Venue</p>
-                  <p className="text-sm font-medium text-gray-900">{speaker.venue}</p>
-                </div>
-              </div>
-            )}
           </div>
         )}
 

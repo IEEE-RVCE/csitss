@@ -20,7 +20,7 @@ export const committees = [
   { name: 'Hospitality Committee', path: 'hospitality_committee' },
   { name: 'Transportation', path: 'transportation' },
   { name: 'Registration Committee', path: 'registration_committee' },
-  // { name: 'Conference Coordinators', path: 'conference_coordinators' },
+  { name: 'Conference Coordinators', path: 'conference_coordinators' },
   { name: 'Technical Committee', path: 'technical_committee' },
   // { name: 'Brochure & Flyer', path: 'brochure_flyer' },
   // { name: 'Souvenir Committee', path: 'souvenir_committee' },

@@ -10,8 +10,6 @@ type SpeakerType = {
   topic?: string
   imageLink: string
   profileLink?: string
-  time: string
-  venue: string
 }
 
 type TutorialSpeakerType = {
@@ -30,13 +28,10 @@ const keynoteSpeakers: SpeakerType[] = [
     id: 1,
     name: 'Prof. Dr. Jean Meyer',
     designation:
-      'President of the Technical University of Applied Sciences Würzburg-Schweinfurt (THWS). Professor at the Faculty of Mechanical Engineering at THWS',
+      'President of the Technical University of Applied Sciences Würzburg-Schweinfurt (THWS), Germany.',
     // topic: 'Humanoid Robots - More than just another Industrial Revolution',
-    topic: 'Humanoid Robots – More than just another Industrial Revolution',
     profileLink: 'jean-meyer',
     imageLink: '/speakers/jean.png',
-    time: '9:30 AM - 1:30 PM',
-    venue: 'IEM Auditorium, RVCE',
   },
 
   {
@@ -45,21 +40,15 @@ const keynoteSpeakers: SpeakerType[] = [
     designation:
       'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund, Germany.',
     profileLink: 'stephan-weyers',
-    topic: 'Navigating the Future: Engineering Education for Sustainability and Employability',
     imageLink: '/speakers/stephanWeyers.png',
-       time: '9:30 AM - 1:30 PM',
-    venue: 'IEM Auditorium, RVCE',
   },
   {
     id: 3,
     name: 'Sri. S S Iyengar',
     designation:
-      'Ryder Professor & Director, School of Computing and Information Sciences, Florida International University, Miami, USA',
+      'Distinguished University Professor, Florida International University (FIU), Miami, USA',
     imageLink: './speakers/ss_iyenger.jpeg',
     profileLink: 'ss-iyengar',
-    topic: 'Python for Real AI Applications',
-      time: '9:30 AM - 1:30 PM',
-    venue: 'IEM Auditorium, RVCE',
   },
 ]
 
@@ -76,15 +65,13 @@ const plenarySpeakers: SpeakerType[] = [
 
   {
     id: 1,
-    name: 'Prof. Dr.-Ing. Vinod Rajamani',
+    name: 'Prof. Dr. Vinod Rajamani',
     designation:
-      'Vice Dean of Academics and Internationalization Chairman of Indo-German Collaboration at Auslandsgesellschaft.de. Fachhochschule Dortmund University of Applied Sciences and Arts, Germany',
+      'Department of Mechanical Engg. Professor "Vehicle dynamics", Vice Dean of Academics and Internationalisation, Chairman of Indo-German Collaboration at Auslandsgesellschaft.de, FH Dortmund, Germany.',
     topic:
-      'International Research Collaboration in Sustainability at FH Dortmund',
+      'International Research Collaboration in Sustainability at Fachhochschule Dortmund',
     profileLink: 'vinod-rajamani',
     imageLink: '/speakers/vinod.png',
-    time: '09:30AM - 10:00 AM',
-    venue: 'Civil Seminar Hall',
   },
   {
     id: 2,
@@ -94,8 +81,6 @@ const plenarySpeakers: SpeakerType[] = [
     topic: 'AI Regulation under the EU AI Act',
     imageLink: '/speakers/achim.png',
     profileLink: 'achim-forster',
-    time: '10:00 AM - 10:30 AM',
-    venue: 'Civil Seminar Hall',
   },
 ]
 

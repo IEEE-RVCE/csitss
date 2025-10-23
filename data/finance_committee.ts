@@ -7,13 +7,6 @@ const finance_chairs_data = [
     email: 'deepamalan@rvce.edu.in',
   },
   {
-    name: 'Shyamala S',
-    post: 'Finance Committee Members',
-    department: 'Finance Officer',
-    imgLink: '',
-    email: 'shyamalas@rvce.edu.in',
-  },
-  {
     name: 'Dr. Azra Nasreen',
     post: '',
     department: 'CSE',
