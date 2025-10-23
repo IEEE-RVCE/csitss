@@ -38,7 +38,7 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
                 : ''
             }
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">{post}</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">{post}</h2>
             {/* <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div> */}
           </div>
 
@@ -156,9 +156,10 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
               )
 
               if (isLastSingle) {
+                // For patrons: don't span both columns or center — left-align and allow intrinsic width
                 return (
-                  <div key={member.name} className="md:col-span-2 flex justify-center">
-                    <div className="w-full md:w-3/4 relative group rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+                  <div key={member.name} className="justify-self-start">
+                    <div className="relative group rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 inline-block">
                       {card}
                     </div>
                   </div>

@@ -37,23 +37,23 @@ const program_chairs_data = [
   {
     name: 'Dr. Praveena T',
     post: '',
-    department: '',
+    department: 'CSE',
     imgLink: '',
-    email: '',
+    email: 'praveenat@rvce.edu.in',
   },
   {
     name: 'Dr. Prathiba D',
     post: '',
-    department: '',
+    department: 'CSE',
     imgLink: '',
-    email: '',
+    email: 'pratibad@rvce.edu.in',
   },
   {
     name: 'Prof. Shweta Babu Prasad',
     post: '',
-    department: '',
+    department: 'CSE',
     imgLink: '',
-    email: '',
+    email: 'shwetababup@rvce.edu.in',
   },
 ]
 
