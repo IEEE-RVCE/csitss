@@ -117,7 +117,7 @@ const Schedules = () => {
                   Day 3
                 </span> */}
               </div>
-              <h3 className="text-2xl font-bold mb-2">Paper Presentation Track Schedule</h3>
+              <h3 className="text-2xl font-bold mb-2">Tentative Paper Presentation Track Schedule</h3>
               <p className="text-purple-100 text-sm">22nd November 2025</p>
             </div>
 
