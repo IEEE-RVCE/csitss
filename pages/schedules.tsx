@@ -110,28 +110,25 @@ const Schedules = () => {
 
           {/* Main Conference Day 2 Card */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 opacity-75">
-            <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
-              <div className="flex items-center justify-between mb-4">
-                <Calendar className="w-10 h-10" />
-                {/* <span className="bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-bold">
-                  Day 3
-                </span> */}
-              </div>
-              <h3 className="text-2xl font-bold mb-2">Tentative Paper Presentation Track Schedule</h3>
-              <p className="text-purple-100 text-sm">22nd November 2025</p>
-            </div>
+  <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
+    <div className="flex items-center justify-between mb-4">
+      <Calendar className="w-10 h-10" />
+    </div>
+    <h3 className="text-2xl font-bold mb-2">Tentative Paper Presentation Track Schedule</h3>
+    <p className="text-purple-100 text-sm">22nd November 2025</p>
+  </div>
 
-            <div className="p-6">
-              <button
-                disabled
-                className="w-full bg-gray-300 text-gray-500 py-3 px-4 rounded-lg font-semibold cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                <span>Coming Soon</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div className="p-6">
+    <a
+      href="/Session_TrackDetails_24-Oct_CSITSS2025.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors"
+    >
+      <span>Open Schedule PDF</span>
+    </a>
+  </div>
+</div>
 
       {/* Schedule Modal */}
       <ScheduleModal
