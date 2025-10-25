@@ -52,9 +52,6 @@ const Schedules = () => {
             <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
-                {/* <span className="bg-white text-blue-600 px-3 py-1 rounded-full text-xs font-bold">
-                  Day 1
-                </span> */}
               </div>
               <h3 className="text-2xl font-bold mb-2">
                 Pre-Conference Tutorial
@@ -90,9 +87,6 @@ const Schedules = () => {
             <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
-                {/* <span className="bg-white text-green-600 px-3 py-1 rounded-full text-xs font-bold">
-                  Day 2
-                </span> */}
               </div>
               <h3 className="text-2xl font-bold mb-2">Program Schedule</h3>
               <p className="text-green-100 text-sm">21st November 2025</p>
@@ -100,10 +94,23 @@ const Schedules = () => {
 
             <div className="p-6">
               <button
-                disabled
-                className="w-full bg-gray-300 text-gray-500 py-3 px-4 rounded-lg font-semibold cursor-not-allowed flex items-center justify-center gap-2"
+                onClick={() => window.open("/Tentative_ProgramSchedule_CSITSS2025_NEW.pdf", '_blank')}
+                className="w-full bg-gradient-to-r from-green-600 to-teal-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-green-700 hover:to-teal-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
-                <span>Coming Soon</span>
+                <span>Open PDF</span>
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -113,20 +120,32 @@ const Schedules = () => {
             <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
-                {/* <span className="bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-bold">
-                  Day 3
-                </span> */}
               </div>
-              <h3 className="text-2xl font-bold mb-2">Tentative Paper Presentation Track Schedule</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                Tentative Paper Presentation Track Schedule
+              </h3>
               <p className="text-purple-100 text-sm">22nd November 2025</p>
             </div>
 
             <div className="p-6">
               <button
-                disabled
-                className="w-full bg-gray-300 text-gray-500 py-3 px-4 rounded-lg font-semibold cursor-not-allowed flex items-center justify-center gap-2"
+                onClick={() => window.open('/Session_TrackDetails_24-Oct_CSITSS2025.pdf', '_blank')}
+                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
-                <span>Coming Soon</span>
+                <span>Open PDF</span>
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </button>
             </div>
           </div>
