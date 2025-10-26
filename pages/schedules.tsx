@@ -94,7 +94,12 @@ const Schedules = () => {
 
             <div className="p-6">
               <button
-                onClick={() => window.open("/Tentative_ProgramSchedule_CSITSS2025_NEW.pdf", '_blank')}
+                onClick={() =>
+                  window.open(
+                    '/Tentative_ProgramSchedule_CSITSS2025_NEW.pdf',
+                    '_blank'
+                  )
+                }
                 className="w-full bg-gradient-to-r from-green-600 to-teal-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-green-700 hover:to-teal-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
                 <span>Open PDF</span>
@@ -124,12 +129,17 @@ const Schedules = () => {
               <h3 className="text-2xl font-bold mb-2">
                 Tentative Paper Presentation Track Schedule
               </h3>
-              <p className="text-purple-100 text-sm">22nd November 2025</p>
+              <p className="text-purple-100 text-sm">21-22nd November 2025</p>
             </div>
 
             <div className="p-6">
               <button
-                onClick={() => window.open('/Session_TrackDetails_24-Oct_CSITSS2025.pdf', '_blank')}
+                onClick={() =>
+                  window.open(
+                    '/Session_TrackDetails_24-Oct_CSITSS2025.pdf',
+                    '_blank'
+                  )
+                }
                 className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
                 <span>Open PDF</span>
