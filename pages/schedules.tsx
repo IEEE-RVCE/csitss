@@ -61,10 +61,15 @@ const Schedules = () => {
 
             <div className="p-6">
               <button
-                onClick={() => setIsModalOpen(true)}
+                onClick={() =>
+                  window.open(
+                    '/Program_Schedule_WebsiteCSITSS2025.docx.pdf',
+                    '_blank'
+                  )
+                }
                 className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
               >
-                <span>View Schedule</span>
+                <span>Open PDF</span>
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -83,13 +88,13 @@ const Schedules = () => {
           </div>
 
           {/* Main Conference Day 1 Card */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 opacity-75">
+          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-green-500 transform hover:-translate-y-2">
             <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Program Schedule</h3>
-              <p className="text-green-100 text-sm">21st November 2025</p>
+              <p className="text-green-100 text-sm">21-22nd November 2025</p>
             </div>
 
             <div className="p-6">
@@ -121,7 +126,7 @@ const Schedules = () => {
           </div>
 
           {/* Main Conference Day 2 Card */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 opacity-75">
+          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-purple-500 transform hover:-translate-y-2">
             <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
@@ -136,7 +141,7 @@ const Schedules = () => {
               <button
                 onClick={() =>
                   window.open(
-                    '/Session_TrackDetails_24-Oct_CSITSS2025.pdf',
+                    '/Session_TrackDetails_28-Oct_CSITSS2025.pdf',
                     '_blank'
                   )
                 }
