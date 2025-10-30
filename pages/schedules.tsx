@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import ScheduleModal from '../components/ScheduleModal'
-import { Calendar, MapPin } from 'lucide-react'
+import {
+  BookOpen,
+  Calendar,
+  CloudDownload,
+  FileSpreadsheet,
+  MapPin,
+} from 'lucide-react'
 
 const Schedules = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -45,10 +51,10 @@ const Schedules = () => {
           </p>
         </div>
 
-        {/* Schedule Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Schedule Cards - First Row */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
           {/* Pre-Conference Tutorial Card */}
-          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-blue-500 transform hover:-translate-y-2">
+          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-blue-500 transform hover:-translate-y-2 flex flex-col justify-between">
             <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
@@ -88,7 +94,7 @@ const Schedules = () => {
           </div>
 
           {/* Main Conference Day 1 Card */}
-          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-green-500 transform hover:-translate-y-2">
+          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-green-500 transform hover:-translate-y-2 flex flex-col justify-between">
             <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
@@ -125,8 +131,8 @@ const Schedules = () => {
             </div>
           </div>
 
-          {/* Main Conference Day 2 Card */}
-          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-purple-500 transform hover:-translate-y-2">
+          {/* Paper Presentation Track Schedule Card */}
+          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-purple-500 transform hover:-translate-y-2 flex flex-col justify-between">
             <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
               <div className="flex items-center justify-between mb-4">
                 <Calendar className="w-10 h-10" />
@@ -161,6 +167,48 @@ const Schedules = () => {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Author Resources - Second Row */}
+
+          <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-amber-500 transform hover:-translate-y-2">
+            <div className="bg-gradient-to-br from-amber-500 to-orange-600 p-6 text-white">
+              <div className="flex items-center justify-between mb-4">
+                <BookOpen className="w-10 h-10" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Author Resources</h3>
+              <p className="text-amber-100 text-sm">
+                Guidelines & Templates for Presenters
+              </p>
+            </div>
+
+            <div className="p-6 space-y-3">
+              <button
+                onClick={() =>
+                  window.open('/Updated_Author-Guidelines.pdf', '_blank')
+                }
+                className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-amber-700 hover:to-orange-700 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+              >
+                <FileSpreadsheet className="w-5 h-5" />
+                <span>Author Guidelines</span>
+              </button>
+              <button
+                onClick={() => {
+                  const link = document.createElement('a')
+                  link.href =
+                    '/Research_Paper_ Presentaion_Template_CSITSS-2025_Final.pptx'
+                  link.download =
+                    'Research_Paper_ Presentaion_Template_CSITSS-2025_Final.pptx'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+                className="w-full bg-white border-2 border-amber-500 text-amber-600 py-3 px-4 rounded-lg font-semibold hover:bg-amber-50 transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center gap-2"
+              >
+                <CloudDownload className="w-5 h-5" />
+                <span>Download PPT Template</span>
               </button>
             </div>
           </div>
