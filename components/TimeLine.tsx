@@ -130,7 +130,7 @@ const CustomTimeline = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <button
             onClick={handleDownload}
             className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 
@@ -140,7 +140,7 @@ const CustomTimeline = () => {
             <Download className="w-5 h-5" />
             Download Tentative Paper-Presentation Track Schedule
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   )
