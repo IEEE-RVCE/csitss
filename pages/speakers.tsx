@@ -45,9 +45,10 @@ const keynoteSpeakers: SpeakerType[] = [
     designation:
       'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund, Germany.',
     profileLink: 'stephan-weyers',
-    topic: 'Navigating the Future: Engineering Education for Sustainability and Employability',
+    topic:
+      'Navigating the Future: Engineering Education for Sustainability and Employability',
     imageLink: '/speakers/stephanWeyers.png',
-       time: '9:30 AM - 1:30 PM',
+    time: '9:30 AM - 1:30 PM',
     venue: 'IEM Auditorium, RVCE',
   },
   {
@@ -58,7 +59,7 @@ const keynoteSpeakers: SpeakerType[] = [
     imageLink: './speakers/ss_iyenger.jpeg',
     profileLink: 'ss-iyengar',
     topic: 'Python for Real AI Applications',
-      time: '9:30 AM - 1:30 PM',
+    time: '9:30 AM - 1:30 PM',
     venue: 'IEM Auditorium, RVCE',
   },
 ]
@@ -114,7 +115,7 @@ const preConferenceTutorialSpeakers: TutorialSpeakerType[] = [
   {
     id: 2,
     name: 'Shri. Roopa Sheshadri',
-    designation: 'Director, Chief Engineer at Samsung R&D Institute, Bangalore',
+    designation: 'Director at Samsung R&D Institute, Bangalore',
     topic:
       'AI for Visual Creativity: How Machines See, Enhance, and Reimagine Photos & Videos',
     imageLink: '/speakers/roopa-sheshadri.png',
