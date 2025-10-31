@@ -51,11 +51,6 @@ const CustomTimeline = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const handleDownload = () => {
-    const pdfPath = '/Session_TrackDetails_24-Oct_CSITSS2025.pdf'
-    window.open(pdfPath, '_blank')
-  }
-
   return (
     <div className="w-full px-4 py-12 relative">
       {/* Popup Notification */}
@@ -129,18 +124,6 @@ const CustomTimeline = () => {
             </div>
           ))}
         </div>
-
-        {/* <div className="mt-16 text-center">
-          <button
-            onClick={handleDownload}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 
-              text-white text-lg font-semibold rounded-full transition-all duration-300 
-              transform hover:scale-105 hover:shadow-xl"
-          >
-            <Download className="w-5 h-5" />
-            Download Tentative Paper-Presentation Track Schedule
-          </button>
-        </div> */}
       </div>
     </div>
   )
