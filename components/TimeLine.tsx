@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Calendar, Clock, Download } from 'lucide-react'
+import { Calendar, Clock } from 'lucide-react'
 
 const CustomTimeline = () => {
   const [isVisible, setIsVisible] = useState(false)
