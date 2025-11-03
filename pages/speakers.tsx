@@ -385,14 +385,20 @@ const Speakers = () => {
 
         {/* Keynote Speakers Section */}
         <section className="mb-20">
-          <SectionHeader title="Keynote Speakers" />
+          <SectionHeader
+            title="Keynote Speakers"
+            subtitle="Keynote Speakers address on 21st November 2025"
+          />
           <SpeakerGrid speakers={keynoteSpeakers} />
         </section>
 
         {/* Plenary Speakers Section */}
         {plenarySpeakers.length > 0 && (
           <section className="mb-20">
-            <SectionHeader title="Plenary Speakers" />
+            <SectionHeader
+              title="Plenary Speakers"
+              subtitle="Plenary Speakers address on 22nd November 2025"
+            />
             <SpeakerGrid speakers={plenarySpeakers} />
           </section>
         )}
