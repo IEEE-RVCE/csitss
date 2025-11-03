@@ -384,7 +384,6 @@ function Registration() {
             </strong>
           </p>
         </section>{' '}
-
         {/* New Professional UI Section for Registration Links */}
         <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -442,14 +441,14 @@ function Registration() {
             {/* Card 2: For Attendees */}
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center flex flex-col items-center">
               <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                For All Other Attendees
+                For All Other Attendees / Listeners
               </h3>
               <p className="text-gray-500 mb-4">
                 (Pre-conference, Listener, Best Thesis Award)
               </p>
               <div className="p-2 border rounded-md inline-block mb-4 bg-gray-50 relative overflow-hidden">
                 <Image
-                  src="/attendee.jpeg"
+                  src="/attendee.png"
                   alt="QR Code for Attendee Registration"
                   width={160}
                   height={160}
@@ -460,30 +459,18 @@ function Registration() {
                       'https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found'
                   }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="bg-red-600 text-white px-4 py-2 rounded-lg font-extrabold text-xs sm:text-sm shadow-2xl transform -rotate-12 border-2 border-red-700">
-                      <div className="text-center leading-tight">
-                        REGISTRATION
-                        <br />
-                        CLOSED
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <a
-                // href="https://forms.gle/CavwwpknvbzvPHF77"
+                href="https://rzp.io/rzp/QUdjqRtG"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium pointer-events-none opacity-50 cursor-not-allowed"
+                className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium "
               >
-                Registration closed for Attendees
+                Registration for Attendees
               </a>
             </div>
           </div>
         </section>
-        
         <section className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <h3 className="text-lg sm:text-xl font-extrabold text-gray-800">
             Instructions for Registration
