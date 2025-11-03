@@ -362,7 +362,13 @@ const Sponsorship: React.FC = () => {
             Special thanks to Sponsors of CSITSS-2025
           </h1>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginBottom: '0.5rem',
+          }}
+        >
           <h1
             style={{
               marginRight: '0.75rem',
@@ -429,12 +435,22 @@ const Sponsorship: React.FC = () => {
               <Image
                 src={`https://flyingfireservices.com/images/resources/pnglogo`}
                 alt="FLYING FIRE"
-                style={{ background: 'transparent', maxWidth: '100%', maxHeight: '84px' }}
+                style={{
+                  background: 'transparent',
+                  maxWidth: '100%',
+                  maxHeight: '84px',
+                }}
               />
             </ThemeIcon>
           </a>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginBottom: '0.5rem',
+          }}
+        >
           <h1
             style={{
               marginRight: '0.75rem',
@@ -500,7 +516,11 @@ const Sponsorship: React.FC = () => {
               <Image
                 src={`/sponsors/Synaptics.png`}
                 alt="Synaptics Inidia Pvt Ltd"
-                style={{ background: 'transparent', maxWidth: '100%', maxHeight: '84px' }}
+                style={{
+                  background: 'transparent',
+                  maxWidth: '100%',
+                  maxHeight: '84px',
+                }}
               />
             </ThemeIcon>
           </a>
@@ -537,7 +557,52 @@ const Sponsorship: React.FC = () => {
               <Image
                 src={`/sponsors/presidentEducation.png`}
                 alt="President Education"
-                style={{ background: 'transparent', maxWidth: '100%', maxHeight: '84px' }}
+                style={{
+                  background: 'transparent',
+                  maxWidth: '100%',
+                  maxHeight: '84px',
+                }}
+              />
+            </ThemeIcon>
+          </a>
+          <a
+            href="https://wie.ieee.org/"
+            target="_blank"
+            style={{
+              width: '220px',
+              padding: '0.5rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.08)',
+              border: '1.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '150px',
+              transition: 'transform 0.15s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-3px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={110}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/ieee_women.png`}
+                alt="IEEE Women in Engineering"
+                style={{
+                  background: 'transparent',
+                  maxWidth: '100%',
+                  maxHeight: '84px',
+                }}
               />
             </ThemeIcon>
           </a>
