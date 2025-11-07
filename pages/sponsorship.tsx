@@ -382,6 +382,88 @@ const Sponsorship: React.FC = () => {
               flex: '0 0 auto',
             }}
           >
+            Platinum
+          </h1>
+          <hr
+            style={{
+              background: 'linear-gradient(to right, red, transparent)',
+              height: '3px',
+              flex: 1,
+              marginRight: '1rem',
+            }}
+          />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '1rem',
+            flexWrap: 'wrap', // For mobile responsiveness
+            marginBottom: '0.75rem',
+          }}
+        >
+          <a
+            href="https://maximus.com/"
+            target="_blank"
+            style={{
+              width: '220px',
+              padding: '0.5rem',
+              borderRadius: '0.5rem',
+              backgroundColor: 'white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.08)',
+              border: '1.5px solid #ccc',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '150px',
+              transition: 'transform 0.15s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-3px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            <ThemeIcon
+              variant="light"
+              size={110}
+              radius="md"
+              style={{ background: 'transparent' }}
+            >
+              <Image
+                src={`/sponsors/maximus.jpg`}
+                alt="Maximus"
+                style={{
+                  background: 'transparent',
+                  maxWidth: '100%',
+                  maxHeight: '84px',
+                }}
+              />
+            </ThemeIcon>
+          </a>
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginBottom: '0.5rem',
+          }}
+        >
+          <h1
+            style={{
+              marginRight: '0.75rem',
+              background: 'linear-gradient(to right, #ff0000, #800000)',
+              WebkitBackgroundClip: 'text',
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              color: 'transparent',
+              alignContent: 'center',
+              whiteSpace: 'nowrap',
+              flex: '0 0 auto',
+            }}
+          >
             Gold
           </h1>
           <hr
