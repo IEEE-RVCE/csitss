@@ -147,7 +147,7 @@ const Schedules = () => {
               <button
                 onClick={() =>
                   window.open(
-                    '/Session_TrackDetails_31st_Oct_CSITSS2025.pdf',
+                    '/Session_TrackDetails_11th_Nov_CSITSS2025.pdf',
                     '_blank'
                   )
                 }
