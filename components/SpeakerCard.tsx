@@ -125,7 +125,7 @@ const SpeakerCard = ({
 
         {/* Button to view profile - pushed to bottom */}
         {speaker.profileLink && (
-          <div className="flex justify-end mt-auto pt-4">
+          <div className="flex justify-center mt-auto pt-4">
             <span
               className="text-sm font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-700 cursor-pointer"
               onClick={() => setSpeakerPopup(speaker.profileLink || null)}

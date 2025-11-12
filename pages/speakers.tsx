@@ -25,9 +25,27 @@ type TutorialSpeakerType = {
   venue: string
 }
 
+type PanelMemberType = {
+  id: number
+  name: string
+  designation: string
+  imageLink: string
+  profileLink?: string
+}
+
 const keynoteSpeakers: SpeakerType[] = [
   {
     id: 1,
+    name: 'Rafi Mohammed',
+    designation: 'Vice President and Head of Technology, Maximus India',
+    topic: "How the Public Service Sector Leverages AEGIS to Enhance the Citizen Experience Through Its Partnership with Maximus",
+    imageLink: '/speakers/rafi-mohammed.png',
+    profileLink: 'rafi-mohammed',
+    time: '9:30 AM - 1:30 PM',
+    venue: 'IEM Auditorium, RVCE',
+  },
+  {
+    id: 2,
     name: 'Prof. Dr. Jean Meyer',
     designation:
       'President of the Technical University of Applied Sciences Würzburg-Schweinfurt (THWS). Professor at the Faculty of Mechanical Engineering at THWS',
@@ -35,19 +53,6 @@ const keynoteSpeakers: SpeakerType[] = [
     topic: 'Humanoid Robots – More than just another Industrial Revolution',
     profileLink: 'jean-meyer',
     imageLink: '/speakers/jean.png',
-    time: '9:30 AM - 1:30 PM',
-    venue: 'IEM Auditorium, RVCE',
-  },
-
-  {
-    id: 2,
-    name: 'Prof. Dr. Stephan Weyers',
-    designation:
-      'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund, Germany.',
-    profileLink: 'stephan-weyers',
-    topic:
-      'Navigating the Future: Engineering Education for Sustainability and Employability',
-    imageLink: '/speakers/stephanWeyers.png',
     time: '9:30 AM - 1:30 PM',
     venue: 'IEM Auditorium, RVCE',
   },
@@ -62,6 +67,19 @@ const keynoteSpeakers: SpeakerType[] = [
     time: '9:30 AM - 1:30 PM',
     venue: 'IEM Auditorium, RVCE',
   },
+  {
+    id: 4,
+    name: 'Prof. Dr. Stephan Weyers',
+    designation:
+      'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund, Germany.',
+    profileLink: 'stephan-weyers',
+    topic:
+      'Navigating the Future: Engineering Education for Sustainability and Employability',
+    imageLink: '/speakers/stephanWeyers.png',
+    time: '9:30 AM - 1:30 PM',
+    venue: 'IEM Auditorium, RVCE',
+  },
+
 ]
 
 const plenarySpeakers: SpeakerType[] = [
@@ -97,6 +115,57 @@ const plenarySpeakers: SpeakerType[] = [
     profileLink: 'achim-forster',
     time: '10:00 AM - 10:30 AM',
     venue: 'Civil Seminar Hall',
+  },
+]
+
+const panelDiscussionMembers: PanelMemberType[] = [
+  {
+    id: 1,
+    name: 'Prof. Dr. Stephan Weyers',
+    designation:
+      'Vice-Rector for Teaching, Studies and International Affairs, FH Dortmund, Germany',
+    imageLink: '/speakers/stephanWeyers.png',
+    profileLink: 'stephan-weyers-panel',
+  },
+  {
+    id: 2,
+    name: 'Prof. Dr. Achim Förster',
+    designation:
+      'Vice President for International & Academic Affairs, Technical University of Applied Sciences Würzburg-Schweinfurt (THWS), Germany',
+    imageLink: '/speakers/achim.png',
+    profileLink: 'achim-forster-panel',
+  },
+  {
+    id: 3,
+    name: 'Prof. Dr. Marian Daun',
+    designation:
+      'Professor of Software Engineering and Program Director of the Robotics (IRO) program at THWS, Germany',
+    imageLink: '/speakers/marian.png',
+    profileLink: 'marian-daun',
+  },
+  {
+    id: 4,
+    name: 'Prof. Dr. Sonja Kuhnt',
+    designation:
+      'Professor of Mathematical Statistics at the Faculty of Computer Science, Fachhochschule Dortmund, Germany',
+    imageLink: '/speakers/sonja.png',
+    profileLink: 'sonja-kuhnt',
+  },
+  {
+    id: 5,
+    name: 'Dr. K.S. Geetha',
+    designation:
+      'Vice-Principal and Professor, Department of Electronics & Communication Engineering, RVCE (Moderator)',
+    imageLink: '/speakers/ksgeetha.png',
+    profileLink: 'ks-geetha',
+  },
+  {
+    id: 6,
+    name: 'Dr. K.N. Subramanya',
+    designation:
+      'Principal & Professor, Department of Industrial Engineering and Management, RVCE',
+    imageLink: '/speakers/knsubramanya.png',
+    profileLink: 'kn-subramanya',
   },
 ]
 
@@ -339,13 +408,14 @@ const Speakers = () => {
 
         {/* Button to view profile */}
         {speaker.profileLink && (
-          <div className="flex justify-end mt-auto pt-2">
-            <span
-              className="text-sm font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-700 cursor-pointer"
+          <div className="flex justify-center mt-auto pt-2">
+            <button
+              type="button"
+              className="text-sm font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-700 cursor-pointer transition-colors"
               onClick={() => setSpeakerPopup(speaker.profileLink || null)}
             >
               View Profile
-            </span>
+            </button>
           </div>
         )}
       </div>
@@ -364,6 +434,66 @@ const Speakers = () => {
           className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
         >
           <TutorialSpeakerCard speaker={speaker} />
+        </div>
+      ))}
+    </div>
+  )
+
+  const PanelMemberCard = ({ member }: { member: PanelMemberType }) => (
+    <div className="bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 border border-gray-200 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden flex flex-col h-full">
+      {/* Image Section */}
+      <div className="relative h-80 w-full overflow-hidden bg-gray-100">
+        <img
+          src={member.imageLink}
+          alt={member.name}
+          className="h-full w-full object-cover object-top"
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="p-6 flex flex-col flex-grow">
+        {/* Member Info */}
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">
+          {member.name}
+        </h3>
+
+        {/* Designation */}
+        <div className="mb-4 bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-blue-100">
+          <div className="flex items-start gap-3">
+            <div className="bg-blue-500 p-2 rounded-lg flex-shrink-0">
+              <BriefcaseBusiness className="w-5 h-5 text-white" />
+            </div>
+            <div className="flex-1">
+              <p className="text-sm text-gray-800 leading-relaxed font-medium">
+                {member.designation}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Button to view profile */}
+        {member.profileLink && (
+          <div className="flex justify-center mt-auto pt-2">
+            <span
+              className="text-sm font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-700 cursor-pointer transition-colors"
+              onClick={() => setSpeakerPopup(member.profileLink || null)}
+            >
+              View Profile
+            </span>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+
+  const PanelMemberGrid = ({ members }: { members: PanelMemberType[] }) => (
+    <div className="flex flex-wrap justify-center gap-6 w-full max-w-7xl mx-auto">
+      {members.map((member) => (
+        <div
+          key={member.id}
+          className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+        >
+          <PanelMemberCard member={member} />
         </div>
       ))}
     </div>
@@ -400,6 +530,75 @@ const Speakers = () => {
               subtitle="Plenary Speakers address on 22nd November 2025"
             />
             <SpeakerGrid speakers={plenarySpeakers} />
+          </section>
+        )}
+
+        {/* Panel Discussion Members Section */}
+        {panelDiscussionMembers.length > 0 && (
+          <section className="mb-20">
+            <SectionHeader title="Panel Discussion Members" />
+            
+            {/* Professional Callout Box for Theme, Time, and Venue */}
+            <div className="max-w-6xl mx-auto mb-10">
+              <div className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-xl shadow-lg border-2 border-blue-200 overflow-hidden">
+                <div className="relative p-6">
+                  {/* Title Row */}
+                  <div className="mb-4">
+                    <span className="text-md font-bold text-blue-800 uppercase tracking-wide block text-center mb-2">
+                      Theme
+                    </span>
+                    <h3 className="text-xl md:text-2xl font-bold text-center bg-clip-text text-black-800">
+                      AEGIS: Advanced Engineering for Green, Intelligent, and Secure Systems
+                    </h3>
+                  </div>
+
+                  {/* Info Row - Three Sections */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {/* Theme Section */}
+                    <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
+                      <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-lg shadow-md flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Date</p>
+                        <p className="text-sm font-bold text-gray-900">22nd November 2025</p>
+                      </div>
+                    </div>
+
+                    {/* Time Section */}
+                    <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-lg p-3 border border-green-100 shadow-sm">
+                      <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-2 rounded-lg shadow-md flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Time</p>
+                        <p className="text-sm font-bold text-gray-900">4:30 PM - 5:15 PM</p>
+                      </div>
+                    </div>
+
+                    {/* Venue Section */}
+                    <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-lg p-3 border border-purple-100 shadow-sm">
+                      <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-2 rounded-lg shadow-md flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Venue</p>
+                        <p className="text-sm font-bold text-gray-900">ECE Seminar Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <PanelMemberGrid members={panelDiscussionMembers} />
           </section>
         )}
 
