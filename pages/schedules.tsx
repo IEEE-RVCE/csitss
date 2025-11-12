@@ -69,7 +69,7 @@ const Schedules = () => {
               <button
                 onClick={() =>
                   window.open(
-                    '/Program_Schedule_WebsiteCSITSS2025.docx.pdf',
+                  '/Program_Schedule_WebsiteCSITSS2025.docx.pdf',
                     '_blank'
                   )
                 }
@@ -107,7 +107,7 @@ const Schedules = () => {
               <button
                 onClick={() =>
                   window.open(
-                    '/Tentative_ProgramSchedule_CSITSS2025_NEW.pdf',
+                    '/ProgramSchedule_CSITSS2025_FINAL1.pdf',
                     '_blank'
                   )
                 }
