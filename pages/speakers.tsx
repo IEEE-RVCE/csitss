@@ -36,9 +36,10 @@ type PanelMemberType = {
 const keynoteSpeakers: SpeakerType[] = [
   {
     id: 1,
-    name: 'Rafi Mohammed',
+    name: 'Mr. Rafi Mohammed',
     designation: 'Vice President and Head of Technology, Maximus India',
-    topic: "How the Public Service Sector Leverages AEGIS to Enhance the Citizen Experience Through Its Partnership with Maximus",
+    topic:
+      'How the Public Service Sector Leverages AEGIS to Enhance the Citizen Experience Through Its Partnership with Maximus',
     imageLink: '/speakers/rafi-mohammed.png',
     profileLink: 'rafi-mohammed',
     time: '9:30 AM - 1:30 PM',
@@ -79,7 +80,6 @@ const keynoteSpeakers: SpeakerType[] = [
     time: '9:30 AM - 1:30 PM',
     venue: 'IEM Auditorium, RVCE',
   },
-
 ]
 
 const plenarySpeakers: SpeakerType[] = [
@@ -537,7 +537,7 @@ const Speakers = () => {
         {panelDiscussionMembers.length > 0 && (
           <section className="mb-20">
             <SectionHeader title="Panel Discussion Members" />
-            
+
             {/* Professional Callout Box for Theme, Time, and Venue */}
             <div className="max-w-6xl mx-auto mb-10">
               <div className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-xl shadow-lg border-2 border-blue-200 overflow-hidden">
@@ -548,7 +548,8 @@ const Speakers = () => {
                       Theme
                     </span>
                     <h3 className="text-xl md:text-2xl font-bold text-center bg-clip-text text-black-800">
-                      AEGIS: Advanced Engineering for Green, Intelligent, and Secure Systems
+                      AEGIS: Advanced Engineering for Green, Intelligent, and
+                      Secure Systems
                     </h3>
                   </div>
 
@@ -557,40 +558,87 @@ const Speakers = () => {
                     {/* Theme Section */}
                     <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm">
                       <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-lg shadow-md flex-shrink-0">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        <svg
+                          className="w-4 h-4 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                          />
                         </svg>
                       </div>
                       <div className="flex-1">
-                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Date</p>
-                        <p className="text-sm font-bold text-gray-900">22nd November 2025</p>
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                          Date
+                        </p>
+                        <p className="text-sm font-bold text-gray-900">
+                          22nd November 2025
+                        </p>
                       </div>
                     </div>
 
                     {/* Time Section */}
                     <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-lg p-3 border border-green-100 shadow-sm">
                       <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-2 rounded-lg shadow-md flex-shrink-0">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <svg
+                          className="w-4 h-4 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
                         </svg>
                       </div>
                       <div className="flex-1">
-                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Time</p>
-                        <p className="text-sm font-bold text-gray-900">4:30 PM - 5:15 PM</p>
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                          Time
+                        </p>
+                        <p className="text-sm font-bold text-gray-900">
+                          4:30 PM - 5:15 PM
+                        </p>
                       </div>
                     </div>
 
                     {/* Venue Section */}
                     <div className="flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-lg p-3 border border-purple-100 shadow-sm">
                       <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-2 rounded-lg shadow-md flex-shrink-0">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <svg
+                          className="w-4 h-4 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
                         </svg>
                       </div>
                       <div className="flex-1">
-                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Venue</p>
-                        <p className="text-sm font-bold text-gray-900">ECE Seminar Hall</p>
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                          Venue
+                        </p>
+                        <p className="text-sm font-bold text-gray-900">
+                          ECE Seminar Hall
+                        </p>
                       </div>
                     </div>
                   </div>
