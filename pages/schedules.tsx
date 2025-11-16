@@ -39,6 +39,7 @@ const Schedules = () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
+
         {/* Introduction */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -210,6 +211,75 @@ const Schedules = () => {
                 <CloudDownload className="w-5 h-5" />
                 <span>Download PPT Template</span>
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Important Announcement Banner */}
+      <div className="mb-12 max-w-5xl mx-auto">
+        <div className=" overflow-hidden">
+          <div className="p-6 md:p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                  Important Notice for Authors
+                </h3>
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                  <strong>DEAR AUTHORS KINDLY UPLOAD THE PPT FOR PAPER
+                  PRESENTATION BY THE END OF 17/11/2025 POSITIVELY.</strong>
+                </p>
+                <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
+                  <p className="text-sm text-gray-600 mb-2 font-medium">
+                    File Naming Convention:
+                  </p>
+                  <code className="text-sm bg-white px-3 py-2 rounded border border-gray-300 text-gray-800 block">
+                    PAPERID_CSITSS2025.pptx
+                  </code>
+                  <p className="text-xs text-gray-500 mt-2">
+                    Example: <span className="font-mono">1196_CSITSS2025.pptx</span>
+                  </p>
+                </div>
+                <a
+                  href="https://drive.google.com/drive/folders/1vKyphszMKMYboRq_0rTB9AX1rGCsaiK9?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+                >
+                  <CloudDownload className="w-5 h-5" />
+                  <span>Upload Your Presentation</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
