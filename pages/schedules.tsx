@@ -39,7 +39,6 @@ const Schedules = () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-
         {/* Introduction */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -148,7 +147,7 @@ const Schedules = () => {
               <button
                 onClick={() =>
                   window.open(
-                    '/Final-Session_TrackDetails_To-Publish_CSITSS2025.pdf',
+                    '/Final-Session_TrackDetails_ASon_18.pdf',
                     '_blank'
                   )
                 }
@@ -243,8 +242,10 @@ const Schedules = () => {
                   Important Notice for Authors
                 </h3>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-                  <strong>DEAR AUTHORS KINDLY UPLOAD THE PPT FOR PAPER
-                  PRESENTATION BY THE END OF 17/11/2025 POSITIVELY.</strong>
+                  <strong>
+                    DEAR AUTHORS KINDLY UPLOAD THE PPT FOR PAPER PRESENTATION BY
+                    THE END OF 17/11/2025 POSITIVELY.
+                  </strong>
                 </p>
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
                   <p className="text-sm text-gray-600 mb-2 font-medium">
@@ -254,7 +255,8 @@ const Schedules = () => {
                     PAPERID_CSITSS2025.pptx
                   </code>
                   <p className="text-xs text-gray-500 mt-2">
-                    Example: <span className="font-mono">1196_CSITSS2025.pptx</span>
+                    Example:{' '}
+                    <span className="font-mono">1196_CSITSS2025.pptx</span>
                   </p>
                 </div>
                 <a
