@@ -452,21 +452,32 @@ function Registration() {
                   alt="QR Code for Attendee Registration"
                   width={160}
                   height={160}
-                  className="w-40 h-40 object-cover"
+                  className="w-40 h-40 object-cover blur-[2px] grayscale opacity-40"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement
                     target.src =
                       'https://placehold.co/160x160/EFEFEF/333333?text=QR+Not+Found'
                   }}
                 />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="bg-red-600 text-white px-4 py-2 rounded-lg font-extrabold text-xs sm:text-sm shadow-2xl transform -rotate-12 border-2 border-red-700">
+                      <div className="text-center leading-tight">
+                        REGISTRATION
+                        <br />
+                        CLOSED
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <a
-                href="https://rzp.io/rzp/QUdjqRtG"
+                // href="https://rzp.io/rzp/QUdjqRtG"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium "
+                className="w-full bg-blue-600 text-white py-2.5 px-5 rounded-md hover:bg-blue-700 transition-colors duration-300 font-medium pointer-events-none opacity-50 cursor-not-allowed"
               >
-                Registration for Attendees
+                Registration closed for Attendees
               </a>
             </div>
           </div>
