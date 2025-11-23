@@ -260,13 +260,13 @@ const Schedules = () => {
                   </p>
                 </div>
                 <a
-                  href="https://drive.google.com/drive/folders/1vKyphszMKMYboRq_0rTB9AX1rGCsaiK9?usp=drive_link"
+                  // href="https://drive.google.com/drive/folders/1vKyphszMKMYboRq_0rTB9AX1rGCsaiK9?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold pointer-events-none opacity-50 cursor-not-allowed"
                 >
                   <CloudDownload className="w-5 h-5" />
-                  <span>Upload Your Presentation</span>
+                  <span>Uploading Closed</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"
