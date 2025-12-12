@@ -5,6 +5,7 @@
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
+import Marquee from 'react-fast-marquee'
 // import Marquee from 'react-fast-marquee'
 
 // const image = {
@@ -26,11 +27,14 @@ export default function Index() {
           </span>
         </div> */}
         <div className="w-full flex justify-center bg-indigo-600 py-2.5">
-          {/* <Marquee gradient={false} speed={50} pauseOnHover> */}
-          <span className="text-lg font-semibold text-white">
-            Conference paper registration is closed
-          </span>
-          {/* </Marquee> */}
+          <Marquee gradient={false} speed={50} pauseOnHover>
+            <span
+              className="text-lg font-semibold text-white hover:underline cursor-pointer"
+              onClick={() => window.open('/Best_PaperID.pdf', '_blank')}
+            >
+              BEST PAPER in the CSITSS-9 2025
+            </span>
+          </Marquee>
         </div>
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">
