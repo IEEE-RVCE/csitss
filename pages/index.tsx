@@ -32,7 +32,7 @@ export default function Index() {
               className="text-lg font-semibold text-white hover:underline cursor-pointer"
               onClick={() => window.open('/Best_PaperID.pdf', '_blank')}
             >
-              BEST PAPER in the CSITSS-9 2025
+              BEST PAPER IN IEEE - 9th INTERNATIONAL CONFERENCE - CSITSS - 2025
             </span>
           </Marquee>
         </div>
