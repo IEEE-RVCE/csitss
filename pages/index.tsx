@@ -26,8 +26,19 @@ export default function Index() {
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
         </div> */}
-        <div className="w-full flex justify-center bg-indigo-600 py-2.5">
+        <div className="w-full flex justify-center bg-indigo-600 py-2.5 ">
           <Marquee gradient={false} speed={50} pauseOnHover>
+            <span
+              className="text-lg font-semibold text-white hover:underline cursor-pointer px-56"
+              onClick={() =>
+                window.open(
+                  'https://ieeexplore.ieee.org/xpl/conhome/11293843/proceeding',
+                  '_blank'
+                )
+              }
+            >
+              9th IEEE CSITSS 2025 papers are now published on IEEEXPLORE
+            </span>
             <span
               className="text-lg font-semibold text-white hover:underline cursor-pointer"
               onClick={() => window.open('/Best_PaperID.pdf', '_blank')}
