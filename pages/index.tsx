@@ -5,7 +5,6 @@
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
-import Marquee from 'react-fast-marquee'
 // import Marquee from 'react-fast-marquee'
 
 // const image = {
@@ -26,27 +25,6 @@ export default function Index() {
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
         </div> */}
-        <div className="w-full flex justify-center bg-indigo-600 py-2.5 ">
-          <Marquee gradient={false} speed={50} pauseOnHover>
-            <span
-              className="text-lg font-semibold text-white hover:underline cursor-pointer px-56"
-              onClick={() =>
-                window.open(
-                  'https://ieeexplore.ieee.org/xpl/conhome/11293843/proceeding',
-                  '_blank'
-                )
-              }
-            >
-              9th IEEE CSITSS 2025 papers are now published on IEEEXPLORE
-            </span>
-            <span
-              className="text-lg font-semibold text-white hover:underline cursor-pointer"
-              onClick={() => window.open('/Best_PaperID.pdf', '_blank')}
-            >
-              BEST PAPER IN IEEE - 9th INTERNATIONAL CONFERENCE - CSITSS - 2025
-            </span>
-          </Marquee>
-        </div>
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">
             {' '}
@@ -76,7 +54,7 @@ export default function Index() {
                           Conference Dates
                         </p>
                         <h3 className="whitespace-nowrap text-lg font-bold text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.9)] sm:text-xl lg:text-2xl xl:text-3xl">
-                          November 20-22, 2025
+                          October 30-31, 2026
                         </h3>
                       </div>
                     </div>
@@ -87,19 +65,19 @@ export default function Index() {
                 <div className="flex w-full items-center justify-center">
                   <div className="w-full rounded-b-3xl rounded-t-none border border-white/20 border-t-white/30 bg-white/10 px-10 py-8 text-center shadow-2xl backdrop-blur-[2px] dark:border-gray-700/30 dark:border-t-gray-600/40 dark:bg-black/15">
                     <h1 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text break-words px-2 text-center text-2xl font-black text-transparent drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-                      WELCOME TO CSITSS-2025
+                      WELCOME TO CSITSS-2026
                     </h1>
                     <p className="mt-4 px-2 text-base font-semibold text-white drop-shadow-[1px_1px_3px_rgba(0,0,0,0.9)] xs:text-lg sm:text-xl lg:text-2xl">
-                      9<sup className="text-sm">th</sup> International
+                      10<sup className="text-sm">th</sup> International
                       Conference on Computational
-                      <br className="hidden xs:block" />
+                      <br className=" xs:block" />
                       Systems and Information Technology for Sustainable
                       Solutions
                     </p>
                     <div className="my-3">
-                      <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg  lg:text-xl">
+                      {/* <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg  lg:text-xl">
                         CONFERENCE RECORD <b># 67709</b>
-                      </p>
+                      </p> */}
                     </div>
                     <div className="mb-4 mt-2">
                       <p className="mb-1 px-2 text-base font-medium text-white/90 drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] xs:text-lg">
@@ -112,8 +90,8 @@ export default function Index() {
                     </div>
                     <div className="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4">
                       <a
-                        href="https://cmt3.research.microsoft.com/CSITSS2025"
-                        target="_blank"
+                        href=""
+                        // target="_blank"
                         rel="noopener noreferrer"
                         className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-blue-500 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
                       >
@@ -160,9 +138,8 @@ export default function Index() {
                       </a>
 
                       <a
-                        href="CSITSS 2024 Brochure.pdf"
+                        href=""
                         className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
-                        download
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                         <span className="relative flex items-center justify-center gap-2">
@@ -211,7 +188,7 @@ export default function Index() {
                 d="M3 7h18M3 11h18M3 15h18M3 19h18"
               />
             </svg>
-            <h3 className="text-2xl font-bold">November 20-22, 2025</h3>
+            <h3 className="text-2xl font-bold">October 30-31, 2026</h3>
             <p>Date</p>
           </div>
           <div className="rounded-lg bg-green-100 p-4 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-green-200 xs:p-6">
@@ -249,7 +226,7 @@ export default function Index() {
             </svg>
 
             <h3 className="text-2xl font-bold">
-              8 successful editions of CSITSS
+              9 successful editions of CSITSS
             </h3>
           </div>
           <div className="rounded-lg bg-yellow-100 p-4 text-center text-gray-800 shadow-lg transition-colors duration-300 hover:bg-yellow-200 xs:p-6">
@@ -305,7 +282,10 @@ export default function Index() {
         </section>
 
         {/* <Element name="test4" className="element"> */}
-        <div className="flex flex-col items-center justify-center p-4">
+        <div
+          className="flex flex-col items-center justify-center p-4"
+          id="timeline"
+        >
           <Timeline />
         </div>
         {/* </Element> */}
