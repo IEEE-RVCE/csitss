@@ -25,7 +25,6 @@ export default function Index() {
             <a href="https://rzp.io/l/3N4bwhvH" className="text-gray-600"> Quick Payment Link</a>
           </span>
         </div> */}
-
         <header>
           <div className="heroHeader w-full bg-cover bg-center px-4 py-8 sm:px-8 sm:py-12 md:px-16 md:py-16">
             {' '}
