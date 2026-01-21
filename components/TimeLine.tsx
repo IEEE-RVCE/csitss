@@ -9,31 +9,31 @@ const CustomTimeline = () => {
   const data = [
     {
       label: 'Manuscript Submission Opens',
-      date: '5th July 2025',
+      date: '5th June 2026',
     },
     {
       label: 'Manuscript Submission Deadline',
-      date: '16th August 2025',
+      date: '16th July 2026',
     },
     {
       label: 'Acceptance Notification',
-      date: '5th Sept 2025',
-    },
-    {
-      label: 'Camera-Ready Submission Opens',
-      date: '12th Sept 2025',
+      date: '5th Aug 2026',
     },
     {
       label: 'Early Bird Registration Deadline',
-      date: '18th Sept 2025',
+      date: '18th Aug 2026',
     },
     {
-      label: 'Camera-Ready Submission Closes',
-      date: '10th Oct 2025 (Hard Deadline)',
+      label: 'Camera-Ready Manuscript and Copyright form Submission',
+      date: '10th Sept 2026',
     },
     {
       label: 'Registration Deadline',
-      date: '10th Oct 2025',
+      date: '18th Sept 2026',
+    },
+    {
+      label: 'Best Phd Thesis Award Submission Deadline',
+      date: '22nd Sept 2026',
     },
   ]
 
@@ -115,9 +115,6 @@ const CustomTimeline = () => {
                   </h3>
                   <p className="text-xl text-gray-700 font-medium">
                     {item.date}{' '}
-                    <span className="bg-red-500 text-white px-2 py-1 rounded">
-                      CLOSED
-                    </span>
                   </p>
                 </div>
               </div>

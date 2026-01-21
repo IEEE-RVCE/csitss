@@ -12,7 +12,9 @@ function About() {
             <hr className="w-1/2 border-t-4 border-gradient-to-r from-blue-500 to-indigo-700 mt-2 animate-fadeIn" />
           </div>
           <p className="mt-4 text-gray-700 leading-relaxed text-center">
-            Leadership in Quality Technical Education, Interdisciplinary Research and Innovation, focusing on Sustainable and Inclusive Technology.
+            Leadership in Quality Technical Education, Interdisciplinary
+            Research and Innovation, focusing on Sustainable and Inclusive
+            Technology.
           </p>
         </section>
 
@@ -25,19 +27,25 @@ function About() {
           </div>
           <ul className="mt-4 text-gray-700 leading-relaxed list-disc pl-6 space-y-2 animate-fadeIn">
             <li>
-              To deliver outcome-based quality education, emphasizing on experiential learning with state-of-the-art infrastructure.
+              To deliver outcome-based quality education, emphasizing on
+              experiential learning with state-of-the-art infrastructure.
             </li>
             <li>
-              To create a conducive environment for interdisciplinary research and innovation.
+              To create a conducive environment for interdisciplinary research
+              and innovation.
             </li>
             <li>
-              To develop professionals through holistic education focusing on individual growth, discipline, integrity, ethics and social sensitivity.
+              To develop professionals through holistic education focusing on
+              individual growth, discipline, integrity, ethics and social
+              sensitivity.
             </li>
             <li>
-              To nurture industry-institution collaboration leading to competency enhancement and entrepreneurship.
+              To nurture industry-institution collaboration leading to
+              competency enhancement and entrepreneurship.
             </li>
             <li>
-              To focus on technologies that are sustainable and inclusive, benefiting all sections of the society.
+              To focus on technologies that are sustainable and inclusive,
+              benefiting all sections of the society.
             </li>
           </ul>
         </section>
@@ -60,11 +68,45 @@ function About() {
                 <hr className="w-1/2 border-t-4 border-gradient-to-r from-blue-500 to-indigo-700 mt-2 animate-fadeIn" />
               </div>
               <p className="mt-4 text-gray-700 leading-relaxed text-justify animate-fadeIn">
-                RV College of Engineering (RVCE) established in 1963 is one of the earliest self-financing engineering colleges in the country. The institution is run by Rashtreeya Sikshana Samithi Trust (RSST) a not-for-profit Trust. RVCE is an Autonomous college. Currently, the institution offers 15 Bachelors, 14 Master Programs and all the departments have Research Centres, affiliated to Visvesvaraya Technological University (VTU) Belagavi. The institution has set itself a Vision "Leadership in Quality Technical Education, Interdisciplinary Research & Innovation, With a Focus on Sustainable and Inclusive Technology"
-                <br /><br />
-                Recent awards and achievements include - Ranked 96th in the Country by National Institutional Ranking Framework (NIRF: 2021-22), “Engineering College of the Year-2023” by the Higher Education Review Magazine, Ranked 10th in the country & 2nd in Karnataka - IIRF Ranking (2023), Ranked 6<sup>th</sup> among the top 10 of 100 Pvt. Engg. Colleges in the Country by Education World Magazine-2023. Ranked 1501+ in Times Higher Education World University Rankings-2024. Ranked 801+ in Computer Science and 1001+ Rank in Engineering category in THE World University Rankings-2024, Ranked 1501+ in Impact Ranking in The World University Rankings-2024, Ranking 601+ in Times Higher Education Asia University Rankings-2024 and NPTEL (Local Chapter) “AAA” Rating.
-                <br /><br />
-                RVCE has to its credit over 1700 national and international journal publications, 70 filed patents, out of which 59 were published patents, 38 granted patents and executed over Rs. 30 crores of sponsored research projects and consultancy in the last five years.
+                RV College of Engineering (RVCE) established in 1963 is one of
+                the earliest self-financing engineering colleges in the country.
+                The institution is run by Rashtreeya Sikshana Samithi Trust
+                (RSST) a not-for-profit Trust. RVCE is an Autonomous college.
+                Currently, the institution offers 15 Bachelors, 14 Master
+                Programs and all the departments have Research Centres,
+                affiliated to Visvesvaraya Technological University (VTU)
+                Belagavi. The institution has set itself a Vision "Leadership in
+                Quality Technical Education, Interdisciplinary Research &
+                Innovation, With a Focus on Sustainable and Inclusive
+                Technology"
+                <br />
+                <br />
+                Recent awards and achievements include – UGC Autonomy Granted
+                for 10 years (2024-25 up to 2033- 34), NAAC Accredited with A+
+                Grade in the 2nd cycle of Accreditation (Dec, 2024), Ranked 99th
+                in the Country by National Institutional Ranking Framework
+                (NIRF-2024), “Engineering College of the Year-2023” by the
+                Higher Education Review Magazine, ranked 7th in the Country
+                &amp; 2nd in Karnataka - IIRF Ranking (2023), Ranked 1501+ in
+                Times Higher Education World University Rankings-2024-25. Ranked
+                801+ in Computer Science and 1001+ Rank in Engineering category
+                in THE World University Rankings- 2024-25, Ranked 1501+ in
+                Impact Ranking in THE World University Rankings-2024, Ranked
+                601+ in THE World University Rankings (Asia)-2024, and NPTEL
+                (Local Chapter) “AAA” Rating.
+                <br />
+                <br />
+                The institution has to its credit over 1500 National and
+                International Journal publications, filed 70 patents, 61
+                published patents, 40 granted patents, completed sponsored
+                research and consultancy projects worth Rs. 25.0 crores in the
+                last three years. The institution has established 28 Centre's of
+                Excellence / Centre's of Competence in niche areas of science
+                and technology. All the eligible UG and PG programs have been
+                accredited by NBA multiple Times. Six UG Programs and 1 PG
+                program have been accredited for six and five years respectively
+                by NBA. The students have won awards and accolades in national
+                and international competition
               </p>
             </div>
           </div>
@@ -74,9 +116,9 @@ function About() {
           <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
             {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
               CONFERENCE TRACKS
-            </h2> */} 
+            </h2> */}
 
-            {/* <div
+        {/* <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -96,7 +138,7 @@ function About() {
               >
                 Conference Tracks
               </h1> */}
-              {/* <hr
+        {/* <hr
                 style={{
                   background: 'linear-gradient(to right, red, transparent)',
                   height: '3px',
@@ -105,7 +147,7 @@ function About() {
                 }}
               />
             </div> */}
-            {/* {Topics.map((topic) => (
+        {/* {Topics.map((topic) => (
               <div className="flex flex-col overflow-hidden  rounded-lg">
                 <Accordion>                                            ////////  uncomment this when subpoints are given......
                   <Accordion.Item label={topic.label}>
@@ -118,14 +160,14 @@ function About() {
                 </Accordion>
               </div>
             ))} */}
-             {/* <div>
+        {/* <div>
                   {Topics.map((topic, index) => (
                     <div className="mt-8" key={topic.label}>
                       <p className="mb-4 text-2xl font-medium text-gray-900">
                         {index + 1}. {topic.label}
                       </p>
                       {/* <br /> */}
-                      {/* <List className="mt-4" type="ordered">
+        {/* <List className="mt-4" type="ordered">
                         {topic.subTopics.map((subTopic, index) => (
                           <List.Item
                             className="relative left-6 text-lg font-medium text-gray-500"
@@ -135,7 +177,7 @@ function About() {
                           </List.Item>
                         ))}
                       </List> */}
-                    {/* </div> 
+        {/* </div> 
                   ))}
                 </div>
           </div>

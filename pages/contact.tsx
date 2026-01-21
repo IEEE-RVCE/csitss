@@ -84,7 +84,7 @@ function Contact() {
                     href="mailto:csitss2025@rvce.edu.in"
                     className="font-bold text-blue-600 hover:underline"
                   >
-                    csitss2025@rvce.edu.in
+                    csitss2026@rvce.edu.in
                   </a>
                 </h3>
               </div>

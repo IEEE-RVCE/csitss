@@ -7,14 +7,14 @@ import { useEffect, useState } from 'react'
 const Links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/committee', label: 'Committee' },
-  { href: '/speakers', label: 'Speakers' },
-  { href: '/papers', label: 'Call for Papers' },
-  { href: '/awards', label: 'Awards' },
-  { href: '/registration', label: 'Registration' },
-  { href: '/sponsorship', label: 'Sponsors' },
-  { href: '/tracks', label: 'Tracks' },
-  { href: '/schedules', label: 'Schedule' },
+  // { href: '/committee', label: 'Committee' },
+  // { href: '/speakers', label: 'Speakers' },
+  // { href: '/papers', label: 'Call for Papers' },
+  // { href: '/awards', label: 'Awards' },
+  // { href: '/registration', label: 'Registration' },
+  // { href: '/sponsorship', label: 'Sponsors' },
+  // { href: '/tracks', label: 'Tracks' },
+  // { href: '/schedules', label: 'Schedule' },
   { href: '/contact', label: 'Contact Us' },
 ]
 
@@ -68,13 +68,13 @@ const NavBar = () => {
                   </svg>
                 </button>
               </Menu.Target>
-              <Menu.Dropdown className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 p-4 hidden lg:block">
+              {/* <Menu.Dropdown className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 p-4 hidden lg:block">
                 <Menu.Label>
                   <p className="font-sans text-blue-400 underline">
                     Download Links
                   </p>
                 </Menu.Label>
-              </Menu.Dropdown>
+              </Menu.Dropdown> */}
             </Menu>
           </div>
           <div className="lg:hidden">
@@ -113,11 +113,11 @@ const NavBar = () => {
                     </Link>
                   </Menu.Item>
                 ))}
-                <Menu.Label>
+                {/* <Menu.Label>
                   <p className="font-sans text-blue-400 underline">
                     Download Links
                   </p>
-                </Menu.Label>
+                </Menu.Label> */}
               </Menu.Dropdown>
             </Menu>
           </div>
