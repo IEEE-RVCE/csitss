@@ -11,6 +11,7 @@ const patrons = [
     position: 'Hon. Joint Secretary, RSST',
     imgLink: 'https://rvu.edu.in/wp-content/uploads/2023/02/01-3.png',
   },
+  
   {
     name: 'Sri. Venkatesh Babu P S',
     post: 'Patrons',
