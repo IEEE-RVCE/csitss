@@ -1,39 +1,32 @@
 const hospitality_data = [
   {
-    name: 'Dr. Krishnappa H K',
-    post: 'Hospitality Committee Members',
-    department: 'CSE',
+    name: 'Dr. K V Padmaja',
+    post: 'Hospitality Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Dr. Sindhu D V',
-    post: '',
-    department: 'CSE',
+    name: 'Dr. Sudha Kamath M K',
+    post: 'Hospitality Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Dr. Aneetha Sandeep',
-    post: '',
-    department: 'CSE',
+    name: 'Dr. Shivandappa',
+    post: 'Hospitality Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Dr. Sridharan M',
-    post: '',
-    department: 'Chemistry',
+    name: 'Residential Wardens',
+    post: 'Hospitality Committee',
+    department: '',
     imgLink: '',
-    email: 'sridharanm@rvce.edu.in',
+    email: '',
   },
-  {
-    name: 'Dr. Venugopal G',
-    post: '',
-    department: 'Civil',
-    imgLink: '',
-    email: 'venugopalg@rvce.edu.in',
-  },
-]
+];
 
-export default hospitality_data
+export default hospitality_data;

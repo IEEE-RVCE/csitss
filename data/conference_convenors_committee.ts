@@ -1,25 +1,36 @@
 const conference_convenors_data = [
   {
-    name: 'Dr. Ashok Kumar A R',
-    post: 'Conference Convener Committee Members',
-    department: 'CSE',
+    name: 'Dr. K Saraswathi',
+    post: 'Conference Convener',
+    department: '',
     imgLink: '',
-    email: 'ashokkumarar@rvce.edu.in',
+    email: 'ksaraswathi@rvce.edu.in',
+    mobile: '9880166866',
   },
   {
-    name: 'Dr. Mohana',
-    post: 'Conference Convener Committee Members',
-    department: 'CSE',
+    name: 'Dr A.H. Manjunatha Reddy',
+    post: 'Conference Convener',
+    department: '',
     imgLink: '',
-    email: 'mohana@rvce.edu.in',
+    email: 'ahmanjunatha@rvce.edu.in',
+    mobile: '98445 73697',
   },
   {
-    name: 'Dr. Udaya Shankar B.C.',
-    post: 'Conference Convener Committee Members',
-    department: 'Civil',
+    name: 'Dr. R. Bhagya',
+    post: 'Conference Convener',
+    department: '',
     imgLink: '',
-    email: 'udayashankar@rvce.edu.in',
+    email: 'bhagyar@rvce.edu.in',
+    mobile: '9845654400',
   },
-]
+  {
+    name: 'Dr G Vijayakumar',
+    post: 'Conference Convener',
+    department: '',
+    imgLink: '',
+    email: 'vijayakg@rvce.edu.in',
+    mobile: '98862 72998',
+  },
+];
 
-export default conference_convenors_data
+export default conference_convenors_data;

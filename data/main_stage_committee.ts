@@ -1,46 +1,39 @@
 const main_stage_committee_data = [
   {
-    name: 'Dr. K Badarinath',
-    post: 'Main Stage Committee Members',
-    department: 'CSE',
+    name: 'Dr. Badrinath k',
+    post: 'Stage Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Dr. Sneha M',
-    post: '',
-    department: 'CSE',
+    name: 'Dr Usha Padma',
+    post: 'Stage Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Prof. Saraswati',
-    post: '',
-    department: 'CSE',
+    name: 'Dr Sandhya H B',
+    post: 'Stage Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Prof. Mekhala',
-    post: '',
-    department: 'CSE',
+    name: 'Mrs. Ambika.G.',
+    post: 'Stage Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Ravi Kiran S Wali',
-    post: '',
-    department: 'Civil',
+    name: 'Ms Puneetha T R',
+    post: 'Stage Committee',
+    department: '',
     imgLink: '',
-    email: 'ravikiransw@rvce.edu.in',
+    email: '',
   },
-  {
-    name: 'Mrs.Ambika G',
-    post: '',
-    department: 'ETE',
-    imgLink: '',
-    email: 'ambikag@rvce.edu.in',
-  },
-]
+];
 
-export default main_stage_committee_data
+export default main_stage_committee_data;
