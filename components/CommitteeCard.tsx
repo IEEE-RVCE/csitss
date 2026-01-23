@@ -38,14 +38,19 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
                 : ''
             }
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">{post}</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+              {post}
+            </h2>
             {/* <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div> */}
           </div>
 
           {/* Cards for this group - two per row on large screens, one per row on small */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {postMembers.map((member, idx) => {
-              const isLastSingle = postMembers.length % 2 === 1 && idx === postMembers.length - 1 && post === 'Patrons'
+              const isLastSingle =
+                postMembers.length % 2 === 1 &&
+                idx === postMembers.length - 1 &&
+                post === 'Patrons'
 
               const card = (
                 <>
@@ -60,13 +65,14 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
                     <div className="w-40 h-40 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden flex items-center justify-center">
                       {member.imgLink ? (
                         <img
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-xl"
+                          className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105 rounded-xl"
                           src={member.imgLink}
                           alt={`${member.name}'s photo`}
                           onError={(e) => {
                             const target = e.target as HTMLImageElement
                             target.style.display = 'none'
-                            const fallback = target.nextElementSibling as HTMLElement
+                            const fallback =
+                              target.nextElementSibling as HTMLElement
                             if (fallback) fallback.style.display = 'flex'
                           }}
                         />
@@ -104,7 +110,9 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
                           {member.name}
                         </h3>
                         {member.position && (
-                          <p className="mt-1 text-sm text-gray-600 font-medium">{member.position}</p>
+                          <p className="mt-1 text-sm text-gray-600 font-medium">
+                            {member.position}
+                          </p>
                         )}
                       </div>
 

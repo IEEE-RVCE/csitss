@@ -31,7 +31,7 @@ const conference_chairs_data = [
     name: 'Dr. K Sreelakshmi',
     post: 'Program Chair',
     department: 'ETE',
-    imgLink: '/committee/conference_committee/USHA-J-1-1229x1536.jpg',
+    imgLink: '/committee/conference_committee/SREELAKSHMI.jpg',
     email: '',
   },
   {
@@ -90,6 +90,6 @@ const conference_chairs_data = [
     imgLink: '/committee/conference_committee/BHADARINATH-K-1-1229x1536.jpg',
     email: '',
   },
-];
+]
 
-export default conference_chairs_data;
+export default conference_chairs_data
