@@ -1,39 +1,46 @@
 const transportation_data = [
   {
-    name: 'Dr.Manas M N',
-    post: 'Transportation Chair',
-    department: 'CSE',
-    imgLink: '',
-    email: 'manasmn@rvce.edu.in',
-  },
-  {
-    name: 'Prof. Neetu S',
-    post: '',
-    department: 'CSE',
+    name: 'Dr. Narendra Kumar S',
+    post: 'Transportation Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Prof. Nithyashree G D',
-    post: '',
-    department: 'CSE',
+    name: 'Prof. Vivekanand S Gogi',
+    post: 'Transportation Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Dr. Divakara S G',
-    post: '',
-    department: 'Chemistry',
+    name: 'Dr. Ajeeth Kumar Srivastava',
+    post: 'Transportation Committee',
+    department: '',
     imgLink: '',
-    email: '', // Email not provided in PDF
+    email: '',
   },
   {
-    name: 'Dr. K Praveen Kumar',
-    post: '',
-    department: 'Civil',
+    name: 'Mr. Harsha B K',
+    post: 'Transportation Committee',
+    department: '',
     imgLink: '',
-    email: 'praveenkumark@rvce.edu.in',
+    email: '',
   },
-]
+  {
+    name: 'Mr. P Ashok Kumar',
+    post: 'Transportation Committee',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Mr. Akash G',
+    post: 'Transportation Committee',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
+];
 
-export default transportation_data
+export default transportation_data;

@@ -32,7 +32,7 @@ const CustomTimeline = () => {
       date: '18th Sept 2026',
     },
     {
-      label: 'Best Phd Thesis Award Submission Deadline',
+      label: 'Best Ph.D. Thesis Award Deadline',
       date: '22nd Sept 2026',
     },
   ]

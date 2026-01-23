@@ -1,39 +1,39 @@
 const finance_chairs_data = [
   {
-    name: 'Dr. Deepamala N',
-    post: 'Finance Committee Members',
-    department: 'CSE',
-    imgLink: '',
-    email: 'deepamalan@rvce.edu.in',
-  },
-  {
-    name: 'Shyamala S',
-    post: 'Finance Committee Members',
-    department: 'Finance Officer',
-    imgLink: '',
-    email: 'shyamalas@rvce.edu.in',
-  },
-  {
-    name: 'Dr. Azra Nasreen',
-    post: '',
-    department: 'CSE',
+    name: 'Dr K S Geetha',
+    post: 'Finance Committee',
+    department: '',
     imgLink: '',
     email: '',
   },
   {
-    name: 'Dr.SC Prasanna Kumar',
-    post: '',
-    department: 'EIE',
+    name: 'Dr. P. Nagaraju',
+    post: 'Finance Committee',
+    department: '',
     imgLink: '',
-    email: 'prasannakumar@rvce.edu.in',
+    email: '',
   },
   {
-    name: 'Prof. Vaagesh H P',
-    post: '',
-    department: 'Civil',
+    name: 'Dr. Trilokchandran B',
+    post: 'Finance Committee',
+    department: '',
     imgLink: '',
-    email: 'vageeshhp@rvce.edu.in',
+    email: '',
   },
-]
+  {
+    name: 'Mrs. Shyamala S',
+    post: 'Finance Committee',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Mr. Sudarshan S',
+    post: 'Finance Committee',
+    department: '',
+    imgLink: '',
+    email: '',
+  },
+];
 
-export default finance_chairs_data
+export default finance_chairs_data;
