@@ -27,7 +27,7 @@ const NavBar = () => {
             <Link href="/" legacyBehavior>
               <a className="flex items-stretch">
                 <Image
-                  src="RVCE NEW-HEADER_onlyLogo.png"
+                  src="/RVCE NEW-HEADER_onlyLogo.png"
                   alt="logo"
                   className="logo h-full w-14"
                 />

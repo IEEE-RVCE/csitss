@@ -1,32 +1,36 @@
 const registration_committee_data = [
   {
     name: 'Dr. Radhakrishna',
-    post: 'Registration Committee',
+    post: 'Registration Chair',
     department: '',
+    position: 'Professor & PG Dean Non Circuit Branches',
     imgLink: '',
-    email: '',
+    email: 'radhakrishna@rvce.edu.in',
   },
   {
-    name: 'Dr. Prafulla S B',
+    name: 'Dr.Prapulla S B',
     post: 'Registration Committee',
-    department: '',
+    department: 'Computer Science and Engineering',
+    position: 'Associate Professor',
     imgLink: '',
-    email: '',
+    email: 'prapullasb@rvce.edu.in',
   },
   {
     name: 'Mrs. Kavitha A',
     post: 'Registration Committee',
-    department: '',
+    department: 'Electronics and Telecommunication Engineering',
+    position: 'Helper',
     imgLink: '',
-    email: '',
+    email: 'kavithaa@rvce.edu.in',
   },
   {
     name: 'Mr Kanthraju D',
     post: 'Registration Committee',
-    department: '',
+    department: 'Biotechnology',
+    position: 'Instructor',
     imgLink: '',
-    email: '',
+    email: 'kantharajud@rvce.edu.in',
   },
-];
+]
 
-export default registration_committee_data;
+export default registration_committee_data
