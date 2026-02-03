@@ -25,68 +25,68 @@ const HeaderImages: React.FC = () => {
     },
   ]
 
-  const technicalCoSponsors = [
-    {
-      src: 'IEEE-banglore-Section.jpg',
-      alt: 'ieee_bangalore_section_logo',
-      href: 'https://ieeebangalore.org/',
-      show: true,
-      padding: 'pr-2',
-    },
-    {
-      src: 'ieee-main.png',
-      alt: 'ieee_bangalore_logo',
-      href: 'https://ieeebangalore.org/',
-      show: true,
-      padding: 'pt-1',
-    },
+  // const technicalCoSponsors = [
+  //   {
+  //     src: 'IEEE-banglore-Section.jpg',
+  //     alt: 'ieee_bangalore_section_logo',
+  //     href: 'https://ieeebangalore.org/',
+  //     show: true,
+  //     padding: 'pr-2',
+  //   },
+  //   {
+  //     src: 'ieee-main.png',
+  //     alt: 'ieee_bangalore_logo',
+  //     href: 'https://ieeebangalore.org/',
+  //     show: true,
+  //     padding: 'pt-1',
+  //   },
 
-    // {
-    //   src: 'logo_rvce_ieee.png',
-    //   alt: 'rvce_ieee_logo',
-    //   href: 'https://ieee-rvce.org/',
-    //   show: true,
-    //   padding: 'pt-6',
-    // },
-  ]
+  //   // {
+  //   //   src: 'logo_rvce_ieee.png',
+  //   //   alt: 'rvce_ieee_logo',
+  //   //   href: 'https://ieee-rvce.org/',
+  //   //   show: true,
+  //   //   padding: 'pt-6',
+  //   // },
+  // ]
 
-  const secondRowImages = [
-    {
-      src: 'thws.png',
-      alt: 'thws_logo',
-      href: 'https://www.thws.de/',
-      show: true,
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
-      alt: 'fh_dortmund_logo',
-      href: 'https://www.fh-dortmund.de/',
-      show: true,
-      // padding: 'p-2',
-    },
-    // {
-    //   src: 'rosenheim.png',
-    //   alt: 'rosenheim_logo',
-    //   href: 'https://www.rosenheim.de/',
-    //   show: true,
-    //   padding: 'pr-2',
-    // },
-    {
-      src: 'fiu-logo2.png',
-      alt: 'fiu_logo',
-      href: 'https://www.fiu.edu/',
-      show: true,
-      size: 'w-40', // Reduce the size of the last logo
-    },
+  // const secondRowImages = [
+  //   {
+  //     src: 'thws.png',
+  //     alt: 'thws_logo',
+  //     href: 'https://www.thws.de/',
+  //     show: true,
+  //   },
+  //   {
+  //     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
+  //     alt: 'fh_dortmund_logo',
+  //     href: 'https://www.fh-dortmund.de/',
+  //     show: true,
+  //     // padding: 'p-2',
+  //   },
+  //   // {
+  //   //   src: 'rosenheim.png',
+  //   //   alt: 'rosenheim_logo',
+  //   //   href: 'https://www.rosenheim.de/',
+  //   //   show: true,
+  //   //   padding: 'pr-2',
+  //   // },
+  //   {
+  //     src: 'fiu-logo2.png',
+  //     alt: 'fiu_logo',
+  //     href: 'https://www.fiu.edu/',
+  //     show: true,
+  //     size: 'w-40', // Reduce the size of the last logo
+  //   },
 
-    // // {
-    // //   src: 'logo_rvce_ieee.png',
-    // //   alt: 'rvce_ieee_logo',
-    // //   href: 'https://ieee-rvce.org/',
-    // //   show: true,
-    // //   padding: 'pt-6',
-    // // },
-  ]
+  //   // // {
+  //   // //   src: 'logo_rvce_ieee.png',
+  //   // //   alt: 'rvce_ieee_logo',
+  //   // //   href: 'https://ieee-rvce.org/',
+  //   // //   show: true,
+  //   // //   padding: 'pt-6',
+  //   // // },
+  // ]
   return (
     <div>
       <div className="center p-auto m-14 -mt-5 hidden md:block">
@@ -117,17 +117,17 @@ const HeaderImages: React.FC = () => {
             )}
 
             {/* Technical Co-Sponsors Group */}
-            <div className="relative" style={{ flexBasis: '50%' }}>
-              <div className="relative  p-6 pt-10 ">
-                {/* Label positioned at top center, overlapping the border */}
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+            {/* <div className="relative" style={{ flexBasis: '50%' }}>
+              <div className="relative  p-6 pt-10 "> */}
+            {/* Label positioned at top center, overlapping the border */}
+            {/* <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
                   <span className="bg-blue-500 text-white px-6 py-1 rounded-full text-base font-bold shadow-2xl whitespace-nowrap ">
                     Technical Co-Sponsors
                   </span>
-                </div>
+                </div> */}
 
-                {/* Logos inside the box */}
-                <div className="flex items-center justify-evenly  gap-10">
+            {/* Logos inside the box */}
+            {/* <div className="flex items-center justify-evenly  gap-10">
                   {technicalCoSponsors.map((image: Image) =>
                     image.show ? (
                       <div
@@ -148,13 +148,13 @@ const HeaderImages: React.FC = () => {
                       </div>
                     ) : null
                   )}
-                </div>
-              </div>
-            </div>
+                </div> */}
+            {/* </div>
+            </div> */}
           </div>
 
           {/* Second Row */}
-          <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2">
+          {/* <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2">
             {secondRowImages.map((image: Image) =>
               image.show ? (
                 <div
@@ -181,7 +181,7 @@ const HeaderImages: React.FC = () => {
                 </div>
               ) : null
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
