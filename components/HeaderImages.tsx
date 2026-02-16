@@ -50,7 +50,13 @@ const HeaderImages: React.FC = () => {
   //   // },
   // ]
 
-  // const secondRowImages = [
+  const secondRowImages = [
+    {
+      src: 'Sensor Bangalore Logo.png',
+      alt: 'sensor_bangalore_logo',
+      href: 'https://sensorscouncil.ieeebangalore.org/',
+      show: true,
+    },
   //   {
   //     src: 'thws.png',
   //     alt: 'thws_logo',
@@ -86,7 +92,7 @@ const HeaderImages: React.FC = () => {
   //   // //   show: true,
   //   // //   padding: 'pt-6',
   //   // // },
-  // ]
+  ]
   return (
     <div>
       <div className="center p-auto m-14 -mt-5 hidden md:block">
@@ -154,7 +160,7 @@ const HeaderImages: React.FC = () => {
           </div>
 
           {/* Second Row */}
-          {/* <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2">
+          <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2">
             {secondRowImages.map((image: Image) =>
               image.show ? (
                 <div
@@ -181,7 +187,7 @@ const HeaderImages: React.FC = () => {
                 </div>
               ) : null
             )}
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
