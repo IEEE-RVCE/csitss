@@ -160,7 +160,10 @@ const HeaderImages: React.FC = () => {
           </div>
 
           {/* Second Row */}
+
           <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2 w-full">
+
+
             {secondRowImages.map((image: Image) =>
               image.show ? (
                 <div
