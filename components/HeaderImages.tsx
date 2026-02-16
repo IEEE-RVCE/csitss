@@ -160,13 +160,16 @@ const HeaderImages: React.FC = () => {
           </div>
 
           {/* Second Row */}
-          <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2">
+
+          <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2 w-full">
+
+
             {secondRowImages.map((image: Image) =>
               image.show ? (
                 <div
                   className="flex items-center justify-center"
                   key={image.alt}
-                  style={{ flexBasis: '25%' }}
+                  style={{ flexBasis: '38%' }}
                 >
                   <div
                     className={`mx-auto overflow-hidden ${image.padding ?? ''} transition-shadow duration-300 ease-in-out hover:shadow-xl`}
@@ -178,7 +181,7 @@ const HeaderImages: React.FC = () => {
                       className="flex justify-center"
                     >
                       <img
-                        className={`${image.size ?? 'h-28'} w-auto object-contain lg:h-32`}
+                        className={`${image.size ?? 'h-32'} w-auto object-contain lg:h-40 `}
                         src={image.src}
                         alt={image.alt}
                       />
