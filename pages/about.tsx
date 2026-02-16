@@ -112,6 +112,35 @@ function About() {
           </div>
         </section>
 
+         <section className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center mb-12">
+            <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-700 animate-fadeIn">
+              About the Conference
+            </h1>
+            <hr className="w-1/2 border-t-4 border-gradient-to-r from-blue-500 to-indigo-700 mt-2 animate-fadeIn" />
+             <p className="mt-4 text-gray-700 leading-relaxed text-justify animate-fadeIn">
+              The 10th International Conference on Computational Systems and
+Information Technology for Sustainable Solutions (CSITSS-2026), during October 30-31,
+2026 brings together academicians, scientists, researchers, industry professionals,
+postdoctoral fellows and research scholars from across the globe to share Advances in
+Sustainable and Emerging Technologies. The conference focuses on Green Electronics,
+Renewable Energy, Robotics and Automation, Photonics, Artificial Intelligence, Cyber-
+Physical Systems, Quantum Mechanics and Computing.
+<br />
+<br />
+CSITSS has been successfully organized for the past nine years, attracting participants from
+India and abroad. <b>All accepted papers will be submitted for possible inclusion into IEEE
+Xplore subject to meeting IEEE Xplore's scope and quality requirements.</b> Renowned
+international speakers will deliver keynote addresses on cutting-edge developments.
+CSITSS-2026 provides a global platform for knowledge exchange, collaboration, and
+networking, with technical support from IEEE.
+<br />
+<br />
+             </p>
+          </div>
+          
+        </section>
+
         {/* <section>
           <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
             {/* <h2 className="text-3xl font-extrabold sm:text-4xl">
