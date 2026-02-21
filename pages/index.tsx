@@ -273,8 +273,7 @@ export default function Index() {
                   Publication in IEEE Xplore
                 </h3>
                 <p className="mt-2 text-lg text-gray-600">
-                  All accepted and presented papers will be published in the
-                  IEEE Xplore Digital Library.
+                  Accepted papers will be submitted for possible inclusion into IEEE Xplore subject to meeting IEEE Xplore's scope and quality requirements
                 </p>
               </div>
             </div>
@@ -287,6 +286,7 @@ export default function Index() {
           id="timeline"
         >
           <Timeline />
+          
         </div>
         {/* </Element> */}
         <section className="py-16">

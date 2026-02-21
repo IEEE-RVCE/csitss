@@ -8,33 +8,41 @@ const CustomTimeline = () => {
 
   const data = [
     {
-      label: 'Manuscript Submission Opens',
+      label: 'Submission of Full-length Manuscript (opens from)',
       date: '5th June 2026',
     },
     {
-      label: 'Manuscript Submission Deadline',
+      label: 'Last date to submit Full-length Manuscript',
       date: '5th July 2026',
     },
-    {
-      label: 'Acceptance Notification',
+    { 
+      label: 'Notification of Acceptance',
       date: '5th Aug 2026',
     },
     {
-      label: 'Early Bird Registration Deadline',
+      label: 'Early Bird Registration (opens from)',
+      date: '13th Aug 2026',
+    },
+    {
+      label: 'Early Bird Registration ends on',
       date: '18th Aug 2026',
     },
     {
-      label: 'Camera-Ready Manuscript and Copyright form Submission',
+      label: 'Submission of Camera-ready Manuscript and Copyright form',
       date: '10th Sept 2026',
     },
     {
-      label: 'Registration Deadline',
+      label: 'Last Date for Registration',
       date: '18th Sept 2026',
     },
     {
-      label: 'Best Ph.D Thesis Award Application Deadline',
-      date: '22nd Sept 2026',
+      label:"Best PhD Thesis Presentation",
+      date:"29th Oct 2026"
     },
+    {
+      label:"Conference Dates",
+      date:"30th and 31st Oct 2026"
+    }
   ]
 
   useEffect(() => {
@@ -120,6 +128,14 @@ const CustomTimeline = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div
+          className="flex flex-col  justify-center text-black font-bold text-lg pl-10"
+        >
+          <ul className='list-disc'>
+            <li>Best PhD Thesis Awards (Single page synopsis to be submitted as per the submission dates)</li>
+            <li>Best Research Paper presented by Faculty and student</li>
+          </ul>
         </div>
       </div>
     </div>

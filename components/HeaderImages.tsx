@@ -21,7 +21,6 @@ const HeaderImages: React.FC = () => {
       alt: 'rvce_logo',
       href: 'https://www.rvce.edu.in/',
       show: true,
-      padding: 'pl-2',
     },
   ]
 
@@ -52,17 +51,19 @@ const HeaderImages: React.FC = () => {
 
   const secondRowImages = [
     {
-      src: 'Sensor Bangalore Logo.png',
+      src: 'ieee-sensors-council.png',
       alt: 'sensor_bangalore_logo',
       href: 'https://sensorscouncil.ieeebangalore.org/',
       show: true,
     },
-  //   {
-  //     src: 'thws.png',
-  //     alt: 'thws_logo',
-  //     href: 'https://www.thws.de/',
-  //     show: true,
-  //   },
+    {
+      src: 'ieee-comsoc.png',
+      alt: 'IEEE_Comsoc',
+      href: 'https://www.comsoc.org/',
+      show: true,
+     padding: 'pl-8',
+
+    },
   //   {
   //     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
   //     alt: 'fh_dortmund_logo',
@@ -105,7 +106,7 @@ const HeaderImages: React.FC = () => {
                 <div
                   className="flex items-center justify-center"
                   key={image.alt}
-                  style={{ flexBasis: '25%' }}
+                  style={{ flexBasis: '29%' }}
                 >
                   <div
                     className={`mx-auto overflow-hidden ${image.padding ?? ''} transition-shadow duration-300 ease-in-out hover:shadow-xl flex justify-center`}
