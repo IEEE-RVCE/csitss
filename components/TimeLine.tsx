@@ -32,7 +32,7 @@ const CustomTimeline = () => {
       date: '10th Sept 2026',
     },
     {
-      label: 'Last Date for Registration',
+      label: 'Last Date for Registration for both paper and Ph. D. Thesis',
       date: '18th Sept 2026',
     },
     {
@@ -129,13 +129,15 @@ const CustomTimeline = () => {
             </div>
           ))}
         </div>
-        <div
-          className="flex flex-col  justify-center text-black font-bold text-lg pl-10"
-        >
-          <ul className='list-disc'>
-            <li>Best PhD Thesis Awards (Single page synopsis to be submitted as per the submission dates)</li>
-            <li>Best Research Paper presented by Faculty and student</li>
-          </ul>
+        <div className="mt-12 pl-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Awards</h2>
+          <p className="text-lg text-gray-700 font-medium mb-4">
+            The below awards will be conferred by CSITSS- 2026
+          </p>
+          <ol className="list-decimal list-inside space-y-2 text-lg text-gray-700 pl-4">
+            <li>Best PhD Thesis</li>
+            <li>Best Faculty and student paper</li>
+          </ol>
         </div>
       </div>
     </div>

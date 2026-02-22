@@ -3,13 +3,13 @@ const patrons = [
     name: 'Dr. A V S Murthy',
     post: 'Patrons',
     position: 'Hon. Secretary, RSST',
-    imgLink: 'https://rvu.edu.in/wp-content/uploads/2023/02/02-3.png',
+    imgLink: '/committee/Dr. AVS Murthy.png',
   },
   {
     name: 'Sri. D P Nagaraj',
     post: 'Patrons',
     position: 'Hon. Joint Secretary, RSST',
-    imgLink: 'https://rvu.edu.in/wp-content/uploads/2023/02/01-3.png',
+    imgLink: '/committee/dpNagaraj.png',
   },
 
   {
