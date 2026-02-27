@@ -5,6 +5,7 @@
 import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
+import ConferenceThemes from '../components/ConferenceThemes'
 // import Marquee from 'react-fast-marquee'
 
 // const image = {
@@ -289,6 +290,9 @@ export default function Index() {
           
         </div>
         {/* </Element> */}
+
+        <ConferenceThemes />
+
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="animate-fadeIn mb-8 text-center text-3xl font-bold sm:text-4xl">
