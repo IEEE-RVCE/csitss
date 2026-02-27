@@ -56,43 +56,43 @@ const HeaderImages: React.FC = () => {
       href: 'https://sensorscouncil.ieeebangalore.org/',
       show: true,
     },
-    {
-      src: 'ieee-comsoc.png',
-      alt: 'IEEE_Comsoc',
-      href: 'https://www.comsoc.org/',
-      show: true,
-     padding: 'pl-8',
+    // {
+    //   src: 'ieee-comsoc.png',
+    //   alt: 'IEEE_Comsoc',
+    //   href: 'https://www.comsoc.org/',
+    //   show: true,
+    //  padding: 'pl-8',
 
-    },
-  //   {
-  //     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
-  //     alt: 'fh_dortmund_logo',
-  //     href: 'https://www.fh-dortmund.de/',
-  //     show: true,
-  //     // padding: 'p-2',
-  //   },
-  //   // {
-  //   //   src: 'rosenheim.png',
-  //   //   alt: 'rosenheim_logo',
-  //   //   href: 'https://www.rosenheim.de/',
-  //   //   show: true,
-  //   //   padding: 'pr-2',
-  //   // },
-  //   {
-  //     src: 'fiu-logo2.png',
-  //     alt: 'fiu_logo',
-  //     href: 'https://www.fiu.edu/',
-  //     show: true,
-  //     size: 'w-40', // Reduce the size of the last logo
-  //   },
+    // },
+    //   {
+    //     src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FH_Dortmund-logo.svg/450px-FH_Dortmund-logo.svg.png?20110112153650',
+    //     alt: 'fh_dortmund_logo',
+    //     href: 'https://www.fh-dortmund.de/',
+    //     show: true,
+    //     // padding: 'p-2',
+    //   },
+    //   // {
+    //   //   src: 'rosenheim.png',
+    //   //   alt: 'rosenheim_logo',
+    //   //   href: 'https://www.rosenheim.de/',
+    //   //   show: true,
+    //   //   padding: 'pr-2',
+    //   // },
+    //   {
+    //     src: 'fiu-logo2.png',
+    //     alt: 'fiu_logo',
+    //     href: 'https://www.fiu.edu/',
+    //     show: true,
+    //     size: 'w-40', // Reduce the size of the last logo
+    //   },
 
-  //   // // {
-  //   // //   src: 'logo_rvce_ieee.png',
-  //   // //   alt: 'rvce_ieee_logo',
-  //   // //   href: 'https://ieee-rvce.org/',
-  //   // //   show: true,
-  //   // //   padding: 'pt-6',
-  //   // // },
+    //   // // {
+    //   // //   src: 'logo_rvce_ieee.png',
+    //   // //   alt: 'rvce_ieee_logo',
+    //   // //   href: 'https://ieee-rvce.org/',
+    //   // //   show: true,
+    //   // //   padding: 'pt-6',
+    //   // // },
   ]
   return (
     <div>
@@ -163,8 +163,6 @@ const HeaderImages: React.FC = () => {
           {/* Second Row */}
 
           <div className="flex items-center justify-center gap-8 overflow-x-hidden px-8 pb-2 w-full">
-
-
             {secondRowImages.map((image: Image) =>
               image.show ? (
                 <div
