@@ -9,13 +9,13 @@ const CustomTimeline = () => {
   const data = [
     {
       label: 'Submission of Full-length Manuscript (opens from)',
-      date: '5th June 2026',
+      date: '5th April 2026',
     },
     {
       label: 'Last date to submit Full-length Manuscript',
-      date: '5th July 2026',
+      date: '31st May 2026',
     },
-    { 
+    {
       label: 'Notification of Acceptance',
       date: '5th Aug 2026',
     },
@@ -25,24 +25,24 @@ const CustomTimeline = () => {
     },
     {
       label: 'Early Bird Registration ends on',
-      date: '18th Aug 2026',
+      date: '30th Aug 2026',
     },
     {
       label: 'Submission of Camera-ready Manuscript and Copyright form',
-      date: '10th Sept 2026',
+      date: '20th Sept 2026',
     },
     {
       label: 'Last Date for Registration for both paper and Ph. D. Thesis',
-      date: '18th Sept 2026',
+      date: '1st Oct 2026',
     },
     {
-      label:"Best PhD Thesis Presentation",
-      date:"29th Oct 2026"
+      label: 'Best PhD Thesis Presentation',
+      date: '29th Oct 2026',
     },
     {
-      label:"Conference Dates",
-      date:"30th and 31st Oct 2026"
-    }
+      label: 'Conference Dates',
+      date: '30th and 31st Oct 2026',
+    },
   ]
 
   useEffect(() => {
