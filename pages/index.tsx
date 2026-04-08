@@ -139,7 +139,7 @@ export default function Index() {
                       </a>
 
                       <a
-                        href=""
+                        href="/paper-submission-guidelines"
                         className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
@@ -157,7 +157,7 @@ export default function Index() {
                               d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                             />
                           </svg>
-                          Download Flyer
+                          Paper Submission Guidelines
                         </span>
                       </a>
                     </div>
@@ -274,7 +274,9 @@ export default function Index() {
                   Publication in IEEE Xplore
                 </h3>
                 <p className="mt-2 text-lg text-gray-600">
-                  Accepted papers will be submitted for possible inclusion into IEEE Xplore subject to meeting IEEE Xplore's scope and quality requirements
+                  Accepted papers will be submitted for possible inclusion into
+                  IEEE Xplore subject to meeting IEEE Xplore's scope and quality
+                  requirements
                 </p>
               </div>
             </div>
@@ -287,7 +289,6 @@ export default function Index() {
           id="timeline"
         >
           <Timeline />
-          
         </div>
         {/* </Element> */}
 
@@ -326,7 +327,10 @@ export default function Index() {
                   className="h-[400px] w-full cursor-pointer rounded-lg object-cover"
                   onClick={() => {
                     const modal = document.getElementById('modal')
-                    if (modal) modal.classList.remove('hidden')
+                    if (modal) {
+                      modal.classList.remove('hidden')
+                      modal.classList.add('flex')
+                    }
                   }}
                   style={{
                     border: '2px solid #374151',
@@ -388,10 +392,13 @@ export default function Index() {
             {/* Modal for enlarged image */}
             <div
               id="modal"
-              className="fixed inset-0 z-50 flex hidden items-center justify-center bg-black bg-opacity-75"
+              className="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-75"
               onClick={() => {
                 const modal = document.getElementById('modal')
-                if (modal) modal.classList.add('hidden')
+                if (modal) {
+                  modal.classList.add('hidden')
+                  modal.classList.remove('flex')
+                }
               }}
             >
               <img
