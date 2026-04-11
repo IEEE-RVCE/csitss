@@ -176,7 +176,7 @@ export default function PaperSubmissionGuidelines() {
 
           <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-7 text-amber-900 sm:p-6">
             <p>
-              The Microsoft CMT service is used for managing the peer-reviewing
+              The Microsoft CMT service was used for managing the peer-reviewing
               process for this conference. This service was provided for free by
               Microsoft and they bore all expenses, including costs for Azure
               cloud services as well as for software development and support.
