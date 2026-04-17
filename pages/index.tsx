@@ -90,7 +90,7 @@ export default function Index() {
                       </h4>
                     </div>
                     <div className="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4">
-                      <a
+                      {/* <a
                         href=""
                         // target="_blank"
                         rel="noopener noreferrer"
@@ -113,7 +113,7 @@ export default function Index() {
                           </svg>
                           Submit Paper
                         </span>
-                      </a>
+                      </a> */}
 
                       <a
                         href="#timeline"
@@ -157,7 +157,7 @@ export default function Index() {
                               d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                             />
                           </svg>
-                          Paper Submission Guidelines
+                          Submit Paper
                         </span>
                       </a>
                     </div>

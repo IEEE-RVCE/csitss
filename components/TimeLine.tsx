@@ -9,39 +9,43 @@ const CustomTimeline = () => {
   const data = [
     {
       label: 'Submission of Full-length Manuscript (opens from)',
-      date: '5th April 2026',
+      date: '16th April 2026',
     },
     {
       label: 'Last date to submit Full-length Manuscript',
-      date: '31st May 2026',
+      date: '14th June 2026',
     },
     {
       label: 'Notification of Acceptance',
-      date: '5th Aug 2026',
+      date: '9th August 2026',
     },
     {
       label: 'Early Bird Registration (opens from)',
-      date: '13th Aug 2026',
+      date: '13th August 2026',
     },
     {
       label: 'Early Bird Registration ends on',
-      date: '30th Aug 2026',
+      date: '30th August 2026',
+    },
+    {
+      label: 'Last Date for Registration of paper',
+      date: '26th September 2026',
     },
     {
       label: 'Submission of Camera-ready Manuscript and Copyright form',
-      date: '20th Sept 2026',
+      date: '26th September 2026',
     },
     {
-      label: 'Last Date for Registration for both paper and Ph. D. Thesis',
-      date: '1st Oct 2026',
+      label: 'Last Date for Registration of Ph. D. Thesis',
+      date: '30th September 2026',
     },
     {
       label: 'Best PhD Thesis Presentation',
-      date: '29th Oct 2026',
+      date: '29th October 2026',
     },
     {
       label: 'Conference Dates',
-      date: '30th and 31st Oct 2026',
+      date: '30th and 31st October 2026',
     },
   ]
 
@@ -134,9 +138,15 @@ const CustomTimeline = () => {
           <p className="text-lg text-gray-700 font-medium mb-4">
             The below awards will be conferred by CSITSS- 2026
           </p>
-          <ol className="list-decimal list-inside space-y-2 text-lg text-gray-700 pl-4">
-            <li>Best PhD Thesis</li>
-            <li>Best Faculty and student paper</li>
+          <ol className="list-disc list-inside space-y-2 text-lg text-gray-700 pl-4">
+            <li>
+              Best PhD Thesis Awards (Single page synopsis to be submitted as
+              per the submission dates)
+            </li>
+            <li>
+              Best Research Paper award for the paper presented by Faculty and
+              student
+            </li>
           </ol>
         </div>
       </div>
