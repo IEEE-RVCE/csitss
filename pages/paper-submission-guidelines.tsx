@@ -174,6 +174,17 @@ export default function PaperSubmissionGuidelines() {
             </ul>
           </section>
 
+          <div className="flex justify-center py-12">
+            <a
+              href="https://cmt3.research.microsoft.com/ICSITSS2026"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
+            >
+              Click here to submit
+            </a>
+          </div>
+
           <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-7 text-amber-900 sm:p-6">
             <p>
               The Microsoft CMT service was used for managing the peer-reviewing
