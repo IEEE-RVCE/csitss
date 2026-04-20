@@ -21,11 +21,6 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
     {}
   )
 
-  const handleClick = () => {
-    const pdfPath = '/TPC_Team_CSITSS_2025_Trackwise.pdf'
-    window.open(pdfPath, '_blank')
-  }
-
   return (
     <div className="max-w-6xl mx-auto px-4 space-y-12">
       {Object.entries(groupedMembers).map(([post, postMembers]) => (
@@ -186,16 +181,6 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
               )
             })}
           </div>
-          {post === 'Technical Committee Members' && (
-            <div className="flex justify-center mt-4">
-              <span
-                className="bg-indigo-600 rounded-lg text-white px-3 py-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-300"
-                onClick={handleClick}
-              >
-                List of Technical Committee Members
-              </span>
-            </div>
-          )}
         </div>
       ))}
     </div>

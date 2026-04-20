@@ -1,13 +1,5 @@
 const transportation_data = [
   {
-    name: 'Dr Narendra Kumar S',
-    post: 'Transportation Chair',
-    department: '',
-    position: 'Assistant Professor',
-    imgLink: '',
-    email: 'narendraks@rvce.edu.in',
-  },
-  {
     name: 'Prof.Vivekanand S Gogi',
     post: 'Transportation Committee',
     department: 'Industrial Engineering & Management',
@@ -31,14 +23,7 @@ const transportation_data = [
     imgLink: '',
     email: 'harshabk@rvce.edu.in',
   },
-  {
-    name: 'Mr.P Ashok Kumar',
-    post: 'Transportation Committee',
-    department: 'ACD facilities Services',
-    position: 'Assoc.Campus director-RVCE & RVU',
-    imgLink: '',
-    email: 'acd-engineering.rsst@rvei.edu.in',
-  },
+
   {
     name: 'Mr. Akash G',
     post: 'Transportation Committee',

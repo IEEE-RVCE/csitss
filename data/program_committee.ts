@@ -3,7 +3,7 @@ const program_chairs_data = [
     name: 'Dr. K. Sreelakshmi',
     post: 'Program Chair',
     department: 'Electronics and Telecommunication Engineering',
-    position: 'Professor',
+    position: 'Professor and Dean PG Studies ( Circuit Branches)',
     imgLink: '',
     email: 'sreelakshmik@rvce.edu.in',
   },
@@ -22,14 +22,6 @@ const program_chairs_data = [
     position: 'Assistant Professor',
     imgLink: '',
     email: 'ashwanisharma@rvce.edu.in',
-  },
-  {
-    name: 'Dr.Ravindra S.Kulkarni',
-    post: 'Program Committee',
-    department: 'Aerospace Engineering',
-    position: 'Professor',
-    imgLink: '',
-    email: 'ravindraskulkarni@rvce.edu.in',
   },
   {
     name: 'Dr. Vinutha Moses',
@@ -86,6 +78,22 @@ const program_chairs_data = [
     position: 'Professor',
     imgLink: '',
     email: 'andhedarani@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Supreeth R',
+    post: 'Program Committee',
+    department: 'Aerospace Engineering',
+    position: 'Assistant Professor & Head',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Shambulinga M',
+    post: 'Program Committee',
+    department: 'Electronics and Telecommunication Engineering',
+    position: 'Associate Professor',
+    imgLink: '',
+    email: '',
   },
 ]
 
