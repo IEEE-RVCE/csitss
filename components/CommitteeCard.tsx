@@ -21,11 +21,6 @@ export const CommitteeCard = ({ members }: { members: Members[] }) => {
     {}
   )
 
-  const handleClick = () => {
-    const pdfPath = '/TPC_Team_CSITSS_2025_Trackwise.pdf'
-    window.open(pdfPath, '_blank')
-  }
-
   return (
     <div className="max-w-6xl mx-auto px-4 space-y-12">
       {Object.entries(groupedMembers).map(([post, postMembers]) => (
