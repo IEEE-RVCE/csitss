@@ -18,12 +18,7 @@ const patrons = [
     position: 'Hon. Treasurer, RSST',
     imgLink: 'https://nmkrv.edu.in/wp-content/uploads/2023/06/BOM-pics-1.png',
   },
-  {
-    name: 'Dr. K. N. Subramanya',
-    post: 'Patrons',
-    position: 'Principal, RVCE',
-    imgLink: '/committee/principal.jpeg',
-  },
+
   {
     name: 'Sri. Nikhil A Murthy',
     post: 'Patrons',

@@ -2,11 +2,12 @@ export const committees = [
   { name: 'Chief Patron', path: 'chief_patron' },
   { name: 'Patrons', path: 'patrons' },
   { name: 'Conference Chairs', path: 'conference_chairs' },
+  { name: 'Steering Committee', path: 'steering_committee' },
   {
     name: 'Conference Conveners',
     path: 'conference_convenors_committee',
   },
-  { name: 'International Organizing Committee', path: 'organizing_committee' },
+  { name: 'Foreign Delegates Committee', path: 'foreign_delegates_committee' },
   { name: 'Technical Program Committee', path: 'technical_committee' },
   { name: 'Program Committee', path: 'program_committee' },
   { name: 'Publicity Media/Website Committee', path: 'website_committee' },
@@ -23,4 +24,4 @@ export const committees = [
   { name: 'Registration Committee', path: 'registration_committee' },
   { name: 'Help Desk', path: 'help_desk_committee' },
   { name: 'Advisory Committee', path: 'advisory_committee' },
-];
+]

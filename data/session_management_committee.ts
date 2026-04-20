@@ -23,14 +23,7 @@ const session_management_data = [
     imgLink: '',
     email: 'nagendrann@rvce.edu.in',
   },
-  {
-    name: 'Mr.Sudhan Gowda B S',
-    post: 'Session Management',
-    department: 'Electronics and Telecommunication Engineering',
-    position: 'Mechanic',
-    imgLink: '',
-    email: 'sudhangowdabs@rvce.edu.in',
-  },
+
   {
     name: 'Dr AV Narayan',
     post: 'Session Management',

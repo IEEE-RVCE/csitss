@@ -2,7 +2,7 @@ const main_stage_committee_data = [
   {
     name: 'Dr Badrinath K',
     post: 'Stage Arrangement Chair',
-    department: '',
+    department: 'Computer Science and Engineering',
     position: 'Associate Professor',
     imgLink: '',
     email: 'badarinath.kb@rvce.edu.in',
@@ -13,7 +13,7 @@ const main_stage_committee_data = [
     department: 'Electronics and Telecommunication Engineering',
     position: 'Assistant Professor',
     imgLink: '',
-    email: 'kamakshimb@rvce.edu.in',
+    email: '',
   },
   {
     name: 'Dr Sandya H B',
@@ -24,28 +24,12 @@ const main_stage_committee_data = [
     email: 'sandhyahb@rvce.edu.in',
   },
   {
-    name: 'Mrs. Ambika.G.',
-    post: 'Stage Committee',
-    department: 'Electronics and Telecommunication Engineering',
-    position: 'Assistant Instructor',
-    imgLink: '',
-    email: 'ambikag@rvce.edu.in',
-  },
-  {
-    name: 'Ms Puneetha T R',
+    name: 'Dr. Lingaya Hiremath',
     post: 'Stage Committee',
     department: 'Biotechnology',
-    position: 'Instructor',
+    position: 'Assistant Professor',
     imgLink: '',
-    email: 'puneethatr@rvce.edu.in',
-  },
-  {
-    name: 'Mrs Vijayalakshmi G',
-    post: 'Stage Committee',
-    department: '',
-    position: 'Assistant Manager',
-    imgLink: '',
-    email: 'vijaya_ce@rvce.edu.in',
+    email: '',
   },
 ]
 

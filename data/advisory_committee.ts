@@ -55,13 +55,33 @@ const advisory_committee = [
   //   imgLink: '',
   // },
   {
+    name: 'Dr. Achim Forster, LL.M',
+    post: 'Vice President for International & Academic Affairs, Technical University of Applied Sciences, Germany	',
+    imgLink: '',
+  },
+  {
+    name: 'Sushma Nagaraja ',
+    post: 'Grellscheid, Professor, University of Bergen, Norway	',
+    imgLink: '',
+  },
+  {
+    name: 'Dr. Vinod Rajamani',
+    post: 'Fachhochschule Dortmund University of Applied Sciences and Arts 	',
+    imgLink: '',
+  },
+  {
     name: 'Dr. S V Sathyanarayana',
-    post: 'Vice Chair - Technical Activities, IEEE Bangalore Section',
+    post: 'IEEE Vice Chair (Technical Activities), Bangalore Section',
     imgLink: '',
   },
   {
     name: 'Dr. Anindya Saha',
-    post: 'Vice Chair of the IEEE Industry Activities Bangalore Chapter',
+    post: 'IEEE Vice Chair (Industry Activities), Bangalore Section',
+    imgLink: '',
+  },
+  {
+    name: 'Gnanapriya C',
+    post: 'Chair, IEEE Communication Society Bangalore Section',
     imgLink: '',
   },
   {
@@ -70,10 +90,15 @@ const advisory_committee = [
     imgLink: '',
   },
   {
-    name: 'Gnanapriya C',
-    post: 'Chair, IEEE Communication Society Bangalore Section',
+    name: 'Dr. Yogendra Kumar Mishra',
+    post: 'Professor, SDU NANOSYD, The Mads Clausen Institute	',
     imgLink: '',
   },
-];
+  {
+    name: 'Dr. Stephen Weyer',
+    post: 'Vice Rector, FH Dortmund University, Germany	',
+    imgLink: '',
+  },
+]
 
-export default advisory_committee;
+export default advisory_committee
