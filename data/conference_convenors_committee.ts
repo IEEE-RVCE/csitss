@@ -1,6 +1,6 @@
 const conference_convenors_data = [
   {
-    name: 'Dr. K Sarsawathi',
+    name: 'Dr. Saraswathi K',
     post: 'Conference Convener',
     department: 'Electronics and Telecommunication Engineering',
     position: 'Associate Professor',
