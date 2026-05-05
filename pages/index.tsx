@@ -160,6 +160,31 @@ export default function Index() {
                           Submit Paper
                         </span>
                       </a>
+
+                      <a
+                        href="/CSITSS_2026-flyer.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-pink-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-pink-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-400/50 active:scale-95"
+                      >
+                        <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
+                        <span className="relative flex items-center justify-center gap-2">
+                          <svg
+                            className="h-5 w-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 16v-8m0 8l-3-3m3 3l3-3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                            />
+                          </svg>
+                          Download Flyer
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
