@@ -6,6 +6,7 @@ import HeaderImages from '../components/HeaderImages'
 import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 import ConferenceThemes from '../components/ConferenceThemes'
+import Table from '../components/table'
 // import Marquee from 'react-fast-marquee'
 
 // const image = {
@@ -316,6 +317,8 @@ export default function Index() {
           <Timeline />
         </div>
         {/* </Element> */}
+
+        <Table />
 
         <ConferenceThemes />
 
