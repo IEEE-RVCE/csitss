@@ -108,6 +108,17 @@ export default function PaperSubmissionGuidelines() {
                 Paper submission via email is not permitted. The papers
                 submitted via email will be rejected without review.
               </li>
+              <li>
+                Refer to the submission guidelines and the AI policy:{' '}
+                <a
+                  className="text-purple-700 underline decoration-purple-300 underline-offset-4 hover:text-purple-900"
+                  href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/
+                </a>
+              </li>
             </ul>
           </section>
 
