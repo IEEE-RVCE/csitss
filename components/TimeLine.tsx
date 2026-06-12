@@ -13,7 +13,7 @@ const CustomTimeline = () => {
     },
     {
       label: 'Last date to submit Full-length Manuscript',
-      date: '14th June 2026',
+      date: '28th June 2026',
     },
     {
       label: 'Notification of Acceptance',
@@ -126,7 +126,7 @@ const CustomTimeline = () => {
                     {item.label}
                   </h3>
                   <p className="text-xl text-gray-700 font-medium">
-                    {item.date}{' '}
+                   {item.date == "28th June 2026" && <><span className="line-through">14th June 2026</span> &rarr;</>} {item.date}{' '}
                   </p>
                 </div>
               </div>
