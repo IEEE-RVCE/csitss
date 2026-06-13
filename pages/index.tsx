@@ -7,6 +7,7 @@ import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 import ConferenceThemes from '../components/ConferenceThemes'
 import Table from '../components/table'
+import { FileText } from 'lucide-react'
 // import Marquee from 'react-fast-marquee'
 
 // const image = {
@@ -118,12 +119,12 @@ export default function Index() {
 
                       <a
                         href="#timeline"
-                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95 w-full sm:w-80"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
-                        <span className="relative flex items-center justify-center gap-2">
+                        <span className="relative flex items-center justify-center gap-2 text-center">
                           <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 shrink-0"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -135,43 +136,33 @@ export default function Index() {
                               d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                             />
                           </svg>
-                          Timeline
+                          <span className="text-center">Timeline</span>
                         </span>
                       </a>
 
                       <a
                         href="/paper-submission-guidelines"
-                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95 w-full sm:w-80"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
-                        <span className="relative flex items-center justify-center gap-2">
-                          <svg
-                            className="h-5 w-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                            />
-                          </svg>
-                          Submit Paper
+                        <span className="relative flex items-center justify-center gap-2 text-center">
+                          <FileText className="h-5 w-5 shrink-0" />
+                          <span className="text-center">
+                            Paper Submission Guidelines & To Submit Paper
+                          </span>
                         </span>
                       </a>
 
                       <a
-                        href="/CSITSS_2026-flyer.pdf"
+                        href="/CSITSSBrochure2026final.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-pink-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-pink-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-400/50 active:scale-95"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-pink-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-pink-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-400/50 active:scale-95 w-full sm:w-80"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
-                        <span className="relative flex items-center justify-center gap-2">
+                        <span className="relative flex items-center justify-center gap-2 text-center">
                           <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 shrink-0"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -183,7 +174,7 @@ export default function Index() {
                               d="M12 16v-8m0 8l-3-3m3 3l3-3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                             />
                           </svg>
-                          Download Flyer
+                          <span className="text-center">Download Brochure</span>
                         </span>
                       </a>
                     </div>
