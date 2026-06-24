@@ -7,7 +7,7 @@ import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 import ConferenceThemes from '../components/ConferenceThemes'
 import Table from '../components/table'
-import { FileText } from 'lucide-react'
+import { FileText, Award } from 'lucide-react'
 // import Marquee from 'react-fast-marquee'
 
 // const image = {
@@ -91,12 +91,12 @@ export default function Index() {
                         <sup className="text-sm">®</sup>
                       </h4>
                     </div>
-                    <div className="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4">
+                    <div className="grid grid-cols-1 gap-4 px-2 sm:grid-cols-2 lg:grid-cols-4 items-stretch justify-center w-full max-w-5xl mx-auto">
                       {/* <a
                         href=""
                         // target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-blue-500 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
+                        className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-blue-500 hover:to-blue-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400/50 active:scale-95"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                         <span className="relative flex items-center justify-center gap-2">
@@ -119,7 +119,7 @@ export default function Index() {
 
                       <a
                         href="#timeline"
-                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95 w-full sm:w-80"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-emerald-500 hover:to-emerald-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-emerald-400/50 active:scale-95 w-full"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                         <span className="relative flex items-center justify-center gap-2 text-center">
@@ -142,7 +142,7 @@ export default function Index() {
 
                       <a
                         href="/paper-submission-guidelines"
-                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95 w-full sm:w-80"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-purple-400/50 active:scale-95 w-full"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                         <span className="relative flex items-center justify-center gap-2 text-center">
@@ -154,10 +154,25 @@ export default function Index() {
                       </a>
 
                       <a
+                        href="/Best-phd-thesis-guidelins-FINAL.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-amber-500 hover:to-amber-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-400/50 active:scale-95 w-full"
+                      >
+                        <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
+                        <span className="relative flex items-center justify-center gap-2 text-center">
+                          <Award className="h-5 w-5 shrink-0" />
+                          <span className="text-center">
+                            Apply for Best Ph.D thesis award
+                          </span>
+                        </span>
+                      </a>
+
+                      <a
                         href="/CSITSSBrochure2026final.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-pink-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-pink-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-400/50 active:scale-95 w-full sm:w-80"
+                        className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-pink-700 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-pink-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-pink-400/50 active:scale-95 w-full"
                       >
                         <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-white/0 via-white/10 to-white/0 transition-transform duration-500 group-hover:translate-x-[100%]"></div>
                         <span className="relative flex items-center justify-center gap-2 text-center">
