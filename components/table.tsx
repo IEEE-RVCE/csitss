@@ -114,15 +114,17 @@ function Table() {
             </table>
           </div>
           <div className="border-t border-gray-200 bg-blue-50 px-6 py-4 text-sm text-blue-900 space-y-1">
-            <p>The manuscript length should be 5–6 pages.</p>
-            <p>
+            <p><b>The manuscript length should be 5–6 pages.</b></p>
+            <p><b>
               Additional pages beyond the limit will incur an extra page
               charge of INR 1180 or USD 30 per page. Upto extra two pages
               only.
+              </b>
             </p>
-            <p>
+            <p><b>
               (All the pricing details mentioned above are inclusive of 18%
               GST)
+              </b>
             </p>
           </div>
         </div>
