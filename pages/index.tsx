@@ -154,8 +154,7 @@ export default function Index() {
                       </a>
 
                       <a
-                        href="/Best-phd-thesis-guidelins-FINAL.pdf"
-                        target="_blank"
+                        href="/phd-thesis-award-application"
                         rel="noopener noreferrer"
                         className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-amber-500 hover:to-amber-600 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-400/50 active:scale-95 w-full"
                       >
