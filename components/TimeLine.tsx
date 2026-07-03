@@ -228,7 +228,7 @@ const CustomTimeline = () => {
                         : 'shadow-none'
                     } ${item.isHighlight ? 'border-amber-300/50 bg-amber-50/40' : ''}`}
                   >
-                    <div className="flex items-start justify-between gap-3 flex-wrap">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3">
                       <div className="flex-1 min-w-0">
                         {item.sublabel && (
                           <span className="block text-[10px] font-bold tracking-widest uppercase text-gray-400 mb-0.5">
@@ -248,7 +248,7 @@ const CustomTimeline = () => {
                         </p>
                       </div>
 
-                      <div className="flex flex-col items-end gap-1 shrink-0">
+                      <div className="flex flex-col items-start sm:items-end gap-1 shrink-0 mt-1 sm:mt-0">
                         <span
                           className={`text-sm font-bold ${
                             status === 'done'

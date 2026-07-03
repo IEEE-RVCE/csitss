@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { AppShell, Image, Menu } from '@mantine/core'
+import { AppShell, Image } from '@mantine/core'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 // import Marquee from 'react-fast-marquee'
@@ -14,6 +14,8 @@ const Links = [
 ]
 
 const NavBar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] w-full px-4 md:px-8 pt-4 bg-transparent pointer-events-none">
       <div className="mx-auto max-w-7xl w-full bg-white/95 backdrop-blur-md border border-gray-100/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] rounded-full px-6 py-2.5 flex items-center justify-between transition-all duration-300 pointer-events-auto">
@@ -47,46 +49,51 @@ const NavBar = () => {
           ))}
         </nav>
         {/* Mobile Navigation Menu */}
-        <div className="md:hidden">
-          <Menu shadow="md" width={200} position="bottom-end">
-            <Menu.Target>
-              <button
-                className="p-2 text-gray-600 hover:bg-gray-100 rounded-full transition-colors"
-                type="button"
-                aria-label="Toggle navigation menu"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </Menu.Target>
-            <Menu.Dropdown className="rounded-xl border border-gray-100/80 shadow-xl bg-white p-2">
+        <div className="md:hidden relative">
+          <button
+            className="p-2 text-gray-600 hover:bg-gray-100 rounded-full transition-colors pointer-events-auto"
+            type="button"
+            aria-label="Toggle navigation menu"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {mobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+
+          {mobileMenuOpen && (
+            <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl border border-gray-100/80 shadow-xl p-2 pointer-events-auto">
               {Links.map((link) => (
-                <Menu.Item
-                  key={link.label}
-                  className="hover:bg-orange-50/50 rounded-lg transition-colors py-2"
-                >
-                  <Link href={link.href} legacyBehavior>
-                    <a className="font-sans text-sm font-semibold text-gray-600 hover:text-gray-900 block w-full">
-                      {link.label}
-                    </a>
-                  </Link>
-                </Menu.Item>
+                <Link href={link.href} key={link.label} legacyBehavior>
+                  <a
+                    className="block font-sans text-sm font-semibold text-gray-600 hover:text-gray-900 hover:bg-orange-50/50 rounded-lg px-4 py-2.5 transition-colors w-full"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                </Link>
               ))}
-              <Menu.Divider />
-             
-            </Menu.Dropdown>
-          </Menu>
+            </div>
+          )}
         </div>
       </div>
     </header>

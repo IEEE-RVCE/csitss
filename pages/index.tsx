@@ -59,7 +59,7 @@ export default function Index() {
               </div>
 
               {/* Grid of Key Info Box (4 boxes) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+              <div className="grid grid-cols-2 gap-2 mb-3">
                 {/* Box 1: Conference */}
                 <div className="flex items-center gap-3 p-2.5 rounded-2xl bg-white border border-gray-50 shadow-[0_4px_20px_rgba(0,0,0,0.01)]">
                   <div className="w-10 h-10 rounded-full bg-[#ff7b65]/10 flex items-center justify-center text-[#ff7b65] shrink-0">
