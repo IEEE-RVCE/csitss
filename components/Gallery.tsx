@@ -1,245 +1,286 @@
-import React, { useState, useEffect } from 'react';
+'use client'
+import React, { useState, useEffect, useCallback } from 'react'
 
-const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [autoplay, setAutoplay] = useState(true);
-  
-  // Image links array - using only a subset of the original images
-  const imgLinks = [
-    '/gallery/image_1.webp',
-    '/gallery/image_3.webp',
-    '/gallery/image_5.webp',
-    '/gallery/image_8.webp',
-    '/gallery/image_10.webp',
-    '/gallery/image_15.webp',
-    '/gallery/image_18.webp',
-    '/gallery/image_21.webp',
-    '/gallery/image_24.webp',
-  ];
+const imgLinks = [
+  '/gallery/image_1.webp',
+  '/gallery/image_3.webp',
+  '/gallery/image_5.webp',
+  '/gallery/image_8.webp',
+  '/gallery/image_10.webp',
+  '/gallery/image_15.webp',
+  '/gallery/image_18.webp',
+  '/gallery/image_21.webp',
+  '/gallery/image_24.webp',
+]
 
-  // Handle thumbnail click
-  const handleThumbnailClick = (index: number) => {
-    setCurrentIndex(index);
-    setAutoplay(false);
-  };
-
-  // Handle modal open
-  const handleModalOpen = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setSelectedImage(imgLinks[currentIndex]);
-  };
-
-  // Handle navigation
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === imgLinks.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? imgLinks.length - 1 : prevIndex - 1
-    );
-  };
-
-  // Extract image number from link
-  const getImageNumber = (link: string) => {
-    const match = link.match(/image_(\d+)\.webp/);
-    return match ? match[1] : '';
-  };
-
-  // Autoplay functionality
+// ── Lightbox ──────────────────────────────────────────────────────────────────
+const Lightbox = ({
+  index,
+  onClose,
+  onPrev,
+  onNext,
+}: {
+  index: number
+  onClose: () => void
+  onPrev: () => void
+  onNext: () => void
+}) => {
   useEffect(() => {
-    let interval: NodeJS.Timeout;
-    
-    if (autoplay) {
-      interval = setInterval(() => {
-        nextSlide();
-      }, 4000);
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowLeft') onPrev()
+      if (e.key === 'ArrowRight') onNext()
     }
-    
-    return () => {
-      if (interval) clearInterval(interval);
-    };
-  }, [autoplay, currentIndex]);
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [onClose, onPrev, onNext])
 
   return (
-    <div className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8" id="gallery">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto mb-12 text-center">
-        <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-          Gallery
-        </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-600">
-          Highlights from our previous conferences
-        </p>
+    // z-[200] sits above the navbar (z-[100])
+    <div
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/85 backdrop-blur-md"
+      onClick={onClose}
+    >
+      {/* Counter */}
+      <div className="absolute top-5 left-1/2 -translate-x-1/2 text-white/60 text-xs font-semibold tracking-widest select-none pointer-events-none">
+        {index + 1} / {imgLinks.length}
       </div>
 
-      {/* Main Carousel */}
-      <div className="max-w-7xl mx-auto">
-        <div className="relative">
-          {/* Main Image Display */}
-          <div className="aspect-w-16 aspect-h-9 md:aspect-h-7 lg:aspect-h-6 xl:h-[600px] bg-gray-200 rounded-xl overflow-hidden shadow-2xl">
-            <div className="relative w-full h-full">
-              {imgLinks.map((link, index) => (
-                <div
-                  key={link}
-                  className={`absolute inset-0 transition-opacity duration-500 ${
-                    index === currentIndex ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                  }`}
-                >
-                  <img
-                    src={link}
-                    alt={`Gallery image ${getImageNumber(link)}`}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
-                    <div 
-                      className="absolute bottom-6 left-6 right-6 flex justify-between"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <button
-                        className="bg-white/30 backdrop-blur-sm text-white p-4 rounded-full hover:bg-white/50 transition-colors"
-                        onClick={handleModalOpen}
-                      >
-                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                      </button>
-                      <div className="px-6 py-3 bg-white/30 backdrop-blur-sm rounded-full text-white text-lg font-medium">
-                        Image {parseInt(getImageNumber(link))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      {/* Close */}
+      <button
+        className="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white transition-colors z-10"
+        onClick={(e) => { e.stopPropagation(); onClose() }}
+        aria-label="Close"
+      >
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-          {/* Navigation Arrows */}
+      {/* Prev */}
+      <button
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white transition-colors z-10"
+        onClick={(e) => { e.stopPropagation(); onPrev() }}
+        aria-label="Previous"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      {/* Next */}
+      <button
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white transition-colors z-10"
+        onClick={(e) => { e.stopPropagation(); onNext() }}
+        aria-label="Next"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      {/* Main image */}
+      <div
+        className="relative flex items-center justify-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <img
+          key={index}
+          src={imgLinks[index]}
+          alt={`Gallery ${index + 1}`}
+          className="max-w-[88vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl select-none"
+          draggable={false}
+        />
+      </div>
+
+      {/* Dot strip */}
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
+        {imgLinks.map((_, i) => (
+          <span
+            key={i}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              i === index ? 'w-5 bg-white' : 'w-1.5 bg-white/30'
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// ── Gallery ───────────────────────────────────────────────────────────────────
+const Gallery = () => {
+  const [heroIndex, setHeroIndex] = useState(0)
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const [paused, setPaused] = useState(false)
+
+  // Auto-cycle hero every 4 s
+  useEffect(() => {
+    if (paused || lightboxIndex !== null) return
+    const t = setInterval(() => {
+      setHeroIndex((i) => (i + 1) % imgLinks.length)
+    }, 4000)
+    return () => clearInterval(t)
+  }, [paused, lightboxIndex])
+
+  const openLightbox = (idx: number) => { setPaused(true); setLightboxIndex(idx) }
+  const closeLightbox = useCallback(() => { setLightboxIndex(null); setPaused(false) }, [])
+  const prevLight = useCallback(() =>
+    setLightboxIndex((i) => (i === null ? 0 : (i - 1 + imgLinks.length) % imgLinks.length)), [])
+  const nextLight = useCallback(() =>
+    setLightboxIndex((i) => (i === null ? 0 : (i + 1) % imgLinks.length)), [])
+
+  // 6 tiles = all images except current hero
+  const gridImages = imgLinks
+    .map((src, i) => ({ src, i }))
+    .filter(({ i }) => i !== heroIndex)
+    .slice(0, 6)
+
+  return (
+    <div className="w-full py-12 px-0" id="gallery">
+
+      {/* Section header */}
+      <div className="mb-8 px-4 sm:px-0">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff7b65]/10 border border-[#ff7b65]/20 text-[#ff7b65] text-[10px] font-bold tracking-widest uppercase mb-3">
+          Previous Editions
+        </div>
+        <div className="flex items-end justify-between">
+          <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
+            Moments from CSITSS.
+          </h2>
           <button
-            className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/70 text-gray-800 p-4 rounded-full shadow-lg hover:bg-white transition-colors z-10"
-            onClick={(e) => {
-              e.stopPropagation();
-              prevSlide();
-              setAutoplay(false);
-            }}
+            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-gray-800 transition-colors group"
+            onClick={() => openLightbox(heroIndex)}
           >
-            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/70 text-gray-800 p-4 rounded-full shadow-lg hover:bg-white transition-colors z-10"
-            onClick={(e) => {
-              e.stopPropagation();
-              nextSlide();
-              setAutoplay(false);
-            }}
-          >
-            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            View full gallery
+            <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </button>
         </div>
+      </div>
 
-        {/* Thumbnails */}
-        <div className="mt-8 flex justify-center">
-          <div className="flex space-x-4 overflow-x-auto p-3 max-w-full">
-            {imgLinks.map((link, index) => (
-              <button
-                key={link}
-                className={`relative flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 rounded-lg overflow-hidden transition-all duration-200 ${
-                  index === currentIndex
-                    ? 'ring-4 ring-blue-500 scale-105'
-                    : 'opacity-70 hover:opacity-100'
+      {/* ── Desktop grid: explicit CSS template ── */}
+      {/*
+        gridTemplateColumns: 2fr 1fr 1fr 1fr  →  hero (2fr) + 3 cols of tiles (1fr each)
+        gridTemplateRows:    1fr 1fr           →  2 equal rows → 6 tiles total
+        Hero spans rows 1-2 in column 1.
+        6 tiles auto-place into cols 2-4, rows 1-2.
+      */}
+      <div
+        className="hidden md:grid gap-3"
+        style={{
+          gridTemplateColumns: '2fr 1fr 1fr 1fr',
+          gridTemplateRows: '1fr 1fr',
+          height: '420px',
+        }}
+      >
+        {/* Hero */}
+        <div
+          className="relative overflow-hidden rounded-2xl cursor-pointer group"
+          style={{ gridColumn: '1', gridRow: '1 / 3' }}
+          onClick={() => openLightbox(heroIndex)}
+        >
+          {imgLinks.map((src, i) => (
+            <img
+              key={src}
+              src={src}
+              alt={`Gallery ${i + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
+                i === heroIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105 pointer-events-none'
+              } group-hover:scale-[1.04]`}
+            />
+          ))}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+
+          {/* Play/pause */}
+          <button
+            className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white/80 hover:text-white transition-colors z-10"
+            onClick={(e) => { e.stopPropagation(); setPaused((p) => !p) }}
+            aria-label={paused ? 'Play' : 'Pause'}
+          >
+            {paused ? (
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            ) : (
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
+            )}
+          </button>
+
+          {/* Dot progress */}
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1 z-10 pointer-events-none">
+            {imgLinks.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1 rounded-full transition-all duration-500 ${
+                  i === heroIndex ? 'w-5 bg-white' : 'w-1.5 bg-white/40'
                 }`}
-                onClick={() => handleThumbnailClick(index)}
-              >
-                <img
-                  src={link}
-                  alt={`Thumbnail ${getImageNumber(link)}`}
-                  className="w-full h-full object-cover"
-                />
-              </button>
+              />
             ))}
           </div>
         </div>
 
-        {/* View All Button */}
-        <div className="mt-10 text-center">
-          <button
-            className="inline-flex items-center px-8 py-4 text-lg border border-transparent rounded-lg shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300"
-            onClick={(e) => {
-              e.stopPropagation();
-              setSelectedImage(imgLinks[currentIndex]);
-            }}
+        {/* 6 tiles — auto-placed into cols 2-4 × rows 1-2 */}
+        {gridImages.map(({ src, i }) => (
+          <div
+            key={src}
+            className="relative overflow-hidden rounded-2xl cursor-pointer group"
+            onClick={() => openLightbox(i)}
           >
-            View Full Gallery
-            <svg className="ml-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </button>
+            <img
+              src={src}
+              alt={`Gallery ${i + 1}`}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+          </div>
+        ))}
+      </div>
+
+      {/* ── Mobile: stacked hero + thumbnail strip ── */}
+      <div className="md:hidden">
+        <div
+          className="relative w-full overflow-hidden rounded-2xl cursor-pointer mb-3"
+          style={{ height: '260px' }}
+          onClick={() => openLightbox(heroIndex)}
+        >
+          {imgLinks.map((src, i) => (
+            <img
+              key={src}
+              src={src}
+              alt={`Gallery ${i + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                i === heroIndex ? 'opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+            />
+          ))}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
+        </div>
+        <div className="flex gap-2 overflow-x-auto pb-1">
+          {imgLinks.map((src, i) => (
+            <button
+              key={src}
+              className={`flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden border-2 transition-all duration-200 ${
+                i === heroIndex ? 'border-[#ff7b65] scale-105' : 'border-transparent opacity-70'
+              }`}
+              onClick={() => { setHeroIndex(i); openLightbox(i) }}
+            >
+              <img src={src} alt={`Thumb ${i + 1}`} className="w-full h-full object-cover" />
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Modal Gallery */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-full w-[90vw] h-[90vh]">
-            <img
-              src={selectedImage}
-              alt={`Selected gallery image ${getImageNumber(selectedImage)}`}
-              className="w-full h-full object-contain rounded-lg"
-            />
-            <div className="absolute top-6 right-6 flex space-x-4">
-              <button
-                className="text-white bg-black/60 rounded-full p-4 hover:bg-black/80 transition-colors"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  const currentIdx = imgLinks.indexOf(selectedImage);
-                  const prevIdx = currentIdx === 0 ? imgLinks.length - 1 : currentIdx - 1;
-                  setSelectedImage(imgLinks[prevIdx]);
-                }}
-              >
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button
-                className="text-white bg-black/60 rounded-full p-4 hover:bg-black/80 transition-colors"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  const currentIdx = imgLinks.indexOf(selectedImage);
-                  const nextIdx = currentIdx === imgLinks.length - 1 ? 0 : currentIdx + 1;
-                  setSelectedImage(imgLinks[nextIdx]);
-                }}
-              >
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-              <button
-                className="text-white bg-black/60 rounded-full p-4 hover:bg-black/80 transition-colors"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedImage(null);
-                }}
-              >
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
+      {/* Lightbox */}
+      {lightboxIndex !== null && (
+        <Lightbox
+          index={lightboxIndex}
+          onClose={closeLightbox}
+          onPrev={prevLight}
+          onNext={nextLight}
+        />
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery
