@@ -5,7 +5,7 @@ import Timeline from '../components/TimeLine'
 import Gallery from '../components/Gallery'
 import ConferenceThemes from '../components/ConferenceThemes'
 import Table from '../components/table'
-import { FileText, Award, Calendar, Clock, MapPin, Download, Send, ChevronRight, Earth } from 'lucide-react'
+import { FileText, Award, Calendar, MapPin, Download, Send, ChevronRight, Earth } from 'lucide-react'
 import Link from 'next/link'
 
 // const image = {
