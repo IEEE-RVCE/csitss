@@ -6,7 +6,6 @@ import { Calendar, CheckCircle2, Clock, Circle, Award, Dot } from 'lucide-react'
 
 /** Parse a date string like "16th April 2026" → Date */
 function parseDate(raw: string): Date | null {
-  // strip ordinals (st/nd/rd/th), then parse
   const cleaned = raw.replace(/(\d+)(st|nd|rd|th)/gi, '$1')
   const d = new Date(cleaned)
   return isNaN(d.getTime()) ? null : d
@@ -18,7 +17,6 @@ function getStatus(dateStr: string, today: Date): Status {
   const d = parseDate(dateStr)
   if (!d) return 'upcoming'
   if (d < today) return 'done'
-  // "current" = within 30 days
   const diff = d.getTime() - today.getTime()
   const days = diff / (1000 * 60 * 60 * 24)
   if (days <= 30) return 'current'
@@ -43,7 +41,7 @@ const timelineData = [
     label: 'Last Date to Submit Full-length Manuscript',
     sublabel: null,
     date: '1st July 2026',
-    extended: '14th June 2026', // original / struck-through date
+    extended: '14th June 2026',
   },
   {
     label: 'Notification of Acceptance',
@@ -97,24 +95,24 @@ const awards = [
 
 const statusConfig = {
   done: {
-    ring: 'border-emerald-400/40',
-    bg: 'bg-emerald-50',
-    dot: 'bg-emerald-500',
-    text: 'text-emerald-700',
+    ring: 'border-cyan-500/25',
+    bg: 'bg-cyan-950/30',
+    dot: 'bg-cyan-500',
+    text: 'text-cyan-400',
     label: 'Completed',
   },
   current: {
-    ring: 'border-[#ff7b65]/50',
-    bg: 'bg-[#ff7b65]/8',
-    dot: 'bg-[#ff7b65]',
-    text: 'text-[#ff7b65]',
+    ring: 'border-violet-500/40',
+    bg: 'bg-violet-950/25',
+    dot: 'bg-violet-500',
+    text: 'text-violet-400',
     label: 'Upcoming Soon',
   },
   upcoming: {
-    ring: 'border-gray-200',
-    bg: 'bg-gray-50/50',
-    dot: 'bg-gray-300',
-    text: 'text-gray-400',
+    ring: 'border-white/[0.08]',
+    bg: 'bg-[#0c1525]/60',
+    dot: 'bg-slate-600',
+    text: 'text-slate-500',
     label: 'Upcoming',
   },
 }
@@ -129,7 +127,6 @@ const CustomTimeline = () => {
     Array(timelineData.length).fill(false)
   )
 
-  // Intersection observer for section entrance
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([entry]) => {
@@ -144,7 +141,6 @@ const CustomTimeline = () => {
     return () => obs.disconnect()
   }, [])
 
-  // Stagger-reveal each item
   useEffect(() => {
     if (!visible) return
     timelineData.forEach((_, i) => {
@@ -168,14 +164,14 @@ const CustomTimeline = () => {
       >
         {/* ── Section header ───────────────────────────────────────────── */}
         <div className="flex flex-col items-center mb-12 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff7b65]/10 border border-[#ff7b65]/20 text-[#ff7b65] text-xs font-bold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-4">
             <Calendar size={13} />
             Important Dates
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 font-semibold tracking-tight mb-3">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight mb-3 bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
             Conference Timeline
           </h2>
-          <p className="text-sm text-gray-400 max-w-md leading-relaxed">
+          <p className="text-sm text-slate-500 max-w-md leading-relaxed">
             Key milestones for CSITSS&nbsp;2026 — Oct&nbsp;30–31, Bengaluru
           </p>
         </div>
@@ -183,7 +179,7 @@ const CustomTimeline = () => {
         {/* ── Timeline items ────────────────────────────────────────────── */}
         <div className="relative">
           {/* Vertical track */}
-          <div className="absolute left-[19px] top-5 bottom-5 w-px bg-gradient-to-b from-emerald-200 via-gray-200 to-gray-100 rounded-full" />
+          <div className="absolute left-[19px] top-5 bottom-5 w-px bg-gradient-to-b from-cyan-500/40 via-slate-700/40 to-slate-800/20 rounded-full" />
 
           <div className="space-y-3">
             {timelineData.map((item, index) => {
@@ -203,17 +199,17 @@ const CustomTimeline = () => {
                   {/* Dot on track */}
                   <div className="absolute left-0 top-3.5 flex items-center justify-center">
                     {status === 'done' ? (
-                      <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center">
-                        <CheckCircle2 size={18} className="text-emerald-500" strokeWidth={2} />
+                      <div className="w-10 h-10 rounded-full bg-cyan-950/50 border border-cyan-500/30 flex items-center justify-center">
+                        <CheckCircle2 size={18} className="text-cyan-400" strokeWidth={2} />
                       </div>
                     ) : isCurrent ? (
-                      <div className="w-10 h-10 rounded-full bg-[#ff7b65]/10 border border-[#ff7b65]/30 flex items-center justify-center relative">
-                        <span className="absolute inset-0 rounded-full animate-ping bg-[#ff7b65]/20" />
-                        <Clock size={16} className="text-[#ff7b65]" strokeWidth={2.5} />
+                      <div className="w-10 h-10 rounded-full bg-violet-950/50 border border-violet-500/30 flex items-center justify-center relative">
+                        <span className="absolute inset-0 rounded-full animate-ping bg-violet-400/20" />
+                        <Clock size={16} className="text-violet-400" strokeWidth={2.5} />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center">
-                        <Circle size={14} className="text-gray-300" strokeWidth={2} />
+                      <div className="w-10 h-10 rounded-full bg-[#0c1525] border border-white/[0.08] flex items-center justify-center">
+                        <Circle size={14} className="text-slate-600" strokeWidth={2} />
                       </div>
                     )}
                   </div>
@@ -222,27 +218,27 @@ const CustomTimeline = () => {
                   <div
                     className={`group rounded-2xl border px-5 py-4 transition-all duration-300 ${cfg.ring} ${cfg.bg} ${
                       isCurrent
-                        ? 'shadow-[0_4px_20px_rgba(255,123,101,0.12)]'
+                        ? 'shadow-[0_4px_24px_rgba(139,92,246,0.15)]'
                         : status === 'done'
-                        ? 'shadow-[0_2px_12px_rgba(16,185,129,0.06)]'
+                        ? 'shadow-[0_2px_12px_rgba(34,211,238,0.06)]'
                         : 'shadow-none'
-                    } ${item.isHighlight ? 'border-amber-300/50 bg-amber-50/40' : ''}`}
+                    } ${item.isHighlight ? '!border-amber-500/25 !bg-amber-950/20' : ''}`}
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3">
                       <div className="flex-1 min-w-0">
                         {item.sublabel && (
-                          <span className="block text-[10px] font-bold tracking-widest uppercase text-gray-400 mb-0.5">
+                          <span className="block text-[10px] font-bold tracking-widest uppercase text-slate-500 mb-0.5">
                             {item.sublabel}
                           </span>
                         )}
                         <p
                           className={`text-sm font-semibold leading-snug ${
                             status === 'done'
-                              ? 'text-gray-500'
+                              ? 'text-slate-500'
                               : status === 'current'
-                              ? 'text-gray-900'
-                              : 'text-gray-600'
-                          } ${item.isHighlight ? '!text-amber-800 font-bold' : ''}`}
+                              ? 'text-slate-100'
+                              : 'text-slate-400'
+                          } ${item.isHighlight ? '!text-amber-300 font-bold' : ''}`}
                         >
                           {item.label}
                         </p>
@@ -252,14 +248,14 @@ const CustomTimeline = () => {
                         <span
                           className={`text-sm font-bold ${
                             status === 'done'
-                              ? 'text-gray-400'
+                              ? 'text-slate-500'
                               : status === 'current'
-                              ? 'text-[#ff7b65]'
-                              : 'text-gray-500'
-                          } ${item.isHighlight ? '!text-amber-700' : ''}`}
+                              ? 'text-violet-300'
+                              : 'text-slate-400'
+                          } ${item.isHighlight ? '!text-amber-300' : ''}`}
                         >
                           {item.extended && (
-                            <span className="line-through text-gray-300 mr-1 font-normal text-xs">
+                            <span className="line-through text-slate-700 mr-1 font-normal text-xs">
                               {item.extended}
                             </span>
                           )}
@@ -270,10 +266,10 @@ const CustomTimeline = () => {
                         <span
                           className={`inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full ${
                             status === 'done'
-                              ? 'bg-emerald-100 text-emerald-600'
+                              ? 'bg-cyan-950/50 text-cyan-400'
                               : isCurrent
-                              ? 'bg-[#ff7b65]/10 text-[#ff7b65]'
-                              : 'bg-gray-100 text-gray-400'
+                              ? 'bg-violet-950/50 text-violet-400'
+                              : 'bg-white/5 text-slate-500'
                           }`}
                         >
                           <Dot size={10} className="shrink-0" />
@@ -296,28 +292,28 @@ const CustomTimeline = () => {
 
         {/* ── Awards section ────────────────────────────────────────────── */}
         <div
-          className={`mt-10 rounded-2xl border border-amber-200/60 bg-gradient-to-br from-amber-50 to-orange-50/30 px-6 py-5 transition-all duration-700 delay-700 ${
+          className={`mt-10 rounded-2xl border border-amber-500/15 bg-gradient-to-br from-amber-950/30 to-orange-950/20 px-6 py-5 transition-all duration-700 delay-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
           <div className="flex items-center gap-2.5 mb-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center">
-              <Award size={16} className="text-amber-600" />
+            <div className="w-8 h-8 rounded-xl bg-amber-950/60 border border-amber-500/25 flex items-center justify-center">
+              <Award size={16} className="text-amber-400" />
             </div>
             <div>
-              <p className="text-[10px] font-bold tracking-widest uppercase text-amber-500">
+              <p className="text-[10px] font-bold tracking-widest uppercase text-amber-400">
                 Recognition
               </p>
-              <h3 className="text-sm font-bold text-gray-800">Awards — CSITSS 2026</h3>
+              <h3 className="text-sm font-bold text-slate-100">Awards — CSITSS 2026</h3>
             </div>
           </div>
-          <p className="text-xs text-amber-700/70 mb-3 font-medium">
+          <p className="text-xs text-amber-400/50 mb-3 font-medium">
             The below awards will be conferred by CSITSS‑2026
           </p>
           <ul className="space-y-2">
             {awards.map((award, i) => (
-              <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600">
-                <CheckCircle2 size={14} className="text-amber-500 mt-0.5 shrink-0" />
+              <li key={i} className="flex items-start gap-2.5 text-sm text-slate-400">
+                <CheckCircle2 size={14} className="text-amber-400 mt-0.5 shrink-0" />
                 {award}
               </li>
             ))}

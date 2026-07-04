@@ -43,76 +43,76 @@ function Table() {
     <section className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
       {/* Section header */}
       <div className="mb-6 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff7b65]/10 border border-[#ff7b65]/20 text-[#ff7b65] text-[10px] font-bold tracking-widest uppercase mb-3">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-3">
           Registration
         </div>
-        <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
+        <h2 className="font-serif text-2xl sm:text-3xl font-semibold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
           Registration Fees
         </h2>
-        <p className="mt-1.5 text-xs text-gray-400">
+        <p className="mt-1.5 text-xs text-slate-500">
           Indian (INR ₹) &nbsp;/&nbsp; Foreign Authors &amp; Delegates (USD $)
         </p>
       </div>
 
       {/* Table card */}
-      <div className="overflow-hidden rounded-2xl border border-gray-100/80 bg-white/90 shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0c1525]/90 shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse text-left text-sm">
             <thead>
               <tr>
                 <th
                   rowSpan={2}
-                  className="whitespace-nowrap border-b border-r border-gray-100 bg-gray-50 px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-gray-500"
+                  className="whitespace-nowrap border-b border-r border-white/[0.06] bg-[#070d1a] px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-500"
                 >
                   Particulars
                 </th>
                 <th
                   colSpan={2}
-                  className="border-b border-r border-gray-100 bg-emerald-50 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-700"
+                  className="border-b border-r border-white/[0.06] bg-emerald-950/60 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400"
                 >
                   Early Bird
-                  <div className="text-[10px] font-medium text-emerald-500 normal-case tracking-normal mt-0.5">
+                  <div className="text-[10px] font-medium text-emerald-500/70 normal-case tracking-normal mt-0.5">
                     On or before 30th August
                   </div>
                 </th>
                 <th
                   colSpan={2}
-                  className="border-b border-gray-100 bg-blue-50 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-blue-700"
+                  className="border-b border-white/[0.06] bg-sky-950/60 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-sky-400"
                 >
                   Regular Registration
                 </th>
               </tr>
               <tr className="text-center">
-                <th className="border-b border-r border-gray-100 bg-emerald-50/60 px-4 py-2 text-[11px] font-semibold text-emerald-600">
+                <th className="border-b border-r border-white/[0.06] bg-emerald-950/40 px-4 py-2 text-[11px] font-semibold text-emerald-500">
                   IEEE
                 </th>
-                <th className="border-b border-r border-gray-100 bg-emerald-50/60 px-4 py-2 text-[11px] font-semibold text-emerald-600">
+                <th className="border-b border-r border-white/[0.06] bg-emerald-950/40 px-4 py-2 text-[11px] font-semibold text-emerald-500">
                   Non-IEEE
                 </th>
-                <th className="border-b border-r border-gray-100 bg-blue-50/60 px-4 py-2 text-[11px] font-semibold text-blue-600">
+                <th className="border-b border-r border-white/[0.06] bg-sky-950/40 px-4 py-2 text-[11px] font-semibold text-sky-500">
                   IEEE
                 </th>
-                <th className="border-b border-gray-100 bg-blue-50/60 px-4 py-2 text-[11px] font-semibold text-blue-600">
+                <th className="border-b border-white/[0.06] bg-sky-950/40 px-4 py-2 text-[11px] font-semibold text-sky-500">
                   Non-IEEE
                 </th>
               </tr>
             </thead>
-            <tbody className="text-gray-700">
+            <tbody>
               {pricingRows.map((row, i) => (
-                <tr key={row.label} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
-                  <td className="border-b border-r border-gray-100 px-5 py-3 text-sm font-medium text-gray-800">
+                <tr key={row.label} className={i % 2 === 0 ? 'bg-[#0a1020]' : 'bg-[#0c1525]/50'}>
+                  <td className="border-b border-r border-white/[0.06] px-5 py-3 text-sm font-medium text-slate-300">
                     {row.label}
                   </td>
-                  <td className="border-b border-r border-gray-100 px-4 py-3 text-center text-sm font-semibold text-emerald-700">
+                  <td className="border-b border-r border-white/[0.06] px-4 py-3 text-center text-sm font-semibold text-emerald-400">
                     {row.earlyIeee}
                   </td>
-                  <td className="border-b border-r border-gray-100 px-4 py-3 text-center text-sm text-gray-600">
+                  <td className="border-b border-r border-white/[0.06] px-4 py-3 text-center text-sm text-slate-400">
                     {row.earlyNonIeee}
                   </td>
-                  <td className="border-b border-r border-gray-100 px-4 py-3 text-center text-sm font-semibold text-blue-700">
+                  <td className="border-b border-r border-white/[0.06] px-4 py-3 text-center text-sm font-semibold text-sky-400">
                     {row.regularIeee}
                   </td>
-                  <td className="border-b border-gray-100 px-4 py-3 text-center text-sm text-gray-600">
+                  <td className="border-b border-white/[0.06] px-4 py-3 text-center text-sm text-slate-400">
                     {row.regularNonIeee}
                   </td>
                 </tr>
@@ -122,10 +122,10 @@ function Table() {
         </div>
 
         {/* Footer notes */}
-        <div className="border-t border-gray-100 bg-gray-50/70 px-5 py-4 space-y-1.5 text-xs text-gray-500">
-          <p>The manuscript length should be <span className="font-semibold text-gray-700">5–6 pages</span>.</p>
-          <p>Additional pages beyond the limit will incur an extra page charge of <span className="font-semibold text-gray-700">INR 1180 or USD 30 per page</span>. Upto extra two pages only.</p>
-          <p>All pricing details mentioned above are <span className="font-semibold text-gray-700">inclusive of 18% GST</span>.</p>
+        <div className="border-t border-white/[0.06] bg-[#070d1a]/80 px-5 py-4 space-y-1.5 text-xs text-slate-500">
+          <p>The manuscript length should be <span className="font-semibold text-slate-300">5–6 pages</span>.</p>
+          <p>Additional pages beyond the limit will incur an extra page charge of <span className="font-semibold text-slate-300">INR 1180 or USD 30 per page</span>. Upto extra two pages only.</p>
+          <p>All pricing details mentioned above are <span className="font-semibold text-slate-300">inclusive of 18% GST</span>.</p>
         </div>
       </div>
     </section>

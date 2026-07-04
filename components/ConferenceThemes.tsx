@@ -2,17 +2,17 @@ import React from 'react'
 import conferenceThemes, { ThemeCategory } from '../data/conference_themes'
 
 const headerColors: Record<string, string> = {
-  blue: 'bg-blue-600',
-  purple: 'bg-purple-600',
-  emerald: 'bg-emerald-600',
-  amber: 'bg-amber-600',
-  rose: 'bg-rose-600',
-  teal: 'bg-teal-600',
+  blue: 'bg-blue-900',
+  purple: 'bg-violet-900',
+  emerald: 'bg-emerald-900',
+  amber: 'bg-amber-900',
+  rose: 'bg-rose-900',
+  teal: 'bg-teal-900',
 }
 
 const dotColors: Record<string, string> = {
   blue: 'bg-blue-400',
-  purple: 'bg-purple-400',
+  purple: 'bg-violet-400',
   emerald: 'bg-emerald-400',
   amber: 'bg-amber-400',
   rose: 'bg-rose-400',
@@ -20,12 +20,12 @@ const dotColors: Record<string, string> = {
 }
 
 const rowBgColors: Record<string, { even: string; odd: string }> = {
-  blue: { even: 'bg-blue-50/40', odd: 'bg-white' },
-  purple: { even: 'bg-purple-50/40', odd: 'bg-white' },
-  emerald: { even: 'bg-emerald-50/40', odd: 'bg-white' },
-  amber: { even: 'bg-amber-50/40', odd: 'bg-white' },
-  rose: { even: 'bg-rose-50/40', odd: 'bg-white' },
-  teal: { even: 'bg-teal-50/40', odd: 'bg-white' },
+  blue: { even: 'bg-blue-950/30', odd: 'bg-[#080e1c]' },
+  purple: { even: 'bg-violet-950/30', odd: 'bg-[#080e1c]' },
+  emerald: { even: 'bg-emerald-950/30', odd: 'bg-[#080e1c]' },
+  amber: { even: 'bg-amber-950/30', odd: 'bg-[#080e1c]' },
+  rose: { even: 'bg-rose-950/30', odd: 'bg-[#080e1c]' },
+  teal: { even: 'bg-teal-950/30', odd: 'bg-[#080e1c]' },
 }
 
 /** Pair themes into rows of 2 for the table layout */
@@ -39,18 +39,18 @@ const ThemeCell = ({ theme }: { theme: ThemeCategory }) => {
   const rowBg = rowBgColors[theme.color] || rowBgColors.blue
 
   return (
-    <ul className="divide-y divide-gray-100">
+    <ul className="divide-y divide-white/[0.05]">
       {theme.topics.map((topic, idx) => (
         <li
           key={idx}
-          className={`flex items-start gap-3 px-5 py-2.5 transition-colors duration-150 hover:bg-gray-50 ${
+          className={`flex items-start gap-3 px-5 py-2.5 transition-colors duration-150 hover:bg-white/[0.03] ${
             idx % 2 === 0 ? rowBg.even : rowBg.odd
           }`}
         >
           <span
             className={`mt-[7px] h-1.5 w-1.5 flex-shrink-0 rounded-full ${dot}`}
           />
-          <span className="text-[0.9rem] leading-relaxed text-gray-700">
+          <span className="text-[0.9rem] leading-relaxed text-slate-300">
             {topic}
           </span>
         </li>
@@ -64,26 +64,25 @@ const ConferenceThemes = () => {
     <section className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
       {/* Section Header */}
       <div className="mb-10 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff7b65]/10 border border-[#ff7b65]/20 text-[#ff7b65] text-[10px] font-bold tracking-widest uppercase mb-3">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-3">
           <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
               d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
           </svg>
           CSITSS 2026
         </div>
-        <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
+        <h2 className="font-serif text-2xl sm:text-3xl font-semibold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
           Conference Themes
         </h2>
       </div>
 
       {/* Table — Desktop (2-column paired layout) */}
-      <div className="hidden overflow-hidden rounded-2xl border border-gray-200 shadow-sm md:block">
+      <div className="hidden overflow-hidden rounded-2xl border border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.4)] md:block">
         <table className="w-full table-fixed border-collapse">
           <tbody>
             {pairedThemes.map(([left, right], rowIdx) => {
               const leftHeader = headerColors[left.color] || headerColors.blue
-              const rightHeader =
-                headerColors[right.color] || headerColors.blue
+              const rightHeader = headerColors[right.color] || headerColors.blue
 
               return (
                 <React.Fragment key={rowIdx}>
@@ -91,12 +90,12 @@ const ConferenceThemes = () => {
                   <tr>
                     <td
                       className={`w-1/2 px-5 py-4 ${leftHeader} ${
-                        rowIdx > 0 ? 'border-t-[3px] border-t-white' : ''
+                        rowIdx > 0 ? 'border-t-[2px] border-t-[#050810]' : ''
                       }`}
                     >
                       <div className="flex items-center gap-3">
                         <svg
-                          className="h-5 w-5 flex-shrink-0 text-white/80"
+                          className="h-5 w-5 flex-shrink-0 text-white/70"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -112,13 +111,13 @@ const ConferenceThemes = () => {
                       </div>
                     </td>
                     <td
-                      className={`w-1/2 border-l border-l-white/30 px-5 py-4 ${rightHeader} ${
-                        rowIdx > 0 ? 'border-t-[3px] border-t-white' : ''
+                      className={`w-1/2 border-l border-l-white/10 px-5 py-4 ${rightHeader} ${
+                        rowIdx > 0 ? 'border-t-[2px] border-t-[#050810]' : ''
                       }`}
                     >
                       <div className="flex items-center gap-3">
                         <svg
-                          className="h-5 w-5 flex-shrink-0 text-white/80"
+                          className="h-5 w-5 flex-shrink-0 text-white/70"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -139,7 +138,7 @@ const ConferenceThemes = () => {
                     <td className="w-1/2 align-top p-0">
                       <ThemeCell theme={left} />
                     </td>
-                    <td className="w-1/2 border-l border-gray-200 align-top p-0">
+                    <td className="w-1/2 border-l border-white/[0.06] align-top p-0">
                       <ThemeCell theme={right} />
                     </td>
                   </tr>
@@ -157,11 +156,11 @@ const ConferenceThemes = () => {
           return (
             <div
               key={idx}
-              className="overflow-hidden rounded-xl border border-gray-200 shadow-sm"
+              className="overflow-hidden rounded-xl border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
             >
               <div className={`flex items-center gap-3 px-5 py-3.5 ${header}`}>
                 <svg
-                  className="h-5 w-5 flex-shrink-0 text-white/80"
+                  className="h-5 w-5 flex-shrink-0 text-white/70"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
