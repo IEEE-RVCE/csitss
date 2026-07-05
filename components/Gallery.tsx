@@ -145,11 +145,11 @@ const Gallery = () => {
           Previous Editions
         </div>
         <div className="flex items-end justify-between">
-          <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
-            Moments from CSITSS.
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight mb-3 bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
+            Moments from CSITSS
           </h2>
           <button
-            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-gray-800 transition-colors group"
+            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors group"
             onClick={() => openLightbox(heroIndex)}
           >
             View full gallery

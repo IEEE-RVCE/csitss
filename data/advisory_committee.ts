@@ -1,17 +1,20 @@
 const advisory_committee = [
   {
     name: 'Dr. K. N. Subramanya',
-    post: 'Principal RVCE',
+    post: 'Advisory Commitee',
+    position:"Principal RVCE"  ,
     imgLink: '',
   },
   {
     name: 'Dr. K. S. Geetha',
-    post: 'Vice Principal, RVCE',
+    post: 'Advisory Commitee',
+    position:"Vice Principal RVCE"  ,
     imgLink: '',
   },
   {
     name: 'Dr. S.S. Iyengar',
-    post: 'Distinguished University Professor, Ryder Professor of Computer Science, Florida International University (FIU), Miami',
+    post: 'Advisory Commitee',
+    position:"Distinguished University Professor, Ryder Professor of Computer Science, Florida International University (FIU), Miami"  ,
     imgLink: '',
   },
   // {
@@ -26,7 +29,8 @@ const advisory_committee = [
   // },
   {
     name: 'Dr. Narasimha Murthy M A',
-    post: 'Head - Quality Management and Delivery Excellence, Infineon Technologies India Pvt Ltd',
+    post: 'Advisory Commitee',
+    position:"Head - Quality Management and Delivery Excellence, Infineon Technologies India Pvt Ltd"  ,
     imgLink: '',
   },
   // {
@@ -56,47 +60,56 @@ const advisory_committee = [
   // },
   {
     name: 'Dr. Achim Forster, LL.M',
-    post: 'Vice President for International & Academic Affairs, Technical University of Applied Sciences, Germany	',
+    post: 'Advisory Commitee',
+    position:"Vice President for International & Academic Affairs, Technical University of Applied Sciences, Germany"  ,
     imgLink: '',
   },
   {
     name: 'Sushma Nagaraja ',
-    post: 'Grellscheid, Professor, University of Bergen, Norway	',
+    post: 'Advisory Commitee',
+    position:"Grellscheid, Professor, University of Bergen, Norway"  ,
     imgLink: '',
   },
   {
     name: 'Dr. Vinod Rajamani',
-    post: 'Fachhochschule Dortmund University of Applied Sciences and Arts 	',
+    post: 'Advisory Commitee',
+    position:"Fachhochschule Dortmund University of Applied Sciences and Arts"  ,
     imgLink: '',
   },
   {
     name: 'Dr. S V Sathyanarayana',
-    post: 'IEEE Vice Chair (Technical Activities), Bangalore Section',
+    post: 'Advisory Commitee',
+    position:"IEEE Vice Chair (Technical Activities), Bangalore Section"  ,
     imgLink: '',
   },
   {
     name: 'Dr. Anindya Saha',
-    post: 'IEEE Vice Chair (Industry Activities), Bangalore Section',
+    post: 'Advisory Commitee',
+    position:"IEEE Vice Chair (Industry Activities), Bangalore Section"  ,
     imgLink: '',
   },
   {
     name: 'Gnanapriya C',
-    post: 'Chair, IEEE Communication Society Bangalore Section',
+    post: 'Advisory Commitee',
+    position:"Chair, IEEE Communication Society Bangalore Section"  ,
     imgLink: '',
   },
   {
     name: 'Dr. Navin Kumar',
-    post: 'Chair, IEEE Sensors Council Bangalore Chapter',
+    post: 'Advisory Commitee',
+    position:"Chair, IEEE Sensors Council Bangalore Chapter"  ,
     imgLink: '',
   },
   {
     name: 'Dr. Yogendra Kumar Mishra',
-    post: 'Professor, SDU NANOSYD, The Mads Clausen Institute	',
+    post: 'Advisory Commitee',
+    position:"Professor, SDU NANOSYD, The Mads Clausen Institute"  ,
     imgLink: '',
   },
   {
     name: 'Dr. Stephen Weyer',
-    post: 'Vice Rector, FH Dortmund University, Germany	',
+    post: 'Advisory Commitee',
+    position:"Vice Rector, FH Dortmund University, Germany"  ,
     imgLink: '',
   },
 ]

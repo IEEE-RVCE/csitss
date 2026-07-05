@@ -4,7 +4,6 @@ import { Calendar, CheckCircle2, Clock, Circle, Award, Dot } from 'lucide-react'
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
-/** Parse a date string like "16th April 2026" → Date */
 function parseDate(raw: string): Date | null {
   const cleaned = raw.replace(/(\d+)(st|nd|rd|th)/gi, '$1')
   const d = new Date(cleaned)
@@ -32,58 +31,16 @@ function daysUntil(dateStr: string, today: Date): number | null {
 // ── data ─────────────────────────────────────────────────────────────────────
 
 const timelineData = [
-  {
-    label: 'Submission of Full-length Manuscript',
-    sublabel: 'Opens from',
-    date: '16th April 2026',
-  },
-  {
-    label: 'Last Date to Submit Full-length Manuscript',
-    sublabel: null,
-    date: '1st July 2026',
-    extended: '14th June 2026',
-  },
-  {
-    label: 'Notification of Acceptance',
-    sublabel: null,
-    date: '9th August 2026',
-  },
-  {
-    label: 'Early Bird Registration',
-    sublabel: 'Opens from',
-    date: '13th August 2026',
-  },
-  {
-    label: 'Early Bird Registration Ends',
-    sublabel: null,
-    date: '30th August 2026',
-  },
-  {
-    label: 'Last Date for Registration of Paper',
-    sublabel: null,
-    date: '26th September 2026',
-  },
-  {
-    label: 'Camera-ready Manuscript & Copyright Form',
-    sublabel: 'Submission deadline',
-    date: '26th September 2026',
-  },
-  {
-    label: 'Last Date for Registration of Ph.D. Thesis',
-    sublabel: null,
-    date: '30th September 2026',
-  },
-  {
-    label: 'Best PhD Thesis Presentation',
-    sublabel: null,
-    date: '29th October 2026',
-  },
-  {
-    label: 'Conference Dates',
-    sublabel: null,
-    date: '30th and 31st October 2026',
-    isHighlight: true,
-  },
+  { label: 'Submission of Full-length Manuscript', sublabel: 'Opens from', date: '16th April 2026' },
+  { label: 'Last Date to Submit Full-length Manuscript', sublabel: null, date: '1st July 2026', extended: '14th June 2026' },
+  { label: 'Notification of Acceptance', sublabel: null, date: '9th August 2026' },
+  { label: 'Early Bird Registration', sublabel: 'Opens from', date: '13th August 2026' },
+  { label: 'Early Bird Registration Ends', sublabel: null, date: '30th August 2026' },
+  { label: 'Last Date for Registration of Paper', sublabel: null, date: '26th September 2026' },
+  { label: 'Camera-ready Manuscript & Copyright Form', sublabel: 'Submission deadline', date: '26th September 2026' },
+  { label: 'Last Date for Registration of Ph.D. Thesis', sublabel: null, date: '30th September 2026' },
+  { label: 'Best PhD Thesis Presentation', sublabel: null, date: '29th October 2026' },
+  { label: 'Conference Dates', sublabel: null, date: '30th and 31st October 2026', isHighlight: true },
 ]
 
 const awards = [
@@ -91,29 +48,44 @@ const awards = [
   'Best Research Paper Award for paper presented by Faculty and Student',
 ]
 
-// ── status indicator helpers ──────────────────────────────────────────────────
+// ── status config — solid, clearly lifted surfaces ───────────────────────────
 
 const statusConfig = {
   done: {
-    ring: 'border-cyan-500/25',
-    bg: 'bg-cyan-950/30',
-    dot: 'bg-cyan-500',
-    text: 'text-cyan-400',
-    label: 'Completed',
+    // Distinct teal-tinted surface — clearly above the navy bg
+    cardBg:     'bg-[#0f2330]',
+    border:     'border-cyan-400/30',
+    shadow:     'shadow-[0_2px_16px_rgba(0,0,0,0.35)]',
+    labelColor: 'text-slate-300',
+    dateColor:  'text-cyan-300',
+    sublabel:   'text-cyan-500/70',
+    badge:      'bg-cyan-400/15 text-cyan-300 border border-cyan-400/20',
+    dotBg:      'bg-[#0a2535] border-cyan-400/40',
+    dotIcon:    'text-cyan-400',
   },
   current: {
-    ring: 'border-violet-500/40',
-    bg: 'bg-violet-950/25',
-    dot: 'bg-violet-500',
-    text: 'text-violet-400',
-    label: 'Upcoming Soon',
+    // Strong violet-tinted surface with glow
+    cardBg:     'bg-[#180f38]',
+    border:     'border-violet-400/50',
+    shadow:     'shadow-[0_4px_28px_rgba(139,92,246,0.22)]',
+    labelColor: 'text-white',
+    dateColor:  'text-violet-200',
+    sublabel:   'text-violet-400/80',
+    badge:      'bg-violet-400/15 text-violet-200 border border-violet-400/30',
+    dotBg:      'bg-[#1a0f40] border-violet-400/60',
+    dotIcon:    'text-violet-300',
   },
   upcoming: {
-    ring: 'border-white/[0.08]',
-    bg: 'bg-[#0c1525]/60',
-    dot: 'bg-slate-600',
-    text: 'text-slate-500',
-    label: 'Upcoming',
+    // Lifted slate surface — solidly above bg, clearly readable
+    cardBg:     'bg-[#162032]',
+    border:     'border-slate-500/30',
+    shadow:     'shadow-[0_2px_12px_rgba(0,0,0,0.3)]',
+    labelColor: 'text-slate-200',
+    dateColor:  'text-slate-300',
+    sublabel:   'text-slate-500',
+    badge:      'bg-slate-500/15 text-slate-300 border border-slate-500/25',
+    dotBg:      'bg-[#162032] border-slate-500/40',
+    dotIcon:    'text-slate-400',
   },
 }
 
@@ -129,12 +101,7 @@ const CustomTimeline = () => {
 
   useEffect(() => {
     const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          obs.disconnect()
-        }
-      },
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect() } },
       { threshold: 0.05 }
     )
     if (containerRef.current) obs.observe(containerRef.current)
@@ -145,41 +112,30 @@ const CustomTimeline = () => {
     if (!visible) return
     timelineData.forEach((_, i) => {
       setTimeout(() => {
-        setRevealedItems((prev) => {
-          const next = [...prev]
-          next[i] = true
-          return next
-        })
+        setRevealedItems((prev) => { const next = [...prev]; next[i] = true; return next })
       }, i * 90)
     })
   }, [visible])
 
-
   return (
     <div ref={containerRef} className="w-full px-4 py-14" id="timeline">
-      <div
-        className={`max-w-4xl mx-auto transition-all duration-700 ${
-          visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
-      >
-        {/* ── Section header ───────────────────────────────────────────── */}
+      <div className={`max-w-4xl mx-auto transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+
+        {/* ── Section header ── */}
         <div className="flex flex-col items-center mb-12 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/25 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-4">
             <Calendar size={13} />
             Important Dates
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight mb-3 bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight mb-3 bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
             Conference Timeline
           </h2>
-          <p className="text-sm text-slate-500 max-w-md leading-relaxed">
-            Key milestones for CSITSS&nbsp;2026 — Oct&nbsp;30–31, Bengaluru
-          </p>
         </div>
 
-        {/* ── Timeline items ────────────────────────────────────────────── */}
+        {/* ── Timeline items ── */}
         <div className="relative">
-          {/* Vertical track */}
-          <div className="absolute left-[19px] top-5 bottom-5 w-px bg-gradient-to-b from-cyan-500/40 via-slate-700/40 to-slate-800/20 rounded-full" />
+          {/* Vertical track — more visible */}
+          <div className="absolute left-[19px] top-5 bottom-5 w-0.5 bg-gradient-to-b from-cyan-400/60 via-slate-500/50 to-slate-600/20 rounded-full" />
 
           <div className="space-y-3">
             {timelineData.map((item, index) => {
@@ -189,97 +145,71 @@ const CustomTimeline = () => {
               const isCurrent = status === 'current'
               const revealed = revealedItems[index]
 
+              // Highlight override
+              const cardBg    = item.isHighlight ? 'bg-[#251a08]' : cfg.cardBg
+              const border    = item.isHighlight ? 'border-amber-400/40' : cfg.border
+              const shadow    = item.isHighlight ? 'shadow-[0_4px_24px_rgba(251,191,36,0.15)]' : cfg.shadow
+              const labelCol  = item.isHighlight ? 'text-amber-200 font-bold' : cfg.labelColor
+              const dateCol   = item.isHighlight ? 'text-amber-300' : cfg.dateColor
+              const badgeCls  = item.isHighlight ? 'bg-amber-400/15 text-amber-300 border border-amber-400/25' : cfg.badge
+
               return (
                 <div
                   key={index}
-                  className={`relative pl-12 transition-all duration-500 ${
-                    revealed ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-                  }`}
+                  className={`relative pl-12 transition-all duration-500 ${revealed ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
                 >
-                  {/* Dot on track */}
+                  {/* ── Dot on track ── */}
                   <div className="absolute left-0 top-3.5 flex items-center justify-center">
                     {status === 'done' ? (
-                      <div className="w-10 h-10 rounded-full bg-cyan-950/50 border border-cyan-500/30 flex items-center justify-center">
-                        <CheckCircle2 size={18} className="text-cyan-400" strokeWidth={2} />
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${cfg.dotBg}`}>
+                        <CheckCircle2 size={18} className={cfg.dotIcon} strokeWidth={2} />
                       </div>
                     ) : isCurrent ? (
-                      <div className="w-10 h-10 rounded-full bg-violet-950/50 border border-violet-500/30 flex items-center justify-center relative">
-                        <span className="absolute inset-0 rounded-full animate-ping bg-violet-400/20" />
-                        <Clock size={16} className="text-violet-400" strokeWidth={2.5} />
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${cfg.dotBg} relative`}>
+                        <span className="absolute inset-0 rounded-full animate-ping bg-violet-400/25" />
+                        <Clock size={17} className={cfg.dotIcon} strokeWidth={2.5} />
                       </div>
                     ) : (
-                      <div className="w-10 h-10 rounded-full bg-[#0c1525] border border-white/[0.08] flex items-center justify-center">
-                        <Circle size={14} className="text-slate-600" strokeWidth={2} />
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${cfg.dotBg}`}>
+                        <Circle size={14} className={cfg.dotIcon} strokeWidth={2} />
                       </div>
                     )}
                   </div>
 
-                  {/* Card */}
-                  <div
-                    className={`group rounded-2xl border px-5 py-4 transition-all duration-300 ${cfg.ring} ${cfg.bg} ${
-                      isCurrent
-                        ? 'shadow-[0_4px_24px_rgba(139,92,246,0.15)]'
-                        : status === 'done'
-                        ? 'shadow-[0_2px_12px_rgba(34,211,238,0.06)]'
-                        : 'shadow-none'
-                    } ${item.isHighlight ? '!border-amber-500/25 !bg-amber-950/20' : ''}`}
-                  >
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3">
+                  {/* ── Card ── */}
+                  <div className={`rounded-2xl border px-5 py-4 transition-all duration-300 ${cardBg} ${border} ${shadow}`}>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4">
+
+                      {/* Left: label */}
                       <div className="flex-1 min-w-0">
                         {item.sublabel && (
-                          <span className="block text-[10px] font-bold tracking-widest uppercase text-slate-500 mb-0.5">
+                          <span className={`block text-[10px] font-bold tracking-widest uppercase mb-0.5 ${cfg.sublabel}`}>
                             {item.sublabel}
                           </span>
                         )}
-                        <p
-                          className={`text-sm font-semibold leading-snug ${
-                            status === 'done'
-                              ? 'text-slate-500'
-                              : status === 'current'
-                              ? 'text-slate-100'
-                              : 'text-slate-400'
-                          } ${item.isHighlight ? '!text-amber-300 font-bold' : ''}`}
-                        >
+                        <p className={`text-sm font-semibold leading-snug ${labelCol}`}>
                           {item.label}
                         </p>
                       </div>
 
-                      <div className="flex flex-col items-start sm:items-end gap-1 shrink-0 mt-1 sm:mt-0">
-                        <span
-                          className={`text-sm font-bold ${
-                            status === 'done'
-                              ? 'text-slate-500'
-                              : status === 'current'
-                              ? 'text-violet-300'
-                              : 'text-slate-400'
-                          } ${item.isHighlight ? '!text-amber-300' : ''}`}
-                        >
+                      {/* Right: date + badge */}
+                      <div className="flex flex-col items-start sm:items-end gap-1.5 shrink-0 mt-1 sm:mt-0">
+                        <span className={`text-sm font-bold tracking-wide ${dateCol}`}>
                           {item.extended && (
-                            <span className="line-through text-slate-700 mr-1 font-normal text-xs">
+                            <span className="line-through text-slate-600 mr-1.5 font-normal text-xs">
                               {item.extended}
                             </span>
                           )}
                           {item.date}
                         </span>
 
-                        {/* status badge */}
-                        <span
-                          className={`inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                            status === 'done'
-                              ? 'bg-cyan-950/50 text-cyan-400'
-                              : isCurrent
-                              ? 'bg-violet-950/50 text-violet-400'
-                              : 'bg-white/5 text-slate-500'
-                          }`}
-                        >
+                        <span className={`inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full ${badgeCls}`}>
                           <Dot size={10} className="shrink-0" />
                           {status === 'done'
                             ? 'Completed'
                             : isCurrent && days !== null
-                            ? days <= 0
-                              ? 'Today'
-                              : `In ${days} day${days === 1 ? '' : 's'}`
-                            : 'Upcoming'}
+                              ? days <= 0 ? 'Today' : `In ${days} day${days === 1 ? '' : 's'}`
+                              : 'Upcoming'}
                         </span>
                       </div>
                     </div>
@@ -290,35 +220,32 @@ const CustomTimeline = () => {
           </div>
         </div>
 
-        {/* ── Awards section ────────────────────────────────────────────── */}
-        <div
-          className={`mt-10 rounded-2xl border border-amber-500/15 bg-gradient-to-br from-amber-950/30 to-orange-950/20 px-6 py-5 transition-all duration-700 delay-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-          }`}
-        >
+        {/* ── Awards section ── */}
+        <div className={`mt-10 rounded-2xl border border-amber-400/25 bg-[#1e1508] px-6 py-5 shadow-[0_4px_24px_rgba(251,191,36,0.08)] transition-all duration-700 delay-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           <div className="flex items-center gap-2.5 mb-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-950/60 border border-amber-500/25 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center">
               <Award size={16} className="text-amber-400" />
             </div>
             <div>
               <p className="text-[10px] font-bold tracking-widest uppercase text-amber-400">
                 Recognition
               </p>
-              <h3 className="text-sm font-bold text-slate-100">Awards — CSITSS 2026</h3>
+              <h3 className="text-sm font-bold text-white">Awards — CSITSS 2026</h3>
             </div>
           </div>
-          <p className="text-xs text-amber-400/50 mb-3 font-medium">
+          <p className="text-xs text-amber-300/60 mb-3 font-medium">
             The below awards will be conferred by CSITSS‑2026
           </p>
-          <ul className="space-y-2">
+          <ul className="space-y-2.5">
             {awards.map((award, i) => (
-              <li key={i} className="flex items-start gap-2.5 text-sm text-slate-400">
-                <CheckCircle2 size={14} className="text-amber-400 mt-0.5 shrink-0" />
+              <li key={i} className="flex items-start gap-2.5 text-sm text-slate-200">
+                <CheckCircle2 size={15} className="text-amber-400 mt-0.5 shrink-0" />
                 {award}
               </li>
             ))}
           </ul>
         </div>
+
       </div>
     </div>
   )

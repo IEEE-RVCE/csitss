@@ -15,24 +15,13 @@ export default function Index() {
         {/* Main Hero Container */}
         <div className="max-w-7xl mx-auto pt-3 md:pt-4 pb-4 grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
           {/* Left Column (Left Card) */}
-          <div className="lg:col-span-7 bg-[#0c1525]/90 backdrop-blur-sm border border-white/[0.08] shadow-[0_8px_40px_rgba(0,0,0,0.4)] rounded-3xl p-4 sm:p-6 transition-all duration-300 hover:shadow-[0_12px_50px_rgba(34,211,238,0.06)] flex flex-col justify-between">
+          <div className="lg:col-span-7 bg-[#0c1525]/90 backdrop-blur-sm border border-white/[0.08] shadow-[0_8px_40px_rgba(0,0,0,0.4)] rounded-3xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:shadow-[0_12px_50px_rgba(34,211,238,0.06)] flex flex-col justify-center gap-8 lg:gap-12">
             <div>
-              {/* Tag / Badge Row */}
-              <div className="flex flex-wrap gap-2 mb-3">
-                {/* Badge 1: 10th Edition */}
-                <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-xs font-bold text-cyan-400 shadow-sm">
-                  10th Edition
-                </div>
-                {/* Badge 2: IEEE International Conference */}
-                <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-slate-300 shadow-sm">
-                  IEEE International Conference
-                </div>
-              </div>
 
               {/* Styled Conference Label */}
               <div className="mb-2">
                 <span className="font-sans text-xs font-extrabold tracking-[0.25em] text-cyan-400 uppercase">
-                  CSITSS 2026
+                  10<sup>th</sup> International Conference On
                 </span>
               </div>
 
@@ -46,7 +35,7 @@ export default function Index() {
               {/* Highlighted Description */}
               <div className="relative border-l-2 border-cyan-400/25 pl-4 mb-3">
                 <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-sans">
-                  The 10th IEEE International Conference organised by <strong className="text-slate-100 font-semibold">RV College of Engineering</strong>.
+                  The 10<sup>th</sup> International Conference organised by <strong className="text-slate-100 font-semibold hover:cursor-pointer hover:text-cyan-400 transition-all duration-200"> <Link href="https://www.rvce.edu.in/">RV College of Engineering</Link></strong>.
                 </p>
               </div>
 
@@ -58,8 +47,8 @@ export default function Index() {
                     <Calendar className="w-5 h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">CONFERENCE</span>
-                    <span className="block text-xs sm:text-sm font-bold text-slate-100 font-sans truncate">Oct 30-31, 2026</span>
+                    <span className="block text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Dates</span>
+                    <span className="block text-xs sm:text-sm font-bold text-slate-100 font-sans truncate">Oct 30<sup>th</sup> - 31<sup>st</sup>, 2026</span>
                   </div>
                 </div>
 
@@ -98,7 +87,7 @@ export default function Index() {
               </div>
 
               {/* Action Buttons Row */}
-              <div className="flex flex-wrap items-center gap-3 mb-3">
+              <div className="flex flex-wrap items-center gap-3 mt-1">
                 <Link href="/paper-submission-guidelines" legacyBehavior>
                   <a className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200">
                     Submit your paper
@@ -176,107 +165,112 @@ export default function Index() {
           <div className="lg:col-span-5 flex flex-col gap-4">
 
             {/* ── Partners card ── */}
-            <div className="bg-[#0c1525]/90 backdrop-blur-sm border border-white/[0.08] shadow-[0_8px_40px_rgba(0,0,0,0.4)] rounded-3xl p-4 sm:p-5">
+            <div className="bg-[#0c1525]/90 backdrop-blur-sm border border-white/[0.08] shadow-[0_8px_40px_rgba(0,0,0,0.4)] rounded-3xl p-4 sm:p-5 relative z-20">
               {/* Header row */}
               <div className="flex justify-between items-center mb-3">
-                <span className="text-[10px] font-bold text-slate-500 tracking-[0.15em] font-sans uppercase">Organised &amp; Supported By</span>
+                <span className="text-[10px] font-bold text-slate-500 tracking-[0.15em] font-sans uppercase">Supported By</span>
                 <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold text-slate-400 font-sans">
                   8 partners
                 </span>
               </div>
 
-              {/* 3-per-row logo grid */}
-              <div className="grid grid-cols-3 gap-2">
-                <a href="https://www.rvce.edu.in/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/Logo3.png" alt="RVCE" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://ieeebangalore.org/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/logo_IEEE_Banaglaore_Section.png" alt="IEEE Bangalore" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://www.comsoc.org/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/ieee-comsoc.png" alt="IEEE ComSoc" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://sensorscouncil.ieeebangalore.org/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/ieee-sensors-council.png" alt="IEEE Sensors Council" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://www.sdu.dk/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/sdu.png" alt="SDU" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://www.thws.de/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/thws.png" alt="THWS" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://www.th-rosenheim.de/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/rosenheim.png" alt="TH Rosenheim" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
-                <a href="https://www.fh-dortmund.de/" target="_blank" rel="noreferrer" className="group flex items-center justify-center p-2.5 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
-                  <img src="/dortmund.png" alt="FH Dortmund" className="max-h-9 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                </a>
+              {/* 4-per-row logo grid */}
+              <div className="grid grid-cols-4 gap-2">
+                {[
+                  { href: 'https://ieeebangalore.org/', src: '/logo_IEEE_Banaglaore_Section.png', alt: 'IEEE Bangalore Section' },
+                  { href: 'https://www.th-rosenheim.de/', src: '/rosenheim.png', alt: 'Technische Hochschule Rosenheim' },
+                  { href: 'https://www.fh-dortmund.de/', src: '/dortmund.png', alt: 'Fachhochschule Dortmund' },
+                  { href: 'https://www.comsoc.org/', src: '/ieee-comsoc.png', alt: 'IEEE Communications Society' },
+                  { href: 'https://sensorscouncil.ieeebangalore.org/', src: '/ieee-sensors-council.png', alt: 'IEEE Sensors Council Bangalore' },
+                  { href: 'https://www.sdu.dk/', src: '/sdu.png', alt: 'University of Southern Denmark' },
+                  { href: 'https://www.thws.de/', src: '/thws.png', alt: 'THWS Würzburg-Schweinfurt' },
+                ].map(({ href, src, alt }, index) => {
+                  const isSecondRow = index >= 4;
+                  return (
+                    <a key={alt} href={href} target="_blank" rel="noreferrer"
+                      className="group relative flex items-center justify-center p-2 rounded-xl bg-white/95 border border-white/20 shadow-sm hover:shadow-[0_6px_20px_rgba(34,211,238,0.15)] hover:border-cyan-400/40 hover:scale-[1.04] transition-all duration-300 ease-out">
+                      <img src={src} alt={alt} className="max-h-8 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                      
+                      {/* Custom Tooltip */}
+                      <div className={`absolute ${isSecondRow ? '-bottom-11 group-hover:translate-y-1' : '-top-11 group-hover:-translate-y-1'} left-1/2 -translate-x-1/2 px-2.5 py-1.5 bg-slate-800 border border-slate-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pointer-events-none whitespace-nowrap`}>
+                        <span className="text-[10px] font-semibold text-slate-200 tracking-wide">{alt}</span>
+                        {/* Tooltip Arrow */}
+                        <div className={`absolute ${isSecondRow ? '-top-1 border-t border-l' : '-bottom-1 border-b border-r'} left-1/2 -translate-x-1/2 w-2 h-2 bg-slate-800 border-slate-700 rotate-45`} />
+                      </div>
+                    </a>
+                  );
+                })}
               </div>
             </div>
 
             {/* ── Speaker Message card ── */}
-            <div className="flex-1 bg-gradient-to-br from-[#0c1525]/95 via-[#0e1a2e]/95 to-[#0c1a30]/90 backdrop-blur-sm border border-violet-400/15 shadow-[0_8px_40px_rgba(139,92,246,0.08)] rounded-3xl p-4 sm:p-5 flex flex-col gap-3 relative overflow-hidden">
+            <div className="flex-1 bg-gradient-to-br from-[#0e1525] via-[#111a30] to-[#0d1828] border border-violet-400/20 shadow-[0_8px_40px_rgba(139,92,246,0.1)] rounded-3xl overflow-hidden flex flex-col relative">
 
-              {/* Subtle background glow */}
-              <div className="absolute top-0 right-0 w-40 h-40 bg-violet-500/5 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-cyan-500/5 rounded-full blur-2xl pointer-events-none" />
+              {/* Background glows */}
+              <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/6 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-36 h-36 bg-cyan-500/5 rounded-full blur-2xl pointer-events-none" />
 
-              {/* Badge */}
-              <div className="flex items-center gap-2">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-400/10 border border-violet-400/20 text-[10px] font-bold tracking-widest uppercase text-violet-300">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+              {/* Top: Name + affiliation (Full width) */}
+              <div className="p-4 pb-2">
+                {/* Badge */}
+                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-violet-400/10 border border-violet-400/20 text-[8px] font-bold tracking-widest uppercase text-violet-300 w-fit mb-1.5">
+                  <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                   </svg>
                   Message from Speaker
                 </div>
-              </div>
-
-              {/* Speaker profile row */}
-              <div className="flex items-center gap-3">
-                <div className="relative shrink-0">
-                  <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-violet-400/30 shadow-[0_0_20px_rgba(139,92,246,0.2)]">
-                    <img
-                      src="/speakers/foreign/Martin_Versen.png"
-                      alt="Prof. Dr.-Ing. Martin Versen"
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-                  {/* online-style dot */}
-                  <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-[#0c1525]" />
-                </div>
-                <div className="min-w-0">
+                <div>
                   <p className="text-sm font-bold text-white leading-tight">Prof. Dr.-Ing. Martin Versen</p>
-                  <p className="text-[11px] text-slate-400 leading-snug mt-0.5">Technische Hochschule Rosenheim, Germany</p>
+                  <p className="text-[10px] text-slate-400 mt-0.5 leading-snug">Technische Hochschule Rosenheim, Germany</p>
                 </div>
               </div>
 
-              {/* Quote mark + message body */}
-              <div className="relative flex-1">
-                <svg className="absolute -top-1 -left-1 w-6 h-6 text-violet-400/30" fill="currentColor" viewBox="0 0 32 32">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <div className="pl-5 max-h-[160px] overflow-y-auto scrollbar-hide pr-1">
-                  <p className="text-[11.5px] text-slate-300 leading-relaxed">
-                    To the IEEE CSITSS Organizers and Participants,
-                  </p>
-                  <p className="text-[11.5px] text-slate-400 leading-relaxed mt-2">
-                    From the Faculty of Engineering at Technische Hochschule Rosenheim — and especially from the team behind our Fluorescence Measurement Technology lab — we send our warmest regards.
-                  </p>
-                  <p className="text-[11.5px] text-slate-400 leading-relaxed mt-2">
-                    We develop real-time AI systems to classify subtle optical signals — a field deeply aligned with your themes of{' '}
-                    <span className="text-cyan-400 font-medium">Sustainable Environment and Circular Economy</span>,{' '}
-                    <span className="text-violet-400 font-medium">Artificial Intelligence Systems</span>, and{' '}
-                    <span className="text-sky-400 font-medium">Data Analytics and Intelligent Decision Systems</span>.
-                    We're excited to exchange ideas, learn from your innovations, and build global connections that turn research into impact.
-                  </p>
-                  <p className="text-[11.5px] text-slate-300 leading-relaxed mt-2 italic">
-                    Looking forward to connecting, collaborating, and co-creating the future — together.
-                  </p>
+              {/* Bottom: photo + message side-by-side */}
+              <div className="flex gap-4 flex-1 min-h-0 p-4 pt-2">
+
+                {/* Left: Speaker photo */}
+                <div className="relative w-1/3 shrink-0 overflow-hidden rounded-xl">
+                  <img
+                    src="/speakers/foreign/Martin_Versen.png"
+                    alt="Prof. Dr.-Ing. Martin Versen"
+                    className="w-full h-full object-cover object-top"
+                    style={{ minHeight: '160px' }}
+                  />
+                  {/* gradient overlay blending into card */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e1525]/90 via-transparent to-transparent" />
+                </div>
+
+                {/* Right: message */}
+                <div className="flex-1 flex flex-col min-w-0">
+                  {/* Quote — small icon, full message */}
+                  <div className="relative flex-1 overflow-y-auto scrollbar-hide pr-1">
+                    {/* Tiny decorative quote mark */}
+                    <svg className="w-4 h-4 text-violet-400/25 mb-0.5" fill="currentColor" viewBox="0 0 32 32">
+                      <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                    </svg>
+                    <p className="text-xs text-slate-200 leading-relaxed">
+                      To the IEEE CSITSS Organizers and Participants,
+                    </p>
+                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5">
+                      From the Faculty of Engineering at Technische Hochschule Rosenheim — and especially from our Fluorescence Measurement Technology lab — we send our warmest regards.
+                    </p>
+                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5">
+                      We develop real-time AI systems to classify subtle optical signals — a field deeply aligned with your themes of{' '}
+                      <span className="text-cyan-300 font-medium">Sustainable Environment and Circular Economy</span>,{' '}
+                      <span className="text-violet-300 font-medium">Artificial Intelligence Systems</span>, and{' '}
+                      <span className="text-sky-300 font-medium">Data Analytics and Intelligent Decision Systems</span>. We're excited
+to exchange ideas, learn from your innovations, and build global connections that turn
+research into impact.
+                    </p>
+                    <p className="text-xs text-slate-200 leading-relaxed mt-1.5 italic">
+                      Looking forward to connecting, collaborating, and co-creating the future — together.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Footer divider + signature */}
-              <div className="pt-2 border-t border-white/[0.06] flex items-center justify-between">
+              {/* Footer bar */}
+              <div className="px-4 py-2.5 border-t border-white/[0.06] flex items-center justify-between bg-white/[0.02]">
                 <span className="text-[10px] text-slate-500 italic">With appreciation</span>
                 <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-violet-400">
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
