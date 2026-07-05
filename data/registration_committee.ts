@@ -39,6 +39,47 @@ const registration_committee_data = [
     imgLink: '',
     email: '',
   },
+  {
+    name: 'Dr. Sunil S',
+    post: 'Registration Committee',
+    department: 'Civil Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Prof. Ravi Kiran S Wali',
+    post: 'Registration Committee',
+    department: 'Civil Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr Usha Padma',
+    post: 'Registration Committee',
+    department: 'Eletronics & Telecommunication Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Anjaneya G',
+    post: 'Registration Committee',
+    department: 'Mechanical Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: '',
+  },
+  {
+    name: 'Dr. Prapul Chandra',
+    post: 'Registration Committee',
+    department: 'Mechanical Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: '',
+  },
+
 ]
 
 export default registration_committee_data
