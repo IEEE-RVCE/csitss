@@ -6,7 +6,9 @@ export const committees = [
   {
     name: 'Conference Conveners',
     path: 'conference_convenors_committee',
+
   },
+  { name: 'Advisory Committee', path: 'advisory_committee' },
   { name: 'Technical Program Committee', path: 'technical_committee' },
   { name: 'Program Committee', path: 'program_committee' },
   { name: 'Finance Committee', path: 'finance_committee' },
@@ -23,5 +25,5 @@ export const committees = [
   { name: 'Hospitality Committee', path: 'hospitality_committee' },  
   { name: 'Stage Committee', path: 'main_stage_committee' },
   { name: 'Help Desk', path: 'help_desk_committee' },
-  { name: 'Advisory Committee', path: 'advisory_committee' },
+  
 ]
