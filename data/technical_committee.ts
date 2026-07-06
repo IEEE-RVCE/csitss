@@ -240,6 +240,48 @@ const technical_committee_data = [
     imgLink: '',
     email: '',
   },
+  {
+    name: 'Dr. Azra Nazreen',
+    post: 'Technical Committee Members',
+    department: 'Computer Science and Engineering',
+    position: 'Associate Professor',
+    imgLink: '',
+    email: 'azranasreen@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Pavitra H.',
+    post: 'Technical Committee Members',
+    department: 'Computer Science and Engineering',
+    position: 'Associate Professor',
+    imgLink: '',
+    email: 'pavithrah@rvce.edu.in',
+  },
+  {
+    name: 'Dr. Sindhu D. V.',
+    post: 'Technical Committee Members',
+    department: 'Computer Science and Engineering',
+    position: 'Associate Professor',
+    imgLink: '',
+    email: 'sindhudv@rvce.edu.in',
+  },
+
+  {
+    name: 'Dr. Sushmita Sarkar',
+    post: 'Technical Committee Members',
+    department: 'Electrical and Electronics Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: 'sushmitasarka@rvce.edu.in',
+  },
+
+  {
+    name: 'Dr. S. Anupama Kumar',
+    post: 'Technical Committee Members',
+    department: 'Artificial Intelligence and Machine Learning',
+    position: 'Associate Professor',
+    imgLink: '',
+    email: 'anupamakumar@rvce.edu.in',
+  },
 ]
 
 export default technical_committee_data
