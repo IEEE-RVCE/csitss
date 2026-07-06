@@ -31,6 +31,11 @@ const hospitality_data = [
     imgLink: '',
     email: 'sampathkumarnd@rvce.edu',
   },
+
+  {
+    name: 'Residential Wardens',
+    post: 'Hospitality Committee',
+  },
 ]
 
 export default hospitality_data
