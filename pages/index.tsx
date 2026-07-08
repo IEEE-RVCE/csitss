@@ -47,8 +47,8 @@ export default function Index() {
                     <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Dates</span>
-                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">Oct 30<sup>th</sup> - 31<sup>st</sup>, 2026</span>
+                    <span className="block text-[9px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Dates</span>
+                    <span className="block text-[11px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">Oct 30<sup>th</sup> - 31<sup>st</sup>, 2026</span>
                   </div>
                 </div>
 
@@ -58,8 +58,8 @@ export default function Index() {
                     <Earth className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0 pt-0.5">
-                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Past Editions</span>
-                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">9 Successful</span>
+                    <span className="block text-[9px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Past Editions</span>
+                    <span className="block text-[11px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">9 Successful</span>
                   </div>
                 </div>
 
@@ -69,8 +69,8 @@ export default function Index() {
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">VENUE</span>
-                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">RVCE, Bengaluru</span>
+                    <span className="block text-[9px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">VENUE</span>
+                    <span className="block text-[11px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">RVCE, Bengaluru</span>
                   </div>
                 </a>
 
@@ -80,8 +80,8 @@ export default function Index() {
                     <Award className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">PUBLICATION</span>
-                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">IEEE Xplore</span>
+                    <span className="block text-[9px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">PUBLICATION</span>
+                    <span className="block text-[11px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">IEEE Xplore</span>
                   </div>
                 </div>
               </div>
