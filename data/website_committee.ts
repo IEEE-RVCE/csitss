@@ -111,6 +111,14 @@ const website_chairs_data = [
     imgLink: '',
     email: 'vanditharb@rvce.edu.in',
   },
+  {
+    name: 'Dr. Suresha C ',
+    post: 'Publicity Media/Website Committee',
+    department: 'Electrical and Electronics Engineering',
+    position: 'Assistant Professor',
+    imgLink: '',
+    email: 'sureshac@rvce.edu.in',
+  },
 ]
 
 export default website_chairs_data
