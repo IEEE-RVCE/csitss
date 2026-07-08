@@ -2,7 +2,6 @@ export default function PhDThesisAwardApplication() {
   return (
     <main className="min-h-screen px-4 md:px-8 pt-10 pb-20 text-slate-300 font-sans">
       <div className="mx-auto w-full max-w-4xl">
-
         {/* Header */}
         <div className="mb-10">
           <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-400 mb-3">
@@ -18,12 +17,12 @@ export default function PhDThesisAwardApplication() {
         </div>
 
         <div className="space-y-6">
-
           {/* Eligibility Criteria */}
           <section className="bg-[#0c1525]/60 border border-white/[0.07] rounded-2xl p-6">
             <h2 className="text-xl font-semibold text-white border-l-2 border-cyan-400/60 pl-3 mb-5">
               Eligibility Criteria
             </h2>
+
             <ul className="space-y-3 text-base leading-7 text-slate-200">
               <li className="flex items-start gap-3">
                 <span className="mt-2.5 w-1 h-1 rounded-full bg-cyan-400/50 shrink-0" />
@@ -32,10 +31,14 @@ export default function PhDThesisAwardApplication() {
                   December 2025 are eligible to apply.
                 </span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="mt-2.5 w-1 h-1 rounded-full bg-cyan-400/50 shrink-0" />
-                <span>Research topic must be within the conference scope.</span>
+                <span>
+                  Research topic must be within the conference scope.
+                </span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="mt-2.5 w-1 h-1 rounded-full bg-cyan-400/50 shrink-0" />
                 <span>
@@ -43,14 +46,17 @@ export default function PhDThesisAwardApplication() {
                   India.
                 </span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="mt-2.5 w-1 h-1 rounded-full bg-cyan-400/50 shrink-0" />
                 <span>Thesis must be available in English language only.</span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="mt-2.5 w-1 h-1 rounded-full bg-cyan-400/50 shrink-0" />
                 <span>Only one nomination is allowed per candidate.</span>
               </li>
+
               <li className="flex items-start gap-3">
                 <span className="mt-2.5 w-1 h-1 rounded-full bg-cyan-400/50 shrink-0" />
                 <span>No conflict of interest should exist.</span>
@@ -58,14 +64,40 @@ export default function PhDThesisAwardApplication() {
             </ul>
           </section>
 
+          {/* Download Poster Button */}
+ <div className="flex justify-center sm:justify-start">
+  <a
+    href="/Best_Ph.D%20thesis%20award%20poster.pdf"
+    download="Best_PhD_Thesis_Award_Poster.pdf"
+    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-cyan-400 hover:bg-cyan-300 text-[#0c1525] text-sm font-bold transition-all duration-200 shadow-lg shadow-cyan-400/20"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-4 h-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"
+      />
+    </svg>
+    Download Poster
+  </a>
+</div>
+
           {/* How to Apply */}
           <section className="bg-violet-400/5 border border-violet-400/15 rounded-2xl p-6">
             <h2 className="text-xl font-semibold text-white border-l-2 border-violet-400/60 pl-3 mb-4">
               How to Apply
             </h2>
+
             <p className="text-base leading-7 text-slate-200 mb-5">
               The candidates are required to mail the below mentioned documents
-              in a Zip file to{' '}
+              in a Zip file to{" "}
               <a
                 className="font-semibold text-cyan-400 hover:text-cyan-300 underline decoration-cyan-400/30 underline-offset-4"
                 href="mailto:csitss2026@rvce.edu.in"
@@ -76,36 +108,56 @@ export default function PhDThesisAwardApplication() {
               the documents should be in PDF format. In the subject field,
               mention &quot;Best PhD Thesis - Participation&quot;.
             </p>
+
             <ol className="space-y-3 text-base leading-7 text-slate-200">
               <li className="flex items-start gap-3">
-                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">1.</span>
-                <span>Thesis in PDF along with Similarity index and AI content.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">2.</span>
+                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">
+                  1.
+                </span>
                 <span>
-                  Extended thesis summary (3-5 pages): Abstract, problem
+                  Thesis in PDF along with Similarity index and AI content.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">
+                  2.
+                </span>
+                <span>
+                  Extended thesis summary (3–5 pages): Abstract, problem
                   statement, objectives, brief methodology, results and
                   discussion, conclusion and future scope.
                 </span>
               </li>
+
               <li className="flex items-start gap-3">
-                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">3.</span>
+                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">
+                  3.
+                </span>
                 <span>Curriculum vitae of the candidate.</span>
               </li>
+
               <li className="flex items-start gap-3">
-                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">4.</span>
+                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">
+                  4.
+                </span>
                 <span>
-                  List of publications published from the thesis with citations if
-                  any.
+                  List of publications published from the thesis with citations,
+                  if any.
                 </span>
               </li>
+
               <li className="flex items-start gap-3">
-                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">5.</span>
+                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">
+                  5.
+                </span>
                 <span>Proof of degree completion.</span>
               </li>
+
               <li className="flex items-start gap-3">
-                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">6.</span>
+                <span className="text-violet-400/70 font-mono text-xs mt-0.5 shrink-0 w-5">
+                  6.
+                </span>
                 <span>Recommendation letter from supervisor.</span>
               </li>
             </ol>
@@ -116,25 +168,27 @@ export default function PhDThesisAwardApplication() {
             <h2 className="text-xl font-semibold text-white border-l-2 border-sky-400/60 pl-3 mb-4">
               Contact Details
             </h2>
+
             <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 text-base leading-7 text-slate-200">
               <p>
-                All email queries may be sent to{' '}
+                All email queries may be sent to{" "}
                 <a
                   className="font-semibold text-cyan-400 hover:text-cyan-300 underline decoration-cyan-400/30 underline-offset-4"
                   href="mailto:csitss2026@rvce.edu.in"
                 >
                   csitss2026@rvce.edu.in
-                </a>{' '}
-                with the subject line &quot;Best PhD Thesis - Participation&quot;.
+                </a>{" "}
+                with the subject line &quot;Best PhD Thesis -
+                Participation&quot;.
               </p>
             </div>
           </section>
 
-          {/* Warning note */}
+          {/* Warning Note */}
           <div className="rounded-2xl border border-amber-400/15 bg-amber-400/5 p-5 text-sm leading-7 text-amber-300/80 sm:p-6">
             <p>
-              Please ensure that the submission is complete and strictly
-              follows the file and email format instructions before sending the
+              Please ensure that the submission is complete and strictly follows
+              the file and email format instructions before sending the
               nomination.
             </p>
           </div>
@@ -148,13 +202,12 @@ export default function PhDThesisAwardApplication() {
               Back to Home
             </a>
           </div>
-
         </div>
       </div>
 
-      {/* Ambient glows */}
+      {/* Ambient Glows */}
       <div className="fixed top-1/3 right-0 w-72 h-72 bg-violet-500/4 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="fixed bottom-1/3 left-0 w-72 h-72 bg-cyan-500/4 rounded-full blur-3xl pointer-events-none -z-10" />
     </main>
-  )
+  );
 }
