@@ -2,6 +2,8 @@
 import { AppShell, Image } from '@mantine/core'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import ShinyText from './ShinyText'
+
 
 const Links = [
   { href: '/', label: 'Home' },
@@ -16,89 +18,95 @@ const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[100] w-full px-4 md:px-8 pt-4 bg-transparent pointer-events-none">
-      <div className="mx-auto max-w-7xl w-full bg-[#0c1525]/90 backdrop-blur-md border border-white/[0.08] shadow-[0_8px_30px_rgba(0,0,0,0.5)] rounded-full px-6 py-2.5 flex items-center justify-between transition-all duration-300 pointer-events-auto">
-        {/* Left Section: Logo & Titles */}
-        <Link href="/" legacyBehavior>
-          <a className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <div className="bg-white/95 rounded-xl px-2 py-1 shadow-sm">
+    <>
+      <header className="fixed top-0 left-0 right-0 z-[100] w-full px-4 md:px-8 pt-4 bg-transparent pointer-events-none">
+        <div className="mx-auto max-w-7xl w-full bg-[#0c1525]/90 backdrop-blur-md border border-white/[0.08] shadow-[0_8px_30px_rgba(0,0,0,0.5)] rounded-full px-6 py-1 flex items-center justify-between transition-all duration-300 pointer-events-auto">
+          {/* Left Section: Logo & Titles */}
+          <Link href="/" legacyBehavior>
+            <a className="flex items-center gap-3 hover:opacity-90 transition-opacity">
               <Image
-                src="/RVCE NEW-HEADER_onlyLogo.png"
-                alt="logo"
-                className="h-8 w-auto object-contain"
+                src="/logo-navbar.png"
+                alt="RVCE Logo"
+                className="h-14 w-auto object-contain"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-sans font-extrabold text-sm sm:text-base text-white tracking-tight leading-tight">
-                CSITSS 2026
-              </span>
-              <span className="font-sans text-[10px] sm:text-xs text-slate-400 font-medium leading-tight">
-                IEEE • RV College of Engineering
-              </span>
-            </div>
-          </a>
-        </Link>
+              <ShinyText
+                text="CSITSS 2026"
+                speed={2.1}
+                delay={0}
+                color="#fffcfc"
+                shineColor="#ff7b65"
+                spread={140}
+                direction="left"
+                yoyo={false}
+                pauseOnHover={false}
+                disabled={false}
+                className="font-sans font-extrabold text-lg sm:text-xl tracking-tight leading-tight"
+              />
+            </a>
+          </Link>
 
-        {/* Middle Section: Links (Desktop) */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-sans">
-          {Links.map((link) => (
-            <Link href={link.href} key={link.label} legacyBehavior>
-              <a className="text-sm font-semibold text-slate-300 hover:text-cyan-400 transition-colors duration-200">
-                {link.label}
-              </a>
-            </Link>
-          ))}
-        </nav>
+          {/* Middle Section: Links (Desktop) */}
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-sans">
+            {Links.map((link) => (
+              <Link href={link.href} key={link.label} legacyBehavior>
+                <a className="text-sm font-semibold text-slate-300 hover:text-[#ff7b65] transition-colors duration-200">
+                  {link.label}
+                </a>
+              </Link>
+            ))}
+          </nav>
 
-        {/* Mobile Navigation Menu */}
-        <div className="md:hidden relative">
-          <button
-            className="p-2 text-slate-400 hover:bg-white/10 rounded-full transition-colors pointer-events-auto"
-            type="button"
-            aria-label="Toggle navigation menu"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Mobile Navigation Menu */}
+          <div className="md:hidden relative">
+            <button
+              className="p-2 text-slate-400 hover:bg-white/10 rounded-full transition-colors pointer-events-auto"
+              type="button"
+              aria-label="Toggle navigation menu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {mobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
 
-          {mobileMenuOpen && (
-            <div className="absolute right-0 top-full mt-2 w-48 bg-[#0c1525] rounded-xl border border-white/[0.08] shadow-[0_12px_40px_rgba(0,0,0,0.6)] p-2 pointer-events-auto">
-              {Links.map((link) => (
-                <Link href={link.href} key={link.label} legacyBehavior>
-                  <a
-                    className="block font-sans text-sm font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] rounded-lg px-4 py-2.5 transition-colors w-full"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                </Link>
-              ))}
-            </div>
-          )}
+            {mobileMenuOpen && (
+              <div className="absolute right-0 top-full mt-2 w-48 bg-[#0c1525] rounded-xl border border-white/[0.08] shadow-[0_12px_40px_rgba(0,0,0,0.6)] p-2 pointer-events-auto">
+                {Links.map((link) => (
+                  <Link href={link.href} key={link.label} legacyBehavior>
+                    <a
+                      className="block font-sans text-sm font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] rounded-lg px-4 py-2.5 transition-colors w-full"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   )
 }
 
@@ -132,21 +140,27 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-8 border-b border-white/[0.06]">
           {/* Left: Branding + address */}
           <div>
-            <a href="/" className="flex items-center gap-3 mb-4 group w-fit">
-              <div className="bg-white/90 group-hover:bg-white/100 transition-colors rounded-lg px-1.5 py-1 shadow-sm">
+            <a href="/" className="mb-4 w-fit block">
+              <div className="flex items-center gap-3">
                 <Image
-                  src="/RVCE NEW-HEADER_onlyLogo.png"
+                  src="/logo-navbar.png"
                   alt="RVCE Logo"
-                  className="h-7 w-auto object-contain"
+                  className="h-11 w-auto object-contain"
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-sans font-extrabold text-sm text-white tracking-tight leading-tight">
-                  CSITSS 2026
-                </span>
-                <span className="font-sans text-[10px] text-slate-500 font-medium leading-tight">
-                  IEEE • RV College of Engineering
-                </span>
+                <ShinyText
+                  text="CSITSS 2026"
+                  speed={2.1}
+                  delay={0}
+                  color="#fffcfc"
+                  shineColor="#ff7b65"
+                  spread={140}
+                  direction="left"
+                  yoyo={false}
+                  pauseOnHover={false}
+                  disabled={false}
+                  className="font-sans font-extrabold text-base sm:text-lg tracking-tight leading-tight"
+                />
               </div>
             </a>
             <p className="text-xs text-slate-500 leading-relaxed">

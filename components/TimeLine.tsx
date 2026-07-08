@@ -28,6 +28,21 @@ function daysUntil(dateStr: string, today: Date): number | null {
   return Math.round((d.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
 }
 
+// Wraps ordinal suffixes in <sup> tags
+function formatDate(raw: string): React.ReactNode {
+  const parts = raw.split(/(\d+)(st|nd|rd|th)/gi)
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (/^(st|nd|rd|th)$/i.test(part)) {
+          return <sup key={i}>{part}</sup>
+        }
+        return part
+      })}
+    </>
+  )
+}
+
 // ── data ─────────────────────────────────────────────────────────────────────
 
 const timelineData = [
@@ -197,10 +212,10 @@ const CustomTimeline = () => {
                         <span className={`text-sm font-bold tracking-wide ${dateCol}`}>
                           {item.extended && (
                             <span className="line-through text-slate-600 mr-1.5 font-normal text-xs">
-                              {item.extended}
+                              {formatDate(item.extended)}
                             </span>
                           )}
-                          {item.date}
+                          {formatDate(item.date)}
                         </span>
 
                         <span className={`inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full ${badgeCls}`}>

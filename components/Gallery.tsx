@@ -141,7 +141,7 @@ const Gallery = () => {
 
       {/* Section header */}
       <div className="mb-8 px-4 sm:px-0">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#ff7b65]/10 border border-[#ff7b65]/20 text-[#ff7b65] text-[10px] font-bold tracking-widest uppercase mb-3">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-3">
           Previous Editions
         </div>
         <div className="flex items-end justify-between">

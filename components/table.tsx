@@ -71,8 +71,8 @@ function Table() {
                   className="border-b border-r border-white/[0.06] bg-emerald-950/60 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400"
                 >
                   Early Bird
-                  <div className="text-[10px] font-medium text-emerald-500/70 normal-case tracking-normal mt-0.5">
-                    On or before 30th August
+                  <div className="text-[11px] font-medium text-emerald-500/70 normal-case tracking-normal mt-0.5">
+                    On or before <span className="font-bold text-emerald-300">30<sup>th</sup> August</span>
                   </div>
                 </th>
                 <th
@@ -122,10 +122,10 @@ function Table() {
         </div>
 
         {/* Footer notes */}
-        <div className="border-t border-white/[0.06] bg-[#070d1a]/80 px-5 py-4 space-y-1.5 text-xs text-slate-500">
-          <p>The manuscript length should be <span className="font-semibold text-slate-300">5–6 pages</span>.</p>
-          <p>Additional pages beyond the limit will incur an extra page charge of <span className="font-semibold text-slate-300">INR 1180 or USD 30 per page</span>. Upto extra two pages only.</p>
-          <p>All pricing details mentioned above are <span className="font-semibold text-slate-300">inclusive of 18% GST</span>.</p>
+        <div className="border-t border-white/[0.06] bg-[#070d1a]/80 px-5 py-4 space-y-1.5 text-sm text-slate-400">
+          <p>The manuscript length should be <span className="font-semibold text-slate-200">5–6 pages</span>.</p>
+          <p>Additional pages beyond the limit will incur an extra page charge of <span className="font-semibold text-slate-200">INR 1180 or USD 30 per page</span>. Upto extra two pages only.</p>
+          <p>All pricing details mentioned above are <span className="font-semibold text-slate-200">inclusive of 18% GST</span>.</p>
         </div>
       </div>
     </section>

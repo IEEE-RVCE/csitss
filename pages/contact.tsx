@@ -37,11 +37,25 @@ function Contact() {
                   For any queries, please mail us at
                 </p>
                 <a
-                  href="mailto:csitss2025@rvce.edu.in"
+                  href="mailto:csitss2026@rvce.edu.in"
                   className="text-lg font-bold text-cyan-400 hover:text-cyan-300 transition-colors duration-200 hover:underline"
                 >
                   csitss2026@rvce.edu.in
                 </a>
+              </div>
+              <div className="mt-5 pt-5 border-t border-white/[0.08] text-center">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-3">
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Address
+                </div>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  RV College of Engineering<sup>®</sup>,<br />
+                  RV Vidyanikethan Post, Mysuru Road,<br />
+                  Bengaluru – 560059
+                </p>
               </div>
             </div>
 

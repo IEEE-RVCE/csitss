@@ -35,7 +35,7 @@ export default function Index() {
               {/* Highlighted Description */}
               <div className="relative border-l-2 border-cyan-400/25 pl-4 mb-3">
                 <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-sans">
-                  The 10<sup>th</sup> International Conference organised by <strong className="text-slate-100 font-semibold hover:cursor-pointer hover:text-cyan-400 transition-all duration-200"> <Link href="https://www.rvce.edu.in/">RV College of Engineering</Link></strong>.
+                  Organised by <strong className="text-slate-100 font-semibold hover:cursor-pointer hover:text-cyan-400 transition-all duration-200"><Link href="https://www.rvce.edu.in/">RV College of Engineering<sup>®</sup></Link></strong>, Bengaluru
                 </p>
               </div>
 
@@ -88,14 +88,17 @@ export default function Index() {
 
               {/* Action Buttons Row */}
               <div className="flex flex-wrap items-center gap-3 mt-1">
-                <Link href="/paper-submission-guidelines" legacyBehavior>
-                  <a className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200">
-                    Submit your paper
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                  </a>
-                </Link>
+                <a
+                  href="https://cmt3.research.microsoft.com/ICSITSS2026"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-rose-600 to-[#ff7b65] hover:from-rose-500 hover:to-[#ff8d7a] border border-white/10 hover:border-[#ff7b65] text-white text-sm font-semibold tracking-wide shadow-[0_4px_16px_rgba(255,123,101,0.2)] hover:shadow-[0_0_24px_rgba(255,123,101,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
+                >
+                  Submit your paper
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
 
                 <a href="#timeline" className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/[0.08] text-slate-200 text-sm font-semibold shadow-sm hover:shadow transition-all duration-200">
                   View timeline
@@ -168,10 +171,7 @@ export default function Index() {
             <div className="bg-[#0c1525]/90 backdrop-blur-sm border border-white/[0.08] shadow-[0_8px_40px_rgba(0,0,0,0.4)] rounded-3xl p-4 sm:p-5 relative z-20">
               {/* Header row */}
               <div className="flex justify-between items-center mb-3">
-                <span className="text-[10px] font-bold text-slate-500 tracking-[0.15em] font-sans uppercase">Supported By</span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold text-slate-400 font-sans">
-                  8 partners
-                </span>
+                <span className="text-sm font-bold text-slate-300 tracking-[0.08em] font-sans">In Collaboration with</span>
               </div>
 
               {/* 4-per-row logo grid */}
@@ -213,15 +213,15 @@ export default function Index() {
               {/* Top: Name + affiliation (Full width) */}
               <div className="p-4 pb-2">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-violet-400/10 border border-violet-400/20 text-[8px] font-bold tracking-widest uppercase text-violet-300 w-fit mb-1.5">
+                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-violet-400/10 border border-violet-400/20 text-[9px] font-bold tracking-widest uppercase text-violet-300 w-fit mb-1.5">
                   <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                   </svg>
                   Message from Speaker
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white leading-tight">Prof. Dr.-Ing. Martin Versen</p>
-                  <p className="text-[10px] text-slate-400 mt-0.5 leading-snug">Technische Hochschule Rosenheim, Germany</p>
+                  <p className="text-base font-bold text-white leading-tight">Prof. Dr.-Ing. Martin Versen</p>
+                  <p className="text-sm font-semibold text-slate-300 mt-0.5 leading-snug">Technische Hochschule Rosenheim, Germany</p>
                 </div>
               </div>
 
@@ -248,37 +248,26 @@ export default function Index() {
                     <svg className="w-4 h-4 text-violet-400/25 mb-0.5" fill="currentColor" viewBox="0 0 32 32">
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                     </svg>
-                    <p className="text-xs text-slate-200 leading-relaxed">
+                    <p className="text-xs text-slate-200 leading-relaxed text-justify">
                       To the IEEE CSITSS Organizers and Participants,
                     </p>
-                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5">
+                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify">
                       From the Faculty of Engineering at Technische Hochschule Rosenheim — and especially from our Fluorescence Measurement Technology lab — we send our warmest regards.
                     </p>
-                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5">
+                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify">
                       We develop real-time AI systems to classify subtle optical signals — a field deeply aligned with your themes of{' '}
                       <span className="text-cyan-300 font-medium">Sustainable Environment and Circular Economy</span>,{' '}
                       <span className="text-violet-300 font-medium">Artificial Intelligence Systems</span>, and{' '}
-                      <span className="text-sky-300 font-medium">Data Analytics and Intelligent Decision Systems</span>. We're excited
-to exchange ideas, learn from your innovations, and build global connections that turn
-research into impact.
+                      <span className="text-sky-300 font-medium">Data Analytics and Intelligent Decision Systems</span>. We&apos;re excited to exchange ideas, learn from your innovations, and build global connections that turn research into impact.
                     </p>
-                    <p className="text-xs text-slate-200 leading-relaxed mt-1.5 italic">
+                    <p className="text-xs text-slate-200 leading-relaxed mt-1.5 italic text-justify">
                       Looking forward to connecting, collaborating, and co-creating the future — together.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Footer bar */}
-              <div className="px-4 py-2.5 border-t border-white/[0.06] flex items-center justify-between bg-white/[0.02]">
-                <span className="text-[10px] text-slate-500 italic">With appreciation</span>
-                <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-violet-400">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
-                  </svg>
-                  TH Rosenheim, Germany
-                </span>
-              </div>
+
             </div>
 
           </div>
@@ -286,25 +275,25 @@ research into impact.
 
         {/* ── IEEE Publication Banner ─────────────────────────────────────── */}
         <section className="mx-auto max-w-4xl px-4 pt-10 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 px-6 py-5 rounded-2xl border border-white/[0.08] bg-[#0c1525]/90 backdrop-blur-sm shadow-[0_4px_24px_rgba(0,0,0,0.3)]">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 px-6 py-5 rounded-2xl border border-amber-400/25 bg-[#1e1508] shadow-[0_4px_24px_rgba(251,191,36,0.08)]">
             {/* Icon */}
-            <div className="shrink-0 w-11 h-11 rounded-xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center mt-0.5">
-              <svg className="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.7">
+            <div className="shrink-0 w-11 h-11 rounded-xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center mt-0.5">
+              <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.7">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
               </svg>
             </div>
             {/* Text */}
             <div className="flex-1 text-center sm:text-left">
-              <p className="text-[10px] font-bold tracking-[0.18em] uppercase text-cyan-400 mb-1">Publication</p>
-              <h3 className="text-sm font-semibold text-slate-100 mb-1">Publication in IEEE Xplore</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-[10px] font-bold tracking-[0.18em] uppercase text-amber-400 mb-1">Publication</p>
+              <h3 className="text-sm font-bold text-amber-300 mb-1">Publication in IEEE Xplore</h3>
+              <p className="text-sm text-amber-100/70 leading-relaxed">
                 Accepted and presented papers will be submitted for possible inclusion into
                 IEEE Xplore, subject to meeting IEEE Xplore&apos;s scope and quality requirements.
               </p>
             </div>
             {/* Chip */}
             <div className="shrink-0 flex flex-col items-center sm:items-end gap-1.5">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-400/10 border border-sky-400/20 text-sky-400 text-xs font-bold tracking-wide whitespace-nowrap">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-amber-400/15 border border-amber-400/30 text-amber-400 text-xs font-bold tracking-wide whitespace-nowrap">
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
                 IEEE Xplore
               </span>
@@ -334,7 +323,7 @@ research into impact.
                 Venue
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-semibold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
-                RV College of Engineering, Bengaluru
+                RV College of Engineering <sup className='text-white'>®</sup>, Bengaluru
               </h2>
             </div>
 
@@ -374,7 +363,7 @@ research into impact.
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <a
                 href="https://goo.gl/maps/sXWGV9iXqQRwz2PJ9"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-rose-600 to-[#ff7b65] hover:from-rose-500 hover:to-[#ff8d7a] border border-white/10 hover:border-[#ff7b65] text-white text-sm font-semibold shadow-[0_4px_16px_rgba(255,123,101,0.2)] hover:shadow-[0_0_24px_rgba(255,123,101,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
               >
                 Open Maps
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
@@ -382,12 +371,14 @@ research into impact.
                 </svg>
               </a>
               <a
-                href="HOTELS.pdf"
+                href="https://www.google.com/search?q=Hotels+near+RV+College+of+Engineering,+Bengaluru"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/[0.08] text-slate-200 text-sm font-semibold shadow-sm hover:shadow transition-all duration-200"
               >
-                Download Hotels List Near RVCE
+                Hotels List Near RVCE
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </a>
             </div>
@@ -431,14 +422,19 @@ research into impact.
 
         <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
           <Gallery />
-          {/* Microsoft CMT note */}
-          <div className="mt-8 flex items-start gap-3 rounded-2xl border border-slate-700/50 bg-slate-900/40 px-5 py-4">
-            <svg className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <p className="text-xs text-slate-500 leading-relaxed">
+          {/* Microsoft CMT note — golden finish */}
+          <div className="mt-8 rounded-2xl border border-amber-400/25 bg-[#1e1508] px-6 py-5 shadow-[0_4px_24px_rgba(251,191,36,0.08)]">
+            <div className="flex items-start gap-2.5 mb-3 justify-between">
+              <div className="w-8 h-8 rounded-xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center shrink-0">
+                <svg className="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            
+            <p className="text-sm text-amber-100/70 leading-relaxed">
               The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
             </p>
+          </div>
           </div>
         </div>
 
