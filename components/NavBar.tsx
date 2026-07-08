@@ -27,7 +27,7 @@ const NavBar = () => {
               <Image
                 src="/Logo-navbar.png"
                 alt="RVCE Logo"
-                className="h-14 w-auto object-contain"
+                className="h-14 w-16 object-fill"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
               <ShinyText

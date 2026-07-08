@@ -42,46 +42,46 @@ export default function Index() {
               {/* Grid of Key Info Box (4 boxes) */}
               <div className="grid grid-cols-2 gap-2 mb-3">
                 {/* Box 1: Conference */}
-                <div className="flex items-center gap-3 p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] shadow-none">
-                  <div className="w-10 h-10 rounded-full bg-cyan-400/10 flex items-center justify-center text-cyan-400 shrink-0">
-                    <Calendar className="w-5 h-5" />
+                <div className="flex items-center gap-1.5 sm:gap-3 p-1.5 sm:p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] shadow-none">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-cyan-400/10 flex items-center justify-center text-cyan-400 shrink-0">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Dates</span>
-                    <span className="block text-xs sm:text-sm font-bold text-slate-100 font-sans truncate">Oct 30<sup>th</sup> - 31<sup>st</sup>, 2026</span>
+                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Dates</span>
+                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">Oct 30<sup>th</sup> - 31<sup>st</sup>, 2026</span>
                   </div>
                 </div>
 
                 {/* Box 2: Past Editions */}
-                <div className="relative flex items-center gap-3 p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] shadow-none overflow-hidden">
-                  <div className="w-10 h-10 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-400 shrink-0">
-                    <Earth className="w-5 h-5" />
+                <div className="relative flex items-center gap-1.5 sm:gap-3 p-1.5 sm:p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] shadow-none overflow-hidden">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-400 shrink-0">
+                    <Earth className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <div className="min-w-0 pt-1">
-                    <span className="block text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Past Editions</span>
-                    <span className="block text-xs sm:text-sm font-bold text-slate-100 font-sans truncate">9 Successful</span>
+                  <div className="min-w-0 pt-0.5">
+                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">Past Editions</span>
+                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">9 Successful</span>
                   </div>
                 </div>
 
                 {/* Box 3: Venue */}
-                <a href="#venue" className="flex items-center gap-3 p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] hover:border-violet-400/20 transition-colors">
-                  <div className="w-10 h-10 rounded-full bg-violet-400/10 flex items-center justify-center text-violet-400 shrink-0">
-                    <MapPin className="w-5 h-5" />
+                <a href="#venue" className="flex items-center gap-1.5 sm:gap-3 p-1.5 sm:p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] hover:border-violet-400/20 transition-colors">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-violet-400/10 flex items-center justify-center text-violet-400 shrink-0">
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">VENUE</span>
-                    <span className="block text-xs sm:text-sm font-bold text-slate-100 font-sans truncate">RVCE, Bengaluru</span>
+                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">VENUE</span>
+                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">RVCE, Bengaluru</span>
                   </div>
                 </a>
 
                 {/* Box 4: Indexing */}
-                <div className="flex items-center gap-3 p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] shadow-none">
-                  <div className="w-10 h-10 rounded-full bg-sky-400/10 flex items-center justify-center text-sky-400 shrink-0">
-                    <Award className="w-5 h-5" />
+                <div className="flex items-center gap-1.5 sm:gap-3 p-1.5 sm:p-2.5 rounded-2xl bg-[#0a1020]/80 border border-white/[0.06] shadow-none">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-sky-400/10 flex items-center justify-center text-sky-400 shrink-0">
+                    <Award className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="min-w-0">
-                    <span className="block text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">PUBLICATION</span>
-                    <span className="block text-xs sm:text-sm font-bold text-slate-100 font-sans truncate">IEEE Xplore</span>
+                    <span className="block text-[8px] sm:text-[10px] font-bold text-slate-500 tracking-wider font-sans uppercase">PUBLICATION</span>
+                    <span className="block text-[10px] sm:text-xs md:text-sm font-bold text-slate-100 font-sans leading-tight">IEEE Xplore</span>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Index() {
                   href="https://cmt3.research.microsoft.com/ICSITSS2026"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-rose-600 to-[#ff7b65] hover:from-rose-500 hover:to-[#ff8d7a] border border-white/10 hover:border-[#ff7b65] text-white text-sm font-semibold tracking-wide shadow-[0_4px_16px_rgba(255,123,101,0.2)] hover:shadow-[0_0_24px_rgba(255,123,101,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200"
                 >
                   Submit your paper
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
@@ -226,15 +226,14 @@ export default function Index() {
               </div>
 
               {/* Bottom: photo + message side-by-side */}
-              <div className="flex gap-4 flex-1 min-h-0 p-4 pt-2">
+              <div className="flex flex-col md:flex-row gap-5 flex-1 min-h-0 p-4 pt-2">
 
                 {/* Left: Speaker photo */}
-                <div className="relative w-1/3 shrink-0 overflow-hidden rounded-xl">
+                <div className="relative w-full md:w-1/3 shrink-0 overflow-hidden rounded-xl h-52 md:h-auto min-h-[160px]">
                   <img
                     src="/speakers/foreign/Martin_Versen.png"
                     alt="Prof. Dr.-Ing. Martin Versen"
                     className="w-full h-full object-cover object-top"
-                    style={{ minHeight: '160px' }}
                   />
                   {/* gradient overlay blending into card */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0e1525]/90 via-transparent to-transparent" />
@@ -363,7 +362,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <a
                 href="https://goo.gl/maps/sXWGV9iXqQRwz2PJ9"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-rose-600 to-[#ff7b65] hover:from-rose-500 hover:to-[#ff8d7a] border border-white/10 hover:border-[#ff7b65] text-white text-sm font-semibold shadow-[0_4px_16px_rgba(255,123,101,0.2)] hover:shadow-[0_0_24px_rgba(255,123,101,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200"
               >
                 Open Maps
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">

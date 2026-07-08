@@ -273,7 +273,7 @@ export default function PaperSubmissionGuidelines() {
               href="https://cmt3.research.microsoft.com/ICSITSS2026"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-rose-600 to-[#ff7b65] hover:from-rose-500 hover:to-[#ff8d7a] border border-white/10 hover:border-[#ff7b65] text-white text-sm font-semibold shadow-[0_4px_16px_rgba(255,123,101,0.2)] hover:shadow-[0_0_24px_rgba(255,123,101,0.5)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200"
             >
               Click here to submit
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">

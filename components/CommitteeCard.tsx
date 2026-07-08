@@ -16,11 +16,11 @@ function MemberCard({ member }: { member: Member }) {
     .toUpperCase()
 
   return (
-    <div className="group relative flex flex-col sm:flex-row bg-[#080e1a] rounded-2xl overflow-hidden min-h-[140px] border-2 border-white/[0.07] hover:border-cyan-400/25 transition-colors duration-500 hover:shadow-[0_0_22px_rgba(34,211,238,0.08)]">
+    <div className="group relative flex bg-[#080e1a] rounded-2xl overflow-hidden min-h-[140px] border-2 border-white/[0.07] hover:border-cyan-400/25 transition-colors duration-500 hover:shadow-[0_0_22px_rgba(34,211,238,0.08)]">
       {/* Shine sweep */}
       <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/[0.05] to-transparent -skew-x-12 pointer-events-none z-10" />
         {/* Photo */}
-        <div className="relative sm:w-32 h-36 sm:h-auto shrink-0 bg-[#080e1a]">
+        <div className="relative w-24 xs:w-28 sm:w-32 shrink-0 bg-[#080e1a]">
           {member.imgLink ? (
             <img
               src={member.imgLink}
@@ -39,12 +39,10 @@ function MemberCard({ member }: { member: Member }) {
             className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-500/15 to-violet-500/15"
             style={{ display: member.imgLink ? 'none' : 'flex' }}
           >
-            <span className="text-2xl font-bold text-slate-400">{initials}</span>
+            <span className="text-xl font-bold text-slate-400">{initials}</span>
           </div>
-          {/* Right edge fade on sm+ */}
-          <div className="absolute inset-y-0 right-0 w-6 bg-gradient-to-r from-transparent to-[#080e1a] hidden sm:block pointer-events-none" />
-          {/* Bottom fade on mobile */}
-          <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#080e1a] to-transparent sm:hidden pointer-events-none" />
+          {/* Right edge fade */}
+          <div className="absolute inset-y-0 right-0 w-6 bg-gradient-to-r from-transparent to-[#080e1a] pointer-events-none" />
         </div>
 
         {/* Info */}

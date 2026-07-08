@@ -80,7 +80,7 @@ function About() {
             {/* Campus image */}
             <div className="relative overflow-hidden min-h-[300px] group">
               <img
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover object-right transition-transform duration-500 group-hover:scale-105"
                 src="/rv2.jpg"
                 alt="RV College of Engineering"
               />
@@ -93,38 +93,55 @@ function About() {
               </h2>
               <div className="border-l-2 border-[#ff7b65]/40 pl-6 space-y-4">
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed text-justify">
-                  <span className="text-[#ff7b65] font-bold">RV College of Engineering<sup>®</sup> (RVCE)</span> established in 1963 is one of
-                  the earliest self-financing engineering colleges in the country.
-                  The institution is run by <span className="text-white font-semibold">Rashtreeya Sikshana Samithi Trust
-                  (RSST)</span> a not-for-profit Trust. RVCE is an Autonomous college.
-                  Currently, the institution offers <span className="text-white font-semibold">15 Bachelors, 14 Master Programs</span> and all the departments have Research Centres,
-                  affiliated to <span className="text-white font-semibold">Visvesvaraya Technological University (VTU)
-                  Belagavi</span>. The institution has set itself a Vision &quot;<span className="text-[#ff7b65]/90 font-medium">Leadership in Quality Technical Education, Interdisciplinary Research &amp; Innovation, With a Focus on Sustainable and Inclusive Technology</span>&quot;
+                  Established in 1963 with three engineering branches (Civil, Mechanical and Electrical), RVCE
+now offers 13 undergraduate engineering programs, 13 master’s degree programs and doctoral
+studies. It is located 13 km from the centre of Bengaluru, the Silicon Valley of India, on Mysore
+Road. The sprawling campus, spread over an area of 16.85 acres (16.43 guntas), is set in sylvan
+surroundings. It provides an ideal atmosphere to stimulate the teaching-learning process, helping
+to produce skilled and disciplined engineers.
                 </p>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed text-justify">
-                  Recent awards and achievements include – <span className="text-white font-semibold">UGC Autonomy Granted
-                  for 10 years (2024-25 up to 2033-34)</span>, <span className="text-white font-semibold">NAAC Accredited with A+ Grade</span> in the 2nd cycle of Accreditation (Dec, 2024), Ranked <span className="text-[#ff7b65] font-bold">99<sup>th</sup> in the Country by NIRF-2024</span>, &quot;Engineering College of the Year-2023&quot; by the
-                  Higher Education Review Magazine, ranked <span className="text-white font-semibold">7th in the Country
-                  &amp; 2nd in Karnataka</span> - IIRF Ranking (2023), Ranked 1501+ in
-                  Times Higher Education World University Rankings-2024-25. Ranked
-                  801+ in Computer Science and 1001+ Rank in Engineering category
-                  in THE World University Rankings- 2024-25, Ranked 1501+ in
-                  Impact Ranking in THE World University Rankings-2024, Ranked
-                  601+ in THE World University Rankings (Asia)-2024, and <span className="text-[#ff7b65] font-semibold">NPTEL
-                  (Local Chapter) &quot;AAA&quot; Rating</span>.
+                Rated as one of the top ten self-financing engineering institutions in the country. The current
+annual student intake for UG and PG programmes is over 2,000. With a highly qualified and
+dedicated faculty, it utilizes its expertise in various disciplines to conduct Research and
+Development (R&amp;D) for industry and defence establishments in the country. Over the past six
+decades, RVCE has transformed into a premier hub of learning, blending state-of-the-art
+infrastructure with exceptional human resources that are deeply committed to imparting quality
+technical education driven by creativity, innovation and societal impact. We take pride in
+fostering an ecosystem of knowledge assimilation, generation and dissemination, while instilling
+strong human values and a deep sense of social responsibility.
                 </p>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed text-justify">
-                  The institution has to its credit over <span className="text-[#ff7b65] font-bold">1500 National and International Journal publications</span>, filed <span className="text-[#ff7b65] font-bold">70 patents</span>, <span className="text-[#ff7b65] font-bold">61
-                  published patents</span>, <span className="text-[#ff7b65] font-bold">40 granted patents</span>, completed sponsored
-                  research and consultancy projects worth <span className="text-white font-bold">Rs. 25.0 crores </span>in the
-                  last three years. The institution has established <span className="text-[#ff7b65] font-bold">28 Centre's of
-                  Excellence / Centre's of Competence</span> in niche areas of science
-                  and technology. All the eligible UG and PG programs have been
-                  accredited by NBA multiple Times. Six UG Programs and 1 PG
-                  program have been accredited for six and five years respectively
-                  by NBA. The students have won awards and accolades in national
-                  and international competition.
+                 At RVCE, we place special emphasis on Outcome-Based Education (OBE), Experiential
+Learning and Interdisciplinary Research. Our curriculum is designed not just to provide students
+with a strong theoretical foundation but to equip them with critical thinking, skill development
+abilities, analytical frameworks, entrepreneurial skills, and leadership qualities that will enable
+them to thrive in a dynamic global environment. Our research thrust focuses on emerging areas
+such as Alternative Multifunctional Materials, Clean and Hybrid Power, Large-Area Flexible
+Electronics, IoT, Computational Genomics, Smart Antenna Systems, Intelligent Transport
+Systems, e-Mobility, Green Infrastructure, Logistics and Supply Chain, Cloud Technologies,
+Artificial Intelligence and Sensors. Through these focus areas, we aim to establish RVCE as a
+distinguished centre of excellence.
                 </p>
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed text-justify">
+                A key strength of RVCE is our robust industry-academia collaboration. More than 30 leading
+companies have established dedicated research and development (R&amp;D) labs within the
+institution, enabling hands-on learning and real-world problem-solving. Industry giants such as
+Intel, IBM, Cisco, TI, NXP, Samsung, Bosch, Wipro, SAP, ABB, Infosys, Cognizant, Mercedes-
+Benz, Morris Garage, Tata Technologies and Tejas Networks actively engage with our faculty
+and students in research, internships, and skill development programmes, ensuring that our
+graduates are industry-ready.
+                </p>
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed text-justify">
+                Beyond academics, RVCE provides a holistic learning experience with ample opportunities in
+co-curricular and extracurricular activities. Students are encouraged to explore their talents in
+technical clubs, cultural activities, sports and community service, shaping them into not only
+competent engineers but also responsible and ethical global citizens. RVCE also has
+international collaborations with Florida International University (USA), University of
+Dortmund (Germany), Technical University of Applied Science (Würzburg-Schweinfurt),
+Rosenheim Technical University of Applied Sciences (Germany) and Drexel University
+(Philadelphia).
+              </p>
               </div>
             </div>
           </div>
