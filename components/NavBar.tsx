@@ -25,7 +25,7 @@ const NavBar = () => {
           <Link href="/" legacyBehavior>
             <a className="flex items-center gap-3 hover:opacity-90 transition-opacity">
               <Image
-                src="/logo-navbar.png"
+                src="/Logo-navbar.png"
                 alt="RVCE Logo"
                 className="h-14 w-auto object-contain"
                 style={{ filter: 'brightness(0) invert(1)' }}
@@ -143,7 +143,7 @@ const Footer = () => {
             <a href="/" className="mb-4 w-fit block">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/logo-navbar.png"
+                  src="/Logo-navbar.png"
                   alt="RVCE Logo"
                   className="h-11 w-auto object-contain"
                   style={{ filter: 'brightness(0) invert(1)' }}
