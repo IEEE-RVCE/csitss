@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import { ReactLenis } from 'lenis/react'
 
 import { MantineProvider, MantineThemeOverride } from '@mantine/core'
 
@@ -26,10 +27,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const showScheduleButton = [''].includes(router.pathname)
 
   return (
-    <MantineProvider
-      theme={theme}
-      // emotionOptions has been removed in Mantine v7, use cssVariables instead for prefixing
-    >
+    <ReactLenis root>
+      <MantineProvider
+        theme={theme}
+        // emotionOptions has been removed in Mantine v7, use cssVariables instead for prefixing
+      >
       <WrapApp>
         <NextSeo
           title="CSITSS 2026"
@@ -71,6 +73,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div id="recaptcha-container" />
       </WrapApp>
     </MantineProvider>
+    </ReactLenis>
   )
 }
 export default MyApp

@@ -1,144 +1,249 @@
 'use client'
 
-import { cn } from '../lib/utils'
-import { Users, ChevronRight } from 'lucide-react'
 import { committees } from '../data/committee'
+import Link from 'next/link'
+import {
+  Award,
+  Users,
+  Shield,
+  BookOpen,
+  Globe,
+  Code2,
+  FileText,
+  Calendar,
+  Heart,
+  Truck,
+  DollarSign,
+  Mic,
+  ClipboardList,
+  HelpCircle,
+  Star,
+  Megaphone,
+  ChevronRight,
+} from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
-interface CommitteeCardProps {
-  name: string
-  path: string
-  featured?: boolean
-  isSinglePerson?: boolean
-  colorIndex?: number
+type AccentKey =
+  | 'cyan'
+  | 'violet'
+  | 'sky'
+  | 'emerald'
+  | 'amber'
+  | 'rose'
+  | 'indigo'
+  | 'teal'
+
+interface Accent {
+  icon: string
+  bg: string
+  iconBorder: string
+  hoverFrom: string
+  hoverVia: string
+  hoverTo: string
+  hoverShadow: string
+  chevron: string
 }
 
-function CommitteeCard({
-  name,
-  path,
-  featured = false,
-  isSinglePerson = false,
-  colorIndex = 0,
-}: CommitteeCardProps) {
-  const colorGradients = [
-    'from-blue-50/80 to-indigo-100/60 border-blue-200/50',
-    'from-purple-50/80 to-violet-100/60 border-purple-200/50',
-    'from-emerald-50/80 to-teal-100/60 border-emerald-200/50',
-    'from-orange-50/80 to-amber-100/60 border-orange-200/50',
-    'from-rose-50/80 to-pink-100/60 border-rose-200/50',
-    'from-cyan-50/80 to-sky-100/60 border-cyan-200/50',
-    'from-violet-50/80 to-purple-100/60 border-violet-200/50',
-    'from-teal-50/80 to-emerald-100/60 border-teal-200/50',
-    'from-indigo-50/80 to-blue-100/60 border-indigo-200/50',
-    'from-slate-50/80 to-gray-100/60 border-slate-200/50',
-  ]
+const accents: Record<AccentKey, Accent> = {
+  cyan: {
+    icon: 'text-cyan-400',
+    bg: 'bg-cyan-400/10',
+    iconBorder: 'border-cyan-400/20',
+    hoverFrom: 'hover:from-cyan-400/40',
+    hoverVia: 'hover:via-sky-400/20',
+    hoverTo: 'hover:to-cyan-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(34,211,238,0.12)]',
+    chevron: 'group-hover:text-cyan-400',
+  },
+  violet: {
+    icon: 'text-violet-400',
+    bg: 'bg-violet-400/10',
+    iconBorder: 'border-violet-400/20',
+    hoverFrom: 'hover:from-violet-400/40',
+    hoverVia: 'hover:via-purple-400/20',
+    hoverTo: 'hover:to-violet-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(139,92,246,0.12)]',
+    chevron: 'group-hover:text-violet-400',
+  },
+  sky: {
+    icon: 'text-sky-400',
+    bg: 'bg-sky-400/10',
+    iconBorder: 'border-sky-400/20',
+    hoverFrom: 'hover:from-sky-400/40',
+    hoverVia: 'hover:via-cyan-400/20',
+    hoverTo: 'hover:to-sky-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(56,189,248,0.12)]',
+    chevron: 'group-hover:text-sky-400',
+  },
+  emerald: {
+    icon: 'text-emerald-400',
+    bg: 'bg-emerald-400/10',
+    iconBorder: 'border-emerald-400/20',
+    hoverFrom: 'hover:from-emerald-400/40',
+    hoverVia: 'hover:via-teal-400/20',
+    hoverTo: 'hover:to-emerald-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(52,211,153,0.12)]',
+    chevron: 'group-hover:text-emerald-400',
+  },
+  amber: {
+    icon: 'text-amber-400',
+    bg: 'bg-amber-400/10',
+    iconBorder: 'border-amber-400/20',
+    hoverFrom: 'hover:from-amber-400/40',
+    hoverVia: 'hover:via-yellow-400/20',
+    hoverTo: 'hover:to-amber-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(251,191,36,0.12)]',
+    chevron: 'group-hover:text-amber-400',
+  },
+  rose: {
+    icon: 'text-rose-400',
+    bg: 'bg-rose-400/10',
+    iconBorder: 'border-rose-400/20',
+    hoverFrom: 'hover:from-rose-400/40',
+    hoverVia: 'hover:via-pink-400/20',
+    hoverTo: 'hover:to-rose-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(251,113,133,0.12)]',
+    chevron: 'group-hover:text-rose-400',
+  },
+  indigo: {
+    icon: 'text-indigo-400',
+    bg: 'bg-indigo-400/10',
+    iconBorder: 'border-indigo-400/20',
+    hoverFrom: 'hover:from-indigo-400/40',
+    hoverVia: 'hover:via-blue-400/20',
+    hoverTo: 'hover:to-indigo-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(129,140,248,0.12)]',
+    chevron: 'group-hover:text-indigo-400',
+  },
+  teal: {
+    icon: 'text-teal-400',
+    bg: 'bg-teal-400/10',
+    iconBorder: 'border-teal-400/20',
+    hoverFrom: 'hover:from-teal-400/40',
+    hoverVia: 'hover:via-emerald-400/20',
+    hoverTo: 'hover:to-teal-400/40',
+    hoverShadow: 'hover:shadow-[0_0_20px_rgba(45,212,191,0.12)]',
+    chevron: 'group-hover:text-teal-400',
+  },
+}
 
-  const iconGradients = [
-    'from-blue-500/90 to-indigo-600/90',
-    'from-purple-500/90 to-violet-600/90',
-    'from-emerald-500/90 to-teal-600/90',
-    'from-orange-500/90 to-amber-600/90',
-    'from-rose-500/90 to-pink-600/90',
-    'from-cyan-500/90 to-sky-600/90',
-    'from-violet-500/90 to-purple-600/90',
-    'from-teal-500/90 to-emerald-600/90',
-    'from-indigo-500/90 to-blue-600/90',
-    'from-slate-500/90 to-gray-600/90',
-  ]
+const accentOrder: AccentKey[] = [
+  'cyan', 'violet', 'sky', 'emerald',
+  'amber', 'rose', 'indigo', 'teal',
+]
 
-  const currentColorGradient =
-    colorGradients[colorIndex % colorGradients.length]
-  const currentIconGradient = iconGradients[colorIndex % iconGradients.length]
-
-  return (
-    <a
-      href={`/committee-details/${path}`}
-      className={cn(
-        'group block rounded-2xl p-6 shadow-sm transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1',
-        'border backdrop-blur-sm',
-        featured
-          ? 'bg-gradient-to-br from-blue-50/90 to-sky-100/70 border-blue-200/60 shadow-blue-100/50'
-          : `bg-gradient-to-br ${currentColorGradient} shadow-gray-100/50`
-      )}
-    >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <div
-            className={cn(
-              'rounded-xl p-3 shadow-sm',
-              featured
-                ? 'bg-gradient-to-br from-blue-500/90 to-sky-600/90 shadow-blue-200/50'
-                : `bg-gradient-to-br ${currentIconGradient} shadow-gray-200/30`
-            )}
-          >
-            <Users
-              className={cn(
-                'h-5 w-5',
-                featured ? 'text-white' : 'text-gray-700'
-              )}
-            />
-          </div>
-          <div>
-            <h3
-              className={cn(
-                'font-semibold tracking-tight',
-                featured ? 'text-xl text-gray-900' : 'text-gray-800'
-              )}
-            >
-              {name}
-            </h3>
-            {!isSinglePerson && (
-              <p className="mt-1 text-sm text-gray-600/80 font-medium">
-                View Members
-              </p>
-            )}
-          </div>
-        </div>
-        <ChevronRight className="h-5 w-5 text-gray-400/70 transition-colors group-hover:text-gray-600" />
-      </div>
-    </a>
-  )
+const iconMap: Record<string, LucideIcon> = {
+  chief_patron: Award,
+  patrons: Award,
+  conference_chairs: Users,
+  steering_committee: Shield,
+  conference_convenors_committee: BookOpen,
+  foreign_delegates_committee: Globe,
+  technical_committee: Code2,
+  program_committee: ClipboardList,
+  website_committee: Megaphone,
+  sponsorship_committee: Star,
+  publication_committee: FileText,
+  session_management_committee: Calendar,
+  hospitality_committee: Heart,
+  transportation: Truck,
+  finance_committee: DollarSign,
+  main_stage_committee: Mic,
+  registration_committee: ClipboardList,
+  help_desk_committee: HelpCircle,
+  advisory_committee: Star,
 }
 
 export default function Committee() {
+  const [chiefPatron, ...rest] = committees
+
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white via-white to-transparent py-20">
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            <span className="bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
-              Conference Committee
-            </span>
+    <section className="min-h-screen text-slate-300 font-sans px-4 md:px-8 pt-10 pb-16">
+      <div className="max-w-6xl mx-auto">
+
+        {/* Header */}
+        <div className="text-center mb-10">
+
+          <h1 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-white">
+            Conference Committee
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            Meet the distinguished professionals and academic leaders who form
-            the CSITSS RVCE committee, bringing their expertise and dedication
-            to advance the field through collaborative research and innovation
-          </p>
+          <p className='text-md text-slate-400 leading-relaxed font-sans my-4 max-w-2xl mx-auto'>Meet the distinguished professionals and academic leaders who form the CSITSS RVCE committee, bringing their expertise and dedication to advance the field through collaborative research and innovation</p>
         </div>
 
-        <div className="mb-12">
-          <CommitteeCard
-            name={committees[0].name}
-            path={committees[0].path}
-            featured={true}
-            isSinglePerson={true}
-          />
-        </div>
+        {/* Chief Patron — Featured with gradient border + shine */}
+        <Link href={`/committee-details/${chiefPatron.path}`} legacyBehavior>
+          <a className="group relative block rounded-2xl p-px overflow-hidden mb-5 bg-gradient-to-r from-violet-400/25 via-white/[0.06] to-violet-400/25 hover:from-violet-400/60 hover:via-cyan-400/20 hover:to-violet-400/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(139,92,246,0.18)]">
+            {/* Shine sweep */}
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/[0.07] to-transparent -skew-x-12 pointer-events-none z-10" />
+            {/* Inner card */}
+            <div className="relative flex items-center justify-between gap-4 px-5 py-4 rounded-2xl bg-gradient-to-br from-[#0d1220] via-[#0f1628] to-[#0c1120]">
+              {/* BG glow */}
+              <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="relative flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-violet-400/10 border border-violet-400/25 flex items-center justify-center shrink-0">
+                  <Award className="w-5 h-5 text-violet-400" />
+                </div>
+                <div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {committees.slice(1).map((committee, index) => (
-            <CommitteeCard
-              key={committee.path}
-              name={committee.name}
-              path={committee.path}
-              colorIndex={index}
-            />
-          ))}
+                  <h2 className="font-serif text-lg sm:text-xl font-semibold text-white">
+                    {chiefPatron.name}
+                  </h2>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-slate-600 group-hover:text-violet-400 group-hover:translate-x-0.5 transition-all duration-200 shrink-0 relative" />
+            </div>
+          </a>
+        </Link>
+
+        {/* Committee Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+          {rest.map((committee, index) => {
+            const accentKey = accentOrder[index % accentOrder.length]
+            const accent = accents[accentKey]
+            const Icon = iconMap[committee.path] || Users
+
+            return (
+              <Link
+                key={committee.path}
+                href={`/committee-details/${committee.path}`}
+                legacyBehavior
+              >
+                <a
+                  className={`group relative block rounded-xl p-px overflow-hidden bg-gradient-to-r from-white/[0.07] via-white/[0.03] to-white/[0.07] ${accent.hoverFrom} ${accent.hoverVia} ${accent.hoverTo} transition-all duration-500 ${accent.hoverShadow}`}
+                >
+                  {/* Shine sweep */}
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/[0.06] to-transparent -skew-x-12 pointer-events-none z-10" />
+                  {/* Inner card */}
+                  <div className="relative flex items-center justify-between gap-3 px-3.5 py-3 rounded-xl bg-[#080e1a]">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <div
+                        className={`w-8 h-8 rounded-lg ${accent.bg} border ${accent.iconBorder} flex items-center justify-center shrink-0`}
+                      >
+                        <Icon className={`w-4 h-4 ${accent.icon}`} />
+                      </div>
+                      <div className="min-w-0">
+                        <span className="block text-sm font-medium text-slate-300 group-hover:text-white transition-colors duration-200 leading-snug truncate">
+                          {committee.name}
+                        </span>
+                        <span className={`block text-[10px] font-medium mt-0.5 ${accent.icon} opacity-60 group-hover:opacity-100 transition-opacity duration-200`}>
+                          View Members
+                        </span>
+                      </div>
+                    </div>
+                    <ChevronRight
+                      className={`w-3.5 h-3.5 text-slate-700 group-hover:translate-x-0.5 transition-all duration-200 shrink-0 ${accent.chevron}`}
+                    />
+                  </div>
+                </a>
+              </Link>
+            )
+          })}
         </div>
       </div>
 
-      <div className="absolute right-0 top-1/3 -z-10 h-64 w-64 translate-x-1/4 transform rounded-full bg-gradient-to-br from-blue-500/20 to-sky-500/20 blur-3xl" />
-      <div className="absolute bottom-1/3 left-0 -z-10 h-64 w-64 -translate-x-1/4 transform rounded-full bg-gradient-to-br from-sky-500/20 to-blue-500/20 blur-3xl" />
+      {/* Ambient glows */}
+      <div className="fixed top-1/3 right-0 w-72 h-72 bg-violet-500/4 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="fixed bottom-1/3 left-0 w-72 h-72 bg-cyan-500/4 rounded-full blur-3xl pointer-events-none -z-10" />
     </section>
   )
 }

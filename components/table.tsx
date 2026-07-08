@@ -40,96 +40,96 @@ const pricingRows = [
 
 function Table() {
   return (
-    <>
-      <section className="mx-auto w-full max-w-6xl px-4 py-10">
-        <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-          <div className="border-b border-gray-200 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-700 px-6 py-5">
-            <h2 className="text-center text-lg font-semibold text-white sm:text-xl">
-              Indian (Amount in INR ₹) / Foreign Authors and Delegates (Amount
-              in USD $)
-            </h2>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse text-left text-sm">
-              <thead className="bg-blue-50 text-blue-900">
-                <tr>
-                  <th
-                    rowSpan={2}
-                    className="whitespace-nowrap border-b border-r border-gray-200 px-4 py-3 text-base font-semibold"
-                  >
-                    Particulars
-                  </th>
-                  <th
-                    colSpan={2}
-                    className="border-b border-r border-gray-200 px-4 py-3 text-center text-base font-semibold"
-                  >
-                    Early Bird
-                    <div className="text-xs font-medium text-gray-500">
-                      (On or Before 30th August)
-                    </div>
-                  </th>
-                  <th
-                    colSpan={2}
-                    className="border-b border-gray-200 px-4 py-3 text-center text-base font-semibold"
-                  >
-                    Regular Registration
-                  </th>
-                </tr>
-                <tr className="text-center">
-                  <th className="border-b border-r border-gray-200 px-4 py-2 text-sm font-semibold">
-                    IEEE
-                  </th>
-                  <th className="border-b border-r border-gray-200 px-4 py-2 text-sm font-semibold">
-                    Non-IEEE
-                  </th>
-                  <th className="border-b border-r border-gray-200 px-4 py-2 text-sm font-semibold">
-                    IEEE
-                  </th>
-                  <th className="border-b border-gray-200 px-4 py-2 text-sm font-semibold">
-                    Non-IEEE
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="text-gray-800">
-                {pricingRows.map((row) => (
-                  <tr key={row.label} className="even:bg-blue-50/60">
-                    <td className="border-b border-r border-gray-200 px-4 py-3 font-medium">
-                      {row.label}
-                    </td>
-                    <td className="border-b border-r border-gray-200 px-4 py-3 text-center">
-                      {row.earlyIeee}
-                    </td>
-                    <td className="border-b border-r border-gray-200 px-4 py-3 text-center">
-                      {row.earlyNonIeee}
-                    </td>
-                    <td className="border-b border-r border-gray-200 px-4 py-3 text-center">
-                      {row.regularIeee}
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-3 text-center">
-                      {row.regularNonIeee}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="border-t border-gray-200 bg-blue-50 px-6 py-4 text-sm text-blue-900 space-y-1">
-            <p><b>The manuscript length should be 5–6 pages.</b></p>
-            <p><b>
-              Additional pages beyond the limit will incur an extra page
-              charge of INR 1180 or USD 30 per page. Upto extra two pages
-              only.
-              </b>
-            </p>
-            <p><b>
-              (All the pricing details mentioned above are inclusive of 18%
-              GST)
-              </b>
-            </p>
-          </div>
+    <section className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+      {/* Section header */}
+      <div className="mb-6 text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 text-[10px] font-bold tracking-widest uppercase mb-3">
+          Registration
         </div>
-      </section>
-    </>
+        <h2 className="font-serif text-2xl sm:text-3xl font-semibold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
+          Registration Fees
+        </h2>
+        <p className="mt-1.5 text-xs text-slate-500">
+          Indian (INR ₹) &nbsp;/&nbsp; Foreign Authors &amp; Delegates (USD $)
+        </p>
+      </div>
+
+      {/* Table card */}
+      <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0c1525]/90 shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse text-left text-sm">
+            <thead>
+              <tr>
+                <th
+                  rowSpan={2}
+                  className="whitespace-nowrap border-b border-r border-white/[0.06] bg-[#070d1a] px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-500"
+                >
+                  Particulars
+                </th>
+                <th
+                  colSpan={2}
+                  className="border-b border-r border-white/[0.06] bg-emerald-950/60 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400"
+                >
+                  Early Bird
+                  <div className="text-[11px] font-medium text-emerald-500/70 normal-case tracking-normal mt-0.5">
+                    On or before <span className="font-bold text-emerald-300">30<sup>th</sup> August</span>
+                  </div>
+                </th>
+                <th
+                  colSpan={2}
+                  className="border-b border-white/[0.06] bg-sky-950/60 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-sky-400"
+                >
+                  Regular Registration
+                </th>
+              </tr>
+              <tr className="text-center">
+                <th className="border-b border-r border-white/[0.06] bg-emerald-950/40 px-4 py-2 text-[11px] font-semibold text-emerald-500">
+                  IEEE
+                </th>
+                <th className="border-b border-r border-white/[0.06] bg-emerald-950/40 px-4 py-2 text-[11px] font-semibold text-emerald-500">
+                  Non-IEEE
+                </th>
+                <th className="border-b border-r border-white/[0.06] bg-sky-950/40 px-4 py-2 text-[11px] font-semibold text-sky-500">
+                  IEEE
+                </th>
+                <th className="border-b border-white/[0.06] bg-sky-950/40 px-4 py-2 text-[11px] font-semibold text-sky-500">
+                  Non-IEEE
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {pricingRows.map((row, i) => (
+                <tr key={row.label} className={i % 2 === 0 ? 'bg-[#0a1020]' : 'bg-[#0c1525]/50'}>
+                  <td className="border-b border-r border-white/[0.06] px-5 py-3 text-sm font-medium text-slate-300">
+                    {row.label}
+                  </td>
+                  <td className="border-b border-r border-white/[0.06] px-4 py-3 text-center text-sm font-semibold text-emerald-400">
+                    {row.earlyIeee}
+                  </td>
+                  <td className="border-b border-r border-white/[0.06] px-4 py-3 text-center text-sm text-slate-400">
+                    {row.earlyNonIeee}
+                  </td>
+                  <td className="border-b border-r border-white/[0.06] px-4 py-3 text-center text-sm font-semibold text-sky-400">
+                    {row.regularIeee}
+                  </td>
+                  <td className="border-b border-white/[0.06] px-4 py-3 text-center text-sm text-slate-400">
+                    {row.regularNonIeee}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Footer notes */}
+        <div className="border-t border-white/[0.06] bg-[#070d1a]/80 px-5 py-4 space-y-1.5 text-sm text-slate-400">
+          <p>The manuscript length should be <span className="font-semibold text-slate-200">5–6 pages</span>.</p>
+          <p>Additional pages beyond the limit will incur an extra page charge of <span className="font-semibold text-slate-200">INR 1180 or USD 30 per page</span>. Upto extra two pages only.</p>
+          <p>All pricing details mentioned above are <span className="font-semibold text-slate-200">inclusive of 18% GST</span>.</p>
+        </div>
+      </div>
+    </section>
   )
 }
+
 export default Table

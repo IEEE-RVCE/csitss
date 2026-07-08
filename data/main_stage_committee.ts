@@ -23,14 +23,6 @@ const main_stage_committee_data = [
     imgLink: '',
     email: 'sandhyahb@rvce.edu.in',
   },
-  {
-    name: 'Dr. Lingaya Hiremath',
-    post: 'Stage Committee',
-    department: 'Biotechnology',
-    position: 'Assistant Professor',
-    imgLink: '',
-    email: '',
-  },
 ]
 
 export default main_stage_committee_data

@@ -1,4 +1,4 @@
-interface Members {
+interface Member {
   name: string
   post: string
   imgLink: string
@@ -7,179 +7,89 @@ interface Members {
   email?: string
 }
 
-export const CommitteeCard = ({ members }: { members: Members[] }) => {
-  // Group members by their post/role
-  const groupedMembers = members.reduce(
-    (groups: { [key: string]: Members[] }, member) => {
-      const post = member.post
-      if (!groups[post]) {
-        groups[post] = []
-      }
-      groups[post].push(member)
-      return groups
-    },
-    {}
-  )
+function MemberCard({ member }: { member: Member }) {
+  const initials = member.name
+    .split(' ')
+    .map((w) => w.charAt(0))
+    .join('')
+    .slice(0, 2)
+    .toUpperCase()
 
   return (
-    <div className="max-w-6xl mx-auto px-4 space-y-12">
-      {Object.entries(groupedMembers).map(([post, postMembers]) => (
-        <div key={post} className="space-y-6">
-          {/* Group heading */}
+    <div className="group relative flex bg-[#080e1a] rounded-2xl overflow-hidden min-h-[140px] border-2 border-white/[0.07] hover:border-cyan-400/25 transition-colors duration-500 hover:shadow-[0_0_22px_rgba(34,211,238,0.08)]">
+      {/* Shine sweep */}
+      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/[0.05] to-transparent -skew-x-12 pointer-events-none z-10" />
+        {/* Photo */}
+        <div className="relative w-24 xs:w-28 sm:w-32 shrink-0 bg-[#080e1a]">
+          {member.imgLink ? (
+            <img
+              src={member.imgLink}
+              alt={member.name}
+              className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              onError={(e) => {
+                const img = e.target as HTMLImageElement
+                img.style.display = 'none'
+                const fallback = img.nextElementSibling as HTMLElement
+                if (fallback) fallback.style.display = 'flex'
+              }}
+            />
+          ) : null}
+          {/* Fallback initials */}
           <div
-            className={
-              post === 'General Chair' || post === 'Technical Chair'
-                ? 'text-center'
-                : ''
-            }
+            className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-500/15 to-violet-500/15"
+            style={{ display: member.imgLink ? 'none' : 'flex' }}
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+            <span className="text-xl font-bold text-slate-400">{initials}</span>
+          </div>
+          {/* Right edge fade */}
+          <div className="absolute inset-y-0 right-0 w-6 bg-gradient-to-r from-transparent to-[#080e1a] pointer-events-none" />
+        </div>
+
+        {/* Info */}
+        <div className="flex-1 px-4 py-4 flex flex-col justify-center gap-1">
+          <h3 className="text-sm font-semibold text-white leading-snug group-hover:text-cyan-100 transition-colors duration-200">
+            {member.name}
+          </h3>
+          {member.position && (
+            <p className="text-xs text-slate-400 leading-snug">{member.position}</p>
+          )}
+          {member.department && (
+            <p className="text-[11px] text-slate-500 leading-snug">{member.department}</p>
+          )}
+          {member.email && (
+            <span className="mt-1.5 inline-block self-start text-[10px] font-mono text-cyan-400/70 bg-cyan-400/5 border border-cyan-400/10 rounded px-1.5 py-0.5">
+              {member.email}
+            </span>
+          )}
+        </div>
+      </div>
+  )
+}
+
+export const CommitteeCard = ({ members }: { members: Member[] }) => {
+  const grouped = members.reduce<Record<string, Member[]>>((acc, member) => {
+    if (!acc[member.post]) acc[member.post] = []
+    acc[member.post].push(member)
+    return acc
+  }, {})
+
+  return (
+    <div className="space-y-10">
+      {Object.entries(grouped).map(([post, postMembers]) => (
+        <div key={post}>
+          {/* Section divider */}
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-cyan-400/25 to-cyan-400/40" />
+            <span className="text-xs font-bold tracking-[0.18em] uppercase text-cyan-400 bg-cyan-400/8 border border-cyan-400/20 rounded-full px-4 py-1 shadow-[0_0_12px_rgba(34,211,238,0.08)]">
               {post}
-            </h2>
-            {/* <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div> */}
+            </span>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent via-cyan-400/25 to-cyan-400/40" />
           </div>
 
-          {/* Cards for this group - two per row on large screens, one per row on small */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {postMembers.map((member, idx) => {
-              const isLastSingle =
-                postMembers.length % 2 === 1 &&
-                idx === postMembers.length - 1 &&
-                post === 'Patrons'
-
-              const card = (
-                <>
-                  {/* Subtle gradient overlay */}
-                  <div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/20 to-transparent 
-                               opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                  ></div>
-
-                  {/* Image container - Left side */}
-                  <div className="relative w-full md:w-48 h-48 flex-shrink-0 flex items-center justify-center mx-auto md:mx-0">
-                    <div className="w-40 h-40 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden flex items-center justify-center">
-                      {member.imgLink ? (
-                        <img
-                          className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105 rounded-xl"
-                          src={member.imgLink}
-                          alt={`${member.name}'s photo`}
-                          onError={(e) => {
-                            const target = e.target as HTMLImageElement
-                            target.style.display = 'none'
-                            const fallback =
-                              target.nextElementSibling as HTMLElement
-                            if (fallback) fallback.style.display = 'flex'
-                          }}
-                        />
-                      ) : null}
-
-                      {/* Fallback initials display */}
-                      <div
-                        className={`w-full h-full ${member.imgLink ? 'hidden' : 'flex'} items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 transition-transform duration-300 group-hover:scale-105 rounded-xl`}
-                        style={{ display: member.imgLink ? 'none' : 'flex' }}
-                      >
-                        <span className="text-4xl font-bold text-white">
-                          {member.name
-                            .split(' ')
-                            .map((word) => word.charAt(0))
-                            .join('')
-                            .slice(0, 2)}
-                        </span>
-                      </div>
-                    </div>
-                    {/* Gradient overlay on image */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
-                    {/* Decorative corner accent */}
-                    <div className="absolute top-4 left-4 w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-
-                  {/* Content section - Right side */}
-                  <div className="flex-1 p-6 flex flex-col justify-center">
-                    <div className="space-y-3">
-                      {/* Name only (removed position) */}
-                      <div>
-                        <h3
-                          className="text-xl font-bold text-gray-900 group-hover:text-blue-700 
-                                     transition-colors duration-300 leading-tight"
-                        >
-                          {member.name}
-                        </h3>
-                        {member.position && (
-                          <p className="mt-1 text-sm text-gray-600 font-medium">
-                            {member.position}
-                          </p>
-                        )}
-                      </div>
-
-                      {/* Additional info if available */}
-                      {(member.department || member.email) && (
-                        <div className="space-y-2">
-                          {member.department && (
-                            <div className="flex items-center text-gray-600">
-                              <div className="flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full mr-2 group-hover:bg-blue-100 transition-colors duration-300">
-                                <svg
-                                  className="w-3 h-3 text-gray-500 group-hover:text-blue-600"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                                  />
-                                </svg>
-                              </div>
-                              <div>
-                                <span className="text-sm font-medium text-gray-900">
-                                  {member.department}
-                                </span>
-                              </div>
-                            </div>
-                          )}
-                          {member.email && (
-                            <div className="flex items-center justify-start">
-                              <div className="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-700 bg-purple-50 border border-purple-200 rounded-full transition-all duration-300 shadow-sm">
-                                {member.email}
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Decorative element */}
-                    <div
-                      className="absolute bottom-0 right-0 w-20 h-1 bg-gradient-to-l from-blue-500 to-indigo-500 
-                                 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right"
-                    ></div>
-                  </div>
-                </>
-              )
-
-              if (isLastSingle) {
-                // For Patrons: left-align the lone final card and let it size to content
-                return (
-                  <div key={member.name} className="justify-self-start">
-                    <div className="group relative bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 inline-block overflow-hidden transform hover:-translate-y-1">
-                      {card}
-                    </div>
-                  </div>
-                )
-              }
-
-              return (
-                <div
-                  key={member.name}
-                  className="group relative bg-white hover:bg-gradient-to-r hover:from-blue-50/50 hover:to-indigo-50/50 
-                           border border-gray-200 hover:border-blue-300 rounded-2xl shadow-sm hover:shadow-xl 
-                           transition-all duration-300 overflow-hidden transform hover:-translate-y-1 flex flex-col md:flex-row min-h-[200px]"
-                >
-                  {card}
-                </div>
-              )
-            })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {postMembers.map((member) => (
+              <MemberCard key={member.name} member={member} />
+            ))}
           </div>
         </div>
       ))}

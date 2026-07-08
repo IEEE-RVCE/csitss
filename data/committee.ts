@@ -1,6 +1,7 @@
 export const committees = [
   { name: 'Chief Patron', path: 'chief_patron' },
   { name: 'Patrons', path: 'patrons' },
+  { name: 'Advisory Committee', path: 'advisory_committee' },
   { name: 'Conference Chairs', path: 'conference_chairs' },
   { name: 'Steering Committee', path: 'steering_committee' },
   {
@@ -8,7 +9,6 @@ export const committees = [
     path: 'conference_convenors_committee',
 
   },
-  { name: 'Advisory Committee', path: 'advisory_committee' },
   { name: 'Technical Program Committee', path: 'technical_committee' },
   { name: 'Program Committee', path: 'program_committee' },
   { name: 'Finance Committee', path: 'finance_committee' },
