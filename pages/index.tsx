@@ -137,7 +137,7 @@ export default function Index() {
               </Link>
 
               {/* Card 3: Download Brochure */}
-              <a href="/CSITSSBrochure2026final.pdf" target="_blank" rel="noreferrer" className="flex items-start gap-3 p-3 rounded-2xl bg-[#0a1020]/60 border border-white/[0.06] hover:bg-cyan-400/5 hover:border-cyan-400/15 group transition-all duration-300">
+              <a href="/CSITSS%20Brochure%202026%20_most%20updated.pdf" target="_blank" rel="noreferrer" className="flex items-start gap-3 p-3 rounded-2xl bg-[#0a1020]/60 border border-white/[0.06] hover:bg-cyan-400/5 hover:border-cyan-400/15 group transition-all duration-300">
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 text-slate-500 group-hover:text-cyan-400 group-hover:border-cyan-400/20 flex items-center justify-center shrink-0 transition-all duration-300">
                   <Download className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                 </div>
