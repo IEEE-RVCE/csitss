@@ -4,7 +4,7 @@ const session_management_data = [
     post: 'Session Management Chair',
     department: 'Mechanical Engineering',
     position: 'Professor & Head',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/HoD-4.png',
     email: 'shanmukhan@rvce.edu.in',
   },
   {
@@ -12,7 +12,7 @@ const session_management_data = [
     post: 'Session Management',
     department: 'Electronics and Telecommunication Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SHAMBULINGA-1-scaled.jpg',
     email: 'shambulingam@rvce.edu.in',
   },
   {
@@ -20,7 +20,7 @@ const session_management_data = [
     post: 'Session Management',
     department: 'Electronics and Telecommunication Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/10/NAGENDRA-N-N-1-scaled.jpg',
     email: 'nagendrann@rvce.edu.in',
   },
 
@@ -37,7 +37,7 @@ const session_management_data = [
     post: 'Session Management',
     department: 'Electronics and Communication Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/RAJANI-KATIYAR-1-scaled.jpg',
     email: 'rajanikatiyar@rvce.edu.in',
   },
   {
@@ -45,7 +45,7 @@ const session_management_data = [
     post: 'Session Management',
     department: 'Electronics and Communication Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SUJATHA-HIREMATH-1-scaled.jpg',
     email: 'sujathah@rvce.edu.in',
   },
 ]
