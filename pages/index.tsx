@@ -7,6 +7,7 @@ import ConferenceThemes from '../components/ConferenceThemes'
 import Table from '../components/table'
 import { FileText, Award, Calendar, MapPin, Download, Send, ChevronRight, Earth } from 'lucide-react'
 import Link from 'next/link'
+import SpeakerSlideshow from '../components/SpeakerSlideshow'
 
 export default function Index() {
   return (
@@ -204,70 +205,7 @@ export default function Index() {
             </div>
 
             {/* ── Speaker Message card ── */}
-            <div className="flex-1 bg-gradient-to-br from-[#0e1525] via-[#111a30] to-[#0d1828] border border-violet-400/20 shadow-[0_8px_40px_rgba(139,92,246,0.1)] rounded-3xl overflow-hidden flex flex-col relative">
-
-              {/* Background glows */}
-              <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/6 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute bottom-0 left-0 w-36 h-36 bg-cyan-500/5 rounded-full blur-2xl pointer-events-none" />
-
-              {/* Top: Name + affiliation (Full width) */}
-              <div className="p-4 pb-2">
-                {/* Badge */}
-                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-violet-400/10 border border-violet-400/20 text-[9px] font-bold tracking-widest uppercase text-violet-300 w-fit mb-1.5">
-                  <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                  </svg>
-                  Message from Speaker
-                </div>
-                <div>
-                  <p className="text-base font-bold text-white leading-tight">Prof. Dr.-Ing. Martin Versen</p>
-                  <p className="text-sm font-semibold text-slate-300 mt-0.5 leading-snug">Technische Hochschule Rosenheim, Germany</p>
-                </div>
-              </div>
-
-              {/* Bottom: photo + message side-by-side */}
-              <div className="flex flex-col md:flex-row gap-5 flex-1 min-h-0 p-4 pt-2">
-
-                {/* Left: Speaker photo */}
-                <div className="relative w-full md:w-1/3 shrink-0 overflow-hidden rounded-xl h-52 md:h-auto min-h-[160px]">
-                  <img
-                    src="/speakers/foreign/Martin_Versen.png"
-                    alt="Prof. Dr.-Ing. Martin Versen"
-                    className="w-full h-full object-cover object-top"
-                  />
-                  {/* gradient overlay blending into card */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e1525]/90 via-transparent to-transparent" />
-                </div>
-
-                {/* Right: message */}
-                <div className="flex-1 flex flex-col min-w-0">
-                  {/* Quote — small icon, full message */}
-                  <div className="relative flex-1 overflow-y-auto scrollbar-hide pr-1">
-                    {/* Tiny decorative quote mark */}
-                    <svg className="w-4 h-4 text-violet-400/25 mb-0.5" fill="currentColor" viewBox="0 0 32 32">
-                      <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                    </svg>
-                    <p className="text-xs text-slate-200 leading-relaxed text-justify">
-                      To the IEEE CSITSS Organizers and Participants,
-                    </p>
-                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify">
-                      From the Faculty of Engineering at Technische Hochschule Rosenheim — and especially from our Fluorescence Measurement Technology lab — we send our warmest regards.
-                    </p>
-                    <p className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify">
-                      We develop real-time AI systems to classify subtle optical signals — a field deeply aligned with your themes of{' '}
-                      <span className="text-cyan-300 font-medium">Sustainable Environment and Circular Economy</span>,{' '}
-                      <span className="text-violet-300 font-medium">Artificial Intelligence Systems</span>, and{' '}
-                      <span className="text-sky-300 font-medium">Data Analytics and Intelligent Decision Systems</span>. We&apos;re excited to exchange ideas, learn from your innovations, and build global connections that turn research into impact.
-                    </p>
-                    <p className="text-xs text-slate-200 leading-relaxed mt-1.5 italic text-justify">
-                      Looking forward to connecting, collaborating, and co-creating the future — together.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+            <SpeakerSlideshow />
 
           </div>
         </div>
