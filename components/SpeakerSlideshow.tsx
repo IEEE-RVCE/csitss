@@ -58,6 +58,31 @@ const speakers: SpeakerMessage[] = [
         I am delighted to be part of this community and to share ideas and experiences with you.
       </span>
     ]
+  },
+  {
+    id: 3,
+    name: 'Prof. Dr.-Ing. Noah Klarmann',
+    designation: 'Professor & Researcher in Applied Artificial Intelligence',
+    institution: 'Technische Hochschule Rosenheim, Germany',
+    image: '/speakers/foreign/Noah_Klarmann.png',
+    paragraphs: [
+      <span key="3_1" className="font-bold text-cyan-300">To all IEEE CSITSS Participants,</span>,
+      <span key="3_2">
+        Warm greetings from Technische Hochschule Rosenheim in Germany. I am truly delighted to be part of IEEE CSITSS and to connect with researchers, educators, and innovators from around the world.
+      </span>,
+      <span key="3_3">
+        As a professor and researcher in applied artificial intelligence, I am especially passionate about{' '}
+        <span className="text-cyan-300 font-semibold">reinforcement learning</span>,{' '}
+        <span className="text-violet-300 font-semibold">intelligent decision-making</span>, and{' '}
+        <span className="text-sky-300 font-semibold">AI agents</span>. My work focuses on bringing these technologies out of the laboratory and into real-world industrial environments, where they can help solve complex problems, support people, and create meaningful impact.
+      </span>,
+      <span key="3_4">
+        What excites me most about conferences like IEEE CSITSS is the opportunity to exchange ideas across disciplines and cultures. I look forward to learning from your work, sharing experiences from my own research, and exploring new possibilities for collaboration.
+      </span>,
+      <span key="3_5" className="italic">
+        I am very much looking forward to inspiring discussions, new connections, and perhaps the beginning of future undertakings.
+      </span>
+    ]
   }
 ]
 
