@@ -72,7 +72,7 @@ function Table() {
                 >
                   Early Bird
                   <div className="text-[11px] font-medium text-emerald-500/70 normal-case tracking-normal mt-0.5">
-                    On or before <span className="font-bold text-emerald-300">30<sup>th</sup> August</span>
+                    On or before <span className="font-bold text-emerald-300">05<sup>th</sup>September</span>
                   </div>
                 </th>
                 <th
