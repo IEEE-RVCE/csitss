@@ -13,7 +13,7 @@ const technical_committee_data = [
     post: 'Technical Chair',
     department: 'Electronics and Telecommunication Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Vq9JdgcPDbn-YwEHWto3MuOqoaRM3Iw9tQ&s',
     email: 'premanandabs@rvce.edu.in',
   },
   {
@@ -21,7 +21,7 @@ const technical_committee_data = [
     post: 'Technical Chair',
     department: 'Computer Science and Engineering',
     position: 'Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/NAGARAJA-G-S-1-1638x2048.jpg',
     email: 'nagarajags@rvce.edu.in',
   },
   {
@@ -29,7 +29,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Telecommunication Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/ROJA-REDDY-B-1-scaled.jpg',
     email: 'rojareddyb@rvce.edu.in',
   },
   {
@@ -37,7 +37,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Biotechnology',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://media.licdn.com/dms/image/v2/C4D03AQFk7I-yUbP2Yw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1525080967529?e=1788393600&v=beta&t=miU3gI8qo0bRYOFDOu0AmzQmjmlLXxTR8dA4_9AoqtM',
     email: 'sumathram@rvce.edu.in',
   },
   {
@@ -45,7 +45,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Biotechnology',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://i1.rgstatic.net/ii/profile.image/272536361500694-1441989140423_Q128/Narendra-Sura.jpg',
     email: 'narendraks@rvce.edu.in',
   },
   {
@@ -53,7 +53,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Communication Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/MAHESH-A-1-2-scaled.jpg',
     email: 'mahesha@rvce.edu.in',
   },
   {
@@ -61,7 +61,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Computer Science and Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/MOHANA-1-1638x2048.jpg',
     email: 'mohana@rvce.edu.in',
   },
   {
@@ -69,7 +69,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Communication Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/ROHINI-S-HALLIKAR-1-scaled.jpg',
     email: 'rohinish@rvce.edu.in',
   },
   {
@@ -77,7 +77,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Industrial Engineering and Management',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/VIJAY-KUMAR-M-N-1-scaled.jpg',
     email: 'vijayakumar@rvce.edu.in',
   },
   {
@@ -85,7 +85,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electrical and Electronics Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/KARIYAPPA-B-S-1-1638x2048.jpg',
     email: 'kariyappabs@rvce.edu.in',
   },
   {
@@ -93,7 +93,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Communication Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SHYLASHREE-N-1-scaled.jpg',
     email: '',
   },
   {
@@ -101,7 +101,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Communication Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SRIVIDYA-P-1-1638x2048.jpg',
     email: 'srividyap@rvce.edu.in',
   },
   {
@@ -109,7 +109,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Instrumentation Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/ANAND-JATTI-EIE-1638x2048.jpg',
     email: 'anandjatti@rvce.edu.in',
   },
   {
@@ -117,7 +117,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Mechanical Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=F5E3niYAAAAJ&citpid=2',
     email: '',
   },
   {
