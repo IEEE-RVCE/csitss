@@ -125,7 +125,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electronics and Communication Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/JAYANTHI-P-N-1-1638x2048.jpg',
     email: 'jayanthipn@rvce.edu.in',
   },
   {
@@ -133,7 +133,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electrical and Electronics Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SUJATHA-BADIGER-D-1-1638x2048.jpg',
     email: 'sujathadb@rvce.edu.in',
   },
   {
@@ -141,7 +141,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Artificial Intelligence & Machine Learning',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SOMESH-NANDI-S-1638x2048.jpg',
     email: '',
   },
   {
@@ -149,7 +149,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Electrical and Electronics Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://media.licdn.com/dms/image/v2/C5103AQFVIsdaFU_3KQ/profile-displayphoto-shrink_400_400-alternative/profile-displayphoto-shrink_400_400-alternative/0/1529052510339?e=1788393600&v=beta&t=6D2W4oKZkBVMxQmJuZaSXtOBX4Qs3uK0VKKYZFBRvZw',
     email: 'rajavidya@rvce.edu.in',
   },
   {
@@ -157,7 +157,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Information Science and Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/ASHWINI-K-B-ISE-scaled.jpg',
     email: 'ashwinikb@rvce.edu.in',
   },
   {
@@ -165,7 +165,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Chemical Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/08/BASAVARAJA-R-J-CE-1638x2048.jpg',
     email: 'basavarajarj@rvce.edu.in',
   },
   {
@@ -173,7 +173,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Master of Computer Applications',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/DIVYA-T-L-1-1638x2048.jpg',
     email: 'divyatl@rvce.edu.in',
   },
   {
@@ -181,7 +181,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Physics',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SUDHA-KAMATH-1-1638x2048.jpg',
     email: 'sudhakamath@rvce.edu.in',
   },
   {
@@ -189,7 +189,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Mathematics',
     position: 'Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/NEETI-GHIYA-1-1638x2048.jpg',
     email: 'neethighiya@rvce.edu.in',
   },
   {
@@ -197,7 +197,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Master of Computer Applications',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/CHANDRANI-CHAKRABORTHY-1-1638x2048.jpg',
     email: 'chandrani@rvce.edu.in',
   },
   {
@@ -205,7 +205,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Aerospace Engineering',
     position: 'Asst. Prof(Sr. Scale)',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/08/BENJAMIN-ROHIT-1-scaled.jpg',
     email: 'benjaminr@rvce.edu.in',
   },
   {
@@ -213,7 +213,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Civil Engineering',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/ARCHANA-M-R-1-1638x2048.jpg',
     email: 'archanamr@rvce.edu.in',
   },
   {
@@ -221,7 +221,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Master of Computer Applications',
     position: 'Assistant Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/RASHMI-R-ISE-scaled.jpg',
     email: 'rashmir@rvce.edu.in',
   },
   {
@@ -229,7 +229,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Information Science and Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/KAVITHA-S-N-ISE-scaled.jpg',
     email: '',
   },
   {
@@ -237,7 +237,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Mechanical Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://media.licdn.com/dms/image/v2/C4D03AQHFDe8U4KbXpA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1607176244153?e=1788393600&v=beta&t=ggl_2kp3p0WeKaEnsZ65xn1MuMrhfLTi2GmI6UgO7tc',
     email: '',
   },
   {
@@ -245,7 +245,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Computer Science and Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/AZRA-NASREEN-1-scaled.jpg',
     email: 'azranasreen@rvce.edu.in',
   },
   {
@@ -253,7 +253,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Computer Science and Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/PAVITHRA-H-1-scaled.jpg',
     email: 'pavithrah@rvce.edu.in',
   },
   {
@@ -261,7 +261,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Computer Science and Engineering',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/SINDHU-D-V-1-scaled.jpg',
     email: 'sindhudv@rvce.edu.in',
   },
 
@@ -279,7 +279,7 @@ const technical_committee_data = [
     post: 'Technical Committee Members',
     department: 'Artificial Intelligence and Machine Learning',
     position: 'Associate Professor',
-    imgLink: '',
+    imgLink: 'https://rvce.edu.in/department/wp-content/uploads/2025/07/ANUPAMA-KUMAR-S-MCA-1-1638x2048.jpg',
     email: 'anupamakumar@rvce.edu.in',
   },
 ]
