@@ -87,23 +87,78 @@ export default function Index() {
                 </div>
               </div>
 
-              {/* Action Buttons Row */}
-              <div className="flex flex-wrap items-center gap-3 mt-1">
-                <a
-                  href="https://cmt3.research.microsoft.com/ICSITSS2026"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.2)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.3)] transition-all duration-200"
-                >
-                  Submit your paper
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
+              {/* Action Buttons & Registration Section */}
+              <div className="space-y-3 mt-1">
+                {/* Primary Hero Actions */}
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://cmt3.research.microsoft.com/ICSITSS2026"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.25)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.35)] hover:-translate-y-0.5 transition-all duration-200"
+                  >
+                    <span>Submit your paper</span>
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
 
-                <a href="#timeline" className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/[0.08] text-slate-200 text-sm font-semibold shadow-sm hover:shadow transition-all duration-200">
-                  View timeline
-                </a>
+                  <a
+                    href="#timeline"
+                    className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/[0.08] hover:border-white/20 text-slate-200 text-sm font-semibold shadow-sm hover:shadow hover:-translate-y-0.5 transition-all duration-200"
+                  >
+                    View timeline
+                  </a>
+                </div>
+
+                {/* Highlighted Registrations Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <a
+                    href="https://forms.gle/DQdoXm7TjP6UYsGU9"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group relative flex items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400/60 shadow-[0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_24px_rgba(16,185,129,0.22)] hover:-translate-y-0.5 transition-all duration-200"
+                  >
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="relative flex h-2.5 w-2.5 shrink-0">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                      </span>
+                      <div className="min-w-0">
+                        <span className="block text-xs sm:text-sm font-extrabold uppercase tracking-wider text-emerald-400 font-sans leading-tight">
+                          Registration
+                        </span>
+                        <span className="block text-xs sm:text-sm font-semibold text-slate-100 group-hover:text-emerald-300 transition-colors truncate mt-0.5">
+                          For Paper Presentation
+                        </span>
+                      </div>
+                    </div>
+                    <ChevronRight className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300 group-hover:translate-x-0.5 transition-all shrink-0" />
+                  </a>
+
+                  <a
+                    href="https://forms.gle/F7FfMhY64BStsyjK7"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group relative flex items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-fuchsia-500/10 hover:bg-fuchsia-500/15 border border-fuchsia-500/30 hover:border-fuchsia-400/60 shadow-[0_0_15px_rgba(217,70,239,0.12)] hover:shadow-[0_0_24px_rgba(217,70,239,0.22)] hover:-translate-y-0.5 transition-all duration-200"
+                  >
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="relative flex h-2.5 w-2.5 shrink-0">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-fuchsia-500"></span>
+                      </span>
+                      <div className="min-w-0">
+                        <span className="block text-xs sm:text-sm font-extrabold uppercase tracking-wider text-fuchsia-400 font-sans leading-tight">
+                          Registration
+                        </span>
+                        <span className="block text-xs sm:text-sm font-semibold text-slate-100 group-hover:text-fuchsia-300 transition-colors truncate mt-0.5">
+                          For PhD Thesis
+                        </span>
+                      </div>
+                    </div>
+                    <ChevronRight className="w-4 h-4 text-fuchsia-400 group-hover:text-fuchsia-300 group-hover:translate-x-0.5 transition-all shrink-0" />
+                  </a>
+                </div>
               </div>
             </div>
 
