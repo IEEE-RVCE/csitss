@@ -117,46 +117,46 @@ export default function Index() {
                     href="https://forms.gle/DQdoXm7TjP6UYsGU9"
                     target="_blank"
                     rel="noreferrer"
-                    className="group relative flex items-center justify-between gap-3 px-4 py-2.5 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400/60 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:shadow-[0_0_22px_rgba(16,185,129,0.2)] hover:-translate-y-0.5 transition-all duration-200"
+                    className="group relative flex items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400/60 shadow-[0_0_15px_rgba(16,185,129,0.12)] hover:shadow-[0_0_24px_rgba(16,185,129,0.22)] hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <span className="relative flex h-2 w-2 shrink-0">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="relative flex h-2.5 w-2.5 shrink-0">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                       </span>
                       <div className="min-w-0">
-                        <span className="block text-[9px] font-bold uppercase tracking-wider text-emerald-400/90 font-sans leading-none mb-1">
+                        <span className="block text-xs sm:text-sm font-extrabold uppercase tracking-wider text-emerald-400 font-sans leading-tight">
                           Registration
                         </span>
-                        <span className="block text-xs sm:text-sm font-semibold text-white group-hover:text-emerald-300 transition-colors truncate">
+                        <span className="block text-xs sm:text-sm font-semibold text-slate-100 group-hover:text-emerald-300 transition-colors truncate mt-0.5">
                           For Paper Presentation
                         </span>
                       </div>
                     </div>
-                    <ChevronRight className="w-4 h-4 text-emerald-400/80 group-hover:text-emerald-300 group-hover:translate-x-0.5 transition-all shrink-0" />
+                    <ChevronRight className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300 group-hover:translate-x-0.5 transition-all shrink-0" />
                   </a>
 
                   <a
                     href="https://forms.gle/F7FfMhY64BStsyjK7"
                     target="_blank"
                     rel="noreferrer"
-                    className="group relative flex items-center justify-between gap-3 px-4 py-2.5 rounded-2xl bg-fuchsia-500/10 hover:bg-fuchsia-500/15 border border-fuchsia-500/30 hover:border-fuchsia-400/60 shadow-[0_0_15px_rgba(217,70,239,0.1)] hover:shadow-[0_0_22px_rgba(217,70,239,0.2)] hover:-translate-y-0.5 transition-all duration-200"
+                    className="group relative flex items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-fuchsia-500/10 hover:bg-fuchsia-500/15 border border-fuchsia-500/30 hover:border-fuchsia-400/60 shadow-[0_0_15px_rgba(217,70,239,0.12)] hover:shadow-[0_0_24px_rgba(217,70,239,0.22)] hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <span className="relative flex h-2 w-2 shrink-0">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="relative flex h-2.5 w-2.5 shrink-0">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-fuchsia-500"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-fuchsia-500"></span>
                       </span>
                       <div className="min-w-0">
-                        <span className="block text-[9px] font-bold uppercase tracking-wider text-fuchsia-400/90 font-sans leading-none mb-1">
+                        <span className="block text-xs sm:text-sm font-extrabold uppercase tracking-wider text-fuchsia-400 font-sans leading-tight">
                           Registration
                         </span>
-                        <span className="block text-xs sm:text-sm font-semibold text-white group-hover:text-fuchsia-300 transition-colors truncate">
+                        <span className="block text-xs sm:text-sm font-semibold text-slate-100 group-hover:text-fuchsia-300 transition-colors truncate mt-0.5">
                           For PhD Thesis
                         </span>
                       </div>
                     </div>
-                    <ChevronRight className="w-4 h-4 text-fuchsia-400/80 group-hover:text-fuchsia-300 group-hover:translate-x-0.5 transition-all shrink-0" />
+                    <ChevronRight className="w-4 h-4 text-fuchsia-400 group-hover:text-fuchsia-300 group-hover:translate-x-0.5 transition-all shrink-0" />
                   </a>
                 </div>
               </div>
