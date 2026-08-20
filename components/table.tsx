@@ -23,18 +23,18 @@ const pricingRows = [
     regularNonIeee: '₹15930/$240',
   },
   {
-    label: 'Best Ph.D Thesis Presentation',
-    earlyIeee: '₹1180',
-    earlyNonIeee: '₹2360',
-    regularIeee: '-',
-    regularNonIeee: '-',
+  label: 'Best Ph.D Thesis Presentation',
+  earlyIeee: '-',
+  earlyNonIeee: '-',
+  regularIeee: '₹1180',
+  regularNonIeee: '₹2360',
   },
   {
-    label: '*Listener/Attendee Fee',
-    earlyIeee: '₹1180',
-    earlyNonIeee: '₹2360',
-    regularIeee: '-',
-    regularNonIeee: '-',
+  label: '*Listener/Attendee Fee',
+  earlyIeee: '-',
+  earlyNonIeee: '-',
+  regularIeee: '₹1180',
+  regularNonIeee: '₹2360',
   },
 ]
 
@@ -72,7 +72,7 @@ function Table() {
                 >
                   Early Bird
                   <div className="text-[11px] font-medium text-emerald-500/70 normal-case tracking-normal mt-0.5">
-                    On or before <span className="font-bold text-emerald-300">05<sup>th</sup>September</span>
+                    On or before <span className="font-bold text-emerald-300">5<sup>th</sup> September, 2026</span>
                   </div>
                 </th>
                 <th
@@ -80,6 +80,9 @@ function Table() {
                   className="border-b border-white/[0.06] bg-sky-950/60 px-4 py-3 text-center text-xs font-bold uppercase tracking-wider text-sky-400"
                 >
                   Regular Registration
+                  <div className="text-[11px] font-medium text-sky-500/70 normal-case tracking-normal mt-0.5">
+                    On or before <span className="font-bold text-sky-300">26<sup>th</sup> September, 2026</span>
+                  </div>
                 </th>
               </tr>
               <tr className="text-center">
