@@ -27,10 +27,21 @@ export default function Index() {
               </div>
 
               {/* Serif Title */}
-              <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[36px] leading-[1.15] text-white tracking-tight font-medium mb-3">
+              {/* <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[36px] leading-[1.15] text-white tracking-tight font-medium mb-3">
                 Computational Systems &amp; <br />
                 Information Technology for <br />
                 <span className="font-serif italic bg-gradient-to-r from-cyan-400 via-violet-400 to-sky-400 bg-clip-text text-transparent font-semibold pr-1">Sustainable Solutions.</span>
+              </h1> */}
+
+              <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[36px] leading-[1.15] text-white tracking-tight font-medium mb-3">
+                Computational Systems &amp; <br />
+                Information Technology for <br />
+                <span className="font-serif italic bg-gradient-to-r from-cyan-400 via-violet-400 to-sky-400 bg-clip-text text-transparent font-semibold pr-1 whitespace-nowrap">
+                  Sustainable Solutions.
+                </span>
+                <span className="font-sans text-[9px] sm:text-[10px] font-sans tracking-[0.2em] text-violet-400 uppercase ml-2 whitespace-nowrap">
+                  IEEE Conference ID #71124
+                </span>
               </h1>
 
               {/* Highlighted Description */}
