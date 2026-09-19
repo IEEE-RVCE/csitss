@@ -83,6 +83,16 @@ const speakers: SpeakerMessage[] = [
         I am very much looking forward to inspiring discussions, new connections, and perhaps the beginning of future undertakings.
       </span>
     ]
+  },
+  {
+    id: 4,
+    name: 'Prof. Dr.-Ing. Vinod Rajamani',
+    designation: 'Vice Dean Academics and Internationalisation',
+    institution: 'Mechanical Engineering, Fachhochschule Dortmund',
+    image: '/speakers/vinod.png',
+    paragraphs: [
+      <span key="4_1">This is the third year in succession that I am privileged to attend the CSITSS conference. FH Dortmund is honoured to have been once again invited by our{' '}<span className="text-cyan-300 font-semibold">strategic partner</span>, R.V. College of Engineering to be a co-organiser of this conference. CSITSS has established itself as a permanent anchor point in the calendars of academia and industry. This has been achieved through its{' '}<span className="text-violet-300 font-semibold">highly scientific presentations</span>, as well as the{' '}<span className="text-sky-300 font-semibold">immersive experience</span>{' '}that participants receive. It also deserves a special mention that a complete stream has been dedicated to{' '}<span className="text-cyan-300 font-semibold">sustainability</span>. The organisation of the conference is well thought through and efficient making the CSITSS a very professional and reputed conference. I wish all the participants a fantastic learning experience and hope many{' '}<span className="text-violet-300 font-semibold">new connections</span>{' '}are made between the participants.</span>
+    ]
   }
 ]
 
