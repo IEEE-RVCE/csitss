@@ -1,7 +1,12 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, ChevronRight, MessageSquare, ChevronDown } from 'lucide-react'
+import {
+  ChevronLeft,
+  ChevronRight,
+  MessageSquare,
+  ChevronDown,
+} from 'lucide-react'
 
 interface SpeakerMessage {
   id: number
@@ -14,50 +19,48 @@ interface SpeakerMessage {
 
 const speakers: SpeakerMessage[] = [
   {
-    id: 1,
-    name: 'Prof. Dr.-Ing. Martin Versen',
-    designation: '',
-    institution: 'Technische Hochschule Rosenheim, Germany',
-    image: '/speakers/foreign/Martin_Versen.png',
-    paragraphs: [
-      <span key="1_1">To the IEEE CSITSS Organizers and Participants,</span>,
-      <span key="1_2">
-        From the Faculty of Engineering at Technische Hochschule Rosenheim — and especially from our Fluorescence Measurement Technology lab — we send our warmest regards.
-      </span>,
-      <span key="1_3">
-        We develop real-time AI systems to classify subtle optical signals — a field deeply aligned with your themes of{' '}
-        <span className="text-cyan-300 font-semibold">Sustainable Environment and Circular Economy</span>,{' '}
-        <span className="text-violet-300 font-semibold">Artificial Intelligence Systems</span>, and{' '}
-        <span className="text-sky-300 font-semibold">Data Analytics and Intelligent Decision Systems</span>. We&apos;re excited to exchange ideas, learn from your innovations, and build global connections that turn research into impact.
-      </span>,
-      <span key="1_4" className="italic">
-        Looking forward to connecting, collaborating, and co-creating the future — together.
-      </span>
-    ]
-  },
-  {
     id: 2,
     name: 'Andreas Doleschel',
     designation: 'Dean of the Faculty of Engineering and Management',
     institution: 'Technische Hochschule Rosenheim, Germany',
     image: '/speakers/foreign/Andreas_Doleschel.png',
     paragraphs: [
-      <span key="2_1" className="font-bold text-cyan-300">The 2026 edition of CSITSS,</span>,
-      <span key="2_2">Dear organising team, dear participants, dear researchers,</span>,
+      <span key="2_1" className="font-bold text-cyan-300">
+        The 2026 edition of CSITSS,
+      </span>,
+      <span key="2_2">
+        Dear organising team, dear participants, dear researchers,
+      </span>,
       <span key="2_3">
-        CSITSS is an outstanding event that brings together a wide range of stakeholders. The spirit of{' '}
-        <span className="text-cyan-300 font-semibold">collaboration</span>, the exchange of{' '}
-        <span className="text-violet-300 font-semibold">cutting-edge research results</span>, insights into ongoing activities, and the valuable interactions beyond the formal presentations are essential for driving innovation and progress.
+        CSITSS is an outstanding event that brings together a wide range of
+        stakeholders. The spirit of{' '}
+        <span className="text-cyan-300 font-semibold">collaboration</span>, the
+        exchange of{' '}
+        <span className="text-violet-300 font-semibold">
+          cutting-edge research results
+        </span>
+        , insights into ongoing activities, and the valuable interactions beyond
+        the formal presentations are essential for driving innovation and
+        progress.
       </span>,
       <span key="2_4">
-        In today&apos;s increasingly complex world, collaboration is more important than ever. Bringing together researchers and industry partners, combining{' '}
-        <span className="text-sky-300 font-semibold">academic ideas with practical applications</span> and innovative products, is a powerful driver for growth and{' '}
-        <span className="text-cyan-300 font-semibold">technological advancement</span>.
+        In today&apos;s increasingly complex world, collaboration is more
+        important than ever. Bringing together researchers and industry
+        partners, combining{' '}
+        <span className="text-sky-300 font-semibold">
+          academic ideas with practical applications
+        </span>{' '}
+        and innovative products, is a powerful driver for growth and{' '}
+        <span className="text-cyan-300 font-semibold">
+          technological advancement
+        </span>
+        .
       </span>,
       <span key="2_5">
-        I am delighted to be part of this community and to share ideas and experiences with you.
-      </span>
-    ]
+        I am delighted to be part of this community and to share ideas and
+        experiences with you.
+      </span>,
+    ],
   },
   {
     id: 3,
@@ -66,23 +69,40 @@ const speakers: SpeakerMessage[] = [
     institution: 'Technische Hochschule Rosenheim, Germany',
     image: '/speakers/foreign/Noah_Klarmann.png',
     paragraphs: [
-      <span key="3_1" className="font-bold text-cyan-300">To all IEEE CSITSS Participants,</span>,
+      <span key="3_1" className="font-bold text-cyan-300">
+        To all IEEE CSITSS Participants,
+      </span>,
       <span key="3_2">
-        Warm greetings from Technische Hochschule Rosenheim in Germany. I am truly delighted to be part of IEEE CSITSS and to connect with researchers, educators, and innovators from around the world.
+        Warm greetings from Technische Hochschule Rosenheim in Germany. I am
+        truly delighted to be part of IEEE CSITSS and to connect with
+        researchers, educators, and innovators from around the world.
       </span>,
       <span key="3_3">
-        As a professor and researcher in applied artificial intelligence, I am especially passionate about{' '}
-        <span className="text-cyan-300 font-semibold">reinforcement learning</span>,{' '}
-        <span className="text-violet-300 font-semibold">intelligent decision-making</span>, and{' '}
-        <span className="text-sky-300 font-semibold">AI agents</span>. My work focuses on bringing these technologies out of the laboratory and into real-world industrial environments, where they can help solve complex problems, support people, and create meaningful impact.
+        As a professor and researcher in applied artificial intelligence, I am
+        especially passionate about{' '}
+        <span className="text-cyan-300 font-semibold">
+          reinforcement learning
+        </span>
+        ,{' '}
+        <span className="text-violet-300 font-semibold">
+          intelligent decision-making
+        </span>
+        , and <span className="text-sky-300 font-semibold">AI agents</span>. My
+        work focuses on bringing these technologies out of the laboratory and
+        into real-world industrial environments, where they can help solve
+        complex problems, support people, and create meaningful impact.
       </span>,
       <span key="3_4">
-        What excites me most about conferences like IEEE CSITSS is the opportunity to exchange ideas across disciplines and cultures. I look forward to learning from your work, sharing experiences from my own research, and exploring new possibilities for collaboration.
+        What excites me most about conferences like IEEE CSITSS is the
+        opportunity to exchange ideas across disciplines and cultures. I look
+        forward to learning from your work, sharing experiences from my own
+        research, and exploring new possibilities for collaboration.
       </span>,
       <span key="3_5" className="italic">
-        I am very much looking forward to inspiring discussions, new connections, and perhaps the beginning of future undertakings.
-      </span>
-    ]
+        I am very much looking forward to inspiring discussions, new
+        connections, and perhaps the beginning of future undertakings.
+      </span>,
+    ],
   },
   {
     id: 4,
@@ -91,9 +111,30 @@ const speakers: SpeakerMessage[] = [
     institution: 'Mechanical Engineering, Fachhochschule Dortmund',
     image: '/speakers/vinod.png',
     paragraphs: [
-      <span key="4_1">This is the third year in succession that I am privileged to attend the CSITSS conference. FH Dortmund is honoured to have been once again invited by our{' '}<span className="text-cyan-300 font-semibold">strategic partner</span>, R.V. College of Engineering to be a co-organiser of this conference. CSITSS has established itself as a permanent anchor point in the calendars of academia and industry. This has been achieved through its{' '}<span className="text-violet-300 font-semibold">highly scientific presentations</span>, as well as the{' '}<span className="text-sky-300 font-semibold">immersive experience</span>{' '}that participants receive. It also deserves a special mention that a complete stream has been dedicated to{' '}<span className="text-cyan-300 font-semibold">sustainability</span>. The organisation of the conference is well thought through and efficient making the CSITSS a very professional and reputed conference. I wish all the participants a fantastic learning experience and hope many{' '}<span className="text-violet-300 font-semibold">new connections</span>{' '}are made between the participants.</span>
-    ]
-  }
+      <span key="4_1">
+        This is the third year in succession that I am privileged to attend the
+        CSITSS conference. FH Dortmund is honoured to have been once again
+        invited by our{' '}
+        <span className="text-cyan-300 font-semibold">strategic partner</span>,
+        R.V. College of Engineering to be a co-organiser of this conference.
+        CSITSS has established itself as a permanent anchor point in the
+        calendars of academia and industry. This has been achieved through its{' '}
+        <span className="text-violet-300 font-semibold">
+          highly scientific presentations
+        </span>
+        , as well as the{' '}
+        <span className="text-sky-300 font-semibold">immersive experience</span>{' '}
+        that participants receive. It also deserves a special mention that a
+        complete stream has been dedicated to{' '}
+        <span className="text-cyan-300 font-semibold">sustainability</span>. The
+        organisation of the conference is well thought through and efficient
+        making the CSITSS a very professional and reputed conference. I wish all
+        the participants a fantastic learning experience and hope many{' '}
+        <span className="text-violet-300 font-semibold">new connections</span>{' '}
+        are made between the participants.
+      </span>,
+    ],
+  },
 ]
 
 export default function SpeakerSlideshow() {
@@ -141,7 +182,9 @@ export default function SpeakerSlideshow() {
     const container = isMobile ? bottomRowRef.current : textContainerRef.current
     if (container) {
       const hasMore = container.scrollHeight > container.clientHeight
-      const isAtBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 10
+      const isAtBottom =
+        container.scrollHeight - container.scrollTop - container.clientHeight <
+        10
       setHasMoreContent(hasMore && !isAtBottom)
     }
   }
@@ -161,7 +204,8 @@ export default function SpeakerSlideshow() {
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const container = e.currentTarget
     const hasMore = container.scrollHeight > container.clientHeight
-    const isAtBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 10
+    const isAtBottom =
+      container.scrollHeight - container.scrollTop - container.clientHeight < 10
     setHasMoreContent(hasMore && !isAtBottom)
   }
 
@@ -169,7 +213,10 @@ export default function SpeakerSlideshow() {
   if (!isMounted) {
     const defaultSpeaker = speakers[0]
     return (
-      <div className="h-[520px] md:h-[480px] bg-gradient-to-br from-[#0e1525] via-[#111a30] to-[#0d1828] border border-violet-400/20 shadow-[0_8px_40px_rgba(139,92,246,0.1)] rounded-3xl overflow-hidden flex flex-col relative" data-lenis-prevent>
+      <div
+        className="h-[520px] md:h-[480px] bg-gradient-to-br from-[#0e1525] via-[#111a30] to-[#0d1828] border border-violet-400/20 shadow-[0_8px_40px_rgba(139,92,246,0.1)] rounded-3xl overflow-hidden flex flex-col relative"
+        data-lenis-prevent
+      >
         {/* Background glows */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/6 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-36 h-36 bg-cyan-500/5 rounded-full blur-2xl pointer-events-none" />
@@ -181,11 +228,17 @@ export default function SpeakerSlideshow() {
             Message from Speaker
           </div>
           <div>
-            <p className="text-sm sm:text-base font-bold text-white leading-tight">{defaultSpeaker.name}</p>
+            <p className="text-sm sm:text-base font-bold text-white leading-tight">
+              {defaultSpeaker.name}
+            </p>
             {defaultSpeaker.designation && (
-              <p className="text-[11px] sm:text-xs font-semibold text-slate-400 mt-0.5 leading-snug">{defaultSpeaker.designation}</p>
+              <p className="text-[11px] sm:text-xs font-semibold text-slate-400 mt-0.5 leading-snug">
+                {defaultSpeaker.designation}
+              </p>
             )}
-            <p className="text-xs sm:text-sm font-semibold text-slate-200 mt-0.5 leading-snug">{defaultSpeaker.institution}</p>
+            <p className="text-xs sm:text-sm font-semibold text-slate-200 mt-0.5 leading-snug">
+              {defaultSpeaker.institution}
+            </p>
           </div>
         </div>
 
@@ -201,11 +254,18 @@ export default function SpeakerSlideshow() {
           </div>
           <div className="flex-1 flex flex-col min-w-0 min-h-0 relative">
             <div className="relative flex-1 overflow-y-visible md:overflow-y-auto custom-scrollbar pr-1">
-              <svg className="w-4 h-4 text-violet-400/25 mb-0.5" fill="currentColor" viewBox="0 0 32 32">
+              <svg
+                className="w-4 h-4 text-violet-400/25 mb-0.5"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+              >
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               {defaultSpeaker.paragraphs.map((p, idx) => (
-                <p key={idx} className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify">
+                <p
+                  key={idx}
+                  className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify"
+                >
                   {p}
                 </p>
               ))}
@@ -234,7 +294,7 @@ export default function SpeakerSlideshow() {
       transition: {
         opacity: { duration: 0.4, ease: 'easeOut' as const },
         x: { duration: 0.4, ease: 'easeOut' as const },
-      }
+      },
     },
     exit: (dir: number) => ({
       opacity: 0,
@@ -243,8 +303,8 @@ export default function SpeakerSlideshow() {
       transition: {
         opacity: { duration: 0.3, ease: 'easeIn' as const },
         x: { duration: 0.3, ease: 'easeIn' as const },
-      }
-    })
+      },
+    }),
   }
 
   return (
@@ -278,11 +338,17 @@ export default function SpeakerSlideshow() {
                 Message from Speaker
               </div>
               <div>
-                <p className="text-sm sm:text-base font-bold text-white leading-tight">{activeSpeaker.name}</p>
+                <p className="text-sm sm:text-base font-bold text-white leading-tight">
+                  {activeSpeaker.name}
+                </p>
                 {activeSpeaker.designation && (
-                  <p className="text-[11px] sm:text-xs font-semibold text-slate-400 mt-0.5 leading-snug">{activeSpeaker.designation}</p>
+                  <p className="text-[11px] sm:text-xs font-semibold text-slate-400 mt-0.5 leading-snug">
+                    {activeSpeaker.designation}
+                  </p>
                 )}
-                <p className="text-xs sm:text-sm font-semibold text-slate-200 mt-0.5 leading-snug">{activeSpeaker.institution}</p>
+                <p className="text-xs sm:text-sm font-semibold text-slate-200 mt-0.5 leading-snug">
+                  {activeSpeaker.institution}
+                </p>
               </div>
             </div>
 
@@ -313,17 +379,23 @@ export default function SpeakerSlideshow() {
                   className="relative flex-1 overflow-y-visible md:overflow-y-auto custom-scrollbar pr-1"
                 >
                   {/* Tiny decorative quote mark */}
-                  <svg className="w-4 h-4 text-violet-400/25 mb-0.5" fill="currentColor" viewBox="0 0 32 32">
+                  <svg
+                    className="w-4 h-4 text-violet-400/25 mb-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 32 32"
+                  >
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
                   {activeSpeaker.paragraphs.map((p, idx) => (
-                    <p key={idx} className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify">
+                    <p
+                      key={idx}
+                      className="text-xs text-slate-300 leading-relaxed mt-1.5 text-justify"
+                    >
                       {p}
                     </p>
                   ))}
                 </div>
               </div>
-
             </div>
           </motion.div>
         </AnimatePresence>
@@ -362,7 +434,9 @@ export default function SpeakerSlideshow() {
             key={index}
             onClick={() => handleDotClick(index)}
             className={`h-1.5 rounded-full transition-all duration-300 ${
-              index === currentIndex ? 'w-5 bg-cyan-400' : 'w-1.5 bg-slate-500/60 hover:bg-slate-400'
+              index === currentIndex
+                ? 'w-5 bg-cyan-400'
+                : 'w-1.5 bg-slate-500/60 hover:bg-slate-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
