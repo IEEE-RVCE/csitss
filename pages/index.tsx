@@ -165,7 +165,7 @@ export default function Index() {
                   </a>
 
                   <Link
-                    href="/Track Wise_PaperPresentation_schedule.pdf"
+                    href="/Track_Wise_Paper Presentation_Schedule_Final.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 border border-yellow-300/70 text-slate-950 text-sm font-extrabold shadow-[0_0_22px_rgba(251,191,36,0.35)] hover:from-yellow-300 hover:via-amber-300 hover:to-orange-400 hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 transition-all duration-200"
