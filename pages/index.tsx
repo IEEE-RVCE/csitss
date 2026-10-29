@@ -134,7 +134,7 @@ export default function Index() {
               {/* Action Buttons & Registration Section */}
               <div className="space-y-3 mt-1">
                 {/* Primary Hero Actions */}
-                <div className="flex flex-wrap items-center gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 [&>a]:w-full [&>a]:justify-center [&>a]:text-center">
                   <a
                     href="https://cmt3.research.microsoft.com/ICSITSS2026"
                     target="_blank"
@@ -168,11 +168,24 @@ export default function Index() {
                     href="/Track_Wise_Paper Presentation_Schedule_Final.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 border border-yellow-300/70 text-slate-950 text-sm font-extrabold shadow-[0_0_22px_rgba(251,191,36,0.35)] hover:from-yellow-300 hover:via-amber-300 hover:to-orange-400 hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 transition-all duration-200"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 hover:from-cyan-400 hover:to-violet-400 text-white text-sm font-semibold tracking-wide shadow-[0_4px_20px_rgba(34,211,238,0.25)] hover:shadow-[0_6px_28px_rgba(34,211,238,0.35)] hover:-translate-y-0.5 transition-all duration-200"
                   >
                     <Calendar className="w-4 h-4" />
                     Schedule for Paper presentation
                   </Link>
+
+                  <a
+                    href="https://www.youtube.com/live/rXQMywsdE08?si=hqJZpTDXuQAGei45"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 border border-yellow-300/70 text-slate-950 text-sm font-extrabold shadow-[0_0_22px_rgba(251,191,36,0.35)] hover:from-yellow-300 hover:via-amber-300 hover:to-orange-400 hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 transition-all duration-200"
+                  >
+                    <span className="relative flex h-2.5 w-2.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600"></span>
+                    </span>
+                    Watch Live Stream Of Inaugration
+                  </a>
                 </div>
 
                 {/* Highlighted Registrations Grid */}
