@@ -1,17 +1,25 @@
 'use client'
 import React, { useState, useEffect, useCallback } from 'react'
 
-const imgLinks = [
-  '/gallery/image_1.webp',
-  '/gallery/image_3.webp',
-  '/gallery/image_5.webp',
-  '/gallery/image_8.webp',
-  '/gallery/image_10.webp',
-  '/gallery/image_15.webp',
-  '/gallery/image_18.webp',
-  '/gallery/image_21.webp',
-  '/gallery/image_24.webp',
-]
+type Img = { src: string; thumb: string; tag?: string }
+
+const TAG_2026 = 'CSITSS 2026'
+const new2026: Img[] = Array.from({ length: 41 }, (_, i) => {
+  const n = String(i + 1).padStart(2, '0')
+  return { src: `/gallery/2026/${n}.webp`, thumb: `/gallery/2026/thumbs/${n}.webp`, tag: TAG_2026 }
+})
+const previous: Img[] = [1, 3, 5, 8, 10, 15, 18, 21, 24].map((n) => ({
+  src: `/gallery/image_${n}.webp`,
+  thumb: `/gallery/image_${n}.webp`,
+}))
+const imgLinks: Img[] = [...new2026, ...previous]
+
+const TagBadge = ({ tag }: { tag?: string }) =>
+  tag ? (
+    <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-cyan-400/90 text-black text-[10px] font-bold tracking-widest uppercase pointer-events-none">
+      {tag}
+    </span>
+  ) : null
 
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 const Lightbox = ({
@@ -86,24 +94,14 @@ const Lightbox = ({
       >
         <img
           key={index}
-          src={imgLinks[index]}
+          src={imgLinks[index].src}
           alt={`Gallery ${index + 1}`}
           className="max-w-[88vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl select-none"
           draggable={false}
         />
       </div>
 
-      {/* Dot strip */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
-        {imgLinks.map((_, i) => (
-          <span
-            key={i}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              i === index ? 'w-5 bg-white' : 'w-1.5 bg-white/30'
-            }`}
-          />
-        ))}
-      </div>
+      <div className="absolute top-5 left-5"><TagBadge tag={imgLinks[index].tag} /></div>
     </div>
   )
 }
@@ -130,9 +128,12 @@ const Gallery = () => {
   const nextLight = useCallback(() =>
     setLightboxIndex((i) => (i === null ? 0 : (i + 1) % imgLinks.length)), [])
 
+  const n = imgLinks.length
+  const isNear = (i: number) => [heroIndex, (heroIndex + 1) % n, (heroIndex - 1 + n) % n].includes(i)
+
   // 6 tiles = all images except current hero
   const gridImages = imgLinks
-    .map((src, i) => ({ src, i }))
+    .map((img, i) => ({ ...img, i }))
     .filter(({ i }) => i !== heroIndex)
     .slice(0, 6)
 
@@ -162,26 +163,26 @@ const Gallery = () => {
 
       {/* ── Desktop grid: explicit CSS template ── */}
       {/*
-        gridTemplateColumns: 2fr 1fr 1fr 1fr  →  hero (2fr) + 3 cols of tiles (1fr each)
-        gridTemplateRows:    1fr 1fr           →  2 equal rows → 6 tiles total
-        Hero spans rows 1-2 in column 1.
-        6 tiles auto-place into cols 2-4, rows 1-2.
+        gridTemplateColumns: 2.2fr 1fr 1fr  →  hero + 2 cols of tiles
+        gridTemplateRows:    repeat(3, 1fr)   →  3 rows → 6 tiles total
+        Hero spans rows 1-3 in column 1.
+        6 tiles auto-place into cols 2-3, rows 1-3.
       */}
       <div
         className="hidden md:grid gap-3"
         style={{
-          gridTemplateColumns: '2fr 1fr 1fr 1fr',
-          gridTemplateRows: '1fr 1fr',
-          height: '420px',
+          gridTemplateColumns: '2.2fr 1fr 1fr',
+          gridTemplateRows: 'repeat(3, 1fr)',
+          height: 'clamp(440px, 46vw, 620px)',
         }}
       >
         {/* Hero */}
         <div
           className="relative overflow-hidden rounded-2xl cursor-pointer group"
-          style={{ gridColumn: '1', gridRow: '1 / 3' }}
+          style={{ gridColumn: '1', gridRow: '1 / 4' }}
           onClick={() => openLightbox(heroIndex)}
         >
-          {imgLinks.map((src, i) => (
+          {imgLinks.map(({ src }, i) => isNear(i) && (
             <img
               key={src}
               src={src}
@@ -206,31 +207,31 @@ const Gallery = () => {
             )}
           </button>
 
-          {/* Dot progress */}
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1 z-10 pointer-events-none">
-            {imgLinks.map((_, i) => (
-              <span
-                key={i}
-                className={`h-1 rounded-full transition-all duration-500 ${
-                  i === heroIndex ? 'w-5 bg-white' : 'w-1.5 bg-white/40'
-                }`}
-              />
-            ))}
+          <TagBadge tag={imgLinks[heroIndex].tag} />
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-white/80 text-[11px] font-semibold tracking-widest z-10 pointer-events-none">
+            {heroIndex + 1} / {n}
           </div>
         </div>
 
-        {/* 6 tiles — auto-placed into cols 2-4 × rows 1-2 */}
-        {gridImages.map(({ src, i }) => (
+        {/* 6 tiles — auto-placed into cols 2-3 × rows 1-3 */}
+        {gridImages.map(({ src, thumb, tag, i }, k) => (
           <div
             key={src}
             className="relative overflow-hidden rounded-2xl cursor-pointer group"
             onClick={() => openLightbox(i)}
           >
             <img
-              src={src}
+              src={thumb}
+              loading="lazy"
               alt={`Gallery ${i + 1}`}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
+            <TagBadge tag={tag} />
+            {k === gridImages.length - 1 && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/55 text-white text-lg font-semibold">
+                +{n - 7} more
+              </div>
+            )}
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
           </div>
         ))}
@@ -240,10 +241,10 @@ const Gallery = () => {
       <div className="md:hidden">
         <div
           className="relative w-full overflow-hidden rounded-2xl cursor-pointer mb-3"
-          style={{ height: '260px' }}
+          style={{ height: 'clamp(240px, 62vw, 420px)' }}
           onClick={() => openLightbox(heroIndex)}
         >
-          {imgLinks.map((src, i) => (
+          {imgLinks.map(({ src }, i) => isNear(i) && (
             <img
               key={src}
               src={src}
@@ -254,17 +255,18 @@ const Gallery = () => {
             />
           ))}
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
+          <TagBadge tag={imgLinks[heroIndex].tag} />
         </div>
         <div className="flex gap-2 overflow-x-auto pb-1">
-          {imgLinks.map((src, i) => (
+          {imgLinks.map(({ thumb }, i) => (
             <button
-              key={src}
-              className={`flex-shrink-0 w-20 h-16 rounded-xl overflow-hidden border-2 transition-all duration-200 ${
+              key={thumb}
+              className={`flex-shrink-0 w-24 h-[72px] rounded-xl overflow-hidden border-2 transition-all duration-200 ${
                 i === heroIndex ? 'border-[#ff7b65] scale-105' : 'border-transparent opacity-70'
               }`}
               onClick={() => { setHeroIndex(i); openLightbox(i) }}
             >
-              <img src={src} alt={`Thumb ${i + 1}`} className="w-full h-full object-cover" />
+              <img src={thumb} loading="lazy" alt={`Thumb ${i + 1}`} className="w-full h-full object-cover" />
             </button>
           ))}
         </div>
