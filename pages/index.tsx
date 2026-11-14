@@ -180,11 +180,8 @@ export default function Index() {
                     rel="noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 border border-yellow-300/70 text-slate-950 text-sm font-extrabold shadow-[0_0_22px_rgba(251,191,36,0.35)] hover:from-yellow-300 hover:via-amber-300 hover:to-orange-400 hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    <span className="relative flex h-2.5 w-2.5 shrink-0">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600"></span>
-                    </span>
-                    Watch Live Stream Of Inaugration
+
+                    Watch Inaugration Video
                   </a>
                 </div>
 
@@ -609,8 +606,10 @@ export default function Index() {
           }
         `}</style>
 
-        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-8">
           <Gallery />
+        </div>
+        <div className="mx-auto max-w-5xl px-4 pb-10 sm:px-6 lg:px-8">
           {/* Microsoft CMT note — golden finish */}
           <div className="mt-8 rounded-2xl border border-amber-400/25 bg-[#1e1508] px-6 py-5 shadow-[0_4px_24px_rgba(251,191,36,0.08)]">
             <div className="flex items-start gap-2.5 mb-3 justify-between">

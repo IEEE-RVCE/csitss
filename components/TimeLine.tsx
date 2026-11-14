@@ -5,7 +5,8 @@ import { Calendar, CheckCircle2, Clock, Circle, Award, Dot } from 'lucide-react'
 // ── helpers ──────────────────────────────────────────────────────────────────
 
 function parseDate(raw: string): Date | null {
-  const cleaned = raw.replace(/(\d+)(st|nd|rd|th)/gi, '$1')
+  // "30th and 31st October 2026" → use the last day of the range
+  const cleaned = raw.replace(/\d+(st|nd|rd|th)\s+and\s+/i, '').replace(/(\d+)(st|nd|rd|th)/gi, '$1')
   const d = new Date(cleaned)
   return isNaN(d.getTime()) ? null : d
 }
