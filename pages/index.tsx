@@ -17,6 +17,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import SpeakerSlideshow from '../components/SpeakerSlideshow'
+import GlimpsesSlideshow from '../components/GlimpsesSlideshow'
 
 export default function Index() {
   return (
@@ -183,6 +184,7 @@ export default function Index() {
 
                     Watch Inaugration Video
                   </a>
+
                 </div>
 
                 {/* Highlighted Registrations Grid */}
@@ -402,6 +404,8 @@ export default function Index() {
             <SpeakerSlideshow />
           </div>
         </div>
+
+        <GlimpsesSlideshow />
 
         {/* ── IEEE Publication Banner ─────────────────────────────────────── */}
         <section className="mx-auto max-w-4xl px-4 pt-10 sm:px-6 lg:px-8">
