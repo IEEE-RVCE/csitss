@@ -1,10 +1,10 @@
 'use client'
 import React, { useState, useEffect, useCallback } from 'react'
 
-type Img = { src: string; thumb: string; tag?: string }
+export type Img = { src: string; thumb: string; tag?: string }
 
 const TAG_2026 = 'CSITSS 2026'
-const new2026: Img[] = Array.from({ length: 41 }, (_, i) => {
+export const new2026: Img[] = Array.from({ length: 41 }, (_, i) => {
   const n = String(i + 1).padStart(2, '0')
   return { src: `/gallery/2026/${n}.webp`, thumb: `/gallery/2026/thumbs/${n}.webp`, tag: TAG_2026 }
 })
@@ -22,12 +22,14 @@ const TagBadge = ({ tag }: { tag?: string }) =>
   ) : null
 
 // ── Lightbox ──────────────────────────────────────────────────────────────────
-const Lightbox = ({
+export const Lightbox = ({
+  imgs,
   index,
   onClose,
   onPrev,
   onNext,
 }: {
+  imgs: Img[]
   index: number
   onClose: () => void
   onPrev: () => void
@@ -51,7 +53,7 @@ const Lightbox = ({
     >
       {/* Counter */}
       <div className="absolute top-5 left-1/2 -translate-x-1/2 text-white/60 text-xs font-semibold tracking-widest select-none pointer-events-none">
-        {index + 1} / {imgLinks.length}
+        {index + 1} / {imgs.length}
       </div>
 
       {/* Close */}
@@ -94,14 +96,14 @@ const Lightbox = ({
       >
         <img
           key={index}
-          src={imgLinks[index].src}
+          src={imgs[index].src}
           alt={`Gallery ${index + 1}`}
           className="max-w-[88vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl select-none"
           draggable={false}
         />
       </div>
 
-      <div className="absolute top-5 left-5"><TagBadge tag={imgLinks[index].tag} /></div>
+      <div className="absolute top-5 left-5"><TagBadge tag={imgs[index].tag} /></div>
     </div>
   )
 }
@@ -275,6 +277,7 @@ const Gallery = () => {
       {/* Lightbox */}
       {lightboxIndex !== null && (
         <Lightbox
+          imgs={imgLinks}
           index={lightboxIndex}
           onClose={closeLightbox}
           onPrev={prevLight}
